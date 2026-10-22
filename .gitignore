@@ -5,3 +5,10 @@ src-tauri/gen/
 crates/*/target/
 # wasm-pack 產生的單機版引擎（npm run build:wasm）
 src/lib/local/pkg/
+
+# 美術收件匣：只追蹤說明與留言，交件的圖不進版控（處理後會轉成 WebP 放進 public/）
+art-inbox/*
+!art-inbox/README.md
+!art-inbox/messages/
+!art-inbox/replies/
+!art-inbox/requests/
