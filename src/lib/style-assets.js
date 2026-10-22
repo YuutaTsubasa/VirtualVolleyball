@@ -1,0 +1,75 @@
+// 畫風與圖檔路徑（純函式，Node 測試也能用）。
+//
+// 90 年代（anime90）的圖放在 public/ 底下（characters/、sprites/、game/、effects/、ui/）；
+// 其他風格放在 public/styles/<風格>/ 底下、結構一樣。每種風格實際有哪些檔案記在
+// style-assets.json（由 scripts/import-style.py 產生），沒有的就退回 90 年代版。
+
+import MANIFEST from './style-assets.json' with { type: 'json' };
+
+export const ART_STYLES = [
+  { id: 'anime90', name: '90 年代', description: '賽璐璐動畫 · 晴天海灘' },
+  { id: 'pc98', name: 'PC-98', pixelated: true, description: '復古電腦 · 細緻抖色像素' },
+  { id: 'msdos', name: 'MS-DOS', pixelated: true, description: 'VGA 藍灰介面 · 鮮明像素' },
+  { id: 'taiwan-print', name: '台式印刷', description: '復古海報 · 紙感套色與油墨網點' },
+  { id: 'gameboy', name: 'Game Boy', pixelated: true, description: '掌機四色 · 綠色點陣' },
+  { id: 'modern-paint', name: '動漫電影', description: '黃昏海邊 · 通透天空與逆光' },
+];
+
+export const DEFAULT_STYLE = 'anime90';
+export const isStyle = (id) => ART_STYLES.some((s) => s.id === id);
+
+const fileSets = Object.fromEntries(
+  Object.entries(MANIFEST.styles ?? {}).map(([id, s]) => [id, new Set(s.files ?? [])]),
+);
+
+// 選用的插圖：連 90 年代版都要有交才算有（沒有時畫面改用角色動作圖拼）
+export const OPTIONAL = new Set(['ui/title-scene.webp', 'ui/mode-cpu.webp', 'ui/mode-versus.webp', 'ui/mode-watch.webp']);
+
+// 一種風格完整的檔案數：11 位角色 ×（5 表情＋1 圖集）＋球場球網球 3＋特效 4＋介面 5＋圖示 10
+export const EXPECTED_FILES = 11 * 6 + 3 + 4 + 5 + 10;
+
+/** 這個風格有沒有這張圖（anime90 的基本圖一律當作有） */
+export function hasAsset(style, path) {
+  if (style === DEFAULT_STYLE && !OPTIONAL.has(path)) return true;
+  return !!fileSets[style]?.has(path);
+}
+
+const url = (style, path, base) => `${base}${style === DEFAULT_STYLE ? '' : `styles/${style}/`}${path}`;
+
+/**
+ * 圖檔網址：path 例如 'game/court.webp'、'characters/xiaochun/happy.webp'。
+ * 這個風格沒有就用 90 年代版；選用插圖兩邊都沒有時回傳 null。
+ */
+export function assetPath(style, path, base = '/') {
+  if (hasAsset(style, path)) return url(style, path, base);
+  if (hasAsset(DEFAULT_STYLE, path)) return url(DEFAULT_STYLE, path, base);
+  return OPTIONAL.has(path) ? null : url(DEFAULT_STYLE, path, base);
+}
+
+/** 這個風格已經交了多少（給選風格畫面顯示「製作中」） */
+export function styleProgress(style) {
+  if (style === DEFAULT_STYLE) return 1;
+  const have = [...(fileSets[style] ?? [])].filter((f) => !OPTIONAL.has(f)).length;
+  return Math.min(1, have / EXPECTED_FILES);
+}
+
+// 畫面設定：比分底板數字位置、球網座標、像素風格的內部解析度等。沒寫的用 90 年代版的數字。
+const ANIME90 = {
+  pixelated: false,
+  canvasScale: 2,
+  scoreboard: { left: 0.2775, right: 0.7325, y: 0.49 },
+  net: { tape: 190, bottom: 1016, left: 41, right: 152 },
+  spriteAnchorY: 496 / 512,
+};
+
+export function styleConfig(style) {
+  const s = MANIFEST.styles?.[style]?.config ?? {};
+  const meta = ART_STYLES.find((a) => a.id === style);
+  return {
+    ...ANIME90,
+    pixelated: !!meta?.pixelated,
+    ...s,
+    scoreboard: { ...ANIME90.scoreboard, ...s.scoreboard },
+    net: { ...ANIME90.net, ...s.net },
+  };
+}

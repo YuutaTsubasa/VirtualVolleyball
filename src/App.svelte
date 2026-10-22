@@ -1,4 +1,5 @@
 <script>
+  import { asset } from './lib/art-style.svelte.js';
   import { onMount } from 'svelte';
   import { createEngine } from './lib/engine.js';
   import { pickLine, unlockHidden } from './lib/game/characters.js';
@@ -9,6 +10,7 @@
   import TitleScreen from './lib/components/TitleScreen.svelte';
   import SoloScreen from './lib/components/SoloScreen.svelte';
   import HelpScreen from './lib/components/HelpScreen.svelte';
+  import StyleScreen from './lib/components/StyleScreen.svelte';
   import SelectScreen from './lib/components/SelectScreen.svelte';
   import RoomEntry from './lib/components/RoomEntry.svelte';
   import Lobby from './lib/components/Lobby.svelte';
@@ -16,7 +18,7 @@
   import TouchControls from './lib/components/TouchControls.svelte';
   import { ui } from './lib/ui.svelte.js';
 
-  // 單機：title | solo | help | select | play | pause | result | host | join
+  // 單機：title | solo | help | style | select | play | pause | result | host | join
   // 連線中（net.room 有值）時畫面由房間狀態決定：大廳或比賽
   let screen = $state('title');
   let mode = $state('cpu'); // cpu | versus | watch
@@ -120,7 +122,7 @@
     if (view === 'online-lobby') return; // 離開房間要按按鈕，避免誤觸
     if (screen === 'select') selectScreen?.goBack();
     else if (screen === 'pause') resume();
-    else if (screen === 'solo' || screen === 'help' || screen === 'host' || screen === 'join') screen = 'title';
+    else if (['solo', 'help', 'style', 'host', 'join'].includes(screen)) screen = 'title';
   }
 
   // Esc／P／手把 Start
@@ -149,7 +151,7 @@
 {#snippet resultCard(r)}
   <div class="result">
     <div class="ribbon">
-      <img src="{import.meta.env.BASE_URL}ui/result-banner.webp" alt="" />
+      <img src="{asset('ui/result-banner.webp')}" alt="" />
       <span>{r.title}</span>
     </div>
     <div class="result-row">
@@ -204,6 +206,7 @@
         { label: '單機遊玩', action: () => (screen = 'solo') },
         { label: '開設房間', action: () => (screen = 'host') },
         { label: '加入房間', action: () => (screen = 'join') },
+        { label: '畫面風格', action: () => (screen = 'style') },
         { label: '操作說明', action: () => (screen = 'help') },
       ]}
     />
@@ -213,6 +216,8 @@
     <RoomEntry page={screen} onback={() => (screen = 'title')} />
   {:else if screen === 'help'}
     <HelpScreen onback={() => (screen = 'title')} />
+  {:else if screen === 'style'}
+    <StyleScreen onback={() => (screen = 'title')} />
   {:else if screen === 'select'}
     <SelectScreen bind:this={selectScreen} {mode} onstart={start} onback={() => (screen = 'solo')} />
   {:else if screen === 'pause'}

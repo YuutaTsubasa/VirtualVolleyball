@@ -1,5 +1,6 @@
 <script>
   // 單機遊玩：選模式（對戰電腦／雙人同樂／電腦觀戰），右邊是預覽
+  import { asset } from '../art-style.svelte.js';
   import { onMount } from 'svelte';
   import { CHARACTERS } from '../game/characters.js';
   import { play } from '../game/audio.js';
@@ -19,6 +20,8 @@
 
   let current = $state(0);
   const mode = $derived(MODES[current]);
+  // 有模式預覽插圖（ui/mode-*）就用插圖，沒有就用兩位角色的動作圖
+  const modeArt = $derived(asset(`ui/mode-${mode.id}.webp`));
 
   // 預覽用的兩位角色：每次進來隨機挑
   const pool = CHARACTERS.filter((c) => !c.hidden);
@@ -41,9 +44,9 @@
 
 {#snippet icon(id)}
   {#if id === 'cpu'}
-    <img src="{import.meta.env.BASE_URL}ui/icons/gamepad.webp" alt="" />
+    <img src="{asset('ui/icons/gamepad.webp')}" alt="" />
   {:else if id === 'versus'}
-    <span class="pair"><img src="{import.meta.env.BASE_URL}ui/icons/gamepad.webp" alt="" /><img src="{import.meta.env.BASE_URL}ui/icons/gamepad.webp" alt="" /></span>
+    <span class="pair"><img src="{asset('ui/icons/gamepad.webp')}" alt="" /><img src="{asset('ui/icons/gamepad.webp')}" alt="" /></span>
   {:else}
     <svg viewBox="0 0 64 52" aria-hidden="true">
       <rect x="3" y="3" width="58" height="36" rx="3" fill="#fbf4e0" stroke="#142a63" stroke-width="5" />
@@ -76,18 +79,22 @@
   </div>
 
   <div class="preview panel">
-    <div class="stage-art" style="background-image: url({import.meta.env.BASE_URL}game/court.webp)">
+    <div class="stage-art" style="background-image: url({asset('game/court.webp')})">
       {#key current}
+        {#if modeArt}
+          <img class="mode-art" src={modeArt} alt="" />
+        {:else}
         <div class="side left">
           <span class="who">{mode.tags[0]}</span>
           <SpritePose character={pairs[current][0]} size="34cqh" />
         </div>
-        <img class="ball" src="{import.meta.env.BASE_URL}game/ball.webp" alt="" />
+        <img class="ball" src="{asset('game/ball.webp')}" alt="" />
         <span class="vs">VS</span>
         <div class="side right">
           <span class="who cpu" class:p2={mode.tags[1] === '2P'}>{mode.tags[1]}</span>
           <SpritePose character={pairs[current][1]} size="34cqh" flip />
         </div>
+        {/if}
       {/key}
     </div>
     <div class="caption">{mode.caption}</div>
@@ -220,6 +227,14 @@
     width: 11cqh;
     translate: -50% 0;
     animation: bob 1.2s ease-in-out infinite alternate;
+  }
+  .mode-art {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: pop 0.25s ease-out;
   }
   .caption {
     background: var(--cream);

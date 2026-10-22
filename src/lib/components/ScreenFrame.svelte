@@ -1,12 +1,13 @@
 <script>
   // 選單畫面的共用版型：左上標誌、右上標題橫幅、金色分隔線、中間內容、底部（返回／提示／主要按鈕）
+  import { asset } from '../art-style.svelte.js';
   import Logo from './Logo.svelte';
 
   let { title, subtitle = '', children, foot } = $props();
 </script>
 
 <section class="screen framed">
-  <img class="menu-bg" src="{import.meta.env.BASE_URL}game/court.webp" alt="" />
+  <img class="menu-bg" src="{asset('game/court.webp')}" alt="" />
   <div class="frame">
     <header class="frame-head">
       <Logo />

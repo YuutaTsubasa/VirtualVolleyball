@@ -1,6 +1,7 @@
 <script>
   // 觸控按鈕：左邊搖桿（左右移動、往上推跳、往下推是重扣方向），右邊「跳」「擊」兩顆鈕。
   // 雙人同一台平板時，兩組各放在自己那一側。
+  import { asset } from '../art-style.svelte.js';
   import { onDestroy } from 'svelte';
   import { setTouch, pressTouchHit, clearTouch } from '../game/input.js';
 
@@ -75,7 +76,7 @@
 </script>
 
 <div class="touch" class:split>
-  <button type="button" tabindex="-1" class="pause" aria-label="暫停" onclick={onpause}><img src="{import.meta.env.BASE_URL}ui/icons/pause.webp" alt="" /></button>
+  <button type="button" tabindex="-1" class="pause" aria-label="暫停" onclick={onpause}><img src="{asset('ui/icons/pause.webp')}" alt="" /></button>
   {#each slots as slot (slot)}
     {@const mirror = split && slot === 1}
     <div

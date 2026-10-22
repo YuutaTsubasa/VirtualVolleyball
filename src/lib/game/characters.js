@@ -4,16 +4,20 @@
 //   crates/volleyball-core/src/characters.rs，改的話兩邊要一起改。
 // lines：score 得分、miss 失分、win 贏得比賽、lose 輸掉比賽。
 //
-// 圖：public/characters/<id>/<表情>.webp（半身像）、public/sprites/<id>.webp（8 個動作的圖集）。
-//   90 年代風格來自 docs/art/anime90-v1（虛擬排球王 90 年代圖素包）。
+// 圖：characters/<id>/<表情>.webp（半身像）、sprites/<id>.webp（8 個動作的圖集），
+//   依目前畫風取圖（見 src/lib/style-assets.js），該風格沒有的圖會用 90 年代版。
 //   sprite 設成 false 的角色會改用「頭像 + 程式畫的身體」。
 
-const BASE = import.meta.env.BASE_URL;
+import { asset } from '../art-style.svelte.js';
 
 export const EXPRESSIONS = ['normal', 'happy', 'surprised', 'sad', 'win'];
 
+// 讀取時才依目前畫風決定網址，所以畫面會跟著換風格
 const portraits = (id) =>
-  Object.fromEntries(EXPRESSIONS.map((e) => [e, `${BASE}characters/${id}/${e}.webp`]));
+  Object.defineProperties(
+    {},
+    Object.fromEntries(EXPRESSIONS.map((e) => [e, { enumerable: true, get: () => asset(`characters/${id}/${e}.webp`) }])),
+  );
 
 const RAW = [
   {
@@ -143,7 +147,9 @@ export const CHARACTERS = RAW.map((c) => ({
   sprite: true,
   ...c,
   portraits: portraits(c.id),
-  spriteSrc: `${BASE}sprites/${c.id}.webp`,
+  get spriteSrc() {
+    return asset(`sprites/${c.id}.webp`);
+  },
 }));
 
 export const getCharacter = (id) => CHARACTERS.find((c) => c.id === id) ?? CHARACTERS[0];

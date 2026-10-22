@@ -1,9 +1,9 @@
 <script>
   // 右下角的操作提示：依目前用的是鍵盤、手把還是觸控換說法
+  import { asset } from '../art-style.svelte.js';
   import { ui } from '../ui.svelte.js';
 
   let { extra = '' } = $props();
-  const BASE = import.meta.env.BASE_URL;
   const icon = $derived(ui.input === 'pad' ? 'gamepad' : ui.input === 'touch' ? 'touch' : 'keyboard');
   const text = $derived(
     ui.input === 'pad'
@@ -15,7 +15,7 @@
 </script>
 
 <div class="hint-bar control-hint">
-  <img src="{BASE}ui/icons/{icon}.webp" alt="" />
+  <img src="{asset(`ui/icons/${icon}.webp`)}" alt="" />
   <span>{extra || text}</span>
 </div>
 

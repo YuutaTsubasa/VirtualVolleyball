@@ -1,5 +1,6 @@
 <script>
   // 房間大廳：左右兩個座位（VS）、邀請朋友、比賽規則、大廳聊天、開始比賽
+  import { asset } from '../art-style.svelte.js';
   import { tick } from 'svelte';
   import { net, hostCmd, leave, send, serverUrls, setCharacter, toast, load } from '../net.svelte.js';
   import { CHARACTERS, getCharacter } from '../game/characters.js';
@@ -79,7 +80,7 @@
         <div class="panel-head">{SIDES[i]}</div>
         {#if seat}
           {@const c = getCharacter(seat.character)}
-          <div class="pic" style="background-image: url({import.meta.env.BASE_URL}game/court.webp)">
+          <div class="pic" style="background-image: url({asset('game/court.webp')})">
             {#if roleOf(i)}
               <span class="role">
                 {#if i === room.host_seat}<svg viewBox="0 0 24 18" aria-hidden="true"><path d="M2 16 4 4l5 5 3-7 3 7 5-5 2 12z" fill="#ffd43b" stroke="#142a63" stroke-width="2" stroke-linejoin="round" /></svg>{/if}
@@ -100,7 +101,7 @@
           {/if}
         {:else}
           <div class="waiting">
-            <img src="{import.meta.env.BASE_URL}game/ball.webp" alt="" />
+            <img src="{asset('game/ball.webp')}" alt="" />
             <b>等待入席</b>
             <small>邀請朋友加入對戰</small>
           </div>
@@ -184,7 +185,7 @@
     {#if isHost}
       <button type="button" class="vbtn primary" onclick={() => hostCmd('start')}>開始比賽</button>
     {:else}
-      <img class="spinner" src="{import.meta.env.BASE_URL}game/ball.webp" alt="" />
+      <img class="spinner" src="{asset('game/ball.webp')}" alt="" />
     {/if}
   {/snippet}
 </ScreenFrame>

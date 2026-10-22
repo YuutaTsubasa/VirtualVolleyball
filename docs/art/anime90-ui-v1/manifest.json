@@ -1,0 +1,35 @@
+{
+  "style": "anime90",
+  "package": "ui-supplement",
+  "respondingTo": "requests/2026-10-23-0440-from-claude.md",
+  "assets": [
+    {
+      "file": "ui/title-scene.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "sha256": "40fb35d03b11f7b25e019ea2c8d61a76cde19df4b612b9db2d70a6eaf4a9c6d8"
+    },
+    {
+      "file": "ui/mode-cpu.png",
+      "width": 1200,
+      "height": 900,
+      "opaque": true,
+      "sha256": "6fbb4cd186f71009542714affa5670235faea95cd3df72921849e27ef592508d"
+    },
+    {
+      "file": "ui/mode-versus.png",
+      "width": 1200,
+      "height": 900,
+      "opaque": true,
+      "sha256": "c5777796aacc23649939913a25ba66619627bf9d91810f317b4d7b1cccf91cf5"
+    },
+    {
+      "file": "ui/mode-watch.png",
+      "width": 1200,
+      "height": 900,
+      "opaque": true,
+      "sha256": "b4be629846878f8a99ff4a423b9adb0c090cbbee0c4ebd565d5aabe24681b0cb"
+    }
+  ]
+}

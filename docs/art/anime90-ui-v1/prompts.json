@@ -1,0 +1,45 @@
+[
+  {
+    "name": "title-scene",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "A 16:9 title-screen illustration for a beach volleyball game. Warm sunny Taiwanese coast, azure sea, bright sky and white clouds, pale sand. EXACTLY TWO recognizable cute 3-head-tall characters: reference1 orange-ponytail Xiaochun in bluewhite volleyball kit jumping and spiking on FAR LEFT (x5%-25%); reference2 green-twin-ponytail Xiaocui in whiteteal kit receiving at FAR RIGHT (x75%-95%). Keep the ENTIRE CENTRAL 45% of width intentionally empty of figures, balls, netposts or busy details, both upper-center sky and middle/lower-center sand, for a separate logo and menu overlay. Characters face inward, dynamic sporty composition at edges only. Small blueyellowwhite ball may be at far top-right, outside central45%. No text, logo, UI, panels or buttons. Beautiful handpainted coastal background with clean 1990s anime cel-animated figures, bold expressive outlines, simple two-tone cel shadows, cheerful saturated colors. Fullbleed opaquebackground.",
+    "refs": [
+      "characters/xiaochun/sprites/spike.png",
+      "characters/xiaocui/sprites/dive.png"
+    ],
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-2d6e2227-d70d-419f-a53b-9cda6a4b607c.png"
+  },
+  {
+    "name": "mode-cpu",
+    "width": 1200,
+    "height": 900,
+    "prompt": "A 4:3 mode-selection card illustration: one playable athlete versus a friendly COMPUTER OPPONENT on sunny beach volleyball court. Left: reference1 Xiaochun with orange ponytail whitebow bluewhite volleyball kit, cute chibi3heads, preparing to receive a volleyball. Right: a small friendly bluewhite sporty robot with round face-screen showing simple cyan eyes, posed as volleyball opponent (non-selectable decorative CPU mascot). Volleyball net between sides, blueyellowwhite ball in air, lively sunny seaandclouds. 1990s celanime with bold clean linework simple two-tone shadows and handpainted background. One athlete and one robot total, clear tiny-card readability. No text/letters/numbers/UI/buttons/logos. Fullbleed opaque scene.",
+    "refs": [
+      "characters/xiaochun/sprites/idle.png"
+    ],
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-504df934-7292-4aca-9b95-fe24ed165dc9.png"
+  },
+  {
+    "name": "mode-versus",
+    "width": 1200,
+    "height": 900,
+    "prompt": "A 4:3 mode-selection illustration of LOCAL TWO-PLAYER FUN: two chibi volleyball athletes happily rallying on sunlit seaside sand. Reference1 green twin ponytail pinkribbons Xiaocui in whiteteal kit on LEFT, reference2 blackspikyhair redheadband Aming in orange-red-gold kit on RIGHT. Both laugh and enjoy a close playful volley across a small beach net, one blueyellowwhite volleyball at topcenter. Use same recognizable faces, hair/outfits and cute3headproportions. 1990s cel anime, bold outlines, crisp two-tone shadows, painted bright ocean/clouds, energetic warm inviting composition, readable as smallcard. No text, numbers, lettering, buttons or logos. Fullbleed opaque scene.",
+    "refs": [
+      "characters/xiaocui/sprites/idle.png",
+      "characters/aming/sprites/idle.png"
+    ],
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-7014f63a-1336-4481-bd0a-26fc56d60476.png"
+  },
+  {
+    "name": "mode-watch",
+    "width": 1200,
+    "height": 900,
+    "prompt": "A 4:3 mode-selection illustration for SPECTATING an exciting beach volleyball match. Two recognizable chibi athletes: reference1 blond blueeyed prince with small 3bluegem goldcrown in bluegold sportskit jumping to spike from LEFT, reference2 bearded mature darkgrayhaired gambler uncle in navygold sportskit blocking on RIGHT. Beachnet and blueyellowwhite ball at tense contact, small cheerful spectator silhouettes seated at farleft/farright lower margins like a sports broadcast, no obstructing players. Sunny Taiwanesecoast, sea clouds handpainted backdrop. 1990s celanime clean bold outlines, flat2tone shading, expressive readable 3headbody characters. No text, scores, graphics, labels or logo. Fullbleed opaque.",
+    "refs": [
+      "characters/03-prince/sprites/spike.png",
+      "characters/02-gambler/sprites/jump.png"
+    ],
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-6841b3fc-a1b3-4eae-a2b5-28340d361fc1.png"
+  }
+]

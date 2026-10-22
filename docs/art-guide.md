@@ -32,6 +32,17 @@
 - **球網**：側視、透明背景；`src/lib/game/render.js` 的 `NET_IMG` 記錄白帶與網柱底部在圖裡的位置，換圖要跟著改。
 - **比分底板**：`render.js` 的 `drawScoreboard()` 寫死了兩格數字的中心（27.75%、73.25%）。
 
-## 還沒做的
+## 六種畫風
 
-- **其他五種風格**（PC-98、MS-DOS、台式印刷、Game Boy、動漫電影）：跟台麻一樣的六種風格，等 90 年代版本確定後再做。
+標題的「畫面風格」可以切換 90 年代、PC-98、MS-DOS、台式印刷、Game Boy、動漫電影（ID 跟 TaiwanMahjong 一樣）。
+
+- 90 年代以外的圖放在 `public/styles/<風格>/`，結構跟上面一樣。
+- 每種風格實際有哪些檔案、畫面設定（比分數字位置、球網座標、像素風格的內部解析度）記在 `src/lib/style-assets.json`；沒有的圖會用 90 年代版。
+- 介面配色在 `src/app.css` 最後的 `:root[data-style='…']`。
+- 圖素包由 ChatGPT 交到 `art-inbox/`（規格見 `art-inbox/README.md`），用這個指令接進來：
+
+```bash
+python -P scripts/import-style.py art-inbox/pc98-assets.zip pc98 --config '{"canvasScale": 0.5}'
+```
+
+另外 90 年代版有四張選用插圖：`ui/title-scene`（標題主視覺）與 `ui/mode-cpu`／`mode-versus`／`mode-watch`（單機模式預覽），來源在 `docs/art/anime90-ui-v1/`。沒有這些圖的風格會改用角色動作圖拼。

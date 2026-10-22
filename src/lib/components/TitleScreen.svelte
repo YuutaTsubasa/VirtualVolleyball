@@ -1,5 +1,6 @@
 <script>
   // 標題畫面：標誌、主選單，左右各一位角色（每次隨機）
+  import { asset } from '../art-style.svelte.js';
   import { CHARACTERS } from '../game/characters.js';
   import { toggleMute, isMuted } from '../game/audio.js';
   import Logo from './Logo.svelte';
@@ -15,14 +16,19 @@
   const left = pool[leftIndex];
   const right = pool[(leftIndex + 1 + Math.floor(Math.random() * (pool.length - 1))) % pool.length];
 
+  // 有標題主視覺（ui/title-scene）就用插圖，沒有就用球場＋左右兩位角色的動作圖
+  const scene = $derived(asset('ui/title-scene.webp'));
   let muted = $state(isMuted());
-  const BASE = import.meta.env.BASE_URL;
 </script>
 
 <section class="screen title">
-  <img class="menu-bg" src="{BASE}game/court.webp" alt="" />
-  <div class="hero left"><SpritePose character={left} pose="spike" size="64cqh" /></div>
-  <div class="hero right"><SpritePose character={right} pose="idle" size="58cqh" flip /></div>
+  {#if scene}
+    <img class="menu-bg" src={scene} alt="" />
+  {:else}
+    <img class="menu-bg" src="{asset('game/court.webp')}" alt="" />
+    <div class="hero left"><SpritePose character={left} pose="spike" size="64cqh" /></div>
+    <div class="hero right"><SpritePose character={right} pose="idle" size="58cqh" flip /></div>
+  {/if}
 
   <div class="center">
     <Logo size="big" />
@@ -35,7 +41,7 @@
     aria-label={muted ? '開啟音效' : '關閉音效'}
     onclick={() => (muted = toggleMute())}
   >
-    <img src="{BASE}ui/icons/{muted ? 'sound-off' : 'sound-on'}.webp" alt="" />
+    <img src="{asset(`ui/icons/${muted ? 'sound-off' : 'sound-on'}.webp`)}" alt="" />
   </button>
   <div class="foot"><ControlHint /></div>
 </section>
@@ -66,7 +72,7 @@
   }
   .sound {
     position: absolute;
-    top: 2.4cqh;
+    bottom: 2.4cqh;
     right: 2.4cqw;
     width: 9cqh;
     height: 9cqh;

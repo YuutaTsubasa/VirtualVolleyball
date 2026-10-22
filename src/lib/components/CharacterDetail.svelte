@@ -1,5 +1,6 @@
 <script>
   // 角色資料卡：半身像、名字、介紹、能力值
+  import { asset } from '../art-style.svelte.js';
   import { isUnlocked } from '../game/characters.js';
 
   let { character, badge = '' } = $props();
@@ -16,7 +17,7 @@
     {#if open}
       {#key character.id}<img src={character.portraits.happy} alt="" />{/key}
     {:else}
-      <img class="lock" src="{import.meta.env.BASE_URL}ui/icons/lock.webp" alt="" />
+      <img class="lock" src="{asset('ui/icons/lock.webp')}" alt="" />
     {/if}
   </div>
   <div class="info">

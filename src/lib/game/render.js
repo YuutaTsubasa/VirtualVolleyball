@@ -2,25 +2,25 @@
 
 import { W, H, GROUND, NET, BALL_R, PLAYER_HALF_W } from './constants.js';
 import { EXPRESSIONS, pickLine } from './characters.js';
+import { asset, currentConfig } from '../art-style.svelte.js';
 
-const SCALE = 2; // 內部解析度 1920×1080，縮放顯示時比較銳利
+// 內部解析度：一般風格 2 倍（1920×1080）比較銳利；像素風格用較低的倍數再放大（見 style-assets.js）
+let SCALE = 2;
 
-// 90 年代圖素包（docs/art/anime90-v1）。載入失敗時會退回程式畫的版本。
-const BASE = import.meta.env.BASE_URL;
-const ART = {
-  court: `${BASE}game/court.webp`,
-  net: `${BASE}game/net.webp`,
-  ball: `${BASE}game/ball.webp`,
-  spark: `${BASE}effects/hit-spark.webp`,
-  sand: `${BASE}effects/sand-puff.webp`,
-  burst: `${BASE}effects/score-burst.webp`,
-  trail: `${BASE}effects/spike-trail.webp`,
-  scorePanel: `${BASE}ui/score-panel.webp`,
+// 圖素：依目前畫風取圖（docs/art/<風格>-v1），沒有的退回 90 年代版；載入失敗時退回程式畫的版本。
+const ART_PATHS = {
+  court: 'game/court.webp',
+  net: 'game/net.webp',
+  ball: 'game/ball.webp',
+  spark: 'effects/hit-spark.webp',
+  sand: 'effects/sand-puff.webp',
+  burst: 'effects/score-burst.webp',
+  trail: 'effects/spike-trail.webp',
+  scorePanel: 'ui/score-panel.webp',
 };
-// 球網圖（192×1024）：上緣白帶在 y≈190、網柱底在 y≈1016，對到物理的網頂與地面
-const NET_IMG = { tape: 190, bottom: 1016, left: 41, right: 152 };
-// 角色圖集：每格正方形，腳底錨點在 (0.5, 496/512)
-const SPRITE_ANCHOR_Y = 496 / 512;
+const art = (key) => loadImage(asset(ART_PATHS[key]));
+// 球網圖的座標、比分底板的數字位置、角色腳底錨點：每種風格可以不同（style-assets.js 的 styleConfig）
+let cfg = currentConfig();
 const SPRITE_SIZE = 210;
 
 // ---------- 圖片 ----------
@@ -39,9 +39,10 @@ const ready = (img) => img && img.complete && img.naturalWidth > 0;
 const HEAD_CROP = { x: 0.08, y: 0, w: 0.84, h: 0.63 };
 const heads = new Map();
 function headFor(character, expression) {
-  const key = `${character.id}:${expression}`;
+  const src = character.portraits[expression] ?? character.portraits.normal;
+  const key = src;
   if (heads.has(key)) return heads.get(key);
-  const img = loadImage(character.portraits[expression] ?? character.portraits.normal);
+  const img = loadImage(src);
   if (!ready(img)) return null;
   const sw = img.naturalWidth * HEAD_CROP.w;
   const sh = img.naturalHeight * HEAD_CROP.h;
@@ -58,7 +59,7 @@ export function preload(characters) {
     for (const e of EXPRESSIONS) loadImage(c.portraits[e]);
     if (c.sprite) loadImage(c.spriteSrc);
   }
-  for (const src of Object.values(ART)) loadImage(src);
+  for (const key of Object.keys(ART_PATHS)) art(key);
 }
 
 // ---------- 背景（畫一次存起來） ----------
@@ -181,8 +182,9 @@ function drawNetShape(g) {
 }
 
 function drawNet(g) {
-  const img = loadImage(ART.net);
+  const img = art('net');
   if (!ready(img)) return drawNetShape(g);
+  const NET_IMG = cfg.net;
   const scale = (GROUND + 4 - NET.top) / (NET_IMG.bottom - NET_IMG.tape);
   const w = img.naturalWidth * scale;
   const h = img.naturalHeight * scale;
@@ -435,7 +437,7 @@ function drawSprite(g, p, img, celebrate, sad) {
   g.translate(p.x, p.y);
   if (facing < 0) g.scale(-1, 1);
   g.scale(1 / squash, breathe * squash);
-  g.drawImage(img, i * fw, 0, fw, fh, -drawW / 2, -drawH * SPRITE_ANCHOR_Y, drawW, drawH);
+  g.drawImage(img, i * fw, 0, fw, fh, -drawW / 2, -drawH * cfg.spriteAnchorY, drawW, drawH);
   g.restore();
 }
 
@@ -460,7 +462,7 @@ function drawPlayer(g, match, p) {
 // ---------- 球 ----------
 
 function drawBall(g, b) {
-  const trail = loadImage(ART.trail);
+  const trail = art('trail');
   if (b.power && ready(trail) && b.y > -BALL_R) {
     // 扣殺的光尾：頭在球的位置，往速度的反方向拖
     g.save();
@@ -495,7 +497,7 @@ function drawBall(g, b) {
     return;
   }
 
-  const img = loadImage(ART.ball);
+  const img = art('ball');
   if (ready(img)) {
     // 球的圖在 256 裡占 240（四周有透明邊）
     const size = BALL_R * 2 * (256 / 240);
@@ -552,7 +554,7 @@ function outlinedText(g, text, x, y, size, fill = '#fff', align = 'center') {
 }
 
 function drawHud(g, match, names) {
-  const panel = loadImage(ART.scorePanel);
+  const panel = art('scorePanel');
   if (ready(panel)) return drawScoreboard(g, match, names, panel);
   for (const side of [0, 1]) {
     const p = match.players[side];
@@ -596,8 +598,8 @@ function drawScoreboard(g, match, names, panel) {
   g.drawImage(panel, px, py, pw, ph);
   for (const side of [0, 1]) {
     const flash = side === match.lastScorer && match.phase === 'point';
-    const cx = px + pw * (side === 0 ? 0.2775 : 0.7325);
-    outlinedText(g, String(match.score[side]).padStart(2, '0'), cx, py + ph * 0.5, 40, flash ? '#ffe066' : '#fff');
+    const cx = px + pw * (side === 0 ? cfg.scoreboard.left : cfg.scoreboard.right);
+    outlinedText(g, String(match.score[side]).padStart(2, '0'), cx, py + ph * cfg.scoreboard.y, 40, flash ? '#ffe066' : '#fff');
   }
   outlinedText(g, `${match.target} 分勝`, W / 2, py + ph + 10, 14, '#fff');
 
@@ -703,7 +705,15 @@ function drawYouMarker(g, p) {
 
 // opts：{ you: 自己的座位（連線時）, names: 兩邊玩家名稱（連線時） }
 export function draw(canvas, match, opts = {}) {
+  cfg = currentConfig();
+  // 換風格時調整內部解析度與縮放方式（像素風格不要平滑）
+  if (SCALE !== cfg.canvasScale || canvas.width !== Math.round(W * cfg.canvasScale)) {
+    SCALE = cfg.canvasScale;
+    resize(canvas);
+    bgCanvas = null;
+  }
   const g = canvas.getContext('2d');
+  g.imageSmoothingEnabled = !cfg.pixelated;
   g.setTransform(SCALE, 0, 0, SCALE, 0, 0);
 
   if (shake > 0) {
@@ -712,7 +722,7 @@ export function draw(canvas, match, opts = {}) {
     if (shake < 0.5) shake = 0;
   }
 
-  const court = loadImage(ART.court);
+  const court = art('court');
   if (ready(court)) {
     g.drawImage(court, 0, 0, W, H);
   } else {
@@ -729,7 +739,7 @@ export function draw(canvas, match, opts = {}) {
   drawBall(g, match.ball);
 
   for (const fx of effects) {
-    const img = loadImage(ART[fx.key]);
+    const img = art(fx.key);
     if (!ready(img)) continue;
     const t = 1 - fx.life / fx.max;
     const w = fx.w * (1 + fx.grow * t);
@@ -769,6 +779,7 @@ export function tick() {
 }
 
 export function resize(canvas) {
-  canvas.width = W * SCALE;
-  canvas.height = H * SCALE;
+  canvas.width = Math.round(W * SCALE);
+  canvas.height = Math.round(H * SCALE);
+  canvas.style.imageRendering = cfg.pixelated ? 'pixelated' : 'auto';
 }

@@ -410,3 +410,76 @@ input:focus { border-color: var(--gold-deep); box-shadow: 0 0 0 0.4cqh var(--gol
     font-weight: 800;
   }
 }
+
+/* ---------- 畫風：介面配色與字體 ----------
+   先參考 TaiwanMahjong 的 themes.css 定暫時的顏色，各風格圖素包附的「介面主色」到了再換。
+   --navy 是深色（框線、標題條、文字），--cream 是面板底，--gold 是強調色。 */
+
+:root[data-style='pc98'] {
+  --navy: #2a2350;
+  --navy-deep: #191433;
+  --navy-soft: #4b4380;
+  --cream: #efe6d2;
+  --gold: #ffd69a;
+  --gold-deep: #d99a52;
+  --gold-line: #ffd69a;
+  --stripe: #b9b2d4;
+  --accent: #e0607e;
+  --font: 'MingLiU', '細明體', 'MS Gothic', 'Cascadia Mono', monospace;
+}
+:root[data-style='msdos'] {
+  --navy: #000080;
+  --navy-deep: #000050;
+  --navy-soft: #2020a0;
+  --cream: #c0c0c0;
+  --gold: #ffff55;
+  --gold-deep: #c0c000;
+  --gold-line: #55ffff;
+  --stripe: #8080c0;
+  --accent: #ff5555;
+  --font: 'Cascadia Mono', 'Consolas', 'MingLiU', '細明體', monospace;
+}
+:root[data-style='taiwan-print'] {
+  --navy: #173f34;
+  --navy-deep: #102f28;
+  --navy-soft: #315a46;
+  --cream: #f4e1b3;
+  --gold: #f0c878;
+  --gold-deep: #c99a3e;
+  --gold-line: #b49053;
+  --stripe: #d5c395;
+  --accent: #c1272d;
+  --font: 'DFKai-SB', '標楷體', 'Kaiti TC', 'Microsoft JhengHei', serif;
+}
+:root[data-style='gameboy'] {
+  --navy: #0f380f;
+  --navy-deep: #0f380f;
+  --navy-soft: #306230;
+  --cream: #9bbc0f;
+  --gold: #8bac0f;
+  --gold-deep: #306230;
+  --gold-line: #8bac0f;
+  --stripe: #306230;
+  --accent: #0f380f;
+  --sea: #0f380f;
+  --ok: #306230;
+  --font: 'MingLiU', '細明體', monospace;
+}
+:root[data-style='modern-paint'] {
+  --navy: #152e4d;
+  --navy-deep: #10243f;
+  --navy-soft: #294d70;
+  --cream: #f0f7ff;
+  --gold: #ffe5b4;
+  --gold-deep: #f2b880;
+  --gold-line: #87b5d1;
+  --stripe: #bed5ed;
+  --accent: #ff8fa3;
+}
+/* 像素風格：直角、不要圓角與模糊陰影 */
+:root:is([data-style='pc98'], [data-style='msdos'], [data-style='gameboy']) :is(.panel, .card, input, select.vsel, .toast) {
+  border-radius: 0;
+}
+:root:is([data-style='pc98'], [data-style='msdos'], [data-style='gameboy']) img {
+  image-rendering: pixelated;
+}

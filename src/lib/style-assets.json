@@ -1,0 +1,12 @@
+{
+  "styles": {
+    "anime90": {
+      "files": [
+        "ui/mode-cpu.webp",
+        "ui/mode-versus.webp",
+        "ui/mode-watch.webp",
+        "ui/title-scene.webp"
+      ]
+    }
+  }
+}

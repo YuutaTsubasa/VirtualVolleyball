@@ -1,9 +1,10 @@
 <script>
   // 「虛擬排球王」標誌（docs/art/anime90-v1 的 ui/logo）
+  import { asset } from '../art-style.svelte.js';
   let { size = 'small' } = $props();
 </script>
 
-<img class="logo {size}" src="{import.meta.env.BASE_URL}ui/logo.webp" alt="虛擬排球王" draggable="false" />
+<img class="logo {size}" src="{asset('ui/logo.webp')}" alt="虛擬排球王" draggable="false" />
 
 <style>
   .logo {

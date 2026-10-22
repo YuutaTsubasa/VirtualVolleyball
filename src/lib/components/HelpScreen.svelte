@@ -1,11 +1,11 @@
 <script>
   // 操作說明：鍵盤／手把／觸控對照表與小技巧
+  import { asset } from '../art-style.svelte.js';
   import ScreenFrame from './ScreenFrame.svelte';
   import BackButton from './BackButton.svelte';
   import ControlHint from './ControlHint.svelte';
 
   let { onback } = $props();
-  const BASE = import.meta.env.BASE_URL;
   const ROWS = [
     ['移動', 'A / D', '← / →', '十字鍵／左搖桿', '左下搖桿'],
     ['跳躍', 'W', '↑', 'A 或 ↑', '「跳」或搖桿往上'],
@@ -22,10 +22,10 @@
         <thead>
           <tr>
             <th></th>
-            <th><img src="{BASE}ui/icons/keyboard.webp" alt="" />鍵盤 1P</th>
-            <th><img src="{BASE}ui/icons/keyboard.webp" alt="" />鍵盤 2P</th>
-            <th><img src="{BASE}ui/icons/gamepad.webp" alt="" />手把</th>
-            <th><img src="{BASE}ui/icons/touch.webp" alt="" />觸控</th>
+            <th><img src="{asset('ui/icons/keyboard.webp')}" alt="" />鍵盤 1P</th>
+            <th><img src="{asset('ui/icons/keyboard.webp')}" alt="" />鍵盤 2P</th>
+            <th><img src="{asset('ui/icons/gamepad.webp')}" alt="" />手把</th>
+            <th><img src="{asset('ui/icons/touch.webp')}" alt="" />觸控</th>
           </tr>
         </thead>
         <tbody>

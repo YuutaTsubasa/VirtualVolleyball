@@ -1,5 +1,6 @@
 <script>
   // 角色頭像格子：兩排，滑鼠停留／鍵盤手把焦點會移動游標；觸控第一下預覽、第二下確定
+  import { asset } from '../art-style.svelte.js';
   import { CHARACTERS, isUnlocked } from '../game/characters.js';
   import { play } from '../game/audio.js';
   import { ui } from '../ui.svelte.js';
@@ -51,7 +52,7 @@
       {#if open}
         <img src={c.portraits.normal} alt="" draggable="false" />
       {:else}
-        <span class="lock"><img src="{import.meta.env.BASE_URL}ui/icons/lock.webp" alt="" /></span>
+        <span class="lock"><img src="{asset('ui/icons/lock.webp')}" alt="" /></span>
       {/if}
       <span>{open ? c.name : '？？？'}</span>
       {#if tags[c.id]}<i class="tag">{tags[c.id]}</i>{/if}
