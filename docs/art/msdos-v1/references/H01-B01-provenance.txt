@@ -1,0 +1,5 @@
+Face reference: ProjectVtuber/projects/vrm-model/output/trials/h01-face-proportion-2026-10-22/face01/render/H01-B01-VRM1/front.png
+Body reference: ProjectVtuber/projects/vrm-model/output/trials/armor-soles-2026-10-13/small-v37/vrm1-full.png
+Current index inspected: H01-B01 face01 (based on small-v38), output/current/H01-B01/H01-B01_face01_VRM1.vrm; indexed SHA256 17222791e8859199362240543cbbd5412324af80e08ff6b3d5bd8d2c9d7848d0.
+Body render is small-v37: subsequent small-v38 shoulder skinning and face01 face proportion changes do not replace B01 outfit. Reference is original silver armor, not B03 silver/gold armor or sportswear.
+Read-only use of existing model renders, not a new VRM render or validation. All sprites are 2D stylized derivative art.

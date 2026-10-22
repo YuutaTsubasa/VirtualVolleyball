@@ -1,0 +1,14 @@
+{
+  "id": "yuehua",
+  "charName": "月華",
+  "kind": "sprites",
+  "pose": "run2",
+  "namekey": "run2",
+  "prompt": "Use case: style-transfer. ONE isolated transparent MS-DOS VGA circa 1994 anime fullbody volleyball game sprite. Image1 is the exact character, costume, pose/expression and silhouette to preserve. Image2 gives same character's established MS-DOS pixel style and identity; do NOT copy its backdrop or non-sports clothing. long silver hair with small crescent hair ornament, violet eyes, navy-and-white volleyball kit.  Repaint as carefully hand-drawn DOS VGA indexed-color pixel art, rich saturated 32-to-64-color ramps, strong black stepped contours, chunky readable color clusters, hard edges, confident 2-to-4-tone volume shadows, occasional small highlight pixels. Minimal dithering, keep flat pixel planes clearer than PC98 dense checker patterns. No blur, no soft gradients, no antialias, no painterly noise or modern vector outlines. 256x256 logical sprite enlarged with nearest crisp square pixels. WHOLE 3-head-tall body facing RIGHT, all hands, feet, hair/tail inside canvas, no ground shadow, no ball. Exact state run2; distinct second running phase, high leading knee, rear leg folded, preserve reference1. Generous transparent safety padding. No text, frame, scenery or extra objects. True alpha background.",
+  "refs": [
+    "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/yuehua/sprites/run2.png",
+    "C:/Users/User/Repo/TaiwanMahjong/public/characters/yuehua/msdos/normal.png"
+  ],
+  "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/msdos-full-v1/characters/yuehua/sources/run2.png",
+  "generatedSource": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-c86e246b-d279-4720-92de-64ce476f90ca.png"
+}

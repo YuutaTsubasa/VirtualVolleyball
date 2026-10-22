@@ -1,0 +1,228 @@
+{
+  "uiTheme": {
+    "background": "#101828",
+    "panel": "#243c7a",
+    "text": "#f6f1d8",
+    "accent": "#ffd23f",
+    "border": "#9ca8b8",
+    "mood": "MS-DOS 遊戲選單的灰色立體斜邊、深藍面板，搭配亮黃選取色與清楚的點陣字。"
+  },
+  "jobs": [
+    {
+      "name": "environment/court",
+      "w": 1920,
+      "h": 1080,
+      "mode": "background",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/environment/court.png",
+      "prompt": "Use case: style-transfer. ONE environment/court production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. Full opaque 16:9 beach background, ocean Taiwan coastal hills and blue sky, bottom36% unobstructed sand. No net, ball, players, UI, buildings in foreground or text.      Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "environment/net",
+      "w": 192,
+      "h": 1024,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/environment/net.png",
+      "prompt": "Use case: style-transfer. ONE environment/net production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. Preserve object's colors, outline shape and function from reference; true alpha outside object and holes. No backdrop, ground shadow, glows or haze. Tall SIDEVIEW narrow net/pole, preserve red-white antenna above near-side top tape and blue pad, isolated transparent.    Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "environment/ball",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/environment/ball.png",
+      "prompt": "Use case: style-transfer. ONE environment/ball production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. Preserve object's colors, outline shape and function from reference; true alpha outside object and holes. No backdrop, ground shadow, glows or haze.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/logo",
+      "w": 1400,
+      "h": 420,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/logo.png",
+      "prompt": "Use case: style-transfer. ONE ui/logo production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. Same wordmark text EXACTLY 虛擬排球王, five Traditional Chinese characters, especially 虛 must match reference's proper glyph; gold bevel-letter pixel shading, navy extrusion and cyan edge, same small volleyball decoration. Transparent cutout.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/button-normal",
+      "w": 640,
+      "h": 128,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/button-normal.png",
+      "prompt": "Use case: style-transfer. ONE ui/button-normal production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/button-selected",
+      "w": 640,
+      "h": 128,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/button-selected.png",
+      "prompt": "Use case: style-transfer. ONE ui/button-selected production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.   Bright golden yellow selected face, clearly brighter than normal blue button.  Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/button-disabled",
+      "w": 640,
+      "h": 128,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/button-disabled.png",
+      "prompt": "Use case: style-transfer. ONE ui/button-disabled production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.    Muted gray disabled face. Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/dialog-panel",
+      "w": 960,
+      "h": 720,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/dialog-panel.png",
+      "prompt": "Use case: style-transfer. ONE ui/dialog-panel production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/portrait-frame",
+      "w": 256,
+      "h": 256,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/portrait-frame.png",
+      "prompt": "Use case: style-transfer. ONE ui/portrait-frame production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/portrait-selected",
+      "w": 256,
+      "h": 256,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/portrait-selected.png",
+      "prompt": "Use case: style-transfer. ONE ui/portrait-selected production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/score-panel",
+      "w": 800,
+      "h": 200,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/score-panel.png",
+      "prompt": "Use case: style-transfer. ONE ui/score-panel production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.  Exactly two large blank score wells, left and right, centered at same locations as reference; no digits.   Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/input-field",
+      "w": 640,
+      "h": 128,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/input-field.png",
+      "prompt": "Use case: style-transfer. ONE ui/input-field production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/result-banner",
+      "w": 1000,
+      "h": 240,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/result-banner.png",
+      "prompt": "Use case: style-transfer. ONE ui/result-banner production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "effects/hit-spark",
+      "w": 512,
+      "h": 512,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/effects/hit-spark.png",
+      "prompt": "Use case: style-transfer. ONE effects/hit-spark production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. Preserve object's colors, outline shape and function from reference; true alpha outside object and holes. No backdrop, ground shadow, glows or haze.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "effects/sand-puff",
+      "w": 768,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/effects/sand-puff.png",
+      "prompt": "Use case: style-transfer. ONE effects/sand-puff production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. Preserve object's colors, outline shape and function from reference; true alpha outside object and holes. No backdrop, ground shadow, glows or haze.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "effects/spike-trail",
+      "w": 768,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/effects/spike-trail.png",
+      "prompt": "Use case: style-transfer. ONE effects/spike-trail production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. Preserve object's colors, outline shape and function from reference; true alpha outside object and holes. No backdrop, ground shadow, glows or haze.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "effects/score-burst",
+      "w": 512,
+      "h": 512,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/effects/score-burst.png",
+      "prompt": "Use case: style-transfer. ONE effects/score-burst production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. Preserve object's colors, outline shape and function from reference; true alpha outside object and holes. No backdrop, ground shadow, glows or haze.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/icons/keyboard",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/keyboard.png",
+      "prompt": "Use case: style-transfer. ONE ui/icons/keyboard production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/icons/gamepad",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/gamepad.png",
+      "prompt": "Use case: style-transfer. ONE ui/icons/gamepad production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/icons/touch",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/touch.png",
+      "prompt": "Use case: style-transfer. ONE ui/icons/touch production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/icons/lock",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/lock.png",
+      "prompt": "Use case: style-transfer. ONE ui/icons/lock production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/icons/ready",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/ready.png",
+      "prompt": "Use case: style-transfer. ONE ui/icons/ready production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/icons/pause",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/pause.png",
+      "prompt": "Use case: style-transfer. ONE ui/icons/pause production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/icons/sound-on",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons-extra/sound-on.png",
+      "prompt": "Use case: style-transfer. ONE ui/icons/sound-on production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/icons/sound-off",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons-extra/sound-off.png",
+      "prompt": "Use case: style-transfer. ONE ui/icons/sound-off production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/icons/back",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons-extra/back.png",
+      "prompt": "Use case: style-transfer. ONE ui/icons/back production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    },
+    {
+      "name": "ui/icons/settings",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons-extra/settings.png",
+      "prompt": "Use case: style-transfer. ONE ui/icons/settings production asset for a MS-DOS VGA-era volleyball game, circa1994. The reference defines the content and functional composition. Repaint as crisp hand-drawn indexed-color pixel graphics, hard stepped outlines, rich saturated VGA color ramps, compact chunky color planes, only light purposeful dithering. No blur, no smooth gradients, no antialiasing, no painterly grain. DOS shareware UI look: squared steel-gray bevels, dark navy recessed panels, cobalt blue fills, hot golden-yellow selection, offwhite highlights, hard black drop edge. Preserve reference functional shape but simplify ornament to chunky pixel corners. Text-free, no labels or digits. For portrait frames keep middle transparent; for buttons/dialog/input/score panels keep center fully opaque. For icons preserve icon symbol exactly, no lettering.     Whole object fully inside transparent margins, do not clip any edge. Output one game asset only, not a mockup or atlas."
+    }
+  ]
+}

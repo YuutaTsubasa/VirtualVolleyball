@@ -1,0 +1,14 @@
+{
+  "id": "xiaochun",
+  "charName": "小春",
+  "kind": "portraits",
+  "pose": "happy",
+  "namekey": "portrait-happy",
+  "prompt": "Use case: style-transfer. ONE isolated transparent MS-DOS VGA circa 1994 anime head-and-shoulders character expression portrait. Image1 is the exact character, costume, pose/expression and silhouette to preserve. Image2 gives same character's established MS-DOS pixel style and identity; do NOT copy its backdrop or non-sports clothing. orange high ponytail with white bow, teal eyes, blue collared short-sleeve volleyball jersey with white collar and stripes, blue shorts with white side stripes, white socks and blue-white sneakers.  Repaint as carefully hand-drawn DOS VGA indexed-color pixel art, rich saturated 32-to-64-color ramps, strong black stepped contours, chunky readable color clusters, hard edges, confident 2-to-4-tone volume shadows, occasional small highlight pixels. Minimal dithering, keep flat pixel planes clearer than PC98 dense checker patterns. No blur, no soft gradients, no antialias, no painterly noise or modern vector outlines. 256x256 logical pixel portrait enlarged crisp, only bust, consistent reference crop and full hair with margins, no hands. Exact state happy; preserve reference1's emotion and pose exactly. Generous transparent safety padding. No text, frame, scenery or extra objects. True alpha background.",
+  "refs": [
+    "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/xiaochun/portraits/happy.png",
+    "C:/Users/User/Repo/TaiwanMahjong/public/characters/xiaochun/msdos/normal.png"
+  ],
+  "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/msdos-full-v1/characters/xiaochun/sources/portrait-happy.png",
+  "generatedSource": "C:\\Users\\User\\.codex\\generated_images\\01a16553-7540-7903-8958-79d5f168aae2\\exec-dfbda7d7-c649-4073-bd1b-31611b9f1a4e.png"
+}

@@ -1,0 +1,191 @@
+{
+  "character": "ayi",
+  "style": "msdos",
+  "palette": "Up to 64 adaptive VGA colors per image plus transparency",
+  "frames": [
+    "idle",
+    "run1",
+    "run2",
+    "jump",
+    "spike",
+    "dive",
+    "win",
+    "lose"
+  ],
+  "expressions": [
+    "normal",
+    "happy",
+    "surprised",
+    "sad",
+    "win"
+  ],
+  "sheet": {
+    "file": "sprite-sheet.png",
+    "width": 2048,
+    "height": 256,
+    "frameSize": 256,
+    "anchor": [
+      128,
+      248
+    ]
+  },
+  "files": [
+    {
+      "file": "sprites/idle.png",
+      "logical": "logical/sprites-idle.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "7866251f0fe9fb2a25d4a8e286ae7971b7a118339ec3913bb7f7fb4cdd68e68c"
+    },
+    {
+      "file": "sprites/run1.png",
+      "logical": "logical/sprites-run1.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "8e454d807f6264e2a2bb9d4593e7d61aef4d8524544b1216effed25c20fbff65"
+    },
+    {
+      "file": "sprites/run2.png",
+      "logical": "logical/sprites-run2.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 62,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "8f13c556b248f9bdcb5620aa01da9fab412368e51b675be5cf8b9a276af95d78"
+    },
+    {
+      "file": "sprites/jump.png",
+      "logical": "logical/sprites-jump.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 62,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "0a8c6ca5d9bafb20168a77f9479772f13594ea79d970af53b7844601a8710348"
+    },
+    {
+      "file": "sprites/spike.png",
+      "logical": "logical/sprites-spike.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "a64464749677d13e8b0efca0cdefffb0ae60981e83b5d9b635488eac68fdee9e"
+    },
+    {
+      "file": "sprites/dive.png",
+      "logical": "logical/sprites-dive.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "7b9a7d937c7af20a605454d952ce6e7bdb9cba02dc573ffa79b15594bbe422b5"
+    },
+    {
+      "file": "sprites/win.png",
+      "logical": "logical/sprites-win.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "1e12f7ed99905cf41d117564aac7177384d255b6283c2475f36a838dd8b9c4f6"
+    },
+    {
+      "file": "sprites/lose.png",
+      "logical": "logical/sprites-lose.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "c8c694a978c2ecc3cffe78d6f654e76d6a947e7ee8ffc4ca7df09ca22d87f7c7"
+    },
+    {
+      "file": "portraits/normal.png",
+      "logical": "logical/portraits-normal.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "1ca164a9597be3a4e09246fa200fcf0f8773d301ba2f0bc5fcf09a4ae6a6fe2e"
+    },
+    {
+      "file": "portraits/happy.png",
+      "logical": "logical/portraits-happy.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "c15343650a67c4d69183282f40139fabe2b60051c08d0d520e370f3ec6ca29f3"
+    },
+    {
+      "file": "portraits/surprised.png",
+      "logical": "logical/portraits-surprised.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "30e81db6bd95b7a8e06e045512c6e99a093c5925afc8cabf3dea5616ce629d5b"
+    },
+    {
+      "file": "portraits/sad.png",
+      "logical": "logical/portraits-sad.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "8a9292435c4e97459e29e052fac387ba412ddc673b5fc5bb5016a6c1f048f821"
+    },
+    {
+      "file": "portraits/win.png",
+      "logical": "logical/portraits-win.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "ef69a905b2d6a8ce287e11088a2ddbb9b1aad60edbeec4c21b98e87638aef65c"
+    }
+  ],
+  "source": "New image_gen repaints; adaptive indexed-color palette and integer grid export. Not an emulation of original MS-DOS hardware."
+}

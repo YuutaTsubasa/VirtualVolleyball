@@ -1,0 +1,15 @@
+{
+  "id": "lanjie",
+  "charName": "蘭姐",
+  "kind": "sprites",
+  "pose": "dive",
+  "namekey": "dive",
+  "prompt": "Use case: precise-object-edit. Image 1 is the existing completed transparent MS-DOS VGA game asset and exact edit target. Image 2 is the original identity reference. Make ONE very small correction: change both eye irises from brown to clearly visible lavender-purple/violet, matching Image 2's purple eyes. Preserve the black pupils and tiny white highlights. Keep the gold rectangular glasses exactly gold. Keep every other part of Image 1 unchanged: same face, expression, purple updo, red/gold volleyball uniform, body pose, silhouette, framing, crisp stepped pixel edges, flat 64-color VGA shading and transparent alpha background. The subject is an adult woman volleyball athlete. No scenery, text, new objects or changes to composition.",
+  "refs": [
+    "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/msdos-full-v1/characters/lanjie/sources/dive.png.before-eye-fix.png",
+    "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/lanjie/sprites/dive.png"
+  ],
+  "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/msdos-full-v1/characters/lanjie/sources/dive.png",
+  "generatedSource": "C:\\Users\\User\\.codex\\generated_images\\01a16553-7540-7903-8958-79d5f168aae2\\exec-0fea32a6-4f01-4f08-99bc-07eb73d97be5.png",
+  "correction": "Violet iris correction; original production prompt had incorrect brown eyes."
+}

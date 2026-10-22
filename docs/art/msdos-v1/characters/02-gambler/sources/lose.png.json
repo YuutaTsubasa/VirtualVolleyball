@@ -1,0 +1,10 @@
+{
+  "prompt": "Use case: style-transfer. ONE isolated transparent MS-DOS VGA circa 1994 anime fullbody volleyball game sprite. Image1 is the exact character, costume, pose/expression and silhouette to preserve. Image2 gives same character's established MS-DOS pixel style and identity; do NOT copy its backdrop or non-sports clothing. mature muscular gambler uncle, swept dark gray hair, distinctly weathered face with full short beard and mustache, tan skin, navy/gold sports kit.  Repaint as carefully hand-drawn DOS VGA indexed-color pixel art, rich saturated 32-to-64-color ramps, strong black stepped contours, chunky readable color clusters, hard edges, confident 2-to-4-tone volume shadows, occasional small highlight pixels. Minimal dithering, keep flat pixel planes clearer than PC98 dense checker patterns. No blur, no soft gradients, no antialias, no painterly noise or modern vector outlines. 256x256 logical sprite enlarged with nearest crisp square pixels. WHOLE 3-head-tall body facing RIGHT, all hands, feet, hair/tail inside canvas, no ground shadow, no ball. Exact state lose; preserve reference1's emotion and pose exactly. Generous transparent safety padding. No text, frame, scenery or extra objects. True alpha background.",
+  "references": [
+    "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/02-gambler/sprites/lose.png",
+    "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/02-gambler/msdos/normal.png"
+  ],
+  "generatedSource": "C:\\Users\\User\\.codex\\generated_images\\01a16553-fac9-7c01-9196-8af7655a31b6\\exec-585d45e7-eeb3-4f24-ab56-032066107526.png",
+  "tool": "image_gen",
+  "transparent_background": true
+}

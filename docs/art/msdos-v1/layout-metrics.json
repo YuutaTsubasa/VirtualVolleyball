@@ -1,0 +1,51 @@
+{
+  "coordinateSystem": "PNG pixels; half-open bounds",
+  "scorePanel": {
+    "size": [
+      800,
+      200
+    ],
+    "leftWellBounds": [
+      96,
+      56,
+      338,
+      148
+    ],
+    "rightWellBounds": [
+      462,
+      56,
+      704,
+      148
+    ],
+    "leftCenter": [
+      217,
+      102
+    ],
+    "rightCenter": [
+      583,
+      102
+    ],
+    "normalizedCenters": [
+      [
+        0.27125,
+        0.51
+      ],
+      [
+        0.72875,
+        0.51
+      ]
+    ]
+  },
+  "net": {
+    "size": [
+      192,
+      1024
+    ],
+    "nearPostWhiteBandTop": [
+      104,
+      218
+    ],
+    "poleBottomExclusive": 1016,
+    "description": "Align net white band close to pole using x104,y218; red antenna extends above net."
+  }
+}

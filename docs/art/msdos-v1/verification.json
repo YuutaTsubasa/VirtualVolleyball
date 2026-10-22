@@ -1,0 +1,3419 @@
+{
+  "complete": true,
+  "productionPNGCount": 181,
+  "failures": [],
+  "files": [
+    {
+      "file": "characters/xiaocui/sprites/idle.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaocui",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 138,
+        "top": 156,
+        "width": 234,
+        "height": 340
+      },
+      "sha256": "7b47a8da8a3ff6e111fa42b41ea7c6c6918438a70818897b037364be2c42f904"
+    },
+    {
+      "file": "characters/xiaocui/sprites/run1.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaocui",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 122,
+        "top": 208,
+        "width": 266,
+        "height": 288
+      },
+      "sha256": "651217039786316578865789385fb65509a76e51a753c482b9a300ffbfc0aa66"
+    },
+    {
+      "file": "characters/xiaocui/sprites/run2.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaocui",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 128,
+        "top": 182,
+        "width": 254,
+        "height": 314
+      },
+      "sha256": "3b3003b8344ad9d4f64964e167a88ff75e54e9e201d5e1b3e6cc6366c3ab9d0f"
+    },
+    {
+      "file": "characters/xiaocui/sprites/jump.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaocui",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 112,
+        "top": 144,
+        "width": 286,
+        "height": 352
+      },
+      "sha256": "bae3fda9ac5f3da7f80375410212f493df99b8dfb94d01d792cc188392908449"
+    },
+    {
+      "file": "characters/xiaocui/sprites/spike.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaocui",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 52,
+        "top": 122,
+        "width": 406,
+        "height": 374
+      },
+      "sha256": "a236070226ddf8aba14d85b345620767e5fd44482ef815800010650834d1b960"
+    },
+    {
+      "file": "characters/xiaocui/sprites/dive.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaocui",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 54,
+        "top": 290,
+        "width": 402,
+        "height": 206
+      },
+      "sha256": "aaaa5c6757156920f003ecf2b2c1395fec5fd51adc034278821e6c17c06fda50"
+    },
+    {
+      "file": "characters/xiaocui/sprites/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaocui",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 136,
+        "top": 166,
+        "width": 238,
+        "height": 330
+      },
+      "sha256": "d817d4499286b30b1000df3a34b21bee6dcc40fa124a871194c7ccf888e159ba"
+    },
+    {
+      "file": "characters/xiaocui/sprites/lose.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaocui",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 146,
+        "top": 156,
+        "width": 220,
+        "height": 340
+      },
+      "sha256": "737a2c5935e782ca34ca4b84f857be1aa70afc150b68502f000a48b87a421d8c"
+    },
+    {
+      "file": "characters/xiaocui/portraits/normal.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaocui",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 24,
+        "width": 462,
+        "height": 464
+      },
+      "sha256": "f2a9916178a1f832cf2e4c587518ac20165d6470d07dbed686e097da653db028"
+    },
+    {
+      "file": "characters/xiaocui/portraits/happy.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaocui",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 58,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 24,
+        "width": 464,
+        "height": 464
+      },
+      "sha256": "109d5c0f3a289e44b087c285783136350b8723077f131de830f8a021ff01f9e1"
+    },
+    {
+      "file": "characters/xiaocui/portraits/surprised.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaocui",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 26,
+        "top": 24,
+        "width": 458,
+        "height": 464
+      },
+      "sha256": "1ace445d7264e6442d57942fd9e6c5c414905e23cce1aab5e4d83403a07f97c7"
+    },
+    {
+      "file": "characters/xiaocui/portraits/sad.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaocui",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 26,
+        "top": 24,
+        "width": 460,
+        "height": 464
+      },
+      "sha256": "fcd1bdf3bdc7885b9d0861d986dfefd3c4a9f7f120b6ebaeac3ee09beff59eeb"
+    },
+    {
+      "file": "characters/xiaocui/portraits/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaocui",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 26,
+        "width": 464,
+        "height": 462
+      },
+      "sha256": "ec4378a1818a317026ff888321b8beba96d684dd4da4ad15856886104c128bab"
+    },
+    {
+      "file": "characters/xiaocui/sprite-sheet.png",
+      "w": 2048,
+      "h": 256,
+      "grid": 1,
+      "character": "xiaocui",
+      "kind": "sheet",
+      "width": 2048,
+      "height": 256,
+      "colors": 497,
+      "alpha": "binary",
+      "bounds": {
+        "left": 69,
+        "top": 61,
+        "width": 1906,
+        "height": 187
+      },
+      "sha256": "2d9959b68d6b001bf2554a2ea358335746f6c2a04ea006acb1f456de714ec1c1"
+    },
+    {
+      "file": "characters/yuehua/sprites/idle.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "yuehua",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 32,
+      "alpha": "binary",
+      "bounds": {
+        "left": 146,
+        "top": 178,
+        "width": 218,
+        "height": 318
+      },
+      "sha256": "8d9fcd80a5a39a6b31d534157a7609897e4b357ca105850a06299e35f515bcd9"
+    },
+    {
+      "file": "characters/yuehua/sprites/run1.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "yuehua",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 122,
+        "top": 218,
+        "width": 266,
+        "height": 278
+      },
+      "sha256": "c180aac2559dec98c4f2413024284a05f2705c63106123f202efd0e717c5c271"
+    },
+    {
+      "file": "characters/yuehua/sprites/run2.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "yuehua",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 134,
+        "top": 204,
+        "width": 244,
+        "height": 292
+      },
+      "sha256": "4aba734d4208d9dc04e78c0e579bb0ef645f27843e8ab97471606f7c13238c00"
+    },
+    {
+      "file": "characters/yuehua/sprites/jump.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "yuehua",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 128,
+        "top": 174,
+        "width": 254,
+        "height": 322
+      },
+      "sha256": "f02893224353a5414f5799bf74a8387bbf70b6e1d207e4edfe86783e504226d6"
+    },
+    {
+      "file": "characters/yuehua/sprites/spike.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "yuehua",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 94,
+        "top": 192,
+        "width": 322,
+        "height": 304
+      },
+      "sha256": "4befd6c095dc60b18fed20d7b05de8aab4f285db74f7d8b8613698d602465490"
+    },
+    {
+      "file": "characters/yuehua/sprites/dive.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "yuehua",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 76,
+        "top": 334,
+        "width": 360,
+        "height": 162
+      },
+      "sha256": "ff9e4fb73e21782ab5970ca8a767873753b9390daddc3050c42ccf9561721574"
+    },
+    {
+      "file": "characters/yuehua/sprites/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "yuehua",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 52,
+      "alpha": "binary",
+      "bounds": {
+        "left": 140,
+        "top": 174,
+        "width": 230,
+        "height": 322
+      },
+      "sha256": "fb03828ce3721baad9eda51de9de1c47ca9669584d546ba31061939066152bc0"
+    },
+    {
+      "file": "characters/yuehua/sprites/lose.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "yuehua",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 162,
+        "top": 174,
+        "width": 188,
+        "height": 322
+      },
+      "sha256": "54c938983f7b82797fd1d71376e8aee746b48e83273e745891346507e8ca39c3"
+    },
+    {
+      "file": "characters/yuehua/portraits/normal.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "yuehua",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 30,
+        "top": 24,
+        "width": 450,
+        "height": 464
+      },
+      "sha256": "92c97a90c2a759feadab3efeab6024f68bfaf1387fb7cbd043a49c2478b9b7d2"
+    },
+    {
+      "file": "characters/yuehua/portraits/happy.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "yuehua",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 28,
+        "width": 464,
+        "height": 460
+      },
+      "sha256": "f52788f38599495c6de91af767bc98afb1d5c5c4108ea5842e23581a28392a30"
+    },
+    {
+      "file": "characters/yuehua/portraits/surprised.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "yuehua",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 28,
+        "top": 24,
+        "width": 456,
+        "height": 464
+      },
+      "sha256": "1d557648c0cbaafd4a4dc6b8bac810c434330f0d860e475fefc7494ef155f750"
+    },
+    {
+      "file": "characters/yuehua/portraits/sad.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "yuehua",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 28,
+        "top": 24,
+        "width": 454,
+        "height": 464
+      },
+      "sha256": "3c01070bcdd402853ad26ad8acf443b5131bf2af6673e2a46625e77a88800193"
+    },
+    {
+      "file": "characters/yuehua/portraits/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "yuehua",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 30,
+        "top": 24,
+        "width": 452,
+        "height": 464
+      },
+      "sha256": "3a70cf4a97f719c69ba60ab645ee49006489ffd55120e359241df604145f7d8d"
+    },
+    {
+      "file": "characters/yuehua/sprite-sheet.png",
+      "w": 2048,
+      "h": 256,
+      "grid": 1,
+      "character": "yuehua",
+      "kind": "sheet",
+      "width": 2048,
+      "height": 256,
+      "colors": 457,
+      "alpha": "binary",
+      "bounds": {
+        "left": 73,
+        "top": 87,
+        "width": 1894,
+        "height": 161
+      },
+      "sha256": "dd5d2103f436c3bab1de705728164505a36af080629b6b5893d98ee7d20f7963"
+    },
+    {
+      "file": "characters/aming/sprites/idle.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "aming",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 148,
+        "top": 184,
+        "width": 214,
+        "height": 312
+      },
+      "sha256": "b84eb1e950a7535c68af66a33485f7b646ff3e1e6deb2e17319cb5c0922d7074"
+    },
+    {
+      "file": "characters/aming/sprites/run1.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "aming",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 108,
+        "top": 188,
+        "width": 294,
+        "height": 308
+      },
+      "sha256": "cf65e301633f5b3a18767dd16277e578c52905bd2d2b62bdf1cf22bbcad623ed"
+    },
+    {
+      "file": "characters/aming/sprites/run2.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "aming",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 138,
+        "top": 168,
+        "width": 236,
+        "height": 328
+      },
+      "sha256": "2d651e87b89b6232c6f785953d82d02aff32fee31044cf612f92c73572de5c6b"
+    },
+    {
+      "file": "characters/aming/sprites/jump.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "aming",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 122,
+        "top": 138,
+        "width": 266,
+        "height": 358
+      },
+      "sha256": "fafa51ede01f79b41882b51a43c2502c285fd4089e2f01f835244926ce60238a"
+    },
+    {
+      "file": "characters/aming/sprites/spike.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "aming",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 110,
+        "top": 174,
+        "width": 290,
+        "height": 322
+      },
+      "sha256": "ccff1d12b7e1cd64107f09b2ae9e4840373452e0180901cf7a3acbf78f00e457"
+    },
+    {
+      "file": "characters/aming/sprites/dive.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "aming",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 56,
+        "top": 320,
+        "width": 400,
+        "height": 176
+      },
+      "sha256": "2fa2e4feacb67d9b0888a2d813f5fdbdd25938388050df1805a3ac18e822f304"
+    },
+    {
+      "file": "characters/aming/sprites/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "aming",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 146,
+        "top": 166,
+        "width": 220,
+        "height": 330
+      },
+      "sha256": "7081001d034e1c733b6dd4d7b8a1998273b4600059f1540cd3e1e3fc7a584f99"
+    },
+    {
+      "file": "characters/aming/sprites/lose.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "aming",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 158,
+        "top": 176,
+        "width": 194,
+        "height": 320
+      },
+      "sha256": "04af952c807a566039ff61f9ca82ee9d444ce7d9d7c01a8e84fbd0c7a84d3ac5"
+    },
+    {
+      "file": "characters/aming/portraits/normal.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "aming",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 26,
+        "width": 464,
+        "height": 462
+      },
+      "sha256": "c0192b32e075b6a024dd860e559fc24435fc31b32d75b9693fb42d254e6665aa"
+    },
+    {
+      "file": "characters/aming/portraits/happy.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "aming",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 34,
+        "width": 464,
+        "height": 454
+      },
+      "sha256": "b034c300e1104bfa53da53e9b66940741625824f6f016fc863419453dad293fa"
+    },
+    {
+      "file": "characters/aming/portraits/surprised.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "aming",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 24,
+        "width": 462,
+        "height": 464
+      },
+      "sha256": "3289c5629f59ada235dec0d0f9efc1ffeef4570e901f2f9778e7a4b27f44c949"
+    },
+    {
+      "file": "characters/aming/portraits/sad.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "aming",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 24,
+        "width": 464,
+        "height": 464
+      },
+      "sha256": "71dbd89d0c80426aba7194a93031c1648325d9d50952a5b44bb265e62ad95390"
+    },
+    {
+      "file": "characters/aming/portraits/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "aming",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 26,
+        "width": 464,
+        "height": 462
+      },
+      "sha256": "33cf4f3c6390d230131619c124f2bd417db8b41936c73c1f71289b310f4a6f3b"
+    },
+    {
+      "file": "characters/aming/sprite-sheet.png",
+      "w": 2048,
+      "h": 256,
+      "grid": 1,
+      "character": "aming",
+      "kind": "sheet",
+      "width": 2048,
+      "height": 256,
+      "colors": 495,
+      "alpha": "binary",
+      "bounds": {
+        "left": 74,
+        "top": 69,
+        "width": 1894,
+        "height": 179
+      },
+      "sha256": "a664523a2b336a5fec09208e9e7d77c178d5da6fe37e47913b8996f9431fa02a"
+    },
+    {
+      "file": "characters/tangtang/sprites/idle.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "tangtang",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 164,
+        "top": 182,
+        "width": 184,
+        "height": 314
+      },
+      "sha256": "f5da317f2cd17a34bdd601c51a8cec483adf87579636d0af74f3146f5be25693"
+    },
+    {
+      "file": "characters/tangtang/sprites/run1.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "tangtang",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 35,
+      "alpha": "binary",
+      "bounds": {
+        "left": 120,
+        "top": 206,
+        "width": 270,
+        "height": 290
+      },
+      "sha256": "f426c59d57727215573955a47900d88329478f4a7c484c536ace331ee2194891"
+    },
+    {
+      "file": "characters/tangtang/sprites/run2.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "tangtang",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 160,
+        "top": 192,
+        "width": 192,
+        "height": 304
+      },
+      "sha256": "2c9fef29e8afce99283c5cc9717c40a8533981c803d66d1879ed0393a978eb00"
+    },
+    {
+      "file": "characters/tangtang/sprites/jump.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "tangtang",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 38,
+      "alpha": "binary",
+      "bounds": {
+        "left": 150,
+        "top": 194,
+        "width": 212,
+        "height": 302
+      },
+      "sha256": "0b9a5fb83b2761c53b3840b1b4bb843065f9e2718d28350f9f21b1da29b76ef4"
+    },
+    {
+      "file": "characters/tangtang/sprites/spike.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "tangtang",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 110,
+        "top": 170,
+        "width": 292,
+        "height": 326
+      },
+      "sha256": "dac09f1cf3815cf9816f819be7b557e8e07117ac73aeb8f3e71bd954edc4a5f3"
+    },
+    {
+      "file": "characters/tangtang/sprites/dive.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "tangtang",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 64,
+        "top": 316,
+        "width": 382,
+        "height": 180
+      },
+      "sha256": "d72f33913eeaaddc365102da879e4774a1a63344f46585386cfd70a96df8a7ff"
+    },
+    {
+      "file": "characters/tangtang/sprites/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "tangtang",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 35,
+      "alpha": "binary",
+      "bounds": {
+        "left": 166,
+        "top": 174,
+        "width": 180,
+        "height": 322
+      },
+      "sha256": "7a92636a13f7f6ecd2db2f9404cee4cd1ff8bdf5abd751f0932905673b9812e3"
+    },
+    {
+      "file": "characters/tangtang/sprites/lose.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "tangtang",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 178,
+        "top": 170,
+        "width": 154,
+        "height": 326
+      },
+      "sha256": "10bd142cf9358ceabb9f2e8ff20a903ff7298d3df60cc80f7b0b947f1cfa1fa0"
+    },
+    {
+      "file": "characters/tangtang/portraits/normal.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "tangtang",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 38,
+        "top": 24,
+        "width": 434,
+        "height": 464
+      },
+      "sha256": "c1535ceb512cb401921a280832db7524af3747570eab3397acfdb8af846540c2"
+    },
+    {
+      "file": "characters/tangtang/portraits/happy.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "tangtang",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 40,
+        "top": 24,
+        "width": 430,
+        "height": 464
+      },
+      "sha256": "9e1c5ad21b559e4887f651de00e305bea1b11cfddf6afde67d563cd659911eb3"
+    },
+    {
+      "file": "characters/tangtang/portraits/surprised.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "tangtang",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 48,
+        "top": 24,
+        "width": 416,
+        "height": 464
+      },
+      "sha256": "ef262fa78ef83e3f6fcdc71558c13f748470d2ba8939bbc90fa12e0a5043fd65"
+    },
+    {
+      "file": "characters/tangtang/portraits/sad.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "tangtang",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 50,
+        "top": 24,
+        "width": 412,
+        "height": 464
+      },
+      "sha256": "54edc4a71d61d3650a92e3bf4e4d0aed4aec92cb3e91c28dead861cb3252c1a3"
+    },
+    {
+      "file": "characters/tangtang/portraits/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "tangtang",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 44,
+        "top": 24,
+        "width": 422,
+        "height": 464
+      },
+      "sha256": "77137f8a309f6455bad6d2d218db5aa5e143cbde302b8d1aa918ce55a4cba67d"
+    },
+    {
+      "file": "characters/tangtang/sprite-sheet.png",
+      "w": 2048,
+      "h": 256,
+      "grid": 1,
+      "character": "tangtang",
+      "kind": "sheet",
+      "width": 2048,
+      "height": 256,
+      "colors": 417,
+      "alpha": "binary",
+      "bounds": {
+        "left": 82,
+        "top": 85,
+        "width": 1876,
+        "height": 163
+      },
+      "sha256": "287726d20d0b7ba332bec580d21a5492adf29fa18df3da65571d6cf261fc1aae"
+    },
+    {
+      "file": "characters/xiaochun/sprites/idle.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaochun",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 138,
+        "top": 134,
+        "width": 236,
+        "height": 362
+      },
+      "sha256": "2b7b1c8e1a925858174788f62a8911cf193044d61fdab2ceb91de623a4e7195b"
+    },
+    {
+      "file": "characters/xiaochun/sprites/run1.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaochun",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 126,
+        "top": 176,
+        "width": 258,
+        "height": 320
+      },
+      "sha256": "6be49e3ba5582f6c120d3d0264f543c1dd40d4eb822abc3735ddb64e527b893b"
+    },
+    {
+      "file": "characters/xiaochun/sprites/run2.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaochun",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 136,
+        "top": 188,
+        "width": 240,
+        "height": 308
+      },
+      "sha256": "bc63c09f498a468e6ee8ebf89062b527f25f2216c99b1d0f2cb0639d6edab46e"
+    },
+    {
+      "file": "characters/xiaochun/sprites/jump.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaochun",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 86,
+        "top": 146,
+        "width": 338,
+        "height": 350
+      },
+      "sha256": "3e5de056347f6a20306fb9a1655138bbef02f1b6a8ccd0f2aa753e9713106748"
+    },
+    {
+      "file": "characters/xiaochun/sprites/spike.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaochun",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 86,
+        "top": 152,
+        "width": 338,
+        "height": 344
+      },
+      "sha256": "7ffbbc963162eaa5ac2ed4a29e847fdc386004380b604eb289bc3dff2599bb55"
+    },
+    {
+      "file": "characters/xiaochun/sprites/dive.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaochun",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 50,
+        "top": 286,
+        "width": 412,
+        "height": 210
+      },
+      "sha256": "4cf7bd8e0a1184eabede5c5e966651cfd4fda9a1326057372d0a06020ea6775e"
+    },
+    {
+      "file": "characters/xiaochun/sprites/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaochun",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 120,
+        "top": 166,
+        "width": 272,
+        "height": 330
+      },
+      "sha256": "a2b85fdca90e32de1beeab25ca88bffc032122efea94ac04473b0da7556906a5"
+    },
+    {
+      "file": "characters/xiaochun/sprites/lose.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaochun",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 110,
+        "top": 178,
+        "width": 290,
+        "height": 318
+      },
+      "sha256": "acfae1e23baa633b337dbb59eecaf2cd539e1a79a2899c5841ed8e858ca3e249"
+    },
+    {
+      "file": "characters/xiaochun/portraits/normal.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaochun",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 61,
+      "alpha": "binary",
+      "bounds": {
+        "left": 34,
+        "top": 24,
+        "width": 442,
+        "height": 464
+      },
+      "sha256": "8ae452e5286abc7f200468e61a17bfd4f7c451ac2894186a0ef1222e219ece71"
+    },
+    {
+      "file": "characters/xiaochun/portraits/happy.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaochun",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 28,
+        "top": 24,
+        "width": 454,
+        "height": 464
+      },
+      "sha256": "df0a4401c802bb2605c466def9c87983c26c50a7726c8361263021df0950bcee"
+    },
+    {
+      "file": "characters/xiaochun/portraits/surprised.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaochun",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 30,
+        "top": 24,
+        "width": 452,
+        "height": 464
+      },
+      "sha256": "28ecb95db2ef957515b16c9b59ce98e95dab301579dc14ae62b70193f450c738"
+    },
+    {
+      "file": "characters/xiaochun/portraits/sad.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaochun",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 30,
+        "top": 24,
+        "width": 452,
+        "height": 464
+      },
+      "sha256": "8116d0e91ac2bd02d0698b9fe67b4752c75bd5f409d47277f5accd6d2cde971d"
+    },
+    {
+      "file": "characters/xiaochun/portraits/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "xiaochun",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 26,
+        "top": 24,
+        "width": 460,
+        "height": 464
+      },
+      "sha256": "e35b1be86223f8556abd20c456ca56ec2f429e1466c27fc497cb043a0da10ac6"
+    },
+    {
+      "file": "characters/xiaochun/sprite-sheet.png",
+      "w": 2048,
+      "h": 256,
+      "grid": 1,
+      "character": "xiaochun",
+      "kind": "sheet",
+      "width": 2048,
+      "height": 256,
+      "colors": 488,
+      "alpha": "binary",
+      "bounds": {
+        "left": 69,
+        "top": 67,
+        "width": 1923,
+        "height": 181
+      },
+      "sha256": "8357005caeb37ed633f39800af76e19ef9b06629354b329440cb7794b288063e"
+    },
+    {
+      "file": "characters/lanjie/sprites/idle.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "lanjie",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 158,
+        "top": 166,
+        "width": 196,
+        "height": 330
+      },
+      "sha256": "34fe0654453c897b44c05f517a3cd9d7856f7fad1823fc1d7031d3a886a265b1"
+    },
+    {
+      "file": "characters/lanjie/sprites/run1.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "lanjie",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 116,
+        "top": 170,
+        "width": 278,
+        "height": 326
+      },
+      "sha256": "2c6cbef8a19e242607b0757b0741ef94f70c6a5b092067832ad957da1ae33e6d"
+    },
+    {
+      "file": "characters/lanjie/sprites/run2.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "lanjie",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 150,
+        "top": 156,
+        "width": 210,
+        "height": 340
+      },
+      "sha256": "7a8aa4fccf78cab00da9308b31da59aa63691aa85d7d6d8de493175faa14d09d"
+    },
+    {
+      "file": "characters/lanjie/sprites/jump.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "lanjie",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 35,
+      "alpha": "binary",
+      "bounds": {
+        "left": 132,
+        "top": 46,
+        "width": 248,
+        "height": 450
+      },
+      "sha256": "4b4152aa8cdf7cbe2c9732e9bee8d3727393eba2c6c93b24e1ccf6b4ad977944"
+    },
+    {
+      "file": "characters/lanjie/sprites/spike.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "lanjie",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 102,
+        "top": 158,
+        "width": 306,
+        "height": 338
+      },
+      "sha256": "86ac086876be4c6d6ef498d6f042c7c9c55b3d4cd56e768d51a796d769988b94"
+    },
+    {
+      "file": "characters/lanjie/sprites/dive.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "lanjie",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 60,
+        "top": 308,
+        "width": 390,
+        "height": 188
+      },
+      "sha256": "7a9dda68b8898e659b148ecb8964053ddedbf7b116ca3f2803cdcef2d5a7fc17"
+    },
+    {
+      "file": "characters/lanjie/sprites/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "lanjie",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 154,
+        "top": 160,
+        "width": 202,
+        "height": 336
+      },
+      "sha256": "f1090a0a5ef7e93b9316050958058c23bfd8cd289dca2fec4720a03393c9cc66"
+    },
+    {
+      "file": "characters/lanjie/sprites/lose.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "lanjie",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 170,
+        "top": 158,
+        "width": 172,
+        "height": 338
+      },
+      "sha256": "cd94ab874dce521e75b59b174c13aa69867d6df7a0e3a6d916a2b65b8a4a1ac1"
+    },
+    {
+      "file": "characters/lanjie/portraits/normal.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "lanjie",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 56,
+        "top": 24,
+        "width": 400,
+        "height": 464
+      },
+      "sha256": "9cee665e9b79ccf889fa0e730a9826f005f5449e76cda28ec90bd3540c3406e9"
+    },
+    {
+      "file": "characters/lanjie/portraits/happy.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "lanjie",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 52,
+        "top": 24,
+        "width": 406,
+        "height": 464
+      },
+      "sha256": "4716deae48b5bfaf8495d21145c701440680b90d5cc0775803576ee98a9b1adf"
+    },
+    {
+      "file": "characters/lanjie/portraits/surprised.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "lanjie",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 60,
+        "top": 24,
+        "width": 392,
+        "height": 464
+      },
+      "sha256": "6930491ccc22d44be76c08585bb56fa4b68dd76937a11e102cf465cd0e6ebdad"
+    },
+    {
+      "file": "characters/lanjie/portraits/sad.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "lanjie",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 56,
+        "top": 24,
+        "width": 400,
+        "height": 464
+      },
+      "sha256": "79a2cdc1dfbfc2a117c1b361c62f2e6f986373a9aadd5e6494de3d99eb4e85dc"
+    },
+    {
+      "file": "characters/lanjie/portraits/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "lanjie",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 60,
+        "top": 24,
+        "width": 390,
+        "height": 464
+      },
+      "sha256": "acd82b51876805ec78135e0d874dbfc8cbc42158bc2fde43356993d847a4ca49"
+    },
+    {
+      "file": "characters/lanjie/sprite-sheet.png",
+      "w": 2048,
+      "h": 256,
+      "grid": 1,
+      "character": "lanjie",
+      "kind": "sheet",
+      "width": 2048,
+      "height": 256,
+      "colors": 468,
+      "alpha": "binary",
+      "bounds": {
+        "left": 79,
+        "top": 23,
+        "width": 1884,
+        "height": 225
+      },
+      "sha256": "97fcb4abb296c749fd83421b88ce079127b539feea279c21c449557dc2dc009b"
+    },
+    {
+      "file": "characters/01-wolf/sprites/idle.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "01-wolf",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 128,
+        "top": 168,
+        "width": 254,
+        "height": 328
+      },
+      "sha256": "7cc061be6fac8ba9a196aac6632e40b5b66c7869f42a4edd7eaa6d2ceb81ca5f"
+    },
+    {
+      "file": "characters/01-wolf/sprites/run1.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "01-wolf",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 100,
+        "top": 172,
+        "width": 312,
+        "height": 324
+      },
+      "sha256": "a1e9a828269791533b8dc6cb37848ce169eef1f49947fcbbc828c6aa254e2f3e"
+    },
+    {
+      "file": "characters/01-wolf/sprites/run2.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "01-wolf",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 96,
+        "top": 172,
+        "width": 320,
+        "height": 324
+      },
+      "sha256": "642156be310c6d31fc148cf908b2b05ca5a6aeaf067953e94768127c93b74e13"
+    },
+    {
+      "file": "characters/01-wolf/sprites/jump.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "01-wolf",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 110,
+        "top": 40,
+        "width": 290,
+        "height": 456
+      },
+      "sha256": "01d1094007f9f9b27aac690cfbbde3b6aa6125aa9d89e07dc76b1cdbc4d7ee06"
+    },
+    {
+      "file": "characters/01-wolf/sprites/spike.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "01-wolf",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 90,
+        "top": 160,
+        "width": 330,
+        "height": 336
+      },
+      "sha256": "1767755401c19cb83115aee6a019001caafe99d79e79c7bbdaadb2fb4f28bb99"
+    },
+    {
+      "file": "characters/01-wolf/sprites/dive.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "01-wolf",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 54,
+        "top": 306,
+        "width": 402,
+        "height": 190
+      },
+      "sha256": "544633d6ae1c0d23c07f8db9595e914f90dff4b63a225f317995857f1a226913"
+    },
+    {
+      "file": "characters/01-wolf/sprites/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "01-wolf",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 128,
+        "top": 164,
+        "width": 254,
+        "height": 332
+      },
+      "sha256": "ba5b16d0566326a2b18f66d040240cee8dd97e948d0897f4c4925237f3bc2179"
+    },
+    {
+      "file": "characters/01-wolf/sprites/lose.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "01-wolf",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 126,
+        "top": 160,
+        "width": 260,
+        "height": 336
+      },
+      "sha256": "6d39e9b81a7b1b59cea4d8591da7af6835cfa604df49d8530f949e8810658d45"
+    },
+    {
+      "file": "characters/01-wolf/portraits/normal.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "01-wolf",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 42,
+        "top": 24,
+        "width": 426,
+        "height": 464
+      },
+      "sha256": "ef325db3d3acb8ac7066644a406c180ce0dffd249ffb577668dc1bb902c9e2a1"
+    },
+    {
+      "file": "characters/01-wolf/portraits/happy.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "01-wolf",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 42,
+        "top": 24,
+        "width": 426,
+        "height": 464
+      },
+      "sha256": "1d9f14e061ecafbe727db8bd38e893a8b4130e70324ab79410ce722513afacf6"
+    },
+    {
+      "file": "characters/01-wolf/portraits/surprised.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "01-wolf",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 36,
+        "top": 24,
+        "width": 440,
+        "height": 464
+      },
+      "sha256": "51680e79b8fc3237cad3a9f31c51abb12b377aa8eb67620556f7a2653b1fea98"
+    },
+    {
+      "file": "characters/01-wolf/portraits/sad.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "01-wolf",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 38,
+        "top": 24,
+        "width": 434,
+        "height": 464
+      },
+      "sha256": "3fddaea8f80a005127223d8c4160efe4703b3d890cb289695540cead92b7a62a"
+    },
+    {
+      "file": "characters/01-wolf/portraits/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "01-wolf",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 40,
+        "top": 24,
+        "width": 430,
+        "height": 464
+      },
+      "sha256": "b6651ce4a723d7c7e28e91d3849ec0e4c4f14d75a75cafedab68c5b71a88fbaa"
+    },
+    {
+      "file": "characters/01-wolf/sprite-sheet.png",
+      "w": 2048,
+      "h": 256,
+      "grid": 1,
+      "character": "01-wolf",
+      "kind": "sheet",
+      "width": 2048,
+      "height": 256,
+      "colors": 495,
+      "alpha": "binary",
+      "bounds": {
+        "left": 64,
+        "top": 20,
+        "width": 1921,
+        "height": 228
+      },
+      "sha256": "39dc978d949c1e45c5b1115df319560c73cf1951d2d42eee72c7bc77a1bb37db"
+    },
+    {
+      "file": "characters/02-gambler/sprites/idle.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "02-gambler",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 44,
+      "alpha": "binary",
+      "bounds": {
+        "left": 174,
+        "top": 218,
+        "width": 164,
+        "height": 278
+      },
+      "sha256": "e5409bf10f354ce71b15cc9dec49fae057eff49f85c4bbec08ad10327d5dd733"
+    },
+    {
+      "file": "characters/02-gambler/sprites/run1.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "02-gambler",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 148,
+        "top": 242,
+        "width": 216,
+        "height": 254
+      },
+      "sha256": "a8de44768d36b0c769cf27d18c4825db58a59378836eb8875683fbf15ec89bd5"
+    },
+    {
+      "file": "characters/02-gambler/sprites/run2.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "02-gambler",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 61,
+      "alpha": "binary",
+      "bounds": {
+        "left": 168,
+        "top": 250,
+        "width": 176,
+        "height": 246
+      },
+      "sha256": "e0531ee5fbe055570d71e161ee92329b9e7c8a25ad735aae3bdd87c7a8ae8d7e"
+    },
+    {
+      "file": "characters/02-gambler/sprites/jump.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "02-gambler",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 150,
+        "top": 156,
+        "width": 210,
+        "height": 340
+      },
+      "sha256": "a9e99db88c510798aabbefb909653ff37df084157742e2f6191ed8e192c3ce48"
+    },
+    {
+      "file": "characters/02-gambler/sprites/spike.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "02-gambler",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 110,
+        "top": 204,
+        "width": 290,
+        "height": 292
+      },
+      "sha256": "ddcc6444759641e4762c0bef5c481dc4b6af1dc5a309679ee8a6d9dcac3e24db"
+    },
+    {
+      "file": "characters/02-gambler/sprites/dive.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "02-gambler",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 102,
+        "top": 368,
+        "width": 308,
+        "height": 128
+      },
+      "sha256": "0d78ca0b727815464d258be90a4512b4feeeead07e4ce005eba5f14d4109094c"
+    },
+    {
+      "file": "characters/02-gambler/sprites/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "02-gambler",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 61,
+      "alpha": "binary",
+      "bounds": {
+        "left": 166,
+        "top": 200,
+        "width": 178,
+        "height": 296
+      },
+      "sha256": "5aa6df28c3edfe3b908857f42b499cf495e66beae4006e5e9165d8b8450caa3b"
+    },
+    {
+      "file": "characters/02-gambler/sprites/lose.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "02-gambler",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 154,
+        "top": 248,
+        "width": 204,
+        "height": 248
+      },
+      "sha256": "6b96a7e0ec1c214b7b3a926c258b9b9214e02a6eea19a25bcf423709c11552da"
+    },
+    {
+      "file": "characters/02-gambler/portraits/normal.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "02-gambler",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 42,
+        "width": 464,
+        "height": 446
+      },
+      "sha256": "3e948a87a74200ee4ea283d90503e87ff106dd769a1777bc49df8c159d017f93"
+    },
+    {
+      "file": "characters/02-gambler/portraits/happy.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "02-gambler",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 40,
+        "width": 464,
+        "height": 448
+      },
+      "sha256": "922bc4de58ba2daf6c7ceac6cf76e1db9cb46c103a6d31dd1f1f6c29da5b4d77"
+    },
+    {
+      "file": "characters/02-gambler/portraits/surprised.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "02-gambler",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 59,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 46,
+        "width": 464,
+        "height": 442
+      },
+      "sha256": "4122828aa679badbb72e56f1ed4fc745f799eff7a20c85222bb9efc7a7505e4b"
+    },
+    {
+      "file": "characters/02-gambler/portraits/sad.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "02-gambler",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 32,
+        "width": 464,
+        "height": 456
+      },
+      "sha256": "9f1d960ea7cfab937b30e23abe7253d4865c85407d9777401d7776100c802921"
+    },
+    {
+      "file": "characters/02-gambler/portraits/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "02-gambler",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 57,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 40,
+        "width": 464,
+        "height": 448
+      },
+      "sha256": "cca7cb9e6d7a5aba09b298243163fde36ee92c6c1f7e4605ce54b8f01e113c69"
+    },
+    {
+      "file": "characters/02-gambler/sprite-sheet.png",
+      "w": 2048,
+      "h": 256,
+      "grid": 1,
+      "character": "02-gambler",
+      "kind": "sheet",
+      "width": 2048,
+      "height": 256,
+      "colors": 469,
+      "alpha": "binary",
+      "bounds": {
+        "left": 87,
+        "top": 78,
+        "width": 1884,
+        "height": 170
+      },
+      "sha256": "7effe907f8964c404ffb98048bc0ceb5ea0dff69f062753cac2be71ec6e831c5"
+    },
+    {
+      "file": "characters/03-prince/sprites/idle.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "03-prince",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 170,
+        "top": 224,
+        "width": 170,
+        "height": 272
+      },
+      "sha256": "6ab1e89c6d34cf8d9f60be9f0df2b194ea896c132a983d10516da35f2d1aa87a"
+    },
+    {
+      "file": "characters/03-prince/sprites/run1.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "03-prince",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 134,
+        "top": 230,
+        "width": 244,
+        "height": 266
+      },
+      "sha256": "633c917d3a02025406bd5d68af8ba93caba8fa922973f1fb3a0778ff9fca9d5a"
+    },
+    {
+      "file": "characters/03-prince/sprites/run2.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "03-prince",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 160,
+        "top": 236,
+        "width": 192,
+        "height": 260
+      },
+      "sha256": "012696d27fd64d58ec7fb2924a81e1da5848a5d935dd0faa503375c3790fca0d"
+    },
+    {
+      "file": "characters/03-prince/sprites/jump.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "03-prince",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 148,
+        "top": 166,
+        "width": 214,
+        "height": 330
+      },
+      "sha256": "8383ed2cded7e1e1a4259d365d516fe188611232ed7ee12707221803d35a3b1a"
+    },
+    {
+      "file": "characters/03-prince/sprites/spike.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "03-prince",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 100,
+        "top": 202,
+        "width": 310,
+        "height": 294
+      },
+      "sha256": "19934ead89aed847bb90a360362b2572113e24bc1c69be053cb4e822563c5e1f"
+    },
+    {
+      "file": "characters/03-prince/sprites/dive.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "03-prince",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 106,
+        "top": 346,
+        "width": 298,
+        "height": 150
+      },
+      "sha256": "172b0b1852ff628fd204df4e9db04cd379def602af5239543293cfc3ce690cf6"
+    },
+    {
+      "file": "characters/03-prince/sprites/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "03-prince",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 166,
+        "top": 188,
+        "width": 180,
+        "height": 308
+      },
+      "sha256": "a20fec8dd406c1458d774b565c3bbafaac84386775dda35755e4466b284e1822"
+    },
+    {
+      "file": "characters/03-prince/sprites/lose.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "03-prince",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 154,
+        "top": 258,
+        "width": 204,
+        "height": 238
+      },
+      "sha256": "567da359a8871bc3aa4ceb8b3e3f39e8d4223539a181aa92690855a7abe7b8c3"
+    },
+    {
+      "file": "characters/03-prince/portraits/normal.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "03-prince",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 26,
+        "top": 24,
+        "width": 460,
+        "height": 464
+      },
+      "sha256": "34b6b8c09e179a13021df7f59785598c896c7f9562ea16f7f82daf5c0b0a1d02"
+    },
+    {
+      "file": "characters/03-prince/portraits/happy.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "03-prince",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 26,
+        "top": 24,
+        "width": 460,
+        "height": 464
+      },
+      "sha256": "30e28795dca6a677ea963afeb25785a4f29a0115214f4fe2ec4adad540a7f917"
+    },
+    {
+      "file": "characters/03-prince/portraits/surprised.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "03-prince",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 32,
+        "top": 24,
+        "width": 448,
+        "height": 464
+      },
+      "sha256": "0f2825490b6e0a571eb6a047f682f531bcb7dfb3b7c20cd1ba184e6038301a91"
+    },
+    {
+      "file": "characters/03-prince/portraits/sad.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "03-prince",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 28,
+        "top": 24,
+        "width": 454,
+        "height": 464
+      },
+      "sha256": "d2b78c0f2a54ca4beaf9bbaa016338d1e9be1fc8eeb44fd3daff8441e1a59653"
+    },
+    {
+      "file": "characters/03-prince/portraits/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "03-prince",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 30,
+        "top": 24,
+        "width": 452,
+        "height": 464
+      },
+      "sha256": "95f26ee00352e1b9affb4d90e4199f1c6b0b4d19d999c8652772125a46e0e89c"
+    },
+    {
+      "file": "characters/03-prince/sprite-sheet.png",
+      "w": 2048,
+      "h": 256,
+      "grid": 1,
+      "character": "03-prince",
+      "kind": "sheet",
+      "width": 2048,
+      "height": 256,
+      "colors": 496,
+      "alpha": "binary",
+      "bounds": {
+        "left": 85,
+        "top": 83,
+        "width": 1886,
+        "height": 165
+      },
+      "sha256": "4d07a842674e6d812f10bb638bdb212ae13669ac3be4cd80b927e0334b505a48"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/idle.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "04-adventurer",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 166,
+        "top": 212,
+        "width": 178,
+        "height": 284
+      },
+      "sha256": "8e12335c39790099e15172e64c27bbe4e3a4b5395a7c42a46a2edff47f89283d"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/run1.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "04-adventurer",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 142,
+        "top": 236,
+        "width": 228,
+        "height": 260
+      },
+      "sha256": "f70c9549aeba3ad40157fce8784138918493a56311cbb9635ec652386372c11d"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/run2.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "04-adventurer",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 158,
+        "top": 244,
+        "width": 196,
+        "height": 252
+      },
+      "sha256": "a2f8fb6ec85bc0595913d5223c04f47f0bc2432ab021bf53bb366c7d1eb5f2a6"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/jump.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "04-adventurer",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 130,
+        "top": 140,
+        "width": 250,
+        "height": 356
+      },
+      "sha256": "a4f4517da89437b15af8924bb3c7ad0429e7269991540fb69cc16cb650c55613"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/spike.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "04-adventurer",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 112,
+        "top": 216,
+        "width": 288,
+        "height": 280
+      },
+      "sha256": "1e5cb9168007ca1af5e74f90e794247b8c1a4a238c7c3c87ad13952912d8f26f"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/dive.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "04-adventurer",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 102,
+        "top": 324,
+        "width": 306,
+        "height": 172
+      },
+      "sha256": "5adc19214ecf802a8f231ccf530af5b2c47777d07acfd07e75de9d3437ff9c6b"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "04-adventurer",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 162,
+        "top": 198,
+        "width": 186,
+        "height": 298
+      },
+      "sha256": "1b5f3be8d17d3960159078b92ba68516b2972df8f00ca98b11e4230f8b680a05"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/lose.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "04-adventurer",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 156,
+        "top": 230,
+        "width": 198,
+        "height": 266
+      },
+      "sha256": "9ddd0f48b343cb766050d73b3f7b803fcc29a2d21bad7ccecd9b0fb4afba52f4"
+    },
+    {
+      "file": "characters/04-adventurer/portraits/normal.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "04-adventurer",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 34,
+        "top": 24,
+        "width": 442,
+        "height": 464
+      },
+      "sha256": "e8624b53c744c8db340a16f8e66bf1f4426b138ac3792386a13be3d774ef7ad1"
+    },
+    {
+      "file": "characters/04-adventurer/portraits/happy.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "04-adventurer",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 43,
+      "alpha": "binary",
+      "bounds": {
+        "left": 32,
+        "top": 24,
+        "width": 446,
+        "height": 464
+      },
+      "sha256": "d9207b3c739c4d2b19b8afe05c5fb98bfbd58f38bed060521212e2e61188c1c5"
+    },
+    {
+      "file": "characters/04-adventurer/portraits/surprised.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "04-adventurer",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 36,
+        "top": 24,
+        "width": 438,
+        "height": 464
+      },
+      "sha256": "b667d451b335ddf5c1e75afa0e64ca584f8d2d4e0ed676ea0ef14a8521254d81"
+    },
+    {
+      "file": "characters/04-adventurer/portraits/sad.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "04-adventurer",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 36,
+      "alpha": "binary",
+      "bounds": {
+        "left": 30,
+        "top": 24,
+        "width": 452,
+        "height": 464
+      },
+      "sha256": "43faa019e44081d467f33617e2398c1bca271963751efa9a69bb19b41176e95e"
+    },
+    {
+      "file": "characters/04-adventurer/portraits/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "04-adventurer",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 24,
+        "top": 24,
+        "width": 462,
+        "height": 464
+      },
+      "sha256": "68449761854369c033f8078cd80b5d2aa5ad619781d8e05d90c721277d997744"
+    },
+    {
+      "file": "characters/04-adventurer/sprite-sheet.png",
+      "w": 2048,
+      "h": 256,
+      "grid": 1,
+      "character": "04-adventurer",
+      "kind": "sheet",
+      "width": 2048,
+      "height": 256,
+      "colors": 493,
+      "alpha": "binary",
+      "bounds": {
+        "left": 83,
+        "top": 70,
+        "width": 1886,
+        "height": 178
+      },
+      "sha256": "afb038a04ae66c09e9fe8dc0c6681c0ba8ca0d642056a10eb7ad242221f85a36"
+    },
+    {
+      "file": "characters/ayi/sprites/idle.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "ayi",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 162,
+        "top": 172,
+        "width": 186,
+        "height": 324
+      },
+      "sha256": "7866251f0fe9fb2a25d4a8e286ae7971b7a118339ec3913bb7f7fb4cdd68e68c"
+    },
+    {
+      "file": "characters/ayi/sprites/run1.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "ayi",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 136,
+        "top": 178,
+        "width": 238,
+        "height": 318
+      },
+      "sha256": "8e454d807f6264e2a2bb9d4593e7d61aef4d8524544b1216effed25c20fbff65"
+    },
+    {
+      "file": "characters/ayi/sprites/run2.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "ayi",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 156,
+        "top": 244,
+        "width": 198,
+        "height": 252
+      },
+      "sha256": "8f13c556b248f9bdcb5620aa01da9fab412368e51b675be5cf8b9a276af95d78"
+    },
+    {
+      "file": "characters/ayi/sprites/jump.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "ayi",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 154,
+        "top": 160,
+        "width": 202,
+        "height": 336
+      },
+      "sha256": "0a8c6ca5d9bafb20168a77f9479772f13594ea79d970af53b7844601a8710348"
+    },
+    {
+      "file": "characters/ayi/sprites/spike.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "ayi",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 100,
+        "top": 172,
+        "width": 312,
+        "height": 324
+      },
+      "sha256": "a64464749677d13e8b0efca0cdefffb0ae60981e83b5d9b635488eac68fdee9e"
+    },
+    {
+      "file": "characters/ayi/sprites/dive.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "ayi",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 58,
+        "top": 308,
+        "width": 396,
+        "height": 188
+      },
+      "sha256": "7b9a7d937c7af20a605454d952ce6e7bdb9cba02dc573ffa79b15594bbe422b5"
+    },
+    {
+      "file": "characters/ayi/sprites/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "ayi",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 170,
+        "top": 176,
+        "width": 172,
+        "height": 320
+      },
+      "sha256": "1e12f7ed99905cf41d117564aac7177384d255b6283c2475f36a838dd8b9c4f6"
+    },
+    {
+      "file": "characters/ayi/sprites/lose.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "ayi",
+      "kind": "sprite",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 160,
+        "top": 244,
+        "width": 192,
+        "height": 252
+      },
+      "sha256": "c8c694a978c2ecc3cffe78d6f654e76d6a947e7ee8ffc4ca7df09ca22d87f7c7"
+    },
+    {
+      "file": "characters/ayi/portraits/normal.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "ayi",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 42,
+        "top": 24,
+        "width": 428,
+        "height": 464
+      },
+      "sha256": "1ca164a9597be3a4e09246fa200fcf0f8773d301ba2f0bc5fcf09a4ae6a6fe2e"
+    },
+    {
+      "file": "characters/ayi/portraits/happy.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "ayi",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 42,
+        "top": 24,
+        "width": 428,
+        "height": 464
+      },
+      "sha256": "c15343650a67c4d69183282f40139fabe2b60051c08d0d520e370f3ec6ca29f3"
+    },
+    {
+      "file": "characters/ayi/portraits/surprised.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "ayi",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 34,
+        "top": 24,
+        "width": 444,
+        "height": 464
+      },
+      "sha256": "30e81db6bd95b7a8e06e045512c6e99a093c5925afc8cabf3dea5616ce629d5b"
+    },
+    {
+      "file": "characters/ayi/portraits/sad.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "ayi",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 42,
+        "top": 24,
+        "width": 428,
+        "height": 464
+      },
+      "sha256": "8a9292435c4e97459e29e052fac387ba412ddc673b5fc5bb5016a6c1f048f821"
+    },
+    {
+      "file": "characters/ayi/portraits/win.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "character": "ayi",
+      "kind": "portrait",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 38,
+        "top": 24,
+        "width": 436,
+        "height": 464
+      },
+      "sha256": "ef69a905b2d6a8ce287e11088a2ddbb9b1aad60edbeec4c21b98e87638aef65c"
+    },
+    {
+      "file": "characters/ayi/sprite-sheet.png",
+      "w": 2048,
+      "h": 256,
+      "grid": 1,
+      "character": "ayi",
+      "kind": "sheet",
+      "width": 2048,
+      "height": 256,
+      "colors": 498,
+      "alpha": "binary",
+      "bounds": {
+        "left": 81,
+        "top": 80,
+        "width": 1887,
+        "height": 168
+      },
+      "sha256": "f9154cbc6e601a8d19454ad5e3d373ba280b018707f37bfd2755fda3486fe649"
+    },
+    {
+      "file": "environment/court.png",
+      "w": 1920,
+      "h": 1080,
+      "grid": 4,
+      "kind": "shared",
+      "width": 1920,
+      "height": 1080,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "sha256": "062c1a38a017767ce017d156bf49884cd94b9951023b33df06450d1f75502f5b"
+    },
+    {
+      "file": "environment/net.png",
+      "w": 192,
+      "h": 1024,
+      "grid": 2,
+      "kind": "shared",
+      "width": 192,
+      "height": 1024,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 38,
+        "top": 8,
+        "width": 116,
+        "height": 1008
+      },
+      "sha256": "ef6fd064785a181a81ba882cdfd272443e4b323b37749394dd4eac2a987fefac"
+    },
+    {
+      "file": "environment/ball.png",
+      "w": 256,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 256,
+      "height": 256,
+      "colors": 41,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 240,
+        "height": 238
+      },
+      "sha256": "f54a326b9c5f95343456b3944dbb2f9172b1dbfc9afac921e03baeb8b1a2fc01"
+    },
+    {
+      "file": "ui/logo.png",
+      "w": 1400,
+      "h": 420,
+      "grid": 2,
+      "kind": "shared",
+      "width": 1400,
+      "height": 420,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 10,
+        "width": 1384,
+        "height": 400
+      },
+      "sha256": "0a0a8a123e2944c0eb849f2edabcc1f0ab9585139b8934fedeb840e602d4cfda"
+    },
+    {
+      "file": "ui/button-normal.png",
+      "w": 640,
+      "h": 128,
+      "grid": 2,
+      "kind": "shared",
+      "width": 640,
+      "height": 128,
+      "colors": 11,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 624,
+        "height": 112
+      },
+      "sha256": "ce144c70660a643fb5783bb6a6fd38c8720eb1fbcdfab745094339ba7b907e9f"
+    },
+    {
+      "file": "ui/button-selected.png",
+      "w": 640,
+      "h": 128,
+      "grid": 2,
+      "kind": "shared",
+      "width": 640,
+      "height": 128,
+      "colors": 61,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 624,
+        "height": 112
+      },
+      "sha256": "e430ab98dda1372c8c8a1375edfd9b6f3c70c4ab64cd60f8493a2e7b18b6f1ec"
+    },
+    {
+      "file": "ui/button-disabled.png",
+      "w": 640,
+      "h": 128,
+      "grid": 2,
+      "kind": "shared",
+      "width": 640,
+      "height": 128,
+      "colors": 12,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 624,
+        "height": 112
+      },
+      "sha256": "647710bbe61e17309effc3445eb6d7682f48f314755b2e07dd8f67059c959f1f"
+    },
+    {
+      "file": "ui/dialog-panel.png",
+      "w": 960,
+      "h": 720,
+      "grid": 2,
+      "kind": "shared",
+      "width": 960,
+      "height": 720,
+      "colors": 14,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 944,
+        "height": 704
+      },
+      "sha256": "308ee7a3e26803e8258fc647f69d095c90a10e45559302f8f357af132adee496"
+    },
+    {
+      "file": "ui/portrait-frame.png",
+      "w": 256,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 256,
+      "height": 256,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 240,
+        "height": 240
+      },
+      "sha256": "5ca91fef0f93a7a75c48c1c0a7d8495463ce4ae5472b8e7c0358584f6cd510a6"
+    },
+    {
+      "file": "ui/portrait-selected.png",
+      "w": 256,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 256,
+      "height": 256,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 240,
+        "height": 240
+      },
+      "sha256": "e57f82075a439b23ab478f4f7a2a0576cd84a5c1512963398ea07519a6c7bf11"
+    },
+    {
+      "file": "ui/score-panel.png",
+      "w": 800,
+      "h": 200,
+      "grid": 2,
+      "kind": "shared",
+      "width": 800,
+      "height": 200,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 784,
+        "height": 184
+      },
+      "sha256": "50f50015f1df97115dac02b1ac7fbf9a6231492ac9e8f592d57e0f4509adb56d"
+    },
+    {
+      "file": "ui/input-field.png",
+      "w": 640,
+      "h": 128,
+      "grid": 2,
+      "kind": "shared",
+      "width": 640,
+      "height": 128,
+      "colors": 4,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 624,
+        "height": 112
+      },
+      "sha256": "c2299570c7c7a1080ccccda32a915550f51cbefa1c450aba39c695f94994b9ec"
+    },
+    {
+      "file": "ui/result-banner.png",
+      "w": 1000,
+      "h": 240,
+      "grid": 2,
+      "kind": "shared",
+      "width": 1000,
+      "height": 240,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 38,
+        "top": 8,
+        "width": 924,
+        "height": 224
+      },
+      "sha256": "659b1a8fa01518a52c734dae71e3ac7ada921f1014da8e0f80b29a780c08f7f8"
+    },
+    {
+      "file": "effects/hit-spark.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "kind": "shared",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 14,
+        "width": 496,
+        "height": 484
+      },
+      "sha256": "31d5d3c7cb586707b8a0c767db90a723d71fd78b80917f7517eaa2b07a186ce8"
+    },
+    {
+      "file": "effects/sand-puff.png",
+      "w": 768,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 768,
+      "height": 256,
+      "colors": 61,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 28,
+        "width": 752,
+        "height": 200
+      },
+      "sha256": "62b6258905df9182059be8f322102c3dc3ffde56a817d4088119d293dd59f60f"
+    },
+    {
+      "file": "effects/spike-trail.png",
+      "w": 768,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 768,
+      "height": 256,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 34,
+        "width": 752,
+        "height": 188
+      },
+      "sha256": "744cf30d47b630f63722bb7c44978ec8d7222953d7288384b1fe597ad775a537"
+    },
+    {
+      "file": "effects/score-burst.png",
+      "w": 512,
+      "h": 512,
+      "grid": 2,
+      "kind": "shared",
+      "width": 512,
+      "height": 512,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 8,
+        "top": 72,
+        "width": 496,
+        "height": 366
+      },
+      "sha256": "3846603a84ac777ed24a57a74780b471ff1fdc4d7e210c626d5364a89a6e9741"
+    },
+    {
+      "file": "ui/icons/keyboard.png",
+      "w": 256,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 256,
+      "height": 256,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 16,
+        "top": 68,
+        "width": 224,
+        "height": 118
+      },
+      "sha256": "ec64d8720d0f33ce3b4c2c79bc5fdcd8bcc36654e2bfe2a31f92ff797dc92610"
+    },
+    {
+      "file": "ui/icons/gamepad.png",
+      "w": 256,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 256,
+      "height": 256,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 16,
+        "top": 56,
+        "width": 224,
+        "height": 142
+      },
+      "sha256": "c0eb27bde84bb46c73097ecb6eb7ddff41bab97929074d26792dbc9bed3688ea"
+    },
+    {
+      "file": "ui/icons/touch.png",
+      "w": 256,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 256,
+      "height": 256,
+      "colors": 46,
+      "alpha": "binary",
+      "bounds": {
+        "left": 72,
+        "top": 16,
+        "width": 110,
+        "height": 224
+      },
+      "sha256": "f3891b94e12534ef99ee48c9e1d61aab52ed90fb60413975b2a3c6d43f65c2a4"
+    },
+    {
+      "file": "ui/icons/lock.png",
+      "w": 256,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 256,
+      "height": 256,
+      "colors": 23,
+      "alpha": "binary",
+      "bounds": {
+        "left": 34,
+        "top": 16,
+        "width": 186,
+        "height": 224
+      },
+      "sha256": "dd7ee727d2fede9e1a485c912e91f7f29443ed76a3450da3b77b057a7e33c725"
+    },
+    {
+      "file": "ui/icons/ready.png",
+      "w": 256,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 256,
+      "height": 256,
+      "colors": 63,
+      "alpha": "binary",
+      "bounds": {
+        "left": 16,
+        "top": 28,
+        "width": 224,
+        "height": 198
+      },
+      "sha256": "0e3764b75c8eb8a8fabc0baef37bc2dd4f01d788fbfd1c9aedcd1d466d2768e8"
+    },
+    {
+      "file": "ui/icons/pause.png",
+      "w": 256,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 256,
+      "height": 256,
+      "colors": 60,
+      "alpha": "binary",
+      "bounds": {
+        "left": 36,
+        "top": 16,
+        "width": 184,
+        "height": 224
+      },
+      "sha256": "cbdcfbcc5a729dd9844475fc5d71d9830ed98d4a64360dbe5e56860e20b29347"
+    },
+    {
+      "file": "ui/icons/sound-on.png",
+      "w": 256,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 256,
+      "height": 256,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 16,
+        "top": 48,
+        "width": 224,
+        "height": 160
+      },
+      "sha256": "9eb75590a438e40abaeb1669e0ba4ebe59edae9702a6b735030f76f52883d962"
+    },
+    {
+      "file": "ui/icons/sound-off.png",
+      "w": 256,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 256,
+      "height": 256,
+      "colors": 18,
+      "alpha": "binary",
+      "bounds": {
+        "left": 22,
+        "top": 16,
+        "width": 210,
+        "height": 224
+      },
+      "sha256": "a7559835acfcf75936bffc712e276f1da36a7c09ffa8fe32b6b68e0f47ad7686"
+    },
+    {
+      "file": "ui/icons/back.png",
+      "w": 256,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 256,
+      "height": 256,
+      "colors": 54,
+      "alpha": "binary",
+      "bounds": {
+        "left": 16,
+        "top": 50,
+        "width": 224,
+        "height": 156
+      },
+      "sha256": "adea5af9412fa7c62509c8c154f001f3f010e1aac03dee4a34d8f3dd9d95a757"
+    },
+    {
+      "file": "ui/icons/settings.png",
+      "w": 256,
+      "h": 256,
+      "grid": 2,
+      "kind": "shared",
+      "width": 256,
+      "height": 256,
+      "colors": 62,
+      "alpha": "binary",
+      "bounds": {
+        "left": 16,
+        "top": 16,
+        "width": 224,
+        "height": 222
+      },
+      "sha256": "6357f9a9d82aafae2b798cda46e5de1e2dc868a3f64ebc195dea137e8efa6490"
+    }
+  ]
+}

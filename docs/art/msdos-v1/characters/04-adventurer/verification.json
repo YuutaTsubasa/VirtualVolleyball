@@ -1,0 +1,170 @@
+{
+  "complete": true,
+  "total": 13,
+  "unique": 13,
+  "failures": [],
+  "files": [
+    {
+      "file": "sprites/idle.png",
+      "logical": "logical/sprites-idle.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "8e12335c39790099e15172e64c27bbe4e3a4b5395a7c42a46a2edff47f89283d"
+    },
+    {
+      "file": "sprites/run1.png",
+      "logical": "logical/sprites-run1.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "f70c9549aeba3ad40157fce8784138918493a56311cbb9635ec652386372c11d"
+    },
+    {
+      "file": "sprites/run2.png",
+      "logical": "logical/sprites-run2.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 62,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "a2f8fb6ec85bc0595913d5223c04f47f0bc2432ab021bf53bb366c7d1eb5f2a6"
+    },
+    {
+      "file": "sprites/jump.png",
+      "logical": "logical/sprites-jump.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 62,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "a4f4517da89437b15af8924bb3c7ad0429e7269991540fb69cc16cb650c55613"
+    },
+    {
+      "file": "sprites/spike.png",
+      "logical": "logical/sprites-spike.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "1e5cb9168007ca1af5e74f90e794247b8c1a4a238c7c3c87ad13952912d8f26f"
+    },
+    {
+      "file": "sprites/dive.png",
+      "logical": "logical/sprites-dive.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "5adc19214ecf802a8f231ccf530af5b2c47777d07acfd07e75de9d3437ff9c6b"
+    },
+    {
+      "file": "sprites/win.png",
+      "logical": "logical/sprites-win.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "1b5f3be8d17d3960159078b92ba68516b2972df8f00ca98b11e4230f8b680a05"
+    },
+    {
+      "file": "sprites/lose.png",
+      "logical": "logical/sprites-lose.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 63,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "9ddd0f48b343cb766050d73b3f7b803fcc29a2d21bad7ccecd9b0fb4afba52f4"
+    },
+    {
+      "file": "portraits/normal.png",
+      "logical": "logical/portraits-normal.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 62,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "e8624b53c744c8db340a16f8e66bf1f4426b138ac3792386a13be3d774ef7ad1"
+    },
+    {
+      "file": "portraits/happy.png",
+      "logical": "logical/portraits-happy.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 43,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "d9207b3c739c4d2b19b8afe05c5fb98bfbd58f38bed060521212e2e61188c1c5"
+    },
+    {
+      "file": "portraits/surprised.png",
+      "logical": "logical/portraits-surprised.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 62,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "b667d451b335ddf5c1e75afa0e64ca584f8d2d4e0ed676ea0ef14a8521254d81"
+    },
+    {
+      "file": "portraits/sad.png",
+      "logical": "logical/portraits-sad.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 36,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "43faa019e44081d467f33617e2398c1bca271963751efa9a69bb19b41176e95e"
+    },
+    {
+      "file": "portraits/win.png",
+      "logical": "logical/portraits-win.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 62,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "68449761854369c033f8078cd80b5d2aa5ad619781d8e05d90c721277d997744"
+    }
+  ],
+  "productionPngCount": 14,
+  "productionUniqueHashes": 14,
+  "visualReview": {
+    "overview": true,
+    "identityOutfitPose": true
+  }
+}

@@ -433,14 +433,15 @@ input:focus { border-color: var(--gold-deep); box-shadow: 0 0 0 0.4cqh var(--gol
   --font: 'MingLiU', '細明體', 'MS Gothic', 'Cascadia Mono', monospace;
 }
 :root[data-style='msdos'] {
-  --navy: #000080;
-  --navy-deep: #000050;
-  --navy-soft: #2020a0;
-  --cream: #c0c0c0;
-  --gold: #ffff55;
-  --gold-deep: #c0c000;
-  --gold-line: #55ffff;
-  --stripe: #8080c0;
+  /* 背景 #101828、面板 #243c7a、文字 #f6f1d8、選取 #ffd23f、邊框 #9ca8b8 */
+  --navy: #243c7a;
+  --navy-deep: #101828;
+  --navy-soft: #4a62a8;
+  --cream: #f6f1d8;
+  --gold: #ffd23f;
+  --gold-deep: #d9a800;
+  --gold-line: #9ca8b8;
+  --stripe: #9ca8b8;
   --accent: #ff5555;
   --font: 'Cascadia Mono', 'Consolas', 'MingLiU', '細明體', monospace;
 }
