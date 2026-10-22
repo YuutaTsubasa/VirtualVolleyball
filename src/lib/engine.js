@@ -30,11 +30,11 @@ export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {} }) {
   render.resize(canvas);
   render.preload(CHARACTERS);
 
-  let state = 'demo'; // demo | local | paused | ended | online
+  // idle：在選單（選單蓋住整個畫面，不跑比賽也不出聲）
+  let state = 'idle'; // idle | local | paused | ended | online
   let local = null; // { game: LocalMatch, humans: [slot 或 null] }
   let match = null;
   let celebrate = 0;
-  let demo = null;
   let hitSeq = 0;
   let ready = false;
   wasmReady.then(() => (ready = true));
@@ -43,16 +43,6 @@ export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {} }) {
     const game = new LocalMatch(characters[0].id, characters[1].id, target);
     sides.forEach((s, i) => s.ai && game.setAi(i, s.ai));
     return game;
-  }
-
-  function startDemo() {
-    const pool = CHARACTERS.filter((c) => !c.hidden);
-    const a = pool[Math.floor(Math.random() * pool.length)];
-    let b = pool[Math.floor(Math.random() * pool.length)];
-    if (b === a) b = pool[(pool.indexOf(a) + 3) % pool.length];
-    demo?.game.free();
-    demo = { game: newLocal([a, b], 99, [{ ai: 'hard' }, { ai: 'hard' }]), match: null };
-    render.resetEffects();
   }
 
   function advance(m) {
@@ -102,11 +92,6 @@ export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {} }) {
         if (i.hitPressed) hitSeq++;
         sendInput(input.toBits({ ...i, hitPressed: false }), hitSeq);
       }
-    } else if (state === 'demo') {
-      if (!demo || demo.match?.phase === 'over') startDemo();
-      demo.game.step(0, 0);
-      demo.match = hydrate(JSON.parse(demo.game.state()), demo.match);
-      advance(demo.match);
     }
   }
 
@@ -124,13 +109,16 @@ export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {} }) {
     }
     // 沒跑模擬的影格（高更新率螢幕）不要清掉「剛按下」，否則會吃掉按鍵
     if (steps > 0) input.endFrame();
-    const shown = state === 'demo' ? demo?.match : match;
+    // 選單蓋住整個畫面時不用畫
+    if (state !== 'idle') draw();
+    raf = requestAnimationFrame(loop);
+  }
+  function draw() {
     const online = state === 'online';
-    render.draw(canvas, shown, {
+    render.draw(canvas, match, {
       you: online ? net.seat : null,
       names: online ? net.room?.seats.map((s) => s?.name) : null,
     });
-    raf = requestAnimationFrame(loop);
   }
   raf = requestAnimationFrame(loop);
 
@@ -173,20 +161,20 @@ export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {} }) {
     resume() {
       if (state === 'paused') state = 'local';
     },
-    // 回到標題的示範賽
+    // 回到選單：停掉比賽（不再出聲）
     stop() {
       local?.game.free();
       local = null;
       match = null;
-      demo = null;
-      state = 'demo';
+      render.resetEffects();
+      state = 'idle';
     },
     destroy() {
       cancelAnimationFrame(raf);
     },
     // 給除錯用
     get match() {
-      return state === 'demo' ? demo?.match : match;
+      return match;
     },
   };
 }
