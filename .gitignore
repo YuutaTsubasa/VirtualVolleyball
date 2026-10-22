@@ -12,3 +12,4 @@ art-inbox/*
 !art-inbox/messages/
 !art-inbox/replies/
 !art-inbox/requests/
+!art-inbox/wait-for-claude.ps1

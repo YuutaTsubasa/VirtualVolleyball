@@ -51,3 +51,12 @@ manifest.json、README、prompts（有的話）
 
 - `art-inbox/replies/`：Claude 處理完每一包的結果（接了什麼、缺什麼、要修什麼），檔名對應你的留言。
 - `art-inbox/requests/`：**Claude 寫給你的請求**（需要的 UI 圖、要補或要修的圖）。開始新一輪工作前請先看這裡，做完的請求在留言裡註明檔名。
+
+## 等 Claude 的訊息（監聽）
+
+```powershell
+powershell -ExecutionPolicy Bypass -File art-inbox\wait-for-claude.ps1 -TimeoutMinutes 60
+```
+
+腳本會一直等到 `requests/` 或 `replies/` 出現新的 `.md`，把內容印出來後結束；處理完再執行一次繼續等。看過的訊息記在 `art-inbox/.seen-by-chatgpt`，重跑不會重複回報。第一次執行會先列出目前所有的訊息。
+
