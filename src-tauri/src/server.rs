@@ -337,9 +337,9 @@ async fn static_handler(State(st): State<Arc<AppState>>, uri: Uri) -> Response {
     (
         StatusCode::NOT_FOUND,
         Html(
-            "<meta charset=utf-8><title>台麻館沙灘排球伺服器</title>\
+            "<meta charset=utf-8><title>虛擬排球王伺服器</title>\
              <body style='font-family:sans-serif;max-width:640px;margin:40px auto'>\
-             <h1>🏐 台麻館沙灘排球伺服器</h1><p>伺服器運作中，但沒有內建網頁介面（開發模式）。請用 App 的「加入房間」連線。</p>",
+             <h1>🏐 虛擬排球王伺服器</h1><p>伺服器運作中，但沒有內建網頁介面（開發模式）。請用 App 的「加入房間」連線。</p>",
         ),
     )
         .into_response()

@@ -75,7 +75,7 @@
 </script>
 
 <div class="touch" class:split>
-  <button type="button" tabindex="-1" class="pause" aria-label="暫停" onclick={onpause}>❚❚</button>
+  <button type="button" tabindex="-1" class="pause" aria-label="暫停" onclick={onpause}><img src="{import.meta.env.BASE_URL}ui/icons/pause.webp" alt="" /></button>
   {#each slots as slot (slot)}
     {@const mirror = split && slot === 1}
     <div
@@ -135,10 +135,15 @@
     height: 8cqh;
     padding: 0;
     border-radius: 50%;
-    font-size: 3cqh;
-    opacity: 0.75;
+    opacity: 0.85;
     pointer-events: auto;
     box-shadow: none;
+    background: var(--cream);
+    border: 0.4cqh solid var(--navy);
+  }
+  .pause img {
+    width: 70%;
+    height: 70%;
   }
   .stick,
   .buttons {

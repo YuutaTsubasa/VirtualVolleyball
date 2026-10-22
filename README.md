@@ -1,6 +1,6 @@
-# 🏐 虛擬台麻館沙灘排球
+# 🏐 虛擬排球王
 
-《皮卡丘打排球》風格的 1 對 1 排球遊戲，球員是[虛擬台麻館](https://github.com/YuutaTsubasa/TaiwanMahjong)的角色們。Tauri v2 + Svelte 5，遊戲畫面用 Canvas 畫，比賽引擎用 Rust 寫。
+《皮卡丘打排球》風格的 1 對 1 沙灘排球遊戲，球員是[虛擬台麻館](https://github.com/YuutaTsubasa/TaiwanMahjong)的角色們：小翠、月華、阿明、糖糖、小春、蘭姐、蒼牙、金爺、雷歐、阿烈，還有隱藏角色阿翼。Tauri v2 + Svelte 5，遊戲畫面用 Canvas 畫，比賽引擎用 Rust 寫。
 
 - 🎮 **單機**：對戰電腦（簡單／普通／困難）、同一台電腦雙人對戰、電腦對電腦觀戰
 - 🌐 **連線**：房主在 App 按「開設房間」，朋友用 App 的「加入房間」輸入位址，或直接用瀏覽器打開房主的網址
@@ -94,11 +94,11 @@ src/
   lib/components/Controls.svelte       選單操作、手把鍵盤、暫停
   lib/components/TouchControls.svelte  比賽中的觸控按鈕
   lib/game/audio.js          WebAudio 合成音效
-public/characters/         角色頭像（從 TaiwanMahjong 複製，縮成 384px）
-docs/art-guide.md          要請 ChatGPT 畫的圖與提示詞
-scripts/make_sheet.py      把單張姿勢圖組成 sprite sheet
+public/                    圖：角色半身像與動作圖集、球場、特效、介面（90 年代圖素包，WebP）
+docs/art-guide.md          美術素材的來源、規格與還沒做的部分
+docs/art/anime90-v1/       90 年代圖素包的說明與提示詞
 ```
 
 ## 美術
 
-現在場上的角色是「麻將館頭像當大頭＋程式畫的 Q 版身體」。正式的全身 sprite 請看 [docs/art-guide.md](docs/art-guide.md)。
+90 年代賽璐璐風格的角色、球場與介面都已經是正式圖（[docs/art-guide.md](docs/art-guide.md)）。之後會跟台麻一樣有六種風格。

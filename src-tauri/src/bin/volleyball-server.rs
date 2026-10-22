@@ -48,7 +48,7 @@ async fn main() {
         eprintln!("{}", e);
         std::process::exit(1);
     });
-    println!("台麻館沙灘排球伺服器已啟動");
+    println!("虛擬排球王伺服器已啟動");
     println!("  網頁：http://localhost:{}/ {}", h.port, if dist.is_some() { "" } else { "（找不到 dist，網頁介面停用）" });
     for ip in server::local_ips() {
         println!("  區網：http://{}:{}/", ip, h.port);

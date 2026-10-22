@@ -1,0 +1,87 @@
+[
+  {
+    "id": "xiaocui",
+    "name": "idle",
+    "prompt": "Use case: stylized-concept. Single game character cutout. Authentic clean hand-inked 1990s Japanese cel anime, bold smooth black outlines, flat color regions and only 2-tone hard cel shadows, graphic hair highlights, no gradient shading. Full-body chibi 2.5–3 heads tall, big expressive eyes, facing toward SCREEN RIGHT in side / three-quarter view. Exactly one entire character centered with 10% transparent margin around ALL hair, hands, feet. Both arms and legs anatomically coherent and visible. Genuinely transparent alpha background; NO ball, NO court, NO floor/contact shadow, NO scenery, NO text, NO lettering, NO logos, NO speedlines. Maintain the referenced character's exact hair, face, accessories, clothing, colors and proportions. Input image 1 is STYLE/PROPORTION reference ONLY (orange-haired Xiaochun). Input image 2 is the IDENTITY reference to depict. Do NOT copy orange hair or blue kit. Xiaocui: deep emerald green long twin ponytails tied with two pink ribbon bows, turquoise green eyes. WHITE short-sleeve collared volleyball jersey with TEAL collar, sleeve hems and side stripes, teal volleyball shorts, white wristbands, white crew socks, white and teal athletic shoes. IDLE volleyball ready stance, knees gently bent, feet apart, forearms relaxed forward waist high, friendly alert small smile.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-608f78cf-ca7a-4753-afde-f10be576b2f0.png"
+  },
+  {
+    "id": "xiaocui",
+    "name": "run1",
+    "prompt": "Use case: stylized-concept. Single game character cutout. Authentic clean hand-inked 1990s Japanese cel anime, bold smooth black outlines, flat color regions and only 2-tone hard cel shadows, graphic hair highlights, no gradient shading. Full-body chibi 2.5–3 heads tall, big expressive eyes, facing toward SCREEN RIGHT in side / three-quarter view. Exactly one entire character centered with 10% transparent margin around ALL hair, hands, feet. Both arms and legs anatomically coherent and visible. Genuinely transparent alpha background; NO ball, NO court, NO floor/contact shadow, NO scenery, NO text, NO lettering, NO logos, NO speedlines. Maintain the referenced character's exact hair, face, accessories, clothing, colors and proportions. Input is the character IDENTITY AND STYLE MASTER. Xiaocui: deep emerald green long twin ponytails tied with two pink ribbon bows, turquoise green eyes. WHITE short-sleeve collared volleyball jersey with TEAL collar, sleeve hems and side stripes, teal volleyball shorts, white wristbands, white crew socks, white and teal athletic shoes. Change ONLY pose to RUN 1 keyframe: running toward screen right, near leg extended forward down, far leg stretched back; opposite arms pumping, torso leans slightly forward. Dynamic long stride.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-9465fc51-abc1-4b06-928a-a108a4e7b828.png"
+  },
+  {
+    "id": "xiaocui",
+    "name": "run2",
+    "prompt": "Use case: stylized-concept. Single game character cutout. Authentic clean hand-inked 1990s Japanese cel anime, bold smooth black outlines, flat color regions and only 2-tone hard cel shadows, graphic hair highlights, no gradient shading. Full-body chibi 2.5–3 heads tall, big expressive eyes, facing toward SCREEN RIGHT in side / three-quarter view. Exactly one entire character centered with 10% transparent margin around ALL hair, hands, feet. Both arms and legs anatomically coherent and visible. Genuinely transparent alpha background; NO ball, NO court, NO floor/contact shadow, NO scenery, NO text, NO lettering, NO logos, NO speedlines. Maintain the referenced character's exact hair, face, accessories, clothing, colors and proportions. Input is the character IDENTITY AND STYLE MASTER. Xiaocui: deep emerald green long twin ponytails tied with two pink ribbon bows, turquoise green eyes. WHITE short-sleeve collared volleyball jersey with TEAL collar, sleeve hems and side stripes, teal volleyball shorts, white wristbands, white crew socks, white and teal athletic shoes. Change ONLY pose to RUN 2 keyframe: distinct alternate high-knee running stride toward screen right. Near knee raised high in front, far foot kicking up behind; near arm bent back and far arm forward. Clearly different leg and arm silhouette from long-stride run1.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-98c46c3a-e854-499d-97c9-df53f598ced8.png"
+  },
+  {
+    "id": "xiaocui",
+    "name": "jump",
+    "prompt": "Use case: stylized-concept. Single game character cutout. Authentic clean hand-inked 1990s Japanese cel anime, bold smooth black outlines, flat color regions and only 2-tone hard cel shadows, graphic hair highlights, no gradient shading. Full-body chibi 2.5–3 heads tall, big expressive eyes, facing toward SCREEN RIGHT in side / three-quarter view. Exactly one entire character centered with 10% transparent margin around ALL hair, hands, feet. Both arms and legs anatomically coherent and visible. Genuinely transparent alpha background; NO ball, NO court, NO floor/contact shadow, NO scenery, NO text, NO lettering, NO logos, NO speedlines. Maintain the referenced character's exact hair, face, accessories, clothing, colors and proportions. Input is the character IDENTITY AND STYLE MASTER. Xiaocui: deep emerald green long twin ponytails tied with two pink ribbon bows, turquoise green eyes. WHITE short-sleeve collared volleyball jersey with TEAL collar, sleeve hems and side stripes, teal volleyball shorts, white wristbands, white crew socks, white and teal athletic shoes. Change ONLY pose to JUMP BLOCK keyframe: airborne facing screen right with BOTH ARMS EXTENDED STRAIGHT UP over head, open hands separately visible, knees bent and feet lifted. No ball.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-a28d0a27-b4b6-4ce5-9192-cdb486928e73.png"
+  },
+  {
+    "id": "xiaocui",
+    "name": "spike",
+    "prompt": "Use case: stylized-concept. Single game character cutout. Authentic clean hand-inked 1990s Japanese cel anime, bold smooth black outlines, flat color regions and only 2-tone hard cel shadows, graphic hair highlights, no gradient shading. Full-body chibi 2.5–3 heads tall, big expressive eyes, facing toward SCREEN RIGHT in side / three-quarter view. Exactly one entire character centered with 10% transparent margin around ALL hair, hands, feet. Both arms and legs anatomically coherent and visible. Genuinely transparent alpha background; NO ball, NO court, NO floor/contact shadow, NO scenery, NO text, NO lettering, NO logos, NO speedlines. Maintain the referenced character's exact hair, face, accessories, clothing, colors and proportions. Input is the character IDENTITY AND STYLE MASTER. Xiaocui: deep emerald green long twin ponytails tied with two pink ribbon bows, turquoise green eyes. WHITE short-sleeve collared volleyball jersey with TEAL collar, sleeve hems and side stripes, teal volleyball shorts, white wristbands, white crew socks, white and teal athletic shoes. Change ONLY pose to SPIKE keyframe: airborne facing screen right, ONE hitting arm extended diagonally high forward to screen right with open palm, OTHER arm bent back at chest height, torso twisting, legs bent behind. Unmistakable one-arm volleyball spike; no ball.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-bd9ee86f-5e51-4ce7-9223-a26ce4832e04.png"
+  },
+  {
+    "id": "xiaocui",
+    "name": "dive",
+    "prompt": "Use case: stylized-concept. Single game character cutout. Authentic clean hand-inked 1990s Japanese cel anime, bold smooth black outlines, flat color regions and only 2-tone hard cel shadows, graphic hair highlights, no gradient shading. Full-body chibi 2.5–3 heads tall, big expressive eyes, facing toward SCREEN RIGHT in side / three-quarter view. Exactly one entire character centered with 10% transparent margin around ALL hair, hands, feet. Both arms and legs anatomically coherent and visible. Genuinely transparent alpha background; NO ball, NO court, NO floor/contact shadow, NO scenery, NO text, NO lettering, NO logos, NO speedlines. Maintain the referenced character's exact hair, face, accessories, clothing, colors and proportions. Input is the character IDENTITY AND STYLE MASTER. Xiaocui: deep emerald green long twin ponytails tied with two pink ribbon bows, turquoise green eyes. WHITE short-sleeve collared volleyball jersey with TEAL collar, sleeve hems and side stripes, teal volleyball shorts, white wristbands, white crew socks, white and teal athletic shoes. Change ONLY pose to DIVE keyframe: horizontal airborne defensive dive traveling toward screen RIGHT. Face on right, feet behind on LEFT, torso almost parallel to ground, BOTH ARMS outstretched toward RIGHT with two visible hands together, legs trailing left with one knee slightly bent. Entire horizontal silhouette contained with margin; no floor or ball.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-e8937eb2-d2b2-43f6-9815-314dedf8e67f.png"
+  },
+  {
+    "id": "xiaocui",
+    "name": "win",
+    "prompt": "Use case: stylized-concept. Single game character cutout. Authentic clean hand-inked 1990s Japanese cel anime, bold smooth black outlines, flat color regions and only 2-tone hard cel shadows, graphic hair highlights, no gradient shading. Full-body chibi 2.5–3 heads tall, big expressive eyes, facing toward SCREEN RIGHT in side / three-quarter view. Exactly one entire character centered with 10% transparent margin around ALL hair, hands, feet. Both arms and legs anatomically coherent and visible. Genuinely transparent alpha background; NO ball, NO court, NO floor/contact shadow, NO scenery, NO text, NO lettering, NO logos, NO speedlines. Maintain the referenced character's exact hair, face, accessories, clothing, colors and proportions. Input is the character IDENTITY AND STYLE MASTER. Xiaocui: deep emerald green long twin ponytails tied with two pink ribbon bows, turquoise green eyes. WHITE short-sleeve collared volleyball jersey with TEAL collar, sleeve hems and side stripes, teal volleyball shorts, white wristbands, white crew socks, white and teal athletic shoes. Change ONLY pose to WIN celebration keyframe: standing in three-quarter view facing screen right, delighted smile, both hands raised beside head in small victorious fists, feet apart confidently. Entire body.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-f7d84673-4b2d-49ca-9180-2470840ce0f9.png"
+  },
+  {
+    "id": "xiaocui",
+    "name": "lose",
+    "prompt": "Use case: stylized-concept. Single game character cutout. Authentic clean hand-inked 1990s Japanese cel anime, bold smooth black outlines, flat color regions and only 2-tone hard cel shadows, graphic hair highlights, no gradient shading. Full-body chibi 2.5–3 heads tall, big expressive eyes, facing toward SCREEN RIGHT in side / three-quarter view. Exactly one entire character centered with 10% transparent margin around ALL hair, hands, feet. Both arms and legs anatomically coherent and visible. Genuinely transparent alpha background; NO ball, NO court, NO floor/contact shadow, NO scenery, NO text, NO lettering, NO logos, NO speedlines. Maintain the referenced character's exact hair, face, accessories, clothing, colors and proportions. Input is the character IDENTITY AND STYLE MASTER. Xiaocui: deep emerald green long twin ponytails tied with two pink ribbon bows, turquoise green eyes. WHITE short-sleeve collared volleyball jersey with TEAL collar, sleeve hems and side stripes, teal volleyball shorts, white wristbands, white crew socks, white and teal athletic shoes. Change ONLY pose to LOSE keyframe: dejected standing slouch facing screen right, head bowed, sad disappointed face, arms droop forward at sides, knees slightly bent. Entire body; subtle readable sadness.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-7f629089-7868-438e-9750-088b5ebb9c17.png"
+  },
+  {
+    "id": "xiaocui",
+    "name": "portrait-normal",
+    "prompt": "Use case: stylized-concept. Transparent UI bust portrait for 90s cel anime volleyball game. Input image 1 is Xiaochun PORTRAIT STYLE AND COMPOSITION only; input 2 is Xiaocui exact character identity and outfit master. Depict Xiaocui ONLY. Xiaocui: deep emerald green long twin ponytails tied with two pink ribbon bows, turquoise green eyes. WHITE short-sleeve collared volleyball jersey with TEAL collar, sleeve hems and side stripes, teal volleyball shorts, white wristbands, white crew socks, white and teal athletic shoes. Big cute expressive anime eyes and chibi head, clean bold hand-inked black outlines, flat colors, hard two-tone cel shadows and angular hair highlights like reference1. Head and shoulders bust with complete hair and bows within frame, slight three-quarter view looking screen right, gentle small normal smile. Cropped at upper chest with neat curved lower bust edge. Centered square composition, 8% margin around whole silhouette, transparent alpha everywhere outside character. No text, ball, background, shadows, glow, frame or objects. Do not copy orange hair or blue clothes.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-3f5ec234-2dba-4fb7-8eb9-b6f50efbb3f1.png"
+  },
+  {
+    "id": "xiaocui",
+    "name": "portrait-happy",
+    "prompt": "Use case: identity-preserve. Edit the supplied transparent UI bust portrait. Change ONLY the FACIAL EXPRESSION to happy friendly wide open smile, eyes crescent-shaped with joy. Keep the identical character, head angle, hair outline, pink bows, teal eyes, white and teal volleyball jersey, shoulders, crop, bust lower edge, scale, placement, 1990s anime black linework and flat cel coloring. Preserve actual transparent alpha background with NO background, glow, shadow, symbols or text. Match original framing precisely.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-1a45d1fc-e41c-42be-9664-f6020a9b19fd.png"
+  },
+  {
+    "id": "xiaocui",
+    "name": "portrait-surprised",
+    "prompt": "Use case: identity-preserve. Edit the supplied transparent UI bust portrait. Change ONLY the FACIAL EXPRESSION to surprised wide-open eyes, raised eyebrows, small open round O mouth. Keep the identical character, head angle, hair outline, pink bows, teal eyes, white and teal volleyball jersey, shoulders, crop, bust lower edge, scale, placement, 1990s anime black linework and flat cel coloring. Preserve actual transparent alpha background with NO background, glow, shadow, symbols or text. Match original framing precisely.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-5b947ffc-3952-4f6e-876d-58c51652574d.png"
+  },
+  {
+    "id": "xiaocui",
+    "name": "portrait-sad",
+    "prompt": "Use case: identity-preserve. Edit the supplied transparent UI bust portrait. Change ONLY the FACIAL EXPRESSION to sad disappointed expression, inner eyebrows raised, eyes lowered, small downturned mouth. Keep the identical character, head angle, hair outline, pink bows, teal eyes, white and teal volleyball jersey, shoulders, crop, bust lower edge, scale, placement, 1990s anime black linework and flat cel coloring. Preserve actual transparent alpha background with NO background, glow, shadow, symbols or text. Match original framing precisely.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-844bec17-e996-4e7c-805d-c32b8e8393ba.png"
+  },
+  {
+    "id": "xiaocui",
+    "name": "portrait-win",
+    "prompt": "Use case: identity-preserve. Edit the supplied transparent UI bust portrait. Change ONLY the FACIAL EXPRESSION to triumphant confident delighted grin, sparkling wide eyes and lifted eyebrows, slightly proud look. Keep the identical character, head angle, hair outline, pink bows, teal eyes, white and teal volleyball jersey, shoulders, crop, bust lower edge, scale, placement, 1990s anime black linework and flat cel coloring. Preserve actual transparent alpha background with NO background, glow, shadow, symbols or text. Match original framing precisely.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-e9afbc9a-54eb-441d-800f-a1ec67bd725b.png"
+  },
+  {
+    "id": "xiaocui",
+    "name": "dive",
+    "prompt": "Use case: background-extraction. Edit this supplied image of Xiaocui diving right. Remove ALL the colored hazy backdrop, soft light halo, grey haze, black field, glow, and any background. Output only the exact unchanged anime character cutout with real clean transparent alpha outside the character, including between limbs and hair locks. Keep the identical complete horizontal diving pose, all body parts, head, green hair, pink bows, white and teal sportswear, black contour lines, flat cel color. No shadow and no colored semi-transparent pixels floating around her. Keep full silhouette within canvas.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a16513-e5a3-7f61-9670-f73eac6e8c53\\exec-160a36b2-23a6-4943-b9c1-fe91078e17c0.png",
+    "correction": "Remove unwanted background glow"
+  }
+]

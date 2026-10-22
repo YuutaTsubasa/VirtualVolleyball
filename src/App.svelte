@@ -5,6 +5,10 @@
   import { toggleMute } from './lib/game/audio.js';
   import { net, hostCmd, leave } from './lib/net.svelte.js';
   import Menu from './lib/components/Menu.svelte';
+  import Dialog from './lib/components/Dialog.svelte';
+  import TitleScreen from './lib/components/TitleScreen.svelte';
+  import SoloScreen from './lib/components/SoloScreen.svelte';
+  import HelpScreen from './lib/components/HelpScreen.svelte';
   import SelectScreen from './lib/components/SelectScreen.svelte';
   import RoomEntry from './lib/components/RoomEntry.svelte';
   import Lobby from './lib/components/Lobby.svelte';
@@ -143,13 +147,18 @@
 <Controls {inGame} onback={back} onpause={pause} />
 
 {#snippet resultCard(r)}
-  <div class="result-card">
-    <img class="result-portrait" src={r.winner.portraits.win} alt="" />
-    <div>
-      <p class="result-name">{r.title}</p>
-      <p class="result-line">「{r.line}」</p>
-      <p class="result-score">{r.score}</p>
-      {#if r.unlocked}<p class="result-unlock">隱藏角色「阿翼」加入了！</p>{/if}
+  <div class="result">
+    <div class="ribbon">
+      <img src="{import.meta.env.BASE_URL}ui/result-banner.webp" alt="" />
+      <span>{r.title}</span>
+    </div>
+    <div class="result-row">
+      <div class="result-pic"><img src={r.winner.portraits.win} alt="" /></div>
+      <div class="result-text">
+        <p class="result-line">「{r.line}」</p>
+        <p class="result-score">{r.score}</p>
+        {#if r.unlocked}<p class="result-unlock">隱藏角色「阿翼」加入了！</p>{/if}
+      </div>
     </div>
   </div>
 {/snippet}
@@ -161,24 +170,22 @@
     <Lobby />
   {:else if view === 'online-playing'}
     {#if result}
-      <section class="screen">
+      <Dialog title="比賽結束" wide>
         {@render resultCard(result)}
         {#if net.isHost}
           <Menu
             horizontal
             items={[
-              { label: '再來一場', action: () => hostCmd('start') },
+              { label: '再來一場', action: () => hostCmd('start'), primary: true },
               { label: '回大廳', action: () => hostCmd('reset') },
             ]}
           />
         {:else}
-          <p class="hint">等待房主決定下一步…</p>
+          <div class="hint-bar">等待房主決定下一步…</div>
         {/if}
-      </section>
+      </Dialog>
     {:else if onlineMenu}
-      <section class="screen">
-        <h2>選單</h2>
-        <p class="hint">連線比賽不會暫停喔！</p>
+      <Dialog title="選單" subtitle="連線比賽不會暫停喔！">
         <Menu
           items={[
             { label: '回到比賽', action: () => (onlineMenu = false) },
@@ -186,63 +193,30 @@
             { label: '離開房間', action: leave },
           ]}
         />
-      </section>
+      </Dialog>
     {/if}
     {#if net.status === 'reconnecting'}
-      <div class="banner">連線中斷，重新連線中…</div>
+      <div class="net-banner">連線中斷，重新連線中…</div>
     {/if}
   {:else if screen === 'title'}
-    <section class="screen">
-      <h1 class="logo"><small>虛擬台麻館</small>沙灘排球</h1>
-      <Menu
-        items={[
-          { label: '單機遊玩', action: () => (screen = 'solo') },
-          { label: '開設房間', action: () => (screen = 'host') },
-          { label: '加入房間', action: () => (screen = 'join') },
-          { label: '操作說明', action: () => (screen = 'help') },
-        ]}
-      />
-      <p class="hint">{ui.input === 'pad' ? '十字鍵選擇　A 確定　B 返回' : ui.input === 'touch' ? '點選開始' : '↑↓ 選擇　Enter 確定　Esc 返回　M 靜音'}</p>
-    </section>
+    <TitleScreen
+      items={[
+        { label: '單機遊玩', action: () => (screen = 'solo') },
+        { label: '開設房間', action: () => (screen = 'host') },
+        { label: '加入房間', action: () => (screen = 'join') },
+        { label: '操作說明', action: () => (screen = 'help') },
+      ]}
+    />
   {:else if screen === 'solo'}
-    <section class="screen">
-      <h2>單機遊玩</h2>
-      <Menu
-        items={[
-          { label: '對戰電腦', action: () => openSelect('cpu') },
-          { label: '雙人同樂（同一台電腦）', action: () => openSelect('versus') },
-          { label: '觀戰（電腦對電腦）', action: () => openSelect('watch') },
-          { label: '返回', action: () => (screen = 'title') },
-        ]}
-      />
-    </section>
+    <SoloScreen onpick={openSelect} onback={() => (screen = 'title')} />
   {:else if screen === 'host' || screen === 'join'}
     <RoomEntry page={screen} onback={() => (screen = 'title')} />
   {:else if screen === 'help'}
-    <section class="screen">
-      <h2>操作說明</h2>
-      <table class="keys">
-        <tbody>
-          <tr><th></th><th>鍵盤 1P</th><th>鍵盤 2P</th><th>手把</th><th>觸控</th></tr>
-          <tr><td>移動</td><td>A / D</td><td>← / →</td><td>十字鍵／左搖桿</td><td>左下搖桿</td></tr>
-          <tr><td>跳躍</td><td>W</td><td>↑</td><td>A 或 ↑</td><td>「跳」或搖桿往上推</td></tr>
-          <tr><td>擊球</td><td>F／空白鍵</td><td>Enter／右 Shift</td><td>B／X／RB／RT</td><td>「擊」</td></tr>
-          <tr><td>暫停</td><td colspan="2">Esc／P</td><td>Start</td><td>上方 ❚❚</td></tr>
-        </tbody>
-      </table>
-      <ul class="tips">
-        <li><b>扣殺</b>：跳起來在空中按擊球。同時按 ↑ 是高吊球、按 ↓ 是重扣、往對面按會更快。</li>
-        <li><b>飛撲救球</b>：在地上按住左右再按擊球。</li>
-        <li>對戰電腦和連線時，WASD、方向鍵、任何一支手把都能操作；雙人同樂時第一支手把是 1P、第二支是 2P。</li>
-        <li>選單可以用滑鼠、觸控、方向鍵＋Enter／Esc，或手把十字鍵＋A／B 操作；手把在文字欄位按 A 會跳出手把鍵盤。</li>
-      </ul>
-      <Menu items={[{ label: '返回', action: () => (screen = 'title') }]} />
-    </section>
+    <HelpScreen onback={() => (screen = 'title')} />
   {:else if screen === 'select'}
     <SelectScreen bind:this={selectScreen} {mode} onstart={start} onback={() => (screen = 'solo')} />
   {:else if screen === 'pause'}
-    <section class="screen">
-      <h2>暫停</h2>
+    <Dialog title="暫停">
       <Menu
         items={[
           { label: '繼續', action: resume },
@@ -250,19 +224,19 @@
           { label: '回標題', action: toTitle },
         ]}
       />
-    </section>
+    </Dialog>
   {:else if screen === 'result' && result}
-    <section class="screen">
+    <Dialog title="比賽結束" wide>
       {@render resultCard(result)}
       <Menu
         horizontal
         items={[
-          { label: '再來一場', action: () => start(lastSetup) },
+          { label: '再來一場', action: () => start(lastSetup), primary: true },
           { label: '換角色', action: () => openSelect(lastSetup.mode) },
           { label: '回標題', action: toTitle },
         ]}
       />
-    </section>
+    </Dialog>
   {/if}
 
   {#if touchSlots.length}
@@ -276,3 +250,69 @@
   </div>
   <div class="rotate-hint">請把裝置轉成橫向 ↻</div>
 </div>
+
+<style>
+  .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6cqh;
+  }
+  .ribbon {
+    position: relative;
+    width: 56cqw;
+  }
+  .ribbon img {
+    width: 100%;
+    display: block;
+  }
+  .ribbon span {
+    position: absolute;
+    inset: 0 0 14% 0;
+    display: grid;
+    place-items: center;
+    font-size: 5.4cqh;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    color: var(--navy);
+  }
+  .result-row {
+    display: flex;
+    gap: 3cqw;
+    align-items: center;
+  }
+  .result-pic {
+    width: 30cqh;
+    height: 30cqh;
+    border: 0.5cqh solid var(--navy);
+    outline: 0.35cqh solid var(--gold);
+    outline-offset: -1cqh;
+    background: linear-gradient(#ffe9a8, #ffb3c8);
+    overflow: hidden;
+  }
+  .result-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .result-text p {
+    margin: 0;
+  }
+  .result-line {
+    font-size: 3.4cqh;
+    font-weight: 800;
+    max-width: 40cqw;
+  }
+  .result-score {
+    margin-top: 1.4cqh !important;
+    font-size: 7cqh;
+    font-weight: 900;
+    color: var(--sea);
+    letter-spacing: 0.1em;
+  }
+  .result-unlock {
+    color: var(--accent);
+    font-weight: 900;
+    font-size: 2.8cqh;
+  }
+</style>

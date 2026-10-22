@@ -1,25 +1,37 @@
 <script>
-  import { CHARACTERS, isUnlocked } from '../game/characters.js';
+  // 單機選角：先選 1P（或左邊）再選對手（或右邊），右邊看角色資料、調比賽設定
   import { onMount } from 'svelte';
+  import { CHARACTERS, isUnlocked } from '../game/characters.js';
   import { play } from '../game/audio.js';
   import { ui } from '../ui.svelte.js';
+  import ScreenFrame from './ScreenFrame.svelte';
+  import BackButton from './BackButton.svelte';
+  import ControlHint from './ControlHint.svelte';
+  import CharacterGrid from './CharacterGrid.svelte';
+  import CharacterDetail from './CharacterDetail.svelte';
 
   // onstart({ characters, target, difficulty })、onback()
   let { mode, onstart, onback } = $props();
 
-  const STEP_TITLES = {
-    cpu: ['選擇你的角色', '選擇對手'],
-    versus: ['1P 選擇角色', '2P 選擇角色'],
-    watch: ['左邊的電腦', '右邊的電腦'],
+  const STEPS = {
+    cpu: [['選擇角色', '1P vs CPU・選你的角色'], ['選擇對手', '1P vs CPU・選電腦的角色']],
+    versus: [['1P 選角', '1P vs 2P・左邊的角色'], ['2P 選角', '1P vs 2P・右邊的角色']],
+    watch: [['左邊電腦', 'CPU vs CPU・左邊的角色'], ['右邊電腦', 'CPU vs CPU・右邊的角色']],
   };
 
   let picks = $state([]);
-  let cursor = $state(0);
+  let cursor = $state(4); // 預設小春
   let difficulty = $state('normal');
   let target = $state(10);
+  let grid;
 
   const current = $derived(CHARACTERS[cursor]);
   const step = $derived(picks.length);
+  const tags = $derived(
+    Object.fromEntries(picks.map((c, i) => [c.id, mode === 'versus' ? `${i + 1}P` : i === 0 ? (mode === 'cpu' ? '1P' : '左') : '右'])),
+  );
+
+  onMount(() => grid.focusIndex(cursor));
 
   function pick(character = current) {
     if (!isUnlocked(character)) return;
@@ -34,8 +46,7 @@
     do next = (next + 1) % CHARACTERS.length;
     while (!isUnlocked(CHARACTERS[next]));
     cursor = next;
-    // 焦點也跟著移過去，鍵盤／手把直接按確定就是這個角色
-    if (ui.input !== 'touch') roster.querySelectorAll('button')[next]?.focus({ preventScroll: true });
+    if (ui.input !== 'touch') grid.focusIndex(next);
   }
 
   function randomPick() {
@@ -49,84 +60,72 @@
     else onback();
   }
 
-  // 鍵盤／手把：焦點移到哪張卡就預覽哪個角色；觸控：第一下預覽、再點一下確定
-  function tap(i) {
-    if (ui.input === 'touch' && cursor !== i) {
-      cursor = i;
-      return;
-    }
-    cursor = i;
-    pick(CHARACTERS[i]);
-  }
-
   // Esc／手把 B（由 App 透過 Controls 呼叫）
   export function goBack() {
     back();
   }
-
-  let roster;
-  onMount(() => roster.querySelectorAll('button')[cursor]?.focus({ preventScroll: true }));
 </script>
 
-<section class="screen">
-  <h2>{STEP_TITLES[mode][step]}</h2>
-  <div class="select-body">
-    <div class="roster" bind:this={roster}>
-      {#each CHARACTERS as c, i (c.id)}
-        {@const open = isUnlocked(c)}
-        {@const taken = picks.indexOf(c)}
-        <button
-          class="card"
-          class:focus={i === cursor}
-          class:locked={!open}
-          class:taken={taken >= 0}
-          data-tag={taken === 0 ? (mode === 'versus' ? '1P' : '已選') : ''}
-          onmouseenter={() => ui.input === 'pointer' && (cursor = i)}
-          onfocus={() => (cursor = i)}
-          onclick={() => tap(i)}
-        >
-          <img src={c.portraits.normal} alt="" />
-          <span>{open ? c.name : '？？？'}</span>
-        </button>
-      {/each}
+<ScreenFrame title={STEPS[mode][step][0]} subtitle={STEPS[mode][step][1]}>
+  <div class="panel grow">
+    <div class="panel-head">角色一覽</div>
+    <div class="panel-body">
+      <CharacterGrid bind:this={grid} bind:cursor {tags} onpick={(c) => pick(c)} />
     </div>
-    <aside class="detail">
-      {#if isUnlocked(current)}
-        <img src={current.portraits.happy} alt="" />
-        <p class="name">{current.name}</p>
-        <p class="intro">{current.intro}</p>
-        {#each [['速度', 'speed'], ['跳躍', 'jump'], ['力量', 'power']] as [label, key] (key)}
-          <div class="stat">
-            {label}
-            <div class="bar">
-              {#each { length: 5 } as _, i (i)}<i class:on={i < current.stats[key]}></i>{/each}
-            </div>
-          </div>
-        {/each}
-      {:else}
-        <p class="name">？？？</p>
-        <p class="intro">在單人模式贏一場比賽就會出現。</p>
-      {/if}
-    </aside>
   </div>
-  <div class="options">
-    {#if mode !== 'versus'}
-      <label>電腦強度
-        <select bind:value={difficulty}>
-          <option value="easy">簡單</option>
-          <option value="normal">普通</option>
-          <option value="hard">困難</option>
-        </select>
-      </label>
-    {/if}
-    <label>勝利分數
-      <select bind:value={target}>
-        <option value={5}>5 分</option>
-        <option value={10}>10 分</option>
-        <option value={15}>15 分</option>
-      </select>
-    </label>
-    <button onclick={randomPick}>隨機</button>
-    <button onclick={back}>返回</button>
+
+  <div class="side">
+    <CharacterDetail character={current} />
+    <div class="panel">
+      <div class="panel-head">比賽設定</div>
+      <div class="panel-body settings">
+        {#if mode !== 'versus'}
+          <label class="field">電腦強度
+            <select class="vsel" bind:value={difficulty}>
+              <option value="easy">簡單</option>
+              <option value="normal">普通</option>
+              <option value="hard">困難</option>
+            </select>
+          </label>
+        {/if}
+        <label class="field">勝利分數
+          <select class="vsel" bind:value={target}>
+            <option value={5}>5 分</option>
+            <option value={10}>10 分</option>
+            <option value={15}>15 分</option>
+          </select>
+        </label>
+        <button type="button" class="vbtn small" onclick={randomPick}>隨機</button>
+      </div>
+    </div>
   </div>
-</section>
+
+  {#snippet foot()}
+    <BackButton onclick={back} />
+    <ControlHint extra={ui.input === 'touch' ? '點一下看資料，再點一下決定' : ''} />
+    <button type="button" class="vbtn primary" disabled={!isUnlocked(current)} onclick={() => pick()}>
+      {step === 1 ? '開始比賽' : '決定'}
+    </button>
+  {/snippet}
+</ScreenFrame>
+
+<style>
+  .grow {
+    flex: 1.5;
+  }
+  .side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6cqh;
+    min-width: 0;
+  }
+  .settings {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 2cqw;
+  }
+  .settings .field {
+    flex: 1;
+  }
+</style>

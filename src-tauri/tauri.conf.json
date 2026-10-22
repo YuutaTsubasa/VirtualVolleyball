@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "MahjongParlorBeachVolley",
+  "productName": "VirtualVolleyballKing",
   "version": "0.1.0",
   "identifier": "com.yuuta.mahjongvolleyball",
   "build": {
@@ -13,7 +13,7 @@
     "windows": [
       {
         "label": "main",
-        "title": "台麻館沙灘排球",
+        "title": "虛擬排球王",
         "width": 1280,
         "height": 720,
         "minWidth": 640,

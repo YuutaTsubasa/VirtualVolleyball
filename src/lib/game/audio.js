@@ -79,3 +79,7 @@ export function toggleMute() {
   muted = !muted;
   return muted;
 }
+
+export function isMuted() {
+  return muted;
+}

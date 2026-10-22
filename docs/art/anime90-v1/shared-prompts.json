@@ -1,0 +1,87 @@
+[
+  {
+    "name": "environment/court",
+    "prompt": "Production background asset for 2D side-view Taiwanese beach volleyball videogame, 1990s hand-painted cel-anime background like sunny coastal sports episode. LANDSCAPE 16:9 1920x1080. Orthographic SIDE ELEVATION camera, straight horizontal flat sand baseline at exactly 87% imageheight (y940 of1080). Foreground lower40% warm clean pale sand with very faint texture and huge clear playfield, distant turquoise sea shoreline at y650, blue summer sky and white cumulus clouds upper60%, green Taiwan coastal hills on far left/right horizon with tiny coastal houses faraway, no recognizable landmark required. Palm leaves only extremeuppercorners. Bright joyful coherent blue/navy/cream/yellow colors matching 90s chibi sprites, painted simplified environmental details, crisp but backgroundlowcontrast. Absolutely NO people, NO net or pole, NO volleyball, NO UI, NO text/logo, NO objects in playable area, NO perspective court rectangle. Flat continuous sand lefttoright, suitable for overlay game sprites and net separately. Fillcanvas opaque.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-14e254f7-d7a6-4179-8720-a6abbeae98b5.png"
+  },
+  {
+    "name": "environment/net",
+    "prompt": "Single game sprite: side-view beach volleyball net seen almost EDGE-ON in a 2D side-scroller. One slim blue padded upright post, small silver top, red-white antenna rising above, very narrow visible strip of white-top-band dark net mesh extending a SHORT distance to right. Tall vertical asset, total width at most 15% height. Clean 1990s cel anime dark outline, flat blue-white colors, one hardshadow. Entirepost fromtopantenna toflatbottom fullyvisible. Real transparent background, no sand/ground/base shadow, no people ball lettering. Mesh holes must be transparent, not opaquegray. No broad frontal net, no perspective scene, no ropes reachingoffcanvas. Generous margin.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-f342d213-60ff-4148-a9e7-b6415fb4c2be.png"
+  },
+  {
+    "name": "environment/ball",
+    "prompt": "ONE isolated perfectly round yellow-blue-white volleyball sprite, bold darknavy outline and clear curving panel seams, 1990s anime sports videogame cel art, flat colors with simple one-tone shadow and broad modest highlight. Exactly spherical CIRCULAR silhouette, centereddirectview, no perspectiveoval. Transparent background, no text/brand, no motion trail, no floor or shadow, generous transparentmargin. Readable at 28 pixels diameter. Single ball only.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-59f8644c-5bf1-4a64-88b6-ef0743242610.png"
+  },
+  {
+    "name": "ui/button-normal",
+    "prompt": "Create ONE production UI bitmap for a 1990s cel-anime beach volleyball arcade game, clean bold navy outlines, cobalt blue, warm white and golden yellow accents, simple flat shapes, modest hard-edged highlights, no photorealism or 3D chrome. True transparent background outside item. NO letters, words, numbers, glyphs, icons or placeholder labels. Centered isolated whole item with generous transparent margins. A wide horizontal rounded rectangular menu BUTTON, 5:1 width:height, cobalt fill, thick navy outeredge, thin white inneredge, small gold diagonal corner accents. Large plain empty blue central label area. Straight symmetric shape.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-6be2feef-437d-435e-931d-d76ff88dfa2f.png"
+  },
+  {
+    "name": "ui/button-selected",
+    "prompt": "Create ONE production UI bitmap for a 1990s cel-anime beach volleyball arcade game, clean bold navy outlines, cobalt blue, warm white and golden yellow accents, simple flat shapes, modest hard-edged highlights, no photorealism or 3D chrome. True transparent background outside item. NO letters, words, numbers, glyphs, icons or placeholder labels. Centered isolated whole item with generous transparent margins. A wide horizontal rounded rectangular selected menu BUTTON, 5:1 width:height, bright warm yellow fill, thick navy outeredge, thin white inneredge, small cobalt diagonal corner accents. Large plain empty yellow central label area. Straight symmetric shape.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-35c95338-24fb-47f9-a123-42fd3b674cc6.png"
+  },
+  {
+    "name": "ui/button-disabled",
+    "prompt": "Create ONE production UI bitmap for a 1990s cel-anime beach volleyball arcade game, clean bold navy outlines, cobalt blue, warm white and golden yellow accents, simple flat shapes, modest hard-edged highlights, no photorealism or 3D chrome. True transparent background outside item. NO letters, words, numbers, glyphs, icons or placeholder labels. Centered isolated whole item with generous transparent margins. A wide horizontal rounded rectangular disabled menu BUTTON, 5:1 width:height, desaturated slateblue-gray fill, thick darkblue outeredge, thin palegray inneredge, small mutedgray diagonal corner accents. Plain empty central label area. Straight symmetric shape.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-799e9bfc-995d-4992-8b74-215e726200fc.png"
+  },
+  {
+    "name": "ui/dialog-panel",
+    "prompt": "Create ONE production UI bitmap for a 1990s cel-anime beach volleyball arcade game, clean bold navy outlines, cobalt blue, warm white and golden yellow accents, simple flat shapes, modest hard-edged highlights, no photorealism or 3D chrome. True transparent background outside item. NO letters, words, numbers, glyphs, icons or placeholder labels. Centered isolated whole item with generous transparent margins. A large horizontal 4:3 dialog PANEL for lobby, pause, help and result menus. Rounded rectangle with opaque deepnavy central area, layered cobalt then white then gold thin borders, subtle small volleyball-wave-inspired corner flourishes confined to outercorners. Center 85% completely flat blank navy with no decorations. No titlebar text.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-99d2a208-3251-4844-bb6d-660a08d3f48d.png"
+  },
+  {
+    "name": "ui/portrait-frame",
+    "prompt": "Create ONE production UI bitmap for a 1990s cel-anime beach volleyball arcade game, clean bold navy outlines, cobalt blue, warm white and golden yellow accents, simple flat shapes, modest hard-edged highlights, no photorealism or 3D chrome. True transparent background outside item. NO letters, words, numbers, glyphs, icons or placeholder labels. Centered isolated whole item with generous transparent margins. A SQUARE character selection portrait FRAME, 1:1 aspect, thick navy rim, cobalt beveled inner rim and small white gold corner tabs, central opening fully transparent occupying85%. Outside transparent. Empty frame only no silhouette or portrait.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-7a3cbdd4-ae47-4fff-917b-5b50d5e854bb.png"
+  },
+  {
+    "name": "ui/portrait-selected",
+    "prompt": "Create ONE production UI bitmap for a 1990s cel-anime beach volleyball arcade game, clean bold navy outlines, cobalt blue, warm white and golden yellow accents, simple flat shapes, modest hard-edged highlights, no photorealism or 3D chrome. True transparent background outside item. NO letters, words, numbers, glyphs, icons or placeholder labels. Centered isolated whole item with generous transparent margins. A SQUARE selected character portrait FRAME, 1:1 aspect, thick navy rim, golden yellow bright inner rim and small white cobalt corner tabs, central opening fully transparent occupying85%. Outside transparent. Empty frame only no silhouette or portrait.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-da5c4266-2e5b-414a-943b-e23871938a00.png"
+  },
+  {
+    "name": "ui/score-panel",
+    "prompt": "Create ONE production UI bitmap for a 1990s cel-anime beach volleyball arcade game, clean bold navy outlines, cobalt blue, warm white and golden yellow accents, simple flat shapes, modest hard-edged highlights, no photorealism or 3D chrome. True transparent background outside item. NO letters, words, numbers, glyphs, icons or placeholder labels. Centered isolated whole item with generous transparent margins. A long horizontal sports SCOREBOARD backing, 4:1 width:height. Navy outerframe white innerborder, two matching deepblue empty score wells at left and right, small blank gold diamond divider at center, slim blue wing extensions. No digits, no portrait, no text. Blank symmetrical scorebox.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-4e0b334f-a0e5-4c8c-87bd-518f09584f1b.png"
+  },
+  {
+    "name": "ui/input-field",
+    "prompt": "Create ONE production UI bitmap for a 1990s cel-anime beach volleyball arcade game, clean bold navy outlines, cobalt blue, warm white and golden yellow accents, simple flat shapes, modest hard-edged highlights, no photorealism or 3D chrome. True transparent background outside item. NO letters, words, numbers, glyphs, icons or placeholder labels. Centered isolated whole item with generous transparent margins. A wide horizontal empty input text FIELD, 6:1 width:height, ivorywhite opaque interior, thin navy and cobalt doubleline roundedrect border, tiny gold corneraccent, clean blank inside. No cursor text or label.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-a803647e-502b-430e-ae77-f4ca54345caf.png"
+  },
+  {
+    "name": "ui/result-banner",
+    "prompt": "Create ONE production UI bitmap for a 1990s cel-anime beach volleyball arcade game, clean bold navy outlines, cobalt blue, warm white and golden yellow accents, simple flat shapes, modest hard-edged highlights, no photorealism or 3D chrome. True transparent background outside item. NO letters, words, numbers, glyphs, icons or placeholder labels. Centered isolated whole item with generous transparent margins. A wide horizontal WINNER/result announcement RIBBON PLATE, 5:1 aspect. Golden yellow center blank ribbon with navy thick outline whitekeyline, two cobalt folded ribbon tails at left andright. Large center plain empty. No trophy or text.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-6aeba818-7258-40ff-b805-a01930f654ef.png"
+  },
+  {
+    "name": "effects/hit-spark",
+    "prompt": "ONE 1990s anime volleyball hit impact burst sprite, warm white central flash surrounded by 8 sharp yellow-orange pointed rays with bold navy fine outeredge, irregular energetic star silhouette, small separate diamond sparks close to center. Crisp flat cel colors, no words or ball, transparent background, no glow cloud or black matte, generous margin. Suitable for brief contact flash overlay.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-74493265-5ef6-49e0-a06a-a4948644a6e8.png"
+  },
+  {
+    "name": "effects/sand-puff",
+    "prompt": "ONE low horizontal sand landing puff game effect, compact cluster of 5 rounded warm beige and cream dust puffs expanding sideways, sparse small sand flecks above. Clean 1990s celanime linework and flatcolors, simple low darkochre shading, no floor or shadow, no character or text, realtransparentbackground, generously padded. Width3xheight, designed behind player's landing feet.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-a3c99ab5-2d76-4ac8-9cf9-7874c2b92b2d.png"
+  },
+  {
+    "name": "effects/spike-trail",
+    "prompt": "ONE elongated curved anime motion trail for volleyball powershot traveling RIGHT: brightwhite leading crescent atRIGHT, cobalt/cyan tapered long swooshes sweeping back LEFT, gold thinaccent, crisp flat cel strokes. NO ball/object/words/scene, transparent empty gaps and background, no blur or glow cloud. Horizontal 4:1 shape fullyvisible with margin.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-d8cbff75-e18d-4631-8d26-078f3184aea1.png"
+  },
+  {
+    "name": "effects/score-burst",
+    "prompt": "ONE celebratory 1990s sports anime score effect: loose circular burst of golden fourpoint stars with small cobalt/white confetti diamonds radiating outward, center mostly EMPTY transparent for dynamic score text. Clean crisp flat cel outlines, separate simple stars, no letters or numbers, no trophy or circleplate, alpha background and margin.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-37f4a9bb-5f10-40d8-967c-3f06f6a801aa.png"
+  },
+  {
+    "name": "ui/button-normal-repair",
+    "prompt": "Edit the reference button. Keep EXACTLY this blue-white-gold 1990s arcade button shape and borders and empty typography area. Fix the blue interior to be a completely uniform clean OPAQUE cobalt blue flat fill. There must be absolutely no transparent holes or translucent blotches in the interior. NO text, icon, or marks. Preserve actual transparency outside button only. Whole button with margin.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-e8fb9fc4-9f30-453e-9441-0d46d32536d0.png"
+  }
+]

@@ -5,8 +5,23 @@ import { EXPRESSIONS, pickLine } from './characters.js';
 
 const SCALE = 2; // 內部解析度 1920×1080，縮放顯示時比較銳利
 
-// 有自己的背景圖（例如 ChatGPT 畫的）就放到 public/bg/court.png，把這裡改成 true
-const USE_BACKGROUND_IMAGE = false;
+// 90 年代圖素包（docs/art/anime90-v1）。載入失敗時會退回程式畫的版本。
+const BASE = import.meta.env.BASE_URL;
+const ART = {
+  court: `${BASE}game/court.webp`,
+  net: `${BASE}game/net.webp`,
+  ball: `${BASE}game/ball.webp`,
+  spark: `${BASE}effects/hit-spark.webp`,
+  sand: `${BASE}effects/sand-puff.webp`,
+  burst: `${BASE}effects/score-burst.webp`,
+  trail: `${BASE}effects/spike-trail.webp`,
+  scorePanel: `${BASE}ui/score-panel.webp`,
+};
+// 球網圖（192×1024）：上緣白帶在 y≈190、網柱底在 y≈1016，對到物理的網頂與地面
+const NET_IMG = { tape: 190, bottom: 1016, left: 41, right: 152 };
+// 角色圖集：每格正方形，腳底錨點在 (0.5, 496/512)
+const SPRITE_ANCHOR_Y = 496 / 512;
+const SPRITE_SIZE = 210;
 
 // ---------- 圖片 ----------
 
@@ -43,7 +58,7 @@ export function preload(characters) {
     for (const e of EXPRESSIONS) loadImage(c.portraits[e]);
     if (c.sprite) loadImage(c.spriteSrc);
   }
-  if (USE_BACKGROUND_IMAGE) loadImage(`${import.meta.env.BASE_URL}bg/court.png`);
+  for (const src of Object.values(ART)) loadImage(src);
 }
 
 // ---------- 背景（畫一次存起來） ----------
@@ -139,7 +154,11 @@ function buildBackground() {
   g.lineTo(W - 24, GROUND + 2);
   g.stroke();
 
-  // 球網
+  return c;
+}
+
+// 程式畫的球網（沒有球網圖時）
+function drawNetShape(g) {
   const left = NET.x - NET.w / 2;
   g.fillStyle = '#7a5230';
   g.fillRect(NET.x - 4, NET.top - 6, 8, GROUND - NET.top + 6);
@@ -159,14 +178,28 @@ function buildBackground() {
   g.beginPath();
   g.arc(NET.x, NET.top - 4, 5, 0, Math.PI * 2);
   g.fill();
+}
 
-  return c;
+function drawNet(g) {
+  const img = loadImage(ART.net);
+  if (!ready(img)) return drawNetShape(g);
+  const scale = (GROUND + 4 - NET.top) / (NET_IMG.bottom - NET_IMG.tape);
+  const w = img.naturalWidth * scale;
+  const h = img.naturalHeight * scale;
+  // 網面在網柱右邊：讓「網柱＋網面」整體置中在物理的網上
+  const cx = ((NET_IMG.left + NET_IMG.right) / 2) * scale;
+  g.drawImage(img, NET.x - cx, NET.top - NET_IMG.tape * scale, w, h);
 }
 
 // ---------- 特效 ----------
 
 const particles = [];
+const effects = []; // 圖片特效：火花、沙塵、得分閃光
 const bubbles = [];
+
+function effect(key, x, y, w, life, { rot = 0, grow = 0.3, alpha = 1, flip = false } = {}) {
+  effects.push({ key, x, y, w, life, max: life, rot, grow, alpha, flip });
+}
 let shake = 0;
 
 function burst(x, y, color, n, speed, life = 30, gravity = 0.25) {
@@ -194,6 +227,7 @@ function say(side, text, frames = 110) {
 
 export function resetEffects() {
   particles.length = 0;
+  effects.length = 0;
   bubbles.length = 0;
   shake = 0;
   setMood(0, 'normal', 0);
@@ -205,21 +239,26 @@ export function handleEvents(match) {
   for (const e of match.events) {
     switch (e.type) {
       case 'spike':
-        burst(e.x, e.y, '#fff3a0', 14, 7, 20, 0);
+        effect('spark', e.x, e.y, 130, 16, { rot: Math.random() * Math.PI });
+        burst(e.x, e.y, '#fff3a0', 8, 7, 18, 0);
         shake = Math.max(shake, 6);
         break;
       case 'hit':
-        burst(e.x, e.y, '#ffffff', 6, 3, 14, 0);
+        effect('spark', e.x, e.y, 64, 11, { rot: Math.random() * Math.PI, alpha: 0.85 });
         break;
       case 'ground':
-        burst(e.x, GROUND - 4, '#e4c27a', 24, 5, 40);
+        effect('sand', e.x, GROUND - 22, 240, 40, { grow: 0.4 });
+        burst(e.x, GROUND - 4, '#e4c27a', 12, 5, 36);
         shake = Math.max(shake, 10);
         break;
       case 'land':
-      case 'dive':
-        burst(e.x ?? match.players[e.side].x, GROUND - 2, '#ecd08f', 6, 2, 22);
+      case 'dive': {
+        const x = e.x ?? match.players[e.side].x;
+        effect('sand', x, GROUND - 12, e.type === 'dive' ? 150 : 100, 22, { alpha: 0.75, flip: Math.random() < 0.5 });
         break;
+      }
       case 'score': {
+        effect('burst', match.ball.x, Math.min(match.ball.y, GROUND - 60), 220, 45, { grow: 0.5 });
         const loser = 1 - e.side;
         setMood(e.side, 'happy', 120);
         setMood(loser, Math.random() < 0.5 ? 'sad' : 'surprised', 120);
@@ -374,7 +413,7 @@ function drawChibi(g, p, expression, celebrate) {
   g.restore();
 }
 
-// 有 ChatGPT 畫好的 sprite sheet 時（規格見 docs/art-guide.md）
+// 角色圖集：8 格橫排，順序同下（docs/art/anime90-v1）
 const SPRITE_FRAMES = ['idle', 'run1', 'run2', 'jump', 'spike', 'dive', 'win', 'lose'];
 function drawSprite(g, p, img, celebrate, sad) {
   const fw = img.naturalWidth / SPRITE_FRAMES.length;
@@ -386,13 +425,17 @@ function drawSprite(g, p, img, celebrate, sad) {
   else if (!p.onGround) frame = p.spikeTimer > 0 || p.lastHit < 10 ? 'spike' : 'jump';
   else if (Math.abs(p.vx) > 0.1) frame = Math.floor(p.anim / 8) % 2 ? 'run1' : 'run2';
   const i = SPRITE_FRAMES.indexOf(frame);
-  const drawH = 150;
+  const drawH = SPRITE_SIZE;
   const drawW = drawH * (fw / fh);
   const facing = p.state === 'normal' && p.vx !== 0 ? Math.sign(p.vx) : p.toward;
+  // 起身時壓扁一點、等待時微微呼吸
+  const breathe = frame === 'idle' ? 1 + Math.sin(p.anim * 0.08) * 0.012 : 1;
+  const squash = p.state === 'recover' ? 0.94 : 1;
   g.save();
   g.translate(p.x, p.y);
   if (facing < 0) g.scale(-1, 1);
-  g.drawImage(img, i * fw, 0, fw, fh, -drawW / 2, -drawH, drawW, drawH);
+  g.scale(1 / squash, breathe * squash);
+  g.drawImage(img, i * fw, 0, fw, fh, -drawW / 2, -drawH * SPRITE_ANCHOR_Y, drawW, drawH);
   g.restore();
 }
 
@@ -417,7 +460,16 @@ function drawPlayer(g, match, p) {
 // ---------- 球 ----------
 
 function drawBall(g, b) {
-  if (b.power) {
+  const trail = loadImage(ART.trail);
+  if (b.power && ready(trail) && b.y > -BALL_R) {
+    // 扣殺的光尾：頭在球的位置，往速度的反方向拖
+    g.save();
+    g.translate(b.x, b.y);
+    g.rotate(Math.atan2(b.vy, b.vx));
+    g.globalAlpha = 0.9;
+    g.drawImage(trail, -170, -30, 180, 60);
+    g.restore();
+  } else if (b.power) {
     b.trail.forEach((t, i) => {
       g.fillStyle = `rgba(255,${120 + i * 15},40,${0.5 - i * 0.06})`;
       g.beginPath();
@@ -440,6 +492,18 @@ function drawBall(g, b) {
     g.lineTo(b.x - 10, 22);
     g.lineTo(b.x + 10, 22);
     g.fill();
+    return;
+  }
+
+  const img = loadImage(ART.ball);
+  if (ready(img)) {
+    // 球的圖在 256 裡占 240（四周有透明邊）
+    const size = BALL_R * 2 * (256 / 240);
+    g.save();
+    g.translate(b.x, b.y);
+    g.rotate(b.angle);
+    g.drawImage(img, -size / 2, -size / 2, size, size);
+    g.restore();
     return;
   }
 
@@ -481,13 +545,15 @@ function outlinedText(g, text, x, y, size, fill = '#fff', align = 'center') {
   g.textBaseline = 'middle';
   g.lineJoin = 'round';
   g.lineWidth = size / 5;
-  g.strokeStyle = 'rgba(30,20,40,0.9)';
+  g.strokeStyle = '#142a63';
   g.strokeText(text, x, y);
   g.fillStyle = fill;
   g.fillText(text, x, y);
 }
 
 function drawHud(g, match, names) {
+  const panel = loadImage(ART.scorePanel);
+  if (ready(panel)) return drawScoreboard(g, match, names, panel);
   for (const side of [0, 1]) {
     const p = match.players[side];
     const m = mood[side];
@@ -512,6 +578,55 @@ function drawHud(g, match, names) {
     outlinedText(g, String(match.score[side]), side === 0 ? x + 84 : x - 10, 64, 44, side === match.lastScorer && match.phase === 'point' ? '#ffe066' : '#fff', side === 0 ? 'left' : 'right');
   }
   outlinedText(g, `${match.target} 分勝`, W / 2, 26, 16, '#fff');
+
+  if (match.phase === 'ready') {
+    const server = match.players[match.server];
+    outlinedText(g, `${server.character.name} 發球`, W / 2, 190, 40, '#fff');
+  } else if (match.phase === 'point' && match.timer > 40) {
+    outlinedText(g, '得分！', W / 2, 190, 64, '#ffe066');
+  }
+}
+
+// 圖素包的比分底板（800×200，左右兩格數字中心在 27.75%／73.25%）
+function drawScoreboard(g, match, names, panel) {
+  const pw = 330;
+  const ph = pw * (panel.naturalHeight / panel.naturalWidth);
+  const px = W / 2 - pw / 2;
+  const py = 6;
+  g.drawImage(panel, px, py, pw, ph);
+  for (const side of [0, 1]) {
+    const flash = side === match.lastScorer && match.phase === 'point';
+    const cx = px + pw * (side === 0 ? 0.2775 : 0.7325);
+    outlinedText(g, String(match.score[side]).padStart(2, '0'), cx, py + ph * 0.5, 40, flash ? '#ffe066' : '#fff');
+  }
+  outlinedText(g, `${match.target} 分勝`, W / 2, py + ph + 10, 14, '#fff');
+
+  // 兩邊角落：頭像＋名字
+  for (const side of [0, 1]) {
+    const p = match.players[side];
+    const m = mood[side];
+    const img = loadImage(p.character.portraits[m.timer > 0 ? m.expression : 'normal']);
+    const size = 70;
+    const x = side === 0 ? 16 : W - 16 - size;
+    const y = 10;
+    g.save();
+    rr(g, x, y, size, size, 8);
+    g.fillStyle = '#5aa9ec';
+    g.fill();
+    g.clip();
+    if (ready(img)) g.drawImage(img, x - 8, y - 2, size + 16, size + 16);
+    g.restore();
+    g.lineWidth = 3.5;
+    g.strokeStyle = '#142a63';
+    rr(g, x, y, size, size, 8);
+    g.stroke();
+    g.lineWidth = 1.5;
+    g.strokeStyle = '#ffd43b';
+    rr(g, x + 3, y + 3, size - 6, size - 6, 6);
+    g.stroke();
+    const label = names?.[side] ? `${names[side]}（${p.character.name}）` : p.character.name;
+    outlinedText(g, label, side === 0 ? x + size + 10 : x - 10, y + size / 2, 19, '#fff', side === 0 ? 'left' : 'right');
+  }
 
   if (match.phase === 'ready') {
     const server = match.players[match.server];
@@ -597,21 +712,36 @@ export function draw(canvas, match, opts = {}) {
     if (shake < 0.5) shake = 0;
   }
 
-  const bgImg = USE_BACKGROUND_IMAGE ? loadImage(`${import.meta.env.BASE_URL}bg/court.png`) : null;
-  if (ready(bgImg)) {
-    g.drawImage(bgImg, 0, 0, W, H);
+  const court = loadImage(ART.court);
+  if (ready(court)) {
+    g.drawImage(court, 0, 0, W, H);
   } else {
     bgCanvas ??= buildBackground();
     g.drawImage(bgCanvas, 0, 0, W, H);
     // 雲要動，畫在背景之後、山的前面看起來也還好
     drawClouds(g);
   }
+  drawNet(g);
 
   if (!match) return;
 
   for (const p of match.players) drawPlayer(g, match, p);
   drawBall(g, match.ball);
 
+  for (const fx of effects) {
+    const img = loadImage(ART[fx.key]);
+    if (!ready(img)) continue;
+    const t = 1 - fx.life / fx.max;
+    const w = fx.w * (1 + fx.grow * t);
+    const h = w * (img.naturalHeight / img.naturalWidth);
+    g.save();
+    g.globalAlpha = fx.alpha * Math.min(1, (fx.life / fx.max) * 1.6);
+    g.translate(fx.x, fx.y);
+    g.rotate(fx.rot);
+    if (fx.flip) g.scale(-1, 1);
+    g.drawImage(img, -w / 2, -h / 2, w, h);
+    g.restore();
+  }
   for (const pt of particles) {
     g.globalAlpha = pt.life / pt.max;
     g.fillStyle = pt.color;
@@ -633,6 +763,7 @@ export function tick() {
     pt.vy += pt.gravity;
     if (--pt.life <= 0) particles.splice(i, 1);
   }
+  for (let i = effects.length - 1; i >= 0; i--) if (--effects[i].life <= 0) effects.splice(i, 1);
   for (let i = bubbles.length - 1; i >= 0; i--) if (--bubbles[i].timer <= 0) bubbles.splice(i, 1);
   for (const m of mood) if (m.timer > 0) m.timer--;
 }

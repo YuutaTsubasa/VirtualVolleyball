@@ -1,0 +1,109 @@
+<script>
+  // 操作說明：鍵盤／手把／觸控對照表與小技巧
+  import ScreenFrame from './ScreenFrame.svelte';
+  import BackButton from './BackButton.svelte';
+  import ControlHint from './ControlHint.svelte';
+
+  let { onback } = $props();
+  const BASE = import.meta.env.BASE_URL;
+  const ROWS = [
+    ['移動', 'A / D', '← / →', '十字鍵／左搖桿', '左下搖桿'],
+    ['跳躍', 'W', '↑', 'A 或 ↑', '「跳」或搖桿往上'],
+    ['擊球', 'F／空白鍵', 'Enter／右 Shift', 'B／X／RB／RT', '「擊」'],
+    ['暫停', 'Esc／P', 'Esc／P', 'Start', '上方暫停鈕'],
+  ];
+</script>
+
+<ScreenFrame title="操作說明" subtitle="鍵盤・手把・觸控都能玩">
+  <div class="panel keys-panel">
+    <div class="panel-head">操作方式</div>
+    <div class="panel-body">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th><img src="{BASE}ui/icons/keyboard.webp" alt="" />鍵盤 1P</th>
+            <th><img src="{BASE}ui/icons/keyboard.webp" alt="" />鍵盤 2P</th>
+            <th><img src="{BASE}ui/icons/gamepad.webp" alt="" />手把</th>
+            <th><img src="{BASE}ui/icons/touch.webp" alt="" />觸控</th>
+          </tr>
+        </thead>
+        <tbody>
+          {#each ROWS as [label, ...cells] (label)}
+            <tr>
+              <th>{label}</th>
+              {#each cells as c, i (i)}<td>{c}</td>{/each}
+            </tr>
+          {/each}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel tips-panel">
+    <div class="panel-head">小技巧</div>
+    <div class="panel-body">
+      <ul>
+        <li><b>扣殺</b>：跳起來在空中按擊球。同時按 ↑ 高吊、↓ 重扣、往對面按更快。</li>
+        <li><b>飛撲救球</b>：在地上按住左右再按擊球。</li>
+        <li>對戰電腦和連線時，兩組鍵盤、任何手把都能操作；雙人同樂時第 1 支手把是 1P、第 2 支是 2P。</li>
+        <li>手把在文字欄位按 A 會跳出手把鍵盤。</li>
+        <li>對戰電腦贏一場，會有隱藏角色加入。</li>
+      </ul>
+    </div>
+  </div>
+
+  {#snippet foot()}
+    <BackButton onclick={onback} />
+    <span></span>
+    <ControlHint />
+  {/snippet}
+</ScreenFrame>
+
+<style>
+  .keys-panel {
+    flex: 1.6;
+  }
+  .tips-panel {
+    flex: 1;
+  }
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0.8cqh;
+    font-size: 2.4cqh;
+    font-weight: 800;
+  }
+  thead th {
+    font-size: 2.3cqh;
+    white-space: nowrap;
+  }
+  thead img {
+    display: block;
+    width: 6cqh;
+    margin: 0 auto 0.4cqh;
+  }
+  tbody th {
+    background: var(--navy);
+    color: #fff;
+    padding: 1cqh 1.6cqh;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 1cqh) 100%, 0 100%);
+  }
+  tbody td {
+    background: #fff;
+    border-top: 0.3cqh solid var(--navy);
+    border-bottom: 0.3cqh solid var(--navy);
+    text-align: center;
+    padding: 1cqh 0.6cqh;
+  }
+  ul {
+    margin: 0;
+    padding-left: 2.6cqh;
+    font-size: 2.3cqh;
+    font-weight: 700;
+    line-height: 1.55;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8cqh;
+  }
+</style>

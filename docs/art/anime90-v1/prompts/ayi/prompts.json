@@ -1,0 +1,69 @@
+{
+  "tool": "built-in image_gen",
+  "references": [
+    "C:/Users/User/Repo/ProjectVtuber/projects/vrm-model/output/trials/armor-soles-2026-10-13/small-v37/vrm1-full.png",
+    "C:/Users/User/Repo/ProjectVtuber/projects/vrm-model/output/trials/h01-face-proportion-2026-10-22/face01/render/H01-B01-VRM1/front.png"
+  ],
+  "entries": [
+    {
+      "name": "idle",
+      "prompt": "Create ONE transparent fullbody game sprite of Ayi, hidden volleyball character. Image1 is EXACT H01-B01 body outfit reference; image2 exact current H01 face identity; image3 ONLY chibi proportions/1990s cel shading reference, DO NOT copy female identity/clothes. Young adult male with short tousled brown hair side bangs and single curved upturned ahoge, blue eyes, gentle masculine face. Adapt to cute 2.5-3-head-tall chibi. Preserve original H01-B01 SILVER KNIGHT ARMOR, NOT sports clothing: broad rounded silver pauldrons with raised inner flanges, plain silver breastplate with shallow chevron chest ridge, black high-neck undersuit, brown leather upperarm bands, silver elbow/forearm plates and armored gloves, brown waistbelt square silver buckle, pointed central groin plate plus long side hip tassets, silver thighs/kneecaps/shins and segmented metal boots. No gold trim, no cape, no sword/shield/helmet. Simplify into bold flat 1990s cel anime readable shapes, one crisp gray shadow and broad white highlights; no 3D/painterly textures. Fullbody RIGHT-facing three-quarter ready volleyball stance, feet apart knees gently bent, elbows in front, calm smile. No ball, floor or shadow. Generous transparent margins, all ahoge/gauntlets/boots visible. Single character square canvas."
+    },
+    {
+      "name": "run1",
+      "prompt": "Generate ONE fullbody transparent game animation frame of EXACT same Ayi from supplied master idle sprite. Preserve brown short tousled hair, single curved ahoge, blue eyes, youthful male face, chibi3head proportions, silver H01-B01 original knight armor with round pauldrons, plain chevron breastplate, black highneck undersuit, brown arm straps and waistbelt, silver gauntlets, long hip plates, central pointed groin plate, thigh/knee/shin armor and metal boots. NO sportswear, no sneakers, no gold trim, no sword/cape/shield. Clean 1990s cel anime hard shading, bold linework. All head, hair, armored hands and boots visible, generous transparent padding, NO background/floor/shadow/ball/text/effects. Facing RIGHT. Pose: RUNNING stride right, near leg reaching forward right, far leg extended back left, opposite bent arms pumping, confident smile. Armor plates bend only at joints. Full action clear silhouette."
+    },
+    {
+      "name": "run2",
+      "prompt": "Generate ONE fullbody transparent game animation frame of EXACT same Ayi from supplied master idle sprite. Preserve brown short tousled hair, single curved ahoge, blue eyes, youthful male face, chibi3head proportions, silver H01-B01 original knight armor with round pauldrons, plain chevron breastplate, black highneck undersuit, brown arm straps and waistbelt, silver gauntlets, long hip plates, central pointed groin plate, thigh/knee/shin armor and metal boots. NO sportswear, no sneakers, no gold trim, no sword/cape/shield. Clean 1990s cel anime hard shading, bold linework. All head, hair, armored hands and boots visible, generous transparent padding, NO background/floor/shadow/ball/text/effects. Facing RIGHT. Pose: RUNNING high-knee passing pose, distinct from longstride. One thigh lifts forward RIGHT horizontal, knee high at hipheight, lowerleg points down. Other leg bends backward LEFT with metalboot lifted behind. Near arm forward far arm back. Compact bent-knee silhouette, forwardlean, alert smile."
+    },
+    {
+      "name": "jump",
+      "prompt": "Generate ONE fullbody transparent game animation frame of EXACT same Ayi from supplied master idle sprite. Preserve brown short tousled hair, single curved ahoge, blue eyes, youthful male face, chibi3head proportions, silver H01-B01 original knight armor with round pauldrons, plain chevron breastplate, black highneck undersuit, brown arm straps and waistbelt, silver gauntlets, long hip plates, central pointed groin plate, thigh/knee/shin armor and metal boots. NO sportswear, no sneakers, no gold trim, no sword/cape/shield. Clean 1990s cel anime hard shading, bold linework. All head, hair, armored hands and boots visible, generous transparent padding, NO background/floor/shadow/ball/text/effects. Facing RIGHT. Pose: JUMP airborne volleyball block, BOTH silver armored hands raised above head with open palms reaching up-right, both knees tucked behind beneath torso, focused eyes up-right and small open mouth. Entire gauntlet fingertips visible. No ball."
+    },
+    {
+      "name": "jump-alpha-repair",
+      "prompt": "Remove the entire black/gray/brown gradient background and ALL glow/halo from this knight character sprite. Make a clean true transparent RGBA cutout, with only the character opaque. Preserve the knight, armor, face, pose, hair, gloves and boots exactly. Outside the bold character silhouette must be alpha=0, no shadow, no aura, no colored mist. Keep all fingers and feet complete and transparent margins."
+    },
+    {
+      "name": "jump-regenerated",
+      "prompt": "Generate ONE fullbody transparent game animation frame of EXACT same Ayi from supplied master idle sprite. Preserve brown short tousled hair, single curved ahoge, blue eyes, youthful male face, chibi3head proportions, silver H01-B01 original knight armor with round pauldrons, plain chevron breastplate, black highneck undersuit, brown arm straps and waistbelt, silver gauntlets, long hip plates, central pointed groin plate, thigh/knee/shin armor and metal boots. NO sportswear, no sneakers, no gold trim, no sword/cape/shield. Clean 1990s cel anime hard shading, bold linework. All head, hair, armored hands and boots visible, generous transparent padding, NO background/floor/shadow/ball/text/effects. Facing RIGHT. Pose: Airborne with BOTH arms raised vertically and both knees bent, cheerful focused mouth. Draw compact fullbody in SQUARE canvas with 15% empty TRANSPARENT border. Actual transparent alpha cutout ONLY. No black backdrop, no gray background, no glow whatsoever. All outside character outline alpha zero. Match supplied transparent idle sheet, no cinematic lighting."
+    },
+    {
+      "name": "spike",
+      "prompt": "Generate ONE fullbody transparent game animation frame of EXACT same Ayi from supplied master idle sprite. Preserve brown short tousled hair, single curved ahoge, blue eyes, youthful male face, chibi3head proportions, silver H01-B01 original knight armor with round pauldrons, plain chevron breastplate, black highneck undersuit, brown arm straps and waistbelt, silver gauntlets, long hip plates, central pointed groin plate, thigh/knee/shin armor and metal boots. NO sportswear, no sneakers, no gold trim, no sword/cape/shield. Clean 1990s cel anime hard shading, bold linework. All head, hair, armored hands and boots visible, generous transparent padding, NO background/floor/shadow/ball/text/effects. Facing RIGHT. Pose: AIRBORNE SPIKE hitting pose: one armored arm swings forward and UP RIGHT, palm open, other arm lowered across chest, bent legs trailing left, torso tilts diagonally forward, determined eyebrows and spirited open mouth. Strong diagonal silhouette, not two-handed block. Square transparent canvas no glow."
+    },
+    {
+      "name": "dive",
+      "prompt": "Generate ONE fullbody transparent game animation frame of EXACT same Ayi from supplied master idle sprite. Preserve brown short tousled hair, single curved ahoge, blue eyes, youthful male face, chibi3head proportions, silver H01-B01 original knight armor with round pauldrons, plain chevron breastplate, black highneck undersuit, brown arm straps and waistbelt, silver gauntlets, long hip plates, central pointed groin plate, thigh/knee/shin armor and metal boots. NO sportswear, no sneakers, no gold trim, no sword/cape/shield. Clean 1990s cel anime hard shading, bold linework. All head, hair, armored hands and boots visible, generous transparent padding, NO background/floor/shadow/ball/text/effects. Facing RIGHT. Pose: DIVING volleyball save to RIGHT. Body horizontal belly downward, head on right, both arms outstretched past head RIGHT, hands clasped for bump; legs trail LEFT, one knee slightly bent. Full long hip armor remains, bootsleft handsright, all visible. Focused face. Landscape canvas with generous margin. True transparent no glow."
+    },
+    {
+      "name": "win",
+      "prompt": "Generate ONE fullbody transparent game animation frame of EXACT same Ayi from supplied master idle sprite. Preserve brown short tousled hair, single curved ahoge, blue eyes, youthful male face, chibi3head proportions, silver H01-B01 original knight armor with round pauldrons, plain chevron breastplate, black highneck undersuit, brown arm straps and waistbelt, silver gauntlets, long hip plates, central pointed groin plate, thigh/knee/shin armor and metal boots. NO sportswear, no sneakers, no gold trim, no sword/cape/shield. Clean 1990s cel anime hard shading, bold linework. All head, hair, armored hands and boots visible, generous transparent padding, NO background/floor/shadow/ball/text/effects. Facing RIGHT. Pose: VICTORY standing triumphant three-quarter right, one silver gloved fist raised beside head, other armored hand on hip, feet spread comfortably, happy wink and joyful open smile. No confetti or icons. Square transparent canvas."
+    },
+    {
+      "name": "lose",
+      "prompt": "Generate ONE fullbody transparent game animation frame of EXACT same Ayi from supplied master idle sprite. Preserve brown short tousled hair, single curved ahoge, blue eyes, youthful male face, chibi3head proportions, silver H01-B01 original knight armor with round pauldrons, plain chevron breastplate, black highneck undersuit, brown arm straps and waistbelt, silver gauntlets, long hip plates, central pointed groin plate, thigh/knee/shin armor and metal boots. NO sportswear, no sneakers, no gold trim, no sword/cape/shield. Clean 1990s cel anime hard shading, bold linework. All head, hair, armored hands and boots visible, generous transparent padding, NO background/floor/shadow/ball/text/effects. Facing RIGHT. Pose: LOSE disappointed sitting pose, knees bent loosely toward right, armored hands resting on knees, shoulders slumped and head slightlydown, inner eyebrows raised and small downturned mouth. Both silver boots visible, hipplates still attached naturally. No tears or symbols. Square transparent canvas."
+    },
+    {
+      "name": "portrait-normal",
+      "prompt": "Create ONE transparent UI bust portrait of EXACT same Ayi as this sprite. Keep brown tousled short hair single curved ahoge, BLUEeyes male face and H01-B01 silver rounded shoulderplates, silverchevronbreastplate and BLACKhighneck. 1990s cel anime boldlines simple flatshadows, compactchibiface, squarecanvas. Headandshoulders midchest crop, threequarter slightlyRIGHT, normalgentlesmallsmile, nohands, no scene/text/glow/shadow. Entire ahoge and shoulders visible with generous15%transparentmargin. This is master UI portrait for expression swaps."
+    },
+    {
+      "name": "portrait-happy",
+      "prompt": "Edit this transparent Ayi portrait: change ONLY facial expression to both eyes closed in happy upward arcs, open laughing smile. Keep exact brown hair ahoge, male identity, pose framing, head angle, silver H01-B01 shoulderarmor, black collar, 90s cel drawing and colors. No hands/text/background/effects. True transparent RGBA with unchanged silhouette."
+    },
+    {
+      "name": "portrait-surprised",
+      "prompt": "Edit this transparent Ayi portrait: change ONLY facial expression to both blue eyes wide open, raised eyebrows and round O mouth. Keep exact brown hair ahoge, male identity, pose framing, head angle, silver H01-B01 shoulderarmor, black collar, 90s cel drawing and colors. No hands/text/background/effects. True transparent RGBA with unchanged silhouette."
+    },
+    {
+      "name": "portrait-sad",
+      "prompt": "Edit this transparent Ayi portrait: change ONLY facial expression to raised inner eyebrows, blue eyes gently downcast, small downturned mouth, no tears. Keep exact brown hair ahoge, male identity, pose framing, head angle, silver H01-B01 shoulderarmor, black collar, 90s cel drawing and colors. No hands/text/background/effects. True transparent RGBA with unchanged silhouette."
+    },
+    {
+      "name": "portrait-win",
+      "prompt": "Edit this transparent Ayi portrait: change ONLY facial expression to one eye winking, other blue eye bright, confident open smile. Keep exact brown hair ahoge, male identity, pose framing, head angle, silver H01-B01 shoulderarmor, black collar, 90s cel drawing and colors. No hands/text/background/effects. True transparent RGBA with unchanged silhouette."
+    }
+  ]
+}

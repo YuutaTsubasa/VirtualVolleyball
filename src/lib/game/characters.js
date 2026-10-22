@@ -1,19 +1,19 @@
-// 角色資料，id、名字、配色沿用 TaiwanMahjong 的 src/lib/characters.js。
+// 角色資料，id、名字、介紹、配色沿用 TaiwanMahjong（origin/master）的 src/lib/characters.js。
 //
 // stats：速度 / 跳躍 / 力量，各 1–5，總和固定 10。這裡只用來顯示，實際數值在
 //   crates/volleyball-core/src/characters.rs，改的話兩邊要一起改。
 // lines：score 得分、miss 失分、win 贏得比賽、lose 輸掉比賽。
 //
-// sprite：場上的全身動畫圖。還沒有圖的角色會用「頭像 + 程式畫的身體」代替。
-//   有了 ChatGPT 畫的圖之後，把 PNG 放到 public/sprites/<id>.png，再把該角色的 sprite 改成 true。
-//   圖的規格見 docs/art-guide.md。
+// 圖：public/characters/<id>/<表情>.webp（半身像）、public/sprites/<id>.webp（8 個動作的圖集）。
+//   90 年代風格來自 docs/art/anime90-v1（虛擬排球王 90 年代圖素包）。
+//   sprite 設成 false 的角色會改用「頭像 + 程式畫的身體」。
 
 const BASE = import.meta.env.BASE_URL;
 
 export const EXPRESSIONS = ['normal', 'happy', 'surprised', 'sad', 'win'];
 
 const portraits = (id) =>
-  Object.fromEntries(EXPRESSIONS.map((e) => [e, `${BASE}characters/${id}/${e}.png`]));
+  Object.fromEntries(EXPRESSIONS.map((e) => [e, `${BASE}characters/${id}/${e}.webp`]));
 
 const RAW = [
   {
@@ -83,47 +83,47 @@ const RAW = [
     },
   },
   {
-    id: 'ziheng', name: '子衡', intro: '溫柔有禮、球風卻毫不留情的書店老闆',
-    hair: '#263c35', clothes: '#e8dfc8', collar: '#8caa93', skin: '#f1cfb0', shorts: '#4f6b58',
-    stats: { speed: 3, jump: 4, power: 3 },
+    id: 'cangya', name: '蒼牙', intro: '銀髮狼耳、鼻子靈又好勝的狼族少年',
+    hair: '#a7a9ad', clothes: '#2c2c34', collar: '#c9a24a', skin: '#f6dccb', shorts: '#2c2c34',
+    stats: { speed: 5, jump: 3, power: 2 },
     lines: {
-      score: ['這一球，恰好接得上。', '伏筆總算收齊了。'],
-      miss: ['嗯……是我讀錯了。'],
-      win: ['故事有個好結局呢。'],
-      lose: ['這一頁，得記住才行。'],
+      score: ['嗷嗚——咬住了！', '獵物到手！'],
+      miss: ['嗚……居然聞漏了。', '可惡，被反咬一口！'],
+      win: ['今天的獵物，全被我叼走啦！'],
+      lose: ['下一場一定咬住你。'],
     },
   },
   {
-    id: 'chengyue', name: '承岳', intro: '沉穩可靠、常來幫忙修桌椅的家具修復師',
-    hair: '#49382e', clothes: '#293d54', collar: '#e9dfcc', skin: '#d9a47c', shorts: '#3b3127',
+    id: 'jinye', name: '金爺', intro: '鬍子帥氣、見過大風大浪的老牌賭客',
+    hair: '#2a2a2e', clothes: '#1b2233', collar: '#f0ece2', skin: '#d9a47c', shorts: '#1b2233',
     stats: { speed: 2, jump: 3, power: 5 },
     lines: {
-      score: ['穩穩的，一球。', '底子打好了。'],
-      miss: ['看走眼了，下一球討回來。'],
-      win: ['收工。打完請你喝茶。'],
-      lose: ['沒事，失手也能修回來。'],
+      score: ['呵，這球我早就看好了。', '年輕人，承讓了。'],
+      miss: ['輸得起，才贏得起。'],
+      win: ['各位，付錢吧。'],
+      lose: ['這場算你的，下場再說。'],
     },
   },
   {
-    id: 'zhibai', name: '知白', intro: '話少卻細心、銀藍髮的大提琴手',
-    hair: '#aabcca', clothes: '#30333e', collar: '#a6c4d9', skin: '#f6dccb', shorts: '#30333e',
-    stats: { speed: 3, jump: 5, power: 2 },
+    id: 'leo', name: '雷歐', intro: '戴著王冠、一本正經的異國王子騎士',
+    hair: '#f2c94c', clothes: '#c7ccd6', collar: '#1f3f9a', skin: '#fde6d6', shorts: '#1f3f9a',
+    stats: { speed: 3, jump: 4, power: 3 },
     lines: {
-      score: ['……嗯。', '節奏剛好。'],
-      miss: ['……慢了半拍。'],
-      win: ['……你有在看嗎？'],
-      lose: ['再陪我打一場吧。'],
+      score: ['以王冠之名——得分！', '勝利屬於堂堂正正之人。'],
+      miss: ['……是我大意了。'],
+      win: ['這是王者的勝利。'],
+      lose: ['騎士也有失手的時候。下一場見真章。'],
     },
   },
   {
-    id: 'youchen', name: '佑辰', intro: '笑容親切、擅長讀心的活動主持人',
-    hair: '#8b4935', clothes: '#7c3042', collar: '#eee0c9', skin: '#e2b08c', shorts: '#4a1d28',
-    stats: { speed: 4, jump: 3, power: 3 },
+    id: 'alie', name: '阿烈', intro: '紅髮刀疤、豪爽愛冒險的傭兵',
+    hair: '#c1272d', clothes: '#1d1d1d', collar: '#7a1d1d', skin: '#e2b08c', shorts: '#7a1d1d',
+    stats: { speed: 3, jump: 2, power: 5 },
     lines: {
-      score: ['猜到我會打哪邊了嗎？', '掌聲在哪裡？'],
-      miss: ['哎呀，被你搶走風頭了。'],
-      win: ['今天的壓軸就是我啦！'],
-      lose: ['這段可以剪掉嗎？不行啊……'],
+      score: ['痛快！', '哈哈，搶到手才算數！'],
+      miss: ['這點小傷，不算什麼！'],
+      win: ['寶藏到手啦！今晚我請客！'],
+      lose: ['下一場冒險再說！'],
     },
   },
   {
@@ -140,10 +140,10 @@ const RAW = [
 ];
 
 export const CHARACTERS = RAW.map((c) => ({
-  sprite: false,
+  sprite: true,
   ...c,
   portraits: portraits(c.id),
-  spriteSrc: `${BASE}sprites/${c.id}.png`,
+  spriteSrc: `${BASE}sprites/${c.id}.webp`,
 }));
 
 export const getCharacter = (id) => CHARACTERS.find((c) => c.id === id) ?? CHARACTERS[0];

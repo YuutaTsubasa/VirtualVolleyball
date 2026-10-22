@@ -1,9 +1,12 @@
 <script>
-  // 開設房間／加入房間的表單
+  // 開設房間／加入房間：左邊玩家資料，右邊選角色
   import { onMount } from 'svelte';
   import { net, inTauri, connect, disconnect, startHost, stopHost, hostStatus, toast, load, store, DEFAULT_PORT } from '../net.svelte.js';
   import { CHARACTERS, isUnlocked, getCharacter } from '../game/characters.js';
-  import PortraitGrid from './PortraitGrid.svelte';
+  import { play } from '../game/audio.js';
+  import ScreenFrame from './ScreenFrame.svelte';
+  import BackButton from './BackButton.svelte';
+  import CharacterGrid from './CharacterGrid.svelte';
 
   // page = host | join
   let { page, onback } = $props();
@@ -20,8 +23,10 @@
   let character = $state(
     available.find((c) => c.id === load('vb_character'))?.id ?? available[Math.floor(Math.random() * available.length)].id,
   );
+  let cursor = $state(CHARACTERS.findIndex((c) => c.id === character));
   let busy = $state(false);
   const connecting = $derived(!net.room && (net.status === 'connecting' || net.status === 'open'));
+  const chosen = $derived(getCharacter(character));
 
   onMount(() => {
     hostStatus().catch(() => {});
@@ -34,9 +39,9 @@
     store('vb_character', character);
   }
 
-  async function submit(event) {
-    event.preventDefault();
+  async function submit() {
     if (busy || connecting) return;
+    play('select');
     remember();
     if (isHost && inTauri) {
       if (net.hostInfo) {
@@ -81,154 +86,157 @@
     if (connecting) disconnect();
     onback();
   }
+
+  const hint = $derived(
+    connecting
+      ? `連線到 ${net.address} 中…`
+      : isHost
+        ? inTauri
+          ? '開房後，可在大廳分享網址邀請朋友。'
+          : '在網頁開房：輸入伺服器位址與啟動時印出的房主金鑰。'
+        : '輸入房主分享的網址；沒有座位時會改成觀戰。',
+  );
 </script>
 
-<section class="screen entry">
-  <h2>{isHost ? '開設房間' : '加入房間'}</h2>
-  <form class="panel" onsubmit={submit}>
-    <div class="cols">
-      <div class="col">
-        <label class="field">
-          <span>玩家名稱</span>
-          <input bind:value={name} placeholder="玩家" maxlength="16" autocomplete="nickname" />
-        </label>
+<ScreenFrame title={isHost ? '開設房間' : '加入房間'} subtitle="設定玩家資料與角色">
+  <form
+    class="panel profile"
+    onsubmit={(e) => {
+      e.preventDefault();
+      submit();
+    }}
+  >
+    <div class="panel-head">玩家資料</div>
+    <div class="panel-body">
+      <label class="field">玩家名稱
+        <input bind:value={name} placeholder="玩家" maxlength="16" autocomplete="nickname" />
+      </label>
 
-        {#if isHost && inTauri}
-          {#if net.hostInfo}
-            <p class="hint">房間已在通訊埠 <b>{net.hostInfo.port}</b> 開著。</p>
-          {:else}
-            <label class="field">
-              <span>通訊埠</span>
-              <input bind:value={port} type="number" min="1" max="65535" required />
-            </label>
-            <p class="hint">開好之後，在大廳把網址分享給朋友。朋友沒裝 App 也能用瀏覽器打開。</p>
-          {/if}
+      {#if isHost && inTauri}
+        {#if net.hostInfo}
+          <p class="note">房間已在通訊埠 <b>{net.hostInfo.port}</b> 開著。</p>
+          <button type="button" class="vbtn small" onclick={closeRoom} disabled={busy}>關閉房間</button>
         {:else}
-          <label class="field">
-            <span>{isHost ? '伺服器位址' : '房間位址'}</span>
-            <input bind:value={address} placeholder="192.168.1.5:{DEFAULT_PORT}" readonly={servedByServer} />
+          <label class="field">通訊埠
+            <input bind:value={port} type="number" min="1" max="65535" required />
+            <small>預設 {DEFAULT_PORT}</small>
           </label>
-          {#if isHost}
-            <label class="field">
-              <span>房主金鑰</span>
-              <input bind:value={hostKey} placeholder="伺服器啟動時印出的金鑰" />
-            </label>
-          {/if}
         {/if}
+      {:else}
+        <label class="field">{isHost ? '伺服器位址' : '房間網址'}
+          <input bind:value={address} placeholder="192.168.1.5:{DEFAULT_PORT}" readonly={servedByServer} />
+        </label>
+        {#if isHost}
+          <label class="field">房主金鑰
+            <input bind:value={hostKey} placeholder="伺服器啟動時印出的金鑰" />
+          </label>
+        {/if}
+      {/if}
 
-        <div class="picked">
-          <img src={getCharacter(character).portraits.happy} alt="" />
-          <div>
-            <b>{getCharacter(character).name}</b>
-            <small>{getCharacter(character).intro}</small>
-          </div>
+      <div class="chosen">
+        <div class="frame-pic"><img src={chosen.portraits.normal} alt="" /></div>
+        <div>
+          <b>{chosen.name}</b>
+          <small>{chosen.intro}</small>
+          <span class="badge">已選擇</span>
         </div>
       </div>
-      <div class="col">
-        <span class="label">選擇角色</span>
-        <PortraitGrid bind:value={character} size={10} />
-      </div>
     </div>
-
-    {#if connecting}
-      <div class="actions">
-        <span class="hint">連線到 {net.address} 中…</span>
-        <button type="button" onclick={disconnect}>取消連線</button>
-      </div>
-    {:else}
-      <div class="actions">
-        <button type="button" onclick={back}>返回</button>
-        {#if isHost && inTauri && net.hostInfo}
-          <button type="button" onclick={closeRoom} disabled={busy}>關閉房間</button>
-        {/if}
-        {#if !isHost}
-          <button type="button" onclick={spectate}>觀戰</button>
-        {/if}
-        <button type="submit" class="primary" disabled={busy}>
-          {isHost ? (net.hostInfo ? '回到房間' : '開房') : '加入'}
-        </button>
-      </div>
-    {/if}
   </form>
-</section>
+
+  <div class="panel roster">
+    <div class="panel-head">選擇角色</div>
+    <div class="panel-body">
+      <CharacterGrid bind:cursor selected={character} showLocked={false} onpick={(c) => (character = c.id)} />
+      <p class="tip">點選頭像，選擇你的角色</p>
+    </div>
+  </div>
+
+  {#snippet foot()}
+    <BackButton onclick={back} />
+    <div class="hint-bar">{hint}</div>
+    <div class="actions">
+      {#if connecting}
+        <button type="button" class="vbtn small" onclick={disconnect}>取消</button>
+      {:else if !isHost}
+        <button type="button" class="vbtn small" onclick={spectate}>觀戰</button>
+      {/if}
+      <button type="button" class="vbtn primary" disabled={busy || connecting} onclick={submit}>
+        {isHost ? (net.hostInfo ? '回到房間' : '開設房間') : '加入房間'}
+      </button>
+    </div>
+  {/snippet}
+</ScreenFrame>
 
 <style>
-  .entry {
-    justify-content: center;
+  .profile {
+    flex: 1;
   }
-  .panel {
-    background: var(--paper);
-    border: 0.45cqh solid var(--ink);
-    border-radius: 2.4cqh;
-    padding: 2.4cqh 3cqh;
-    box-shadow: 0 1cqh 0 var(--ink);
+  .roster {
+    flex: 1.75;
+  }
+  .note {
+    margin: 0;
+    font-weight: 800;
+    font-size: 2.3cqh;
+  }
+  .chosen {
+    margin-top: auto;
     display: flex;
-    flex-direction: column;
-    gap: 2cqh;
-    width: 86cqw;
+    gap: 1.6cqh;
+    align-items: center;
+    border-top: 0.35cqh solid var(--navy);
+    padding-top: 1.4cqh;
   }
-  .cols {
-    display: grid;
-    grid-template-columns: 30cqw 1fr;
-    gap: 3cqw;
+  .frame-pic {
+    width: 17cqh;
+    height: 17cqh;
+    flex: none;
+    border: 0.45cqh solid var(--navy);
+    outline: 0.3cqh solid var(--gold);
+    outline-offset: -0.9cqh;
+    background: linear-gradient(#5aa9ec, #9fd3ff);
+    overflow: hidden;
   }
-  .col {
-    display: flex;
-    flex-direction: column;
-    gap: 1.4cqh;
+  .frame-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  .field {
+  .chosen > div:last-child {
     display: flex;
     flex-direction: column;
     gap: 0.5cqh;
-    font-weight: 800;
   }
-  .label {
-    font-weight: 800;
+  .chosen b {
+    font-size: 5cqh;
+    line-height: 1.1;
   }
-  input {
-    font: inherit;
-    padding: 0.8cqh 1.2cqh;
-    border: 0.35cqh solid var(--ink);
-    border-radius: 1.2cqh;
-    background: #fff;
-  }
-  .hint {
-    margin: 0;
+  .chosen small {
     font-size: 2.1cqh;
-    opacity: 0.8;
+    font-weight: 800;
+    color: var(--navy-soft);
   }
-  .picked {
-    display: flex;
-    gap: 1.4cqh;
-    align-items: center;
-    margin-top: auto;
+  .badge {
+    align-self: flex-start;
+    background: linear-gradient(#ffe56b, var(--gold) 55%, var(--gold-deep));
+    border: 0.35cqh solid var(--navy);
+    font-weight: 900;
+    font-size: 2.4cqh;
+    letter-spacing: 0.2em;
+    padding: 0.3cqh 2.6cqh;
+    clip-path: polygon(1cqh 0, 100% 0, calc(100% - 1cqh) 100%, 0 100%);
   }
-  .picked img {
-    width: 14cqh;
-    height: 14cqh;
-    border-radius: 1.6cqh;
-    border: 0.35cqh solid var(--ink);
-    background: linear-gradient(#bfe6ff, #fff3d6);
-  }
-  .picked div {
-    display: flex;
-    flex-direction: column;
-  }
-  .picked b {
-    font-size: 3.4cqh;
-  }
-  .picked small {
-    font-size: 2cqh;
-    opacity: 0.75;
+  .tip {
+    margin: 0;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.1cqh;
+    letter-spacing: 0.2em;
   }
   .actions {
     display: flex;
     gap: 1.4cqh;
-    justify-content: flex-end;
     align-items: center;
-  }
-  .primary {
-    background: var(--accent2);
   }
 </style>

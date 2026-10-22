@@ -1,16 +1,29 @@
+/* 虛擬排球王：90 年代運動遊戲風介面（深藍＋米白＋金黃）。
+   尺寸一律用 cqh／cqw（16:9 舞台的高／寬百分比），任何視窗大小比例都一樣。 */
+
 :root {
-  --ink: #2b2233;
-  --paper: #fffaf0;
-  --accent: #ff5d8f;
-  --accent2: #ffd23f;
+  --navy: #142a63;
+  --navy-deep: #0c1d4b;
+  --navy-soft: #2b4a8f;
+  --cream: #fbf4e0;
+  --cream-deep: #efe2bd;
+  --gold: #ffd43b;
+  --gold-deep: #f2a900;
+  --gold-line: #f7c52b;
+  --stripe: #b7c2d8;
+  --ink: var(--navy);
+  --paper: var(--cream);
+  --accent: #e8455b;
+  --accent2: var(--gold);
   --sea: #1f5fbf;
+  --ok: #1fa35b;
+  --font: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', 'Heiti TC', sans-serif;
   /* 手把鍵盤（從 TaiwanMahjong 搬來的 ControlsKeyboard）用的顏色 */
-  --text: var(--ink);
-  --panel-solid: var(--paper);
-  --gold: var(--ink);
-  --muted: #6b6070;
+  --text: var(--navy);
+  --panel-solid: var(--cream);
+  --muted: #5a6788;
   --red: #c1121f;
-  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+  font-family: var(--font);
 }
 
 * { box-sizing: border-box; }
@@ -18,8 +31,8 @@
 html, body {
   margin: 0;
   height: 100%;
-  background: #1b1726;
-  color: var(--ink);
+  background: #0b1430;
+  color: var(--navy);
   overflow: hidden;
 }
 
@@ -31,12 +44,22 @@ html, body {
   width: min(100vw, calc(100vh * 16 / 9));
   height: min(100vh, calc(100vw * 9 / 16));
   container-type: size;
+  overflow: hidden;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
 }
+#stage input, #stage textarea { user-select: text; -webkit-user-select: text; }
+#stage canvas { width: 100%; height: 100%; display: block; }
 
-#stage canvas {
+/* 選單背景圖（public/ui/anime90/bg.png，沒有就露出後面的示範賽） */
+.menu-bg {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  display: block;
+  object-fit: cover;
 }
 
 .screen {
@@ -46,159 +69,273 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2.5cqh;
-  background: rgba(20, 16, 35, 0.35);
-  backdrop-filter: blur(2px);
+  gap: 2.4cqh;
   font-size: 2.6cqh;
 }
-.hidden { display: none !important; }
+/* 疊在比賽畫面上的視窗（暫停、結果）：壓暗背景 */
+.screen.overlay { background: rgba(8, 18, 48, 0.55); }
 
-.logo {
-  margin: 0;
-  font-size: 13cqh;
-  font-weight: 900;
-  color: #fff;
-  letter-spacing: 0.08em;
-  text-align: center;
-  line-height: 1.05;
-  -webkit-text-stroke: 0.9cqh var(--ink);
-  paint-order: stroke fill;
-  text-shadow: 0 1.2cqh 0 rgba(0, 0, 0, 0.25);
-}
-.logo small {
-  display: block;
-  font-size: 0.38em;
-  color: var(--accent2);
-  letter-spacing: 0.3em;
-}
+/* ---------- 共用：版面 ---------- */
 
-h2 {
-  margin: 0;
-  color: #fff;
-  font-size: 5.5cqh;
-  -webkit-text-stroke: 0.5cqh var(--ink);
-  paint-order: stroke fill;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
+.frame {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: 21cqh 1fr 9cqh;
+  padding: 2.4cqh 3.4cqw 2.6cqh;
   gap: 1.6cqh;
-  min-width: 38cqw;
 }
-.menu.row { flex-direction: row; }
+.frame-main { min-height: 0; display: flex; gap: 2cqw; }
+.frame-foot {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 2cqw;
+}
+
+/* 金色分隔線 */
+.gold-rule {
+  height: 0.7cqh;
+  background: linear-gradient(var(--gold-line), var(--gold-deep));
+  border-top: 0.25cqh solid var(--navy);
+  border-bottom: 0.25cqh solid var(--navy);
+}
+
+/* ---------- 共用：按鈕 ---------- */
 
 button, select {
   font: inherit;
-  font-weight: 800;
-  color: var(--ink);
-  background: var(--paper);
-  border: 0.45cqh solid var(--ink);
-  border-radius: 2cqh;
-  padding: 1.2cqh 2.4cqh;
+  color: var(--navy);
   cursor: pointer;
-  box-shadow: 0 0.6cqh 0 var(--ink);
-  transition: transform 0.08s, background 0.08s;
 }
-button:hover, button.focus {
-  background: var(--accent2);
-  transform: translateY(-0.3cqh);
-}
-button:active { transform: translateY(0.4cqh); box-shadow: 0 0.2cqh 0 var(--ink); }
+button:disabled { opacity: 0.5; cursor: default; }
 
-.hint { color: #fff; opacity: 0.85; margin: 0; text-shadow: 0 0 0.6cqh #000; }
-
-/* 角色選擇 */
-.select-body {
-  display: flex;
-  gap: 2cqw;
-  align-items: stretch;
-}
-.roster {
-  display: grid;
-  grid-template-columns: repeat(4, 13cqh);
-  align-content: start;
-  gap: 1.2cqh;
-}
-.roster .card {
+/* 切角按鈕：外層深藍是邊框，::before 是米白（或金色）的面，兩端各有一組斜線 */
+.vbtn {
+  --face: var(--cream);
+  --cut: 1.4cqh;
   position: relative;
-  width: 13cqh;
-  height: 13cqh;
-  padding: 0;
-  border-radius: 1.8cqh;
-  overflow: hidden;
-  background: linear-gradient(#bfe6ff, #fff3d6);
+  border: 0;
+  background: var(--navy);
+  padding: 1.2cqh 5cqh;
+  min-height: 7cqh;
+  font-size: 3.3cqh;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-indent: 0.25em;
+  clip-path: polygon(var(--cut) 0, calc(100% - var(--cut)) 0, 100% 50%, calc(100% - var(--cut)) 100%, var(--cut) 100%, 0 50%);
+  isolation: isolate;
+  transition: transform 0.08s, filter 0.08s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4cqh;
 }
-.roster .card img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.roster .card span {
+.vbtn::before {
+  content: '';
   position: absolute;
-  left: 0; right: 0; bottom: 0;
-  background: rgba(43, 34, 51, 0.8);
-  color: #fff;
-  font-size: 2cqh;
-  padding: 0.3cqh 0;
+  inset: 0.45cqh 0.6cqh;
+  z-index: -1;
+  background:
+    repeating-linear-gradient(115deg, transparent 0 0.5cqh, var(--stripe) 0.5cqh 0.95cqh) left 1.8cqh center / 3cqh 70% no-repeat,
+    repeating-linear-gradient(115deg, transparent 0 0.5cqh, var(--stripe) 0.5cqh 0.95cqh) right 1.8cqh center / 3cqh 70% no-repeat,
+    var(--face);
+  clip-path: polygon(var(--cut) 0, calc(100% - var(--cut)) 0, 100% 50%, calc(100% - var(--cut)) 100%, var(--cut) 100%, 0 50%);
 }
-.roster .card.focus { outline: 0.7cqh solid var(--accent2); outline-offset: 0.2cqh; }
-[data-input] .roster .card:focus { outline: 0.7cqh solid var(--accent); outline-offset: 0.2cqh; }
-.roster .card.locked img { filter: brightness(0) opacity(0.6); }
-.roster .card.taken::after {
-  content: attr(data-tag);
+.vbtn.gold,
+.vbtn.active,
+.vbtn:hover:not(:disabled) {
+  --face: linear-gradient(#ffe56b, var(--gold) 55%, var(--gold-deep));
+  --stripe: rgba(20, 42, 99, 0.25);
+}
+.vbtn:active:not(:disabled) { transform: translateY(0.3cqh); filter: brightness(0.95); }
+/* 選單：目前選到的那顆前面有 ▶ */
+.vbtn.arrow:is(:hover, :focus-visible, .active)::after,
+[data-input='pad'] .vbtn.arrow:focus::after {
+  content: '';
   position: absolute;
-  top: 0.5cqh; left: 0.5cqh;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 1cqh;
-  padding: 0 1cqh;
-  font-size: 2cqh;
+  left: 2.6cqh;
+  top: 50%;
+  translate: 0 -50%;
+  border-left: 2.2cqh solid var(--navy);
+  border-top: 1.4cqh solid transparent;
+  border-bottom: 1.4cqh solid transparent;
+}
+.vbtn.small { min-height: 5.4cqh; padding: 0.6cqh 3cqh; font-size: 2.4cqh; letter-spacing: 0.1em; text-indent: 0.1em; --cut: 1cqh; }
+.vbtn.small::before { background: var(--face); }
+.vbtn.plain::before { background: var(--face); }
+
+/* 右下角的大按鈕（開設房間、開始比賽…） */
+.vbtn.primary {
+  --face: linear-gradient(#ffe56b, var(--gold) 55%, var(--gold-deep));
+  --stripe: rgba(20, 42, 99, 0.3);
+  min-height: 9cqh;
+  padding: 1cqh 6cqh 1cqh 7cqh;
+  font-size: 4.4cqh;
+  letter-spacing: 0.15em;
+}
+.vbtn.primary::after {
+  content: '';
+  border-left: 2.4cqh solid var(--navy);
+  border-top: 1.6cqh solid transparent;
+  border-bottom: 1.6cqh solid transparent;
+  margin-left: 1.4cqh;
+}
+.vbtn.primary:hover:not(:disabled) { filter: brightness(1.06); }
+
+/* 左下角的返回 */
+.vbtn.back { padding: 1cqh 4cqh 1cqh 3cqh; font-size: 3cqh; min-height: 7cqh; letter-spacing: 0.2em; }
+.vbtn.back::before { background: var(--face); }
+.vbtn.back::after { content: none; }
+.vbtn.back > .tri {
+  border-right: 2cqh solid var(--navy);
+  border-top: 1.3cqh solid transparent;
+  border-bottom: 1.3cqh solid transparent;
 }
 
-.detail {
-  width: 34cqh;
-  background: var(--paper);
-  border: 0.45cqh solid var(--ink);
-  border-radius: 2cqh;
-  padding: 1.6cqh;
+/* ---------- 共用：面板 ---------- */
+
+.panel {
+  background: var(--cream);
+  border: 0.55cqh solid var(--navy);
+  border-radius: 1cqh;
+  box-shadow: inset 0 0 0 0.35cqh #fffaf0, 0 0.6cqh 0 rgba(12, 29, 75, 0.35);
   display: flex;
   flex-direction: column;
-  gap: 0.8cqh;
+  min-height: 0;
 }
-.detail img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 1.4cqh; background: linear-gradient(#bfe6ff, #fff3d6); }
-.detail .name { font-size: 4cqh; font-weight: 900; margin: 0; }
-.detail .intro { margin: 0; font-size: 2.1cqh; opacity: 0.8; }
-.stat { display: grid; grid-template-columns: 6cqh 1fr; align-items: center; font-size: 2.1cqh; font-weight: 700; }
-.stat .bar { display: flex; gap: 0.5cqh; }
-.stat .bar i { flex: 1; height: 1.6cqh; border-radius: 0.6cqh; background: #e4dccb; border: 0.25cqh solid var(--ink); }
-.stat .bar i.on { background: var(--accent); }
+.panel.gold-frame { border-color: var(--gold-deep); box-shadow: inset 0 0 0 0.35cqh var(--gold), 0 0.6cqh 0 rgba(12, 29, 75, 0.35); }
+.panel-head {
+  position: relative;
+  margin: 1cqh 1cqh 0;
+  padding: 0.6cqh 4cqh;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 900;
+  font-size: 3cqh;
+  letter-spacing: 0.2em;
+  text-align: center;
+  clip-path: polygon(1.4cqh 0, calc(100% - 1.4cqh) 0, 100% 100%, 0 100%);
+}
+.panel-head::before,
+.panel-head::after {
+  content: '';
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  width: 3.4cqh;
+  background: repeating-linear-gradient(115deg, transparent 0 0.45cqh, #dfe6f5 0.45cqh 0.9cqh);
+}
+.panel-head::before { left: 2.4cqh; }
+.panel-head::after { right: 2.4cqh; }
+.panel-head.left { text-align: left; padding-left: 7cqh; }
+.panel-body { padding: 1.6cqh 2cqh; min-height: 0; flex: 1; display: flex; flex-direction: column; gap: 1.2cqh; }
 
-.options { display: flex; gap: 1.6cqh; align-items: center; color: #fff; font-weight: 800; text-shadow: 0 0 0.6cqh #000; }
-.options label { display: flex; gap: 1cqh; align-items: center; }
-.options select { padding: 0.6cqh 1.2cqh; box-shadow: none; }
-.options button { padding: 0.6cqh 2cqh; }
-
-/* 說明 */
-.keys { background: var(--paper); border: 0.45cqh solid var(--ink); border-radius: 2cqh; border-spacing: 0; overflow: hidden; }
-.keys th, .keys td { padding: 0.8cqh 2cqh; text-align: center; font-size: 2.3cqh; }
-.keys tr:first-child { background: var(--accent2); }
-.tips { background: rgba(255, 250, 240, 0.95); border: 0.45cqh solid var(--ink); border-radius: 2cqh; padding: 1.6cqh 2cqh 1.6cqh 5cqh; margin: 0; max-width: 80cqw; line-height: 1.6; }
-
-/* 結果 */
-.result-card {
+/* 提示列（底部中間） */
+.hint-bar {
+  justify-self: center;
+  position: relative;
+  padding: 1cqh 6cqh;
+  background: rgba(251, 244, 224, 0.88);
+  font-weight: 800;
+  font-size: 2.3cqh;
+  letter-spacing: 0.12em;
+  clip-path: polygon(1.6cqh 0, 100% 0, calc(100% - 1.6cqh) 100%, 0 100%);
   display: flex;
   align-items: center;
-  gap: 3cqw;
-  background: var(--paper);
-  border: 0.6cqh solid var(--ink);
-  border-radius: 3cqh;
-  padding: 2cqh 4cqw 2cqh 2cqh;
-  box-shadow: 0 1cqh 0 var(--ink);
+  gap: 1.2cqh;
+  white-space: nowrap;
 }
-.result-portrait { width: 42cqh; height: 42cqh; object-fit: cover; border-radius: 2cqh; background: linear-gradient(#ffe9a8, #ffb3c8); }
-.result-name { font-size: 6cqh; font-weight: 900; margin: 0; }
-.result-line { font-size: 3.2cqh; margin: 1cqh 0; max-width: 40cqw; }
-.result-score { font-size: 4cqh; font-weight: 900; color: var(--sea); margin: 0; }
-.result-unlock { color: var(--accent); font-weight: 900; margin: 1cqh 0 0; }
+.hint-bar::before,
+.hint-bar::after {
+  content: '';
+  position: absolute;
+  top: 18%;
+  bottom: 18%;
+  width: 2.6cqh;
+  background: repeating-linear-gradient(115deg, transparent 0 0.45cqh, var(--stripe) 0.45cqh 0.9cqh);
+}
+.hint-bar::before { left: 1.6cqh; }
+.hint-bar::after { right: 1.6cqh; }
 
-/* 提示訊息 */
+/* ---------- 共用：表單 ---------- */
+
+.field { display: flex; flex-direction: column; gap: 0.5cqh; font-weight: 900; font-size: 2.5cqh; }
+.field small { font-weight: 700; font-size: 1.9cqh; color: var(--muted); }
+input, select.vsel {
+  font: inherit;
+  font-weight: 700;
+  color: var(--navy);
+  background: #fff;
+  border: 0.4cqh solid var(--navy);
+  border-radius: 0.8cqh;
+  padding: 0.7cqh 1.4cqh;
+}
+select.vsel { padding-right: 3cqh; }
+input::placeholder { color: #9aa3ba; }
+
+/* ---------- 角色頭像卡（選角、開房、大廳換角色） ---------- */
+
+.card {
+  position: relative;
+  padding: 0;
+  border: 0.45cqh solid var(--navy);
+  border-radius: 0.6cqh;
+  overflow: hidden;
+  background: linear-gradient(#5aa9ec, #9fd3ff);
+  aspect-ratio: 1 / 1.08;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.08s;
+}
+.card img { width: 100%; flex: 1; min-height: 0; object-fit: cover; object-position: center 12%; display: block; }
+.card span {
+  background: var(--navy);
+  color: #fff;
+  font-weight: 900;
+  font-size: 2.1cqh;
+  letter-spacing: 0.1em;
+  padding: 0.3cqh 0;
+  text-align: center;
+}
+.card:hover:not(:disabled) { transform: translateY(-0.3cqh); }
+.card.selected { border-color: var(--gold-deep); box-shadow: 0 0 0 0.5cqh var(--gold); }
+.card.selected::after {
+  content: '✔';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4.2cqh;
+  height: 4.2cqh;
+  display: grid;
+  place-items: center;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 2.6cqh;
+  font-weight: 900;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  padding: 0 0 1.4cqh 1.4cqh;
+}
+.card.locked img { filter: brightness(0) opacity(0.55); }
+.card .tag {
+  position: absolute;
+  top: 0.5cqh;
+  left: 0.5cqh;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 0.6cqh;
+  padding: 0 0.8cqh;
+  font-size: 1.8cqh;
+}
+
+/* 能力值條 */
+.stat { display: grid; grid-template-columns: 6cqh 1fr; align-items: center; font-size: 2.1cqh; font-weight: 900; }
+.stat .bar { display: flex; gap: 0.5cqh; }
+.stat .bar i { flex: 1; height: 1.6cqh; background: #e1d6b6; border: 0.25cqh solid var(--navy); transform: skewX(-20deg); }
+.stat .bar i.on { background: linear-gradient(var(--gold), var(--gold-deep)); }
+
+/* ---------- 提示訊息、連線狀態 ---------- */
+
 .toasts {
   position: absolute;
   top: 2cqh;
@@ -211,44 +348,51 @@ button:active { transform: translateY(0.4cqh); box-shadow: 0 0.2cqh 0 var(--ink)
   pointer-events: none;
 }
 .toast {
-  background: #c1121f;
+  background: var(--red);
   color: #fff;
   font-weight: 800;
   padding: 1cqh 2.4cqh;
-  border-radius: 1.4cqh;
-  border: 0.35cqh solid var(--ink);
+  border-radius: 1cqh;
+  border: 0.35cqh solid var(--navy);
   font-size: 2.4cqh;
 }
-.toast.ok { background: #2a9d8f; }
-.banner {
+.toast.ok { background: var(--ok); }
+.net-banner {
   position: absolute;
   left: 0; right: 0; bottom: 3cqh;
   margin: auto;
   width: fit-content;
-  background: rgba(43, 34, 51, 0.85);
+  background: rgba(12, 29, 75, 0.88);
   color: #fff;
   padding: 1cqh 3cqh;
-  border-radius: 2cqh;
+  border-radius: 1cqh;
   font-weight: 800;
 }
-button:disabled { opacity: 0.5; cursor: default; transform: none; }
 
-/* 焦點框：用鍵盤或手把操作時才顯示，滑鼠／觸控不顯示 */
-button:focus { outline: none; }
+/* ---------- 焦點框：鍵盤或手把操作時才顯示 ---------- */
+
+button:focus, select:focus, input:focus { outline: none; }
 [data-input='key'] :is(button, select, input, a):focus-visible,
 [data-input='pad'] :is(button, select, input, a):focus {
-  outline: 0.7cqh solid var(--accent);
+  outline: 0.6cqh solid var(--accent);
   outline-offset: 0.3cqh;
 }
-[data-input='key'] button:focus-visible,
-[data-input='pad'] button:focus {
-  background: var(--accent2);
+/* 切角按鈕的 outline 會被裁掉，改用變色表示 */
+[data-input='key'] .vbtn:focus-visible,
+[data-input='pad'] .vbtn:focus {
+  outline: none;
+  --face: linear-gradient(#ffe56b, var(--gold) 55%, var(--gold-deep));
+  --stripe: rgba(20, 42, 99, 0.25);
 }
+[data-input='key'] .card:focus-visible,
+[data-input='pad'] .card:focus { outline: 0.6cqh solid var(--accent); }
+input:focus { border-color: var(--gold-deep); box-shadow: 0 0 0 0.4cqh var(--gold); }
 /* 觸控：沒有滑鼠停留，hover 效果會黏住 */
-[data-input='touch'] button:hover:not(:focus) { background: var(--paper); transform: none; }
-
-#stage { touch-action: manipulation; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; }
-#stage input, #stage textarea { user-select: text; -webkit-user-select: text; }
+[data-input='touch'] .vbtn:hover:not(:focus):not(.gold):not(.primary):not(.active) {
+  --face: var(--cream);
+  --stripe: #b7c2d8;
+}
+[data-input='touch'] .card:hover { transform: none; }
 
 /* 手機直放時提示轉橫向 */
 .rotate-hint { display: none; }
@@ -260,7 +404,7 @@ button:focus { outline: none; }
     z-index: 20;
     align-items: center;
     justify-content: center;
-    background: #1b1726;
+    background: var(--navy-deep);
     color: #fff;
     font-size: 22px;
     font-weight: 800;

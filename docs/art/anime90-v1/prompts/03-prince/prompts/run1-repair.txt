@@ -1,0 +1,1 @@
+Use case: precise-object-edit. Remove the small floating gray/gold speck in the transparent space below the front knee, around x=720,y=1050. Preserve the character, pose, crown, clothing, fingers, colors, composition and all other artwork unchanged. Transparent space contains no marks at all. Preserve true alpha transparency. One isolated image. No background or shadows.

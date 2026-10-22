@@ -16,10 +16,10 @@ pub const CHARACTERS: &[(&str, u8, u8, u8, bool)] = &[
     ("tangtang", 5, 3, 2, false),
     ("xiaochun", 4, 4, 2, false),
     ("lanjie", 3, 3, 4, false),
-    ("ziheng", 3, 4, 3, false),
-    ("chengyue", 2, 3, 5, false),
-    ("zhibai", 3, 5, 2, false),
-    ("youchen", 4, 3, 3, false),
+    ("cangya", 5, 3, 2, false),
+    ("jinye", 2, 3, 5, false),
+    ("leo", 3, 4, 3, false),
+    ("alie", 3, 2, 5, false),
     ("ayi", 4, 2, 4, true),
 ];
 

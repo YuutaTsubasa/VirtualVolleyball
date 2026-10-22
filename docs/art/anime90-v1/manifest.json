@@ -1,0 +1,692 @@
+{
+  "title": "虛擬排球王",
+  "style": "anime90",
+  "version": 1,
+  "characters": [
+    {
+      "id": "xiaocui",
+      "name": "小翠",
+      "hidden": false,
+      "sheet": "characters/xiaocui/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "yuehua",
+      "name": "月華",
+      "hidden": false,
+      "sheet": "characters/yuehua/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "aming",
+      "name": "阿明",
+      "hidden": false,
+      "sheet": "characters/aming/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "tangtang",
+      "name": "糖糖",
+      "hidden": false,
+      "sheet": "characters/tangtang/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "xiaochun",
+      "name": "小春",
+      "hidden": false,
+      "sheet": "characters/xiaochun/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "lanjie",
+      "name": "蘭姐",
+      "hidden": false,
+      "sheet": "characters/lanjie/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "01-wolf",
+      "name": "狼系少年",
+      "hidden": false,
+      "sheet": "characters/01-wolf/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "02-gambler",
+      "name": "賭徒大叔",
+      "hidden": false,
+      "sheet": "characters/02-gambler/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "03-prince",
+      "name": "金髮王子",
+      "hidden": false,
+      "sheet": "characters/03-prince/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "04-adventurer",
+      "name": "紅髮冒險者",
+      "hidden": false,
+      "sheet": "characters/04-adventurer/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "ayi",
+      "name": "阿翼（隱藏）",
+      "hidden": true,
+      "sheet": "characters/ayi/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    }
+  ],
+  "sharedAssets": [
+    {
+      "file": "environment/court.png",
+      "width": 1920,
+      "height": 1080,
+      "hasAlpha": true,
+      "opaqueBackground": true,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "width": 1920,
+        "height": 1080,
+        "transparent": 0
+      },
+      "sha256": "44de2af20e032a5d03030e3cd0e372e520ea698553e452dcad3fd910303ab038"
+    },
+    {
+      "file": "environment/net.png",
+      "width": 192,
+      "height": 1024,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 39,
+        "top": 8,
+        "width": 114,
+        "height": 1008,
+        "transparent": 138975
+      },
+      "sha256": "603a0002019545f5d098e34e7c458e092d95c8372da1c78ab6d0345bf56f3c1d"
+    },
+    {
+      "file": "environment/ball.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 240,
+        "height": 240,
+        "transparent": 20381
+      },
+      "sha256": "9d806d20826868c1a2d3ef8b33791c3c2f4228e606466389559a5d1d1b65a9ef"
+    },
+    {
+      "file": "ui/logo.png",
+      "width": 1400,
+      "height": 420,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 15,
+        "width": 1384,
+        "height": 390,
+        "transparent": 189988
+      },
+      "sha256": "25eff581d2afde4c009efa8663ffa5d882518331efe8653adc5d23fb477e4a10"
+    },
+    {
+      "file": "ui/button-normal.png",
+      "width": 640,
+      "height": 128,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 624,
+        "height": 112,
+        "transparent": 14612
+      },
+      "sha256": "f42dcbc5ef6834428555538f19cb9785c57683244471f55bcc99b12b5da5d953"
+    },
+    {
+      "file": "ui/button-selected.png",
+      "width": 640,
+      "height": 128,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 624,
+        "height": 112,
+        "transparent": 14779
+      },
+      "sha256": "b0fc701fef4e6886ad9f9acec3c5c3c6a95f87ea6936517a42ddb5671e5599a1"
+    },
+    {
+      "file": "ui/button-disabled.png",
+      "width": 640,
+      "height": 128,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 624,
+        "height": 112,
+        "transparent": 13040
+      },
+      "sha256": "18266bc369823aa86f44ad8b40b945cd2b80ab04797cce4487bc2d16bd13c61f"
+    },
+    {
+      "file": "ui/dialog-panel.png",
+      "width": 960,
+      "height": 720,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 944,
+        "height": 704,
+        "transparent": 77618
+      },
+      "sha256": "055e8ff3e387f9ea8cc1fb3d61150a02209eaecedfaf89bbd189225e747bca5a"
+    },
+    {
+      "file": "ui/portrait-frame.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 240,
+        "height": 240,
+        "transparent": 42909
+      },
+      "sha256": "367e19319433e420e1c392be0eb019ddc5d6adaf1329b6e452ea6f964a2aad23"
+    },
+    {
+      "file": "ui/portrait-selected.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 240,
+        "height": 240,
+        "transparent": 47697
+      },
+      "sha256": "1cc3699fddff9ab0e4b6131ce0d61db0e4fbcfb95635d8517aeb1f4f47b5e552"
+    },
+    {
+      "file": "ui/score-panel.png",
+      "width": 800,
+      "height": 200,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 784,
+        "height": 184,
+        "transparent": 39923
+      },
+      "sha256": "858e76b5a782a8282e30ed1547be251613d44697d1afe853e465498baad50bb1"
+    },
+    {
+      "file": "ui/input-field.png",
+      "width": 640,
+      "height": 128,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 624,
+        "height": 112,
+        "transparent": 12741
+      },
+      "sha256": "e46b6b2cd64eada87054b11282024aef39cd6de21a86f799157d4119bc23a12a"
+    },
+    {
+      "file": "ui/result-banner.png",
+      "width": 1000,
+      "height": 240,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "width": 984,
+        "height": 224,
+        "transparent": 98017
+      },
+      "sha256": "4af7100c5199b5411295087bc94042120a27a8eb16b218c1a874fb282e459b65"
+    },
+    {
+      "file": "effects/hit-spark.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 19,
+        "width": 496,
+        "height": 472,
+        "transparent": 206127
+      },
+      "sha256": "fdeed52b54c9ad6e802200ac4ba4d30d75bbfc49257138f8b834e1816c714935"
+    },
+    {
+      "file": "effects/sand-puff.png",
+      "width": 768,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 36,
+        "width": 752,
+        "height": 183,
+        "transparent": 138749
+      },
+      "sha256": "b536e7932eee0f1d2a928f7d812a8d2399bf175fd077eab822e9fb76f5ccb22a"
+    },
+    {
+      "file": "effects/spike-trail.png",
+      "width": 768,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 39,
+        "width": 752,
+        "height": 177,
+        "transparent": 157373
+      },
+      "sha256": "2d2f4a8963c14da4eb614d8a0e51ef742f9855ea2c766673798d4b8054247e93"
+    },
+    {
+      "file": "effects/score-burst.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 8,
+        "top": 88,
+        "width": 496,
+        "height": 335,
+        "transparent": 234832
+      },
+      "sha256": "f99ca2fc7d2f1e87de4cb5ada417835687345ea9511a316af1c84c98dfd7aa60"
+    },
+    {
+      "file": "ui/icons/keyboard.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 20,
+        "top": 73,
+        "right": 235,
+        "bottom": 181,
+        "transparent": 48052
+      },
+      "sha256": "2c9c28a51f4d5c1411b29622c70c8aa46fedeafeebb6ca7aa694862a76ff544e"
+    },
+    {
+      "file": "ui/icons/gamepad.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 20,
+        "top": 63,
+        "right": 235,
+        "bottom": 192,
+        "transparent": 46394
+      },
+      "sha256": "7e1a17341e585cc6011767ee225b866cf45ae319240ca138cbaf863f87ec23d3"
+    },
+    {
+      "file": "ui/icons/touch.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 77,
+        "top": 20,
+        "right": 178,
+        "bottom": 235,
+        "transparent": 49728
+      },
+      "sha256": "8e1b56059a566c3510f29070a7495e5be7a865cf08dc78c6ec5d18559328e122"
+    },
+    {
+      "file": "ui/icons/lock.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 42,
+        "top": 20,
+        "right": 213,
+        "bottom": 235,
+        "transparent": 36351
+      },
+      "sha256": "c9c9d8d76315228b641d4d7860756a71795123ba87ccd2002c8b47daef78471f"
+    },
+    {
+      "file": "ui/icons/ready.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 20,
+        "top": 36,
+        "right": 235,
+        "bottom": 218,
+        "transparent": 50593
+      },
+      "sha256": "b5e12c3d9dbfb850e16af39c32c4075207c72eae16981d994f5b998ff6014760"
+    },
+    {
+      "file": "ui/icons/pause.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 38,
+        "top": 20,
+        "right": 217,
+        "bottom": 235,
+        "transparent": 31679
+      },
+      "sha256": "05dc5769faf0b2e6c4305b010cca22baed23e887d4551816e700295ee4927238"
+    },
+    {
+      "file": "ui/icons-extra/sound-on.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 53,
+        "right": 231,
+        "bottom": 202,
+        "transparent": 47304
+      },
+      "sha256": "4b0af0386185589836655a1acd97a29d52911b5135b1d978fbbb4ff9b337639e"
+    },
+    {
+      "file": "ui/icons-extra/sound-off.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 32,
+        "top": 24,
+        "right": 224,
+        "bottom": 231,
+        "transparent": 41956
+      },
+      "sha256": "5f0e04f9e309670e4ac7ecfce84f323fd351a40a1fb96eb87155d3b65efde096"
+    },
+    {
+      "file": "ui/icons-extra/back.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 58,
+        "right": 231,
+        "bottom": 197,
+        "transparent": 51764
+      },
+      "sha256": "57500c7e01e8ad587d401b149aa10df3455ad172784c276519d26eaaa417d806"
+    },
+    {
+      "file": "ui/icons-extra/settings.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 27,
+        "right": 231,
+        "bottom": 229,
+        "transparent": 39349
+      },
+      "sha256": "995cde6d72ed4e971cc8cc74f8a10eec7797549a4c4359e7423144598c9e566d"
+    }
+  ],
+  "delivery": "Art only. No application code modified.",
+  "animation": "Eight key poses, including two running frames. Not a full fluid animation set."
+}
