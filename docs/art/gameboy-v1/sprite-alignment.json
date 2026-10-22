@@ -1,0 +1,1938 @@
+[
+  {
+    "file": "characters/xiaocui/sprites/idle.png",
+    "master": {
+      "left": 140,
+      "top": 147,
+      "right": 372,
+      "bottom": 495,
+      "width": 233,
+      "height": 349
+    },
+    "gameboy": {
+      "left": 140,
+      "top": 148,
+      "right": 371,
+      "bottom": 495,
+      "width": 232,
+      "height": 348
+    },
+    "widthDelta": -1,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaocui/sprites/run1.png",
+    "master": {
+      "left": 124,
+      "top": 184,
+      "right": 388,
+      "bottom": 495,
+      "width": 265,
+      "height": 312
+    },
+    "gameboy": {
+      "left": 124,
+      "top": 184,
+      "right": 387,
+      "bottom": 495,
+      "width": 264,
+      "height": 312
+    },
+    "widthDelta": -1,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaocui/sprites/run2.png",
+    "master": {
+      "left": 130,
+      "top": 164,
+      "right": 382,
+      "bottom": 495,
+      "width": 253,
+      "height": 332
+    },
+    "gameboy": {
+      "left": 128,
+      "top": 164,
+      "right": 379,
+      "bottom": 495,
+      "width": 252,
+      "height": 332
+    },
+    "widthDelta": -1,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaocui/sprites/jump.png",
+    "master": {
+      "left": 114,
+      "top": 138,
+      "right": 398,
+      "bottom": 495,
+      "width": 285,
+      "height": 358
+    },
+    "gameboy": {
+      "left": 112,
+      "top": 136,
+      "right": 395,
+      "bottom": 495,
+      "width": 284,
+      "height": 360
+    },
+    "widthDelta": -1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaocui/sprites/spike.png",
+    "master": {
+      "left": 53,
+      "top": 121,
+      "right": 458,
+      "bottom": 495,
+      "width": 406,
+      "height": 375
+    },
+    "gameboy": {
+      "left": 52,
+      "top": 120,
+      "right": 459,
+      "bottom": 495,
+      "width": 408,
+      "height": 376
+    },
+    "widthDelta": 2,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaocui/sprites/dive.png",
+    "master": {
+      "left": 56,
+      "top": 286,
+      "right": 456,
+      "bottom": 495,
+      "width": 401,
+      "height": 210
+    },
+    "gameboy": {
+      "left": 56,
+      "top": 284,
+      "right": 455,
+      "bottom": 495,
+      "width": 400,
+      "height": 212
+    },
+    "widthDelta": -1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaocui/sprites/win.png",
+    "master": {
+      "left": 138,
+      "top": 150,
+      "right": 374,
+      "bottom": 495,
+      "width": 237,
+      "height": 346
+    },
+    "gameboy": {
+      "left": 136,
+      "top": 148,
+      "right": 371,
+      "bottom": 495,
+      "width": 236,
+      "height": 348
+    },
+    "widthDelta": -1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaocui/sprites/lose.png",
+    "master": {
+      "left": 146,
+      "top": 152,
+      "right": 365,
+      "bottom": 495,
+      "width": 220,
+      "height": 344
+    },
+    "gameboy": {
+      "left": 144,
+      "top": 152,
+      "right": 363,
+      "bottom": 495,
+      "width": 220,
+      "height": 344
+    },
+    "widthDelta": 0,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/yuehua/sprites/idle.png",
+    "master": {
+      "left": 147,
+      "top": 169,
+      "right": 364,
+      "bottom": 495,
+      "width": 218,
+      "height": 327
+    },
+    "gameboy": {
+      "left": 144,
+      "top": 168,
+      "right": 363,
+      "bottom": 495,
+      "width": 220,
+      "height": 328
+    },
+    "widthDelta": 2,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/yuehua/sprites/run1.png",
+    "master": {
+      "left": 124,
+      "top": 192,
+      "right": 388,
+      "bottom": 495,
+      "width": 265,
+      "height": 304
+    },
+    "gameboy": {
+      "left": 124,
+      "top": 192,
+      "right": 387,
+      "bottom": 495,
+      "width": 264,
+      "height": 304
+    },
+    "widthDelta": -1,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/yuehua/sprites/run2.png",
+    "master": {
+      "left": 135,
+      "top": 185,
+      "right": 377,
+      "bottom": 495,
+      "width": 243,
+      "height": 311
+    },
+    "gameboy": {
+      "left": 132,
+      "top": 184,
+      "right": 375,
+      "bottom": 495,
+      "width": 244,
+      "height": 312
+    },
+    "widthDelta": 1,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/yuehua/sprites/jump.png",
+    "master": {
+      "left": 130,
+      "top": 171,
+      "right": 382,
+      "bottom": 495,
+      "width": 253,
+      "height": 325
+    },
+    "gameboy": {
+      "left": 128,
+      "top": 172,
+      "right": 379,
+      "bottom": 495,
+      "width": 252,
+      "height": 324
+    },
+    "widthDelta": -1,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/yuehua/sprites/spike.png",
+    "master": {
+      "left": 95,
+      "top": 174,
+      "right": 416,
+      "bottom": 495,
+      "width": 322,
+      "height": 322
+    },
+    "gameboy": {
+      "left": 92,
+      "top": 172,
+      "right": 415,
+      "bottom": 495,
+      "width": 324,
+      "height": 324
+    },
+    "widthDelta": 2,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/yuehua/sprites/dive.png",
+    "master": {
+      "left": 75,
+      "top": 335,
+      "right": 437,
+      "bottom": 495,
+      "width": 363,
+      "height": 161
+    },
+    "gameboy": {
+      "left": 72,
+      "top": 336,
+      "right": 435,
+      "bottom": 495,
+      "width": 364,
+      "height": 160
+    },
+    "widthDelta": 1,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/yuehua/sprites/win.png",
+    "master": {
+      "left": 141,
+      "top": 160,
+      "right": 370,
+      "bottom": 495,
+      "width": 230,
+      "height": 336
+    },
+    "gameboy": {
+      "left": 140,
+      "top": 160,
+      "right": 371,
+      "bottom": 495,
+      "width": 232,
+      "height": 336
+    },
+    "widthDelta": 2,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/yuehua/sprites/lose.png",
+    "master": {
+      "left": 156,
+      "top": 175,
+      "right": 356,
+      "bottom": 495,
+      "width": 201,
+      "height": 321
+    },
+    "gameboy": {
+      "left": 156,
+      "top": 176,
+      "right": 355,
+      "bottom": 495,
+      "width": 200,
+      "height": 320
+    },
+    "widthDelta": -1,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/aming/sprites/idle.png",
+    "master": {
+      "left": 149,
+      "top": 159,
+      "right": 363,
+      "bottom": 495,
+      "width": 215,
+      "height": 337
+    },
+    "gameboy": {
+      "left": 148,
+      "top": 160,
+      "right": 363,
+      "bottom": 495,
+      "width": 216,
+      "height": 336
+    },
+    "widthDelta": 1,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/aming/sprites/run1.png",
+    "master": {
+      "left": 109,
+      "top": 173,
+      "right": 402,
+      "bottom": 495,
+      "width": 294,
+      "height": 323
+    },
+    "gameboy": {
+      "left": 108,
+      "top": 172,
+      "right": 403,
+      "bottom": 495,
+      "width": 296,
+      "height": 324
+    },
+    "widthDelta": 2,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/aming/sprites/run2.png",
+    "master": {
+      "left": 138,
+      "top": 149,
+      "right": 373,
+      "bottom": 495,
+      "width": 236,
+      "height": 347
+    },
+    "gameboy": {
+      "left": 136,
+      "top": 148,
+      "right": 371,
+      "bottom": 495,
+      "width": 236,
+      "height": 348
+    },
+    "widthDelta": 0,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/aming/sprites/jump.png",
+    "master": {
+      "left": 124,
+      "top": 131,
+      "right": 388,
+      "bottom": 495,
+      "width": 265,
+      "height": 365
+    },
+    "gameboy": {
+      "left": 128,
+      "top": 132,
+      "right": 387,
+      "bottom": 495,
+      "width": 260,
+      "height": 364
+    },
+    "widthDelta": -5,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/aming/sprites/spike.png",
+    "master": {
+      "left": 112,
+      "top": 154,
+      "right": 400,
+      "bottom": 495,
+      "width": 289,
+      "height": 342
+    },
+    "gameboy": {
+      "left": 112,
+      "top": 152,
+      "right": 399,
+      "bottom": 495,
+      "width": 288,
+      "height": 344
+    },
+    "widthDelta": -1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/aming/sprites/dive.png",
+    "master": {
+      "left": 57,
+      "top": 299,
+      "right": 455,
+      "bottom": 495,
+      "width": 399,
+      "height": 197
+    },
+    "gameboy": {
+      "left": 56,
+      "top": 300,
+      "right": 455,
+      "bottom": 495,
+      "width": 400,
+      "height": 196
+    },
+    "widthDelta": 1,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/aming/sprites/win.png",
+    "master": {
+      "left": 146,
+      "top": 153,
+      "right": 365,
+      "bottom": 495,
+      "width": 220,
+      "height": 343
+    },
+    "gameboy": {
+      "left": 144,
+      "top": 152,
+      "right": 363,
+      "bottom": 495,
+      "width": 220,
+      "height": 344
+    },
+    "widthDelta": 0,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/aming/sprites/lose.png",
+    "master": {
+      "left": 159,
+      "top": 168,
+      "right": 352,
+      "bottom": 495,
+      "width": 194,
+      "height": 328
+    },
+    "gameboy": {
+      "left": 156,
+      "top": 168,
+      "right": 351,
+      "bottom": 495,
+      "width": 196,
+      "height": 328
+    },
+    "widthDelta": 2,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/tangtang/sprites/idle.png",
+    "master": {
+      "left": 164,
+      "top": 174,
+      "right": 347,
+      "bottom": 495,
+      "width": 184,
+      "height": 322
+    },
+    "gameboy": {
+      "left": 164,
+      "top": 172,
+      "right": 347,
+      "bottom": 495,
+      "width": 184,
+      "height": 324
+    },
+    "widthDelta": 0,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/tangtang/sprites/run1.png",
+    "master": {
+      "left": 121,
+      "top": 192,
+      "right": 390,
+      "bottom": 495,
+      "width": 270,
+      "height": 304
+    },
+    "gameboy": {
+      "left": 120,
+      "top": 192,
+      "right": 391,
+      "bottom": 495,
+      "width": 272,
+      "height": 304
+    },
+    "widthDelta": 2,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/tangtang/sprites/run2.png",
+    "master": {
+      "left": 161,
+      "top": 183,
+      "right": 351,
+      "bottom": 495,
+      "width": 191,
+      "height": 313
+    },
+    "gameboy": {
+      "left": 160,
+      "top": 184,
+      "right": 351,
+      "bottom": 495,
+      "width": 192,
+      "height": 312
+    },
+    "widthDelta": 1,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/tangtang/sprites/jump.png",
+    "master": {
+      "left": 150,
+      "top": 170,
+      "right": 361,
+      "bottom": 495,
+      "width": 212,
+      "height": 326
+    },
+    "gameboy": {
+      "left": 148,
+      "top": 168,
+      "right": 359,
+      "bottom": 495,
+      "width": 212,
+      "height": 328
+    },
+    "widthDelta": 0,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/tangtang/sprites/spike.png",
+    "master": {
+      "left": 107,
+      "top": 171,
+      "right": 405,
+      "bottom": 495,
+      "width": 299,
+      "height": 325
+    },
+    "gameboy": {
+      "left": 104,
+      "top": 172,
+      "right": 403,
+      "bottom": 495,
+      "width": 300,
+      "height": 324
+    },
+    "widthDelta": 1,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/tangtang/sprites/dive.png",
+    "master": {
+      "left": 63,
+      "top": 316,
+      "right": 448,
+      "bottom": 495,
+      "width": 386,
+      "height": 180
+    },
+    "gameboy": {
+      "left": 60,
+      "top": 316,
+      "right": 447,
+      "bottom": 495,
+      "width": 388,
+      "height": 180
+    },
+    "widthDelta": 2,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/tangtang/sprites/win.png",
+    "master": {
+      "left": 166,
+      "top": 160,
+      "right": 345,
+      "bottom": 495,
+      "width": 180,
+      "height": 336
+    },
+    "gameboy": {
+      "left": 164,
+      "top": 160,
+      "right": 343,
+      "bottom": 495,
+      "width": 180,
+      "height": 336
+    },
+    "widthDelta": 0,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/tangtang/sprites/lose.png",
+    "master": {
+      "left": 179,
+      "top": 166,
+      "right": 332,
+      "bottom": 495,
+      "width": 154,
+      "height": 330
+    },
+    "gameboy": {
+      "left": 176,
+      "top": 164,
+      "right": 331,
+      "bottom": 495,
+      "width": 156,
+      "height": 332
+    },
+    "widthDelta": 2,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaochun/sprites/idle.png",
+    "master": {
+      "left": 138,
+      "top": 132,
+      "right": 373,
+      "bottom": 495,
+      "width": 236,
+      "height": 364
+    },
+    "gameboy": {
+      "left": 136,
+      "top": 132,
+      "right": 371,
+      "bottom": 495,
+      "width": 236,
+      "height": 364
+    },
+    "widthDelta": 0,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaochun/sprites/run1.png",
+    "master": {
+      "left": 127,
+      "top": 172,
+      "right": 384,
+      "bottom": 495,
+      "width": 258,
+      "height": 324
+    },
+    "gameboy": {
+      "left": 124,
+      "top": 172,
+      "right": 383,
+      "bottom": 495,
+      "width": 260,
+      "height": 324
+    },
+    "widthDelta": 2,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaochun/sprites/run2.png",
+    "master": {
+      "left": 136,
+      "top": 173,
+      "right": 376,
+      "bottom": 495,
+      "width": 241,
+      "height": 323
+    },
+    "gameboy": {
+      "left": 136,
+      "top": 172,
+      "right": 375,
+      "bottom": 495,
+      "width": 240,
+      "height": 324
+    },
+    "widthDelta": -1,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaochun/sprites/jump.png",
+    "master": {
+      "left": 87,
+      "top": 146,
+      "right": 424,
+      "bottom": 495,
+      "width": 338,
+      "height": 350
+    },
+    "gameboy": {
+      "left": 84,
+      "top": 144,
+      "right": 423,
+      "bottom": 495,
+      "width": 340,
+      "height": 352
+    },
+    "widthDelta": 2,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaochun/sprites/spike.png",
+    "master": {
+      "left": 88,
+      "top": 145,
+      "right": 424,
+      "bottom": 495,
+      "width": 337,
+      "height": 351
+    },
+    "gameboy": {
+      "left": 88,
+      "top": 144,
+      "right": 423,
+      "bottom": 495,
+      "width": 336,
+      "height": 352
+    },
+    "widthDelta": -1,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaochun/sprites/dive.png",
+    "master": {
+      "left": 50,
+      "top": 286,
+      "right": 462,
+      "bottom": 495,
+      "width": 413,
+      "height": 210
+    },
+    "gameboy": {
+      "left": 48,
+      "top": 284,
+      "right": 459,
+      "bottom": 495,
+      "width": 412,
+      "height": 212
+    },
+    "widthDelta": -1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaochun/sprites/win.png",
+    "master": {
+      "left": 120,
+      "top": 156,
+      "right": 391,
+      "bottom": 495,
+      "width": 272,
+      "height": 340
+    },
+    "gameboy": {
+      "left": 120,
+      "top": 156,
+      "right": 391,
+      "bottom": 495,
+      "width": 272,
+      "height": 340
+    },
+    "widthDelta": 0,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/xiaochun/sprites/lose.png",
+    "master": {
+      "left": 107,
+      "top": 178,
+      "right": 405,
+      "bottom": 495,
+      "width": 299,
+      "height": 318
+    },
+    "gameboy": {
+      "left": 104,
+      "top": 176,
+      "right": 403,
+      "bottom": 495,
+      "width": 300,
+      "height": 320
+    },
+    "widthDelta": 1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/lanjie/sprites/idle.png",
+    "master": {
+      "left": 158,
+      "top": 154,
+      "right": 353,
+      "bottom": 495,
+      "width": 196,
+      "height": 342
+    },
+    "gameboy": {
+      "left": 156,
+      "top": 152,
+      "right": 351,
+      "bottom": 495,
+      "width": 196,
+      "height": 344
+    },
+    "widthDelta": 0,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/lanjie/sprites/run1.png",
+    "master": {
+      "left": 118,
+      "top": 162,
+      "right": 394,
+      "bottom": 495,
+      "width": 277,
+      "height": 334
+    },
+    "gameboy": {
+      "left": 116,
+      "top": 160,
+      "right": 391,
+      "bottom": 495,
+      "width": 276,
+      "height": 336
+    },
+    "widthDelta": -1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/lanjie/sprites/run2.png",
+    "master": {
+      "left": 151,
+      "top": 144,
+      "right": 360,
+      "bottom": 495,
+      "width": 210,
+      "height": 352
+    },
+    "gameboy": {
+      "left": 148,
+      "top": 144,
+      "right": 359,
+      "bottom": 495,
+      "width": 212,
+      "height": 352
+    },
+    "widthDelta": 2,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/lanjie/sprites/jump.png",
+    "master": {
+      "left": 132,
+      "top": 41,
+      "right": 379,
+      "bottom": 495,
+      "width": 248,
+      "height": 455
+    },
+    "gameboy": {
+      "left": 132,
+      "top": 40,
+      "right": 379,
+      "bottom": 495,
+      "width": 248,
+      "height": 456
+    },
+    "widthDelta": 0,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/lanjie/sprites/spike.png",
+    "master": {
+      "left": 102,
+      "top": 158,
+      "right": 410,
+      "bottom": 495,
+      "width": 309,
+      "height": 338
+    },
+    "gameboy": {
+      "left": 100,
+      "top": 156,
+      "right": 407,
+      "bottom": 495,
+      "width": 308,
+      "height": 340
+    },
+    "widthDelta": -1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/lanjie/sprites/dive.png",
+    "master": {
+      "left": 62,
+      "top": 285,
+      "right": 450,
+      "bottom": 495,
+      "width": 389,
+      "height": 211
+    },
+    "gameboy": {
+      "left": 60,
+      "top": 284,
+      "right": 447,
+      "bottom": 495,
+      "width": 388,
+      "height": 212
+    },
+    "widthDelta": -1,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/lanjie/sprites/win.png",
+    "master": {
+      "left": 155,
+      "top": 153,
+      "right": 356,
+      "bottom": 495,
+      "width": 202,
+      "height": 343
+    },
+    "gameboy": {
+      "left": 152,
+      "top": 152,
+      "right": 355,
+      "bottom": 495,
+      "width": 204,
+      "height": 344
+    },
+    "widthDelta": 2,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/lanjie/sprites/lose.png",
+    "master": {
+      "left": 171,
+      "top": 155,
+      "right": 341,
+      "bottom": 495,
+      "width": 171,
+      "height": 341
+    },
+    "gameboy": {
+      "left": 168,
+      "top": 156,
+      "right": 339,
+      "bottom": 495,
+      "width": 172,
+      "height": 340
+    },
+    "widthDelta": 1,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/01-wolf/sprites/idle.png",
+    "master": {
+      "left": 129,
+      "top": 156,
+      "right": 382,
+      "bottom": 495,
+      "width": 254,
+      "height": 340
+    },
+    "gameboy": {
+      "left": 128,
+      "top": 160,
+      "right": 383,
+      "bottom": 495,
+      "width": 256,
+      "height": 336
+    },
+    "widthDelta": 2,
+    "heightDelta": -4,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/01-wolf/sprites/run1.png",
+    "master": {
+      "left": 100,
+      "top": 169,
+      "right": 411,
+      "bottom": 495,
+      "width": 312,
+      "height": 327
+    },
+    "gameboy": {
+      "left": 100,
+      "top": 168,
+      "right": 411,
+      "bottom": 495,
+      "width": 312,
+      "height": 328
+    },
+    "widthDelta": 0,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/01-wolf/sprites/run2.png",
+    "master": {
+      "left": 97,
+      "top": 146,
+      "right": 415,
+      "bottom": 495,
+      "width": 319,
+      "height": 350
+    },
+    "gameboy": {
+      "left": 96,
+      "top": 144,
+      "right": 415,
+      "bottom": 495,
+      "width": 320,
+      "height": 352
+    },
+    "widthDelta": 1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/01-wolf/sprites/jump.png",
+    "master": {
+      "left": 111,
+      "top": 39,
+      "right": 400,
+      "bottom": 495,
+      "width": 290,
+      "height": 457
+    },
+    "gameboy": {
+      "left": 108,
+      "top": 40,
+      "right": 399,
+      "bottom": 495,
+      "width": 292,
+      "height": 456
+    },
+    "widthDelta": 2,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/01-wolf/sprites/spike.png",
+    "master": {
+      "left": 92,
+      "top": 144,
+      "right": 420,
+      "bottom": 495,
+      "width": 329,
+      "height": 352
+    },
+    "gameboy": {
+      "left": 92,
+      "top": 144,
+      "right": 419,
+      "bottom": 495,
+      "width": 328,
+      "height": 352
+    },
+    "widthDelta": -1,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/01-wolf/sprites/dive.png",
+    "master": {
+      "left": 55,
+      "top": 291,
+      "right": 456,
+      "bottom": 495,
+      "width": 402,
+      "height": 205
+    },
+    "gameboy": {
+      "left": 52,
+      "top": 292,
+      "right": 455,
+      "bottom": 495,
+      "width": 404,
+      "height": 204
+    },
+    "widthDelta": 2,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/01-wolf/sprites/win.png",
+    "master": {
+      "left": 130,
+      "top": 153,
+      "right": 382,
+      "bottom": 495,
+      "width": 253,
+      "height": 343
+    },
+    "gameboy": {
+      "left": 128,
+      "top": 152,
+      "right": 379,
+      "bottom": 495,
+      "width": 252,
+      "height": 344
+    },
+    "widthDelta": -1,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/01-wolf/sprites/lose.png",
+    "master": {
+      "left": 126,
+      "top": 158,
+      "right": 385,
+      "bottom": 495,
+      "width": 260,
+      "height": 338
+    },
+    "gameboy": {
+      "left": 124,
+      "top": 160,
+      "right": 383,
+      "bottom": 495,
+      "width": 260,
+      "height": 336
+    },
+    "widthDelta": 0,
+    "heightDelta": -2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/02-gambler/sprites/idle.png",
+    "master": {
+      "left": 175,
+      "top": 203,
+      "right": 337,
+      "bottom": 495,
+      "width": 163,
+      "height": 293
+    },
+    "gameboy": {
+      "left": 172,
+      "top": 204,
+      "right": 335,
+      "bottom": 495,
+      "width": 164,
+      "height": 292
+    },
+    "widthDelta": 1,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/02-gambler/sprites/run1.png",
+    "master": {
+      "left": 148,
+      "top": 239,
+      "right": 363,
+      "bottom": 495,
+      "width": 216,
+      "height": 257
+    },
+    "gameboy": {
+      "left": 148,
+      "top": 240,
+      "right": 363,
+      "bottom": 495,
+      "width": 216,
+      "height": 256
+    },
+    "widthDelta": 0,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/02-gambler/sprites/run2.png",
+    "master": {
+      "left": 168,
+      "top": 214,
+      "right": 343,
+      "bottom": 495,
+      "width": 176,
+      "height": 282
+    },
+    "gameboy": {
+      "left": 168,
+      "top": 212,
+      "right": 343,
+      "bottom": 495,
+      "width": 176,
+      "height": 284
+    },
+    "widthDelta": 0,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/02-gambler/sprites/jump.png",
+    "master": {
+      "left": 149,
+      "top": 156,
+      "right": 362,
+      "bottom": 495,
+      "width": 214,
+      "height": 340
+    },
+    "gameboy": {
+      "left": 148,
+      "top": 156,
+      "right": 363,
+      "bottom": 495,
+      "width": 216,
+      "height": 340
+    },
+    "widthDelta": 2,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/02-gambler/sprites/spike.png",
+    "master": {
+      "left": 111,
+      "top": 204,
+      "right": 400,
+      "bottom": 495,
+      "width": 290,
+      "height": 292
+    },
+    "gameboy": {
+      "left": 108,
+      "top": 204,
+      "right": 399,
+      "bottom": 495,
+      "width": 292,
+      "height": 292
+    },
+    "widthDelta": 2,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/02-gambler/sprites/dive.png",
+    "master": {
+      "left": 103,
+      "top": 329,
+      "right": 409,
+      "bottom": 495,
+      "width": 307,
+      "height": 167
+    },
+    "gameboy": {
+      "left": 100,
+      "top": 328,
+      "right": 407,
+      "bottom": 495,
+      "width": 308,
+      "height": 168
+    },
+    "widthDelta": 1,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/02-gambler/sprites/win.png",
+    "master": {
+      "left": 167,
+      "top": 200,
+      "right": 345,
+      "bottom": 495,
+      "width": 179,
+      "height": 296
+    },
+    "gameboy": {
+      "left": 164,
+      "top": 200,
+      "right": 343,
+      "bottom": 495,
+      "width": 180,
+      "height": 296
+    },
+    "widthDelta": 1,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/02-gambler/sprites/lose.png",
+    "master": {
+      "left": 155,
+      "top": 235,
+      "right": 357,
+      "bottom": 495,
+      "width": 203,
+      "height": 261
+    },
+    "gameboy": {
+      "left": 152,
+      "top": 236,
+      "right": 355,
+      "bottom": 495,
+      "width": 204,
+      "height": 260
+    },
+    "widthDelta": 1,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/03-prince/sprites/idle.png",
+    "master": {
+      "left": 171,
+      "top": 193,
+      "right": 340,
+      "bottom": 495,
+      "width": 170,
+      "height": 303
+    },
+    "gameboy": {
+      "left": 168,
+      "top": 192,
+      "right": 339,
+      "bottom": 495,
+      "width": 172,
+      "height": 304
+    },
+    "widthDelta": 2,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/03-prince/sprites/run1.png",
+    "master": {
+      "left": 135,
+      "top": 221,
+      "right": 377,
+      "bottom": 495,
+      "width": 243,
+      "height": 275
+    },
+    "gameboy": {
+      "left": 132,
+      "top": 220,
+      "right": 375,
+      "bottom": 495,
+      "width": 244,
+      "height": 276
+    },
+    "widthDelta": 1,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/03-prince/sprites/run2.png",
+    "master": {
+      "left": 160,
+      "top": 203,
+      "right": 351,
+      "bottom": 495,
+      "width": 192,
+      "height": 293
+    },
+    "gameboy": {
+      "left": 160,
+      "top": 204,
+      "right": 351,
+      "bottom": 495,
+      "width": 192,
+      "height": 292
+    },
+    "widthDelta": 0,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/03-prince/sprites/jump.png",
+    "master": {
+      "left": 147,
+      "top": 167,
+      "right": 365,
+      "bottom": 495,
+      "width": 219,
+      "height": 329
+    },
+    "gameboy": {
+      "left": 144,
+      "top": 168,
+      "right": 363,
+      "bottom": 495,
+      "width": 220,
+      "height": 328
+    },
+    "widthDelta": 1,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/03-prince/sprites/spike.png",
+    "master": {
+      "left": 101,
+      "top": 202,
+      "right": 411,
+      "bottom": 495,
+      "width": 311,
+      "height": 294
+    },
+    "gameboy": {
+      "left": 100,
+      "top": 200,
+      "right": 411,
+      "bottom": 495,
+      "width": 312,
+      "height": 296
+    },
+    "widthDelta": 1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/03-prince/sprites/dive.png",
+    "master": {
+      "left": 108,
+      "top": 326,
+      "right": 404,
+      "bottom": 495,
+      "width": 297,
+      "height": 170
+    },
+    "gameboy": {
+      "left": 108,
+      "top": 328,
+      "right": 403,
+      "bottom": 495,
+      "width": 296,
+      "height": 168
+    },
+    "widthDelta": -1,
+    "heightDelta": -2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/03-prince/sprites/win.png",
+    "master": {
+      "left": 165,
+      "top": 188,
+      "right": 346,
+      "bottom": 495,
+      "width": 182,
+      "height": 308
+    },
+    "gameboy": {
+      "left": 164,
+      "top": 188,
+      "right": 347,
+      "bottom": 495,
+      "width": 184,
+      "height": 308
+    },
+    "widthDelta": 2,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/03-prince/sprites/lose.png",
+    "master": {
+      "left": 155,
+      "top": 245,
+      "right": 357,
+      "bottom": 495,
+      "width": 203,
+      "height": 251
+    },
+    "gameboy": {
+      "left": 152,
+      "top": 244,
+      "right": 355,
+      "bottom": 495,
+      "width": 204,
+      "height": 252
+    },
+    "widthDelta": 1,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/04-adventurer/sprites/idle.png",
+    "master": {
+      "left": 167,
+      "top": 193,
+      "right": 345,
+      "bottom": 495,
+      "width": 179,
+      "height": 303
+    },
+    "gameboy": {
+      "left": 164,
+      "top": 192,
+      "right": 343,
+      "bottom": 495,
+      "width": 180,
+      "height": 304
+    },
+    "widthDelta": 1,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/04-adventurer/sprites/run1.png",
+    "master": {
+      "left": 143,
+      "top": 213,
+      "right": 369,
+      "bottom": 495,
+      "width": 227,
+      "height": 283
+    },
+    "gameboy": {
+      "left": 140,
+      "top": 212,
+      "right": 367,
+      "bottom": 495,
+      "width": 228,
+      "height": 284
+    },
+    "widthDelta": 1,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/04-adventurer/sprites/run2.png",
+    "master": {
+      "left": 158,
+      "top": 206,
+      "right": 354,
+      "bottom": 495,
+      "width": 197,
+      "height": 290
+    },
+    "gameboy": {
+      "left": 156,
+      "top": 204,
+      "right": 351,
+      "bottom": 495,
+      "width": 196,
+      "height": 292
+    },
+    "widthDelta": -1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/04-adventurer/sprites/jump.png",
+    "master": {
+      "left": 131,
+      "top": 141,
+      "right": 381,
+      "bottom": 495,
+      "width": 251,
+      "height": 355
+    },
+    "gameboy": {
+      "left": 128,
+      "top": 140,
+      "right": 379,
+      "bottom": 495,
+      "width": 252,
+      "height": 356
+    },
+    "widthDelta": 1,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/04-adventurer/sprites/spike.png",
+    "master": {
+      "left": 112,
+      "top": 199,
+      "right": 399,
+      "bottom": 495,
+      "width": 288,
+      "height": 297
+    },
+    "gameboy": {
+      "left": 112,
+      "top": 200,
+      "right": 399,
+      "bottom": 495,
+      "width": 288,
+      "height": 296
+    },
+    "widthDelta": 0,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/04-adventurer/sprites/dive.png",
+    "master": {
+      "left": 101,
+      "top": 324,
+      "right": 411,
+      "bottom": 495,
+      "width": 311,
+      "height": 172
+    },
+    "gameboy": {
+      "left": 100,
+      "top": 324,
+      "right": 411,
+      "bottom": 495,
+      "width": 312,
+      "height": 172
+    },
+    "widthDelta": 1,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/04-adventurer/sprites/win.png",
+    "master": {
+      "left": 163,
+      "top": 183,
+      "right": 349,
+      "bottom": 495,
+      "width": 187,
+      "height": 313
+    },
+    "gameboy": {
+      "left": 160,
+      "top": 184,
+      "right": 347,
+      "bottom": 495,
+      "width": 188,
+      "height": 312
+    },
+    "widthDelta": 1,
+    "heightDelta": -1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/04-adventurer/sprites/lose.png",
+    "master": {
+      "left": 158,
+      "top": 229,
+      "right": 354,
+      "bottom": 495,
+      "width": 197,
+      "height": 267
+    },
+    "gameboy": {
+      "left": 156,
+      "top": 232,
+      "right": 351,
+      "bottom": 495,
+      "width": 196,
+      "height": 264
+    },
+    "widthDelta": -1,
+    "heightDelta": -3,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/ayi/sprites/idle.png",
+    "master": {
+      "left": 163,
+      "top": 156,
+      "right": 348,
+      "bottom": 495,
+      "width": 186,
+      "height": 340
+    },
+    "gameboy": {
+      "left": 160,
+      "top": 156,
+      "right": 347,
+      "bottom": 495,
+      "width": 188,
+      "height": 340
+    },
+    "widthDelta": 2,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/ayi/sprites/run1.png",
+    "master": {
+      "left": 138,
+      "top": 164,
+      "right": 374,
+      "bottom": 495,
+      "width": 237,
+      "height": 332
+    },
+    "gameboy": {
+      "left": 136,
+      "top": 164,
+      "right": 371,
+      "bottom": 495,
+      "width": 236,
+      "height": 332
+    },
+    "widthDelta": -1,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/ayi/sprites/run2.png",
+    "master": {
+      "left": 157,
+      "top": 213,
+      "right": 354,
+      "bottom": 495,
+      "width": 198,
+      "height": 283
+    },
+    "gameboy": {
+      "left": 156,
+      "top": 212,
+      "right": 355,
+      "bottom": 495,
+      "width": 200,
+      "height": 284
+    },
+    "widthDelta": 2,
+    "heightDelta": 1,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/ayi/sprites/jump.png",
+    "master": {
+      "left": 156,
+      "top": 150,
+      "right": 356,
+      "bottom": 495,
+      "width": 201,
+      "height": 346
+    },
+    "gameboy": {
+      "left": 156,
+      "top": 148,
+      "right": 355,
+      "bottom": 495,
+      "width": 200,
+      "height": 348
+    },
+    "widthDelta": -1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/ayi/sprites/spike.png",
+    "master": {
+      "left": 101,
+      "top": 166,
+      "right": 411,
+      "bottom": 495,
+      "width": 311,
+      "height": 330
+    },
+    "gameboy": {
+      "left": 100,
+      "top": 164,
+      "right": 411,
+      "bottom": 495,
+      "width": 312,
+      "height": 332
+    },
+    "widthDelta": 1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/ayi/sprites/dive.png",
+    "master": {
+      "left": 59,
+      "top": 304,
+      "right": 453,
+      "bottom": 495,
+      "width": 395,
+      "height": 192
+    },
+    "gameboy": {
+      "left": 56,
+      "top": 304,
+      "right": 451,
+      "bottom": 495,
+      "width": 396,
+      "height": 192
+    },
+    "widthDelta": 1,
+    "heightDelta": 0,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/ayi/sprites/win.png",
+    "master": {
+      "left": 171,
+      "top": 170,
+      "right": 341,
+      "bottom": 495,
+      "width": 171,
+      "height": 326
+    },
+    "gameboy": {
+      "left": 168,
+      "top": 168,
+      "right": 339,
+      "bottom": 495,
+      "width": 172,
+      "height": 328
+    },
+    "widthDelta": 1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  },
+  {
+    "file": "characters/ayi/sprites/lose.png",
+    "master": {
+      "left": 161,
+      "top": 242,
+      "right": 351,
+      "bottom": 495,
+      "width": 191,
+      "height": 254
+    },
+    "gameboy": {
+      "left": 160,
+      "top": 240,
+      "right": 351,
+      "bottom": 495,
+      "width": 192,
+      "height": 256
+    },
+    "widthDelta": 1,
+    "heightDelta": 2,
+    "bottomEdge": 496
+  }
+]

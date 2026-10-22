@@ -1,0 +1,370 @@
+{
+  "id": "01-wolf",
+  "files": [
+    {
+      "file": "characters/01-wolf/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "155,188,15",
+        "139,172,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 128,
+        "top": 160,
+        "right": 383,
+        "bottom": 495
+      },
+      "transparentPixels": 221200,
+      "sha256": "6d1e0d34ed77d3941ed57c189fcb8f90be245472e2af0a832307d80ef35e90c9",
+      "errors": []
+    },
+    {
+      "file": "characters/01-wolf/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "155,188,15",
+        "48,98,48"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 100,
+        "top": 168,
+        "right": 411,
+        "bottom": 495
+      },
+      "transparentPixels": 219136,
+      "sha256": "69b5c5459b37f2dc08cf2eb1ea8325ffb64c8fbd61f83ce768b4d84e9b27c010",
+      "errors": []
+    },
+    {
+      "file": "characters/01-wolf/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 96,
+        "top": 144,
+        "right": 415,
+        "bottom": 495
+      },
+      "transparentPixels": 214752,
+      "sha256": "2c1afaf98ea73c1e9ba36edef8db4cc8658b79658c520cb33504f3741eadc15e",
+      "errors": []
+    },
+    {
+      "file": "characters/01-wolf/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 108,
+        "top": 40,
+        "right": 399,
+        "bottom": 495
+      },
+      "transparentPixels": 208288,
+      "sha256": "9e3122751d82204d76e62ac9d3899e6cf4f3af0211a56fca222b17fff902b99c",
+      "errors": []
+    },
+    {
+      "file": "characters/01-wolf/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "155,188,15",
+        "139,172,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 92,
+        "top": 144,
+        "right": 419,
+        "bottom": 495
+      },
+      "transparentPixels": 216960,
+      "sha256": "fe80e3d22961f41f8a4f1bac10fa5028929afbba538169bfa8bbbb1bfe05fee6",
+      "errors": []
+    },
+    {
+      "file": "characters/01-wolf/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 52,
+        "top": 292,
+        "right": 455,
+        "bottom": 495
+      },
+      "transparentPixels": 223136,
+      "sha256": "32f7fce46e7f554880e93175e9819e1104029aea67157906d9773811225d3838",
+      "errors": []
+    },
+    {
+      "file": "characters/01-wolf/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 128,
+        "top": 152,
+        "right": 379,
+        "bottom": 495
+      },
+      "transparentPixels": 219920,
+      "sha256": "bd9c4bfaa50ff5f06bf28695a89c49191899abf4375a956a303c260702c549cf",
+      "errors": []
+    },
+    {
+      "file": "characters/01-wolf/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "155,188,15",
+        "139,172,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 124,
+        "top": 160,
+        "right": 383,
+        "bottom": 495
+      },
+      "transparentPixels": 221440,
+      "sha256": "392da35d72a4b8943c728c4a781af37e01f1db20504ad21c236a24ce482811c9",
+      "errors": []
+    },
+    {
+      "file": "characters/01-wolf/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 44,
+        "top": 16,
+        "right": 463,
+        "bottom": 495
+      },
+      "transparentPixels": 121424,
+      "sha256": "6f902fef39368a3d71ddc954e3a6430a026c0495454e5ab1bf06439fa376ec9d",
+      "errors": []
+    },
+    {
+      "file": "characters/01-wolf/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 40,
+        "top": 16,
+        "right": 471,
+        "bottom": 495
+      },
+      "transparentPixels": 121648,
+      "sha256": "0ef25e958a4aed86f40ba451bfbe33a5c0db6fa5d2775c7d86dfe2a050ad76d5",
+      "errors": []
+    },
+    {
+      "file": "characters/01-wolf/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 40,
+        "top": 20,
+        "right": 471,
+        "bottom": 495
+      },
+      "transparentPixels": 119648,
+      "sha256": "12a22971390d6fe84285a618564d9089b7ae9d7cbbc1e28325a8bd9c7c3d0f65",
+      "errors": []
+    },
+    {
+      "file": "characters/01-wolf/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "155,188,15",
+        "48,98,48"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 40,
+        "top": 16,
+        "right": 471,
+        "bottom": 495
+      },
+      "transparentPixels": 114512,
+      "sha256": "1299f6b8193bcfb13398d2e4d5a7f32c3a6482afdcf7ad31f586a018f3e61a08",
+      "errors": []
+    },
+    {
+      "file": "characters/01-wolf/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 44,
+        "top": 16,
+        "right": 467,
+        "bottom": 495
+      },
+      "transparentPixels": 124416,
+      "sha256": "5ea9c15c9d66cd68793352233a45f212c4a940bf9496f0c3aa03c2ad8e48a5f0",
+      "errors": []
+    },
+    {
+      "file": "characters/01-wolf/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 2,
+      "logicalWidth": 1024,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 64,
+        "top": 20,
+        "right": 1983,
+        "bottom": 247
+      },
+      "transparentPixels": 436208,
+      "sha256": "d1004f9220aeb317b01314ef2f6a2c4e5c3871832fdad2edcf920b858fe05ace",
+      "errors": []
+    }
+  ],
+  "failures": []
+}

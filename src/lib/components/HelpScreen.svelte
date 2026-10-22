@@ -85,12 +85,12 @@
   }
   tbody th {
     background: var(--navy);
-    color: #fff;
+    color: var(--on-dark);
     padding: 1cqh 1.6cqh;
     clip-path: polygon(0 0, 100% 0, calc(100% - 1cqh) 100%, 0 100%);
   }
   tbody td {
-    background: #fff;
+    background: var(--paper-white);
     border-top: 0.3cqh solid var(--navy);
     border-bottom: 0.3cqh solid var(--navy);
     text-align: center;

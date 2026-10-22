@@ -1,0 +1,370 @@
+{
+  "id": "tangtang",
+  "files": [
+    {
+      "file": "characters/tangtang/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 164,
+        "top": 172,
+        "right": 347,
+        "bottom": 495
+      },
+      "transparentPixels": 230016,
+      "sha256": "ce1998500e68adfb82272de27929689c31956ac87f7d3f2c8ccd328d3b057dee",
+      "errors": []
+    },
+    {
+      "file": "characters/tangtang/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 120,
+        "top": 192,
+        "right": 391,
+        "bottom": 495
+      },
+      "transparentPixels": 230624,
+      "sha256": "4bde88646bdd3a88df9bab768439d15a4d6e352cfb99b459adc33cbfe87594f5",
+      "errors": []
+    },
+    {
+      "file": "characters/tangtang/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 160,
+        "top": 184,
+        "right": 351,
+        "bottom": 495
+      },
+      "transparentPixels": 232480,
+      "sha256": "4663adcfdf39076cdf60bc972af1dfb5cac807b3940e9f57e9a8bdd1bd52996e",
+      "errors": []
+    },
+    {
+      "file": "characters/tangtang/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 148,
+        "top": 168,
+        "right": 359,
+        "bottom": 495
+      },
+      "transparentPixels": 231152,
+      "sha256": "aaaf6ec2622e856c87904c6002f914fbb5958d857dc2b71f9aecc5a3833a47df",
+      "errors": []
+    },
+    {
+      "file": "characters/tangtang/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 104,
+        "top": 172,
+        "right": 403,
+        "bottom": 495
+      },
+      "transparentPixels": 220144,
+      "sha256": "81adc0f04702d169ef5fa7e58a67f4c1c96fdfaa4764ee3ef68908cfc3ea2072",
+      "errors": []
+    },
+    {
+      "file": "characters/tangtang/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 60,
+        "top": 316,
+        "right": 447,
+        "bottom": 495
+      },
+      "transparentPixels": 229744,
+      "sha256": "69623adece3d22fd7eb645745f1db4620bfd855aa5cda52453c23a135d5a53af",
+      "errors": []
+    },
+    {
+      "file": "characters/tangtang/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 164,
+        "top": 160,
+        "right": 343,
+        "bottom": 495
+      },
+      "transparentPixels": 230592,
+      "sha256": "b93e13d3520824d01b2591d91ef866ce262e89bc2ca07da12dfd038a9675cc62",
+      "errors": []
+    },
+    {
+      "file": "characters/tangtang/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 176,
+        "top": 164,
+        "right": 331,
+        "bottom": 495
+      },
+      "transparentPixels": 233936,
+      "sha256": "73d32b526d68adddc3542b75662484211368f60d7705dfa28887c7b5b640580d",
+      "errors": []
+    },
+    {
+      "file": "characters/tangtang/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "155,188,15",
+        "48,98,48"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 48,
+        "top": 16,
+        "right": 463,
+        "bottom": 495
+      },
+      "transparentPixels": 117760,
+      "sha256": "4694bab0a82d8bd8d1edf22ef53f54323fa65b30046c9b58b0f6e554e64f8e5a",
+      "errors": []
+    },
+    {
+      "file": "characters/tangtang/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 36,
+        "top": 16,
+        "right": 471,
+        "bottom": 495
+      },
+      "transparentPixels": 115936,
+      "sha256": "154cc311a13f618909b7804d0f99f615901d5d35d89c461a973dd9e50132ea4a",
+      "errors": []
+    },
+    {
+      "file": "characters/tangtang/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 44,
+        "top": 16,
+        "right": 463,
+        "bottom": 495
+      },
+      "transparentPixels": 115424,
+      "sha256": "b003f2cc259b97d017bcaeaf4e07c4059162b94164416e6097b813a659be4d9f",
+      "errors": []
+    },
+    {
+      "file": "characters/tangtang/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 44,
+        "top": 16,
+        "right": 467,
+        "bottom": 495
+      },
+      "transparentPixels": 116944,
+      "sha256": "22b98d512c63e8c14a12d137b0ddcb63baef067c4fd0dd5d337acb30e9f0e381",
+      "errors": []
+    },
+    {
+      "file": "characters/tangtang/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 44,
+        "top": 16,
+        "right": 467,
+        "bottom": 495
+      },
+      "transparentPixels": 120064,
+      "sha256": "b6d6ed49d6856546eb8db03d6977c576fe69a931090935f37114b5f145057832",
+      "errors": []
+    },
+    {
+      "file": "characters/tangtang/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 2,
+      "logicalWidth": 1024,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 82,
+        "top": 80,
+        "right": 1957,
+        "bottom": 247
+      },
+      "transparentPixels": 459672,
+      "sha256": "5f06d5a068ebf94db4124091dc7c0927c9b75ba7d06d0de627052a383e5a77ee",
+      "errors": []
+    }
+  ],
+  "failures": []
+}

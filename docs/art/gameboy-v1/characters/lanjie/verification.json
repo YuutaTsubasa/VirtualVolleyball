@@ -1,0 +1,370 @@
+{
+  "id": "lanjie",
+  "files": [
+    {
+      "file": "characters/lanjie/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 156,
+        "top": 152,
+        "right": 351,
+        "bottom": 495
+      },
+      "transparentPixels": 230000,
+      "sha256": "48c62109256fc50dee0c0c10b6e0175560084b45e11cfd32a2da6f826dd651bf",
+      "errors": []
+    },
+    {
+      "file": "characters/lanjie/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 116,
+        "top": 160,
+        "right": 391,
+        "bottom": 495
+      },
+      "transparentPixels": 229520,
+      "sha256": "2a692d817bfdd290ca414d527830d44aa40de416976036a32e2863dbf441a804",
+      "errors": []
+    },
+    {
+      "file": "characters/lanjie/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 148,
+        "top": 144,
+        "right": 359,
+        "bottom": 495
+      },
+      "transparentPixels": 229616,
+      "sha256": "185c8e3ae5a4d8c248b602503b92c254227ce2d6108af6d4b5b71c7462bc37ab",
+      "errors": []
+    },
+    {
+      "file": "characters/lanjie/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 132,
+        "top": 40,
+        "right": 379,
+        "bottom": 495
+      },
+      "transparentPixels": 215872,
+      "sha256": "ce429cb27fffb2fad0caafa4507ecff412da71f0c991215f664aa4042094316d",
+      "errors": []
+    },
+    {
+      "file": "characters/lanjie/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 100,
+        "top": 156,
+        "right": 407,
+        "bottom": 495
+      },
+      "transparentPixels": 226128,
+      "sha256": "e6e6d97bf55cdebf084145397abaa16c4a8adaf022348a3569968bea0d5d228a",
+      "errors": []
+    },
+    {
+      "file": "characters/lanjie/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 60,
+        "top": 284,
+        "right": 447,
+        "bottom": 495
+      },
+      "transparentPixels": 228480,
+      "sha256": "f8aaa5d1fc85858a18e8746577323af79173c6d79bb12821e2db70e8823d5322",
+      "errors": []
+    },
+    {
+      "file": "characters/lanjie/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 152,
+        "top": 152,
+        "right": 355,
+        "bottom": 495
+      },
+      "transparentPixels": 229168,
+      "sha256": "262158722d3174b37cc0ed55cba73e0a5482f55a500aa036517497997cc1b0b1",
+      "errors": []
+    },
+    {
+      "file": "characters/lanjie/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 168,
+        "top": 156,
+        "right": 339,
+        "bottom": 495
+      },
+      "transparentPixels": 233360,
+      "sha256": "55a52981af724d0f6c2c01359fe8ed53c45ed6e9f1c0c7bcae04624def1a720b",
+      "errors": []
+    },
+    {
+      "file": "characters/lanjie/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 64,
+        "top": 16,
+        "right": 447,
+        "bottom": 495
+      },
+      "transparentPixels": 131984,
+      "sha256": "df297226fac1f284058b35535e44dde6f065808430fe4c18ba479b753aee8fd8",
+      "errors": []
+    },
+    {
+      "file": "characters/lanjie/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 48,
+        "top": 16,
+        "right": 459,
+        "bottom": 495
+      },
+      "transparentPixels": 122064,
+      "sha256": "51d2d60045c6d4f97a7bcccb960811a45c175ac5cfc3d6a57d3af9b7d85325cb",
+      "errors": []
+    },
+    {
+      "file": "characters/lanjie/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 52,
+        "top": 16,
+        "right": 455,
+        "bottom": 495
+      },
+      "transparentPixels": 125712,
+      "sha256": "586f89f4c6458731e337a1a2acaa381e765234ee72465b71562f931dc30ac6bd",
+      "errors": []
+    },
+    {
+      "file": "characters/lanjie/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 56,
+        "top": 16,
+        "right": 455,
+        "bottom": 495
+      },
+      "transparentPixels": 124832,
+      "sha256": "0f3c1282f56c9d58876737f5704c237acfe2cfb04727780b4b6a687c0e1f4078",
+      "errors": []
+    },
+    {
+      "file": "characters/lanjie/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 56,
+        "top": 16,
+        "right": 455,
+        "bottom": 495
+      },
+      "transparentPixels": 129824,
+      "sha256": "22d604ad15e1b9775fa339ee07464ee51caf69ae6e5b40780dc55c93babb9830",
+      "errors": []
+    },
+    {
+      "file": "characters/lanjie/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 2,
+      "logicalWidth": 1024,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 78,
+        "top": 20,
+        "right": 1961,
+        "bottom": 247
+      },
+      "transparentPixels": 455536,
+      "sha256": "71ca4df7ffeb9e9facb7b881956a380ef4943311945fe6f9aceb666be1f9f321",
+      "errors": []
+    }
+  ],
+  "failures": []
+}

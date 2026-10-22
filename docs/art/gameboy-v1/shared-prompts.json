@@ -1,0 +1,218 @@
+[
+  {
+    "file": "environment/court.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art environment/court.png asset for 虛擬排球王. Wide coastal Taiwan beach volleyball stage, orthographic side view, layered clouds and islands and sea behind flat sandy foreground. Ground line at 87 percent canvas height, no net, ball, players, text or UI. Full opaque 16:9 scene. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 480x270 final intended output 1920x1080. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f fully opaque. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/environment--court.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/environment/court.png"
+    ]
+  },
+  {
+    "file": "environment/net.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art environment/net.png asset for 虛擬排球王. Single upright volleyball post with very narrow side-view mesh extending to right, light top tape and striped antenna. Tall narrow complete silhouette, no floor shadow, transparent mesh gaps. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 48x256 final intended output 192x1024. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/environment--net.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/environment/net.png"
+    ]
+  },
+  {
+    "file": "environment/ball.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art environment/ball.png asset for 虛擬排球王. One round volleyball, curved three-tone panel pattern and strong pixel contour. No shadow or text. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 64x64 final intended output 256x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/environment--ball.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/environment/ball.png"
+    ]
+  },
+  {
+    "file": "ui/logo.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/logo.png asset for 虛擬排球王. Wide game title logo. Exact Traditional Chinese text “虛擬排球王” (five glyphs 虛 擬 排 球 王), preserve exact reference lettering and spelling, with small volleyball at right and dynamic underline. Readable heavy bitmap glyphs, transparent outside. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 350x105 final intended output 1400x420. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. Exact title spelling is essential. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--logo.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/logo.png"
+    ]
+  },
+  {
+    "file": "ui/button-normal.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/button-normal.png asset for 虛擬排球王. Wide rounded rectangular empty button plate, dark center, medium green border and light corner accents. Normal state. Opaque interior. No text. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 160x32 final intended output 640x128. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--button-normal.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/button-normal.png"
+    ]
+  },
+  {
+    "file": "ui/button-selected.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/button-selected.png asset for 虛擬排球王. Wide rounded rectangular empty button plate, bright selected light center, dark outline, strong highlighted corners. Opaque interior. No text. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 160x32 final intended output 640x128. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--button-selected.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/button-selected.png"
+    ]
+  },
+  {
+    "file": "ui/button-disabled.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/button-disabled.png asset for 虛擬排球王. Wide rounded rectangular empty button plate, muted medium green center, subdued outline, disabled state. Opaque interior. No text. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 160x32 final intended output 640x128. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--button-disabled.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/button-disabled.png"
+    ]
+  },
+  {
+    "file": "ui/dialog-panel.png",
+    "prompt": "Create one production Game Boy pixel-art UI dialogue plate. OPAQUE FULL-BLEED 4:3 RECTANGULAR PLATE: entire canvas filled dark green #0f380f, no alpha, no holes, no white background. A chunky square pixel border touches all four canvas edges; small volleyball corner ornaments lie INSIDE the rectangle. The huge uninterrupted central dark rectangle is fully opaque and fills 85 percent of canvas for game text. Reference establishes a blank volleyball themed panel; reinterpret into original monochrome Game Boy pixel art. Only four colors #0f380f #306230 #8bac0f #9bbc0f. Purposeful crisp pixel clusters, logical240x180, no antialiasing or gradients. NO text, letters, numbers, checkerboard, transparency, inset cutout, empty center or background outside plate. This image is the solid plate itself, not a floating object.",
+    "source": "shared-sources/ui--dialog-panel.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/dialog-panel.png"
+    ]
+  },
+  {
+    "file": "ui/portrait-frame.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/portrait-frame.png asset for 虛擬排球王. Square portrait frame only, narrow dark and medium-green segmented border with corner brackets. Empty center MUST be real transparent alpha, outside also transparent. No portrait. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 64x64 final intended output 256x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--portrait-frame.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/portrait-frame.png"
+    ]
+  },
+  {
+    "file": "ui/portrait-selected.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/portrait-selected.png asset for 虛擬排球王. Square selected portrait frame only, bright highlight and dark border with prominent light corner brackets. Empty center MUST be real transparent alpha, outside also transparent. No portrait. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 64x64 final intended output 256x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--portrait-selected.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/portrait-selected.png"
+    ]
+  },
+  {
+    "file": "ui/score-panel.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/score-panel.png asset for 虛擬排球王. Wide scoreboard base with TWO equal empty rectangular dark number areas left and right, symmetric central diamond separator, bright outlines and wing decorations. Both inner plates opaque, outside transparent. No numbers or text. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 200x50 final intended output 800x200. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--score-panel.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/score-panel.png"
+    ]
+  },
+  {
+    "file": "ui/input-field.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/input-field.png asset for 虛擬排球王. Wide rectangular empty input field, light opaque center, dark outline and modest corner decoration. No text. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 160x32 final intended output 640x128. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--input-field.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/input-field.png"
+    ]
+  },
+  {
+    "file": "ui/result-banner.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/result-banner.png asset for 虛擬排球王. Wide empty victory/result ribbon with light central banner and dark folded tails. No text. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 250x60 final intended output 1000x240. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--result-banner.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/result-banner.png"
+    ]
+  },
+  {
+    "file": "effects/hit-spark.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art effects/hit-spark.png asset for 虛擬排球王. One sharp radial impact starburst with bright core and jagged dark-edged rays, separated tiny pixel sparks. No blur/glow, empty transparent gaps. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 128x128 final intended output 512x512. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/effects--hit-spark.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/effects/hit-spark.png"
+    ]
+  },
+  {
+    "file": "effects/sand-puff.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art effects/sand-puff.png asset for 虛擬排球王. Horizontal low sand dust puff with connected rounded blocky cloud clusters and a few flying grains, dark outline, light green fill, crisp pixel art. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 192x64 final intended output 768x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/effects--sand-puff.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/effects/sand-puff.png"
+    ]
+  },
+  {
+    "file": "effects/spike-trail.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art effects/spike-trail.png asset for 虛擬排球王. Horizontal swooping volleyball speed trail, tapering from left into strong curved hook on right. Four green solid bands, no ball, no blur/glow. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 192x64 final intended output 768x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/effects--spike-trail.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/effects/spike-trail.png"
+    ]
+  },
+  {
+    "file": "effects/score-burst.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art effects/score-burst.png asset for 虛擬排球王. Ring of celebratory sharp pixel stars and short rays around large completely empty transparent center. No words, no ball, crisp sparse star particles. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 128x128 final intended output 512x512. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/effects--score-burst.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/effects/score-burst.png"
+    ]
+  },
+  {
+    "file": "ui/icons/keyboard.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/icons/keyboard.png asset for 虛擬排球王. Compact keyboard with block keys, readable as keyboard without legible key lettering. Single centered icon, bold silhouette, real transparency and generous 12 percent blank padding. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 64x64 final intended output 256x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--icons--keyboard.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/keyboard.png"
+    ]
+  },
+  {
+    "file": "ui/icons/gamepad.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/icons/gamepad.png asset for 虛擬排球王. Symmetric game controller with directional pad and four round buttons. Single centered icon, bold silhouette, real transparency and generous 12 percent blank padding. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 64x64 final intended output 256x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--icons--gamepad.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/gamepad.png"
+    ]
+  },
+  {
+    "file": "ui/icons/touch.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/icons/touch.png asset for 虛擬排球王. Hand with extended index finger tapping an outlined circular target. Single centered icon, bold silhouette, real transparency and generous 12 percent blank padding. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 64x64 final intended output 256x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--icons--touch.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/touch.png"
+    ]
+  },
+  {
+    "file": "ui/icons/lock.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/icons/lock.png asset for 虛擬排球王. Closed padlock with arched shackle and keyhole. Single centered icon, bold silhouette, real transparency and generous 12 percent blank padding. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 64x64 final intended output 256x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--icons--lock.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/lock.png"
+    ]
+  },
+  {
+    "file": "ui/icons/ready.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/icons/ready.png asset for 虛擬排球王. Bold checkmark ready confirmation. Single centered icon, bold silhouette, real transparency and generous 12 percent blank padding. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 64x64 final intended output 256x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--icons--ready.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/ready.png"
+    ]
+  },
+  {
+    "file": "ui/icons/pause.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/icons/pause.png asset for 虛擬排球王. Two upright parallel pause bars. Single centered icon, bold silhouette, real transparency and generous 12 percent blank padding. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 64x64 final intended output 256x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--icons--pause.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/pause.png"
+    ]
+  },
+  {
+    "file": "ui/icons/sound-on.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/icons/sound-on.png asset for 虛擬排球王. Speaker cone with two sound wave arcs. Single centered icon, bold silhouette, real transparency and generous 12 percent blank padding. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 64x64 final intended output 256x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--icons--sound-on.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons-extra/sound-on.png"
+    ]
+  },
+  {
+    "file": "ui/icons/sound-off.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/icons/sound-off.png asset for 虛擬排球王. Speaker cone crossed with diagonal mute slash. Single centered icon, bold silhouette, real transparency and generous 12 percent blank padding. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 64x64 final intended output 256x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--icons--sound-off.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons-extra/sound-off.png"
+    ]
+  },
+  {
+    "file": "ui/icons/back.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/icons/back.png asset for 虛擬排球王. Bold arrow pointing left. Single centered icon, bold silhouette, real transparency and generous 12 percent blank padding. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 64x64 final intended output 256x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--icons--back.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons-extra/back.png"
+    ]
+  },
+  {
+    "file": "ui/icons/settings.png",
+    "prompt": "Use case: stylized-concept. Generate ONE production Game Boy pixel art ui/icons/settings.png asset for 虛擬排球王. Gear with central transparent hole. Single centered icon, bold silhouette, real transparency and generous 12 percent blank padding. Reference is visual concept and composition guide. Redraw as purpose-built crisp handcrafted pixel art, NOT a smooth painted image. Logical grid 64x64 final intended output 256x256. Integer 4x enlarged pixel blocks; 1 pixel logical contours, purposeful large clusters. ONLY #0f380f #306230 #8bac0f #9bbc0f plus real transparent alpha. No antialiasing, gradients, partialalpha, blur, textures or watermarks. No letters, labels or digits. Complete object uncropped, 8 percent padding around all nonbackground shapes.",
+    "source": "shared-sources/ui--icons--settings.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons-extra/settings.png"
+    ]
+  }
+]

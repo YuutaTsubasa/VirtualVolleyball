@@ -193,7 +193,7 @@
   }
   .who {
     background: var(--navy);
-    color: #fff;
+    color: var(--on-dark);
     font-weight: 900;
     font-size: 3cqh;
     padding: 0.2cqh 3cqh;

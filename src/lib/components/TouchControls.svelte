@@ -175,7 +175,7 @@
   .tag {
     position: absolute;
     top: -3.6cqh;
-    color: #fff;
+    color: var(--on-dark);
     font-weight: 900;
     text-shadow: 0 0 0.6cqh #000;
   }
@@ -201,7 +201,7 @@
     height: 18cqh;
     margin-bottom: 6cqh;
     background: var(--accent);
-    color: #fff;
+    color: var(--on-dark);
   }
   .buttons .jump {
     background: var(--accent2);

@@ -21,6 +21,23 @@ const ART_PATHS = {
 const art = (key) => loadImage(asset(ART_PATHS[key]));
 // 球網圖的座標、比分底板的數字位置、角色腳底錨點：每種風格可以不同（style-assets.js 的 styleConfig）
 let cfg = currentConfig();
+
+// 比賽畫面上的字、計分板、對話泡泡的顏色：跟介面用同一組 CSS 變數，限色風格（Game Boy）也一致
+const pal = { text: '#fff', ink: '#142a63', flash: '#ffe066', portrait: '#5aa9ec', paper: '#fff', accent: '#ff5d8f' };
+let palStyle = null;
+function updatePalette() {
+  const style = document.documentElement.dataset.style ?? 'anime90';
+  if (style === palStyle) return;
+  palStyle = style;
+  const css = getComputedStyle(document.documentElement);
+  const v = (name, fallback) => css.getPropertyValue(name).trim() || fallback;
+  pal.text = v('--on-dark', '#fff');
+  pal.ink = v('--navy', '#142a63');
+  pal.flash = style === 'anime90' ? '#ffe066' : v('--gold', '#ffe066');
+  pal.portrait = v('--hud-portrait', '#5aa9ec');
+  pal.paper = v('--paper-white', '#fff');
+  pal.accent = v('--accent', '#ff5d8f');
+}
 const SPRITE_SIZE = 210;
 
 // ---------- 圖片 ----------
@@ -541,13 +558,13 @@ function drawBall(g, b) {
 
 // ---------- 計分板與文字 ----------
 
-function outlinedText(g, text, x, y, size, fill = '#fff', align = 'center') {
+function outlinedText(g, text, x, y, size, fill = pal.text, align = 'center') {
   g.font = `900 ${size}px "Noto Sans TC", "Microsoft JhengHei", sans-serif`;
   g.textAlign = align;
   g.textBaseline = 'middle';
   g.lineJoin = 'round';
   g.lineWidth = size / 5;
-  g.strokeStyle = '#142a63';
+  g.strokeStyle = pal.ink;
   g.strokeText(text, x, y);
   g.fillStyle = fill;
   g.fillText(text, x, y);
@@ -563,7 +580,7 @@ function drawHud(g, match, names) {
     const img = loadImage(p.character.portraits[expression]);
     const x = side === 0 ? 14 : W - 14 - 74;
     g.fillStyle = 'rgba(255,255,255,0.85)';
-    g.strokeStyle = 'rgba(30,20,40,0.9)';
+    g.strokeStyle = pal.ink;
     g.lineWidth = 3;
     rr(g, x, 12, 74, 74, 14);
     g.fill();
@@ -576,16 +593,16 @@ function drawHud(g, match, names) {
       g.restore();
     }
     const label = names?.[side] ? `${names[side]}（${p.character.name}）` : p.character.name;
-    outlinedText(g, label, side === 0 ? x + 84 : x - 10, 30, 20, '#fff', side === 0 ? 'left' : 'right');
-    outlinedText(g, String(match.score[side]), side === 0 ? x + 84 : x - 10, 64, 44, side === match.lastScorer && match.phase === 'point' ? '#ffe066' : '#fff', side === 0 ? 'left' : 'right');
+    outlinedText(g, label, side === 0 ? x + 84 : x - 10, 30, 20, pal.text, side === 0 ? 'left' : 'right');
+    outlinedText(g, String(match.score[side]), side === 0 ? x + 84 : x - 10, 64, 44, side === match.lastScorer && match.phase === 'point' ? pal.flash : pal.text, side === 0 ? 'left' : 'right');
   }
-  outlinedText(g, `${match.target} 分勝`, W / 2, 26, 16, '#fff');
+  outlinedText(g, `${match.target} 分勝`, W / 2, 26, 16, pal.text);
 
   if (match.phase === 'ready') {
     const server = match.players[match.server];
-    outlinedText(g, `${server.character.name} 發球`, W / 2, 190, 40, '#fff');
+    outlinedText(g, `${server.character.name} 發球`, W / 2, 190, 40, pal.text);
   } else if (match.phase === 'point' && match.timer > 40) {
-    outlinedText(g, '得分！', W / 2, 190, 64, '#ffe066');
+    outlinedText(g, '得分！', W / 2, 190, 64, pal.flash);
   }
 }
 
@@ -599,9 +616,9 @@ function drawScoreboard(g, match, names, panel) {
   for (const side of [0, 1]) {
     const flash = side === match.lastScorer && match.phase === 'point';
     const cx = px + pw * (side === 0 ? cfg.scoreboard.left : cfg.scoreboard.right);
-    outlinedText(g, String(match.score[side]).padStart(2, '0'), cx, py + ph * cfg.scoreboard.y, 40, flash ? '#ffe066' : '#fff');
+    outlinedText(g, String(match.score[side]).padStart(2, '0'), cx, py + ph * cfg.scoreboard.y, 40, flash ? pal.flash : pal.text);
   }
-  outlinedText(g, `${match.target} 分勝`, W / 2, py + ph + 10, 14, '#fff');
+  outlinedText(g, `${match.target} 分勝`, W / 2, py + ph + 10, 14, pal.text);
 
   // 兩邊角落：頭像＋名字
   for (const side of [0, 1]) {
@@ -613,28 +630,28 @@ function drawScoreboard(g, match, names, panel) {
     const y = 10;
     g.save();
     rr(g, x, y, size, size, 8);
-    g.fillStyle = '#5aa9ec';
+    g.fillStyle = pal.portrait;
     g.fill();
     g.clip();
     if (ready(img)) g.drawImage(img, x - 8, y - 2, size + 16, size + 16);
     g.restore();
     g.lineWidth = 3.5;
-    g.strokeStyle = '#142a63';
+    g.strokeStyle = pal.ink;
     rr(g, x, y, size, size, 8);
     g.stroke();
     g.lineWidth = 1.5;
-    g.strokeStyle = '#ffd43b';
+    g.strokeStyle = pal.flash;
     rr(g, x + 3, y + 3, size - 6, size - 6, 6);
     g.stroke();
     const label = names?.[side] ? `${names[side]}（${p.character.name}）` : p.character.name;
-    outlinedText(g, label, side === 0 ? x + size + 10 : x - 10, y + size / 2, 19, '#fff', side === 0 ? 'left' : 'right');
+    outlinedText(g, label, side === 0 ? x + size + 10 : x - 10, y + size / 2, 19, pal.text, side === 0 ? 'left' : 'right');
   }
 
   if (match.phase === 'ready') {
     const server = match.players[match.server];
-    outlinedText(g, `${server.character.name} 發球`, W / 2, 190, 40, '#fff');
+    outlinedText(g, `${server.character.name} 發球`, W / 2, 190, 40, pal.text);
   } else if (match.phase === 'point' && match.timer > 40) {
-    outlinedText(g, '得分！', W / 2, 190, 64, '#ffe066');
+    outlinedText(g, '得分！', W / 2, 190, 64, pal.flash);
   }
 }
 
@@ -651,8 +668,8 @@ function drawBubbles(g, match) {
     let x = p.x - w / 2;
     x = Math.max(10, Math.min(W - w - 10, x));
     const y = Math.min(p.y - 200, GROUND - 240);
-    g.fillStyle = '#ffffff';
-    g.strokeStyle = 'rgba(30,20,40,0.9)';
+    g.fillStyle = pal.paper;
+    g.strokeStyle = pal.ink;
     g.lineWidth = 3;
     rr(g, x, y, w, h, 14);
     g.fill();
@@ -663,7 +680,7 @@ function drawBubbles(g, match) {
     g.lineTo(p.x + 8, y + h - 1.5);
     g.fill();
     g.stroke();
-    g.fillStyle = '#2b2233';
+    g.fillStyle = pal.ink;
     g.textAlign = 'center';
     g.textBaseline = 'middle';
     g.fillText(b.text, x + w / 2, y + h / 2 + 1);
@@ -690,8 +707,8 @@ function drawClouds(g) {
 // 連線時在自己的角色頭上標「你」
 function drawYouMarker(g, p) {
   const y = p.y - 168 + Math.sin(p.anim * 0.1) * 3;
-  g.fillStyle = '#ff5d8f';
-  g.strokeStyle = 'rgba(30,20,40,0.9)';
+  g.fillStyle = pal.accent;
+  g.strokeStyle = pal.ink;
   g.lineWidth = 3;
   g.beginPath();
   g.moveTo(p.x - 9, y);
@@ -700,12 +717,13 @@ function drawYouMarker(g, p) {
   g.closePath();
   g.fill();
   g.stroke();
-  outlinedText(g, '你', p.x, y - 13, 18, '#fff');
+  outlinedText(g, '你', p.x, y - 13, 18, pal.text);
 }
 
 // opts：{ you: 自己的座位（連線時）, names: 兩邊玩家名稱（連線時） }
 export function draw(canvas, match, opts = {}) {
   cfg = currentConfig();
+  updatePalette();
   // 換風格時調整內部解析度與縮放方式（像素風格不要平滑）
   if (SCALE !== cfg.canvasScale || canvas.width !== Math.round(W * cfg.canvasScale)) {
     SCALE = cfg.canvasScale;

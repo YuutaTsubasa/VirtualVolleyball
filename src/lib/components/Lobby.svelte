@@ -366,7 +366,7 @@
   .copy-row code {
     flex: 1;
     min-width: 0;
-    background: #fff;
+    background: var(--paper-white);
     border: 0.35cqh solid var(--navy);
     border-radius: 0.6cqh;
     padding: 0.5cqh 1cqh;
@@ -383,7 +383,7 @@
   }
   .tabs button {
     border: 0.25cqh solid var(--navy);
-    background: #fff;
+    background: var(--paper-white);
     border-radius: 0.6cqh;
     font-weight: 800;
     font-size: 1.8cqh;
@@ -421,7 +421,7 @@
     overflow-y: auto;
     font-size: 2cqh;
     line-height: 1.5;
-    background: #fff;
+    background: var(--paper-white);
     border: 0.3cqh solid var(--navy);
     border-radius: 0.6cqh;
   }

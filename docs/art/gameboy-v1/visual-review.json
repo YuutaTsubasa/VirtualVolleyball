@@ -1,0 +1,77 @@
+{
+  "characters": [
+    {
+      "id": "xiaocui",
+      "passed": true,
+      "reviewed": "overview.png after master-size alignment",
+      "notes": "All eight poses and five expressions inspected; identity retained."
+    },
+    {
+      "id": "yuehua",
+      "passed": true,
+      "reviewed": "overview.png after master-size alignment",
+      "notes": "All eight poses and five expressions inspected; identity retained."
+    },
+    {
+      "id": "aming",
+      "passed": true,
+      "reviewed": "overview.png after master-size alignment",
+      "notes": "All eight poses and five expressions inspected; identity retained."
+    },
+    {
+      "id": "tangtang",
+      "passed": true,
+      "reviewed": "overview.png after master-size alignment",
+      "notes": "All eight poses and five expressions inspected; identity retained."
+    },
+    {
+      "id": "xiaochun",
+      "passed": true,
+      "reviewed": "overview.png after master-size alignment",
+      "notes": "All eight poses and five expressions inspected; identity retained."
+    },
+    {
+      "id": "lanjie",
+      "passed": true,
+      "reviewed": "overview.png after master-size alignment",
+      "notes": "All eight poses and five expressions inspected; identity retained."
+    },
+    {
+      "id": "01-wolf",
+      "passed": true,
+      "reviewed": "overview.png after master-size alignment",
+      "notes": "All eight poses and five expressions inspected; identity retained."
+    },
+    {
+      "id": "02-gambler",
+      "passed": true,
+      "reviewed": "overview.png after master-size alignment",
+      "notes": "All eight poses and five expressions inspected; identity retained."
+    },
+    {
+      "id": "03-prince",
+      "passed": true,
+      "reviewed": "overview.png after master-size alignment",
+      "notes": "All eight poses and five expressions inspected; identity retained."
+    },
+    {
+      "id": "04-adventurer",
+      "passed": true,
+      "reviewed": "overview.png after master-size alignment",
+      "notes": "All eight poses and five expressions inspected; identity retained."
+    },
+    {
+      "id": "ayi",
+      "passed": true,
+      "reviewed": "overview.png after master-size alignment",
+      "notes": "H01-B01 armor retained; seated lose regenerated."
+    }
+  ],
+  "sharedPassed": true,
+  "sharedReviewed": "common-assets-overview.png, logo, net, score-panel and dialog-panel at full size",
+  "notes": [
+    "Title 虛擬排球王 visually checked.",
+    "Dialog panel regenerated as opaque plate with transparent external padding; full interior tested.",
+    "All 11 overviews reviewed again after resizing sprites to master bounds."
+  ]
+}

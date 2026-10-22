@@ -17,6 +17,10 @@
   --accent2: var(--gold);
   --sea: #1f5fbf;
   --ok: #1fa35b;
+  /* 深色底上的字、白色底（輸入框、表格），以及比賽畫面的頭像底色：Game Boy 這類限色風格會換掉 */
+  --on-dark: #fff;
+  --paper-white: #fff;
+  --hud-portrait: #5aa9ec;
   --font: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', 'Heiti TC', sans-serif;
   /* 手把鍵盤（從 TaiwanMahjong 搬來的 ControlsKeyboard）用的顏色 */
   --text: var(--navy);
@@ -210,7 +214,7 @@ button:disabled { opacity: 0.5; cursor: default; }
   margin: 1cqh 1cqh 0;
   padding: 0.6cqh 4cqh;
   background: var(--navy);
-  color: #fff;
+  color: var(--on-dark);
   font-weight: 900;
   font-size: 3cqh;
   letter-spacing: 0.2em;
@@ -266,7 +270,7 @@ input, select.vsel {
   font: inherit;
   font-weight: 700;
   color: var(--navy);
-  background: #fff;
+  background: var(--paper-white);
   border: 0.4cqh solid var(--navy);
   border-radius: 0.8cqh;
   padding: 0.7cqh 1.4cqh;
@@ -291,7 +295,7 @@ input::placeholder { color: #9aa3ba; }
 .card img { width: 100%; flex: 1; min-height: 0; object-fit: cover; object-position: center 12%; display: block; }
 .card span {
   background: var(--navy);
-  color: #fff;
+  color: var(--on-dark);
   font-weight: 900;
   font-size: 2.1cqh;
   letter-spacing: 0.1em;
@@ -322,7 +326,7 @@ input::placeholder { color: #9aa3ba; }
   top: 0.5cqh;
   left: 0.5cqh;
   background: var(--accent);
-  color: #fff;
+  color: var(--on-dark);
   border-radius: 0.6cqh;
   padding: 0 0.8cqh;
   font-size: 1.8cqh;
@@ -349,7 +353,7 @@ input::placeholder { color: #9aa3ba; }
 }
 .toast {
   background: var(--red);
-  color: #fff;
+  color: var(--on-dark);
   font-weight: 800;
   padding: 1cqh 2.4cqh;
   border-radius: 1cqh;
@@ -363,7 +367,7 @@ input::placeholder { color: #9aa3ba; }
   margin: auto;
   width: fit-content;
   background: rgba(12, 29, 75, 0.88);
-  color: #fff;
+  color: var(--on-dark);
   padding: 1cqh 3cqh;
   border-radius: 1cqh;
   font-weight: 800;
@@ -405,26 +409,27 @@ input:focus { border-color: var(--gold-deep); box-shadow: 0 0 0 0.4cqh var(--gol
     align-items: center;
     justify-content: center;
     background: var(--navy-deep);
-    color: #fff;
+    color: var(--on-dark);
     font-size: 22px;
     font-weight: 800;
   }
 }
 
 /* ---------- 畫風：介面配色與字體 ----------
-   先參考 TaiwanMahjong 的 themes.css 定暫時的顏色，各風格圖素包附的「介面主色」到了再換。
+   主色來自各風格圖素包的交件留言（art-inbox/messages）；還沒交的先參考 TaiwanMahjong 的 themes.css。
    --navy 是深色（框線、標題條、文字），--cream 是面板底，--gold 是強調色。 */
 
 :root[data-style='pc98'] {
-  --navy: #2a2350;
-  --navy-deep: #191433;
-  --navy-soft: #4b4380;
-  --cream: #efe6d2;
+  /* 背景 #111329、面板 #24203e、文字 #fae8cd、選取 #ffd69a、邊框 #9b80b4 */
+  --navy: #24203e;
+  --navy-deep: #111329;
+  --navy-soft: #5b4f86;
+  --cream: #fae8cd;
   --gold: #ffd69a;
-  --gold-deep: #d99a52;
-  --gold-line: #ffd69a;
-  --stripe: #b9b2d4;
-  --accent: #e0607e;
+  --gold-deep: #d9a05a;
+  --gold-line: #9b80b4;
+  --stripe: #9b80b4;
+  --accent: #6fd3c1;
   --font: 'MingLiU', '細明體', 'MS Gothic', 'Cascadia Mono', monospace;
 }
 :root[data-style='msdos'] {
@@ -440,18 +445,21 @@ input:focus { border-color: var(--gold-deep); box-shadow: 0 0 0 0.4cqh var(--gol
   --font: 'Cascadia Mono', 'Consolas', 'MingLiU', '細明體', monospace;
 }
 :root[data-style='taiwan-print'] {
-  --navy: #173f34;
-  --navy-deep: #102f28;
-  --navy-soft: #315a46;
-  --cream: #f4e1b3;
-  --gold: #f0c878;
-  --gold-deep: #c99a3e;
-  --gold-line: #b49053;
-  --stripe: #d5c395;
-  --accent: #c1272d;
+  /* 墨藍 #102044、青綠 #128C96、朱紅 #E94B32、暖紙 #FFF1C2、金黃 #F6C334 */
+  --navy: #102044;
+  --navy-deep: #0a1530;
+  --navy-soft: #128c96;
+  --cream: #fff1c2;
+  --gold: #f6c334;
+  --gold-deep: #e94b32;
+  --gold-line: #f6c334;
+  --stripe: #128c96;
+  --accent: #e94b32;
+  --sea: #128c96;
   --font: 'DFKai-SB', '標楷體', 'Kaiti TC', 'Microsoft JhengHei', serif;
 }
 :root[data-style='gameboy'] {
+  /* 最深 #0f380f、深 #306230、中亮 #8bac0f、最亮 #9bbc0f（只用這四色） */
   --navy: #0f380f;
   --navy-deep: #0f380f;
   --navy-soft: #306230;
@@ -463,17 +471,22 @@ input:focus { border-color: var(--gold-deep); box-shadow: 0 0 0 0.4cqh var(--gol
   --accent: #0f380f;
   --sea: #0f380f;
   --ok: #306230;
+  --red: #0f380f;
+  --on-dark: #9bbc0f;
+  --paper-white: #9bbc0f;
+  --hud-portrait: #8bac0f;
   --font: 'MingLiU', '細明體', monospace;
 }
 :root[data-style='modern-paint'] {
-  --navy: #152e4d;
-  --navy-deep: #10243f;
-  --navy-soft: #294d70;
-  --cream: #f0f7ff;
-  --gold: #ffe5b4;
-  --gold-deep: #f2b880;
-  --gold-line: #87b5d1;
-  --stripe: #bed5ed;
+  /* 深藍 #15458F、天空藍 #3EA8EF、奶油 #FFF3D6、金色 #F4C558、墨色 #173351 */
+  --navy: #15458f;
+  --navy-deep: #173351;
+  --navy-soft: #3ea8ef;
+  --cream: #fff3d6;
+  --gold: #f4c558;
+  --gold-deep: #e0a83a;
+  --gold-line: #3ea8ef;
+  --stripe: #bfe3fa;
   --accent: #ff8fa3;
 }
 /* 像素風格：直角、不要圓角與模糊陰影 */

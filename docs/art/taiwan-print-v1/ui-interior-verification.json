@@ -1,0 +1,66 @@
+[
+  {
+    "file": "ui/portrait-frame.png",
+    "expectedAlpha": 0,
+    "observedAlphas": [
+      0
+    ],
+    "pass": true
+  },
+  {
+    "file": "ui/portrait-selected.png",
+    "expectedAlpha": 0,
+    "observedAlphas": [
+      0
+    ],
+    "pass": true
+  },
+  {
+    "file": "ui/button-normal.png",
+    "expectedAlpha": 255,
+    "observedAlphas": [
+      255
+    ],
+    "pass": true
+  },
+  {
+    "file": "ui/button-selected.png",
+    "expectedAlpha": 255,
+    "observedAlphas": [
+      255
+    ],
+    "pass": true
+  },
+  {
+    "file": "ui/button-disabled.png",
+    "expectedAlpha": 255,
+    "observedAlphas": [
+      255
+    ],
+    "pass": true
+  },
+  {
+    "file": "ui/dialog-panel.png",
+    "expectedAlpha": 255,
+    "observedAlphas": [
+      255
+    ],
+    "pass": true
+  },
+  {
+    "file": "ui/input-field.png",
+    "expectedAlpha": 255,
+    "observedAlphas": [
+      255
+    ],
+    "pass": true
+  },
+  {
+    "file": "ui/result-banner.png",
+    "expectedAlpha": 255,
+    "observedAlphas": [
+      255
+    ],
+    "pass": true
+  }
+]

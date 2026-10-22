@@ -1,0 +1,207 @@
+{
+  "character": "04-adventurer",
+  "style": "pc98",
+  "palette": [
+    "#201525",
+    "#3d2634",
+    "#6a3542",
+    "#a73b3d",
+    "#e65336",
+    "#fa9250",
+    "#fff1d7",
+    "#f0bf8d",
+    "#d38d68",
+    "#9e5952",
+    "#b4a6a6",
+    "#f4ce67",
+    "#a98445",
+    "#be6f52",
+    "#653d50"
+  ],
+  "frames": [
+    "idle",
+    "run1",
+    "run2",
+    "jump",
+    "spike",
+    "dive",
+    "win",
+    "lose"
+  ],
+  "expressions": [
+    "normal",
+    "happy",
+    "surprised",
+    "sad",
+    "win"
+  ],
+  "sheet": {
+    "file": "sprite-sheet.png",
+    "width": 2048,
+    "height": 256,
+    "frameSize": 256,
+    "anchor": [
+      128,
+      248
+    ]
+  },
+  "files": [
+    {
+      "file": "sprites/idle.png",
+      "logical": "logical/sprites-idle.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 14,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "9ded8799575c19d46940c27a0381151cac968b51ddf0a231867128a85f3f6522"
+    },
+    {
+      "file": "sprites/run1.png",
+      "logical": "logical/sprites-run1.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 15,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "3e5c6257325a738d11de140e86034f40254b694178e99466ef87452a240aef24"
+    },
+    {
+      "file": "sprites/run2.png",
+      "logical": "logical/sprites-run2.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 15,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "a1d96373e365830b62ad2bfd48bd04a3e757d46b5939705c838952059237d255"
+    },
+    {
+      "file": "sprites/jump.png",
+      "logical": "logical/sprites-jump.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 15,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "28cb16a4601b8553fbbe75dc0f38e83bdddcb98b113570f087b309937b12f706"
+    },
+    {
+      "file": "sprites/spike.png",
+      "logical": "logical/sprites-spike.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 15,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "686bc9cdb9e55b105aecd14a940ba181287a616d567e3fa3507b945ddb5a7533"
+    },
+    {
+      "file": "sprites/dive.png",
+      "logical": "logical/sprites-dive.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 15,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "56155bf26f759c01224dd6303fb2fa6fc4d0091cb0eb80f41f641e92567b5a20"
+    },
+    {
+      "file": "sprites/win.png",
+      "logical": "logical/sprites-win.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 15,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "3f4bc8185faab676239e5c05dc7f2c7c0dea7f52c68191a014f234f854d34e9f"
+    },
+    {
+      "file": "sprites/lose.png",
+      "logical": "logical/sprites-lose.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 15,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "057a303be4794276443032a66c464410036f8a2f4f3b8eea6e29471d648b2991"
+    },
+    {
+      "file": "portraits/normal.png",
+      "logical": "logical/portraits-normal.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 15,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "1826369a227a69617176c11db5e43bd7f8a6603837885081931a29227125ae27"
+    },
+    {
+      "file": "portraits/happy.png",
+      "logical": "logical/portraits-happy.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 15,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "ae0c9bbd7e0279233c41fc4cb28f68382e0e054398688226873f0fa6f083e3d0"
+    },
+    {
+      "file": "portraits/surprised.png",
+      "logical": "logical/portraits-surprised.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 15,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "12c51bf7ec4b8194ab4c9bd188d0ffbf139424095b598cb6557110daa3335677"
+    },
+    {
+      "file": "portraits/sad.png",
+      "logical": "logical/portraits-sad.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 15,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "96342497b77487f591bdfeaeb695f68d116b22c24d536494ea9c08c898530ee6"
+    },
+    {
+      "file": "portraits/win.png",
+      "logical": "logical/portraits-win.png",
+      "width": 512,
+      "height": 512,
+      "logicalSize": 256,
+      "upscale": 2,
+      "colorCount": 15,
+      "alpha": "binary",
+      "badGrid": 0,
+      "sha256": "1359b5727b78f9e9b7385cb777f8f8cc7ce56b1685610fa92e37d4c71bba7f9d"
+    }
+  ],
+  "source": "New image_gen repaints; fixed palette and integer grid export. Not an emulation of original PC-98 hardware."
+}

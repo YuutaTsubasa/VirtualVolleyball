@@ -73,7 +73,7 @@
   }
   h2 {
     margin: 0;
-    color: #fff;
+    color: var(--on-dark);
     font-size: 7.4cqh;
     font-weight: 900;
     letter-spacing: 0.18em;
@@ -85,7 +85,7 @@
     margin: 0.3cqh 0 0;
     padding: 0.2cqh 4cqh;
     background: var(--navy-deep);
-    color: #fff;
+    color: var(--on-dark);
     font-size: 2.3cqh;
     font-weight: 800;
     letter-spacing: 0.35em;

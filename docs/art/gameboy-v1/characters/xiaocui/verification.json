@@ -1,0 +1,370 @@
+{
+  "id": "xiaocui",
+  "files": [
+    {
+      "file": "characters/xiaocui/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 140,
+        "top": 148,
+        "right": 371,
+        "bottom": 495
+      },
+      "transparentPixels": 217760,
+      "sha256": "ae8258ed0626204fce2008711b092029713817eb7a7cfe5e11e59dcc0e35eaa6",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaocui/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 124,
+        "top": 184,
+        "right": 387,
+        "bottom": 495
+      },
+      "transparentPixels": 221440,
+      "sha256": "327a1555c57f31953839e11d60ddc35da5ecf9a95c0ad45fdcee48659f4e2a57",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaocui/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "155,188,15",
+        "48,98,48",
+        "139,172,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 128,
+        "top": 164,
+        "right": 379,
+        "bottom": 495
+      },
+      "transparentPixels": 216912,
+      "sha256": "f5ae72dccf5292fb130778dd265ed306bfe8ccf11134b44492661ee7d535fabd",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "155,188,15",
+        "48,98,48",
+        "139,172,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 112,
+        "top": 136,
+        "right": 395,
+        "bottom": 495
+      },
+      "transparentPixels": 215488,
+      "sha256": "b568f27b4ee120f7cb3a84d875b7ca3ee60ac60e8c5afc62f8c6076abb331cc6",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 52,
+        "top": 120,
+        "right": 459,
+        "bottom": 495
+      },
+      "transparentPixels": 188272,
+      "sha256": "8bde5b083b3d2a296dc5e56b1ecfed00cae36da283e8582d1c80acf606dc7153",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaocui/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 56,
+        "top": 284,
+        "right": 455,
+        "bottom": 495
+      },
+      "transparentPixels": 215328,
+      "sha256": "8166067a6e54e7cac2f11b9a053b74c99cd25272d000e8b684683e5dab6a19c6",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaocui/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 136,
+        "top": 148,
+        "right": 371,
+        "bottom": 495
+      },
+      "transparentPixels": 221696,
+      "sha256": "727de22a2e99786ec2e185657a3d7d9f750e18f3d9ba87677a9157304c59e0e9",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaocui/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 144,
+        "top": 152,
+        "right": 363,
+        "bottom": 495
+      },
+      "transparentPixels": 221488,
+      "sha256": "c0e39274285597aadd36d33d218dd1e0e263b99753528666f0c76a17ae70fe8d",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaocui/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 24,
+        "top": 16,
+        "right": 483,
+        "bottom": 495
+      },
+      "transparentPixels": 102368,
+      "sha256": "ee8ab7dfb2855450bd675f1ade4ca5eb631a984b636629abe7c98cee43a74cd1",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaocui/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 16,
+        "top": 16,
+        "right": 491,
+        "bottom": 495
+      },
+      "transparentPixels": 94944,
+      "sha256": "c2b195967f40b7d95fe70f67cba3f087b8afc6ec385f3be0764d60fedbbf0169",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaocui/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 20,
+        "top": 16,
+        "right": 491,
+        "bottom": 495
+      },
+      "transparentPixels": 101360,
+      "sha256": "bd8ecd2513c016a5cc9081bdcf7eb2d168ca9d2e9eee76a61fe40a800d9d6ef4",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaocui/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 20,
+        "top": 16,
+        "right": 491,
+        "bottom": 495
+      },
+      "transparentPixels": 101456,
+      "sha256": "29324b21f1374556818a9298139622f32c8caa2126d88965ead299114fb9bfec",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaocui/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 20,
+        "top": 16,
+        "right": 487,
+        "bottom": 495
+      },
+      "transparentPixels": 99792,
+      "sha256": "7da3f36f70c0e0de2f3126ac9dde9289074bef861eab5fe51200290e2f292439",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaocui/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 2,
+      "logicalWidth": 1024,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 70,
+        "top": 60,
+        "right": 1973,
+        "bottom": 247
+      },
+      "transparentPixels": 429596,
+      "sha256": "9fc0dec370d1e175144df95be26c517e4c385cc67dd0c3fd9564c4ab3af13b6e",
+      "errors": []
+    }
+  ],
+  "failures": []
+}

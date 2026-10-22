@@ -22,7 +22,7 @@ const fileSets = Object.fromEntries(
   Object.entries(MANIFEST.styles ?? {}).map(([id, s]) => [id, new Set(s.files ?? [])]),
 );
 
-// 選用的插圖：連 90 年代版都要有交才算有（沒有時畫面改用角色動作圖拼）
+// 選用的插圖：只用該風格自己交的（不借 90 年代版，免得畫風混在一起）；沒有時畫面改用角色動作圖拼
 export const OPTIONAL = new Set(['ui/title-scene.webp', 'ui/mode-cpu.webp', 'ui/mode-versus.webp', 'ui/mode-watch.webp']);
 
 // 一種風格完整的檔案數：11 位角色 ×（5 表情＋1 圖集）＋球場球網球 3＋特效 4＋介面 5＋圖示 10
@@ -38,12 +38,12 @@ const url = (style, path, base) => `${base}${style === DEFAULT_STYLE ? '' : `sty
 
 /**
  * 圖檔網址：path 例如 'game/court.webp'、'characters/xiaochun/happy.webp'。
- * 這個風格沒有就用 90 年代版；選用插圖兩邊都沒有時回傳 null。
+ * 這個風格沒有就用 90 年代版；選用插圖這個風格沒有時回傳 null。
  */
 export function assetPath(style, path, base = '/') {
   if (hasAsset(style, path)) return url(style, path, base);
-  if (hasAsset(DEFAULT_STYLE, path)) return url(DEFAULT_STYLE, path, base);
-  return OPTIONAL.has(path) ? null : url(DEFAULT_STYLE, path, base);
+  if (OPTIONAL.has(path)) return null;
+  return url(DEFAULT_STYLE, path, base);
 }
 
 /** 這個風格已經交了多少（給選風格畫面顯示「製作中」） */

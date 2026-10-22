@@ -1,0 +1,370 @@
+{
+  "id": "02-gambler",
+  "files": [
+    {
+      "file": "characters/02-gambler/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 172,
+        "top": 204,
+        "right": 335,
+        "bottom": 495
+      },
+      "transparentPixels": 234912,
+      "sha256": "94d44f2581196f867c1f1d584ac7f5f616001abdad785bbb195b6198f40e7c04",
+      "errors": []
+    },
+    {
+      "file": "characters/02-gambler/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 148,
+        "top": 240,
+        "right": 363,
+        "bottom": 495
+      },
+      "transparentPixels": 233136,
+      "sha256": "0354b7c304e557e03379ac5825366c940ba6f34c0f429e7b1166cb7cde6e8425",
+      "errors": []
+    },
+    {
+      "file": "characters/02-gambler/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 168,
+        "top": 212,
+        "right": 343,
+        "bottom": 495
+      },
+      "transparentPixels": 236880,
+      "sha256": "2d2e7b2b53e5a752d4e52bc010c1d87f0162449b7310d11746ef84510cd1afcb",
+      "errors": []
+    },
+    {
+      "file": "characters/02-gambler/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 148,
+        "top": 156,
+        "right": 363,
+        "bottom": 495
+      },
+      "transparentPixels": 227168,
+      "sha256": "1e990963e97d01e3498f088cb3867581638bb0ebffdf68d85e8ec5d8f6d2cb05",
+      "errors": []
+    },
+    {
+      "file": "characters/02-gambler/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 108,
+        "top": 204,
+        "right": 399,
+        "bottom": 495
+      },
+      "transparentPixels": 225088,
+      "sha256": "7bb0076a6ea386fe3a94a8ff70e8a8d9d53fd8cb8a11224b8626250d9123ca90",
+      "errors": []
+    },
+    {
+      "file": "characters/02-gambler/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 100,
+        "top": 328,
+        "right": 407,
+        "bottom": 495
+      },
+      "transparentPixels": 237648,
+      "sha256": "9f3ba770d29057dc7fe97a5b00db09fad9f4dc7b242f2eb15f5d68c169087b34",
+      "errors": []
+    },
+    {
+      "file": "characters/02-gambler/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 164,
+        "top": 200,
+        "right": 343,
+        "bottom": 495
+      },
+      "transparentPixels": 231904,
+      "sha256": "1f9d62091b8873473e8151c83dd8dcecfd085180443d533f1892d93d7079e853",
+      "errors": []
+    },
+    {
+      "file": "characters/02-gambler/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 152,
+        "top": 236,
+        "right": 355,
+        "bottom": 495
+      },
+      "transparentPixels": 230640,
+      "sha256": "dd394be3ce95fbecfcdb172ba10f3aef12cbf2507cfc09cdc0a9c69d47190532",
+      "errors": []
+    },
+    {
+      "file": "characters/02-gambler/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 16,
+        "top": 20,
+        "right": 495,
+        "bottom": 491
+      },
+      "transparentPixels": 116944,
+      "sha256": "d981ebb876e24769703c1a593cbcb74405ad8ba3ef043a96e2153eba6ce2e081",
+      "errors": []
+    },
+    {
+      "file": "characters/02-gambler/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 16,
+        "top": 20,
+        "right": 495,
+        "bottom": 491
+      },
+      "transparentPixels": 115936,
+      "sha256": "ccedc7204ab92a4d13225f8a8c66ccb3da11921aa666f7138eefa3cac5e5091f",
+      "errors": []
+    },
+    {
+      "file": "characters/02-gambler/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 16,
+        "top": 28,
+        "right": 491,
+        "bottom": 483
+      },
+      "transparentPixels": 121728,
+      "sha256": "c778cae33436805aa931fd84f9057650a35b7f31a6c4eaed982e3e414b3a7ebb",
+      "errors": []
+    },
+    {
+      "file": "characters/02-gambler/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 16,
+        "top": 20,
+        "right": 495,
+        "bottom": 491
+      },
+      "transparentPixels": 114592,
+      "sha256": "4121d95eedafd3941f63736398bd4ed4f4e9c75ab3ea85110671b2c6f9daedcc",
+      "errors": []
+    },
+    {
+      "file": "characters/02-gambler/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 16,
+        "top": 24,
+        "right": 495,
+        "bottom": 487
+      },
+      "transparentPixels": 121584,
+      "sha256": "a7606ae752ce1bb315e1bac59eaca086804afa70c8819a707bf4b50ad6dd4175",
+      "errors": []
+    },
+    {
+      "file": "characters/02-gambler/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 2,
+      "logicalWidth": 1024,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 86,
+        "top": 78,
+        "right": 1969,
+        "bottom": 247
+      },
+      "transparentPixels": 464344,
+      "sha256": "6d62e9dc873869afd3a27c0bfeea563228325c2574c48b37e75d3655ac570551",
+      "errors": []
+    }
+  ],
+  "failures": []
+}

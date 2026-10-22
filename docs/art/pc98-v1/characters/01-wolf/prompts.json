@@ -1,0 +1,171 @@
+[
+  {
+    "id": "01-wolf",
+    "charName": "狼系少年",
+    "kind": "sprites",
+    "pose": "idle",
+    "namekey": "idle",
+    "prompt": "Use case: style-transfer. ONE isolated transparent PC-98 circa1993 anime fullbody game character sprite. Reference1 is the EXACT character pose/expression, costume and silhouette to preserve; reference2 is this SAME character's existing PC98 portrait for period style and identity, do NOT copy its background or non-sports clothing. silver-gray spiky hair, real wolf ears and fluffy silver tail, amber-red eyes, sharp mischievous face, black/blue/gold sports kit.  Repaint reference1 from scratch as fine meticulous pixel artwork: stepped navy 1pixel contours, carefully clustered flat pixel colors, 15-color palette plus transparency, selective checkerboard ordered dithering on shadow transitions, distinctive PC98 warmcolor anime, no soft gradients, blur, smooth vector lineart or painterly texture. 256x256 logical pixel canvas shown enlarged with crisp nearest pixel edges. WHOLE body facing RIGHT, correct original pose exactly, including all hands feet hair and tail. Three-head chibi proportions, no ground shadow or ball. State idle. True transparent background and generous clear margins. No extra objects, text, frame or scenery.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/01-wolf/sprites/idle.png",
+      "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/01-wolf/pc98/normal.png"
+    ],
+    "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/pc98-full-v1/characters/01-wolf/sources/idle.png"
+  },
+  {
+    "id": "01-wolf",
+    "charName": "狼系少年",
+    "kind": "sprites",
+    "pose": "run1",
+    "namekey": "run1",
+    "prompt": "Use case: style-transfer. ONE isolated transparent PC-98 circa1993 anime fullbody game character sprite. Reference1 is the EXACT character pose/expression, costume and silhouette to preserve; reference2 is this SAME character's existing PC98 portrait for period style and identity, do NOT copy its background or non-sports clothing. silver-gray spiky hair, real wolf ears and fluffy silver tail, amber-red eyes, sharp mischievous face, black/blue/gold sports kit.  Repaint reference1 from scratch as fine meticulous pixel artwork: stepped navy 1pixel contours, carefully clustered flat pixel colors, 15-color palette plus transparency, selective checkerboard ordered dithering on shadow transitions, distinctive PC98 warmcolor anime, no soft gradients, blur, smooth vector lineart or painterly texture. 256x256 logical pixel canvas shown enlarged with crisp nearest pixel edges. WHOLE body facing RIGHT, correct original pose exactly, including all hands feet hair and tail. Three-head chibi proportions, no ground shadow or ball. State run1. True transparent background and generous clear margins. No extra objects, text, frame or scenery.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/01-wolf/sprites/run1.png",
+      "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/01-wolf/pc98/normal.png"
+    ],
+    "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/pc98-full-v1/characters/01-wolf/sources/run1.png"
+  },
+  {
+    "id": "01-wolf",
+    "charName": "狼系少年",
+    "kind": "sprites",
+    "pose": "run2",
+    "namekey": "run2",
+    "prompt": "Use case: style-transfer. ONE isolated transparent PC-98 circa1993 anime fullbody game character sprite. Reference1 is the EXACT character pose/expression, costume and silhouette to preserve; reference2 is this SAME character's existing PC98 portrait for period style and identity, do NOT copy its background or non-sports clothing. silver-gray spiky hair, real wolf ears and fluffy silver tail, amber-red eyes, sharp mischievous face, black/blue/gold sports kit.  Repaint reference1 from scratch as fine meticulous pixel artwork: stepped navy 1pixel contours, carefully clustered flat pixel colors, 15-color palette plus transparency, selective checkerboard ordered dithering on shadow transitions, distinctive PC98 warmcolor anime, no soft gradients, blur, smooth vector lineart or painterly texture. 256x256 logical pixel canvas shown enlarged with crisp nearest pixel edges. WHOLE body facing RIGHT, correct original pose exactly, including all hands feet hair and tail. Three-head chibi proportions, no ground shadow or ball. State run2. True transparent background and generous clear margins. No extra objects, text, frame or scenery.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/01-wolf/sprites/run2.png",
+      "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/01-wolf/pc98/normal.png"
+    ],
+    "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/pc98-full-v1/characters/01-wolf/sources/run2.png"
+  },
+  {
+    "id": "01-wolf",
+    "charName": "狼系少年",
+    "kind": "sprites",
+    "pose": "jump",
+    "namekey": "jump",
+    "prompt": "Use case: style-transfer. ONE isolated transparent PC-98 circa1993 anime fullbody game character sprite. Reference1 is the EXACT character pose/expression, costume and silhouette to preserve; reference2 is this SAME character's existing PC98 portrait for period style and identity, do NOT copy its background or non-sports clothing. silver-gray spiky hair, real wolf ears and fluffy silver tail, amber-red eyes, sharp mischievous face, black/blue/gold sports kit.  Repaint reference1 from scratch as fine meticulous pixel artwork: stepped navy 1pixel contours, carefully clustered flat pixel colors, 15-color palette plus transparency, selective checkerboard ordered dithering on shadow transitions, distinctive PC98 warmcolor anime, no soft gradients, blur, smooth vector lineart or painterly texture. 256x256 logical pixel canvas shown enlarged with crisp nearest pixel edges. WHOLE body facing RIGHT, correct original pose exactly, including all hands feet hair and tail. Three-head chibi proportions, no ground shadow or ball. State jump. True transparent background and generous clear margins. No extra objects, text, frame or scenery.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/01-wolf/sprites/jump.png",
+      "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/01-wolf/pc98/normal.png"
+    ],
+    "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/pc98-full-v1/characters/01-wolf/sources/jump.png"
+  },
+  {
+    "id": "01-wolf",
+    "charName": "狼系少年",
+    "kind": "sprites",
+    "pose": "spike",
+    "namekey": "spike",
+    "prompt": "Use case: style-transfer. ONE isolated transparent PC-98 circa1993 anime fullbody game character sprite. Reference1 is the EXACT character pose/expression, costume and silhouette to preserve; reference2 is this SAME character's existing PC98 portrait for period style and identity, do NOT copy its background or non-sports clothing. silver-gray spiky hair, real wolf ears and fluffy silver tail, amber-red eyes, sharp mischievous face, black/blue/gold sports kit.  Repaint reference1 from scratch as fine meticulous pixel artwork: stepped navy 1pixel contours, carefully clustered flat pixel colors, 15-color palette plus transparency, selective checkerboard ordered dithering on shadow transitions, distinctive PC98 warmcolor anime, no soft gradients, blur, smooth vector lineart or painterly texture. 256x256 logical pixel canvas shown enlarged with crisp nearest pixel edges. WHOLE body facing RIGHT, correct original pose exactly, including all hands feet hair and tail. Three-head chibi proportions, no ground shadow or ball. State spike. True transparent background and generous clear margins. No extra objects, text, frame or scenery.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/01-wolf/sprites/spike.png",
+      "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/01-wolf/pc98/normal.png"
+    ],
+    "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/pc98-full-v1/characters/01-wolf/sources/spike.png"
+  },
+  {
+    "id": "01-wolf",
+    "charName": "狼系少年",
+    "kind": "sprites",
+    "pose": "dive",
+    "namekey": "dive",
+    "prompt": "Use case: style-transfer. ONE isolated transparent PC-98 circa1993 anime fullbody game character sprite. Reference1 is the EXACT character pose/expression, costume and silhouette to preserve; reference2 is this SAME character's existing PC98 portrait for period style and identity, do NOT copy its background or non-sports clothing. silver-gray spiky hair, real wolf ears and fluffy silver tail, amber-red eyes, sharp mischievous face, black/blue/gold sports kit.  Repaint reference1 from scratch as fine meticulous pixel artwork: stepped navy 1pixel contours, carefully clustered flat pixel colors, 15-color palette plus transparency, selective checkerboard ordered dithering on shadow transitions, distinctive PC98 warmcolor anime, no soft gradients, blur, smooth vector lineart or painterly texture. 256x256 logical pixel canvas shown enlarged with crisp nearest pixel edges. WHOLE body facing RIGHT, correct original pose exactly, including all hands feet hair and tail. Three-head chibi proportions, no ground shadow or ball. State dive. True transparent background and generous clear margins. No extra objects, text, frame or scenery.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/01-wolf/sprites/dive.png",
+      "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/01-wolf/pc98/normal.png"
+    ],
+    "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/pc98-full-v1/characters/01-wolf/sources/dive.png"
+  },
+  {
+    "id": "01-wolf",
+    "charName": "狼系少年",
+    "kind": "sprites",
+    "pose": "win",
+    "namekey": "win",
+    "prompt": "Use case: style-transfer. ONE isolated transparent PC-98 circa1993 anime fullbody game character sprite. Reference1 is the EXACT character pose/expression, costume and silhouette to preserve; reference2 is this SAME character's existing PC98 portrait for period style and identity, do NOT copy its background or non-sports clothing. silver-gray spiky hair, real wolf ears and fluffy silver tail, amber-red eyes, sharp mischievous face, black/blue/gold sports kit.  Repaint reference1 from scratch as fine meticulous pixel artwork: stepped navy 1pixel contours, carefully clustered flat pixel colors, 15-color palette plus transparency, selective checkerboard ordered dithering on shadow transitions, distinctive PC98 warmcolor anime, no soft gradients, blur, smooth vector lineart or painterly texture. 256x256 logical pixel canvas shown enlarged with crisp nearest pixel edges. WHOLE body facing RIGHT, correct original pose exactly, including all hands feet hair and tail. Three-head chibi proportions, no ground shadow or ball. State win. True transparent background and generous clear margins. No extra objects, text, frame or scenery.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/01-wolf/sprites/win.png",
+      "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/01-wolf/pc98/normal.png"
+    ],
+    "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/pc98-full-v1/characters/01-wolf/sources/win.png"
+  },
+  {
+    "id": "01-wolf",
+    "charName": "狼系少年",
+    "kind": "sprites",
+    "pose": "lose",
+    "namekey": "lose",
+    "prompt": "Use case: style-transfer. ONE isolated transparent PC-98 circa1993 anime fullbody game character sprite. Reference1 is the EXACT character pose/expression, costume and silhouette to preserve; reference2 is this SAME character's existing PC98 portrait for period style and identity, do NOT copy its background or non-sports clothing. silver-gray spiky hair, real wolf ears and fluffy silver tail, amber-red eyes, sharp mischievous face, black/blue/gold sports kit.  Repaint reference1 from scratch as fine meticulous pixel artwork: stepped navy 1pixel contours, carefully clustered flat pixel colors, 15-color palette plus transparency, selective checkerboard ordered dithering on shadow transitions, distinctive PC98 warmcolor anime, no soft gradients, blur, smooth vector lineart or painterly texture. 256x256 logical pixel canvas shown enlarged with crisp nearest pixel edges. WHOLE body facing RIGHT, correct original pose exactly, including all hands feet hair and tail. Three-head chibi proportions, no ground shadow or ball. State lose. True transparent background and generous clear margins. No extra objects, text, frame or scenery.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/01-wolf/sprites/lose.png",
+      "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/01-wolf/pc98/normal.png"
+    ],
+    "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/pc98-full-v1/characters/01-wolf/sources/lose.png"
+  },
+  {
+    "id": "01-wolf",
+    "charName": "狼系少年",
+    "kind": "portraits",
+    "pose": "normal",
+    "namekey": "portrait-normal",
+    "prompt": "Use case: style-transfer. ONE isolated transparent PC-98 circa1993 anime bust portrait. Reference1 is the EXACT character pose/expression, costume and silhouette to preserve; reference2 is this SAME character's existing PC98 portrait for period style and identity, do NOT copy its background or non-sports clothing. silver-gray spiky hair, real wolf ears and fluffy silver tail, amber-red eyes, sharp mischievous face, black/blue/gold sports kit.  Repaint reference1 from scratch as fine meticulous pixel artwork: stepped navy 1pixel contours, carefully clustered flat pixel colors, 15-color palette plus transparency, selective checkerboard ordered dithering on shadow transitions, distinctive PC98 warmcolor anime, no soft gradients, blur, smooth vector lineart or painterly texture. 256x256 logical pixel canvas shown enlarged with crisp nearest pixel edges. Same head/shoulder crop and exact eyes/mouth expression as ref1, no hands or full body. State normal. True transparent background and generous clear margins. No extra objects, text, frame or scenery.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/01-wolf/portraits/normal.png",
+      "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/01-wolf/pc98/normal.png"
+    ],
+    "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/pc98-full-v1/characters/01-wolf/sources/portrait-normal.png"
+  },
+  {
+    "id": "01-wolf",
+    "charName": "狼系少年",
+    "kind": "portraits",
+    "pose": "happy",
+    "namekey": "portrait-happy",
+    "prompt": "Use case: style-transfer. ONE isolated transparent PC-98 circa1993 anime bust portrait. Reference1 is the EXACT character pose/expression, costume and silhouette to preserve; reference2 is this SAME character's existing PC98 portrait for period style and identity, do NOT copy its background or non-sports clothing. silver-gray spiky hair, real wolf ears and fluffy silver tail, amber-red eyes, sharp mischievous face, black/blue/gold sports kit.  Repaint reference1 from scratch as fine meticulous pixel artwork: stepped navy 1pixel contours, carefully clustered flat pixel colors, 15-color palette plus transparency, selective checkerboard ordered dithering on shadow transitions, distinctive PC98 warmcolor anime, no soft gradients, blur, smooth vector lineart or painterly texture. 256x256 logical pixel canvas shown enlarged with crisp nearest pixel edges. Same head/shoulder crop and exact eyes/mouth expression as ref1, no hands or full body. State happy. True transparent background and generous clear margins. No extra objects, text, frame or scenery.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/01-wolf/portraits/happy.png",
+      "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/01-wolf/pc98/normal.png"
+    ],
+    "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/pc98-full-v1/characters/01-wolf/sources/portrait-happy.png"
+  },
+  {
+    "id": "01-wolf",
+    "charName": "狼系少年",
+    "kind": "portraits",
+    "pose": "surprised",
+    "namekey": "portrait-surprised",
+    "prompt": "Use case: style-transfer. ONE isolated transparent PC-98 circa1993 anime bust portrait. Reference1 is the EXACT character pose/expression, costume and silhouette to preserve; reference2 is this SAME character's existing PC98 portrait for period style and identity, do NOT copy its background or non-sports clothing. silver-gray spiky hair, real wolf ears and fluffy silver tail, amber-red eyes, sharp mischievous face, black/blue/gold sports kit.  Repaint reference1 from scratch as fine meticulous pixel artwork: stepped navy 1pixel contours, carefully clustered flat pixel colors, 15-color palette plus transparency, selective checkerboard ordered dithering on shadow transitions, distinctive PC98 warmcolor anime, no soft gradients, blur, smooth vector lineart or painterly texture. 256x256 logical pixel canvas shown enlarged with crisp nearest pixel edges. Same head/shoulder crop and exact eyes/mouth expression as ref1, no hands or full body. State surprised. True transparent background and generous clear margins. No extra objects, text, frame or scenery.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/01-wolf/portraits/surprised.png",
+      "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/01-wolf/pc98/normal.png"
+    ],
+    "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/pc98-full-v1/characters/01-wolf/sources/portrait-surprised.png"
+  },
+  {
+    "id": "01-wolf",
+    "charName": "狼系少年",
+    "kind": "portraits",
+    "pose": "sad",
+    "namekey": "portrait-sad",
+    "prompt": "Use case: style-transfer. ONE isolated transparent PC-98 circa1993 anime bust portrait. Reference1 is the EXACT character pose/expression, costume and silhouette to preserve; reference2 is this SAME character's existing PC98 portrait for period style and identity, do NOT copy its background or non-sports clothing. silver-gray spiky hair, real wolf ears and fluffy silver tail, amber-red eyes, sharp mischievous face, black/blue/gold sports kit.  Repaint reference1 from scratch as fine meticulous pixel artwork: stepped navy 1pixel contours, carefully clustered flat pixel colors, 15-color palette plus transparency, selective checkerboard ordered dithering on shadow transitions, distinctive PC98 warmcolor anime, no soft gradients, blur, smooth vector lineart or painterly texture. 256x256 logical pixel canvas shown enlarged with crisp nearest pixel edges. Same head/shoulder crop and exact eyes/mouth expression as ref1, no hands or full body. State sad. True transparent background and generous clear margins. No extra objects, text, frame or scenery.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/01-wolf/portraits/sad.png",
+      "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/01-wolf/pc98/normal.png"
+    ],
+    "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/pc98-full-v1/characters/01-wolf/sources/portrait-sad.png"
+  },
+  {
+    "id": "01-wolf",
+    "charName": "狼系少年",
+    "kind": "portraits",
+    "pose": "win",
+    "namekey": "portrait-win",
+    "prompt": "Use case: style-transfer. ONE isolated transparent PC-98 circa1993 anime bust portrait. Reference1 is the EXACT character pose/expression, costume and silhouette to preserve; reference2 is this SAME character's existing PC98 portrait for period style and identity, do NOT copy its background or non-sports clothing. silver-gray spiky hair, real wolf ears and fluffy silver tail, amber-red eyes, sharp mischievous face, black/blue/gold sports kit.  Repaint reference1 from scratch as fine meticulous pixel artwork: stepped navy 1pixel contours, carefully clustered flat pixel colors, 15-color palette plus transparency, selective checkerboard ordered dithering on shadow transitions, distinctive PC98 warmcolor anime, no soft gradients, blur, smooth vector lineart or painterly texture. 256x256 logical pixel canvas shown enlarged with crisp nearest pixel edges. Same head/shoulder crop and exact eyes/mouth expression as ref1, no hands or full body. State win. True transparent background and generous clear margins. No extra objects, text, frame or scenery.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/01-wolf/portraits/win.png",
+      "C:/Users/User/Repo/TaiwanMahjong/docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/pc-dos/portraits/01-wolf/pc98/normal.png"
+    ],
+    "dest": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/pc98-full-v1/characters/01-wolf/sources/portrait-win.png"
+  }
+]

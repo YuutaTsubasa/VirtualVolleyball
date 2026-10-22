@@ -1,0 +1,852 @@
+{
+  "title": "虛擬排球王",
+  "style": "taiwan-print",
+  "version": 1,
+  "characters": [
+    {
+      "id": "xiaocui",
+      "name": "小翠",
+      "hidden": false,
+      "sheet": "characters/xiaocui/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "yuehua",
+      "name": "月華",
+      "hidden": false,
+      "sheet": "characters/yuehua/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "aming",
+      "name": "阿明",
+      "hidden": false,
+      "sheet": "characters/aming/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "tangtang",
+      "name": "糖糖",
+      "hidden": false,
+      "sheet": "characters/tangtang/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "xiaochun",
+      "name": "小春",
+      "hidden": false,
+      "sheet": "characters/xiaochun/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "lanjie",
+      "name": "蘭姐",
+      "hidden": false,
+      "sheet": "characters/lanjie/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "01-wolf",
+      "name": "狼系少年",
+      "hidden": false,
+      "sheet": "characters/01-wolf/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "02-gambler",
+      "name": "賭徒大叔",
+      "hidden": false,
+      "sheet": "characters/02-gambler/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "03-prince",
+      "name": "金髮王子",
+      "hidden": false,
+      "sheet": "characters/03-prince/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "04-adventurer",
+      "name": "紅髮冒險者",
+      "hidden": false,
+      "sheet": "characters/04-adventurer/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    },
+    {
+      "id": "ayi",
+      "name": "阿翼（隱藏）",
+      "hidden": true,
+      "sheet": "characters/ayi/sprite-sheet.png",
+      "frameOrder": [
+        "idle",
+        "run1",
+        "run2",
+        "jump",
+        "spike",
+        "dive",
+        "win",
+        "lose"
+      ],
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "individualSize": 512,
+      "portraitExpressions": [
+        "normal",
+        "happy",
+        "surprised",
+        "sad",
+        "win"
+      ]
+    }
+  ],
+  "sharedAssets": [
+    {
+      "file": "environment/court.png",
+      "width": 1920,
+      "height": 1080,
+      "margin": 0,
+      "opaqueBackground": true,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1919,
+        "bottom": 1079,
+        "width": 1920,
+        "height": 1080,
+        "transparent": 0,
+        "opaque": 2073600
+      },
+      "sha256": "afb1792dd9cb59b8741c0b295e0c4352951f60fdb12a2858a4e9e0167eb92ef4"
+    },
+    {
+      "file": "environment/net.png",
+      "width": 192,
+      "height": 1024,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 39,
+        "top": 8,
+        "right": 153,
+        "bottom": 1015,
+        "width": 115,
+        "height": 1008,
+        "transparent": 137143,
+        "opaque": 52111
+      },
+      "sha256": "3ee28f5d8411380de34803663f53764cb5bd51cd6bdb46844265108b609b23aa"
+    },
+    {
+      "file": "environment/ball.png",
+      "width": 256,
+      "height": 256,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 9,
+        "top": 8,
+        "right": 247,
+        "bottom": 247,
+        "width": 239,
+        "height": 240,
+        "transparent": 20546,
+        "opaque": 44162
+      },
+      "sha256": "31643edab570e626dde44516301980c7fd9dadb1cdc0476b84919f4fc05d2b8d"
+    },
+    {
+      "file": "ui/logo.png",
+      "width": 1400,
+      "height": 420,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 8,
+        "top": 9,
+        "right": 1391,
+        "bottom": 410,
+        "width": 1384,
+        "height": 402,
+        "transparent": 172122,
+        "opaque": 410877
+      },
+      "sha256": "cbb4274ebc2fc00195db90fb5af9c2d3cff0658043e2bb7d9ae37048f0405e0d"
+    },
+    {
+      "file": "ui/button-normal.png",
+      "width": 640,
+      "height": 128,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 10,
+        "top": 8,
+        "right": 630,
+        "bottom": 119,
+        "width": 621,
+        "height": 112,
+        "transparent": 15264,
+        "opaque": 65015
+      },
+      "sha256": "4ce783ab3ab09525e5ed6d1402f1c229a6b02abd4e470d34f96eca5ca9b204c3"
+    },
+    {
+      "file": "ui/button-selected.png",
+      "width": 640,
+      "height": 128,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 17,
+        "top": 8,
+        "right": 623,
+        "bottom": 119,
+        "width": 607,
+        "height": 112,
+        "transparent": 16634,
+        "opaque": 63900
+      },
+      "sha256": "2f1341632d6c4ebef8d5d2bc7462f67d661018cfaacce9bdd5f22208e1a169e4"
+    },
+    {
+      "file": "ui/button-disabled.png",
+      "width": 640,
+      "height": 128,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "right": 631,
+        "bottom": 119,
+        "width": 624,
+        "height": 112,
+        "transparent": 13077,
+        "opaque": 67411
+      },
+      "sha256": "fc1d9cf7fcc39fc9adb32a750f1a923a3c4a35959a3db493b84cd1dc7aa18486"
+    },
+    {
+      "file": "ui/dialog-panel.png",
+      "width": 960,
+      "height": 720,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 8,
+        "top": 19,
+        "right": 951,
+        "bottom": 701,
+        "width": 944,
+        "height": 683,
+        "transparent": 94894,
+        "opaque": 591196
+      },
+      "sha256": "51e66c141662c22ef569868f962ba1a202df5ec81f265393bfef22eca5bc79e0"
+    },
+    {
+      "file": "ui/portrait-frame.png",
+      "width": 256,
+      "height": 256,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 8,
+        "top": 13,
+        "right": 247,
+        "bottom": 242,
+        "width": 240,
+        "height": 230,
+        "transparent": 42203,
+        "opaque": 21482
+      },
+      "sha256": "3fcfdcb77971a39511143325d15c8480d01a937dad800ad026c29b67793d89c6"
+    },
+    {
+      "file": "ui/portrait-selected.png",
+      "width": 256,
+      "height": 256,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 8,
+        "top": 13,
+        "right": 247,
+        "bottom": 243,
+        "width": 240,
+        "height": 231,
+        "transparent": 46617,
+        "opaque": 17058
+      },
+      "sha256": "6f575b1004e8c8a813fc7c6454049f076cd96e065b4664e88796f0d532d95d71"
+    },
+    {
+      "file": "ui/score-panel.png",
+      "width": 800,
+      "height": 200,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 8,
+        "top": 13,
+        "right": 791,
+        "bottom": 187,
+        "width": 784,
+        "height": 175,
+        "transparent": 45634,
+        "opaque": 112264
+      },
+      "sha256": "cbfc6b9075d69c4fa0c8b746219ee1bcb23342323396bc5a9e897f3440f7a48a"
+    },
+    {
+      "file": "ui/input-field.png",
+      "width": 640,
+      "height": 128,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 8,
+        "top": 8,
+        "right": 631,
+        "bottom": 119,
+        "width": 624,
+        "height": 112,
+        "transparent": 12799,
+        "opaque": 67497
+      },
+      "sha256": "e92916bb37209b8f708ade6ee000d81f1c55e61022b186130071907cb1ccd531"
+    },
+    {
+      "file": "ui/result-banner.png",
+      "width": 1000,
+      "height": 240,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 16,
+        "top": 8,
+        "right": 984,
+        "bottom": 231,
+        "width": 969,
+        "height": 224,
+        "transparent": 102137,
+        "opaque": 134906
+      },
+      "sha256": "094879fdff76478dce6f973dd3d85021ea05baac3ef39884c39a68af743a3610"
+    },
+    {
+      "file": "effects/hit-spark.png",
+      "width": 512,
+      "height": 512,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 8,
+        "top": 11,
+        "right": 503,
+        "bottom": 501,
+        "width": 496,
+        "height": 491,
+        "transparent": 187823,
+        "opaque": 68340
+      },
+      "sha256": "55659f4119b29b1d6d51e36cf29a9af0a68ab36bc4b3fc947b3c99ca22ecd3e4"
+    },
+    {
+      "file": "effects/sand-puff.png",
+      "width": 768,
+      "height": 256,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 8,
+        "top": 34,
+        "right": 759,
+        "bottom": 221,
+        "width": 752,
+        "height": 188,
+        "transparent": 127670,
+        "opaque": 63720
+      },
+      "sha256": "7a3308d643358b32017b63edcf76e5891bf662a631bc7ea78d2ea1e49f279924"
+    },
+    {
+      "file": "effects/spike-trail.png",
+      "width": 768,
+      "height": 256,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 8,
+        "top": 26,
+        "right": 759,
+        "bottom": 230,
+        "width": 752,
+        "height": 205,
+        "transparent": 135581,
+        "opaque": 55504
+      },
+      "sha256": "67de03ca37d6e76033b7fb259ce371a048f54a7043df8045328675ec4aabe772"
+    },
+    {
+      "file": "effects/score-burst.png",
+      "width": 512,
+      "height": 512,
+      "margin": 8,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 8,
+        "top": 63,
+        "right": 503,
+        "bottom": 448,
+        "width": 496,
+        "height": 386,
+        "transparent": 192081,
+        "opaque": 49829
+      },
+      "sha256": "b74a145744336433d20fde45a911e471d4913055f7cb2120d5c7701657eb6aa4"
+    },
+    {
+      "file": "ui/icons/keyboard.png",
+      "width": 256,
+      "height": 256,
+      "margin": 16,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 20,
+        "top": 72,
+        "right": 235,
+        "bottom": 184,
+        "width": 216,
+        "height": 113,
+        "transparent": 47742,
+        "opaque": 17157
+      },
+      "sha256": "a14eaae68b69eac26a147017ffecad7a89735158b82af3b08358afd67294b510"
+    },
+    {
+      "file": "ui/icons/gamepad.png",
+      "width": 256,
+      "height": 256,
+      "margin": 16,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 20,
+        "top": 66,
+        "right": 235,
+        "bottom": 190,
+        "width": 216,
+        "height": 125,
+        "transparent": 46885,
+        "opaque": 17885
+      },
+      "sha256": "60652cdaeee1080102db619faa692c45a723253795fb523e2aa9af24ffabd557"
+    },
+    {
+      "file": "ui/icons/touch.png",
+      "width": 256,
+      "height": 256,
+      "margin": 16,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 77,
+        "top": 20,
+        "right": 179,
+        "bottom": 235,
+        "width": 103,
+        "height": 216,
+        "transparent": 49744,
+        "opaque": 14896
+      },
+      "sha256": "9501595e8614eaeb84108fa649d045f1d3692d952c312c08153c2ad3dfd39743"
+    },
+    {
+      "file": "ui/icons/lock.png",
+      "width": 256,
+      "height": 256,
+      "margin": 16,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 42,
+        "top": 20,
+        "right": 213,
+        "bottom": 235,
+        "width": 172,
+        "height": 216,
+        "transparent": 36690,
+        "opaque": 27906
+      },
+      "sha256": "26f698fbbcbed1250f77393a9645d4bab8b0ac99f94905323500dbe30d444ac1"
+    },
+    {
+      "file": "ui/icons/ready.png",
+      "width": 256,
+      "height": 256,
+      "margin": 16,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 20,
+        "top": 35,
+        "right": 235,
+        "bottom": 221,
+        "width": 216,
+        "height": 187,
+        "transparent": 50061,
+        "opaque": 14711
+      },
+      "sha256": "dd46de2dbe903d3a5b041d2faf1a59e91013f95f9b1fb32be8ef4178e13a5c3c"
+    },
+    {
+      "file": "ui/icons/pause.png",
+      "width": 256,
+      "height": 256,
+      "margin": 16,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 36,
+        "top": 20,
+        "right": 219,
+        "bottom": 235,
+        "width": 184,
+        "height": 216,
+        "transparent": 30361,
+        "opaque": 33924
+      },
+      "sha256": "7df9c1efba3b1af0105f50b15c7dc83c85929e594220d639c386a2e57df9d54d"
+    },
+    {
+      "file": "ui/icons/sound-on.png",
+      "width": 256,
+      "height": 256,
+      "margin": 16,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 20,
+        "top": 52,
+        "right": 235,
+        "bottom": 204,
+        "width": 216,
+        "height": 153,
+        "transparent": 46379,
+        "opaque": 18036
+      },
+      "sha256": "9385c8fc967df9d0423ab2e672cf57c80b5e662c73d6f7381c118cf7b8d8434e"
+    },
+    {
+      "file": "ui/icons/sound-off.png",
+      "width": 256,
+      "height": 256,
+      "margin": 16,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 33,
+        "top": 20,
+        "right": 223,
+        "bottom": 235,
+        "width": 191,
+        "height": 216,
+        "transparent": 40262,
+        "opaque": 24480
+      },
+      "sha256": "3153eb22dded967696ad7daaeea9812108fcb098ac3580e3224a7b44cbeaeadd"
+    },
+    {
+      "file": "ui/icons/back.png",
+      "width": 256,
+      "height": 256,
+      "margin": 16,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 20,
+        "top": 55,
+        "right": 235,
+        "bottom": 200,
+        "width": 216,
+        "height": 146,
+        "transparent": 50267,
+        "opaque": 14601
+      },
+      "sha256": "7212a4db02ae2cfbe7d48ffd20fc8852c631a365e6412724251beb550098380f"
+    },
+    {
+      "file": "ui/icons/settings.png",
+      "width": 256,
+      "height": 256,
+      "margin": 16,
+      "opaqueBackground": false,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 20,
+        "top": 24,
+        "right": 235,
+        "bottom": 232,
+        "width": 216,
+        "height": 209,
+        "transparent": 37053,
+        "opaque": 27316
+      },
+      "sha256": "27d15c825269f20c28e966001e63c95cbe8735f1083312a4c60fca73ce7143f1"
+    }
+  ],
+  "delivery": "Art only; generated with built-in image_gen. No runtime modified.",
+  "animation": "Eight key poses, including two running frames. Not a full fluid animation set.",
+  "themeColors": {
+    "ink": "#102044",
+    "teal": "#128C96",
+    "vermilion": "#E94B32",
+    "cream": "#FFF1C2",
+    "gold": "#F6C334"
+  },
+  "generatedArtCount": 170,
+  "productionPngCount": 181,
+  "uiAesthetic": "Multicolor ink poster, warm cream highlights, halftone shading and bold print borders.",
+  "layoutMetrics": {
+    "measurement": "Measured on final normalized production images; zero-based pixel coordinates. Text centers are optical centers of the empty inner panels.",
+    "scorePanel": {
+      "file": "ui/score-panel.png",
+      "width": 800,
+      "height": 200,
+      "left": {
+        "x": 217,
+        "y": 102,
+        "normalizedX": 0.27125,
+        "normalizedY": 0.51
+      },
+      "right": {
+        "x": 587,
+        "y": 102,
+        "normalizedX": 0.73375,
+        "normalizedY": 0.51
+      }
+    },
+    "net": {
+      "file": "environment/net.png",
+      "width": 192,
+      "height": 1024,
+      "whiteTapeTopY": 203,
+      "whiteTapeAttachmentX": 95,
+      "whiteTapeNote": "Top edge of the cream-white tape near post attachment; tape slopes downward to right.",
+      "poleBottomYExclusive": 1016,
+      "poleLastVisibleY": 1015,
+      "normalizedWhiteTapeTopY": 0.1982421875,
+      "normalizedPoleBottomYExclusive": 0.9921875
+    }
+  }
+}

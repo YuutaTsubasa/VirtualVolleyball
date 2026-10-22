@@ -1,0 +1,370 @@
+{
+  "id": "04-adventurer",
+  "files": [
+    {
+      "file": "characters/04-adventurer/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 164,
+        "top": 192,
+        "right": 343,
+        "bottom": 495
+      },
+      "transparentPixels": 231216,
+      "sha256": "2e57d6a6b3be5d305f434beb2dc357cc0b2dc43069d3e7698115b40a2cdc7868",
+      "errors": []
+    },
+    {
+      "file": "characters/04-adventurer/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 140,
+        "top": 212,
+        "right": 367,
+        "bottom": 495
+      },
+      "transparentPixels": 232560,
+      "sha256": "9f79aad9f5d1910fd81cc072349b8b26eb18f37e21a4c83a756171e862e7da48",
+      "errors": []
+    },
+    {
+      "file": "characters/04-adventurer/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 156,
+        "top": 204,
+        "right": 351,
+        "bottom": 495
+      },
+      "transparentPixels": 233824,
+      "sha256": "8ab933d8f394ecccb6f2c39a23abf740128cf91726829bb1da45e24e9c125d5a",
+      "errors": []
+    },
+    {
+      "file": "characters/04-adventurer/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 128,
+        "top": 140,
+        "right": 379,
+        "bottom": 495
+      },
+      "transparentPixels": 222800,
+      "sha256": "3be97fef2d39085b81a5d01530e446a1b37a901be227b89bde7d32eb02840ff2",
+      "errors": []
+    },
+    {
+      "file": "characters/04-adventurer/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 112,
+        "top": 200,
+        "right": 399,
+        "bottom": 495
+      },
+      "transparentPixels": 221664,
+      "sha256": "def8c24b2867a27c0d9c977fcbd84e69b4fb7036b2ad4e1b612bf5cd1c69a90c",
+      "errors": []
+    },
+    {
+      "file": "characters/04-adventurer/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 100,
+        "top": 324,
+        "right": 411,
+        "bottom": 495
+      },
+      "transparentPixels": 234688,
+      "sha256": "73b305dffb979f1eb5b7cdf53d280d90e07f8ef605fb5131670e649fa6b1c12c",
+      "errors": []
+    },
+    {
+      "file": "characters/04-adventurer/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 160,
+        "top": 184,
+        "right": 347,
+        "bottom": 495
+      },
+      "transparentPixels": 227664,
+      "sha256": "24835ca5242c0f3c66c173dccc7de51a871a868d258d5ccb32c2dcc296c93d68",
+      "errors": []
+    },
+    {
+      "file": "characters/04-adventurer/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 156,
+        "top": 232,
+        "right": 351,
+        "bottom": 495
+      },
+      "transparentPixels": 233680,
+      "sha256": "b0f2156065722e758a039807c5e92a70a50513773a33a215bdc3e475be37ef27",
+      "errors": []
+    },
+    {
+      "file": "characters/04-adventurer/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 24,
+        "top": 16,
+        "right": 483,
+        "bottom": 495
+      },
+      "transparentPixels": 109392,
+      "sha256": "2580e1c3438cca77a6066035afd341d05ae0113f19436303ecd58e0186026a3d",
+      "errors": []
+    },
+    {
+      "file": "characters/04-adventurer/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 32,
+        "top": 16,
+        "right": 479,
+        "bottom": 495
+      },
+      "transparentPixels": 110416,
+      "sha256": "2355e8d1f389d39bf7573aeabe2bb5db5751336d7b18ecafc478ab3987912755",
+      "errors": []
+    },
+    {
+      "file": "characters/04-adventurer/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 36,
+        "top": 16,
+        "right": 475,
+        "bottom": 495
+      },
+      "transparentPixels": 113472,
+      "sha256": "bb5bd6bd0ce56b1beef9e38cc73ee3a46e2f09f9b8482ace25f3f873351a91ee",
+      "errors": []
+    },
+    {
+      "file": "characters/04-adventurer/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 24,
+        "top": 16,
+        "right": 483,
+        "bottom": 495
+      },
+      "transparentPixels": 110416,
+      "sha256": "65b0479cfec190b1a30cf2342eefaf22408f364f2d72bcd032ff727ac87f4139",
+      "errors": []
+    },
+    {
+      "file": "characters/04-adventurer/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 32,
+        "top": 20,
+        "right": 475,
+        "bottom": 495
+      },
+      "transparentPixels": 112224,
+      "sha256": "799a06bba59cd9fb00a0f0ac4277803e3b600d2af31b91a83c3b6a6619ac71d8",
+      "errors": []
+    },
+    {
+      "file": "characters/04-adventurer/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 2,
+      "logicalWidth": 1024,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 82,
+        "top": 70,
+        "right": 1967,
+        "bottom": 247
+      },
+      "transparentPixels": 459524,
+      "sha256": "88f4229d02d44e756b9124822ee4fb5d517905bc2b5d78aa24fef835182886e0",
+      "errors": []
+    }
+  ],
+  "failures": []
+}

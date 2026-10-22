@@ -1,0 +1,370 @@
+{
+  "id": "aming",
+  "files": [
+    {
+      "file": "characters/aming/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 148,
+        "top": 160,
+        "right": 363,
+        "bottom": 495
+      },
+      "transparentPixels": 225360,
+      "sha256": "c35b97e2f75696b22b5b55253e4bc57ce0dd92934e5d576e92b652140ef69261",
+      "errors": []
+    },
+    {
+      "file": "characters/aming/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 108,
+        "top": 172,
+        "right": 403,
+        "bottom": 495
+      },
+      "transparentPixels": 225696,
+      "sha256": "a16a4f42441e11eaf2639e1a7e936f08a69caa823a6441f6c313154ec23d8309",
+      "errors": []
+    },
+    {
+      "file": "characters/aming/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 136,
+        "top": 148,
+        "right": 371,
+        "bottom": 495
+      },
+      "transparentPixels": 222784,
+      "sha256": "f5685f2ce8262aace4dd54441da633cce053ba8bb9e3dc8da3a298db4f6e32fe",
+      "errors": []
+    },
+    {
+      "file": "characters/aming/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "155,188,15",
+        "48,98,48"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 128,
+        "top": 132,
+        "right": 387,
+        "bottom": 495
+      },
+      "transparentPixels": 222096,
+      "sha256": "1a194b44d198d12da23423f320f21b6e3dccc5d9ae5c5a7d94c4852be45644f7",
+      "errors": []
+    },
+    {
+      "file": "characters/aming/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 112,
+        "top": 152,
+        "right": 399,
+        "bottom": 495
+      },
+      "transparentPixels": 220080,
+      "sha256": "58209aa8133ad2c5a8c5b5787752bb9895accdb9bc1d2114eaa0149910b48c97",
+      "errors": []
+    },
+    {
+      "file": "characters/aming/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 56,
+        "top": 300,
+        "right": 455,
+        "bottom": 495
+      },
+      "transparentPixels": 227312,
+      "sha256": "a0b099c59bfd4007c915d767dfda27f0f04ba12cb7e849938cbcf8e3979de13e",
+      "errors": []
+    },
+    {
+      "file": "characters/aming/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 144,
+        "top": 152,
+        "right": 363,
+        "bottom": 495
+      },
+      "transparentPixels": 224976,
+      "sha256": "eeff4bdefec6d30b73ce7e827b9d4c6ae3ea267145683f2352e80693f971b9c8",
+      "errors": []
+    },
+    {
+      "file": "characters/aming/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 156,
+        "top": 168,
+        "right": 351,
+        "bottom": 495
+      },
+      "transparentPixels": 228096,
+      "sha256": "4408db1dede131ee8bef108d05222cb6c6f64b63b621428b19f354387462c2d6",
+      "errors": []
+    },
+    {
+      "file": "characters/aming/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 16,
+        "top": 16,
+        "right": 491,
+        "bottom": 495
+      },
+      "transparentPixels": 116272,
+      "sha256": "b60fdc175466c13fffec7c3b4e62eff4ce0a956fd395698f8d7c242c27c3a742",
+      "errors": []
+    },
+    {
+      "file": "characters/aming/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 16,
+        "top": 16,
+        "right": 491,
+        "bottom": 495
+      },
+      "transparentPixels": 112912,
+      "sha256": "b3e08a9357e8197582a1db76db58e38a653cc84f75e72246c3ddaff9e2d3cd6f",
+      "errors": []
+    },
+    {
+      "file": "characters/aming/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 16,
+        "top": 16,
+        "right": 491,
+        "bottom": 495
+      },
+      "transparentPixels": 112512,
+      "sha256": "2abd368ce2373bef51bf27b5285d37c1c61ed3275f7504ad5aa6fa68422ba51c",
+      "errors": []
+    },
+    {
+      "file": "characters/aming/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 20,
+        "top": 16,
+        "right": 491,
+        "bottom": 495
+      },
+      "transparentPixels": 110112,
+      "sha256": "f2f1cecfdb2d29024f80fa57dd1e7e22fe983e33693a35cdc543782fee427bb2",
+      "errors": []
+    },
+    {
+      "file": "characters/aming/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 16,
+        "top": 16,
+        "right": 491,
+        "bottom": 495
+      },
+      "transparentPixels": 112944,
+      "sha256": "2f425aafc39790d9ae2d8c129c49e8a96c615b2b31912006ae7b08704b71de44",
+      "errors": []
+    },
+    {
+      "file": "characters/aming/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "155,188,15",
+        "48,98,48"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 2,
+      "logicalWidth": 1024,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 74,
+        "top": 66,
+        "right": 1967,
+        "bottom": 247
+      },
+      "transparentPixels": 449100,
+      "sha256": "654b23b71dcec562c7d140b284432a6d6f97cae53515a02938ae67c5cbeb1774",
+      "errors": []
+    }
+  ],
+  "failures": []
+}

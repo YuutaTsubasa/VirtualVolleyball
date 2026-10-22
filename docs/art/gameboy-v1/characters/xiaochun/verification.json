@@ -1,0 +1,370 @@
+{
+  "id": "xiaochun",
+  "files": [
+    {
+      "file": "characters/xiaochun/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 136,
+        "top": 132,
+        "right": 371,
+        "bottom": 495
+      },
+      "transparentPixels": 215840,
+      "sha256": "559717b7960750a3ea1e39ba25eff3f5551f2841b147c6ca146e7a79334e7bf6",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaochun/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 124,
+        "top": 172,
+        "right": 383,
+        "bottom": 495
+      },
+      "transparentPixels": 217024,
+      "sha256": "243ef530424d44d9ea243ab60588c9495ba0e59d599334ad2dc4ac5725e16418",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaochun/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 136,
+        "top": 172,
+        "right": 375,
+        "bottom": 495
+      },
+      "transparentPixels": 221264,
+      "sha256": "faa504beaa42aece4082382913d30a0df092f3e05542ea472db03e274f20fca5",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaochun/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 84,
+        "top": 144,
+        "right": 423,
+        "bottom": 495
+      },
+      "transparentPixels": 205120,
+      "sha256": "c0fe9ec9402c8d798145b557cc6ff4588fc065c49ce84d14e0c96f5758e8e096",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaochun/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 88,
+        "top": 144,
+        "right": 423,
+        "bottom": 495
+      },
+      "transparentPixels": 209056,
+      "sha256": "e9a0c394f86e1a9daacb5e66e3e68795ba06d3e5cfae412d749a997e4d7047ce",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaochun/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 48,
+        "top": 284,
+        "right": 459,
+        "bottom": 495
+      },
+      "transparentPixels": 214832,
+      "sha256": "05e4432a03a71bea4dcdcb8919de3cfe5de7554772641d016052a4419166f725",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaochun/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 120,
+        "top": 156,
+        "right": 391,
+        "bottom": 495
+      },
+      "transparentPixels": 218320,
+      "sha256": "614c06ea7e194532b9c0924c390f4588f47a7f18004899fd4be56c1baaef6b1a",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaochun/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 104,
+        "top": 176,
+        "right": 403,
+        "bottom": 495
+      },
+      "transparentPixels": 207424,
+      "sha256": "b40c703e28062e0eb9297ed6e6830f1def740d88e6d622fdefe02dd925869927",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaochun/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 24,
+        "top": 16,
+        "right": 487,
+        "bottom": 495
+      },
+      "transparentPixels": 101264,
+      "sha256": "cfb2b934f8b58368a5c6140a5e5d0951338ff8631c6d76b23e6b3b1a188523f5",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaochun/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 24,
+        "top": 16,
+        "right": 483,
+        "bottom": 495
+      },
+      "transparentPixels": 105200,
+      "sha256": "fb30673837cfec8e2da03761c412ae69898ef4d7633eb798814467db0d1f0247",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaochun/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 24,
+        "top": 16,
+        "right": 483,
+        "bottom": 495
+      },
+      "transparentPixels": 106656,
+      "sha256": "5b15ad14d3be57c5c827c1174b1ebb4f0dfd208b736d06c1dfc8774d9426cbc2",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaochun/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 32,
+        "top": 16,
+        "right": 479,
+        "bottom": 495
+      },
+      "transparentPixels": 109120,
+      "sha256": "0291ee13a68c8324ee0e275dff73e2cab77a5f22d35f7290a410baa8ddf5b0e1",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaochun/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 16,
+        "top": 16,
+        "right": 495,
+        "bottom": 495
+      },
+      "transparentPixels": 100000,
+      "sha256": "68f6a61c0ca4092e35793992e82cda6a624b678cef69c134cd9904e0c7cc254d",
+      "errors": []
+    },
+    {
+      "file": "characters/xiaochun/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 2,
+      "logicalWidth": 1024,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 68,
+        "top": 66,
+        "right": 1993,
+        "bottom": 247
+      },
+      "transparentPixels": 427220,
+      "sha256": "a2737e81248cfb86d2aa0eba1e742fe5bcd55410fc5b7ab5b23525f100f37a0b",
+      "errors": []
+    }
+  ],
+  "failures": []
+}

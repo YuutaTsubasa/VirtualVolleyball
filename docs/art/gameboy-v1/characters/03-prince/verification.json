@@ -1,0 +1,370 @@
+{
+  "id": "03-prince",
+  "files": [
+    {
+      "file": "characters/03-prince/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 168,
+        "top": 192,
+        "right": 339,
+        "bottom": 495
+      },
+      "transparentPixels": 233856,
+      "sha256": "ff8b233483aaa79ef541862b65cfaa6c19471ff1a757ebab8a7fa88297af80d8",
+      "errors": []
+    },
+    {
+      "file": "characters/03-prince/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 132,
+        "top": 220,
+        "right": 375,
+        "bottom": 495
+      },
+      "transparentPixels": 233056,
+      "sha256": "b71771d9f010ebc0647850b9e69fdf642888f64487e4df18f13799fc31ae59e3",
+      "errors": []
+    },
+    {
+      "file": "characters/03-prince/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 160,
+        "top": 204,
+        "right": 351,
+        "bottom": 495
+      },
+      "transparentPixels": 234240,
+      "sha256": "bc67bba9f31ddf53a35da0b4761bf1ffc1d852e4ffaaa7559aac3e45e6039947",
+      "errors": []
+    },
+    {
+      "file": "characters/03-prince/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "155,188,15",
+        "48,98,48"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 144,
+        "top": 168,
+        "right": 363,
+        "bottom": 495
+      },
+      "transparentPixels": 228528,
+      "sha256": "f93ce04b766943784c3c58514230170d76a7473c8b9b94dfee7e5e2ec0389ade",
+      "errors": []
+    },
+    {
+      "file": "characters/03-prince/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 100,
+        "top": 200,
+        "right": 411,
+        "bottom": 495
+      },
+      "transparentPixels": 223120,
+      "sha256": "8c1fa61c1c5d3a3e18164b1fdeeba6f27c79508636db7f372ee4bfb50cb6b294",
+      "errors": []
+    },
+    {
+      "file": "characters/03-prince/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "155,188,15",
+        "48,98,48"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 108,
+        "top": 328,
+        "right": 403,
+        "bottom": 495
+      },
+      "transparentPixels": 236192,
+      "sha256": "ba7c2efe3e055b6aca545a8f89f5912483513b6914ff2887a481e7f1d06ec068",
+      "errors": []
+    },
+    {
+      "file": "characters/03-prince/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "155,188,15",
+        "48,98,48"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 164,
+        "top": 188,
+        "right": 347,
+        "bottom": 495
+      },
+      "transparentPixels": 230736,
+      "sha256": "8c1a3ac39236a4a0eb89159d87d6e1c2c7aad3752e3de17776b5a04609069e03",
+      "errors": []
+    },
+    {
+      "file": "characters/03-prince/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "155,188,15",
+        "48,98,48"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 152,
+        "top": 244,
+        "right": 355,
+        "bottom": 495
+      },
+      "transparentPixels": 233664,
+      "sha256": "278542d3bf512e0cd4e36864b1a3032780bafe36f1bce0b6f1af449f796c0987",
+      "errors": []
+    },
+    {
+      "file": "characters/03-prince/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 32,
+        "top": 16,
+        "right": 479,
+        "bottom": 495
+      },
+      "transparentPixels": 129056,
+      "sha256": "3ab9574561d9d92c40567228e99e20b35835c531d46466c889de29340c742e44",
+      "errors": []
+    },
+    {
+      "file": "characters/03-prince/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 40,
+        "top": 16,
+        "right": 467,
+        "bottom": 495
+      },
+      "transparentPixels": 122560,
+      "sha256": "ea8dd6f48b9f9f297f259aa0a9c674fc2c85f9983c368763c5cfdd3a99d00d01",
+      "errors": []
+    },
+    {
+      "file": "characters/03-prince/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "155,188,15",
+        "48,98,48"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 28,
+        "top": 16,
+        "right": 479,
+        "bottom": 495
+      },
+      "transparentPixels": 122240,
+      "sha256": "742386774318db118b9b92494fafd68af0630feabe01bdfdb92f18fabf89f7c5",
+      "errors": []
+    },
+    {
+      "file": "characters/03-prince/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 36,
+        "top": 16,
+        "right": 471,
+        "bottom": 495
+      },
+      "transparentPixels": 128192,
+      "sha256": "69ce745a36fe32491f67b7e09d96927884b17cb9a2d8780f3b02d5825b7c7cbe",
+      "errors": []
+    },
+    {
+      "file": "characters/03-prince/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 32,
+        "top": 16,
+        "right": 475,
+        "bottom": 495
+      },
+      "transparentPixels": 126816,
+      "sha256": "83d3c45aef57ede3692e2d220dd2262ddf6b9349519b702704ed853039b6c92d",
+      "errors": []
+    },
+    {
+      "file": "characters/03-prince/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "155,188,15",
+        "48,98,48"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 2,
+      "logicalWidth": 1024,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 84,
+        "top": 84,
+        "right": 1969,
+        "bottom": 247
+      },
+      "transparentPixels": 463348,
+      "sha256": "85a004654254e9809d4ea99a373b9a86dbfa4121ca69e2b6cc556fed014d79a0",
+      "errors": []
+    }
+  ],
+  "failures": []
+}

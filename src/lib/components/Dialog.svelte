@@ -35,7 +35,7 @@
   }
   h2 {
     margin: 0;
-    color: #fff;
+    color: var(--on-dark);
     font-size: 6cqh;
     font-weight: 900;
     letter-spacing: 0.2em;

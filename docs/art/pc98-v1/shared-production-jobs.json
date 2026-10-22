@@ -1,0 +1,245 @@
+{
+  "palette": [
+    "111329",
+    "24203e",
+    "393050",
+    "69567f",
+    "9b80b4",
+    "bdb4d2",
+    "fae8cd",
+    "ffd69a",
+    "ce9f68",
+    "90e3d3",
+    "408f9c",
+    "315f96",
+    "8b436b",
+    "d86d94",
+    "ff9fae"
+  ],
+  "uiTheme": {
+    "background": "#111329",
+    "panel": "#24203e",
+    "text": "#fae8cd",
+    "accent": "#ffd69a",
+    "border": "#9b80b4",
+    "mood": "深紫視窗、薰衣草雙線框、暖白文字與淡金色選取，搭配薄荷色細節。"
+  },
+  "jobs": [
+    {
+      "name": "environment/court",
+      "w": 1920,
+      "h": 1080,
+      "mode": "background",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/environment/court.png",
+      "prompt": "Style-transfer ONE environment/court production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Background ONLY, beach with ocean Taiwan hills and clouds, 1920x1080 compositional proportions, bottom36% unobstructed sand, no characters ball net UI or writing. Full opaque background, fine hand-drawn pixel clusters, coastal blue/cyan and warm sand colors.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "environment/net",
+      "w": 192,
+      "h": 1024,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/environment/net.png",
+      "prompt": "Style-transfer ONE environment/net production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Preserve reference object's shape/colors, clean pixel sprite clusters and structured dithering, true alpha outside object and holes. No backdrop/glow haze, no extra object or text. Keep same sideview tallpole and narrowmesh, preserve topwhiteband and bottompole placement proportion for physics. Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "environment/ball",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/environment/ball.png",
+      "prompt": "Style-transfer ONE environment/ball production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Preserve reference object's shape/colors, clean pixel sprite clusters and structured dithering, true alpha outside object and holes. No backdrop/glow haze, no extra object or text.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/logo",
+      "w": 1400,
+      "h": 420,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/logo.png",
+      "prompt": "Style-transfer ONE ui/logo production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Text MUST read EXACTLY 虛擬排球王, keep all correct stroke shapes of reference, especially 虛. Warm gold lettering with lavender/navy edge, small blueyellowwhite volleyball/swoosh ofreference. Exact title composition. Clean truealpha outside logo.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/button-normal",
+      "w": 640,
+      "h": 128,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/button-normal.png",
+      "prompt": "Style-transfer ONE ui/button-normal production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/button-selected",
+      "w": 640,
+      "h": 128,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/button-selected.png",
+      "prompt": "Style-transfer ONE ui/button-selected production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/button-disabled",
+      "w": 640,
+      "h": 128,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/button-disabled.png",
+      "prompt": "Style-transfer ONE ui/button-disabled production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/dialog-panel",
+      "w": 960,
+      "h": 720,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/dialog-panel.png",
+      "prompt": "Style-transfer ONE ui/dialog-panel production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/portrait-frame",
+      "w": 256,
+      "h": 256,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/portrait-frame.png",
+      "prompt": "Style-transfer ONE ui/portrait-frame production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/portrait-selected",
+      "w": 256,
+      "h": 256,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/portrait-selected.png",
+      "prompt": "Style-transfer ONE ui/portrait-selected production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/score-panel",
+      "w": 800,
+      "h": 200,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/score-panel.png",
+      "prompt": "Style-transfer ONE ui/score-panel production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/input-field",
+      "w": 640,
+      "h": 128,
+      "mode": "fill",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/input-field.png",
+      "prompt": "Style-transfer ONE ui/input-field production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/result-banner",
+      "w": 1000,
+      "h": 240,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/result-banner.png",
+      "prompt": "Style-transfer ONE ui/result-banner production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "effects/hit-spark",
+      "w": 512,
+      "h": 512,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/effects/hit-spark.png",
+      "prompt": "Style-transfer ONE effects/hit-spark production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Preserve reference object's shape/colors, clean pixel sprite clusters and structured dithering, true alpha outside object and holes. No backdrop/glow haze, no extra object or text.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "effects/sand-puff",
+      "w": 768,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/effects/sand-puff.png",
+      "prompt": "Style-transfer ONE effects/sand-puff production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Preserve reference object's shape/colors, clean pixel sprite clusters and structured dithering, true alpha outside object and holes. No backdrop/glow haze, no extra object or text.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "effects/spike-trail",
+      "w": 768,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/effects/spike-trail.png",
+      "prompt": "Style-transfer ONE effects/spike-trail production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Preserve reference object's shape/colors, clean pixel sprite clusters and structured dithering, true alpha outside object and holes. No backdrop/glow haze, no extra object or text.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "effects/score-burst",
+      "w": 512,
+      "h": 512,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/effects/score-burst.png",
+      "prompt": "Style-transfer ONE effects/score-burst production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Preserve reference object's shape/colors, clean pixel sprite clusters and structured dithering, true alpha outside object and holes. No backdrop/glow haze, no extra object or text.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/icons/keyboard",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/keyboard.png",
+      "prompt": "Style-transfer ONE ui/icons/keyboard production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/icons/gamepad",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/gamepad.png",
+      "prompt": "Style-transfer ONE ui/icons/gamepad production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/icons/touch",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/touch.png",
+      "prompt": "Style-transfer ONE ui/icons/touch production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/icons/lock",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/lock.png",
+      "prompt": "Style-transfer ONE ui/icons/lock production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/icons/ready",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/ready.png",
+      "prompt": "Style-transfer ONE ui/icons/ready production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/icons/pause",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons/pause.png",
+      "prompt": "Style-transfer ONE ui/icons/pause production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/icons/sound-on",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons-extra/sound-on.png",
+      "prompt": "Style-transfer ONE ui/icons/sound-on production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/icons/sound-off",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons-extra/sound-off.png",
+      "prompt": "Style-transfer ONE ui/icons/sound-off production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/icons/back",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons-extra/back.png",
+      "prompt": "Style-transfer ONE ui/icons/back production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    },
+    {
+      "name": "ui/icons/settings",
+      "w": 256,
+      "h": 256,
+      "mode": "contain",
+      "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/ui/icons-extra/settings.png",
+      "prompt": "Style-transfer ONE ui/icons/settings production game asset from reference into fine PC-98 circa1993 Japanese computer anime pixel graphics. Preserve exact content, composition and functionality of reference. Fine stepped crisp pixel edges, 15-color palette, purposeful checkerboard ordered dithering, no blur, no smooth gradients, no antialiased vector lines. Use deep purple base (#111329, #24203e), lavender doubleline/pixelbevel borders (#9b80b4), palecream highlights (#fae8cd), warmgold (#ffd69a) and mint accents (#90e3d3), fine pixel DOS-era anime game menus (PC98 aesthetic). Preserve relevant icon shape/plate silhouette; no letters or numbers. For portrait frames keep center genuinely transparent. For buttons/fields/panels interior must be fullyOPAQUE and clean blank, no alpha holes. Truealpha outside.  Whole item fits in generous transparent margin, exceptbackground fullbleed. Output is a fullproduction asset, not mockup."
+    }
+  ]
+}

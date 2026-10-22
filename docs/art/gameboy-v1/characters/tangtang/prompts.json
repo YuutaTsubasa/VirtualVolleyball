@@ -1,0 +1,106 @@
+[
+  {
+    "file": "characters/tangtang/sprites/idle.png",
+    "prompt": "Use case: stylized-concept. Production art for 虛擬排球王. Generate ONE isolated FULL BODY action sprite facing RIGHT of tangtang: young woman with twin round hair buns, short bangs and star hair clips, light jersey with dark collar and double dark stripes, dark shorts. Pose: ready crouch, knees bent, both hands prepared in front. Reference image is identity, clothing and exact pose/composition guide; preserve character and outfit, interpret original colors as distinct light/dark green regions. Purpose-built handcrafted original monochrome Game Boy pixel art on a strict 128x128 logical pixel grid, integer nearest enlargement. Strong clean one-pixel dark contours, large purposeful pixel clusters, clearly readable face and hands. ONLY FOUR opaque colors #0f380f #306230 #8bac0f #9bbc0f plus actual alpha transparency. No antialiasing, partial alpha, gradients, blur, smooth vector edges, tiny noisy texture or dithering. Do not merely recolor the anime reference: redraw shapes as intentional coarse pixel art. Square canvas. Entire silhouette visible with 8% empty transparent padding on EVERY side, including bottom; no cropping. Consistent compact game character proportions, large readable head. No ball, floor, shadow, scene, captions or extra figures. Exactly one asset.",
+    "source": "characters/tangtang/sources/idle.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/tangtang/sprites/idle.png"
+    ]
+  },
+  {
+    "file": "characters/tangtang/sprites/run1.png",
+    "prompt": "Use case: stylized-concept. Production art for 虛擬排球王. Generate ONE isolated FULL BODY action sprite facing RIGHT of tangtang: young woman with twin round hair buns, short bangs and star hair clips, light jersey with dark collar and double dark stripes, dark shorts. Pose: running right, long stride with forward foot extended, arms pumping. Reference image is identity, clothing and exact pose/composition guide; preserve character and outfit, interpret original colors as distinct light/dark green regions. Purpose-built handcrafted original monochrome Game Boy pixel art on a strict 128x128 logical pixel grid, integer nearest enlargement. Strong clean one-pixel dark contours, large purposeful pixel clusters, clearly readable face and hands. ONLY FOUR opaque colors #0f380f #306230 #8bac0f #9bbc0f plus actual alpha transparency. No antialiasing, partial alpha, gradients, blur, smooth vector edges, tiny noisy texture or dithering. Do not merely recolor the anime reference: redraw shapes as intentional coarse pixel art. Square canvas. Entire silhouette visible with 8% empty transparent padding on EVERY side, including bottom; no cropping. Consistent compact game character proportions, large readable head. No ball, floor, shadow, scene, captions or extra figures. Exactly one asset.",
+    "source": "characters/tangtang/sources/run1.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/tangtang/sprites/run1.png"
+    ]
+  },
+  {
+    "file": "characters/tangtang/sprites/run2.png",
+    "prompt": "Use case: stylized-concept. Production art for 虛擬排球王. Generate ONE isolated FULL BODY action sprite facing RIGHT of tangtang: young woman with twin round hair buns, short bangs and star hair clips, light jersey with dark collar and double dark stripes, dark shorts. Pose: running right, alternate running frame with front knee lifted high and opposite arm forward. Reference image is identity, clothing and exact pose/composition guide; preserve character and outfit, interpret original colors as distinct light/dark green regions. Purpose-built handcrafted original monochrome Game Boy pixel art on a strict 128x128 logical pixel grid, integer nearest enlargement. Strong clean one-pixel dark contours, large purposeful pixel clusters, clearly readable face and hands. ONLY FOUR opaque colors #0f380f #306230 #8bac0f #9bbc0f plus actual alpha transparency. No antialiasing, partial alpha, gradients, blur, smooth vector edges, tiny noisy texture or dithering. Do not merely recolor the anime reference: redraw shapes as intentional coarse pixel art. Square canvas. Entire silhouette visible with 8% empty transparent padding on EVERY side, including bottom; no cropping. Consistent compact game character proportions, large readable head. No ball, floor, shadow, scene, captions or extra figures. Exactly one asset.",
+    "source": "characters/tangtang/sources/run2.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/tangtang/sprites/run2.png"
+    ]
+  },
+  {
+    "file": "characters/tangtang/sprites/jump.png",
+    "prompt": "Use case: stylized-concept. Production art for 虛擬排球王. Generate ONE isolated FULL BODY action sprite facing RIGHT of tangtang: young woman with twin round hair buns, short bangs and star hair clips, light jersey with dark collar and double dark stripes, dark shorts. Pose: midair vertical jump, both arms overhead and both knees folded. Reference image is identity, clothing and exact pose/composition guide; preserve character and outfit, interpret original colors as distinct light/dark green regions. Purpose-built handcrafted original monochrome Game Boy pixel art on a strict 128x128 logical pixel grid, integer nearest enlargement. Strong clean one-pixel dark contours, large purposeful pixel clusters, clearly readable face and hands. ONLY FOUR opaque colors #0f380f #306230 #8bac0f #9bbc0f plus actual alpha transparency. No antialiasing, partial alpha, gradients, blur, smooth vector edges, tiny noisy texture or dithering. Do not merely recolor the anime reference: redraw shapes as intentional coarse pixel art. Square canvas. Entire silhouette visible with 8% empty transparent padding on EVERY side, including bottom; no cropping. Consistent compact game character proportions, large readable head. No ball, floor, shadow, scene, captions or extra figures. Exactly one asset.",
+    "source": "characters/tangtang/sources/jump.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/tangtang/sprites/jump.png"
+    ]
+  },
+  {
+    "file": "characters/tangtang/sprites/spike.png",
+    "prompt": "Use case: stylized-concept. Production art for 虛擬排球王. Generate ONE isolated FULL BODY action sprite facing RIGHT of tangtang: young woman with twin round hair buns, short bangs and star hair clips, light jersey with dark collar and double dark stripes, dark shorts. Pose: airborne volleyball spike windup, one open hand high reaching right, opposite arm bent, knees folded. Reference image is identity, clothing and exact pose/composition guide; preserve character and outfit, interpret original colors as distinct light/dark green regions. Purpose-built handcrafted original monochrome Game Boy pixel art on a strict 128x128 logical pixel grid, integer nearest enlargement. Strong clean one-pixel dark contours, large purposeful pixel clusters, clearly readable face and hands. ONLY FOUR opaque colors #0f380f #306230 #8bac0f #9bbc0f plus actual alpha transparency. No antialiasing, partial alpha, gradients, blur, smooth vector edges, tiny noisy texture or dithering. Do not merely recolor the anime reference: redraw shapes as intentional coarse pixel art. Square canvas. Entire silhouette visible with 8% empty transparent padding on EVERY side, including bottom; no cropping. Consistent compact game character proportions, large readable head. No ball, floor, shadow, scene, captions or extra figures. Exactly one asset.",
+    "source": "characters/tangtang/sources/spike.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/tangtang/sprites/spike.png"
+    ]
+  },
+  {
+    "file": "characters/tangtang/sprites/dive.png",
+    "prompt": "Use case: stylized-concept. Production art for 虛擬排球王. Generate ONE isolated FULL BODY action sprite facing RIGHT of tangtang: young woman with twin round hair buns, short bangs and star hair clips, light jersey with dark collar and double dark stripes, dark shorts. Pose: horizontal forward dive to the right, both arms extended together, entire body airborne horizontal. Reference image is identity, clothing and exact pose/composition guide; preserve character and outfit, interpret original colors as distinct light/dark green regions. Purpose-built handcrafted original monochrome Game Boy pixel art on a strict 128x128 logical pixel grid, integer nearest enlargement. Strong clean one-pixel dark contours, large purposeful pixel clusters, clearly readable face and hands. ONLY FOUR opaque colors #0f380f #306230 #8bac0f #9bbc0f plus actual alpha transparency. No antialiasing, partial alpha, gradients, blur, smooth vector edges, tiny noisy texture or dithering. Do not merely recolor the anime reference: redraw shapes as intentional coarse pixel art. Square canvas. Entire silhouette visible with 8% empty transparent padding on EVERY side, including bottom; no cropping. Consistent compact game character proportions, large readable head. No ball, floor, shadow, scene, captions or extra figures. Exactly one asset.",
+    "source": "characters/tangtang/sources/dive.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/tangtang/sprites/dive.png"
+    ]
+  },
+  {
+    "file": "characters/tangtang/sprites/win.png",
+    "prompt": "Use case: stylized-concept. Production art for 虛擬排球王. Generate ONE isolated FULL BODY action sprite facing RIGHT of tangtang: young woman with twin round hair buns, short bangs and star hair clips, light jersey with dark collar and double dark stripes, dark shorts. Pose: joyful standing victory pose with celebratory raised fist, confident smile. Reference image is identity, clothing and exact pose/composition guide; preserve character and outfit, interpret original colors as distinct light/dark green regions. Purpose-built handcrafted original monochrome Game Boy pixel art on a strict 128x128 logical pixel grid, integer nearest enlargement. Strong clean one-pixel dark contours, large purposeful pixel clusters, clearly readable face and hands. ONLY FOUR opaque colors #0f380f #306230 #8bac0f #9bbc0f plus actual alpha transparency. No antialiasing, partial alpha, gradients, blur, smooth vector edges, tiny noisy texture or dithering. Do not merely recolor the anime reference: redraw shapes as intentional coarse pixel art. Square canvas. Entire silhouette visible with 8% empty transparent padding on EVERY side, including bottom; no cropping. Consistent compact game character proportions, large readable head. No ball, floor, shadow, scene, captions or extra figures. Exactly one asset.",
+    "source": "characters/tangtang/sources/win.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/tangtang/sprites/win.png"
+    ]
+  },
+  {
+    "file": "characters/tangtang/sprites/lose.png",
+    "prompt": "Use case: stylized-concept. Production art for 虛擬排球王. Generate ONE isolated FULL BODY action sprite facing RIGHT of tangtang: young woman with twin round hair buns, short bangs and star hair clips, light jersey with dark collar and double dark stripes, dark shorts. Pose: disappointed exhausted loss pose, head down, shoulders lowered. Reference image is identity, clothing and exact pose/composition guide; preserve character and outfit, interpret original colors as distinct light/dark green regions. Purpose-built handcrafted original monochrome Game Boy pixel art on a strict 128x128 logical pixel grid, integer nearest enlargement. Strong clean one-pixel dark contours, large purposeful pixel clusters, clearly readable face and hands. ONLY FOUR opaque colors #0f380f #306230 #8bac0f #9bbc0f plus actual alpha transparency. No antialiasing, partial alpha, gradients, blur, smooth vector edges, tiny noisy texture or dithering. Do not merely recolor the anime reference: redraw shapes as intentional coarse pixel art. Square canvas. Entire silhouette visible with 8% empty transparent padding on EVERY side, including bottom; no cropping. Consistent compact game character proportions, large readable head. No ball, floor, shadow, scene, captions or extra figures. Exactly one asset.",
+    "source": "characters/tangtang/sources/lose.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/tangtang/sprites/lose.png"
+    ]
+  },
+  {
+    "file": "characters/tangtang/portraits/normal.png",
+    "prompt": "Use case: stylized-concept. Production art for 虛擬排球王. Generate ONE isolated head-and-shoulders UI bust facing three-quarter right of tangtang: young woman with twin round hair buns, short bangs and star hair clips, light jersey with dark collar and double dark stripes, dark shorts. Expression: calm friendly attentive closed-mouth smile. Reference image is identity, clothing and exact pose/composition guide; preserve character and outfit, interpret original colors as distinct light/dark green regions. Purpose-built handcrafted original monochrome Game Boy pixel art on a strict 128x128 logical pixel grid, integer nearest enlargement. Strong clean one-pixel dark contours, large purposeful pixel clusters, clearly readable face and hands. ONLY FOUR opaque colors #0f380f #306230 #8bac0f #9bbc0f plus actual alpha transparency. No antialiasing, partial alpha, gradients, blur, smooth vector edges, tiny noisy texture or dithering. Do not merely recolor the anime reference: redraw shapes as intentional coarse pixel art. Square canvas. Entire silhouette visible with 8% empty transparent padding on EVERY side, including bottom; no cropping. Keep same head and shoulder size across five expressions; no hands. No ball, floor, shadow, scene, captions or extra figures. Exactly one asset.",
+    "source": "characters/tangtang/sources/portrait-normal.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/tangtang/portraits/normal.png"
+    ]
+  },
+  {
+    "file": "characters/tangtang/portraits/happy.png",
+    "prompt": "Use case: stylized-concept. Production art for 虛擬排球王. Generate ONE isolated head-and-shoulders UI bust facing three-quarter right of tangtang: young woman with twin round hair buns, short bangs and star hair clips, light jersey with dark collar and double dark stripes, dark shorts. Expression: laughing joyfully with eyes closed and open smiling mouth. Reference image is identity, clothing and exact pose/composition guide; preserve character and outfit, interpret original colors as distinct light/dark green regions. Purpose-built handcrafted original monochrome Game Boy pixel art on a strict 128x128 logical pixel grid, integer nearest enlargement. Strong clean one-pixel dark contours, large purposeful pixel clusters, clearly readable face and hands. ONLY FOUR opaque colors #0f380f #306230 #8bac0f #9bbc0f plus actual alpha transparency. No antialiasing, partial alpha, gradients, blur, smooth vector edges, tiny noisy texture or dithering. Do not merely recolor the anime reference: redraw shapes as intentional coarse pixel art. Square canvas. Entire silhouette visible with 8% empty transparent padding on EVERY side, including bottom; no cropping. Keep same head and shoulder size across five expressions; no hands. No ball, floor, shadow, scene, captions or extra figures. Exactly one asset.",
+    "source": "characters/tangtang/sources/portrait-happy.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/tangtang/portraits/happy.png"
+    ]
+  },
+  {
+    "file": "characters/tangtang/portraits/surprised.png",
+    "prompt": "Use case: stylized-concept. Production art for 虛擬排球王. Generate ONE isolated head-and-shoulders UI bust facing three-quarter right of tangtang: young woman with twin round hair buns, short bangs and star hair clips, light jersey with dark collar and double dark stripes, dark shorts. Expression: wide eyes and small open O shaped mouth. Reference image is identity, clothing and exact pose/composition guide; preserve character and outfit, interpret original colors as distinct light/dark green regions. Purpose-built handcrafted original monochrome Game Boy pixel art on a strict 128x128 logical pixel grid, integer nearest enlargement. Strong clean one-pixel dark contours, large purposeful pixel clusters, clearly readable face and hands. ONLY FOUR opaque colors #0f380f #306230 #8bac0f #9bbc0f plus actual alpha transparency. No antialiasing, partial alpha, gradients, blur, smooth vector edges, tiny noisy texture or dithering. Do not merely recolor the anime reference: redraw shapes as intentional coarse pixel art. Square canvas. Entire silhouette visible with 8% empty transparent padding on EVERY side, including bottom; no cropping. Keep same head and shoulder size across five expressions; no hands. No ball, floor, shadow, scene, captions or extra figures. Exactly one asset.",
+    "source": "characters/tangtang/sources/portrait-surprised.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/tangtang/portraits/surprised.png"
+    ]
+  },
+  {
+    "file": "characters/tangtang/portraits/sad.png",
+    "prompt": "Use case: stylized-concept. Production art for 虛擬排球王. Generate ONE isolated head-and-shoulders UI bust facing three-quarter right of tangtang: young woman with twin round hair buns, short bangs and star hair clips, light jersey with dark collar and double dark stripes, dark shorts. Expression: worried furrowed eyebrows and downturned mouth. Reference image is identity, clothing and exact pose/composition guide; preserve character and outfit, interpret original colors as distinct light/dark green regions. Purpose-built handcrafted original monochrome Game Boy pixel art on a strict 128x128 logical pixel grid, integer nearest enlargement. Strong clean one-pixel dark contours, large purposeful pixel clusters, clearly readable face and hands. ONLY FOUR opaque colors #0f380f #306230 #8bac0f #9bbc0f plus actual alpha transparency. No antialiasing, partial alpha, gradients, blur, smooth vector edges, tiny noisy texture or dithering. Do not merely recolor the anime reference: redraw shapes as intentional coarse pixel art. Square canvas. Entire silhouette visible with 8% empty transparent padding on EVERY side, including bottom; no cropping. Keep same head and shoulder size across five expressions; no hands. No ball, floor, shadow, scene, captions or extra figures. Exactly one asset.",
+    "source": "characters/tangtang/sources/portrait-sad.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/tangtang/portraits/sad.png"
+    ]
+  },
+  {
+    "file": "characters/tangtang/portraits/win.png",
+    "prompt": "Use case: stylized-concept. Production art for 虛擬排球王. Generate ONE isolated head-and-shoulders UI bust facing three-quarter right of tangtang: young woman with twin round hair buns, short bangs and star hair clips, light jersey with dark collar and double dark stripes, dark shorts. Expression: confident triumphant grin. Reference image is identity, clothing and exact pose/composition guide; preserve character and outfit, interpret original colors as distinct light/dark green regions. Purpose-built handcrafted original monochrome Game Boy pixel art on a strict 128x128 logical pixel grid, integer nearest enlargement. Strong clean one-pixel dark contours, large purposeful pixel clusters, clearly readable face and hands. ONLY FOUR opaque colors #0f380f #306230 #8bac0f #9bbc0f plus actual alpha transparency. No antialiasing, partial alpha, gradients, blur, smooth vector edges, tiny noisy texture or dithering. Do not merely recolor the anime reference: redraw shapes as intentional coarse pixel art. Square canvas. Entire silhouette visible with 8% empty transparent padding on EVERY side, including bottom; no cropping. Keep same head and shoulder size across five expressions; no hands. No ball, floor, shadow, scene, captions or extra figures. Exactly one asset.",
+    "source": "characters/tangtang/sources/portrait-win.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/anime90-full-v1/characters/tangtang/portraits/win.png"
+    ]
+  }
+]

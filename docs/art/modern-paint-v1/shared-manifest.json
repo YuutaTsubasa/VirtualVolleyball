@@ -1,0 +1,412 @@
+{
+  "style": "modern-paint",
+  "aesthetic": "anime-light-cinema",
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "file": "environment/court.png",
+      "width": 1920,
+      "height": 1080,
+      "hasAlpha": true,
+      "opaqueBackground": true,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "width": 1920,
+        "height": 1080,
+        "transparent": 0
+      },
+      "sha256": "2e8a1043a8f8cefce8120a06f27bc099c12cd00fbb86f599f125c1cbf30ca670"
+    },
+    {
+      "file": "environment/net.png",
+      "width": 192,
+      "height": 1024,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 11,
+        "top": 10,
+        "width": 171,
+        "height": 1004,
+        "transparent": 112987
+      },
+      "sha256": "3e1767eb23adb50b81ec6825f746fc330bb7596b800c42504d25547d0ab28661"
+    },
+    {
+      "file": "environment/ball.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 236,
+        "height": 235,
+        "transparent": 22297
+      },
+      "sha256": "753bafde67b8c8fd0e8d0604aa755b050f0d42dedf0423131fc15e19a1bc25df"
+    },
+    {
+      "file": "ui/logo.png",
+      "width": 1400,
+      "height": 420,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 1380,
+        "height": 399,
+        "transparent": 179869
+      },
+      "sha256": "68aa847e7b8cf1f6f1246d08e91b858dd8248eab0502b8683971b7335646befe"
+    },
+    {
+      "file": "ui/button-normal.png",
+      "width": 640,
+      "height": 128,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 620,
+        "height": 108,
+        "transparent": 17381
+      },
+      "sha256": "c390ac0f3c2e1b033307a0b884e385e0d5daa02b8b84588736e0c5415356eefa"
+    },
+    {
+      "file": "ui/button-selected.png",
+      "width": 640,
+      "height": 128,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 620,
+        "height": 108,
+        "transparent": 17453
+      },
+      "sha256": "04a257efcb67c41bf18b208b74ec5a9a618ac3068191c319ba0c40e060907c40"
+    },
+    {
+      "file": "ui/button-disabled.png",
+      "width": 640,
+      "height": 128,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 620,
+        "height": 108,
+        "transparent": 15865
+      },
+      "sha256": "f3c2eb3a03078a234a1d4c4b73711b2bb77c6e448fc3d6e4befe9f6d66429686"
+    },
+    {
+      "file": "ui/dialog-panel.png",
+      "width": 960,
+      "height": 720,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 11,
+        "width": 940,
+        "height": 699,
+        "transparent": 89100
+      },
+      "sha256": "c4d83dfcc6ae65e63d58122f71c1f26a86d29b4dcc4bbfaa10270dfde869be23"
+    },
+    {
+      "file": "ui/portrait-frame.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 236,
+        "height": 236,
+        "transparent": 45307
+      },
+      "sha256": "187dc55936bc2b483b9e033b03942272a2470d8498788f0a8ab9a7e6c5c57b9a"
+    },
+    {
+      "file": "ui/portrait-selected.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 236,
+        "height": 236,
+        "transparent": 48488
+      },
+      "sha256": "9b495d15db78ad8d0e2f7924ddb3cd254794aba1b7b680eb8c9043fe31d64fa3"
+    },
+    {
+      "file": "ui/score-panel.png",
+      "width": 800,
+      "height": 200,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 780,
+        "height": 180,
+        "transparent": 52778
+      },
+      "sha256": "03b0d919ebf06f3410e13f43ceb88e3a021c8591945dcc1aeeff1549853d81dc"
+    },
+    {
+      "file": "ui/input-field.png",
+      "width": 640,
+      "height": 128,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 620,
+        "height": 108,
+        "transparent": 15560
+      },
+      "sha256": "915f4bc9ebb8bbab1c41f035f1692f0c2e51c8c9eb494b17cf42ba4c14d94eac"
+    },
+    {
+      "file": "ui/result-banner.png",
+      "width": 1000,
+      "height": 240,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 44,
+        "top": 11,
+        "width": 911,
+        "height": 219,
+        "transparent": 124779
+      },
+      "sha256": "bc17cec86bdc0e428b7c4aca362201cce658a90e943641c15cf51617cba66eb8"
+    },
+    {
+      "file": "effects/hit-spark.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 21,
+        "width": 492,
+        "height": 470,
+        "transparent": 197301
+      },
+      "sha256": "1b59d3b0dc66971744039e9cc72199c62f14aea96111c52b6e75673762de990d"
+    },
+    {
+      "file": "effects/sand-puff.png",
+      "width": 768,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 35,
+        "width": 748,
+        "height": 185,
+        "transparent": 136566
+      },
+      "sha256": "05cf4c986e471fd79f170630cf953fc4133bdf3851d123a3f762a3e9b638219c"
+    },
+    {
+      "file": "effects/spike-trail.png",
+      "width": 768,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 11,
+        "top": 37,
+        "width": 747,
+        "height": 182,
+        "transparent": 138930
+      },
+      "sha256": "aaf35dc2856bb73762bedd84c24d08964db426a0ce46b664cae21b15fb3446dc"
+    },
+    {
+      "file": "effects/score-burst.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 79,
+        "width": 492,
+        "height": 354,
+        "transparent": 184112
+      },
+      "sha256": "c7b90a16db0ef60d5ad1fe42065fffbf5a8a9eb21a5103ee69f3c3b50a24b45b"
+    },
+    {
+      "file": "ui/icons/keyboard.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 16,
+        "top": 69,
+        "width": 224,
+        "height": 118,
+        "transparent": 46782
+      },
+      "sha256": "d1a99065dd093494e623978b6ef720ce161a381e8ac6e9ae084bd5d1d4c0bea4"
+    },
+    {
+      "file": "ui/icons/gamepad.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 16,
+        "top": 60,
+        "width": 224,
+        "height": 136,
+        "transparent": 44833
+      },
+      "sha256": "2fb2c803fcc4a5e286cc537fe3ff843dcf73259d6f45bbceecf49cfee60313d6"
+    },
+    {
+      "file": "ui/icons/touch.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 75,
+        "top": 16,
+        "width": 106,
+        "height": 224,
+        "transparent": 49368
+      },
+      "sha256": "ad966a662b8e7ba17d02fb7a9442445507d6dbb6be3eef2cdd536393a1f8c7d4"
+    },
+    {
+      "file": "ui/icons/lock.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 39,
+        "top": 16,
+        "width": 177,
+        "height": 224,
+        "transparent": 35287
+      },
+      "sha256": "3ba5b95691b0f0438b74078435eb7d57081b5127bd867cf2040d3b9b38505788"
+    },
+    {
+      "file": "ui/icons/ready.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 16,
+        "top": 33,
+        "width": 224,
+        "height": 189,
+        "transparent": 49990
+      },
+      "sha256": "1e985189a1cc706334be234c3660813ceb8a3fdbdb495ed7217ae401b57762ea"
+    },
+    {
+      "file": "ui/icons/pause.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 35,
+        "top": 16,
+        "width": 186,
+        "height": 224,
+        "transparent": 29750
+      },
+      "sha256": "5dff868674f540d85e9d7049b96bec223a4ae95ce0a2c9b196e66db063b90565"
+    },
+    {
+      "file": "ui/icons/sound-on.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 16,
+        "top": 45,
+        "width": 224,
+        "height": 165,
+        "transparent": 45063
+      },
+      "sha256": "9d178e7bc1bcd63443af951ecf3664d707367922640f79b275f00cf4d130df2d"
+    },
+    {
+      "file": "ui/icons/sound-off.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 26,
+        "top": 16,
+        "width": 204,
+        "height": 224,
+        "transparent": 38180
+      },
+      "sha256": "a398ad0e2d57af123c8146e7eb752ec1f8c80a08f4c371cccb15c0969fab0694"
+    },
+    {
+      "file": "ui/icons/back.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 16,
+        "top": 51,
+        "width": 224,
+        "height": 153,
+        "transparent": 49195
+      },
+      "sha256": "ef2da0059c1d954ef208f034f092b9bbc00c21cf0f0dbf4706a0652f2db825ac"
+    },
+    {
+      "file": "ui/icons/settings.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 16,
+        "top": 16,
+        "width": 224,
+        "height": 223,
+        "transparent": 34580
+      },
+      "sha256": "a07e082929a922f425e746ac1f50f59f2b1423e0369ac659cbc068e1f79d6baf"
+    }
+  ]
+}

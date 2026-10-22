@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "total": 181,
+  "uniqueHashes": 181,
+  "failures": [],
+  "visualReview": {
+    "characters": [
+      "xiaocui",
+      "yuehua",
+      "aming",
+      "tangtang",
+      "xiaochun",
+      "lanjie",
+      "01-wolf",
+      "02-gambler",
+      "03-prince",
+      "04-adventurer",
+      "ayi"
+    ],
+    "shared": true,
+    "notes": "All 11 character overviews and shared overview inspected; Ayi retains silver knight armor. Title reads 虛擬排球王."
+  },
+  "checks": [
+    "fresh dimensions",
+    "RGBA alpha",
+    "transparent pixel presence",
+    "shared alpha border",
+    "frame transparent centers",
+    "panel opaque centers",
+    "court opaque",
+    "181 distinct SHA256"
+  ],
+  "verifiedAt": "2026-10-22T22:25:10.572Z"
+}

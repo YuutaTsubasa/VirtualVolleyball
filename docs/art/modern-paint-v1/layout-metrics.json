@@ -1,0 +1,37 @@
+{
+  "coordinateSystem": "Pixel coordinates in final PNG, origin top left; normalized values divide by full width/height.",
+  "scorePanel": {
+    "file": "ui/score-panel.png",
+    "width": 800,
+    "height": 200,
+    "leftNumberCenter": {
+      "x": 220,
+      "y": 100,
+      "normalized": {
+        "x": 0.275,
+        "y": 0.5
+      }
+    },
+    "rightNumberCenter": {
+      "x": 582,
+      "y": 100,
+      "normalized": {
+        "x": 0.7275,
+        "y": 0.5
+      }
+    },
+    "method": "Visual measurement of the center of each blank blue scoring window in final 800x200 PNG; approximate +/-2 pixels."
+  },
+  "net": {
+    "file": "environment/net.png",
+    "width": 192,
+    "height": 1024,
+    "topWhiteTapeY": 219,
+    "topWhiteTapeNormalizedY": 0.2138671875,
+    "topWhiteTapeAtX": 96,
+    "topWhiteTapeRightY": 267,
+    "bottomPoleY": 1013,
+    "bottomPoleNormalizedY": 0.9892578125,
+    "method": "Visual measurement on final 192x1024 PNG. Tape slopes: use near-post upper edge (x96,y219) as anchor, right edge upper tape approximately y267. Pole bottom visible alpha edge y1013; antenna starts y10."
+  }
+}

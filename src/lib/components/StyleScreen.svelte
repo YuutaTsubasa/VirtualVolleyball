@@ -100,7 +100,7 @@
     right: 0;
     bottom: 0;
     background: var(--navy);
-    color: #fff;
+    color: var(--on-dark);
     font-size: 1.8cqh;
     font-weight: 900;
     text-align: center;

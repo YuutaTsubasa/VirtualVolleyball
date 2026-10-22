@@ -1,0 +1,93 @@
+{
+  "coordinateSystem": "Zero based pixels; normalized coordinates divide by full canvas dimensions. Edge positions are exclusive.",
+  "themeColors": [
+    "#0f380f",
+    "#306230",
+    "#8bac0f",
+    "#9bbc0f"
+  ],
+  "uiAesthetic": "Four green monochrome colors, chunky square pixel borders and high-contrast flat plates.",
+  "scorePanel": {
+    "file": "ui/score-panel.png",
+    "width": 800,
+    "height": 200,
+    "measurement": "Centers of bounding rectangles of the two largest enclosed dark fill connected regions.",
+    "left": {
+      "pixel": [
+        216,
+        102
+      ],
+      "normalized": [
+        0.27,
+        0.51
+      ],
+      "bounds": [
+        92,
+        56,
+        339,
+        147
+      ]
+    },
+    "right": {
+      "pixel": [
+        588,
+        102
+      ],
+      "normalized": [
+        0.735,
+        0.51
+      ],
+      "bounds": [
+        464,
+        56,
+        711,
+        147
+      ]
+    }
+  },
+  "net": {
+    "file": "environment/net.png",
+    "width": 192,
+    "height": 1024,
+    "whiteTapeEquivalent": "Light green upper mesh tape is sloped. Reference y is its center at post attachment x84.",
+    "tapeAttachment": {
+      "x": 84,
+      "top": 212,
+      "bottom": 219,
+      "centerY": 216,
+      "normalizedY": 0.2109375
+    },
+    "tapeAtRight": {
+      "x": 140,
+      "top": 252,
+      "bottom": 267,
+      "centerY": 260
+    },
+    "bottomPoleY": 1016,
+    "bottomOpaquePixelY": 1015,
+    "bottomNormalized": 0.9921875
+  },
+  "spriteAlignment": {
+    "reference": "anime90-full-v1 corresponding final sprites alpha > 8 bounds",
+    "method": "Crop generated source alpha bounds, resize width and height to rounded master bounds on 128 logical grid, center horizontally and bottom align to y496; nearest integer 4x. Sheets are half final sprite size.",
+    "count": 88,
+    "bottomEdgeY": 496,
+    "maxWidthDeviation": 5,
+    "maxHeightDeviation": 4,
+    "details": "sprite-alignment.json"
+  },
+  "logicalResolution": {
+    "characters": [
+      128,
+      128
+    ],
+    "characterFactor": 4,
+    "sheetFrame": [
+      128,
+      128
+    ],
+    "sheetFactor": 2,
+    "sharedFactor": 4,
+    "details": "Per-file logicalWidth and logicalHeight in manifest.json"
+  }
+}

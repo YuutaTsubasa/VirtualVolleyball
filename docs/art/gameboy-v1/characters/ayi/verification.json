@@ -1,0 +1,369 @@
+{
+  "id": "ayi",
+  "files": [
+    {
+      "file": "characters/ayi/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 160,
+        "top": 156,
+        "right": 347,
+        "bottom": 495
+      },
+      "transparentPixels": 230720,
+      "sha256": "9a062c48bea31ec5185fd14a8730d585f353becc73866cce1e44e7cda07461aa",
+      "errors": []
+    },
+    {
+      "file": "characters/ayi/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 136,
+        "top": 164,
+        "right": 371,
+        "bottom": 495
+      },
+      "transparentPixels": 229296,
+      "sha256": "79092c464b869b0ac871b274d705c455b0ffdaecf63da87a2046c37d014ceaab",
+      "errors": []
+    },
+    {
+      "file": "characters/ayi/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 156,
+        "top": 212,
+        "right": 355,
+        "bottom": 495
+      },
+      "transparentPixels": 234720,
+      "sha256": "910e1328298262f1c51ec5c4d31b76c9f3288c62b4191c9aef46e1db3fdabdcb",
+      "errors": []
+    },
+    {
+      "file": "characters/ayi/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 156,
+        "top": 148,
+        "right": 355,
+        "bottom": 495
+      },
+      "transparentPixels": 225472,
+      "sha256": "85c7579028dafc590810e64711608ef31e49cd7b7fb392b9e49d0a749c912a18",
+      "errors": []
+    },
+    {
+      "file": "characters/ayi/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 100,
+        "top": 164,
+        "right": 411,
+        "bottom": 495
+      },
+      "transparentPixels": 228080,
+      "sha256": "063474042f23f0814e88514e654b986b24bec5d68f79b4766279cb22cdfa2bda",
+      "errors": []
+    },
+    {
+      "file": "characters/ayi/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 56,
+        "top": 304,
+        "right": 451,
+        "bottom": 495
+      },
+      "transparentPixels": 229760,
+      "sha256": "5042eb2e00ddbfe31d833d45ab08e3598ca3672c90571b36e7abe17e055ec164",
+      "errors": []
+    },
+    {
+      "file": "characters/ayi/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 168,
+        "top": 168,
+        "right": 339,
+        "bottom": 495
+      },
+      "transparentPixels": 233408,
+      "sha256": "f0f028aaf20cf13368eb175d66b7c10aa2d70160c682a7bfd476a8c4b17d90c6",
+      "errors": []
+    },
+    {
+      "file": "characters/ayi/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 160,
+        "top": 240,
+        "right": 351,
+        "bottom": 495
+      },
+      "transparentPixels": 236256,
+      "sha256": "3b241ab34dfecc2cd82454bb27d7ad70b9abd935b5e039d76d2bd4ac562f6ca4",
+      "errors": []
+    },
+    {
+      "file": "characters/ayi/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 32,
+        "top": 16,
+        "right": 479,
+        "bottom": 495
+      },
+      "transparentPixels": 131984,
+      "sha256": "c59852623bb40725de90937a29fb6e6f288ecc054cdc27a0ed7ad75762c4fb12",
+      "errors": []
+    },
+    {
+      "file": "characters/ayi/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 44,
+        "top": 16,
+        "right": 467,
+        "bottom": 495
+      },
+      "transparentPixels": 133248,
+      "sha256": "52a2fabcd77c946d1e7020b55c1c07f3eab951797700232dec683fb15ce58b41",
+      "errors": []
+    },
+    {
+      "file": "characters/ayi/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 32,
+        "top": 16,
+        "right": 475,
+        "bottom": 495
+      },
+      "transparentPixels": 131760,
+      "sha256": "95d6b8d28df80a6c60cd9f1a23028d3b6076cb6005299009c14af66bcb5355af",
+      "errors": []
+    },
+    {
+      "file": "characters/ayi/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "48,98,48",
+        "139,172,15",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 36,
+        "top": 16,
+        "right": 475,
+        "bottom": 495
+      },
+      "transparentPixels": 131664,
+      "sha256": "67efe90f82ff8c3abfc74d11a2fa4bdc8fed4d32e9a25c5565357836b2406910",
+      "errors": []
+    },
+    {
+      "file": "characters/ayi/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 4,
+      "logicalWidth": 128,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 36,
+        "top": 16,
+        "right": 475,
+        "bottom": 495
+      },
+      "transparentPixels": 134928,
+      "sha256": "c528ac129bce5d74d66c20448f86e44d75dc41dfbcad33a881122fa8872d5013",
+      "errors": []
+    },
+    {
+      "file": "characters/ayi/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "rgba": true,
+      "channels": 4,
+      "opaqueColors": [
+        "15,56,15",
+        "139,172,15",
+        "48,98,48",
+        "155,188,15"
+      ],
+      "binaryAlpha": true,
+      "pixelGridFactor": 2,
+      "logicalWidth": 1024,
+      "logicalHeight": 128,
+      "bounds": {
+        "left": 80,
+        "top": 74,
+        "right": 1967,
+        "bottom": 247
+      },
+      "transparentPixels": 461928,
+      "sha256": "bcfa0456ef3f8c6721a4962d3ae08d3a1da873ff1ad606e90ffbab05500e9835",
+      "errors": []
+    }
+  ],
+  "failures": []
+}

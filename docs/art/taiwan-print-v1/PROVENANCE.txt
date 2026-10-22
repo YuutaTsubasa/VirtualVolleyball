@@ -1,0 +1,8 @@
+Generation mode: built-in image_gen (one call for every distinct requested image; targeted repairs retained non-destructively).
+Exact prompts: prompts/*.txt. Unmodified generated source PNGs: sources/ mirrored asset paths. progress.jsonl records original built-in generated_images paths and timestamps.
+Identity, outfits, poses, expressions, dimensions and frame order: ../anime90-full-v1/manifest.json and the exact corresponding image for every asset. Those references were visually inspected before generation.
+Style references: TaiwanMahjong/public/characters/xiaocui/taiwan-print/normal.png and docs/art/male-roster-character-revision/user-references-2026-10-22/other-styles/taiwan-print/portraits/{01-wolf,02-gambler,03-prince,04-adventurer}/taiwan-print/normal.png.
+Internal style master: sources/characters/xiaocui/sprites/idle.png. Style-master colors are not transferred over another character's identity palette.
+Ayi original model provenance: ../anime90-full-v1/references/H01-B01-fullbody.png and H01-B01-face01.png. Original silver knight armor retained.
+Mechanical processing only: alpha bounds crop, proportional resize, transparent canvas placement, sheet packing, labelled overview compositing. Final alpha cleanup clamps <=8 to 0 and >=245 to 255 while preserving intermediate antialias alpha and RGB. Generated sources remain unmodified.
+Final UI layout measurements: layout-metrics.json. Interior alpha tests: ui-interior-verification.json. Dimensions, padding and unique hashes: verification.json.

@@ -18,11 +18,12 @@ test('anime90 base art lives at the public root; missing style art falls back to
   }
 });
 
-test('optional illustrations resolve to null unless some pack delivered them', () => {
-  for (const path of OPTIONAL) {
-    const delivered = Object.values(MANIFEST.styles).some((s) => s.files?.includes(path));
-    const url = assetPath('pc98', path, '/');
-    assert.equal(url === null, !delivered, path);
+test('optional illustrations are only used by the style that delivered them', () => {
+  for (const style of ART_STYLES.map((s) => s.id)) {
+    for (const path of OPTIONAL) {
+      const delivered = !!MANIFEST.styles[style]?.files?.includes(path);
+      assert.equal(assetPath(style, path, '/') === null, !delivered, `${style} ${path}`);
+    }
   }
 });
 
@@ -38,8 +39,12 @@ test('every file listed in the manifest exists under public/', () => {
 test('progress and config defaults', () => {
   assert.equal(styleProgress('anime90'), 1);
   assert.ok(EXPECTED_FILES > 80);
-  const cfg = styleConfig('gameboy');
-  assert.equal(cfg.pixelated, true);
-  assert.equal(cfg.scoreboard.left, 0.2775);
+  assert.equal(styleConfig('gameboy').pixelated, true);
   assert.equal(styleConfig('anime90').canvasScale, 2);
+  assert.equal(styleConfig('anime90').scoreboard.left, 0.2775);
+  // 各風格交件時給的座標會蓋掉 90 年代的預設值，沒給的維持預設
+  for (const style of ART_STYLES.map((s) => s.id)) {
+    const own = MANIFEST.styles[style]?.config?.scoreboard?.left;
+    assert.equal(styleConfig(style).scoreboard.left, own ?? 0.2775, style);
+  }
 });

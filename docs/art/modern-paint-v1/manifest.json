@@ -1,0 +1,2656 @@
+{
+  "title": "虛擬排球王",
+  "style": "modern-paint",
+  "aesthetic": "anime-light-cinema",
+  "productionPngCount": 181,
+  "characterCount": 11,
+  "individualCharacterPngCount": 143,
+  "spriteSheetCount": 11,
+  "sharedPngCount": 27,
+  "frames": [
+    "idle",
+    "run1",
+    "run2",
+    "jump",
+    "spike",
+    "dive",
+    "win",
+    "lose"
+  ],
+  "expressions": [
+    "normal",
+    "happy",
+    "surprised",
+    "sad",
+    "win"
+  ],
+  "sheet": {
+    "width": 2048,
+    "height": 256,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "layout": "one row, left to right"
+  },
+  "gameIdMap": {
+    "01-wolf": "cangya",
+    "02-gambler": "jinye",
+    "03-prince": "leo",
+    "04-adventurer": "alie"
+  },
+  "uiTheme": {
+    "aesthetic": "Clean luminous blue panels, thin elegant borders, cream surfaces and restrained gold highlights.",
+    "colors": {
+      "deepBlue": "#15458F",
+      "skyBlue": "#3EA8EF",
+      "cream": "#FFF3D6",
+      "gold": "#F4C558",
+      "ink": "#173351"
+    }
+  },
+  "layoutMetrics": {
+    "coordinateSystem": "Pixel coordinates in final PNG, origin top left; normalized values divide by full width/height.",
+    "scorePanel": {
+      "file": "ui/score-panel.png",
+      "width": 800,
+      "height": 200,
+      "leftNumberCenter": {
+        "x": 220,
+        "y": 100,
+        "normalized": {
+          "x": 0.275,
+          "y": 0.5
+        }
+      },
+      "rightNumberCenter": {
+        "x": 582,
+        "y": 100,
+        "normalized": {
+          "x": 0.7275,
+          "y": 0.5
+        }
+      },
+      "method": "Visual measurement of the center of each blank blue scoring window in final 800x200 PNG; approximate +/-2 pixels."
+    },
+    "net": {
+      "file": "environment/net.png",
+      "width": 192,
+      "height": 1024,
+      "topWhiteTapeY": 219,
+      "topWhiteTapeNormalizedY": 0.2138671875,
+      "topWhiteTapeAtX": 96,
+      "topWhiteTapeRightY": 267,
+      "bottomPoleY": 1013,
+      "bottomPoleNormalizedY": 0.9892578125,
+      "method": "Visual measurement on final 192x1024 PNG. Tape slopes: use near-post upper edge (x96,y219) as anchor, right edge upper tape approximately y267. Pole bottom visible alpha edge y1013; antenna starts y10."
+    }
+  },
+  "generator": "built-in image_gen, one generated source per distinct asset; Sharp crop/resize/sheet assembly only",
+  "references": [
+    "anime90-full-v1 corresponding poses and UI geometry",
+    "references/H01-B01-fullbody.png",
+    "references/H01-B01-face01.png"
+  ],
+  "assets": [
+    {
+      "file": "characters/xiaocui/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 139,
+        "top": 155,
+        "width": 233,
+        "height": 341
+      },
+      "sha256": "0c0380cc8b5f3a8eb3c8b2cb51f643d6dd31e96b9c925397760a0991e83565df",
+      "transparentPixelCount": 217680
+    },
+    {
+      "file": "characters/xiaocui/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 123,
+        "top": 189,
+        "width": 265,
+        "height": 307
+      },
+      "sha256": "2bf8616315fbf7e8e1f30527bb7b5dd194c4ed44512ff24e6f1d36eba324c959",
+      "transparentPixelCount": 220481
+    },
+    {
+      "file": "characters/xiaocui/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 129,
+        "top": 174,
+        "width": 253,
+        "height": 322
+      },
+      "sha256": "77ae18fdb694af8ad6fff14d46639d2316e496461f107e28c5cbe212e766685a",
+      "transparentPixelCount": 215960
+    },
+    {
+      "file": "characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 113,
+        "top": 159,
+        "width": 285,
+        "height": 337
+      },
+      "sha256": "280bcde93eb6aa53698d9bb22119915d4f19ac9f70c62ef814408e6b6cfe7bc1",
+      "transparentPixelCount": 215940
+    },
+    {
+      "file": "characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 53,
+        "top": 122,
+        "width": 406,
+        "height": 374
+      },
+      "sha256": "18fee0c01b3af08cf24880d6a77f2f43d1a77e13aa00c0af1fb1cbe9bde458a7",
+      "transparentPixelCount": 188256
+    },
+    {
+      "file": "characters/xiaocui/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 55,
+        "top": 287,
+        "width": 401,
+        "height": 209
+      },
+      "sha256": "c69659cc8ea474439eddc106862ff9b69a986897d2e204cf04970a2d851c0e3a",
+      "transparentPixelCount": 211687
+    },
+    {
+      "file": "characters/xiaocui/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 137,
+        "top": 175,
+        "width": 237,
+        "height": 321
+      },
+      "sha256": "c6597c98fe7ddd297989d5e2eeba3731252635a748a9c672a2cc4b5fd7e921a0",
+      "transparentPixelCount": 221383
+    },
+    {
+      "file": "characters/xiaocui/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 146,
+        "top": 152,
+        "width": 220,
+        "height": 344
+      },
+      "sha256": "71bc8fade94a9f3fbcb05020bf302e5d3160fbb0a2bc50753c3e3e0985570436",
+      "transparentPixelCount": 219910
+    },
+    {
+      "file": "characters/xiaocui/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 45,
+        "width": 464,
+        "height": 443
+      },
+      "sha256": "df3c7f3bf44b4c0b41aaed2a04ffbd7ae873324cfa9efba9eb16fed6943938ef",
+      "transparentPixelCount": 110435
+    },
+    {
+      "file": "characters/xiaocui/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 39,
+        "width": 464,
+        "height": 449
+      },
+      "sha256": "245cb0d4bbbc6116963ee695fc9e663cb46bbe9e02354b8d41c59c855e02d43c",
+      "transparentPixelCount": 108200
+    },
+    {
+      "file": "characters/xiaocui/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 27,
+        "width": 464,
+        "height": 461
+      },
+      "sha256": "eb6f37846dc678a983213299c1bedd43269f5abdb0917950b444318a15a270f9",
+      "transparentPixelCount": 103366
+    },
+    {
+      "file": "characters/xiaocui/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 41,
+        "width": 464,
+        "height": 447
+      },
+      "sha256": "ce101c54ad6b697e077c2adfabbfa1f9c803230f63f120817e8a4195c5c319eb",
+      "transparentPixelCount": 107265
+    },
+    {
+      "file": "characters/xiaocui/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 28,
+        "width": 464,
+        "height": 460
+      },
+      "sha256": "31f6e6cefbb2ce2c915289536747c443236e1379964b8209d8495262fcc190f9",
+      "transparentPixelCount": 102568
+    },
+    {
+      "file": "characters/xiaocui/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 69,
+        "top": 61,
+        "width": 1906,
+        "height": 188
+      },
+      "sha256": "a3487a6a2a15dfa25748dfa5493cc1eed7f7d59bfbb4629ab2a72293641667ca",
+      "transparentPixelCount": 424039
+    },
+    {
+      "file": "characters/yuehua/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 147,
+        "top": 181,
+        "width": 218,
+        "height": 315
+      },
+      "sha256": "fb59a994e139e85bd4dd0a2edf431585378e60bbada52cf3d07879e10509b5d0",
+      "transparentPixelCount": 223494
+    },
+    {
+      "file": "characters/yuehua/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 123,
+        "top": 200,
+        "width": 265,
+        "height": 296
+      },
+      "sha256": "c6554435f6e883433d0b9e4699baad344a64af48ed7b5c46cab7a66fc95bcc19",
+      "transparentPixelCount": 222590
+    },
+    {
+      "file": "characters/yuehua/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 134,
+        "top": 220,
+        "width": 243,
+        "height": 276
+      },
+      "sha256": "f8237ea49d91a84ccc569c561632298ba34839bc0f12c6340b05ce164d1b9be6",
+      "transparentPixelCount": 226122
+    },
+    {
+      "file": "characters/yuehua/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 129,
+        "top": 192,
+        "width": 253,
+        "height": 304
+      },
+      "sha256": "a94396a93f5cba582fd6b056b6bbd4facca8d530785f60b4bb60fb5de103dc38",
+      "transparentPixelCount": 223658
+    },
+    {
+      "file": "characters/yuehua/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 95,
+        "top": 197,
+        "width": 322,
+        "height": 299
+      },
+      "sha256": "ee8547ed71971c2d5218e87704abecfe690361b3973592966d2a86a4743017c5",
+      "transparentPixelCount": 221883
+    },
+    {
+      "file": "characters/yuehua/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 81,
+        "top": 335,
+        "width": 350,
+        "height": 161
+      },
+      "sha256": "658b36ee5490a8f6c31e0707753df18650cbaaf8bfb552cc36f362c495e37ac9",
+      "transparentPixelCount": 226108
+    },
+    {
+      "file": "characters/yuehua/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 141,
+        "top": 168,
+        "width": 230,
+        "height": 328
+      },
+      "sha256": "bb2ee3d623b5f4bc779c4282860741923a2500e49ccbd906c1032a72bfc2bfff",
+      "transparentPixelCount": 222333
+    },
+    {
+      "file": "characters/yuehua/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 155,
+        "top": 181,
+        "width": 201,
+        "height": 315
+      },
+      "sha256": "d99131b495f9343b613cc4e37afce970f7c11f8040dd5e127a350c3de8f39696",
+      "transparentPixelCount": 227447
+    },
+    {
+      "file": "characters/yuehua/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 28,
+        "top": 24,
+        "width": 456,
+        "height": 464
+      },
+      "sha256": "dc6d8302a03a1348be3859f5bb722ad78b357c25f2844ea66c3dc45018974740",
+      "transparentPixelCount": 105770
+    },
+    {
+      "file": "characters/yuehua/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 26,
+        "top": 24,
+        "width": 460,
+        "height": 464
+      },
+      "sha256": "d9581682e7cba5de8714137b499f15ba179e7a594b00a3e70b973556f9ef1b66",
+      "transparentPixelCount": 105887
+    },
+    {
+      "file": "characters/yuehua/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 28,
+        "top": 24,
+        "width": 455,
+        "height": 464
+      },
+      "sha256": "2ef134d270346e6fee1084459822813db586c9241872110888a20dcba40f07d0",
+      "transparentPixelCount": 106005
+    },
+    {
+      "file": "characters/yuehua/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 30,
+        "top": 24,
+        "width": 451,
+        "height": 464
+      },
+      "sha256": "40f83193227ceae2216ddbd46a4fc6582d6daa4ca40b6f58117544441a0d1a24",
+      "transparentPixelCount": 106165
+    },
+    {
+      "file": "characters/yuehua/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 25,
+        "top": 24,
+        "width": 462,
+        "height": 464
+      },
+      "sha256": "e1f66e4e00aace090b33b4bc6a83c0551318a0bb38dcb2297d26f1eb567b6000",
+      "transparentPixelCount": 105416
+    },
+    {
+      "file": "characters/yuehua/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 74,
+        "top": 84,
+        "width": 1896,
+        "height": 165
+      },
+      "sha256": "2e88e045088702bda48b6aa41f249e8dc07f2b2c04a7f106f76c12e04b389096",
+      "transparentPixelCount": 445394
+    },
+    {
+      "file": "characters/aming/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 148,
+        "top": 182,
+        "width": 215,
+        "height": 314
+      },
+      "sha256": "4a536da5356229c1d316f4e6bd9c52e1f0521cf3d4840104be2689d480cb031d",
+      "transparentPixelCount": 227761
+    },
+    {
+      "file": "characters/aming/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 109,
+        "top": 183,
+        "width": 294,
+        "height": 313
+      },
+      "sha256": "18faca4f9ce23cfcdda1561948b71496c4e104a10b0ab784808616af5f772b76",
+      "transparentPixelCount": 225079
+    },
+    {
+      "file": "characters/aming/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 138,
+        "top": 167,
+        "width": 236,
+        "height": 329
+      },
+      "sha256": "86284f3f1fc62628d87acb449ae5803b198794a930d5bf57828622d9574a919c",
+      "transparentPixelCount": 225092
+    },
+    {
+      "file": "characters/aming/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 125,
+        "top": 131,
+        "width": 262,
+        "height": 365
+      },
+      "sha256": "b0a239af79098dff3187eb37f2e6b342054de5e4d4506fdc1c09b9a95ea37c40",
+      "transparentPixelCount": 224243
+    },
+    {
+      "file": "characters/aming/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 111,
+        "top": 165,
+        "width": 289,
+        "height": 331
+      },
+      "sha256": "fa7639b3ace638ac080cceded69b623bb53206404946cf938f35c0235b710b66",
+      "transparentPixelCount": 219978
+    },
+    {
+      "file": "characters/aming/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 71,
+        "top": 299,
+        "width": 369,
+        "height": 197
+      },
+      "sha256": "033c043f443c15e4c98df6fae2031d1eb5220152ed638083ac3564d67401c291",
+      "transparentPixelCount": 229004
+    },
+    {
+      "file": "characters/aming/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 146,
+        "top": 170,
+        "width": 220,
+        "height": 326
+      },
+      "sha256": "4a2dea7017bcd1472fac6d06fa0bc829daa45817517c9c4096efa84f642df6f4",
+      "transparentPixelCount": 227467
+    },
+    {
+      "file": "characters/aming/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 159,
+        "top": 176,
+        "width": 194,
+        "height": 320
+      },
+      "sha256": "88c50c58fd726a501d5cc9aa88920323fec1d2cc2045848defa20c9bef2ec2f3",
+      "transparentPixelCount": 228857
+    },
+    {
+      "file": "characters/aming/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 26,
+        "top": 24,
+        "width": 459,
+        "height": 463
+      },
+      "sha256": "81ba9b573402a78a5d5f48edb230de58ef0fe4dc7c461f3c687a3a348a5b36c7",
+      "transparentPixelCount": 124530
+    },
+    {
+      "file": "characters/aming/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 28,
+        "width": 464,
+        "height": 460
+      },
+      "sha256": "a9ae49c327a76f1328a1afcb8897d6ad8d6734c7a4fc36cf9dacc3652dcdf0dd",
+      "transparentPixelCount": 125290
+    },
+    {
+      "file": "characters/aming/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 25,
+        "width": 464,
+        "height": 463
+      },
+      "sha256": "dc32e7f74681e20a78a00fed38b91c8ef939742bae90ab4d967e07e793e9bdca",
+      "transparentPixelCount": 126065
+    },
+    {
+      "file": "characters/aming/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 25,
+        "top": 24,
+        "width": 462,
+        "height": 464
+      },
+      "sha256": "9a2d4fb8fc3adef08009ab1c1ea92e47190b6e7b5f57142ec06050b518ac6250",
+      "transparentPixelCount": 122603
+    },
+    {
+      "file": "characters/aming/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 36,
+        "width": 464,
+        "height": 451
+      },
+      "sha256": "ff3cfbbd85079cffe13617e958c4c0876ef8e4102fcf1756bc64b1d24937a5a1",
+      "transparentPixelCount": 125951
+    },
+    {
+      "file": "characters/aming/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 74,
+        "top": 65,
+        "width": 1895,
+        "height": 183
+      },
+      "sha256": "2ba7ac2e97a9df971d0c78ee1b0f822ca072626a02b4c62e94efe0fb5549c08f",
+      "transparentPixelCount": 447492
+    },
+    {
+      "file": "characters/tangtang/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 164,
+        "top": 188,
+        "width": 184,
+        "height": 308
+      },
+      "sha256": "b01332b031462c16473d5903c242655fb1845b6d6107341bc2452efb90d80baa",
+      "transparentPixelCount": 230393
+    },
+    {
+      "file": "characters/tangtang/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 121,
+        "top": 192,
+        "width": 269,
+        "height": 304
+      },
+      "sha256": "373db7c914d473c1166fc4ee7c38e086c008f3ecf6ed1d08219c0ccfb8ffdc70",
+      "transparentPixelCount": 228494
+    },
+    {
+      "file": "characters/tangtang/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 161,
+        "top": 183,
+        "width": 189,
+        "height": 313
+      },
+      "sha256": "896f3a5f6df2ab95d1013e165dbeec94a176252b328a11a723e43011097625cd",
+      "transparentPixelCount": 229308
+    },
+    {
+      "file": "characters/tangtang/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 150,
+        "top": 183,
+        "width": 212,
+        "height": 313
+      },
+      "sha256": "63543e7bdf8985f8391b45d491ee0a5fed082a6cd012237a5fa59e934a8fcec7",
+      "transparentPixelCount": 231460
+    },
+    {
+      "file": "characters/tangtang/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 116,
+        "top": 171,
+        "width": 280,
+        "height": 325
+      },
+      "sha256": "03d7e28bfecdaac9b2362b1f14ee192525203a47821e83697d0e59346704a63a",
+      "transparentPixelCount": 221430
+    },
+    {
+      "file": "characters/tangtang/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 65,
+        "top": 316,
+        "width": 382,
+        "height": 180
+      },
+      "sha256": "31cddf5cdff0cd9393aeb98cf82ed07fbff028d629615229006afc0a97ea4104",
+      "transparentPixelCount": 228533
+    },
+    {
+      "file": "characters/tangtang/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 166,
+        "top": 165,
+        "width": 180,
+        "height": 331
+      },
+      "sha256": "2f9080e6148449134d8148c197126bc778eb5e1c820c79110bcbe1ced38ebcb0",
+      "transparentPixelCount": 229731
+    },
+    {
+      "file": "characters/tangtang/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 179,
+        "top": 168,
+        "width": 154,
+        "height": 328
+      },
+      "sha256": "e6de2be4f1d305d3159a64fd5311919e7b0bfeb96793c8c8dfb383154bbe7c13",
+      "transparentPixelCount": 234882
+    },
+    {
+      "file": "characters/tangtang/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 47,
+        "top": 24,
+        "width": 417,
+        "height": 464
+      },
+      "sha256": "dd0c8f639300b7dbd8462ea07ffe940da9406f2c20d7fec85da4dffc68d7a2fc",
+      "transparentPixelCount": 118712
+    },
+    {
+      "file": "characters/tangtang/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 45,
+        "top": 24,
+        "width": 421,
+        "height": 464
+      },
+      "sha256": "2c0d75eb420d81a485ac4b6f9f91c8a1cdf07fec0619fa46e6f1f1cbaf540a86",
+      "transparentPixelCount": 117301
+    },
+    {
+      "file": "characters/tangtang/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 48,
+        "top": 24,
+        "width": 415,
+        "height": 464
+      },
+      "sha256": "9de731939d793295bd3a694bc72b290d00135ccea58fa8eb212480671e305661",
+      "transparentPixelCount": 117377
+    },
+    {
+      "file": "characters/tangtang/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 47,
+        "top": 24,
+        "width": 418,
+        "height": 464
+      },
+      "sha256": "fbe4f850308c2ed95c6b9f49abc78d114ddf4aa3e55805993f7c8522241b450b",
+      "transparentPixelCount": 119452
+    },
+    {
+      "file": "characters/tangtang/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 49,
+        "top": 24,
+        "width": 414,
+        "height": 464
+      },
+      "sha256": "7d5d95042dee4b381f60c2a6828c2fb133c78e36a58044a9705d68c2fade2671",
+      "transparentPixelCount": 120016
+    },
+    {
+      "file": "characters/tangtang/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 82,
+        "top": 82,
+        "width": 1877,
+        "height": 166
+      },
+      "sha256": "d4bc3ca80eb93dba43429a300440fa52388b810cc821a2c33cbac789678e65eb",
+      "transparentPixelCount": 455146
+    },
+    {
+      "file": "characters/xiaochun/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 138,
+        "top": 143,
+        "width": 236,
+        "height": 353
+      },
+      "sha256": "bd7190b361238ae597b8f359a1ccb7943f156ec4199725ef91e84e6240244f20",
+      "transparentPixelCount": 215225
+    },
+    {
+      "file": "characters/xiaochun/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 127,
+        "top": 179,
+        "width": 258,
+        "height": 317
+      },
+      "sha256": "129ac53942c5a451a02cf18d9f855c5f4ffca1edd353d83192ec2cf5e1d34f0d",
+      "transparentPixelCount": 219045
+    },
+    {
+      "file": "characters/xiaochun/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 135,
+        "top": 183,
+        "width": 241,
+        "height": 313
+      },
+      "sha256": "39669b779aed5cae3b4a8f5c6330619e11351de9e2322727268eb65247a8926d",
+      "transparentPixelCount": 219856
+    },
+    {
+      "file": "characters/xiaochun/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 89,
+        "top": 146,
+        "width": 333,
+        "height": 350
+      },
+      "sha256": "4eec3632e5f6834dc11c582907b2523359d41d3435c1b829eb632e64ed4a6a78",
+      "transparentPixelCount": 205639
+    },
+    {
+      "file": "characters/xiaochun/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 87,
+        "top": 156,
+        "width": 337,
+        "height": 340
+      },
+      "sha256": "4cf4eb5b55740352a6a36a190463797eceba5042f453a8fc82ce4b20cc251a6d",
+      "transparentPixelCount": 209791
+    },
+    {
+      "file": "characters/xiaochun/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 52,
+        "top": 286,
+        "width": 408,
+        "height": 210
+      },
+      "sha256": "6dae1c38a2bb0f1e125c391429ec5dadbdf18ea9907c4ceb1a4ee1201e4a3960",
+      "transparentPixelCount": 211178
+    },
+    {
+      "file": "characters/xiaochun/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 120,
+        "top": 161,
+        "width": 272,
+        "height": 335
+      },
+      "sha256": "45c740065dd1e50bb3367cf84fdf8720e0eb54ce0dd6a2e8b3e10a36a5ff872c",
+      "transparentPixelCount": 217328
+    },
+    {
+      "file": "characters/xiaochun/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 108,
+        "top": 178,
+        "width": 296,
+        "height": 318
+      },
+      "sha256": "15ab6b2ca23c6ba673269840980be43fdffb307be5aec0c93b2d29ce9440ba3f",
+      "transparentPixelCount": 205959
+    },
+    {
+      "file": "characters/xiaochun/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 26,
+        "width": 464,
+        "height": 462
+      },
+      "sha256": "70195043cc2b281506c031f163df164ac1080f23538708287af5f7a37a59fd94",
+      "transparentPixelCount": 104881
+    },
+    {
+      "file": "characters/xiaochun/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 28,
+        "top": 24,
+        "width": 455,
+        "height": 464
+      },
+      "sha256": "db9facb9958950f63a7c5b3ea216cbaaf70b1170b6f40ad9ade52fe0e6757b79",
+      "transparentPixelCount": 105451
+    },
+    {
+      "file": "characters/xiaochun/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 29,
+        "width": 464,
+        "height": 459
+      },
+      "sha256": "6c313f368b4c5c7fda1c13c985707189938463fc7f6428bdaea00dc0532ec115",
+      "transparentPixelCount": 108425
+    },
+    {
+      "file": "characters/xiaochun/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 25,
+        "top": 24,
+        "width": 462,
+        "height": 464
+      },
+      "sha256": "fee0088ac3c3ffecd82df5896072ac7993e69a0166e00fa4907555face0a7a04",
+      "transparentPixelCount": 105225
+    },
+    {
+      "file": "characters/xiaochun/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 24,
+        "width": 463,
+        "height": 464
+      },
+      "sha256": "1bb10ef3e69d174b54ca1eb607d784b89785d8b25b81e08892db0c7ae6d3564f",
+      "transparentPixelCount": 105677
+    },
+    {
+      "file": "characters/xiaochun/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 69,
+        "top": 71,
+        "width": 1925,
+        "height": 178
+      },
+      "sha256": "ec3af1c72365085685e5d39ea3f154481b8b8076cd821089104c633c769f28e3",
+      "transparentPixelCount": 422018
+    },
+    {
+      "file": "characters/lanjie/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 158,
+        "top": 162,
+        "width": 196,
+        "height": 334
+      },
+      "sha256": "9e8b4f507169073620d52d3caa7fa9ba85ba34cdb801286964b52a0d1e40b833",
+      "transparentPixelCount": 228642
+    },
+    {
+      "file": "characters/lanjie/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 117,
+        "top": 172,
+        "width": 277,
+        "height": 324
+      },
+      "sha256": "e26c4b536a3a8629f03c51c2e52ba1ce16f6d72ad090bd8a5daf96c7272b9b8f",
+      "transparentPixelCount": 230360
+    },
+    {
+      "file": "characters/lanjie/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 153,
+        "top": 144,
+        "width": 205,
+        "height": 352
+      },
+      "sha256": "1ecc2fef2c81ce75dc601dea5116d96208bc4f47cba1d96f1ce31d8bc772d8ff",
+      "transparentPixelCount": 230585
+    },
+    {
+      "file": "characters/lanjie/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 135,
+        "top": 41,
+        "width": 242,
+        "height": 455
+      },
+      "sha256": "ca9145a5883ee5854baaa141b3a58fa18ab7b6961f8810dcb49eeb8dc053af94",
+      "transparentPixelCount": 217760
+    },
+    {
+      "file": "characters/lanjie/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 101,
+        "top": 164,
+        "width": 309,
+        "height": 332
+      },
+      "sha256": "61f1aa5661087cd6e20261b997fc702c105fe269229d6298cb072ed807baa236",
+      "transparentPixelCount": 227830
+    },
+    {
+      "file": "characters/lanjie/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 70,
+        "top": 285,
+        "width": 372,
+        "height": 211
+      },
+      "sha256": "4ca46e69cff3e68ec1e22aab1d848f8ff348a495357bda1a4312ec2efbd43e65",
+      "transparentPixelCount": 227150
+    },
+    {
+      "file": "characters/lanjie/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 155,
+        "top": 162,
+        "width": 202,
+        "height": 334
+      },
+      "sha256": "ef4f2c364d46d79a595d4a926d41ecd36770eb588dcbe83248132201d2b92a1b",
+      "transparentPixelCount": 229233
+    },
+    {
+      "file": "characters/lanjie/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 170,
+        "top": 169,
+        "width": 171,
+        "height": 327
+      },
+      "sha256": "c657064a8a301b37039e8fdb90461fb67311c44663761ce2b2a41efc0c09597d",
+      "transparentPixelCount": 233907
+    },
+    {
+      "file": "characters/lanjie/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 63,
+        "top": 24,
+        "width": 386,
+        "height": 464
+      },
+      "sha256": "588a84ba287d60880dfc0138728bb649256d7c5cd301ab2f88a182d332c55eb4",
+      "transparentPixelCount": 129739
+    },
+    {
+      "file": "characters/lanjie/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 59,
+        "top": 24,
+        "width": 393,
+        "height": 464
+      },
+      "sha256": "9917e29ef33e60913ecd1bdc23dd6ef0880d891dfb23940a6c49d72e6c3d5f37",
+      "transparentPixelCount": 126830
+    },
+    {
+      "file": "characters/lanjie/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 60,
+        "top": 24,
+        "width": 392,
+        "height": 464
+      },
+      "sha256": "ad15efffd57b6778b71068a7b16b6e13d91aa0f2afb15613c300ce37a979fba8",
+      "transparentPixelCount": 128086
+    },
+    {
+      "file": "characters/lanjie/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 63,
+        "top": 24,
+        "width": 386,
+        "height": 464
+      },
+      "sha256": "a7bdaf98f004cf0996f30204f2704b908d65c3fb0b9ec5715c62058cac086e6a",
+      "transparentPixelCount": 129532
+    },
+    {
+      "file": "characters/lanjie/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 62,
+        "top": 24,
+        "width": 387,
+        "height": 464
+      },
+      "sha256": "0a16e7dbafa53590c2831d2d40452c107134822387abfad3d07aecd6d5dbbc25",
+      "transparentPixelCount": 129793
+    },
+    {
+      "file": "characters/lanjie/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 79,
+        "top": 20,
+        "width": 1884,
+        "height": 229
+      },
+      "sha256": "a8552b7617e8eb0dcf7b88c55e7fae1e3eb33b56cb39949509147e052d324e11",
+      "transparentPixelCount": 452872
+    },
+    {
+      "file": "characters/01-wolf/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 129,
+        "top": 167,
+        "width": 254,
+        "height": 329
+      },
+      "sha256": "fd23fcbdcf81def8f6d285176a6d6e5f5559cfbf39c91e22bdb5e857372eaee0",
+      "transparentPixelCount": 222299
+    },
+    {
+      "file": "characters/01-wolf/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 100,
+        "top": 173,
+        "width": 312,
+        "height": 323
+      },
+      "sha256": "36803af93ed913c424e589fc69521f866b5cf174408c8ca5488c276fceb2ff92",
+      "transparentPixelCount": 217581
+    },
+    {
+      "file": "characters/01-wolf/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 96,
+        "top": 163,
+        "width": 319,
+        "height": 333
+      },
+      "sha256": "8e98542155c04a001601910c18dcf5d1a5bee520bcd0147e1a1e54931c0aab21",
+      "transparentPixelCount": 218441
+    },
+    {
+      "file": "characters/01-wolf/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 111,
+        "top": 44,
+        "width": 290,
+        "height": 452
+      },
+      "sha256": "0b9d86e29c2869f7924b5f9d00028111dc8307e96b70a25f9dfb38ce80449e2d",
+      "transparentPixelCount": 202362
+    },
+    {
+      "file": "characters/01-wolf/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 92,
+        "top": 144,
+        "width": 327,
+        "height": 352
+      },
+      "sha256": "f67beb411c6063eb9cc8873c2b10c9e717f5bbf9bf184b6b45fa97968e63aa0e",
+      "transparentPixelCount": 211824
+    },
+    {
+      "file": "characters/01-wolf/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 71,
+        "top": 291,
+        "width": 370,
+        "height": 205
+      },
+      "sha256": "03a3a712434d3f76c8b7196e89de1c98d34aad6a242710ecc6e353aac404737d",
+      "transparentPixelCount": 224138
+    },
+    {
+      "file": "characters/01-wolf/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 132,
+        "top": 153,
+        "width": 248,
+        "height": 343
+      },
+      "sha256": "7027e6f967173265e82412aa815079c16fdfc0c6bc3ef9c5377631d399be5bf2",
+      "transparentPixelCount": 221914
+    },
+    {
+      "file": "characters/01-wolf/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 126,
+        "top": 168,
+        "width": 260,
+        "height": 328
+      },
+      "sha256": "084e00e1e8297ddc62866368f7e102d9616c7ce3c9fdb8e6d4e1878c1504d28e",
+      "transparentPixelCount": 221226
+    },
+    {
+      "file": "characters/01-wolf/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 51,
+        "top": 24,
+        "width": 409,
+        "height": 464
+      },
+      "sha256": "4a01b86b42bca3d59bf6772c76a9ca681dec57272a64b4a3972653e9adacbdcf",
+      "transparentPixelCount": 131088
+    },
+    {
+      "file": "characters/01-wolf/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 47,
+        "top": 24,
+        "width": 418,
+        "height": 464
+      },
+      "sha256": "a09114d55754a2022e41e5aebc3dce8f83a764f32ec5665988367490a8fad48c",
+      "transparentPixelCount": 125621
+    },
+    {
+      "file": "characters/01-wolf/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 46,
+        "top": 24,
+        "width": 419,
+        "height": 464
+      },
+      "sha256": "dfd73af775e1643e2b00b93b4c5025ee2b1debbff90ab5b2b3b2880371929392",
+      "transparentPixelCount": 128043
+    },
+    {
+      "file": "characters/01-wolf/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 47,
+        "top": 24,
+        "width": 417,
+        "height": 464
+      },
+      "sha256": "588737814aab7230e438473d04550001c109ff161f48756f238cc19c9fc751c8",
+      "transparentPixelCount": 126743
+    },
+    {
+      "file": "characters/01-wolf/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 49,
+        "top": 24,
+        "width": 413,
+        "height": 464
+      },
+      "sha256": "325104fd502a401654cb948b378d99fd7248f41a94ff35a8d20ac9aa4499bf50",
+      "transparentPixelCount": 131008
+    },
+    {
+      "file": "characters/01-wolf/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 64,
+        "top": 22,
+        "width": 1921,
+        "height": 227
+      },
+      "sha256": "03a354c98684d226e21b8ff52100d99f7345b6302d2965924d4880e897f3447d",
+      "transparentPixelCount": 432325
+    },
+    {
+      "file": "characters/02-gambler/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 174,
+        "top": 229,
+        "width": 163,
+        "height": 267
+      },
+      "sha256": "b5031370bb489f3f62b7f732a94181df648f30dc930dc12c50f28bfaedcd9106",
+      "transparentPixelCount": 236713
+    },
+    {
+      "file": "characters/02-gambler/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 148,
+        "top": 244,
+        "width": 216,
+        "height": 252
+      },
+      "sha256": "e69f81fee8affb15da4444aa478b1cb80ee1246384700bc4c04db5906a1aaa51",
+      "transparentPixelCount": 234438
+    },
+    {
+      "file": "characters/02-gambler/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 168,
+        "top": 233,
+        "width": 176,
+        "height": 263
+      },
+      "sha256": "ac8465a1efd13ee4a7255143f8415d72ddad605a25bdd3e24669bcc0a7bf59f4",
+      "transparentPixelCount": 236215
+    },
+    {
+      "file": "characters/02-gambler/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 149,
+        "top": 166,
+        "width": 214,
+        "height": 330
+      },
+      "sha256": "8aa47219438c3241b4dd71d5c583253f4fbca105a8d7b7779cbeda5c6837c2e8",
+      "transparentPixelCount": 230861
+    },
+    {
+      "file": "characters/02-gambler/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 115,
+        "top": 204,
+        "width": 281,
+        "height": 292
+      },
+      "sha256": "b0ec1a9ced6b6fedfa7603bc6ca8f6ac241d5ae791ff1410b9b093eb9208f3c2",
+      "transparentPixelCount": 224238
+    },
+    {
+      "file": "characters/02-gambler/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 102,
+        "top": 333,
+        "width": 307,
+        "height": 163
+      },
+      "sha256": "6c935a415edab91195e8d518a83aea3d81c5b030856aa547f50f84f16018bbfd",
+      "transparentPixelCount": 235599
+    },
+    {
+      "file": "characters/02-gambler/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 167,
+        "top": 200,
+        "width": 177,
+        "height": 296
+      },
+      "sha256": "08a02e1079ebd62a9ffa30016862d127ca4efe302f953af3b846ea46ae4b7691",
+      "transparentPixelCount": 230359
+    },
+    {
+      "file": "characters/02-gambler/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 154,
+        "top": 246,
+        "width": 203,
+        "height": 250
+      },
+      "sha256": "c5fa0530cd590191ad91b92e3907ab51e20a8242f29bf1f5973a7582b8961543",
+      "transparentPixelCount": 231731
+    },
+    {
+      "file": "characters/02-gambler/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 33,
+        "width": 464,
+        "height": 455
+      },
+      "sha256": "4e3eefdeea135b82b446da3dc31e60413c8dceee88fb1667d0c224c399e5d658",
+      "transparentPixelCount": 123372
+    },
+    {
+      "file": "characters/02-gambler/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 39,
+        "width": 464,
+        "height": 449
+      },
+      "sha256": "4d0c8a6a7aa29bf59d2251c787d04e9210b865761171699e4dd3824cbbe2c76a",
+      "transparentPixelCount": 126834
+    },
+    {
+      "file": "characters/02-gambler/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 30,
+        "width": 464,
+        "height": 458
+      },
+      "sha256": "be5b351e0175071e65273d439ea99934e4569bdc849d48c7418fb36acf3f1284",
+      "transparentPixelCount": 121569
+    },
+    {
+      "file": "characters/02-gambler/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 25,
+        "width": 464,
+        "height": 463
+      },
+      "sha256": "64e617bf80015209613922209daf6aa73d651dcf7491a2c120ece60276615764",
+      "transparentPixelCount": 119818
+    },
+    {
+      "file": "characters/02-gambler/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 24,
+        "top": 35,
+        "width": 464,
+        "height": 453
+      },
+      "sha256": "2e279865cdffc5bee935b8d903e3963348e8210df2df46cdac8cb86ef1338917",
+      "transparentPixelCount": 126157
+    },
+    {
+      "file": "characters/02-gambler/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 87,
+        "top": 83,
+        "width": 1884,
+        "height": 165
+      },
+      "sha256": "942ccd69b8fd926ef2fd97b587c58fcdfe5e41bb03b9a3781f4c788f0f3fccb4",
+      "transparentPixelCount": 461594
+    },
+    {
+      "file": "characters/03-prince/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 171,
+        "top": 212,
+        "width": 170,
+        "height": 284
+      },
+      "sha256": "3c6021501bbe9fb34826f2e961ed1707b19b47465d628e5073ea5a288ff7df09",
+      "transparentPixelCount": 234862
+    },
+    {
+      "file": "characters/03-prince/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 134,
+        "top": 228,
+        "width": 243,
+        "height": 268
+      },
+      "sha256": "e627c88a5c7717e5b78cb0e777af5db89e30e7b29a8736f03d2ef437ca9dafdc",
+      "transparentPixelCount": 232028
+    },
+    {
+      "file": "characters/03-prince/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 160,
+        "top": 220,
+        "width": 192,
+        "height": 276
+      },
+      "sha256": "f8a6f3d7c4dfdcf8783e5d70e4a4d6676e481adf2720e79a7b3684ea7a3bbbab",
+      "transparentPixelCount": 234418
+    },
+    {
+      "file": "characters/03-prince/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 154,
+        "top": 167,
+        "width": 204,
+        "height": 329
+      },
+      "sha256": "7fe3b1e48f91ecb6a453e91bd17912201470853777c727cd1e34f770c35b240e",
+      "transparentPixelCount": 230080
+    },
+    {
+      "file": "characters/03-prince/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 100,
+        "top": 210,
+        "width": 311,
+        "height": 286
+      },
+      "sha256": "f604050b2d6fb27d9ca0064d6d98d8d76ca8ba56617a638ed9518961f0629f2a",
+      "transparentPixelCount": 224190
+    },
+    {
+      "file": "characters/03-prince/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 107,
+        "top": 327,
+        "width": 297,
+        "height": 169
+      },
+      "sha256": "59806bd674259404107c39d91670682025a56853f952b9870668e970c80a35f3",
+      "transparentPixelCount": 236476
+    },
+    {
+      "file": "characters/03-prince/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 166,
+        "top": 188,
+        "width": 180,
+        "height": 308
+      },
+      "sha256": "c2009e9b2079b2710b3f1c926a820540e2d21a6f7dae907bd539dd6cb20dfd46",
+      "transparentPixelCount": 230717
+    },
+    {
+      "file": "characters/03-prince/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 154,
+        "top": 245,
+        "width": 203,
+        "height": 251
+      },
+      "sha256": "e4d4cd8fbe66c40e52d5fbcea864b3b64fb33fca236e9574aa018422a289d0ac",
+      "transparentPixelCount": 232001
+    },
+    {
+      "file": "characters/03-prince/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 37,
+        "top": 24,
+        "width": 437,
+        "height": 464
+      },
+      "sha256": "900fd9b24a81fa74e8c40dbdd4f64d80655600cf9b0ac95245d2ab3d60083bf5",
+      "transparentPixelCount": 131737
+    },
+    {
+      "file": "characters/03-prince/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 33,
+        "top": 24,
+        "width": 446,
+        "height": 464
+      },
+      "sha256": "b2ef4c0edd074c3018d0b74a84559dc03545cdbf531a7300bae197d2c3d8d18b",
+      "transparentPixelCount": 130927
+    },
+    {
+      "file": "characters/03-prince/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 32,
+        "top": 24,
+        "width": 447,
+        "height": 464
+      },
+      "sha256": "b0c77b307774ac8b94292b76714c2a1e19fc439b11a91dbbffb78b53843501f3",
+      "transparentPixelCount": 129443
+    },
+    {
+      "file": "characters/03-prince/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 40,
+        "top": 24,
+        "width": 432,
+        "height": 464
+      },
+      "sha256": "05aa02978cbbb849848487a428038d3f9f9e47dd93c3f46f62ee9a950b2dd01a",
+      "transparentPixelCount": 131311
+    },
+    {
+      "file": "characters/03-prince/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 37,
+        "top": 24,
+        "width": 438,
+        "height": 464
+      },
+      "sha256": "0c5d59748ba40d7628935d6f504f2766ba94c960d94dd630a9819f44d94f85a3",
+      "transparentPixelCount": 132354
+    },
+    {
+      "file": "characters/03-prince/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 85,
+        "top": 83,
+        "width": 1886,
+        "height": 165
+      },
+      "sha256": "ac736abeae198fb5717c76358419c82b978b5364366c77aef38c5e6c6852f8d0",
+      "transparentPixelCount": 460487
+    },
+    {
+      "file": "characters/04-adventurer/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 166,
+        "top": 203,
+        "width": 179,
+        "height": 293
+      },
+      "sha256": "5bf9eeaa274f93b68fb5dcf45030afcf8511e2b8856cd5c3fda733c38e94b26c",
+      "transparentPixelCount": 231796
+    },
+    {
+      "file": "characters/04-adventurer/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 142,
+        "top": 236,
+        "width": 227,
+        "height": 260
+      },
+      "sha256": "34ea25d96ccdf12711e24f7a48b47af0f2f64d37c360c3a310ea2eadf638a6b8",
+      "transparentPixelCount": 233509
+    },
+    {
+      "file": "characters/04-adventurer/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 157,
+        "top": 219,
+        "width": 197,
+        "height": 277
+      },
+      "sha256": "cc8edde8cce780043e99061549ee1b44cc7f15e68e66831c860098d9c603eea4",
+      "transparentPixelCount": 230852
+    },
+    {
+      "file": "characters/04-adventurer/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 131,
+        "top": 141,
+        "width": 250,
+        "height": 355
+      },
+      "sha256": "6fa6d794fd3f4419d570ddf2e1ed1efb61a917cac8772ad689a244145fc9466e",
+      "transparentPixelCount": 225087
+    },
+    {
+      "file": "characters/04-adventurer/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 112,
+        "top": 211,
+        "width": 288,
+        "height": 285
+      },
+      "sha256": "f49e0a2621b2dd1de9e09a48dae0ffdc0658c20ae38c0781a25decf932c9ab82",
+      "transparentPixelCount": 221724
+    },
+    {
+      "file": "characters/04-adventurer/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 100,
+        "top": 327,
+        "width": 311,
+        "height": 169
+      },
+      "sha256": "ab42900f9227b2c293e0707622f71ee67d4b579f4a6f1573f48dc75a1ad2a2c8",
+      "transparentPixelCount": 235351
+    },
+    {
+      "file": "characters/04-adventurer/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 162,
+        "top": 186,
+        "width": 187,
+        "height": 310
+      },
+      "sha256": "d6e3169b2e2d383dd0698c59e0ca5463ec660737eada650ba79c7428175d4065",
+      "transparentPixelCount": 227857
+    },
+    {
+      "file": "characters/04-adventurer/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 157,
+        "top": 241,
+        "width": 197,
+        "height": 255
+      },
+      "sha256": "49d79a7d737c87b90c47a608e5862f3cda090fe0fbeb9909481315736481b526",
+      "transparentPixelCount": 233448
+    },
+    {
+      "file": "characters/04-adventurer/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 38,
+        "top": 24,
+        "width": 436,
+        "height": 464
+      },
+      "sha256": "fdbd9197aed8abc1064b2be6ed8e41020d77bf4e18d98951c4535c231e5092d4",
+      "transparentPixelCount": 119190
+    },
+    {
+      "file": "characters/04-adventurer/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 36,
+        "top": 24,
+        "width": 440,
+        "height": 464
+      },
+      "sha256": "ca6e6b46fe6f561d185711313254595129a44b536ef3b2d2dd80e45c523b46d6",
+      "transparentPixelCount": 118913
+    },
+    {
+      "file": "characters/04-adventurer/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 37,
+        "top": 24,
+        "width": 438,
+        "height": 464
+      },
+      "sha256": "4e23fec10102f55f0fc79a3563f18be124dbf4fcc7d7e264cd65cd79202a6cfc",
+      "transparentPixelCount": 121219
+    },
+    {
+      "file": "characters/04-adventurer/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 39,
+        "top": 24,
+        "width": 433,
+        "height": 464
+      },
+      "sha256": "800f2a31276f5a647e71629141d051255e99ec466b33a292a5c7b0e210911910",
+      "transparentPixelCount": 121568
+    },
+    {
+      "file": "characters/04-adventurer/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 36,
+        "top": 24,
+        "width": 439,
+        "height": 464
+      },
+      "sha256": "828533bd8882d29244f64aeb42487d5d693e12ea7e3c722879f502b52d2c2b91",
+      "transparentPixelCount": 119529
+    },
+    {
+      "file": "characters/04-adventurer/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 83,
+        "top": 70,
+        "width": 1886,
+        "height": 178
+      },
+      "sha256": "68ae6a9c4ce193c5fc6aad337a1c070d1be0a4e8b643f47a1f915985a221e8f0",
+      "transparentPixelCount": 456786
+    },
+    {
+      "file": "characters/ayi/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 163,
+        "top": 168,
+        "width": 186,
+        "height": 328
+      },
+      "sha256": "9075e2acf5dd2f3c394510e730e858ff456ee5299465e6cd226e3373e65bbd13",
+      "transparentPixelCount": 232124
+    },
+    {
+      "file": "characters/ayi/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 137,
+        "top": 175,
+        "width": 237,
+        "height": 321
+      },
+      "sha256": "6df2a11ae70d1dd932c6f7eb1ed77ffd15815ddbc89ccd19ca246fd2aa71ff14",
+      "transparentPixelCount": 229581
+    },
+    {
+      "file": "characters/ayi/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 157,
+        "top": 227,
+        "width": 198,
+        "height": 269
+      },
+      "sha256": "544cffc5cff74799959b5c4e900906ef47739f769fab4564f06fb4747c5ec78a",
+      "transparentPixelCount": 234817
+    },
+    {
+      "file": "characters/ayi/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 155,
+        "top": 155,
+        "width": 201,
+        "height": 341
+      },
+      "sha256": "5295d87d6301529f9f6e98447547ae86662e9992ff85c27882089154661a9431",
+      "transparentPixelCount": 225738
+    },
+    {
+      "file": "characters/ayi/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 101,
+        "top": 166,
+        "width": 309,
+        "height": 330
+      },
+      "sha256": "5be6ced394d95032a04724109eb241bb451f703a3968a646bcd96c1cc2fa22ad",
+      "transparentPixelCount": 227918
+    },
+    {
+      "file": "characters/ayi/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 64,
+        "top": 304,
+        "width": 384,
+        "height": 192
+      },
+      "sha256": "f2ad34720ec63493ce33756e2a6de70a0a71351287ab3c317236e8d4831e9e60",
+      "transparentPixelCount": 227318
+    },
+    {
+      "file": "characters/ayi/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 170,
+        "top": 185,
+        "width": 171,
+        "height": 311
+      },
+      "sha256": "eb61379e4a393188d8fc4564d2e3fb70be6fd9f1379af55b3fce8ad93aec35e1",
+      "transparentPixelCount": 234361
+    },
+    {
+      "file": "characters/ayi/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 160,
+        "top": 251,
+        "width": 191,
+        "height": 245
+      },
+      "sha256": "eea4199b6d5f7f39a6470566956ae26c2466a175ae049b913935ae8a2b8f2fd8",
+      "transparentPixelCount": 235230
+    },
+    {
+      "file": "characters/ayi/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 44,
+        "top": 24,
+        "width": 424,
+        "height": 464
+      },
+      "sha256": "53719bfd4fbadea75537268d080bd1e551f1be76b1dca0a29e643d06f810fa63",
+      "transparentPixelCount": 135607
+    },
+    {
+      "file": "characters/ayi/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 43,
+        "top": 24,
+        "width": 426,
+        "height": 464
+      },
+      "sha256": "a807c604b6a75d0bfdd49a92ef6193774767360f6eb8dc070fccd33c42a92eca",
+      "transparentPixelCount": 135627
+    },
+    {
+      "file": "characters/ayi/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 50,
+        "top": 24,
+        "width": 412,
+        "height": 464
+      },
+      "sha256": "bf027b4f4df26bf998e3d9fde56fbcfe7331cb69aa276430b32528836d1a5288",
+      "transparentPixelCount": 139491
+    },
+    {
+      "file": "characters/ayi/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 51,
+        "top": 24,
+        "width": 410,
+        "height": 464
+      },
+      "sha256": "6d3fbae123485132ed0bb1b3ae4be23e6372f3a125c10054daf71e958679ab22",
+      "transparentPixelCount": 137930
+    },
+    {
+      "file": "characters/ayi/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 48,
+        "top": 24,
+        "width": 415,
+        "height": 464
+      },
+      "sha256": "1c1a1a3d1deca26d148ca214c2bb22fdf84339b50e5996c61d276f6c203e5949",
+      "transparentPixelCount": 141277
+    },
+    {
+      "file": "characters/ayi/sprite-sheet.png",
+      "width": 2048,
+      "height": 256,
+      "hasAlpha": true,
+      "bounds": {
+        "left": 81,
+        "top": 77,
+        "width": 1887,
+        "height": 172
+      },
+      "sha256": "d8c3d306945300a958ffc8350240e969770458a086f794b8a80a21b57c363f3f",
+      "transparentPixelCount": 457755
+    },
+    {
+      "file": "environment/court.png",
+      "width": 1920,
+      "height": 1080,
+      "hasAlpha": true,
+      "opaqueBackground": true,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "sha256": "2e8a1043a8f8cefce8120a06f27bc099c12cd00fbb86f599f125c1cbf30ca670",
+      "transparentPixelCount": 0
+    },
+    {
+      "file": "environment/net.png",
+      "width": 192,
+      "height": 1024,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 11,
+        "top": 10,
+        "width": 171,
+        "height": 1004
+      },
+      "sha256": "3e1767eb23adb50b81ec6825f746fc330bb7596b800c42504d25547d0ab28661",
+      "transparentPixelCount": 98223
+    },
+    {
+      "file": "environment/ball.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 236,
+        "height": 235
+      },
+      "sha256": "753bafde67b8c8fd0e8d0604aa755b050f0d42dedf0423131fc15e19a1bc25df",
+      "transparentPixelCount": 21664
+    },
+    {
+      "file": "ui/logo.png",
+      "width": 1400,
+      "height": 420,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 1380,
+        "height": 399
+      },
+      "sha256": "68aa847e7b8cf1f6f1246d08e91b858dd8248eab0502b8683971b7335646befe",
+      "transparentPixelCount": 165741
+    },
+    {
+      "file": "ui/button-normal.png",
+      "width": 640,
+      "height": 128,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 620,
+        "height": 108
+      },
+      "sha256": "c390ac0f3c2e1b033307a0b884e385e0d5daa02b8b84588736e0c5415356eefa",
+      "transparentPixelCount": 17136
+    },
+    {
+      "file": "ui/button-selected.png",
+      "width": 640,
+      "height": 128,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 620,
+        "height": 108
+      },
+      "sha256": "04a257efcb67c41bf18b208b74ec5a9a618ac3068191c319ba0c40e060907c40",
+      "transparentPixelCount": 17189
+    },
+    {
+      "file": "ui/button-disabled.png",
+      "width": 640,
+      "height": 128,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 620,
+        "height": 108
+      },
+      "sha256": "f3c2eb3a03078a234a1d4c4b73711b2bb77c6e448fc3d6e4befe9f6d66429686",
+      "transparentPixelCount": 15728
+    },
+    {
+      "file": "ui/dialog-panel.png",
+      "width": 960,
+      "height": 720,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 11,
+        "width": 940,
+        "height": 699
+      },
+      "sha256": "c4d83dfcc6ae65e63d58122f71c1f26a86d29b4dcc4bbfaa10270dfde869be23",
+      "transparentPixelCount": 71673
+    },
+    {
+      "file": "ui/portrait-frame.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 236,
+        "height": 236
+      },
+      "sha256": "187dc55936bc2b483b9e033b03942272a2470d8498788f0a8ab9a7e6c5c57b9a",
+      "transparentPixelCount": 42608
+    },
+    {
+      "file": "ui/portrait-selected.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 236,
+        "height": 236
+      },
+      "sha256": "9b495d15db78ad8d0e2f7924ddb3cd254794aba1b7b680eb8c9043fe31d64fa3",
+      "transparentPixelCount": 46000
+    },
+    {
+      "file": "ui/score-panel.png",
+      "width": 800,
+      "height": 200,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 780,
+        "height": 180
+      },
+      "sha256": "03b0d919ebf06f3410e13f43ceb88e3a021c8591945dcc1aeeff1549853d81dc",
+      "transparentPixelCount": 48575
+    },
+    {
+      "file": "ui/input-field.png",
+      "width": 640,
+      "height": 128,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 10,
+        "width": 620,
+        "height": 108
+      },
+      "sha256": "915f4bc9ebb8bbab1c41f035f1692f0c2e51c8c9eb494b17cf42ba4c14d94eac",
+      "transparentPixelCount": 15448
+    },
+    {
+      "file": "ui/result-banner.png",
+      "width": 1000,
+      "height": 240,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 44,
+        "top": 11,
+        "width": 911,
+        "height": 219
+      },
+      "sha256": "bc17cec86bdc0e428b7c4aca362201cce658a90e943641c15cf51617cba66eb8",
+      "transparentPixelCount": 115127
+    },
+    {
+      "file": "effects/hit-spark.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 21,
+        "width": 492,
+        "height": 470
+      },
+      "sha256": "1b59d3b0dc66971744039e9cc72199c62f14aea96111c52b6e75673762de990d",
+      "transparentPixelCount": 183091
+    },
+    {
+      "file": "effects/sand-puff.png",
+      "width": 768,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 35,
+        "width": 748,
+        "height": 185
+      },
+      "sha256": "05cf4c986e471fd79f170630cf953fc4133bdf3851d123a3f762a3e9b638219c",
+      "transparentPixelCount": 124760
+    },
+    {
+      "file": "effects/spike-trail.png",
+      "width": 768,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 11,
+        "top": 37,
+        "width": 747,
+        "height": 182
+      },
+      "sha256": "aaf35dc2856bb73762bedd84c24d08964db426a0ce46b664cae21b15fb3446dc",
+      "transparentPixelCount": 128728
+    },
+    {
+      "file": "effects/score-burst.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 10,
+        "top": 79,
+        "width": 492,
+        "height": 354
+      },
+      "sha256": "c7b90a16db0ef60d5ad1fe42065fffbf5a8a9eb21a5103ee69f3c3b50a24b45b",
+      "transparentPixelCount": 146787
+    },
+    {
+      "file": "ui/icons/keyboard.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 16,
+        "top": 69,
+        "width": 224,
+        "height": 118
+      },
+      "sha256": "d1a99065dd093494e623978b6ef720ce161a381e8ac6e9ae084bd5d1d4c0bea4",
+      "transparentPixelCount": 46251
+    },
+    {
+      "file": "ui/icons/gamepad.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 16,
+        "top": 60,
+        "width": 224,
+        "height": 136
+      },
+      "sha256": "2fb2c803fcc4a5e286cc537fe3ff843dcf73259d6f45bbceecf49cfee60313d6",
+      "transparentPixelCount": 44186
+    },
+    {
+      "file": "ui/icons/touch.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 75,
+        "top": 16,
+        "width": 106,
+        "height": 224
+      },
+      "sha256": "ad966a662b8e7ba17d02fb7a9442445507d6dbb6be3eef2cdd536393a1f8c7d4",
+      "transparentPixelCount": 48562
+    },
+    {
+      "file": "ui/icons/lock.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 39,
+        "top": 16,
+        "width": 177,
+        "height": 224
+      },
+      "sha256": "3ba5b95691b0f0438b74078435eb7d57081b5127bd867cf2040d3b9b38505788",
+      "transparentPixelCount": 34642
+    },
+    {
+      "file": "ui/icons/ready.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 16,
+        "top": 33,
+        "width": 224,
+        "height": 189
+      },
+      "sha256": "1e985189a1cc706334be234c3660813ceb8a3fdbdb495ed7217ae401b57762ea",
+      "transparentPixelCount": 49304
+    },
+    {
+      "file": "ui/icons/pause.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 35,
+        "top": 16,
+        "width": 186,
+        "height": 224
+      },
+      "sha256": "5dff868674f540d85e9d7049b96bec223a4ae95ce0a2c9b196e66db063b90565",
+      "transparentPixelCount": 28927
+    },
+    {
+      "file": "ui/icons/sound-on.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 16,
+        "top": 45,
+        "width": 224,
+        "height": 165
+      },
+      "sha256": "9d178e7bc1bcd63443af951ecf3664d707367922640f79b275f00cf4d130df2d",
+      "transparentPixelCount": 43907
+    },
+    {
+      "file": "ui/icons/sound-off.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 26,
+        "top": 16,
+        "width": 204,
+        "height": 224
+      },
+      "sha256": "a398ad0e2d57af123c8146e7eb752ec1f8c80a08f4c371cccb15c0969fab0694",
+      "transparentPixelCount": 37206
+    },
+    {
+      "file": "ui/icons/back.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 16,
+        "top": 51,
+        "width": 224,
+        "height": 153
+      },
+      "sha256": "ef2da0059c1d954ef208f034f092b9bbc00c21cf0f0dbf4706a0652f2db825ac",
+      "transparentPixelCount": 48444
+    },
+    {
+      "file": "ui/icons/settings.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "opaqueBackground": false,
+      "bounds": {
+        "left": 16,
+        "top": 16,
+        "width": 224,
+        "height": 223
+      },
+      "sha256": "a07e082929a922f425e746ac1f50f59f2b1423e0369ac659cbc068e1f79d6baf",
+      "transparentPixelCount": 33273
+    }
+  ]
+}
