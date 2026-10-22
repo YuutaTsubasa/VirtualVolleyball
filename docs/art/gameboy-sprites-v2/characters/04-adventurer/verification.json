@@ -1,0 +1,377 @@
+{
+  "complete": true,
+  "total": 8,
+  "unique": 8,
+  "failures": [],
+  "method": "Built-in image_gen targeted contrast edits, nearest four-color quantization, original bbox positioning, exact one-logical-pixel inner silhouette stroke, 4x nearest output.",
+  "files": [
+    {
+      "file": "sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "bounds": {
+        "left": 164,
+        "top": 192,
+        "width": 180,
+        "height": 304
+      },
+      "anchor": [
+        256,
+        496
+      ],
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "palette": [
+        [
+          15,
+          56,
+          15
+        ],
+        [
+          48,
+          98,
+          48
+        ],
+        [
+          139,
+          172,
+          15
+        ],
+        [
+          155,
+          188,
+          15
+        ]
+      ],
+      "edgePixelCount": 411,
+      "wrongEdgePixels": 0,
+      "highlightRatio": 0.04976525821596244,
+      "sha256": "2a70663d9744e918f8a310b1991dc5a376100a53a9488e611f1081913bc4b7c3"
+    },
+    {
+      "file": "sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "bounds": {
+        "left": 140,
+        "top": 212,
+        "width": 228,
+        "height": 284
+      },
+      "anchor": [
+        256,
+        496
+      ],
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "palette": [
+        [
+          15,
+          56,
+          15
+        ],
+        [
+          48,
+          98,
+          48
+        ],
+        [
+          139,
+          172,
+          15
+        ],
+        [
+          155,
+          188,
+          15
+        ]
+      ],
+      "edgePixelCount": 444,
+      "wrongEdgePixels": 0,
+      "highlightRatio": 0.0480225988700565,
+      "sha256": "fd5552f71dd86c13e442e2d75a5e7bc546a1677d2731338ce4c0efcd80484958"
+    },
+    {
+      "file": "sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "bounds": {
+        "left": 156,
+        "top": 204,
+        "width": 196,
+        "height": 292
+      },
+      "anchor": [
+        256,
+        496
+      ],
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "palette": [
+        [
+          15,
+          56,
+          15
+        ],
+        [
+          48,
+          98,
+          48
+        ],
+        [
+          139,
+          172,
+          15
+        ],
+        [
+          155,
+          188,
+          15
+        ]
+      ],
+      "edgePixelCount": 432,
+      "wrongEdgePixels": 0,
+      "highlightRatio": 0.04903495044340115,
+      "sha256": "9c3fdfa1b5466d708d1229cb0c75da719b446db900706726857803c1541ccac9"
+    },
+    {
+      "file": "sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "bounds": {
+        "left": 128,
+        "top": 140,
+        "width": 252,
+        "height": 356
+      },
+      "anchor": [
+        256,
+        496
+      ],
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "palette": [
+        [
+          15,
+          56,
+          15
+        ],
+        [
+          48,
+          98,
+          48
+        ],
+        [
+          139,
+          172,
+          15
+        ],
+        [
+          155,
+          188,
+          15
+        ]
+      ],
+      "edgePixelCount": 489,
+      "wrongEdgePixels": 0,
+      "highlightRatio": 0.04931405265109381,
+      "sha256": "a682187301b864e15eda50422a7d8d287ffb4143a67e3f4949726187a53dc850"
+    },
+    {
+      "file": "sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "bounds": {
+        "left": 112,
+        "top": 200,
+        "width": 288,
+        "height": 296
+      },
+      "anchor": [
+        256,
+        496
+      ],
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "palette": [
+        [
+          15,
+          56,
+          15
+        ],
+        [
+          48,
+          98,
+          48
+        ],
+        [
+          139,
+          172,
+          15
+        ],
+        [
+          155,
+          188,
+          15
+        ]
+      ],
+      "edgePixelCount": 470,
+      "wrongEdgePixels": 0,
+      "highlightRatio": 0.04958075100255195,
+      "sha256": "99f5b190c1055bf6485ff192bbac013ce43e41cac148af9e093640535daa7fad"
+    },
+    {
+      "file": "sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "bounds": {
+        "left": 100,
+        "top": 324,
+        "width": 312,
+        "height": 172
+      },
+      "anchor": [
+        256,
+        496
+      ],
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "palette": [
+        [
+          15,
+          56,
+          15
+        ],
+        [
+          48,
+          98,
+          48
+        ],
+        [
+          139,
+          172,
+          15
+        ],
+        [
+          155,
+          188,
+          15
+        ]
+      ],
+      "edgePixelCount": 340,
+      "wrongEdgePixels": 0,
+      "highlightRatio": 0.04853833425261997,
+      "sha256": "ec5a05d810b97ad4f95d4fe0f098b1c683c3678d80fb46cad5069df2ec9edf5c"
+    },
+    {
+      "file": "sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "bounds": {
+        "left": 160,
+        "top": 184,
+        "width": 188,
+        "height": 312
+      },
+      "anchor": [
+        256,
+        496
+      ],
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "palette": [
+        [
+          15,
+          56,
+          15
+        ],
+        [
+          48,
+          98,
+          48
+        ],
+        [
+          139,
+          172,
+          15
+        ],
+        [
+          155,
+          188,
+          15
+        ]
+      ],
+      "edgePixelCount": 422,
+      "wrongEdgePixels": 0,
+      "highlightRatio": 0.04989247311827957,
+      "sha256": "b6007b283cc9dc98e53c47424965129fbf4c7a42ddb511257ac6623b60b82a71"
+    },
+    {
+      "file": "sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "bounds": {
+        "left": 156,
+        "top": 232,
+        "width": 196,
+        "height": 264
+      },
+      "anchor": [
+        256,
+        496
+      ],
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "palette": [
+        [
+          15,
+          56,
+          15
+        ],
+        [
+          48,
+          98,
+          48
+        ],
+        [
+          139,
+          172,
+          15
+        ],
+        [
+          155,
+          188,
+          15
+        ]
+      ],
+      "edgePixelCount": 343,
+      "wrongEdgePixels": 0,
+      "highlightRatio": 0.048921620199894794,
+      "sha256": "4baf556e339b5635d204e534fc798194e9a2c39309df73b6c7f128ff33113741"
+    }
+  ]
+}

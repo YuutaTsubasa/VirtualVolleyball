@@ -1,0 +1,9 @@
+{
+  "id": "ayi",
+  "frame": "spike",
+  "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/ayi/sprites/spike.png",
+  "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/ayi/sources/spike.png",
+  "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball ayi spike sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects. Ayi MUST preserve his H01-B01 original SILVER ARMOR represented in green tones, chevron chest armor, pauldrons, hip and shin guards, black undersuit, brown belts; NO sports uniform, no cape or weapon. Keep the reference identity and action. This is a targeted contrast correction, not a new character design.",
+  "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-4e0f53de-25f3-40ed-b2a5-c307a81c3532.png",
+  "tool": "built-in image_gen"
+}

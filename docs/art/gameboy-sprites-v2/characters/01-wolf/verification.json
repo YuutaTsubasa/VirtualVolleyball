@@ -1,0 +1,303 @@
+{
+  "complete": true,
+  "character": "01-wolf",
+  "total": 8,
+  "unique": 8,
+  "failures": [],
+  "process": "Built-in image_gen contrast edit per pose; exact four-color quantization; brightest highlights capped at 4%; 1 logical-pixel inner 8-neighbor silhouette edge forced #0f380f; original bbox preserved; 128 to 512 nearest4x.",
+  "files": [
+    {
+      "file": "sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 128,
+        "top": 160,
+        "width": 256,
+        "height": 336
+      },
+      "bounds": {
+        "left": 128,
+        "top": 160,
+        "width": 256,
+        "height": 336
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 560,
+      "highlightFraction": 0.03566009104704097,
+      "sha256": "eed9ef4beab766ae0eeed40dce9cbbde9d5bec78d68aca549741bcfcacbe5b17"
+    },
+    {
+      "file": "sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 100,
+        "top": 168,
+        "width": 312,
+        "height": 328
+      },
+      "bounds": {
+        "left": 100,
+        "top": 168,
+        "width": 312,
+        "height": 328
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 598,
+      "highlightFraction": 0.036637931034482756,
+      "sha256": "8e7c00c03dd21403c4cda1f9e872a8659e7d06b9a2e1ec6fd73b41e5b13da874"
+    },
+    {
+      "file": "sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 96,
+        "top": 144,
+        "width": 320,
+        "height": 352
+      },
+      "bounds": {
+        "left": 96,
+        "top": 144,
+        "width": 320,
+        "height": 352
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 678,
+      "highlightFraction": 0.03646517739816032,
+      "sha256": "b9db57c56b6c62d13d7a850b0be97ead947764a72d531e33b29aeffa4e9cff84"
+    },
+    {
+      "file": "sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 108,
+        "top": 40,
+        "width": 292,
+        "height": 456
+      },
+      "bounds": {
+        "left": 108,
+        "top": 40,
+        "width": 292,
+        "height": 456
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 679,
+      "highlightFraction": 0.036151603498542274,
+      "sha256": "6f3418e906ad961dbf81f58596eb9d1d956088d4040f46e75019cca24c8b0c30"
+    },
+    {
+      "file": "sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 92,
+        "top": 144,
+        "width": 328,
+        "height": 352
+      },
+      "bounds": {
+        "left": 92,
+        "top": 144,
+        "width": 328,
+        "height": 352
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 618,
+      "highlightFraction": 0.038267875125881166,
+      "sha256": "93b1673ac3ee8e123e692672cf8f880836d89da36e5b883d14a914248beb3dab"
+    },
+    {
+      "file": "sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 52,
+        "top": 292,
+        "width": 404,
+        "height": 204
+      },
+      "bounds": {
+        "left": 52,
+        "top": 292,
+        "width": 404,
+        "height": 204
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 563,
+      "highlightFraction": 0.031016882606988615,
+      "sha256": "92d752fb2037bb4b3d27531c4f6f9566d0594b02c9da03b7bbe2479a336bb305"
+    },
+    {
+      "file": "sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 128,
+        "top": 152,
+        "width": 252,
+        "height": 344
+      },
+      "bounds": {
+        "left": 128,
+        "top": 152,
+        "width": 252,
+        "height": 344
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 565,
+      "highlightFraction": 0.03788706739526412,
+      "sha256": "ad596483c54c284ba6de395a14b35ff700195442e250ab7bf75522f72f85d258"
+    },
+    {
+      "file": "sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 124,
+        "top": 160,
+        "width": 260,
+        "height": 336
+      },
+      "bounds": {
+        "left": 124,
+        "top": 160,
+        "width": 260,
+        "height": 336
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 499,
+      "highlightFraction": 0.038577912254160365,
+      "sha256": "1f03654934c5c3743605aabea92fec41786ebf38a892e3895ff2c31e0a79383b"
+    }
+  ],
+  "visualReview": {
+    "sandComparison": true,
+    "allEightPoses": true,
+    "identityOutfitPose": true
+  }
+}

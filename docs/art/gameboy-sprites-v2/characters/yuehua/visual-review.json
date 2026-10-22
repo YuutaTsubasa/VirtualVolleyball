@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "reviewed": "sand-comparison.png and idle-sand-comparison.png",
+  "productionSprites": 8,
+  "notes": [
+    "All eight poses preserve identity, outfit and direction.",
+    "Dark contour separates hands, legs and hair from bright sand.",
+    "All original bounding boxes and bottom y496 verified exactly."
+  ]
+}

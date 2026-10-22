@@ -1,0 +1,170 @@
+[
+  {
+    "id": "03-prince",
+    "frame": "idle",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/03-prince/sprites/idle.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/03-prince/sources/idle.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 03-prince idle sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "03-prince",
+    "frame": "run1",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/03-prince/sprites/run1.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/03-prince/sources/run1.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 03-prince run1 sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "03-prince",
+    "frame": "run2",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/03-prince/sprites/run2.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/03-prince/sources/run2.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 03-prince run2 sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "03-prince",
+    "frame": "jump",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/03-prince/sprites/jump.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/03-prince/sources/jump.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 03-prince jump sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "03-prince",
+    "frame": "spike",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/03-prince/sprites/spike.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/03-prince/sources/spike.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 03-prince spike sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "03-prince",
+    "frame": "dive",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/03-prince/sprites/dive.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/03-prince/sources/dive.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 03-prince dive sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "03-prince",
+    "frame": "win",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/03-prince/sprites/win.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/03-prince/sources/win.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 03-prince win sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "03-prince",
+    "frame": "lose",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/03-prince/sprites/lose.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/03-prince/sources/lose.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 03-prince lose sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "04-adventurer",
+    "frame": "idle",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/04-adventurer/sprites/idle.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/04-adventurer/sources/idle.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 04-adventurer idle sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "04-adventurer",
+    "frame": "run1",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/04-adventurer/sprites/run1.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/04-adventurer/sources/run1.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 04-adventurer run1 sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "04-adventurer",
+    "frame": "run2",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/04-adventurer/sprites/run2.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/04-adventurer/sources/run2.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 04-adventurer run2 sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "04-adventurer",
+    "frame": "jump",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/04-adventurer/sprites/jump.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/04-adventurer/sources/jump.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 04-adventurer jump sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "04-adventurer",
+    "frame": "spike",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/04-adventurer/sprites/spike.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/04-adventurer/sources/spike.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 04-adventurer spike sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "04-adventurer",
+    "frame": "dive",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/04-adventurer/sprites/dive.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/04-adventurer/sources/dive.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 04-adventurer dive sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "04-adventurer",
+    "frame": "win",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/04-adventurer/sprites/win.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/04-adventurer/sources/win.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 04-adventurer win sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "04-adventurer",
+    "frame": "lose",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/04-adventurer/sprites/lose.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/04-adventurer/sources/lose.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball 04-adventurer lose sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects.  Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "ayi",
+    "frame": "idle",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/ayi/sprites/idle.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/ayi/sources/idle.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball ayi idle sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects. Ayi MUST preserve his H01-B01 original SILVER ARMOR represented in green tones, chevron chest armor, pauldrons, hip and shin guards, black undersuit, brown belts; NO sports uniform, no cape or weapon. Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "ayi",
+    "frame": "run1",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/ayi/sprites/run1.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/ayi/sources/run1.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball ayi run1 sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects. Ayi MUST preserve his H01-B01 original SILVER ARMOR represented in green tones, chevron chest armor, pauldrons, hip and shin guards, black undersuit, brown belts; NO sports uniform, no cape or weapon. Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "ayi",
+    "frame": "run2",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/ayi/sprites/run2.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/ayi/sources/run2.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball ayi run2 sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects. Ayi MUST preserve his H01-B01 original SILVER ARMOR represented in green tones, chevron chest armor, pauldrons, hip and shin guards, black undersuit, brown belts; NO sports uniform, no cape or weapon. Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "ayi",
+    "frame": "jump",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/ayi/sprites/jump.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/ayi/sources/jump.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball ayi jump sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects. Ayi MUST preserve his H01-B01 original SILVER ARMOR represented in green tones, chevron chest armor, pauldrons, hip and shin guards, black undersuit, brown belts; NO sports uniform, no cape or weapon. Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "ayi",
+    "frame": "spike",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/ayi/sprites/spike.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/ayi/sources/spike.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball ayi spike sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects. Ayi MUST preserve his H01-B01 original SILVER ARMOR represented in green tones, chevron chest armor, pauldrons, hip and shin guards, black undersuit, brown belts; NO sports uniform, no cape or weapon. Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "ayi",
+    "frame": "dive",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/ayi/sprites/dive.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/ayi/sources/dive.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball ayi dive sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects. Ayi MUST preserve his H01-B01 original SILVER ARMOR represented in green tones, chevron chest armor, pauldrons, hip and shin guards, black undersuit, brown belts; NO sports uniform, no cape or weapon. Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "ayi",
+    "frame": "win",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/ayi/sprites/win.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/ayi/sources/win.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball ayi win sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects. Ayi MUST preserve his H01-B01 original SILVER ARMOR represented in green tones, chevron chest armor, pauldrons, hip and shin guards, black undersuit, brown belts; NO sports uniform, no cape or weapon. Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  },
+  {
+    "id": "ayi",
+    "frame": "lose",
+    "ref": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/ayi/sprites/lose.png",
+    "dst": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/ayi/sources/lose.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied Game Boy volleyball ayi lose sprite. Carefully preserve this SAME character, exact action pose, facing, costume, hairstyle and proportions. Only improve small gameplay readability: add a clean uninterrupted deepest green #0f380f outside silhouette outline of ONE logical pixel. Fill major skin/hair/clothing areas with #8bac0f and shadows #306230, with the brightest #9bbc0f reserved for tiny discrete highlight accents under 3 percent area. Use ONLY four green tones #0f380f #306230 #8bac0f #9bbc0f. Crisp 128 by 128 logical pixel-art aesthetic, hard square pixels, no blur, no smoothing, no noisy checkerboarding. Whole figure with transparent RGBA background and ample clear margins. No text, no backdrop, no new objects. Ayi MUST preserve his H01-B01 original SILVER ARMOR represented in green tones, chevron chest armor, pauldrons, hip and shin guards, black undersuit, brown belts; NO sports uniform, no cape or weapon. Keep the reference identity and action. This is a targeted contrast correction, not a new character design."
+  }
+]

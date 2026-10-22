@@ -1,0 +1,304 @@
+{
+  "complete": true,
+  "character": "lanjie",
+  "total": 8,
+  "unique": 8,
+  "failures": [],
+  "process": "Built-in image_gen contrast edit per pose; exact four-color quantization; brightest highlights capped at 4%; 1 logical-pixel inner 8-neighbor silhouette edge forced #0f380f; original bbox preserved; 128 to 512 nearest4x.",
+  "files": [
+    {
+      "file": "sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 156,
+        "top": 152,
+        "width": 196,
+        "height": 344
+      },
+      "bounds": {
+        "left": 156,
+        "top": 152,
+        "width": 196,
+        "height": 344
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 457,
+      "highlightFraction": 0.024743230625583566,
+      "sha256": "3b389841160810cb0c44337612bdc8d2758d50c17eebadfb1b641596eac134f1"
+    },
+    {
+      "file": "sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 116,
+        "top": 160,
+        "width": 276,
+        "height": 336
+      },
+      "bounds": {
+        "left": 116,
+        "top": 160,
+        "width": 276,
+        "height": 336
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 570,
+      "highlightFraction": 0.030148423005565864,
+      "sha256": "19665468b009a07e7954c76122012b3d755c6e369fd6eae8f96056bae0304eea"
+    },
+    {
+      "file": "sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 148,
+        "top": 144,
+        "width": 212,
+        "height": 352
+      },
+      "bounds": {
+        "left": 148,
+        "top": 144,
+        "width": 212,
+        "height": 352
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 553,
+      "highlightFraction": 0.0351219512195122,
+      "sha256": "434358e57ca3d5271ae0e7df830be9d70479ce8e8967aae59cc5d2b368859df2"
+    },
+    {
+      "file": "sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 132,
+        "top": 40,
+        "width": 248,
+        "height": 456
+      },
+      "bounds": {
+        "left": 132,
+        "top": 40,
+        "width": 248,
+        "height": 456
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 584,
+      "highlightFraction": 0.03879310344827586,
+      "sha256": "aa6de31bcbbf87dc1b4e43d0723437a6c1d16e3aa34584d4b894c75f46076405"
+    },
+    {
+      "file": "sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 100,
+        "top": 156,
+        "width": 308,
+        "height": 340
+      },
+      "bounds": {
+        "left": 100,
+        "top": 156,
+        "width": 308,
+        "height": 340
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 566,
+      "highlightFraction": 0.03289473684210526,
+      "sha256": "720955e083b7080a3e912436cb29b42e085be8e3206c61194bb408729f7a735c"
+    },
+    {
+      "file": "sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 60,
+        "top": 284,
+        "width": 388,
+        "height": 212
+      },
+      "bounds": {
+        "left": 60,
+        "top": 284,
+        "width": 388,
+        "height": 212
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 511,
+      "highlightFraction": 0.03633060853769301,
+      "sha256": "9d9026d462485308007186c93d0ab50d01725c041deb8dc1a6ceca694841defc"
+    },
+    {
+      "file": "sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 152,
+        "top": 152,
+        "width": 204,
+        "height": 344
+      },
+      "bounds": {
+        "left": 152,
+        "top": 152,
+        "width": 204,
+        "height": 344
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 514,
+      "highlightFraction": 0.032527881040892194,
+      "sha256": "fdeb7d937ea106e5076ba8eb6a6d5f716e99088920a0ac05f64e548788f86e64"
+    },
+    {
+      "file": "sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 168,
+        "top": 156,
+        "width": 172,
+        "height": 340
+      },
+      "bounds": {
+        "left": 168,
+        "top": 156,
+        "width": 172,
+        "height": 340
+      },
+      "footAnchor": [
+        256,
+        496
+      ],
+      "logicalSize": 128,
+      "upscale": 4,
+      "palette": [
+        "0f380f",
+        "306230",
+        "8bac0f",
+        "9bbc0f"
+      ],
+      "colorCount": 4,
+      "badAlpha": 0,
+      "badGrid": 0,
+      "badOutline": 0,
+      "boundaryLogicalPixels": 401,
+      "highlightFraction": 0.037211740041928724,
+      "sha256": "ed17a55ea44abbce8eb9d7810d13c7c7fa2a854c23de706fe5507cb6a56513d7"
+    }
+  ],
+  "visualReview": {
+    "sandComparison": true,
+    "allEightPoses": true,
+    "identityOutfitPose": true,
+    "glasses": "Original glasses geometry retained; gold and purple expressed only through four-green luminance."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "sourceCount": 8,
+  "exactPrompts": true,
+  "originalDeliveredFilesUnchanged": true,
+  "productionFiles": [
+    "sprites/idle.png",
+    "sprites/run1.png",
+    "sprites/run2.png",
+    "sprites/jump.png",
+    "sprites/spike.png",
+    "sprites/dive.png",
+    "sprites/win.png",
+    "sprites/lose.png"
+  ]
+}

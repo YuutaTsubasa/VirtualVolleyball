@@ -1,0 +1,9 @@
+{
+  "prompt": "Edit this exact delivered Game Boy volleyball sprite in place for stronger readability against bright green sand. Preserve the same character identity, hairstyle, face, costume, exact idle pose, body proportions, facing direction and full silhouette. Keep the complete figure within transparent canvas, same framing. This is a surgical contrast and outline revision only. Every exposed outer contour of the entire figure, including hair, hands, legs, clothes, shoe edges and any separated fingers, MUST be darkest #0f380f with a continuous one-logical-pixel inward border. Use only four opaque Game Boy colors: #0f380f outline/deep shadow, #306230 shadow, #8bac0f the dominant skin and clothing light plane, #9bbc0f tiny scarce specular highlight pixels only (under 5 percent of visible character). Make face and hands readable with purposeful clean clusters, do not fill broad areas with #9bbc0f. Strong separation against #8bac0f/#9bbc0f ground. Crisp 128x128 logical pixel art on 512x512 output with integer 4x square pixel blocks, hard edges, no antialias, no blur, no gradients. True transparent background, no scenery, no shadow, no text, no border panel, no extra object. Do not redesign the pose or enlarge the character.",
+  "references": [
+    "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-full-v1/characters/tangtang/sprites/idle.png"
+  ],
+  "generatedSource": "C:\\Users\\User\\.codex\\generated_images\\01a16553-fac9-7c01-9196-8af7655a31b6\\exec-6be4f100-e0b8-4548-8033-82024dbee8b5.png",
+  "tool": "image_gen",
+  "transparent_background": true
+}

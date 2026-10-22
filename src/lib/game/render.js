@@ -38,7 +38,6 @@ function updatePalette() {
   pal.paper = v('--paper-white', '#fff');
   pal.accent = v('--accent', '#ff5d8f');
 }
-const SPRITE_SIZE = 210;
 
 // ---------- 圖片 ----------
 
@@ -444,7 +443,7 @@ function drawSprite(g, p, img, celebrate, sad) {
   else if (!p.onGround) frame = p.spikeTimer > 0 || p.lastHit < 10 ? 'spike' : 'jump';
   else if (Math.abs(p.vx) > 0.1) frame = Math.floor(p.anim / 8) % 2 ? 'run1' : 'run2';
   const i = SPRITE_FRAMES.indexOf(frame);
-  const drawH = SPRITE_SIZE;
+  const drawH = cfg.spriteSize;
   const drawW = drawH * (fw / fh);
   const facing = p.state === 'normal' && p.vx !== 0 ? Math.sign(p.vx) : p.toward;
   // 起身時壓扁一點、等待時微微呼吸

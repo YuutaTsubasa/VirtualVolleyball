@@ -1,0 +1,354 @@
+{
+  "complete": true,
+  "character": "yuehua",
+  "total": 8,
+  "unique": 8,
+  "failures": [],
+  "method": "Imagegen directed edit; nearest grid normalization; RGB-nearest four-color palette; inward 8-neighbor one-logical-pixel darkest contour; brightest connected highlight groups capped at 5% opaque area; exact original bounds restored.",
+  "files": [
+    {
+      "file": "sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 144,
+        "top": 168,
+        "width": 220,
+        "height": 328
+      },
+      "bounds": {
+        "left": 144,
+        "top": 168,
+        "width": 220,
+        "height": 328
+      },
+      "bottomEdge": 496,
+      "logicalResolution": [
+        128,
+        128
+      ],
+      "factor": 4,
+      "binaryAlpha": true,
+      "palette": [
+        "#0f380f",
+        "#306230",
+        "#8bac0f",
+        "#9bbc0f"
+      ],
+      "pixelCounts": [
+        16592,
+        4528,
+        17648,
+        1968
+      ],
+      "highlightFraction": 0.04831107619795758,
+      "allOuterBoundaryDarkest": true,
+      "logicalBoundaryPixels": 501,
+      "edgeErrors": 0,
+      "sha256": "a9a9081a22ecd4d7037db4cb58d2eb23d1f2550cc87045eb518438ff2455bee2",
+      "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/yuehua/sources/idle.png",
+      "prompt": "Edit this exact delivered Game Boy volleyball sprite in place for stronger readability against bright green sand. Preserve the same character identity, hairstyle, face, costume, exact idle pose, body proportions, facing direction and full silhouette. Keep the complete figure within transparent canvas, same framing. This is a surgical contrast and outline revision only. Every exposed outer contour of the entire figure, including hair, hands, legs, clothes, shoe edges and any separated fingers, MUST be darkest #0f380f with a continuous one-logical-pixel inward border. Use only four opaque Game Boy colors: #0f380f outline/deep shadow, #306230 shadow, #8bac0f the dominant skin and clothing light plane, #9bbc0f tiny scarce specular highlight pixels only (under 5 percent of visible character). Make face and hands readable with purposeful clean clusters, do not fill broad areas with #9bbc0f. Strong separation against #8bac0f/#9bbc0f ground. Crisp 128x128 logical pixel art on 512x512 output with integer 4x square pixel blocks, hard edges, no antialias, no blur, no gradients. True transparent background, no scenery, no shadow, no text, no border panel, no extra object. Do not redesign the pose or enlarge the character."
+    },
+    {
+      "file": "sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 124,
+        "top": 192,
+        "width": 264,
+        "height": 304
+      },
+      "bounds": {
+        "left": 124,
+        "top": 192,
+        "width": 264,
+        "height": 304
+      },
+      "bottomEdge": 496,
+      "logicalResolution": [
+        128,
+        128
+      ],
+      "factor": 4,
+      "binaryAlpha": true,
+      "palette": [
+        "#0f380f",
+        "#306230",
+        "#8bac0f",
+        "#9bbc0f"
+      ],
+      "pixelCounts": [
+        18240,
+        4816,
+        15056,
+        1936
+      ],
+      "highlightFraction": 0.04834198961246504,
+      "allOuterBoundaryDarkest": true,
+      "logicalBoundaryPixels": 580,
+      "edgeErrors": 0,
+      "sha256": "3732b0710fde656c42d25dc2f2173fa6c4508865ac622b1da5d1fcddd23ad089",
+      "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/yuehua/sources/run1.png",
+      "prompt": "Edit this exact delivered Game Boy volleyball sprite in place for stronger readability against bright green sand. Preserve the same character identity, hairstyle, face, costume, exact run1 pose, body proportions, facing direction and full silhouette. Keep the complete figure within transparent canvas, same framing. This is a surgical contrast and outline revision only. Every exposed outer contour of the entire figure, including hair, hands, legs, clothes, shoe edges and any separated fingers, MUST be darkest #0f380f with a continuous one-logical-pixel inward border. Use only four opaque Game Boy colors: #0f380f outline/deep shadow, #306230 shadow, #8bac0f the dominant skin and clothing light plane, #9bbc0f tiny scarce specular highlight pixels only (under 5 percent of visible character). Make face and hands readable with purposeful clean clusters, do not fill broad areas with #9bbc0f. Strong separation against #8bac0f/#9bbc0f ground. Crisp 128x128 logical pixel art on 512x512 output with integer 4x square pixel blocks, hard edges, no antialias, no blur, no gradients. True transparent background, no scenery, no shadow, no text, no border panel, no extra object. Do not redesign the pose or enlarge the character."
+    },
+    {
+      "file": "sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 132,
+        "top": 184,
+        "width": 244,
+        "height": 312
+      },
+      "bounds": {
+        "left": 132,
+        "top": 184,
+        "width": 244,
+        "height": 312
+      },
+      "bottomEdge": 496,
+      "logicalResolution": [
+        128,
+        128
+      ],
+      "factor": 4,
+      "binaryAlpha": true,
+      "palette": [
+        "#0f380f",
+        "#306230",
+        "#8bac0f",
+        "#9bbc0f"
+      ],
+      "pixelCounts": [
+        17872,
+        4608,
+        17616,
+        2080
+      ],
+      "highlightFraction": 0.04931714719271624,
+      "allOuterBoundaryDarkest": true,
+      "logicalBoundaryPixels": 529,
+      "edgeErrors": 0,
+      "sha256": "b39ffe814e767219be8d30f99d05e4590202c856702396461ee51c44fcf1e605",
+      "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/yuehua/sources/run2.png",
+      "prompt": "Edit this exact delivered Game Boy volleyball sprite in place for stronger readability against bright green sand. Preserve the same character identity, hairstyle, face, costume, exact run2 pose, body proportions, facing direction and full silhouette. Keep the complete figure within transparent canvas, same framing. This is a surgical contrast and outline revision only. Every exposed outer contour of the entire figure, including hair, hands, legs, clothes, shoe edges and any separated fingers, MUST be darkest #0f380f with a continuous one-logical-pixel inward border. Use only four opaque Game Boy colors: #0f380f outline/deep shadow, #306230 shadow, #8bac0f the dominant skin and clothing light plane, #9bbc0f tiny scarce specular highlight pixels only (under 5 percent of visible character). Make face and hands readable with purposeful clean clusters, do not fill broad areas with #9bbc0f. Strong separation against #8bac0f/#9bbc0f ground. Crisp 128x128 logical pixel art on 512x512 output with integer 4x square pixel blocks, hard edges, no antialias, no blur, no gradients. True transparent background, no scenery, no shadow, no text, no border panel, no extra object. Do not redesign the pose or enlarge the character."
+    },
+    {
+      "file": "sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 128,
+        "top": 172,
+        "width": 252,
+        "height": 324
+      },
+      "bounds": {
+        "left": 128,
+        "top": 172,
+        "width": 252,
+        "height": 324
+      },
+      "bottomEdge": 496,
+      "logicalResolution": [
+        128,
+        128
+      ],
+      "factor": 4,
+      "binaryAlpha": true,
+      "palette": [
+        "#0f380f",
+        "#306230",
+        "#8bac0f",
+        "#9bbc0f"
+      ],
+      "pixelCounts": [
+        17632,
+        4816,
+        15760,
+        1968
+      ],
+      "highlightFraction": 0.04898446833930705,
+      "allOuterBoundaryDarkest": true,
+      "logicalBoundaryPixels": 522,
+      "edgeErrors": 0,
+      "sha256": "6a71fd7e288c985ebfca7492366550e302356ecadbd3f76b8fd72958f9bf2fc6",
+      "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/yuehua/sources/jump.png",
+      "prompt": "Edit this exact delivered Game Boy volleyball sprite in place for stronger readability against bright green sand. Preserve the same character identity, hairstyle, face, costume, exact jump pose, body proportions, facing direction and full silhouette. Keep the complete figure within transparent canvas, same framing. This is a surgical contrast and outline revision only. Every exposed outer contour of the entire figure, including hair, hands, legs, clothes, shoe edges and any separated fingers, MUST be darkest #0f380f with a continuous one-logical-pixel inward border. Use only four opaque Game Boy colors: #0f380f outline/deep shadow, #306230 shadow, #8bac0f the dominant skin and clothing light plane, #9bbc0f tiny scarce specular highlight pixels only (under 5 percent of visible character). Make face and hands readable with purposeful clean clusters, do not fill broad areas with #9bbc0f. Strong separation against #8bac0f/#9bbc0f ground. Crisp 128x128 logical pixel art on 512x512 output with integer 4x square pixel blocks, hard edges, no antialias, no blur, no gradients. True transparent background, no scenery, no shadow, no text, no border panel, no extra object. Do not redesign the pose or enlarge the character."
+    },
+    {
+      "file": "sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 92,
+        "top": 172,
+        "width": 324,
+        "height": 324
+      },
+      "bounds": {
+        "left": 92,
+        "top": 172,
+        "width": 324,
+        "height": 324
+      },
+      "bottomEdge": 496,
+      "logicalResolution": [
+        128,
+        128
+      ],
+      "factor": 4,
+      "binaryAlpha": true,
+      "palette": [
+        "#0f380f",
+        "#306230",
+        "#8bac0f",
+        "#9bbc0f"
+      ],
+      "pixelCounts": [
+        18608,
+        5456,
+        18992,
+        2256
+      ],
+      "highlightFraction": 0.04978813559322034,
+      "allOuterBoundaryDarkest": true,
+      "logicalBoundaryPixels": 622,
+      "edgeErrors": 0,
+      "sha256": "5e4eee13088a7b36462e2c3a8f71c0eeece30c82cf7749666f04593e4d51cbd1",
+      "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/yuehua/sources/spike.png",
+      "prompt": "Edit this exact delivered Game Boy volleyball sprite in place for stronger readability against bright green sand. Preserve the same character identity, hairstyle, face, costume, exact spike pose, body proportions, facing direction and full silhouette. Keep the complete figure within transparent canvas, same framing. This is a surgical contrast and outline revision only. Every exposed outer contour of the entire figure, including hair, hands, legs, clothes, shoe edges and any separated fingers, MUST be darkest #0f380f with a continuous one-logical-pixel inward border. Use only four opaque Game Boy colors: #0f380f outline/deep shadow, #306230 shadow, #8bac0f the dominant skin and clothing light plane, #9bbc0f tiny scarce specular highlight pixels only (under 5 percent of visible character). Make face and hands readable with purposeful clean clusters, do not fill broad areas with #9bbc0f. Strong separation against #8bac0f/#9bbc0f ground. Crisp 128x128 logical pixel art on 512x512 output with integer 4x square pixel blocks, hard edges, no antialias, no blur, no gradients. True transparent background, no scenery, no shadow, no text, no border panel, no extra object. Do not redesign the pose or enlarge the character."
+    },
+    {
+      "file": "sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 72,
+        "top": 336,
+        "width": 364,
+        "height": 160
+      },
+      "bounds": {
+        "left": 72,
+        "top": 336,
+        "width": 364,
+        "height": 160
+      },
+      "bottomEdge": 496,
+      "logicalResolution": [
+        128,
+        128
+      ],
+      "factor": 4,
+      "binaryAlpha": true,
+      "palette": [
+        "#0f380f",
+        "#306230",
+        "#8bac0f",
+        "#9bbc0f"
+      ],
+      "pixelCounts": [
+        14496,
+        2800,
+        16976,
+        1760
+      ],
+      "highlightFraction": 0.04884547069271759,
+      "allOuterBoundaryDarkest": true,
+      "logicalBoundaryPixels": 461,
+      "edgeErrors": 0,
+      "sha256": "0eb6a429ce0ad3ce867742f615784a2478a2bbba88e9a86052d98302eba350a9",
+      "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/yuehua/sources/dive.png",
+      "prompt": "Edit this exact delivered Game Boy volleyball sprite in place for stronger readability against bright green sand. Preserve the same character identity, hairstyle, face, costume, exact dive pose, body proportions, facing direction and full silhouette. Keep the complete figure within transparent canvas, same framing. This is a surgical contrast and outline revision only. Every exposed outer contour of the entire figure, including hair, hands, legs, clothes, shoe edges and any separated fingers, MUST be darkest #0f380f with a continuous one-logical-pixel inward border. Use only four opaque Game Boy colors: #0f380f outline/deep shadow, #306230 shadow, #8bac0f the dominant skin and clothing light plane, #9bbc0f tiny scarce specular highlight pixels only (under 5 percent of visible character). Make face and hands readable with purposeful clean clusters, do not fill broad areas with #9bbc0f. Strong separation against #8bac0f/#9bbc0f ground. Crisp 128x128 logical pixel art on 512x512 output with integer 4x square pixel blocks, hard edges, no antialias, no blur, no gradients. True transparent background, no scenery, no shadow, no text, no border panel, no extra object. Do not redesign the pose or enlarge the character."
+    },
+    {
+      "file": "sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 140,
+        "top": 160,
+        "width": 232,
+        "height": 336
+      },
+      "bounds": {
+        "left": 140,
+        "top": 160,
+        "width": 232,
+        "height": 336
+      },
+      "bottomEdge": 496,
+      "logicalResolution": [
+        128,
+        128
+      ],
+      "factor": 4,
+      "binaryAlpha": true,
+      "palette": [
+        "#0f380f",
+        "#306230",
+        "#8bac0f",
+        "#9bbc0f"
+      ],
+      "pixelCounts": [
+        18448,
+        2288,
+        18000,
+        2016
+      ],
+      "highlightFraction": 0.04946996466431095,
+      "allOuterBoundaryDarkest": true,
+      "logicalBoundaryPixels": 570,
+      "edgeErrors": 0,
+      "sha256": "8a8b5d71f1c7c7bc018c85e51f87e64a1242aad12486e49d686e5c7f4ea1ea2d",
+      "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/yuehua/sources/win.png",
+      "prompt": "Edit this exact delivered Game Boy volleyball sprite in place for stronger readability against bright green sand. Preserve the same character identity, hairstyle, face, costume, exact win pose, body proportions, facing direction and full silhouette. Keep the complete figure within transparent canvas, same framing. This is a surgical contrast and outline revision only. Every exposed outer contour of the entire figure, including hair, hands, legs, clothes, shoe edges and any separated fingers, MUST be darkest #0f380f with a continuous one-logical-pixel inward border. Use only four opaque Game Boy colors: #0f380f outline/deep shadow, #306230 shadow, #8bac0f the dominant skin and clothing light plane, #9bbc0f tiny scarce specular highlight pixels only (under 5 percent of visible character). Make face and hands readable with purposeful clean clusters, do not fill broad areas with #9bbc0f. Strong separation against #8bac0f/#9bbc0f ground. Crisp 128x128 logical pixel art on 512x512 output with integer 4x square pixel blocks, hard edges, no antialias, no blur, no gradients. True transparent background, no scenery, no shadow, no text, no border panel, no extra object. Do not redesign the pose or enlarge the character."
+    },
+    {
+      "file": "sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "originalBounds": {
+        "left": 156,
+        "top": 176,
+        "width": 200,
+        "height": 320
+      },
+      "bounds": {
+        "left": 156,
+        "top": 176,
+        "width": 200,
+        "height": 320
+      },
+      "bottomEdge": 496,
+      "logicalResolution": [
+        128,
+        128
+      ],
+      "factor": 4,
+      "binaryAlpha": true,
+      "palette": [
+        "#0f380f",
+        "#306230",
+        "#8bac0f",
+        "#9bbc0f"
+      ],
+      "pixelCounts": [
+        14384,
+        2688,
+        16416,
+        1680
+      ],
+      "highlightFraction": 0.04777070063694268,
+      "allOuterBoundaryDarkest": true,
+      "logicalBoundaryPixels": 446,
+      "edgeErrors": 0,
+      "sha256": "5c9f955a13c791f901780ef56fe7cbe297ecf078430bbdf8fc69373f53a5ae24",
+      "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/gameboy-sprites-v2/characters/yuehua/sources/lose.png",
+      "prompt": "Edit this exact delivered Game Boy volleyball sprite in place for stronger readability against bright green sand. Preserve the same character identity, hairstyle, face, costume, exact lose pose, body proportions, facing direction and full silhouette. Keep the complete figure within transparent canvas, same framing. This is a surgical contrast and outline revision only. Every exposed outer contour of the entire figure, including hair, hands, legs, clothes, shoe edges and any separated fingers, MUST be darkest #0f380f with a continuous one-logical-pixel inward border. Use only four opaque Game Boy colors: #0f380f outline/deep shadow, #306230 shadow, #8bac0f the dominant skin and clothing light plane, #9bbc0f tiny scarce specular highlight pixels only (under 5 percent of visible character). Make face and hands readable with purposeful clean clusters, do not fill broad areas with #9bbc0f. Strong separation against #8bac0f/#9bbc0f ground. Crisp 128x128 logical pixel art on 512x512 output with integer 4x square pixel blocks, hard edges, no antialias, no blur, no gradients. True transparent background, no scenery, no shadow, no text, no border panel, no extra object. Do not redesign the pose or enlarge the character."
+    }
+  ]
+}

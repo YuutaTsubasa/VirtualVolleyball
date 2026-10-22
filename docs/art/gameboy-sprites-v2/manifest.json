@@ -1,0 +1,2127 @@
+{
+  "style": "gameboy",
+  "version": 2,
+  "type": "sprite-only contrast correction",
+  "request": "requests/2026-10-23-0645-gameboy-sprite-contrast.md",
+  "productionPNGCount": 88,
+  "palette": [
+    "15,56,15",
+    "48,98,48",
+    "139,172,15",
+    "155,188,15"
+  ],
+  "files": [
+    {
+      "file": "characters/xiaocui/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        140,
+        148,
+        371,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 660,
+      "edgeBad": 0,
+      "highlightRatio": 0.04647218453188602,
+      "sha256": "577e063edcfe941cdb9d7aeaca59f5385512f85196ede480c0d22ebe0f21f206"
+    },
+    {
+      "file": "characters/xiaocui/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        124,
+        184,
+        387,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 702,
+      "edgeBad": 0,
+      "highlightRatio": 0.048286030224843346,
+      "sha256": "ba6b773a803a54af2597c5f9803268f6851801c8530e7f0a071a98c98fcaaf06"
+    },
+    {
+      "file": "characters/xiaocui/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        128,
+        164,
+        379,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 691,
+      "edgeBad": 0,
+      "highlightRatio": 0.04797550187138482,
+      "sha256": "65441e080f2858c9fb1dedf9fb3172e5c529e0222c01a7524ba83bbb0770d66e"
+    },
+    {
+      "file": "characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        112,
+        136,
+        395,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 698,
+      "edgeBad": 0,
+      "highlightRatio": 0.049699799866577715,
+      "sha256": "229f78b68ec1dac194c5287151184e2f41626a2714eb796bf1c1e49b1a9dc68c"
+    },
+    {
+      "file": "characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        52,
+        120,
+        459,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 985,
+      "edgeBad": 0,
+      "highlightRatio": 0.0498960498960499,
+      "sha256": "cc86c09a3bfb9880bbc4bbabcd74a4f63b9a08f6fc55564eb885c6f2f47916b2"
+    },
+    {
+      "file": "characters/xiaocui/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        56,
+        284,
+        455,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 666,
+      "edgeBad": 0,
+      "highlightRatio": 0.048713550600343054,
+      "sha256": "32921caf0d0468cf9871440f4bc4fe34d368b379ec5365cc46377cdd66451ed3"
+    },
+    {
+      "file": "characters/xiaocui/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        136,
+        148,
+        371,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 629,
+      "edgeBad": 0,
+      "highlightRatio": 0.049758633494244336,
+      "sha256": "e33cae97b4ee0dc545e8402d359053395c10bed0fda5b2269456d8f73341498b"
+    },
+    {
+      "file": "characters/xiaocui/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        144,
+        152,
+        363,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 535,
+      "edgeBad": 0,
+      "highlightRatio": 0.04852884982804738,
+      "sha256": "419ae330bca4728716ea4931abc0272c44ee15d275bef4b290740df7279798fc"
+    },
+    {
+      "file": "characters/yuehua/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        144,
+        168,
+        363,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 501,
+      "edgeBad": 0,
+      "highlightRatio": 0.04831107619795758,
+      "sha256": "a9a9081a22ecd4d7037db4cb58d2eb23d1f2550cc87045eb518438ff2455bee2"
+    },
+    {
+      "file": "characters/yuehua/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        124,
+        192,
+        387,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 580,
+      "edgeBad": 0,
+      "highlightRatio": 0.04834198961246504,
+      "sha256": "3732b0710fde656c42d25dc2f2173fa6c4508865ac622b1da5d1fcddd23ad089"
+    },
+    {
+      "file": "characters/yuehua/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        132,
+        184,
+        375,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 529,
+      "edgeBad": 0,
+      "highlightRatio": 0.04931714719271624,
+      "sha256": "b39ffe814e767219be8d30f99d05e4590202c856702396461ee51c44fcf1e605"
+    },
+    {
+      "file": "characters/yuehua/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        128,
+        172,
+        379,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 522,
+      "edgeBad": 0,
+      "highlightRatio": 0.04898446833930705,
+      "sha256": "6a71fd7e288c985ebfca7492366550e302356ecadbd3f76b8fd72958f9bf2fc6"
+    },
+    {
+      "file": "characters/yuehua/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        92,
+        172,
+        415,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 622,
+      "edgeBad": 0,
+      "highlightRatio": 0.04978813559322034,
+      "sha256": "5e4eee13088a7b36462e2c3a8f71c0eeece30c82cf7749666f04593e4d51cbd1"
+    },
+    {
+      "file": "characters/yuehua/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        72,
+        336,
+        435,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 461,
+      "edgeBad": 0,
+      "highlightRatio": 0.04884547069271759,
+      "sha256": "0eb6a429ce0ad3ce867742f615784a2478a2bbba88e9a86052d98302eba350a9"
+    },
+    {
+      "file": "characters/yuehua/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        140,
+        160,
+        371,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 570,
+      "edgeBad": 0,
+      "highlightRatio": 0.04946996466431095,
+      "sha256": "8a8b5d71f1c7c7bc018c85e51f87e64a1242aad12486e49d686e5c7f4ea1ea2d"
+    },
+    {
+      "file": "characters/yuehua/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        156,
+        176,
+        355,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 446,
+      "edgeBad": 0,
+      "highlightRatio": 0.04777070063694268,
+      "sha256": "5c9f955a13c791f901780ef56fe7cbe297ecf078430bbdf8fc69373f53a5ae24"
+    },
+    {
+      "file": "characters/aming/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        148,
+        160,
+        363,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 540,
+      "edgeBad": 0,
+      "highlightRatio": 0.049099836333878884,
+      "sha256": "a20299ba805f55d80b5cb35de2802ed2c44ddfcd8539c0625eb01398b7c6707b"
+    },
+    {
+      "file": "characters/aming/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        108,
+        172,
+        403,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 629,
+      "edgeBad": 0,
+      "highlightRatio": 0.04934070608251808,
+      "sha256": "7fd695cf065037fae884764496e29a6fe157c635d83ff262c1ed64627c1057f5"
+    },
+    {
+      "file": "characters/aming/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        136,
+        148,
+        371,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 624,
+      "edgeBad": 0,
+      "highlightRatio": 0.04839365595770639,
+      "sha256": "b249dce51074866d28078f9772c92e9b37ce648de2ecb31492e192f0069e1c3a"
+    },
+    {
+      "file": "characters/aming/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        128,
+        132,
+        387,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 582,
+      "edgeBad": 0,
+      "highlightRatio": 0.04851031321619557,
+      "sha256": "2d6bf633300d35a06f53b6990952a9fac03c1a93eb32d79bcff0c31e70097f94"
+    },
+    {
+      "file": "characters/aming/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        112,
+        152,
+        399,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 626,
+      "edgeBad": 0,
+      "highlightRatio": 0.04946866984243312,
+      "sha256": "f4cb6cd45812f0e40dbbf420ea699fb99da4ac8ba21610521169cde75bb88114"
+    },
+    {
+      "file": "characters/aming/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        56,
+        300,
+        455,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 569,
+      "edgeBad": 0,
+      "highlightRatio": 0.04831124412141941,
+      "sha256": "d8d13870d774b2de68ffe879ddc69a4b359b9eff7d7d66183e57bb0d81dcdf21"
+    },
+    {
+      "file": "characters/aming/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        144,
+        152,
+        363,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 575,
+      "edgeBad": 0,
+      "highlightRatio": 0.05,
+      "sha256": "a5304bb143fc7b29c25fbd7399cb3bee5771ebc0835dfb55b644c9600f40684c"
+    },
+    {
+      "file": "characters/aming/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        156,
+        168,
+        351,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 480,
+      "edgeBad": 0,
+      "highlightRatio": 0.049689440993788817,
+      "sha256": "4ff0bce24f9a1baec05f725847689a5f94886d808bff462db1c7080d9b60919d"
+    },
+    {
+      "file": "characters/tangtang/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        164,
+        172,
+        347,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 448,
+      "edgeBad": 0,
+      "highlightRatio": 0.047926267281105994,
+      "sha256": "87c31a9ef36a16e3a45ce917040825b9b5613472d209330620b783f97a998769"
+    },
+    {
+      "file": "characters/tangtang/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        120,
+        192,
+        391,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 550,
+      "edgeBad": 0,
+      "highlightRatio": 0.047326076668244205,
+      "sha256": "6ce1bd6af8ba3cca1998db51f0771fb0733750f09370e2779f8b9846580c7422"
+    },
+    {
+      "file": "characters/tangtang/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        160,
+        184,
+        351,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 490,
+      "edgeBad": 0,
+      "highlightRatio": 0.04853387259858443,
+      "sha256": "7fae56fb61a35dc1f91af8748fbd507259b0ca63e62806202b566be57f7c461d"
+    },
+    {
+      "file": "characters/tangtang/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        148,
+        168,
+        359,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 472,
+      "edgeBad": 0,
+      "highlightRatio": 0.04766490129995185,
+      "sha256": "4ec581d176c43ed44c58e03b8ff0ee3cd006ccbc0725f2d35003f41ffe688ae9"
+    },
+    {
+      "file": "characters/tangtang/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        104,
+        172,
+        403,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 568,
+      "edgeBad": 0,
+      "highlightRatio": 0.04898828541001065,
+      "sha256": "a63b4d7cb87491a778b65e57fa4e21a825e9333d0b483408fabc34de2bb617c2"
+    },
+    {
+      "file": "characters/tangtang/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        60,
+        316,
+        447,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 449,
+      "edgeBad": 0,
+      "highlightRatio": 0.04879182156133829,
+      "sha256": "6f189df17936a1064e009d906fccd08cfe71cdb73a03bd2c4828389e344c8925"
+    },
+    {
+      "file": "characters/tangtang/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        164,
+        160,
+        343,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 495,
+      "edgeBad": 0,
+      "highlightRatio": 0.049127640036730945,
+      "sha256": "6b5abf92675ff07d23059829d02de2faa1705d93e6646292a2a1c5bfb8e74e01"
+    },
+    {
+      "file": "characters/tangtang/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        176,
+        164,
+        331,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 390,
+      "edgeBad": 0,
+      "highlightRatio": 0.0478520935290919,
+      "sha256": "65bbbb19d8b1b17e3f9da9edd4ec58553fdc8ef7af2fa28b1b53d443e8c06bad"
+    },
+    {
+      "file": "characters/xiaochun/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        136,
+        132,
+        371,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 620,
+      "edgeBad": 0,
+      "highlightRatio": 0.03537414965986395,
+      "sha256": "60be2623c29efa44aecb4ea90546224fdf4ba625b7c3023d3b59b0d339749359"
+    },
+    {
+      "file": "characters/xiaochun/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        124,
+        172,
+        383,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 635,
+      "edgeBad": 0,
+      "highlightRatio": 0.036744505494505496,
+      "sha256": "52da52f590a4561137aed975e3c3a02f9f8bda66aaaa7e998ff594aacadb9052"
+    },
+    {
+      "file": "characters/xiaochun/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        136,
+        172,
+        375,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 637,
+      "edgeBad": 0,
+      "highlightRatio": 0.03831269349845201,
+      "sha256": "b2f26b3bac3a3776f6476b2d3d0cf3cfe92abd368c65d1ee0b4bc6c543c75fb0"
+    },
+    {
+      "file": "characters/xiaochun/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        84,
+        144,
+        423,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 732,
+      "edgeBad": 0,
+      "highlightRatio": 0.037493445201887785,
+      "sha256": "5fdca19cdb03033380b998c1129dadca3b41e6fb70072717cceeb2da21417ff6"
+    },
+    {
+      "file": "characters/xiaochun/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        88,
+        144,
+        423,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 717,
+      "edgeBad": 0,
+      "highlightRatio": 0.03609898107714701,
+      "sha256": "da45811d64473204c9d1f09e88828842f49d19c4448f1182fbc01a9e17361f59"
+    },
+    {
+      "file": "characters/xiaochun/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        48,
+        284,
+        459,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 582,
+      "edgeBad": 0,
+      "highlightRatio": 0.03764320785597381,
+      "sha256": "4cb4868b54ea0f54ff84111247ece35ec42cafcf024e056c79569b896f9f5af0"
+    },
+    {
+      "file": "characters/xiaochun/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        120,
+        156,
+        391,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 683,
+      "edgeBad": 0,
+      "highlightRatio": 0.03629316420014094,
+      "sha256": "721f682b4f8bfb02f16f8d9b4d8615161bf49fb17a830e2c0b891215886cb1f1"
+    },
+    {
+      "file": "characters/xiaochun/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        104,
+        176,
+        403,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 559,
+      "edgeBad": 0,
+      "highlightRatio": 0.0378567268491555,
+      "sha256": "fc2d274bc9cc24a61e356b9cb4c8d4b198fc00755b0bbcf63cbbe2f5d34ce592"
+    },
+    {
+      "file": "characters/lanjie/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        156,
+        152,
+        351,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 457,
+      "edgeBad": 0,
+      "highlightRatio": 0.024743230625583566,
+      "sha256": "3b389841160810cb0c44337612bdc8d2758d50c17eebadfb1b641596eac134f1"
+    },
+    {
+      "file": "characters/lanjie/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        116,
+        160,
+        391,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 570,
+      "edgeBad": 0,
+      "highlightRatio": 0.030148423005565864,
+      "sha256": "19665468b009a07e7954c76122012b3d755c6e369fd6eae8f96056bae0304eea"
+    },
+    {
+      "file": "characters/lanjie/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        148,
+        144,
+        359,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 553,
+      "edgeBad": 0,
+      "highlightRatio": 0.0351219512195122,
+      "sha256": "434358e57ca3d5271ae0e7df830be9d70479ce8e8967aae59cc5d2b368859df2"
+    },
+    {
+      "file": "characters/lanjie/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        132,
+        40,
+        379,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 584,
+      "edgeBad": 0,
+      "highlightRatio": 0.03879310344827586,
+      "sha256": "aa6de31bcbbf87dc1b4e43d0723437a6c1d16e3aa34584d4b894c75f46076405"
+    },
+    {
+      "file": "characters/lanjie/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        100,
+        156,
+        407,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 566,
+      "edgeBad": 0,
+      "highlightRatio": 0.03289473684210526,
+      "sha256": "720955e083b7080a3e912436cb29b42e085be8e3206c61194bb408729f7a735c"
+    },
+    {
+      "file": "characters/lanjie/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        60,
+        284,
+        447,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 511,
+      "edgeBad": 0,
+      "highlightRatio": 0.03633060853769301,
+      "sha256": "9d9026d462485308007186c93d0ab50d01725c041deb8dc1a6ceca694841defc"
+    },
+    {
+      "file": "characters/lanjie/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        152,
+        152,
+        355,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 514,
+      "edgeBad": 0,
+      "highlightRatio": 0.032527881040892194,
+      "sha256": "fdeb7d937ea106e5076ba8eb6a6d5f716e99088920a0ac05f64e548788f86e64"
+    },
+    {
+      "file": "characters/lanjie/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        168,
+        156,
+        339,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 401,
+      "edgeBad": 0,
+      "highlightRatio": 0.037211740041928724,
+      "sha256": "ed17a55ea44abbce8eb9d7810d13c7c7fa2a854c23de706fe5507cb6a56513d7"
+    },
+    {
+      "file": "characters/01-wolf/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        128,
+        160,
+        383,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 560,
+      "edgeBad": 0,
+      "highlightRatio": 0.03566009104704097,
+      "sha256": "eed9ef4beab766ae0eeed40dce9cbbde9d5bec78d68aca549741bcfcacbe5b17"
+    },
+    {
+      "file": "characters/01-wolf/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        100,
+        168,
+        411,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 598,
+      "edgeBad": 0,
+      "highlightRatio": 0.036637931034482756,
+      "sha256": "8e7c00c03dd21403c4cda1f9e872a8659e7d06b9a2e1ec6fd73b41e5b13da874"
+    },
+    {
+      "file": "characters/01-wolf/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        96,
+        144,
+        415,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 678,
+      "edgeBad": 0,
+      "highlightRatio": 0.03646517739816032,
+      "sha256": "b9db57c56b6c62d13d7a850b0be97ead947764a72d531e33b29aeffa4e9cff84"
+    },
+    {
+      "file": "characters/01-wolf/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        108,
+        40,
+        399,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 679,
+      "edgeBad": 0,
+      "highlightRatio": 0.036151603498542274,
+      "sha256": "6f3418e906ad961dbf81f58596eb9d1d956088d4040f46e75019cca24c8b0c30"
+    },
+    {
+      "file": "characters/01-wolf/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        92,
+        144,
+        419,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 618,
+      "edgeBad": 0,
+      "highlightRatio": 0.038267875125881166,
+      "sha256": "93b1673ac3ee8e123e692672cf8f880836d89da36e5b883d14a914248beb3dab"
+    },
+    {
+      "file": "characters/01-wolf/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        52,
+        292,
+        455,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 563,
+      "edgeBad": 0,
+      "highlightRatio": 0.031016882606988615,
+      "sha256": "92d752fb2037bb4b3d27531c4f6f9566d0594b02c9da03b7bbe2479a336bb305"
+    },
+    {
+      "file": "characters/01-wolf/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        128,
+        152,
+        379,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 565,
+      "edgeBad": 0,
+      "highlightRatio": 0.03788706739526412,
+      "sha256": "ad596483c54c284ba6de395a14b35ff700195442e250ab7bf75522f72f85d258"
+    },
+    {
+      "file": "characters/01-wolf/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        124,
+        160,
+        383,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 499,
+      "edgeBad": 0,
+      "highlightRatio": 0.038577912254160365,
+      "sha256": "1f03654934c5c3743605aabea92fec41786ebf38a892e3895ff2c31e0a79383b"
+    },
+    {
+      "file": "characters/02-gambler/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        172,
+        204,
+        335,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 380,
+      "edgeBad": 0,
+      "highlightRatio": 0.03046280023432923,
+      "sha256": "0cf32e068dcd9c82d2dac46c2671ce6afa0e617e64a8bdfc4fcb052fcc12afeb"
+    },
+    {
+      "file": "characters/02-gambler/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        148,
+        240,
+        363,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 419,
+      "edgeBad": 0,
+      "highlightRatio": 0.03695652173913044,
+      "sha256": "5d0278d8367ae4e875b23c42292b18ca813dcc3a47528d31e5368312f91c2932"
+    },
+    {
+      "file": "characters/02-gambler/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        168,
+        212,
+        343,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 400,
+      "edgeBad": 0,
+      "highlightRatio": 0.03164942178940962,
+      "sha256": "1c3e4f217bd408e102edc8aed997b2678da4364737c0b7e30bc108bfad7a5465"
+    },
+    {
+      "file": "characters/02-gambler/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        148,
+        156,
+        363,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 428,
+      "edgeBad": 0,
+      "highlightRatio": 0.033853006681514475,
+      "sha256": "761785510311088c415d68c18a0c91a5d04a71524d322942ca122daa41ad5c20"
+    },
+    {
+      "file": "characters/02-gambler/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        108,
+        204,
+        399,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 473,
+      "edgeBad": 0,
+      "highlightRatio": 0.03847745138601572,
+      "sha256": "dc01bde2267b2eb89c082e06927901c72defcb0300b53ee1c41ca64dfffe1f98"
+    },
+    {
+      "file": "characters/02-gambler/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        100,
+        328,
+        407,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 325,
+      "edgeBad": 0,
+      "highlightRatio": 0.03997648442092887,
+      "sha256": "233d3a015a7a9c8de3d1447cb9b3c841a8332911da79a67f44219df11789df70"
+    },
+    {
+      "file": "characters/02-gambler/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        164,
+        200,
+        343,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 418,
+      "edgeBad": 0,
+      "highlightRatio": 0.0371708828084667,
+      "sha256": "5d1ea9a66ff590123c600218062a3d51bfc2cc1e36b9713c0b8e206eda1f5a6a"
+    },
+    {
+      "file": "characters/02-gambler/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        152,
+        236,
+        355,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 374,
+      "edgeBad": 0,
+      "highlightRatio": 0.03785966683493185,
+      "sha256": "ced98b770b5e85df614ff283880fe65a0d66b98daca73f0ec59e300bb7c282f6"
+    },
+    {
+      "file": "characters/03-prince/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        168,
+        192,
+        339,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 410,
+      "edgeBad": 0,
+      "highlightRatio": 0.0491637100861632,
+      "sha256": "df643ae6abe808c81dbf78b35ccf4e0f95aef4d9baf6c48d899ddba6a4d600bf"
+    },
+    {
+      "file": "characters/03-prince/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        132,
+        220,
+        375,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 459,
+      "edgeBad": 0,
+      "highlightRatio": 0.04786979415988511,
+      "sha256": "6176ec91118e4385fc8caf721449f527f32abf36974a28aa3f1e5c7c9e641671"
+    },
+    {
+      "file": "characters/03-prince/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        160,
+        204,
+        351,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 450,
+      "edgeBad": 0,
+      "highlightRatio": 0.048881955278211126,
+      "sha256": "ce55780ecd29e12e3bdda11995dd6118d92009229f88cdf03732935f54e86830"
+    },
+    {
+      "file": "characters/03-prince/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        144,
+        168,
+        363,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 421,
+      "edgeBad": 0,
+      "highlightRatio": 0.04829806807727691,
+      "sha256": "1fa25598612a3720be9b17bbe4f931d8f043c03a36c37e171e2b1c3a4b05a3f4"
+    },
+    {
+      "file": "characters/03-prince/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        100,
+        200,
+        411,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 524,
+      "edgeBad": 0,
+      "highlightRatio": 0.048484848484848485,
+      "sha256": "bc3c76c9ec594b095267eed5b32a9f289989ea30a44e9a4e8f75d33fc235bc50"
+    },
+    {
+      "file": "characters/03-prince/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        108,
+        328,
+        403,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 342,
+      "edgeBad": 0,
+      "highlightRatio": 0.04652498564043653,
+      "sha256": "35ce4fbddda9d2d8237013d7339d076333c89e0121d96bce6733f101e58c12a2"
+    },
+    {
+      "file": "characters/03-prince/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        164,
+        188,
+        347,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 400,
+      "edgeBad": 0,
+      "highlightRatio": 0.047619047619047616,
+      "sha256": "ef7cbed2403c63acc388d58ac53545a9d65bbcff35e77ce0ac0e0b255beec454"
+    },
+    {
+      "file": "characters/03-prince/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        152,
+        244,
+        355,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 348,
+      "edgeBad": 0,
+      "highlightRatio": 0.04971219256933543,
+      "sha256": "659d13c13f4a6d82cfe785bd734440acc8d4ac897490f244fb1758da8e7cdfb2"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        164,
+        192,
+        343,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 411,
+      "edgeBad": 0,
+      "highlightRatio": 0.04976525821596244,
+      "sha256": "2a70663d9744e918f8a310b1991dc5a376100a53a9488e611f1081913bc4b7c3"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        140,
+        212,
+        367,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 444,
+      "edgeBad": 0,
+      "highlightRatio": 0.0480225988700565,
+      "sha256": "fd5552f71dd86c13e442e2d75a5e7bc546a1677d2731338ce4c0efcd80484958"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        156,
+        204,
+        351,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 432,
+      "edgeBad": 0,
+      "highlightRatio": 0.04903495044340115,
+      "sha256": "9c3fdfa1b5466d708d1229cb0c75da719b446db900706726857803c1541ccac9"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        128,
+        140,
+        379,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 489,
+      "edgeBad": 0,
+      "highlightRatio": 0.04931405265109381,
+      "sha256": "a682187301b864e15eda50422a7d8d287ffb4143a67e3f4949726187a53dc850"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        112,
+        200,
+        399,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 470,
+      "edgeBad": 0,
+      "highlightRatio": 0.04958075100255195,
+      "sha256": "99f5b190c1055bf6485ff192bbac013ce43e41cac148af9e093640535daa7fad"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        100,
+        324,
+        411,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 340,
+      "edgeBad": 0,
+      "highlightRatio": 0.04853833425261997,
+      "sha256": "ec5a05d810b97ad4f95d4fe0f098b1c683c3678d80fb46cad5069df2ec9edf5c"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        160,
+        184,
+        347,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 422,
+      "edgeBad": 0,
+      "highlightRatio": 0.04989247311827957,
+      "sha256": "b6007b283cc9dc98e53c47424965129fbf4c7a42ddb511257ac6623b60b82a71"
+    },
+    {
+      "file": "characters/04-adventurer/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        156,
+        232,
+        351,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 343,
+      "edgeBad": 0,
+      "highlightRatio": 0.048921620199894794,
+      "sha256": "4baf556e339b5635d204e534fc798194e9a2c39309df73b6c7f128ff33113741"
+    },
+    {
+      "file": "characters/ayi/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        160,
+        156,
+        347,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 439,
+      "edgeBad": 0,
+      "highlightRatio": 0.049477984566500224,
+      "sha256": "0a21d9e44695a7df6eff8cf9367b7cd0466bb0eeb569c4501f15a3511335a458"
+    },
+    {
+      "file": "characters/ayi/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        136,
+        164,
+        371,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 512,
+      "edgeBad": 0,
+      "highlightRatio": 0.04963314630988347,
+      "sha256": "25a77cbf1c39bafd61bc733ade700ec506e21a615ac6bacfa60fc41a44f473bd"
+    },
+    {
+      "file": "characters/ayi/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        156,
+        212,
+        355,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 450,
+      "edgeBad": 0,
+      "highlightRatio": 0.04797047970479705,
+      "sha256": "84ecd7a731d3c86a5ae8691901b1e96b7ce1ce5f8e122e82d416988427b8af40"
+    },
+    {
+      "file": "characters/ayi/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        156,
+        148,
+        355,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 460,
+      "edgeBad": 0,
+      "highlightRatio": 0.04857142857142857,
+      "sha256": "8c0a5c244747cd18c305bf1ed967916238f86d1fb8bcfedfe2f77ad6c75a884f"
+    },
+    {
+      "file": "characters/ayi/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        100,
+        164,
+        411,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 496,
+      "edgeBad": 0,
+      "highlightRatio": 0.04797208896641954,
+      "sha256": "71fcdf40f6961528894f5a636446b5bdc71091b24b907d715cbba89800d73b17"
+    },
+    {
+      "file": "characters/ayi/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        56,
+        304,
+        451,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 450,
+      "edgeBad": 0,
+      "highlightRatio": 0.04856512141280353,
+      "sha256": "b844207ccb7f48aaa9ebef246902186dfb250d24d21c7fa30ba2ab5f9e307a5d"
+    },
+    {
+      "file": "characters/ayi/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        168,
+        168,
+        339,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 468,
+      "edgeBad": 0,
+      "highlightRatio": 0.04804804804804805,
+      "sha256": "4abf9063b4a95a555ad146c28df6663ab152bde2dbfbcfd424c0e40557ed52c4"
+    },
+    {
+      "file": "characters/ayi/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "logical": [
+        128,
+        128
+      ],
+      "upscale": 4,
+      "bounds": [
+        160,
+        240,
+        351,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ],
+      "edges": 316,
+      "edgeBad": 0,
+      "highlightRatio": 0.04849884526558892,
+      "sha256": "987d4d3b952b384a784fe53d764e9da963cf62c0aec9fff9c136f073bd86d3e1"
+    }
+  ]
+}

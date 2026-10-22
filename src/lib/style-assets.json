@@ -321,7 +321,8 @@
           "bottom": 1016,
           "left": 28,
           "right": 160
-        }
+        },
+        "spriteSize": 256
       }
     },
     "pc98": {
@@ -427,7 +428,8 @@
           "bottom": 1016,
           "left": 38,
           "right": 152
-        }
+        },
+        "spriteSize": 256
       }
     },
     "msdos": {
@@ -533,7 +535,8 @@
           "bottom": 1016,
           "left": 38,
           "right": 154
-        }
+        },
+        "spriteSize": 256
       }
     }
   }
