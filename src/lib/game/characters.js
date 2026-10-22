@@ -1,6 +1,7 @@
 // 角色資料，id、名字、配色沿用 TaiwanMahjong 的 src/lib/characters.js。
 //
-// stats：速度 / 跳躍 / 力量，各 1–5，總和固定 10，維持平衡。
+// stats：速度 / 跳躍 / 力量，各 1–5，總和固定 10。這裡只用來顯示，實際數值在
+//   crates/volleyball-core/src/characters.rs，改的話兩邊要一起改。
 // lines：score 得分、miss 失分、win 贏得比賽、lose 輸掉比賽。
 //
 // sprite：場上的全身動畫圖。還沒有圖的角色會用「頭像 + 程式畫的身體」代替。

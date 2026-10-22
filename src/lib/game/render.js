@@ -1,6 +1,6 @@
 // 畫面：背景、角色、球、特效、計分板。只讀取比賽狀態，不改它。
 
-import { W, H, GROUND, NET, BALL_R, PLAYER_HALF_W } from './game.js';
+import { W, H, GROUND, NET, BALL_R, PLAYER_HALF_W } from './constants.js';
 import { EXPRESSIONS, pickLine } from './characters.js';
 
 const SCALE = 2; // 內部解析度 1920×1080，縮放顯示時比較銳利
@@ -487,7 +487,7 @@ function outlinedText(g, text, x, y, size, fill = '#fff', align = 'center') {
   g.fillText(text, x, y);
 }
 
-function drawHud(g, match) {
+function drawHud(g, match, names) {
   for (const side of [0, 1]) {
     const p = match.players[side];
     const m = mood[side];
@@ -507,7 +507,8 @@ function drawHud(g, match) {
       g.drawImage(img, x - 6, 10, 86, 86);
       g.restore();
     }
-    outlinedText(g, p.character.name, side === 0 ? x + 84 : x - 10, 30, 20, '#fff', side === 0 ? 'left' : 'right');
+    const label = names?.[side] ? `${names[side]}（${p.character.name}）` : p.character.name;
+    outlinedText(g, label, side === 0 ? x + 84 : x - 10, 30, 20, '#fff', side === 0 ? 'left' : 'right');
     outlinedText(g, String(match.score[side]), side === 0 ? x + 84 : x - 10, 64, 44, side === match.lastScorer && match.phase === 'point' ? '#ffe066' : '#fff', side === 0 ? 'left' : 'right');
   }
   outlinedText(g, `${match.target} 分勝`, W / 2, 26, 16, '#fff');
@@ -569,7 +570,24 @@ function drawClouds(g) {
   }
 }
 
-export function draw(canvas, match) {
+// 連線時在自己的角色頭上標「你」
+function drawYouMarker(g, p) {
+  const y = p.y - 168 + Math.sin(p.anim * 0.1) * 3;
+  g.fillStyle = '#ff5d8f';
+  g.strokeStyle = 'rgba(30,20,40,0.9)';
+  g.lineWidth = 3;
+  g.beginPath();
+  g.moveTo(p.x - 9, y);
+  g.lineTo(p.x + 9, y);
+  g.lineTo(p.x, y + 12);
+  g.closePath();
+  g.fill();
+  g.stroke();
+  outlinedText(g, '你', p.x, y - 13, 18, '#fff');
+}
+
+// opts：{ you: 自己的座位（連線時）, names: 兩邊玩家名稱（連線時） }
+export function draw(canvas, match, opts = {}) {
   const g = canvas.getContext('2d');
   g.setTransform(SCALE, 0, 0, SCALE, 0, 0);
 
@@ -601,8 +619,9 @@ export function draw(canvas, match) {
   }
   g.globalAlpha = 1;
 
+  if (opts.you != null && match.phase !== 'over') drawYouMarker(g, match.players[opts.you]);
   drawBubbles(g, match);
-  drawHud(g, match);
+  drawHud(g, match, opts.names);
 }
 
 // 跟模擬同步，每個影格呼叫一次

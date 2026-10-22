@@ -67,3 +67,8 @@ export function endFrame() {
 export function wasPressed(...codes) {
   return codes.some((c) => pressedThisFrame.has(c));
 }
+
+// 轉成送給引擎的位元：1 左、2 右、4 上、8 下、16 擊球（按住）、32 擊球（剛按下）
+export function toBits(i) {
+  return (i.left ? 1 : 0) | (i.right ? 2 : 0) | (i.up ? 4 : 0) | (i.down ? 8 : 0) | (i.hit ? 16 : 0) | (i.hitPressed ? 32 : 0);
+}

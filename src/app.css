@@ -190,3 +190,38 @@ button:active { transform: translateY(0.4cqh); box-shadow: 0 0.2cqh 0 var(--ink)
 .result-line { font-size: 3.2cqh; margin: 1cqh 0; max-width: 40cqw; }
 .result-score { font-size: 4cqh; font-weight: 900; color: var(--sea); margin: 0; }
 .result-unlock { color: var(--accent); font-weight: 900; margin: 1cqh 0 0; }
+
+/* 提示訊息 */
+.toasts {
+  position: absolute;
+  top: 2cqh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1cqh;
+  z-index: 10;
+  pointer-events: none;
+}
+.toast {
+  background: #c1121f;
+  color: #fff;
+  font-weight: 800;
+  padding: 1cqh 2.4cqh;
+  border-radius: 1.4cqh;
+  border: 0.35cqh solid var(--ink);
+  font-size: 2.4cqh;
+}
+.toast.ok { background: #2a9d8f; }
+.banner {
+  position: absolute;
+  left: 0; right: 0; bottom: 3cqh;
+  margin: auto;
+  width: fit-content;
+  background: rgba(43, 34, 51, 0.85);
+  color: #fff;
+  padding: 1cqh 3cqh;
+  border-radius: 2cqh;
+  font-weight: 800;
+}
+button:disabled { opacity: 0.5; cursor: default; transform: none; }
