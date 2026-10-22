@@ -1,4 +1,5 @@
-// 鍵盤＋手把輸入。每個影格呼叫 read(slot) 取得該玩家的輸入。
+// 比賽中的輸入：鍵盤、手把、觸控按鈕合在一起。每個影格呼叫 read(slot) 取得該玩家的輸入。
+// （選單的操作在 src/lib/components/Controls.svelte）
 
 const KEYMAPS = [
   // 1P：WASD 移動跳躍，F / 空白鍵 擊球
@@ -10,62 +11,105 @@ const KEYMAPS = [
 const held = new Set();
 const pressedThisFrame = new Set();
 
+const blank = () => ({ left: false, right: false, up: false, down: false, hit: false });
+const touch = [blank(), blank()];
+const touchPressed = [false, false];
+
+function typing(target) {
+  return !!target?.closest?.('input, textarea, select, [contenteditable]');
+}
+
 window.addEventListener('keydown', (e) => {
-  if (e.repeat) return;
+  if (e.repeat || typing(e.target)) return;
   held.add(e.code);
   pressedThisFrame.add(e.code);
-  if (e.code === 'Space' || e.code.startsWith('Arrow')) e.preventDefault();
 });
 window.addEventListener('keyup', (e) => held.delete(e.code));
-window.addEventListener('blur', () => held.clear());
+window.addEventListener('blur', () => {
+  held.clear();
+  touch.forEach((t) => Object.assign(t, blank()));
+});
 
-const padHitPrev = [false, false];
+// ---------- 手把（標準配置：A 跳、B / X / RB 擊球、十字鍵或左搖桿移動） ----------
 
-function readPad(index) {
-  const pad = navigator.getGamepads?.()[index];
-  if (!pad) return null;
+const padHitPrev = new Map();
+
+function standardPads() {
+  let pads = [];
+  try {
+    pads = navigator.getGamepads?.() ?? [];
+  } catch {
+    // 某些瀏覽器在非安全環境會擋
+  }
+  return [...pads].filter((p) => p?.connected && (!p.mapping || p.mapping === 'standard'));
+}
+
+function readPad(pad) {
   const ax = pad.axes[0] ?? 0;
   const ay = pad.axes[1] ?? 0;
   const btn = (i) => !!pad.buttons[i]?.pressed;
-  const hit = btn(1) || btn(2) || btn(5);
+  const hit = btn(1) || btn(2) || btn(5) || btn(7);
   const result = {
     left: ax < -0.4 || btn(14),
     right: ax > 0.4 || btn(15),
     up: btn(0) || btn(12) || ay < -0.6,
     down: ay > 0.5 || btn(13),
     hit,
-    hitPressed: hit && !padHitPrev[index],
+    hitPressed: hit && !padHitPrev.get(pad.index),
   };
-  padHitPrev[index] = hit;
+  padHitPrev.set(pad.index, hit);
   return result;
 }
 
-// slots：這個玩家要讀哪幾組鍵盤（1P 單人模式可以兩組都用）
-export function read(slot, { keymaps = [slot], pad = slot } = {}) {
+// ---------- 觸控（TouchControls.svelte 呼叫） ----------
+
+export function setTouch(slot, patch) {
+  Object.assign(touch[slot], patch);
+}
+export function pressTouchHit(slot) {
+  touchPressed[slot] = true;
+}
+export function clearTouch() {
+  touch.forEach((t) => Object.assign(t, blank()));
+}
+
+/**
+ * 讀一個玩家的輸入。
+ * keymaps：要讀哪幾組鍵盤；pads：'all'（所有手把）或手把順序的陣列（第幾支手把，不是 index）；
+ * touch：讀哪一組觸控按鈕。
+ */
+export function read(slot, { keymaps = [slot], pads = [slot], touch: touchSlot = slot } = {}) {
   const any = (codes) => codes.some((c) => held.has(c));
   const anyPressed = (codes) => codes.some((c) => pressedThisFrame.has(c));
   const input = { left: false, right: false, up: false, down: false, hit: false, hitPressed: false };
+  const merge = (src) => {
+    for (const key of Object.keys(input)) input[key] ||= !!src[key];
+  };
   for (const k of keymaps) {
     const map = KEYMAPS[k];
-    input.left ||= any(map.left);
-    input.right ||= any(map.right);
-    input.up ||= any(map.up);
-    input.down ||= any(map.down);
-    input.hit ||= any(map.hit);
-    input.hitPressed ||= anyPressed(map.hit);
+    merge({
+      left: any(map.left),
+      right: any(map.right),
+      up: any(map.up),
+      down: any(map.down),
+      hit: any(map.hit),
+      hitPressed: anyPressed(map.hit),
+    });
   }
-  const p = readPad(pad);
-  if (p) for (const key of Object.keys(input)) input[key] ||= p[key];
+  const connected = standardPads();
+  const chosen = pads === 'all' ? connected : pads.map((i) => connected[i]).filter(Boolean);
+  for (const pad of chosen) merge(readPad(pad));
+  if (touchSlot != null) {
+    merge(touch[touchSlot]);
+    input.hitPressed ||= touchPressed[touchSlot];
+  }
   return input;
 }
 
-// 一個影格結束後清掉「剛按下」的紀錄
+// 一個模擬影格結束後清掉「剛按下」的紀錄
 export function endFrame() {
   pressedThisFrame.clear();
-}
-
-export function wasPressed(...codes) {
-  return codes.some((c) => pressedThisFrame.has(c));
+  touchPressed[0] = touchPressed[1] = false;
 }
 
 // 轉成送給引擎的位元：1 左、2 右、4 上、8 下、16 擊球（按住）、32 擊球（剛按下）

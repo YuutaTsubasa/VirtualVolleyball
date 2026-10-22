@@ -4,6 +4,12 @@
   --accent: #ff5d8f;
   --accent2: #ffd23f;
   --sea: #1f5fbf;
+  /* 手把鍵盤（從 TaiwanMahjong 搬來的 ControlsKeyboard）用的顏色 */
+  --text: var(--ink);
+  --panel-solid: var(--paper);
+  --gold: var(--ink);
+  --muted: #6b6070;
+  --red: #c1121f;
   font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
 }
 
@@ -132,7 +138,8 @@ button:active { transform: translateY(0.4cqh); box-shadow: 0 0.2cqh 0 var(--ink)
   font-size: 2cqh;
   padding: 0.3cqh 0;
 }
-.roster .card.focus { outline: 0.7cqh solid var(--accent); outline-offset: 0.2cqh; }
+.roster .card.focus { outline: 0.7cqh solid var(--accent2); outline-offset: 0.2cqh; }
+[data-input] .roster .card:focus { outline: 0.7cqh solid var(--accent); outline-offset: 0.2cqh; }
 .roster .card.locked img { filter: brightness(0) opacity(0.6); }
 .roster .card.taken::after {
   content: attr(data-tag);
@@ -170,7 +177,7 @@ button:active { transform: translateY(0.4cqh); box-shadow: 0 0.2cqh 0 var(--ink)
 
 /* 說明 */
 .keys { background: var(--paper); border: 0.45cqh solid var(--ink); border-radius: 2cqh; border-spacing: 0; overflow: hidden; }
-.keys th, .keys td { padding: 1cqh 3cqh; text-align: center; }
+.keys th, .keys td { padding: 0.8cqh 2cqh; text-align: center; font-size: 2.3cqh; }
 .keys tr:first-child { background: var(--accent2); }
 .tips { background: rgba(255, 250, 240, 0.95); border: 0.45cqh solid var(--ink); border-radius: 2cqh; padding: 1.6cqh 2cqh 1.6cqh 5cqh; margin: 0; max-width: 80cqw; line-height: 1.6; }
 
@@ -225,3 +232,37 @@ button:active { transform: translateY(0.4cqh); box-shadow: 0 0.2cqh 0 var(--ink)
   font-weight: 800;
 }
 button:disabled { opacity: 0.5; cursor: default; transform: none; }
+
+/* 焦點框：用鍵盤或手把操作時才顯示，滑鼠／觸控不顯示 */
+button:focus { outline: none; }
+[data-input='key'] :is(button, select, input, a):focus-visible,
+[data-input='pad'] :is(button, select, input, a):focus {
+  outline: 0.7cqh solid var(--accent);
+  outline-offset: 0.3cqh;
+}
+[data-input='key'] button:focus-visible,
+[data-input='pad'] button:focus {
+  background: var(--accent2);
+}
+/* 觸控：沒有滑鼠停留，hover 效果會黏住 */
+[data-input='touch'] button:hover:not(:focus) { background: var(--paper); transform: none; }
+
+#stage { touch-action: manipulation; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; }
+#stage input, #stage textarea { user-select: text; -webkit-user-select: text; }
+
+/* 手機直放時提示轉橫向 */
+.rotate-hint { display: none; }
+@media (orientation: portrait) and (pointer: coarse) {
+  .rotate-hint {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    align-items: center;
+    justify-content: center;
+    background: #1b1726;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+  }
+}

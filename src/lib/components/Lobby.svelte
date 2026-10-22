@@ -14,7 +14,7 @@
   const address = $derived(urls[urlIdx] ?? urls[0] ?? '');
 
   let botDifficulty = $state('normal');
-  let showCharacter = $state(false);
+  let charDialog;
   let chatText = $state('');
   let chatBox = $state();
 
@@ -82,7 +82,7 @@
             <span class="role">{roleOf(seat, i)}</span>
             <span class="status"><i class="dot" class:on={seat.kind === 'bot' || seat.connected}></i>{statusOf(seat)}</span>
             {#if i === net.seat}
-              <button onclick={() => (showCharacter = true)}>更換角色</button>
+              <button onclick={() => charDialog.showModal()}>更換角色</button>
             {:else if isHost && room.host_seat !== i}
               <button onclick={() => hostCmd('remove', { seat: i })}>移除</button>
             {/if}
@@ -166,21 +166,20 @@
   </footer>
 </section>
 
-{#if showCharacter}
-  <div class="modal" role="presentation" onclick={(e) => e.target === e.currentTarget && (showCharacter = false)}>
-    <div class="panel">
-      <h3>更換角色</h3>
-      <PortraitGrid
-        value={myCharacter}
-        size={11}
-        onpick={(id) => {
-          setCharacter(id);
-          showCharacter = false;
-        }}
-      />
-    </div>
+<dialog class="char-dialog" bind:this={charDialog}>
+  <div class="panel">
+    <h3>更換角色</h3>
+    <PortraitGrid
+      value={myCharacter}
+      size={11}
+      onpick={(id) => {
+        setCharacter(id);
+        charDialog.close();
+      }}
+    />
+    <div class="dialog-actions"><button type="button" onclick={() => charDialog.close()}>取消</button></div>
   </div>
-{/if}
+</dialog>
 
 <style>
   .lobby {
@@ -415,16 +414,19 @@
     font-size: 3cqh;
     margin: 0;
   }
-  .modal {
-    position: absolute;
-    inset: 0;
-    background: rgba(20, 16, 35, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 5;
-  }
-  .modal .panel {
+  .char-dialog {
+    border: none;
+    background: none;
+    padding: 0;
     width: 74cqw;
+    max-width: 90vw;
+  }
+  .char-dialog::backdrop {
+    background: rgba(20, 16, 35, 0.6);
+  }
+  .dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.4cqh;
   }
 </style>

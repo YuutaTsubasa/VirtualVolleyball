@@ -50,17 +50,22 @@ npm test
 
 ## 怎麼玩
 
-| | 1P（左） | 2P（右） |
-| --- | --- | --- |
-| 移動 | A / D | ← / → |
-| 跳躍 | W | ↑ |
-| 擊球 | F 或 空白鍵 | Enter 或 右 Shift |
+支援鍵盤、滑鼠、手把（標準配置，例如 Xbox／PlayStation／Switch Pro）與觸控。
+
+| | 鍵盤 1P | 鍵盤 2P | 手把 | 觸控 |
+| --- | --- | --- | --- | --- |
+| 移動 | A / D | ← / → | 十字鍵／左搖桿 | 左下搖桿 |
+| 跳躍 | W | ↑ | A 或 ↑ | 「跳」或搖桿往上推 |
+| 擊球 | F／空白鍵 | Enter／右 Shift | B／X／RB／RT | 「擊」 |
+| 暫停 | Esc／P | Esc／P | Start | 上方 ❚❚ |
 
 - 球碰到身體會自動彈出去。
 - **扣殺**：跳起來在空中按擊球；同時按 ↑ 高吊、↓ 重扣、往對面按更快。
 - **飛撲**：在地上按住左右再按擊球。
-- 對戰電腦和連線時，WASD 或方向鍵都可以。支援手把。
-- 對戰電腦贏一場會解鎖隱藏角色「阿翼」。
+- 對戰電腦和連線時，WASD、方向鍵、任何一支手把都可以；雙人同樂時第一支手把是 1P、第二支是 2P，同一台平板則左右各一組觸控按鈕。
+- 選單：滑鼠／觸控直接點；鍵盤用方向鍵、Enter、Esc；手把用十字鍵、A、B（文字欄位按 A 會跳出手把鍵盤）。做法跟 TaiwanMahjong 相同（`src/lib/input-controls.js`）。
+- 手機請橫放；單機比賽中轉成直的或切到背景會自動暫停。
+- 對戰電腦贏一場會解鎖隱藏角色「阿翼」——或在選單輸入 ↑↑↓↓←→←→BA。
 
 ## 連線怎麼運作
 
@@ -84,7 +89,10 @@ src/
   lib/components/            Menu、SelectScreen、RoomEntry、Lobby…
   lib/game/render.js         Canvas 繪圖：背景、角色、球、特效、計分板
   lib/game/characters.js     角色顯示資料：名字、台詞、頭像（實際能力值在 Rust 那邊）
-  lib/game/input.js          鍵盤＋手把
+  lib/game/input.js          比賽中的輸入：鍵盤＋手把＋觸控
+  lib/input-controls.js      選單的鍵盤／手把操作（跟 TaiwanMahjong 共用）
+  lib/components/Controls.svelte       選單操作、手把鍵盤、暫停
+  lib/components/TouchControls.svelte  比賽中的觸控按鈕
   lib/game/audio.js          WebAudio 合成音效
 public/characters/         角色頭像（從 TaiwanMahjong 複製，縮成 384px）
 docs/art-guide.md          要請 ChatGPT 畫的圖與提示詞

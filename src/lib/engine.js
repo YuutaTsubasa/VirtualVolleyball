@@ -97,7 +97,8 @@ export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {} }) {
     } else if (state === 'online') {
       // 只送自己的輸入，比賽在伺服器上跑
       if (net.seat != null) {
-        const i = input.read(0, { keymaps: [0, 1], pad: 0 });
+        // 自己一個人操作：兩組鍵盤、所有手把、觸控按鈕都算
+        const i = input.read(0, { keymaps: [0, 1], pads: 'all', touch: 0 });
         if (i.hitPressed) hitSeq++;
         sendInput(input.toBits({ ...i, hitPressed: false }), hitSeq);
       }
@@ -140,12 +141,13 @@ export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {} }) {
       let sides;
       let humans;
       if (mode === 'cpu') {
-        // 單人時 1P 用 WASD 或方向鍵都可以
+        // 單人時 1P 用 WASD 或方向鍵、任何一支手把都可以
         sides = [{}, { ai: difficulty }];
-        humans = [() => input.read(0, { keymaps: [0, 1], pad: 0 }), null];
+        humans = [() => input.read(0, { keymaps: [0, 1], pads: 'all', touch: 0 }), null];
       } else if (mode === 'versus') {
         sides = [{}, {}];
-        humans = [() => input.read(0), () => input.read(1)];
+        // 第一支手把給 1P、第二支給 2P；只有一支手把時，另一人用鍵盤
+        humans = [() => input.read(0, { pads: [0] }), () => input.read(1, { pads: [1] })];
       } else {
         sides = [{ ai: difficulty }, { ai: difficulty }];
         humans = [null, null];

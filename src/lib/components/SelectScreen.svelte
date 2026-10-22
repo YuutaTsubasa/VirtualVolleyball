@@ -1,11 +1,12 @@
 <script>
   import { CHARACTERS, isUnlocked } from '../game/characters.js';
+  import { onMount } from 'svelte';
   import { play } from '../game/audio.js';
+  import { ui } from '../ui.svelte.js';
 
   // onstart({ characters, target, difficulty })、onback()
   let { mode, onstart, onback } = $props();
 
-  const COLS = 4;
   const STEP_TITLES = {
     cpu: ['選擇你的角色', '選擇對手'],
     versus: ['1P 選擇角色', '2P 選擇角色'],
@@ -33,6 +34,8 @@
     do next = (next + 1) % CHARACTERS.length;
     while (!isUnlocked(CHARACTERS[next]));
     cursor = next;
+    // 焦點也跟著移過去，鍵盤／手把直接按確定就是這個角色
+    if (ui.input !== 'touch') roster.querySelectorAll('button')[next]?.focus({ preventScroll: true });
   }
 
   function randomPick() {
@@ -46,31 +49,29 @@
     else onback();
   }
 
-  function onkeydown(e) {
-    if (e.repeat || e.target.tagName === 'SELECT') return;
-    const n = CHARACTERS.length;
-    const move = { ArrowLeft: -1, KeyA: -1, ArrowRight: 1, KeyD: 1, ArrowUp: -COLS, KeyW: -COLS, ArrowDown: COLS, KeyS: COLS }[e.code];
-    if (move) {
-      e.preventDefault();
-      cursor = (cursor + move + n) % n;
-      play('move');
-    } else if (['Enter', 'Space', 'KeyF'].includes(e.code)) {
-      e.preventDefault();
-      pick();
-    } else if (e.code === 'Escape' || e.code === 'Backspace') {
-      back();
-    } else if (e.code === 'KeyR') {
-      randomPick();
+  // 鍵盤／手把：焦點移到哪張卡就預覽哪個角色；觸控：第一下預覽、再點一下確定
+  function tap(i) {
+    if (ui.input === 'touch' && cursor !== i) {
+      cursor = i;
+      return;
     }
+    cursor = i;
+    pick(CHARACTERS[i]);
   }
-</script>
 
-<svelte:window {onkeydown} />
+  // Esc／手把 B（由 App 透過 Controls 呼叫）
+  export function goBack() {
+    back();
+  }
+
+  let roster;
+  onMount(() => roster.querySelectorAll('button')[cursor]?.focus({ preventScroll: true }));
+</script>
 
 <section class="screen">
   <h2>{STEP_TITLES[mode][step]}</h2>
   <div class="select-body">
-    <div class="roster">
+    <div class="roster" bind:this={roster}>
       {#each CHARACTERS as c, i (c.id)}
         {@const open = isUnlocked(c)}
         {@const taken = picks.indexOf(c)}
@@ -80,8 +81,9 @@
           class:locked={!open}
           class:taken={taken >= 0}
           data-tag={taken === 0 ? (mode === 'versus' ? '1P' : '已選') : ''}
-          onmouseenter={() => (cursor = i)}
-          onclick={() => pick(c)}
+          onmouseenter={() => ui.input === 'pointer' && (cursor = i)}
+          onfocus={() => (cursor = i)}
+          onclick={() => tap(i)}
         >
           <img src={c.portraits.normal} alt="" />
           <span>{open ? c.name : '？？？'}</span>
