@@ -1,0 +1,16 @@
+[package]
+name = "mahjong-volleyball"
+version = "0.1.0"
+description = "虛擬台麻館沙灘排球：麻將館的角色們來打排球"
+edition = "2021"
+rust-version = "1.89"
+
+[lib]
+name = "mahjong_volleyball_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
