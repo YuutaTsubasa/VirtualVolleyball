@@ -1,0 +1,41 @@
+{
+  "assetCount": 2,
+  "errors": [],
+  "generator": "built-in image_gen",
+  "cast": [
+    "xiaocui",
+    "aming"
+  ],
+  "assets": [
+    {
+      "path": "anime90/ui/title-scene.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "alphaErrors": 0,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "colors": 644277,
+      "bytes": 4974181,
+      "sha256": "d0c52f75ca74ce35a3e965c4ade987aeba95eae60cc4a6d4493fd1cc58dbef5d"
+    },
+    {
+      "path": "gameboy/ui/title-scene.png",
+      "width": 1920,
+      "height": 1080,
+      "opaque": true,
+      "alphaErrors": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "colors": 4,
+      "palette": {
+        "306230": 1050544,
+        "0f380f": 176592,
+        "8bac0f": 201008,
+        "9bbc0f": 645456
+      },
+      "bytes": 138332,
+      "sha256": "9700863150821a37d9c986a491fc936002bcc80eabae61f3c007a6b4b001bf2d"
+    }
+  ]
+}
