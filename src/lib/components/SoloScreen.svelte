@@ -22,6 +22,8 @@
   const mode = $derived(MODES[current]);
   // 有模式預覽插圖（ui/mode-*）就用插圖，沒有就用兩位角色的動作圖
   const modeArt = $derived(asset(`ui/mode-${mode.id}.webp`));
+  // 觀戰圖示：有畫好的就用（各風格自己的，沒有就用 90 年代版），都沒有時用程式畫的電視
+  const watchIcon = $derived(asset('ui/icons/watch.webp') ?? asset('ui/icons/watch.webp', 'anime90'));
 
   // 預覽用的兩位角色：每次進來隨機挑
   const pool = CHARACTERS.filter((c) => !c.hidden);
@@ -47,6 +49,8 @@
     <img src="{asset('ui/icons/gamepad.webp')}" alt="" />
   {:else if id === 'versus'}
     <span class="pair"><img src="{asset('ui/icons/gamepad.webp')}" alt="" /><img src="{asset('ui/icons/gamepad.webp')}" alt="" /></span>
+  {:else if watchIcon}
+    <img src={watchIcon} alt="" />
   {:else}
     <svg viewBox="0 0 64 52" aria-hidden="true">
       <rect x="3" y="3" width="58" height="36" rx="3" fill="#fbf4e0" stroke="#142a63" stroke-width="5" />

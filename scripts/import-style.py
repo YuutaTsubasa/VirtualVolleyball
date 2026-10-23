@@ -38,7 +38,7 @@ ENVIRONMENT = ['court', 'net', 'ball']
 EFFECTS = ['hit-spark', 'sand-puff', 'score-burst', 'spike-trail']
 UI = ['logo', 'score-panel', 'result-banner', 'portrait-frame', 'portrait-selected',
       'title-scene', 'mode-cpu', 'mode-versus', 'mode-watch']
-ICONS = ['keyboard', 'gamepad', 'touch', 'lock', 'ready', 'pause', 'sound-on', 'sound-off', 'back', 'settings']
+ICONS = ['keyboard', 'gamepad', 'touch', 'lock', 'ready', 'pause', 'sound-on', 'sound-off', 'back', 'settings', 'watch']
 
 
 def find_root(path: Path) -> Path:
@@ -151,7 +151,7 @@ def main():
         f = first(root / 'ui' / 'icons' / f'{name}.png', root / 'ui' / 'icons-extra' / f'{name}.png', root / 'icons' / f'{name}.png')
         if f:
             save(resized(Image.open(f).convert('RGBA'), (128, 128)), f'ui/icons/{name}.webp', 92)
-        elif style != 'anime90':
+        elif style != 'anime90' and name != 'watch':
             missing.append(f'ui/icons/{name}')
 
     # 清單
