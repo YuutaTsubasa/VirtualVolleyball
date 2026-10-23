@@ -8,7 +8,7 @@ import init, { LocalMatch } from './local/pkg/volleyball_wasm.js';
 import * as input from './game/input.js';
 import * as render from './game/render.js';
 import { play } from './game/audio.js';
-import { CHARACTERS, getCharacter } from './game/characters.js';
+import { getCharacter } from './game/characters.js';
 import { net, onFrame, sendInput } from './net.svelte.js';
 
 const FRAME = 1000 / 60;
@@ -29,7 +29,6 @@ function hydrate(state, prev) {
 // onScore(match)：比分有變（或新比賽開始）時呼叫，給 BGM 判斷賽末點
 export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {}, onScore = () => {} }) {
   render.resize(canvas);
-  render.preload(CHARACTERS);
 
   // idle：在選單（選單蓋住整個畫面，不跑比賽也不出聲）
   let state = 'idle'; // idle | local | paused | ended | online

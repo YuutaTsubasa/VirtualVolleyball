@@ -1,8 +1,9 @@
 // 畫面：背景、角色、球、特效、計分板。只讀取比賽狀態，不改它。
 
 import { W, H, GROUND, NET, BALL_R, PLAYER_HALF_W } from './constants.js';
-import { EXPRESSIONS, pickLine } from './characters.js';
+import { pickLine } from './characters.js';
 import { asset, currentConfig } from '../art-style.svelte.js';
+import { loadImage } from '../preload.svelte.js';
 
 // 內部解析度：一般風格 2 倍（1920×1080）比較銳利；像素風格用較低的倍數再放大（見 style-assets.js）
 let SCALE = 2;
@@ -41,42 +42,7 @@ function updatePalette() {
 
 // ---------- 圖片 ----------
 
-const images = new Map();
-function loadImage(src) {
-  if (images.has(src)) return images.get(src);
-  const img = new Image();
-  img.src = src;
-  images.set(src, img);
-  return img;
-}
 const ready = (img) => img && img.complete && img.naturalWidth > 0;
-
-// 從胸像裁出頭部（含頭髮），當作 Q 版身體上的大頭
-const HEAD_CROP = { x: 0.08, y: 0, w: 0.84, h: 0.63 };
-const heads = new Map();
-function headFor(character, expression) {
-  const src = character.portraits[expression] ?? character.portraits.normal;
-  const key = src;
-  if (heads.has(key)) return heads.get(key);
-  const img = loadImage(src);
-  if (!ready(img)) return null;
-  const sw = img.naturalWidth * HEAD_CROP.w;
-  const sh = img.naturalHeight * HEAD_CROP.h;
-  const c = document.createElement('canvas');
-  c.width = Math.round(sw);
-  c.height = Math.round(sh);
-  c.getContext('2d').drawImage(img, img.naturalWidth * HEAD_CROP.x, img.naturalHeight * HEAD_CROP.y, sw, sh, 0, 0, sw, sh);
-  heads.set(key, c);
-  return c;
-}
-
-export function preload(characters) {
-  for (const c of characters) {
-    for (const e of EXPRESSIONS) loadImage(c.portraits[e]);
-    if (c.sprite) loadImage(c.spriteSrc);
-  }
-  for (const key of Object.keys(ART_PATHS)) art(key);
-}
 
 // ---------- 背景（畫一次存起來） ----------
 
@@ -310,137 +276,6 @@ function rr(g, x, y, w, h, r) {
   g.roundRect(x, y, w, h, r);
 }
 
-// 沒有正式 sprite 時：頭像大頭 + 程式畫的 Q 版身體
-function drawChibi(g, p, expression, celebrate) {
-  const ch = p.character;
-  const t = p.anim;
-  const running = p.onGround && Math.abs(p.vx) > 0.1 && p.state === 'normal';
-  const airborne = !p.onGround;
-  const facing = facingOf(p);
-
-  g.save();
-  g.translate(p.x, p.y);
-
-  if (p.state === 'dive') {
-    g.translate(0, -18);
-    // 往飛撲的方向倒下去
-    g.rotate((Math.sign(p.vx) || p.toward) * 1.25);
-  }
-
-  // 落地壓扁、起跳拉長
-  let sx = 1;
-  let sy = 1;
-  if (airborne) {
-    sy = 1 + Math.min(0.1, Math.abs(p.vy) * 0.006);
-    sx = 1 / sy;
-  } else if (p.state === 'recover') {
-    sy = 0.88;
-    sx = 1.1;
-  }
-  const bob = celebrate ? -Math.abs(Math.sin(t * 0.15)) * 18 : running ? -Math.abs(Math.sin(t * 0.35)) * 4 : Math.sin(t * 0.08) * 1.2;
-  g.translate(0, bob);
-  g.scale(sx, sy);
-
-  const outline = 'rgba(40,30,30,0.85)';
-  g.lineWidth = 2.5;
-  g.strokeStyle = outline;
-
-  // 腿
-  const legSwing = running ? Math.sin(t * 0.35) * 9 : 0;
-  const legY = airborne ? -26 : -24;
-  g.fillStyle = ch.skin;
-  for (const s of [-1, 1]) {
-    const lx = s * 9 + (s === 1 ? legSwing : -legSwing) * facing;
-    rr(g, lx - 6, legY, 12, airborne ? 18 : 24, 6);
-    g.fill();
-    g.stroke();
-    g.fillStyle = '#ffffff';
-    rr(g, lx - 8 + facing * 2, (airborne ? -10 : -2) - 4, 16, 8, 4);
-    g.fill();
-    g.stroke();
-    g.fillStyle = ch.skin;
-  }
-
-  // 短褲
-  g.fillStyle = ch.shorts;
-  rr(g, -19, -36, 38, 16, 6);
-  g.fill();
-  g.stroke();
-
-  // 身體
-  g.fillStyle = ch.clothes;
-  rr(g, -21, -64, 42, 34, 12);
-  g.fill();
-  g.stroke();
-
-  // 手：放下時畫在頭後面，舉起來時畫在頭前面（不然會被大頭擋住）
-  const swinging = p.lastHit < 12 || p.spikeTimer > 0;
-  const armUp = swinging || celebrate || airborne || p.state === 'dive';
-  const drawArms = () => {
-    g.lineCap = 'round';
-    for (const s of [-1, 1]) {
-      const shoulderX = s * 19;
-      let hx;
-      let hy;
-      if (p.state === 'dive') {
-        hx = shoulderX + p.toward * 30;
-        hy = -66;
-      } else if (armUp) {
-        const strong = swinging && s === facing;
-        hx = s * (strong ? 50 : 42) + (swinging ? facing * 8 : 0);
-        hy = strong ? -112 : -96;
-      } else {
-        const swing = running ? Math.sin(t * 0.35 + (s > 0 ? Math.PI : 0)) * 8 : 0;
-        hx = shoulderX + s * 6 + swing;
-        hy = -36;
-      }
-      g.lineWidth = 11;
-      g.strokeStyle = outline;
-      g.beginPath();
-      g.moveTo(shoulderX, -56);
-      g.lineTo(hx, hy);
-      g.stroke();
-      g.lineWidth = 7;
-      g.strokeStyle = ch.skin;
-      g.stroke();
-    }
-  };
-  if (!armUp) drawArms();
-
-  // 頭
-  const head = headFor(ch, expression) ?? headFor(ch, 'normal');
-  const headW = 118;
-  if (head) {
-    const headH = headW * (head.height / head.width);
-    g.save();
-    if (p.state !== 'dive') g.rotate(Math.max(-0.12, Math.min(0.12, p.vx * 0.012)));
-    g.drawImage(head, -headW / 2, -58 - headH, headW, headH);
-    g.restore();
-  } else {
-    g.fillStyle = ch.hair;
-    g.beginPath();
-    g.arc(0, -98, 40, 0, Math.PI * 2);
-    g.fill();
-  }
-
-  // 領口蓋住頭像的切邊
-  g.fillStyle = ch.collar;
-  g.lineWidth = 2.5;
-  g.strokeStyle = outline;
-  g.beginPath();
-  g.moveTo(-21, -62);
-  g.quadraticCurveTo(0, -48, 21, -62);
-  g.lineTo(21, -66);
-  g.quadraticCurveTo(0, -56, -21, -66);
-  g.closePath();
-  g.fill();
-  g.stroke();
-
-  if (armUp) drawArms();
-
-  g.restore();
-}
-
 // 角色圖集：8 格橫排，順序同下（docs/art/anime90-v1）
 const SPRITE_FRAMES = ['idle', 'run1', 'run2', 'jump', 'spike', 'dive', 'win', 'lose'];
 function drawSprite(g, p, img, celebrate, sad) {
@@ -468,7 +303,6 @@ function drawSprite(g, p, img, celebrate, sad) {
 }
 
 function drawPlayer(g, match, p) {
-  const m = mood[p.side];
   const over = match.phase === 'over';
   const celebrate = over && match.winner === p.side;
   const sad = over && match.winner !== p.side;
@@ -481,8 +315,8 @@ function drawPlayer(g, match, p) {
 
   const ch = p.character;
   const sprite = ch.sprite ? loadImage(ch.spriteSrc) : null;
+  // 圖還沒載入就先不畫（進比賽前會先載好，見 preload.svelte.js）
   if (ready(sprite)) drawSprite(g, p, sprite, celebrate, sad);
-  else drawChibi(g, p, m.timer > 0 ? m.expression : 'normal', celebrate);
 }
 
 // ---------- 球 ----------

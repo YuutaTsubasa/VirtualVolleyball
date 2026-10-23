@@ -1,5 +1,6 @@
 <script>
-  import { asset } from './lib/art-style.svelte.js';
+  import { asset, artStyle } from './lib/art-style.svelte.js';
+  import { loading, preloadStyle, preloadStyleWithin } from './lib/preload.svelte.js';
   import { onMount } from 'svelte';
   import { createEngine } from './lib/engine.js';
   import { pickLine, unlockHidden } from './lib/game/characters.js';
@@ -33,6 +34,26 @@
   let onlineMenu = $state(false);
   let canvas;
   let engine = $state();
+
+  // 開遊戲時先把目前風格的圖都載好（最多等 15 秒）；之後換風格就在背景載
+  let booting = $state(true);
+  let waiting = $state(false); // 進比賽前還在等圖
+  const percent = $derived(loading.total ? Math.round((loading.done / loading.total) * 100) : 0);
+  preloadStyleWithin(artStyle.id, 15000).then(() => (booting = false));
+  $effect(() => {
+    if (!booting) preloadStyle(artStyle.id);
+  });
+
+  // 剛換風格、圖還沒載完就開賽：先顯示載入中，免得角色和球場慢慢冒出來
+  async function ensureArt() {
+    let done = false;
+    const all = preloadStyle(artStyle.id).then(() => (done = true));
+    await Promise.resolve();
+    if (done) return;
+    waiting = true;
+    await Promise.race([all, new Promise((resolve) => setTimeout(resolve, 10000))]);
+    waiting = false;
+  }
 
   onMount(() => {
     engine = createEngine(canvas, {
@@ -104,7 +125,8 @@
     screen = 'select';
   }
 
-  function start(setup) {
+  async function start(setup) {
+    await ensureArt();
     lastSetup = { ...setup, mode };
     result = null;
     matchPoint = false;
@@ -300,10 +322,50 @@
     {/each}
   </div>
   <SettingsDialog />
+  {#if booting || waiting}
+    <div class="loading" role="status">
+      <img src={asset('ui/logo.webp')} alt="虛擬排球王" />
+      <div class="bar"><i style:width="{percent}%"></i></div>
+      <p>載入中… {percent}%</p>
+    </div>
+  {/if}
   <div class="rotate-hint">請把裝置轉成橫向 ↻</div>
 </div>
 
 <style>
+  .loading {
+    position: absolute;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3cqh;
+    background: var(--navy-deep);
+    color: var(--cream);
+  }
+  .loading img {
+    width: 46cqw;
+  }
+  .loading .bar {
+    width: 40cqw;
+    height: 2.4cqh;
+    border: 0.4cqh solid var(--cream);
+    padding: 0.4cqh;
+  }
+  .loading .bar i {
+    display: block;
+    height: 100%;
+    background: var(--gold);
+    transition: width 0.15s;
+  }
+  .loading p {
+    margin: 0;
+    font-weight: 900;
+    font-size: 2.6cqh;
+    letter-spacing: 0.2em;
+  }
   .result {
     display: flex;
     flex-direction: column;

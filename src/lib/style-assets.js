@@ -46,6 +46,14 @@ export function assetPath(style, path, base = '/') {
   return url(DEFAULT_STYLE, path, base);
 }
 
+// 所有風格用到的圖（每種風格的清單都是完整的，聯集就是全部）
+const ALL_FILES = [...new Set(Object.values(MANIFEST.styles ?? {}).flatMap((s) => s.files ?? []))];
+
+/** 這個風格要用到的每一張圖的網址（沒有的退回 90 年代版、選用插圖沒有就略過），給預先載入用 */
+export function styleUrls(style, base = '/') {
+  return [...new Set(ALL_FILES.map((path) => assetPath(style, path, base)).filter(Boolean))];
+}
+
 /** 這個風格已經交了多少（給選風格畫面顯示「製作中」） */
 export function styleProgress(style) {
   if (style === DEFAULT_STYLE) return 1;
