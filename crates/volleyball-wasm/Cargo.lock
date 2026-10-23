@@ -234,7 +234,7 @@ checksum = "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563"
 
 [[package]]
 name = "volleyball-core"
-version = "0.1.5"
+version = "0.1.6"
 dependencies = [
  "getrandom",
  "rand",
@@ -244,7 +244,7 @@ dependencies = [
 
 [[package]]
 name = "volleyball-wasm"
-version = "0.1.5"
+version = "0.1.6"
 dependencies = [
  "serde_json",
  "volleyball-core",
