@@ -1,0 +1,275 @@
+{
+  "name": "xiaocui-jump-spike-fix-v1",
+  "assetCount": 12,
+  "frameIndices": {
+    "jump": 3,
+    "spike": 4
+  },
+  "generator": "built-in image_gen for jump; mechanical uniform re-export for spike",
+  "assets": [
+    {
+      "path": "anime90/characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "1e143f06c7b9bc9bf92c0bd2efffd39c894a8006eb70ff38620b0eeac6340899",
+      "bounds": {
+        "left": 70,
+        "top": 124,
+        "width": 373,
+        "height": 372,
+        "bottomExclusive": 496
+      },
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "partialAlpha": 62406,
+      "opaqueColors": 18630,
+      "method": "Built-in imagegen anatomical repair, then size/alpha/palette export"
+    },
+    {
+      "path": "anime90/characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "aaf5ea7a811aa851df740ffefe11292b9c16293f66f71afacfcb46e085c06c26",
+      "bounds": {
+        "left": 84,
+        "top": 181,
+        "width": 345,
+        "height": 315,
+        "bottomExclusive": 496
+      },
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "partialAlpha": 58712,
+      "opaqueColors": 25149,
+      "method": "Uniform re-export at84% of previous sprite scale; original artwork retained",
+      "previousBounds": {
+        "left": 51,
+        "top": 121,
+        "width": 411,
+        "height": 375,
+        "bottomExclusive": 496
+      },
+      "uniformScale": 0.83984375
+    },
+    {
+      "path": "pc98/characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "68cccb638f1f34dcc9d35fc0b76f1c5524355ed7b073980770cf25695eace374",
+      "bounds": {
+        "left": 74,
+        "top": 124,
+        "width": 364,
+        "height": 372,
+        "bottomExclusive": 496
+      },
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "partialAlpha": 0,
+      "opaqueColors": 15,
+      "method": "Built-in imagegen anatomical repair, then size/alpha/palette export"
+    },
+    {
+      "path": "pc98/characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "40e00266c065ce8139df8cd07ea6162530ac49da191a6d5a8043539017ef1a5e",
+      "bounds": {
+        "left": 74,
+        "top": 182,
+        "width": 368,
+        "height": 314,
+        "bottomExclusive": 496
+      },
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "partialAlpha": 0,
+      "opaqueColors": 15,
+      "method": "Uniform re-export at84% of previous sprite scale; original artwork retained",
+      "previousBounds": {
+        "left": 38,
+        "top": 122,
+        "width": 438,
+        "height": 374,
+        "bottomExclusive": 496
+      },
+      "uniformScale": 0.83984375
+    },
+    {
+      "path": "msdos/characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "1a39adfa208b7e3d5d20f71504359e004c7c4e9b3ffcc27ce4694258941118f0",
+      "bounds": {
+        "left": 66,
+        "top": 124,
+        "width": 382,
+        "height": 372,
+        "bottomExclusive": 496
+      },
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "partialAlpha": 0,
+      "opaqueColors": 61,
+      "method": "Built-in imagegen anatomical repair, then size/alpha/palette export"
+    },
+    {
+      "path": "msdos/characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "72095e33e584727e943120d62054a2ce2620b22f5cffdcb0285dc6774ff717c6",
+      "bounds": {
+        "left": 78,
+        "top": 182,
+        "width": 360,
+        "height": 314,
+        "bottomExclusive": 496
+      },
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "partialAlpha": 0,
+      "opaqueColors": 62,
+      "method": "Uniform re-export at84% of previous sprite scale; original artwork retained",
+      "previousBounds": {
+        "left": 42,
+        "top": 122,
+        "width": 430,
+        "height": 374,
+        "bottomExclusive": 496
+      },
+      "uniformScale": 0.83984375
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "62667a1e6443e9027055136e7702de4c88c0e7ea48741af17bb99a21c6678667",
+      "bounds": {
+        "left": 68,
+        "top": 124,
+        "width": 376,
+        "height": 372,
+        "bottomExclusive": 496
+      },
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "partialAlpha": 66453,
+      "opaqueColors": 30540,
+      "method": "Built-in imagegen anatomical repair, then size/alpha/palette export"
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "34230ba6a4bed50f12f7c5c9139b8678fa15e41bb186edab66b0d0133cd3bb64",
+      "bounds": {
+        "left": 83,
+        "top": 186,
+        "width": 346,
+        "height": 310,
+        "bottomExclusive": 496
+      },
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "partialAlpha": 61961,
+      "opaqueColors": 33270,
+      "method": "Uniform re-export at84% of previous sprite scale; original artwork retained",
+      "previousBounds": {
+        "left": 50,
+        "top": 125,
+        "width": 412,
+        "height": 369,
+        "bottomExclusive": 494
+      },
+      "uniformScale": 0.83984375
+    },
+    {
+      "path": "gameboy/characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "1f1cb045f4de434ecb9fc34d1ccf5a9841edc6ae002f92cfe81512d4ee87a183",
+      "bounds": {
+        "left": 80,
+        "top": 124,
+        "width": 356,
+        "height": 372,
+        "bottomExclusive": 496
+      },
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "partialAlpha": 0,
+      "opaqueColors": 4,
+      "method": "Built-in imagegen anatomical repair, then size/alpha/palette export"
+    },
+    {
+      "path": "gameboy/characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "77b33cf7352d761d9c203068fed79fd17b6bc51a542a8cee0af7092c92613315",
+      "bounds": {
+        "left": 76,
+        "top": 176,
+        "width": 364,
+        "height": 320,
+        "bottomExclusive": 496
+      },
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "partialAlpha": 0,
+      "opaqueColors": 4,
+      "method": "Uniform re-export at84% of previous sprite scale; original artwork retained",
+      "previousBounds": {
+        "left": 44,
+        "top": 120,
+        "width": 428,
+        "height": 376,
+        "bottomExclusive": 496
+      },
+      "uniformScale": 0.84375
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "9dfd0803761183ed90ad7007a67f43b2e5fc51bfe4dc5c44d4e9eb6365556eb8",
+      "bounds": {
+        "left": 75,
+        "top": 124,
+        "width": 362,
+        "height": 372,
+        "bottomExclusive": 496
+      },
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "partialAlpha": 68374,
+      "opaqueColors": 39469,
+      "method": "Built-in imagegen anatomical repair, then size/alpha/palette export"
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "5b72054cb6c072e2a49c50d6c4eb733cc29c1a0e84446bdc37b4d0bd6033d9e3",
+      "bounds": {
+        "left": 86,
+        "top": 186,
+        "width": 341,
+        "height": 310,
+        "bottomExclusive": 496
+      },
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "partialAlpha": 68625,
+      "opaqueColors": 38938,
+      "method": "Uniform re-export at84% of previous sprite scale; original artwork retained",
+      "previousBounds": {
+        "left": 53,
+        "top": 126,
+        "width": 407,
+        "height": 369,
+        "bottomExclusive": 495
+      },
+      "uniformScale": 0.83984375
+    }
+  ]
+}

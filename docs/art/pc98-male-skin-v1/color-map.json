@@ -1,0 +1,176 @@
+{
+  "skinRamps": {
+    "cangya": {
+      "portraits": [
+        "#f4c79c",
+        "#d89576",
+        "#713b3c"
+      ],
+      "sprites": [
+        "#f4c79c",
+        "#d89576",
+        "#713b3c"
+      ]
+    },
+    "jinye": {
+      "portraits": [
+        "#e6bb8a",
+        "#bf805b",
+        "#8f5044"
+      ],
+      "sprites": {
+        "main": "#dfac7b",
+        "shadow": "#b97853",
+        "dive": [
+          "#e5b984",
+          "#b97853"
+        ],
+        "spike": [
+          "#dfac7b",
+          "#d27123"
+        ],
+        "note": "Existing dark warm-brown outline/deep-shadows preserved."
+      }
+    },
+    "leo": {
+      "portraits": [
+        "#fbd6ae",
+        "#df9f86",
+        "#a85c64"
+      ],
+      "sprites": [
+        "#ffd18b",
+        "#e49b59",
+        "#b76435"
+      ]
+    },
+    "alie": {
+      "portraits": [
+        "#f0bf8d",
+        "#d38d68",
+        "#9e5952"
+      ],
+      "sprites": [
+        "#ffd192",
+        "#c77646",
+        "#8d4d35"
+      ]
+    }
+  },
+  "mappings": {
+    "cangya": {
+      "portraits": {
+        "#f5d97b": "#f4c79c",
+        "#d8aa4c": "#d89576",
+        "#bd6d41": "#713b3c"
+      },
+      "sprites": {
+        "#f5d97b": "#f4c79c",
+        "#d8aa4c": "#d89576",
+        "#bd6d41": "#713b3c"
+      }
+    },
+    "jinye": {
+      "portraits/normal": {
+        "#f1d069": "#e6bb8a",
+        "#b18a3e": "#bf805b"
+      },
+      "portraits/happy": {
+        "#f1d069": "#e6bb8a",
+        "#b18a3e": "#bf805b"
+      },
+      "portraits/sad": {
+        "#f1d069": "#e6bb8a",
+        "#b18a3e": "#bf805b"
+      },
+      "portraits/surprised": {
+        "#f1d069": "#e6bb8a",
+        "#b18a3e": "#bf805b"
+      },
+      "portraits/win": {
+        "#f1d069": "#e6bb8a",
+        "#b18a3e": "#bf805b"
+      },
+      "sprites/idle": {
+        "#fba74b": "#dfac7b",
+        "#fcaf50": "#dfac7b",
+        "#e49031": "#b97853",
+        "#cd7226": "#b97853"
+      },
+      "sprites/run1": {
+        "#fca94d": "#dfac7b",
+        "#fcaf52": "#dfac7b",
+        "#f1a550": "#dfac7b",
+        "#e48f31": "#b97853",
+        "#d27225": "#b97853"
+      },
+      "sprites/run2": {
+        "#fca94c": "#dfac7b",
+        "#fcaf52": "#dfac7b",
+        "#f0a551": "#dfac7b",
+        "#e89132": "#b97853",
+        "#ba6d25": "#b97853"
+      },
+      "sprites/jump": {
+        "#fca94c": "#dfac7b",
+        "#fcae51": "#dfac7b",
+        "#f7a74e": "#dfac7b",
+        "#fbb45a": "#dfac7b",
+        "#e59032": "#b97853",
+        "#b76e27": "#b97853"
+      },
+      "sprites/spike": {
+        "#fca94c": "#dfac7b",
+        "#fcaf52": "#dfac7b",
+        "#f8a64b": "#dfac7b",
+        "#e48c2e": "#d27123",
+        "#f2c16e": "#dfac7b"
+      },
+      "sprites/dive": {
+        "#fca84b": "#e5b984",
+        "#fcae51": "#e5b984",
+        "#e7a256": "#e5b984",
+        "#e58e31": "#b97853",
+        "#bf6d24": "#b97853"
+      },
+      "sprites/win": {
+        "#fba74b": "#dfac7b",
+        "#fbaf51": "#dfac7b",
+        "#df882e": "#b97853",
+        "#bd6623": "#b97853"
+      },
+      "sprites/lose": {
+        "#fca84c": "#dfac7b",
+        "#fcad4f": "#dfac7b",
+        "#f8a64c": "#dfac7b",
+        "#fab258": "#dfac7b",
+        "#e99335": "#b97853",
+        "#d17427": "#b97853"
+      }
+    },
+    "leo": {
+      "portraits": {
+        "#ffdf79": "#fbd6ae",
+        "#e9b64b": "#df9f86",
+        "#b78032": "#a85c64"
+      },
+      "sprites": {
+        "#ffcf50": "#ffd18b",
+        "#ffe88e": "#ffd18b",
+        "#dda22c": "#e49b59",
+        "#a56a1d": "#b76435"
+      }
+    },
+    "alie": {
+      "portraits": {
+        "f4ce67": "f0bf8d",
+        "fa9250": "d38d68",
+        "be6f52": "9e5952"
+      },
+      "sprites": {
+        "dfb44c": "ffd192",
+        "ff9260": "c77646"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "style": "anime90",
+    "prompt": "Use case: precise-object-edit. Repair the shoulder/arm/face anatomy of this XIAOCUI volleyball jump/block sprite. IMAGE 1 is the edit target. Its near arm currently runs vertically through her forehead and looks like it grows from her face: this is wrong. IMAGE 2 is the correct facial identity and body-size reference. Keep exactly the same cheerful green-haired twin-ponytail girl, both distinct long ponytails with pink bows, white sports jersey with teal collar and sleeve stripes, teal shorts, white wristbands/socks, teal sneakers. Keep the same airborne body and bent legs, moderate stylized proportions, facing RIGHT 3/4. Redraw BOTH raised arms anatomically attached to left and right shoulders, upper arms angled gently outward alongside the head, elbows above shoulder level, forearms extending upward, open palms above head. Use a clear shallow V blocking gesture, leaving the ENTIRE forehead, hairline, BOTH eyes, nose and mouth visible. No skin column through forehead, no arm merging into face, no extra limb, no disconnected arm. Shoulder sleeves must lead continuously into upper arms; facial shape and eye proportions exactly match Image2. Maintain 1990s anime clean handink and hard flat cel shadows. Keep character size consistent with Image2, NOT enlarged because she is airborne. One complete isolated fullbody sprite with all hair, fingers, shoes visible, generous transparent margins. True transparent background. No scenery floor shadow ball text grid. Only fix arm placement / occlusion and corresponding hair overlap as necessary; retain identity, outfit, twin ponytails, bent leg pose and rendering.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/delivery/anime90/characters/xiaocui/sprites/jump.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/delivery/anime90/characters/xiaocui/sprites/idle.png"
+    ],
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-0afe9e51-ee32-44c2-88e1-9f594a473dae.png",
+    "status": "rejected-arm-still-merges-forehead"
+  },
+  {
+    "style": "anime90",
+    "prompt": "Use case: identity-preserve. Draw ONE new 1990s anime volleyball BLOCKING/JUMPING sprite of precisely the girl in the reference. The reference defines her face, proportions, twin long green ponytails with two pink bows, and white/teal volleyball kit. NEW POSE: airborne with both knees bent backwards and BOTH ARMS UP IN A VERY WIDE LETTER Y. Her face is turned three-quarter RIGHT, cheerful open-mouth smile. Her upper arms go OUTWARD from the shoulder sleeves before rising: screen-left arm rises along the FAR LEFT OUTSIDE of her hair/head silhouette, screen-right arm rises along the FAR RIGHT OUTSIDE of her hair/head silhouette. CLEAR TRANSPARENT SPACE BETWEEN THE HEAD AND EACH FOREARM. Her entire head and both ponytails sit visibly BETWEEN the two raised arms. Each shoulder sleeve visibly connects to upper-arm, elbow, forearm, wristband, five-finger open hand. Both shoulders and upper-arm origins must be clearly readable, one left and one right of the torso. The arms never cover the forehead, eyes, cheeks or hairline. Absolutely no arm starting at the forehead, no arm across the face, no fused face/arm contours. Hands high above and to the sides of her head, broad blocking Y silhouette. Keep her HEAD AND BODY SIZE the same as the reference, small moderately stylized athletic proportions. Long paired ponytails flowing outward/back, not one single ponytail. Two-tone flat cel shading, bold clean ink. Full body including all fingers and shoes completely inside canvas with generous empty margins. No floor shadows, ball, scenery, text, ground. True transparent background, isolated sprite. This is a new corrected shoulder/arm construction, not the earlier malformed forward-reaching pose.",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/delivery/anime90/characters/xiaocui/sprites/idle.png"
+    ],
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-582b7f72-ef5f-4fb9-a39b-2a6a25c512cc.png",
+    "status": "selected"
+  },
+  {
+    "style": "pc98",
+    "prompt": "Use case: style-transfer. Image1 is the CORRECTED XIAOCUI jumping/blocking sprite, PRIMARY exact geometry, identity, body scale, wide Y arm pose and clear face master. Image2 is STYLE/PALETTE reference ONLY, not pose. Preserve exactly Image1 head/body proportions, twin long green ponytails tied with two pink bows, cheerful face looking3/4RIGHT, both knees bent airborne, white/teal sportsjersey with stripes and tealshorts, white wristbands socks teal sneakers. BOTH ARMS rise OUTSIDE BOTH SIDES of the head from clearly visible shoulder sleeves in a wide Y. Full face/forehead/hairline/both eyes/nose/mouth visible. No arm across forehead, no fused skin column or arm growing from face. Keep entire silhouette and pose of Image1, change ONLY rendering style. One isolated fullbody sprite, all hair fingers shoes intact and wellinside canvas, genuine transparent background, no floor/ball/shadows/text. Authentic PC-98 limited-palette pixel art. Maximum15opaque colors plus transparent. Deliberate finely controlled dithering, readable pixelclusters, navy ink, tealgreen hair, warmcream skin, pinkbows, white-and-teal kit. Hard edges, no blur.",
+    "refs": [
+      "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-582b7f72-ef5f-4fb9-a39b-2a6a25c512cc.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/delivery/pc98/characters/xiaocui/sprites/idle.png"
+    ],
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-477a89f1-1015-4890-9c43-43d05b83e2f2.png",
+    "status": "selected"
+  },
+  {
+    "style": "msdos",
+    "prompt": "Use case: style-transfer. Image1 is the CORRECTED XIAOCUI jumping/blocking sprite, PRIMARY exact geometry, identity, body scale, wide Y arm pose and clear face master. Image2 is STYLE/PALETTE reference ONLY, not pose. Preserve exactly Image1 head/body proportions, twin long green ponytails tied with two pink bows, cheerful face looking3/4RIGHT, both knees bent airborne, white/teal sportsjersey with stripes and tealshorts, white wristbands socks teal sneakers. BOTH ARMS rise OUTSIDE BOTH SIDES of the head from clearly visible shoulder sleeves in a wide Y. Full face/forehead/hairline/both eyes/nose/mouth visible. No arm across forehead, no fused skin column or arm growing from face. Keep entire silhouette and pose of Image1, change ONLY rendering style. One isolated fullbody sprite, all hair fingers shoes intact and wellinside canvas, genuine transparent background, no floor/ball/shadows/text. Authentic MS-DOS VGA saturated pixelart. Maximum63opaque colors plus transparent. Strong darkoutline, chunky cleanclusters, highcontrast emerald/teal hair, warm skin, magenta-pinkbows, white/tealkit. No softblur or painterly shading.",
+    "refs": [
+      "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-582b7f72-ef5f-4fb9-a39b-2a6a25c512cc.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/delivery/msdos/characters/xiaocui/sprites/idle.png"
+    ],
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-d6f3128e-01d9-4e67-a609-c5f0ac2710bb.png",
+    "status": "selected"
+  },
+  {
+    "style": "gameboy",
+    "prompt": "Use case: style-transfer. Image1 is the CORRECTED XIAOCUI jumping/blocking sprite, PRIMARY exact geometry, identity, body scale, wide Y arm pose and clear face master. Image2 is STYLE/PALETTE reference ONLY, not pose. Preserve exactly Image1 head/body proportions, twin long green ponytails tied with two pink bows, cheerful face looking3/4RIGHT, both knees bent airborne, white/teal sportsjersey with stripes and tealshorts, white wristbands socks teal sneakers. BOTH ARMS rise OUTSIDE BOTH SIDES of the head from clearly visible shoulder sleeves in a wide Y. Full face/forehead/hairline/both eyes/nose/mouth visible. No arm across forehead, no fused skin column or arm growing from face. Keep entire silhouette and pose of Image1, change ONLY rendering style. One isolated fullbody sprite, all hair fingers shoes intact and wellinside canvas, genuine transparent background, no floor/ball/shadows/text. Authentic original GAME BOY four-color green pixelart. ONLY #0f380f #306230 #8bac0f #9bbc0f plus transparent. Darkoutline, clearly readable face eyes mouth arms, chunky intentional pixels. Use value contrast to distinguish skin from hair and jersey. No blur or grayscale.",
+    "refs": [
+      "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-582b7f72-ef5f-4fb9-a39b-2a6a25c512cc.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/delivery/gameboy/characters/xiaocui/sprites/idle.png"
+    ],
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-79a84209-7249-4b91-a565-cf401464cd0c.png",
+    "status": "selected"
+  },
+  {
+    "style": "taiwan-print",
+    "prompt": "Use case: style-transfer. Image1 is the CORRECTED XIAOCUI jumping/blocking sprite, PRIMARY exact geometry, identity, body scale, wide Y arm pose and clear face master. Image2 is STYLE/PALETTE reference ONLY, not pose. Preserve exactly Image1 head/body proportions, twin long green ponytails tied with two pink bows, cheerful face looking3/4RIGHT, both knees bent airborne, white/teal sportsjersey with stripes and tealshorts, white wristbands socks teal sneakers. BOTH ARMS rise OUTSIDE BOTH SIDES of the head from clearly visible shoulder sleeves in a wide Y. Full face/forehead/hairline/both eyes/nose/mouth visible. No arm across forehead, no fused skin column or arm growing from face. Keep entire silhouette and pose of Image1, change ONLY rendering style. One isolated fullbody sprite, all hair fingers shoes intact and wellinside canvas, genuine transparent background, no floor/ball/shadows/text. Vintage Taiwan lithographic poster illustration: rich deepteal/emerald hair, warmcream skin, ochre/salmonshadow, pinkcoral bows, graphic navy ink, visible elegant halftone and restrained printedgrain INSIDE character. Rich color palette, not fourcolor or pixelart.",
+    "refs": [
+      "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-582b7f72-ef5f-4fb9-a39b-2a6a25c512cc.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/delivery/taiwan-print/characters/xiaocui/sprites/idle.png"
+    ],
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-4c01d577-979f-4d06-ac05-f1c2e745d8a6.png",
+    "status": "selected"
+  },
+  {
+    "style": "modern-paint",
+    "prompt": "Use case: style-transfer. Image1 is the CORRECTED XIAOCUI jumping/blocking sprite, PRIMARY exact geometry, identity, body scale, wide Y arm pose and clear face master. Image2 is STYLE/PALETTE reference ONLY, not pose. Preserve exactly Image1 head/body proportions, twin long green ponytails tied with two pink bows, cheerful face looking3/4RIGHT, both knees bent airborne, white/teal sportsjersey with stripes and tealshorts, white wristbands socks teal sneakers. BOTH ARMS rise OUTSIDE BOTH SIDES of the head from clearly visible shoulder sleeves in a wide Y. Full face/forehead/hairline/both eyes/nose/mouth visible. No arm across forehead, no fused skin column or arm growing from face. Keep entire silhouette and pose of Image1, change ONLY rendering style. One isolated fullbody sprite, all hair fingers shoes intact and wellinside canvas, genuine transparent background, no floor/ball/shadows/text. Modern cinematic anime illustration: delicate cleanink, softly blended skinlighting, subtlecoolshadows, luminous golden rimlight in green hair, dimensional white/teal cloth and shiny eyes. NOT oil paint, not flat1990s celshadows, no outerglow outside silhouette.",
+    "refs": [
+      "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-582b7f72-ef5f-4fb9-a39b-2a6a25c512cc.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/delivery/modern-paint/characters/xiaocui/sprites/idle.png"
+    ],
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1558b-d503-7520-9129-a4c8098a4059\\exec-7a17ce3b-8557-4653-891a-b85bc5dc31b8.png",
+    "status": "selected"
+  }
+]

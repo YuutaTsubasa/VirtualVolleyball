@@ -123,8 +123,17 @@ def main():
                 im = resized(im, (512, 512))
             sheet.alpha_composite(im, (i * 512, 0))
             have += 1
+        existing = out / 'sprites' / f'{cid}.webp'
         if have == len(FRAMES):
             save(sheet, f'sprites/{cid}.webp')
+        elif have and existing.exists():
+            # 局部補修：只換有交的那幾格，其他格保留現在的圖
+            base = Image.open(existing).convert('RGBA')
+            for i, fr in enumerate(FRAMES):
+                if first(d / 'sprites' / f'{fr}.png'):
+                    base.paste(sheet.crop((i * 512, 0, i * 512 + 512, 512)), (i * 512, 0))
+            save(base, f'sprites/{cid}.webp')
+            print(f'{cid}：只更新了 {have} 格動作，其他格保留')
         elif have:
             missing.append(f'{cid} 圖集不完整（{have}/8），先不用')
 
