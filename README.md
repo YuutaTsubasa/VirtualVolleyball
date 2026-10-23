@@ -2,6 +2,8 @@
 
 《皮卡丘打排球》風格的 1 對 1 沙灘排球遊戲，球員是[虛擬台麻館](https://github.com/YuutaTsubasa/TaiwanMahjong)的角色們：小翠、月華、阿明、糖糖、小春、蘭姐、蒼牙、金爺、雷歐、阿烈，還有隱藏角色阿翼。Tauri v2 + Svelte 5，遊戲畫面用 Canvas 畫，比賽引擎用 Rust 寫。
 
+🎮 **馬上玩**：<https://yuuta-tsubasa.studio/VirtualVolleyball/> ——網頁版免安裝（比賽引擎以 WebAssembly 在瀏覽器裡跑）。
+
 - 🎮 **單機**：對戰電腦（簡單／普通／困難）、同一台電腦雙人對戰、電腦對電腦觀戰
 - 🌐 **線上房間**：在網頁或 App 按「開設房間」→「線上」，拿到 5 碼房號與分享連結，朋友在任何地方輸入房號或打開連結就能加入（WebRTC 直連，跟 TaiwanMahjong 同一套做法）
 - 🏠 **區網房間**：房主在 App 按「開設房間」→「區網」，朋友用 App 的「加入房間」輸入位址，或直接用瀏覽器打開房主的網址
@@ -9,6 +11,23 @@
 - 🎨 六種畫面風格（90 年代、PC-98、MS-DOS、台式印刷、Game Boy、動漫電影），介面、角色、球場一起換
 - 🎵 PC-98 FM 音源的原創配樂與音效（Web Audio 即時合成，不用音檔）
 - ⚙️ 設定（畫面風格、音樂與音效音量、靜音）在選單右上角的齒輪，比賽中從暫停選單打開
+
+## 下載 App
+
+各平台的安裝檔由 GitHub Actions 打包（[`.github/workflows/build-apps.yml`](.github/workflows/build-apps.yml)），做法跟 TaiwanMahjong 一樣：
+
+| 平台 | 檔案 | 備註 |
+| --- | --- | --- |
+| Windows | `.exe`（安裝程式）、`.msi` | SmartScreen 會警告「未知的發行者」，點「其他資訊 → 仍要執行」 |
+| macOS | `.dmg`（`aarch64` = Apple Silicon、`x64` = Intel） | 沒有公證，第一次開啟要在 Finder 按右鍵 →「打開」 |
+| Linux | `.deb`、`.rpm`、`.AppImage` | |
+| Android | `.apk` | 允許「安裝不明來源的應用程式」後直接安裝 |
+| iOS | 模擬器用的 `.app` | 實機需要 Apple 開發者帳號簽章 |
+
+- 推一個 `v*` 標籤（例如 `v0.1.0`）會打包全部平台並附到同名的 Release。
+- 也可以在 Actions →「Build apps」→「Run workflow」手動打包，檔案在該次執行的 Artifacts。
+- 網頁版在每次推到 `main` 時自動測試並部署到 GitHub Pages（[`.github/workflows/pages.yml`](.github/workflows/pages.yml)）。
+  線上房間的配對服務部署好之後，在 repo 的 Settings → Secrets and variables → Actions → Variables 加 `SIGNAL_SERVER`，網頁版就會出現線上房間。
 
 ## 開發
 

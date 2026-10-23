@@ -1,0 +1,71 @@
+# 把網頁版（比賽引擎是 WebAssembly）部署到 GitHub Pages：
+# https://yuuta-tsubasa.studio/VirtualVolleyball/
+#
+# 線上房間的配對服務網址放在 repo 的 Variables（Settings → Secrets and variables → Actions → Variables）：
+#   SIGNAL_SERVER = https://virtual-volleyball-signal.<子網域>.workers.dev
+# 沒設定時網頁版不顯示線上房間（還是可以單機玩、加入區網／通道房間）。
+name: Deploy web version to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: |
+            crates/volleyball-core
+            crates/volleyball-wasm
+
+      - run: npm ci
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      # 先測試（JS 與比賽引擎），沒過就不部署
+      - run: npm test
+
+      # prebuild 會先跑 npm run build:wasm（wasm-pack）
+      - run: npm run build
+        env:
+          PAGES_BASE: /${{ github.event.repository.name }}/
+          VITE_SIGNAL_SERVER: ${{ vars.SIGNAL_SERVER }}
+          VITE_WEB_URL: ${{ steps.pages.outputs.base_url }}/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
