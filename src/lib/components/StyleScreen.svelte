@@ -38,7 +38,7 @@
 
   {#snippet foot()}
     <BackButton onclick={onback} />
-    <div class="hint-bar">還沒交圖的部分會先用 90 年代版</div>
+    <span></span>
     <ControlHint />
   {/snippet}
 </ScreenFrame>
