@@ -1,0 +1,55 @@
+[
+  {
+    "style": "anime90",
+    "prompt": "Use case: identity-preserve. Production volleyball sprite atlas of ALIE, exactly 8 fullbody sprites arranged 4 columns by 2 rows on genuine transparent background with broad gutters. Input1 is APPROVED PRIMARY character identity and body proportion master: use exactly this muscular athlete with moderately stylized roughly 3-3.25 heads anatomy, substantial torso and legs. Input2 is POSE ORDER reference ONLY, its old very short squat bodies are explicitly wrong. Render every pose with Input1 proportions, NOT Input2 proportions. Red swept tousled hair, forehead scar, gold earrings and gold necklace, amber eyes, confident adult rogue face, broad shoulders muscular arms, black sleeveless volleyball jersey with red trim, black red shorts, white socks, black red sneakers. Clean bold 1990s anime hand ink, flat colors and hard cel shadows.\nRow1: idle crouched ready facing RIGHT; run1 extended long stride moving RIGHT; run2 distinct alternate high-knee stride moving RIGHT; jump airborne with BOTH hands raised above head, bent legs.\nRow2: spike airborne twisted torso, ONE hitting hand raised high and other arm extended/bent forward, face RIGHT; dive horizontal head RIGHT feet LEFT BOTH arms extended forward; win joyful open mouth one fist high other at waist, facing RIGHT; lose dejected head and shoulders, kneeling one knee, face RIGHT.\nExactly eight separate complete figures. Do not crop or overlap. All fingers hair feet fully visible. Each figure wholly inside its own cell, including dive. No volleyball, ground shadow, scenery, labels, grid, text or watermark. Generous transparent gutters. Maintain consistent approved head-to-body proportion and costume in all eight actions. Wide 2:1 atlas.",
+    "source": "C:/Users/User/.codex/generated_images/01a16952-5531-7e41-9ce5-7dd2decb747c/exec-4694027b-679c-4b45-bbfd-5c40d5419630.png",
+    "status": "superseded-framing"
+  },
+  {
+    "style": "anime90",
+    "prompt": "Use case: identity-preserve. Create ONE fullbody volleyball blocking-jump sprite of ALIE from attached APPROVED identity/body reference. Maintain exact roughly3-3.25head stylized body with muscular broadshoulders torso and strong legs; red swept tousled hair foreheadscar gold earrings necklace black RED sleeveless volleyball uniform white socks black/red sneakers. BOTH arms fully raised with two OPEN hands above head, airborne knees bent behind, facing RIGHT threequarter. 1990s bold clean anime ink, flat colors hard celshadows. Whole figure including ALL fingertips, hair and shoes visible surrounded by at least10% transparent blank margin on EVERY side. Single figure centered. Genuine transparent background, no floor, shadow, ball, text. Preserve approved head size and limb proportions, not old2head chibi.",
+    "source": "C:/Users/User/.codex/generated_images/01a16952-5531-7e41-9ce5-7dd2decb747c/exec-4c79a803-3316-4b3e-9541-a2a60ffd9362.png",
+    "status": "rejected-background"
+  },
+  {
+    "style": "anime90",
+    "prompt": "Edit this exact transparent volleyball 8-frame atlas. Preserve all eight figures identity, artwork, poses and body proportions. Only repair framing: top right blocking-jump figure fingertips touch the top image edge; show its COMPLETE fingertips with generous transparent margin. All figures must be surrounded by transparent margin. Keep exactly4columns2rows8figures, no additions, no missing arms, no backgrounds, no glow. The output must be a true TRANSPARENT PNG cutout atlas, no opaque rectangle. Same1990sanime flat cel style. Do not enlarge head or shorten bodies.",
+    "source": "C:/Users/User/.codex/generated_images/01a16952-5531-7e41-9ce5-7dd2decb747c/exec-30afcd90-be7d-4f69-8767-04db1e428e73.png",
+    "status": "selected"
+  },
+  {
+    "style": "pc98",
+    "prompt": "Use case: style-transfer. Redraw attached Image1 corrected ALIE sprite atlas in authentic PC98 Japanese 16-color pixel game aesthetic. Image1 is PRIMARY exact geometry, pose, face, muscular body and proportion master: preserve all8complete figures exactly with same roughly3-3.25head bodies and exact4columns2rows layout and spacious gutters. Image2 only demonstrates pixel rendering, NEVER its old short body proportions. Deliberate crisp small pixel clusters, restrained15opaque color palette plus transparency, elegant ordered checker dithers in shadow transitions, warm golden skin with brown shadows, crimson red swept hair, black sleeveless uniform with redtrim, gold earrings/necklace and foreheadscar. No soft airbrush or blur, no noisy speckles, preserve readable faces. Same8poses in Image1 order: ready/right run1/right run2/block jump/spike/horizontal rightward dive/win/kneeling lose. Keep all fingers feet hair complete inside each cell. True transparent background. No text, ball, floor, ground shadow, borders.",
+    "source": "C:/Users/User/.codex/generated_images/01a16952-5531-7e41-9ce5-7dd2decb747c/exec-e322c9b4-e80f-4d86-b5df-4ac43cf0a049.png",
+    "localSource": "sources/pc98.png",
+    "status": "selected"
+  },
+  {
+    "style": "msdos",
+    "prompt": "Use case: style-transfer. Redraw Image1 corrected ALIE8pose atlas in MS-DOS VGA action-game pixelart. Image1 is PRIMARY geometry/body/pose master, retain exact8poses and 4column2row positions, complete silhouettes with spacious transparent gutters. Input2 only rendering STYLE reference, never its shortoldbodyratio. Keep approved roughly3-3.25head athletic muscular man with long torso/legs, red swept hair foreheadscar gold earrings and necklace black sleevelessuniform redtrim white socks red/black shoes. VGA saturated highcontrast limited63opaque colors, chunky sharp pixelclusters, vivid scarlet hair, orange golden warm skin, solid deepblack outlines. Restrained crisp shadows, no blurry gradients, no tiny noise, minimal dither. Sameposeorder idle,run1,run2,jump,spike,dive,win,lose. FaceRIGHT. Preserve distinct fullbody actions. All fingertips shoes and hair in bounds, no cropping. True transparent background, no scenery floor ball groundshadow text border.",
+    "source": "C:/Users/User/.codex/generated_images/01a16952-5531-7e41-9ce5-7dd2decb747c/exec-4cee2abd-4007-423e-b9d2-91f78c471884.png",
+    "localSource": "sources/msdos.png",
+    "status": "selected"
+  },
+  {
+    "style": "taiwan-print",
+    "prompt": "Use case: style-transfer. Render corrected ALIE8frame volleyball atlas from Image1 in vintage TAIWAN LITHOGRAPHIC PRINT poster illustration style. Image1 governs exact geometry identities body proportions all8poses layout; Image2 is color/ink style reference ONLY, not its obsolete stubby bodies. Approved muscular broadshouldered redhaired rogue roughly3-3.25heads high with longer torso and legs, foreheadscar gold earrings necklace, black sleeveless redtrim sportsuniform white socks black/red shoes. Beautiful rich ink colors: scarlet/coral red hair, navy/teal darks, warm cream skin highlights, ochre/salmon shadows, multiple rich print colors NOT fourcolor restriction. Graphic navy ink contours, visible elegant halftone shadow textures and restrained lithographic grain inside figures, vintage Taiwan print character. Preserve exact8distinct poses and4columns2rows roomy layout from Image1. All fingers and shoes fully visible within own cells. FacingRIGHT. True transparent background around isolated figures, no paper rectangle, no typography, no floor/ball/shadow/borders.",
+    "source": "C:/Users/User/.codex/generated_images/01a16952-5531-7e41-9ce5-7dd2decb747c/exec-1be00b61-929a-4539-9be0-5acc3fcbe3d0.png",
+    "localSource": "sources/taiwan-print.png",
+    "status": "selected"
+  },
+  {
+    "style": "gameboy",
+    "prompt": "Use case: style-transfer. Convert Image1 corrected ALIE atlas into authentic original GAME BOY 4-color green pixel sprites. Image1 is exact PRIMARY identity/body/proportion/pose master, preserve all8fullbodyposes roughly3-3.25head muscular man, his distinctive swept hair and sleeveless sportsuniform, all8actions exact layout4columns2rows. Image2 style reference ONLY, its old short proportions and low contrast are NOT to be copied. EXACT four opaque colors only: #0f380f,#306230,#8bac0f,#9bbc0f. Darkest outlines, LIGHTEST clear face and skin highlights, secondlightest skinshadows and hairhighlights, middle/dark uniform. Readable expressive face, muscular limbs, earrings/necklace/scar preserved as coherent pixel shapes. Clean chunky pixelclusters, limited deliberate dithering, no grayscale noise, NO softblur. Keep all fingers hair shoes complete separated by generous transparent gutters. Pure transparent surroundings, no green background rectangle, no text or grid, ball floor groundshadow. All faceRIGHT.",
+    "source": "C:/Users/User/.codex/generated_images/01a16952-5531-7e41-9ce5-7dd2decb747c/exec-9da06ef4-7252-4601-9f44-2543a92fa85a.png",
+    "localSource": "sources/gameboy.png",
+    "status": "selected"
+  },
+  {
+    "style": "modern-paint",
+    "prompt": "Use case: style-transfer. Redraw Image1 corrected ALIE8pose sprite atlas in luminous MODERN CINEMATIC ANIME PAINT style, illustrated game character sprites. Image1 is PRIMARY exact pose/geometry/proportions identity and layout master. Image2 is light/style reference ONLY, do NOT copy its obsolete short chibi proportions. All8figures must retain approved roughly3-3.25head muscular athletic body, broadshoulders longertorso/legs, red swept hair foreheadscar gold earrings and necklace, black sleeveless redtrim volleyball jersey/shorts white socks blackredshoes. Delicate clean ink, rich smoothly blended warm skin light, subtle cool shadows, luminous golden rim highlights on hair and muscles, dimensional cloth and metallic jewelry. Sophisticated polished anime painting, NOT oilcanvas, not grainy, not flat90s celshade. Exact4column2row8actions from Image1, facesRIGHT, all fingers feet hair complete inside own cells, ample transparency gutters. Isolated figures on genuine transparent background. NO glows outside silhouette, NO floor ball scene groundshadow labels borders.",
+    "source": "C:/Users/User/.codex/generated_images/01a16952-5531-7e41-9ce5-7dd2decb747c/exec-62464b2f-fe9a-4001-a114-decbc4f0825c.png",
+    "localSource": "sources/modern-paint.png",
+    "status": "selected"
+  }
+]

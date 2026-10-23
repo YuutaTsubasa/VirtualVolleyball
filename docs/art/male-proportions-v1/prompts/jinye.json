@@ -1,0 +1,74 @@
+[
+  {
+    "style": "anime90",
+    "prompt": "Use case: stylized-concept. Production asset: Jinye volleyball animation atlas, exactly 8 full-body poses arranged four columns by two rows on genuine transparent background with wide clear gutters. Input 1 is APPROVED PRIMARY CHARACTER AND PROPORTION MASTER: mature swept dark charcoal hair with gray temples, adult angular face moustache and trimmed beard, broad solid athletic shoulders, navy short sleeve volleyball shirt/shorts with gold trim, white socks and navy/gold shoes. Match this approved approximately 3 to 3.25 head body proportion, substantial torso and longer legs, in EVERY pose. Input 2 is only action sequence reference: do NOT copy its old excessively short 2-head body proportions. Create clean bold 1990s hand-ink anime, flat colors, hard cel shadows, no modern gloss. Row1 left to right: idle bent-knee ready looking RIGHT; run1 long running stride RIGHT with arms counter-swing; run2 alternate high-knee running stride RIGHT; jump airborne with BOTH open hands raised straight overhead blocking and legs bent. Row2 left to right: spike airborne torso twist with ONE hitting hand raised behind head and other arm extended forward toward RIGHT; dive fully horizontal head RIGHT feet LEFT BOTH arms reaching forward hands together; win upright jubilant triumphant raised fist and joyful face; lose dejected kneeling head down facing RIGHT. ALL EIGHT distinct exact poses. Keep all hair, fingers, shoes wholly inside their individual cells, each cell generously separated, no cropped limbs or overlap. No balls, no scene, no ground shadow, no text or labels. Each figure has approved adult proportions, not squat chibi and not realistic lanky 5 heads. Wide 2:1 atlas.",
+    "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/jinye/sources/anime90.png",
+    "generatedSource": "C:/Users/User/.codex/generated_images/01a16951-c658-7761-94eb-df79a3fcf7ab/exec-fb3c797d-d967-42ac-ad46-c5d147ab80d1.png",
+    "tool": "builtin image_gen",
+    "transparent_background": true,
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/../male-proportion-review-v1/sources/jinye.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/references/anime90/jinye/sheet.png"
+    ]
+  },
+  {
+    "style": "pc98",
+    "prompt": "Use case: style-transfer. Create one production transparent animation atlas. Input1 is the CORRECTED PRIMARY MASTER: copy its exact EIGHT poses, silhouettes, adult face, body geometry, APPROVED approximately 3 to 3.25 head proportions, costume and layout, 4 columns x 2 rows. Input2 is ONLY rendering-style reference: NEVER use its old squat short-limbed body ratio. Change rendering only to: Authentic restrained PC-98 16-color pixel-art rendering. Hand-placed crisp pixel clusters, subtle deliberate ordered dithering, navy and muted blue uniform, warm ochre tan skin shadow, pale warm highlights. At most 15 opaque colors plus transparency. No blur, no soft gradients, no noisy automated filter. The mature man Jinye has charcoal swept hair/gray temples, moustache/trimmed beard, broad solid athletic shoulders, navy/gold short-sleeve volleyball uniform. Keep long torso/legs and small enough head exactly as Input1. Ordered poses row1 idle facingRIGHT, run1 longstrideRIGHT, run2 alternate highkneeRIGHT, airborne block BOTH hands overhead; row2 airborne spike ONE hittingarm up and otherextendedRIGHT, horizontal dive headRIGHT feetLEFT BOTH arms forward, jubilant winraisedfist, dejected kneeling lose. All 8 complete bodies with hands/hair/shoes entirely inside separate generously spaced cells. Keep generous transparent gutters; no touching/overlap, background, shadows, balls, letters, labels, extra limbs or extra poses. Wide 2:1 composition. Genuine transparent background.",
+    "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/jinye/sources/pc98.png",
+    "generatedSource": "C:/Users/User/.codex/generated_images/01a16951-c658-7761-94eb-df79a3fcf7ab/exec-f529b6c3-0808-4e7a-bdf7-b3c3f59506d6.png",
+    "tool": "builtin image_gen",
+    "transparent_background": true,
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/jinye/anime90-master.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/references/pc98/jinye/sheet.png"
+    ]
+  },
+  {
+    "style": "msdos",
+    "prompt": "Use case: style-transfer. Create one production transparent animation atlas. Input1 is the CORRECTED PRIMARY MASTER: copy its exact EIGHT poses, silhouettes, adult face, body geometry, APPROVED approximately 3 to 3.25 head proportions, costume and layout, 4 columns x 2 rows. Input2 is ONLY rendering-style reference: NEVER use its old squat short-limbed body ratio. Change rendering only to: Authentic saturated VGA MS-DOS arcade pixel-art rendering. Chunky decisive pixel clusters and high contrast dark outlines, vivid navy-blue/gold uniform, rich warm orange skin shading and clear white socks. At most 63 opaque colors plus transparency. Less dithering and chunkier than PC98. No blur or soft gradients. The mature man Jinye has charcoal swept hair/gray temples, moustache/trimmed beard, broad solid athletic shoulders, navy/gold short-sleeve volleyball uniform. Keep long torso/legs and small enough head exactly as Input1. Ordered poses row1 idle facingRIGHT, run1 longstrideRIGHT, run2 alternate highkneeRIGHT, airborne block BOTH hands overhead; row2 airborne spike ONE hittingarm up and otherextendedRIGHT, horizontal dive headRIGHT feetLEFT BOTH arms forward, jubilant winraisedfist, dejected kneeling lose. All 8 complete bodies with hands/hair/shoes entirely inside separate generously spaced cells. Keep generous transparent gutters; no touching/overlap, background, shadows, balls, letters, labels, extra limbs or extra poses. Wide 2:1 composition. Genuine transparent background.",
+    "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/jinye/sources/msdos.png",
+    "generatedSource": "C:/Users/User/.codex/generated_images/01a16951-c658-7761-94eb-df79a3fcf7ab/exec-c6a64855-07e5-4a8d-8e7e-6b3eaa83bf3b.png",
+    "tool": "builtin image_gen",
+    "transparent_background": true,
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/jinye/anime90-master.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/references/msdos/jinye/sheet.png"
+    ]
+  },
+  {
+    "style": "taiwan-print",
+    "prompt": "Use case: style-transfer. Create one production transparent animation atlas. Input1 is the CORRECTED PRIMARY MASTER: copy its exact EIGHT poses, silhouettes, adult face, body geometry, APPROVED approximately 3 to 3.25 head proportions, costume and layout, 4 columns x 2 rows. Input2 is ONLY rendering-style reference: NEVER use its old squat short-limbed body ratio. Change rendering only to: Rich vintage Taiwanese lithographic printed-poster illustration, graphic expressive navy ink, warm cream and orange skin, rich teal/navy/cobalt and golden uniform colors, deliberate halftone shading and textured ink within figure. Many rich colors, NOT a four-color restriction. Crisp complete silhouette. No background paper. The mature man Jinye has charcoal swept hair/gray temples, moustache/trimmed beard, broad solid athletic shoulders, navy/gold short-sleeve volleyball uniform. Keep long torso/legs and small enough head exactly as Input1. Ordered poses row1 idle facingRIGHT, run1 longstrideRIGHT, run2 alternate highkneeRIGHT, airborne block BOTH hands overhead; row2 airborne spike ONE hittingarm up and otherextendedRIGHT, horizontal dive headRIGHT feetLEFT BOTH arms forward, jubilant winraisedfist, dejected kneeling lose. All 8 complete bodies with hands/hair/shoes entirely inside separate generously spaced cells. Keep generous transparent gutters; no touching/overlap, background, shadows, balls, letters, labels, extra limbs or extra poses. Wide 2:1 composition. Genuine transparent background.",
+    "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/jinye/sources/taiwan-print.png",
+    "generatedSource": "C:/Users/User/.codex/generated_images/01a16951-c658-7761-94eb-df79a3fcf7ab/exec-99137bd6-5574-473f-945a-e8a855a85681.png",
+    "tool": "builtin image_gen",
+    "transparent_background": true,
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/jinye/anime90-master.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/references/taiwan-print/jinye/sheet.png"
+    ]
+  },
+  {
+    "style": "gameboy",
+    "prompt": "Use case: style-transfer. Create one production transparent animation atlas. Input1 is the CORRECTED PRIMARY MASTER: copy its exact EIGHT poses, silhouettes, adult face, body geometry, APPROVED approximately 3 to 3.25 head proportions, costume and layout, 4 columns x 2 rows. Input2 is ONLY rendering-style reference: NEVER use its old squat short-limbed body ratio. Change rendering only to: Authentic original Game Boy pixel art with exactly four greens #0f380f #306230 #8bac0f #9bbc0f and transparency. Bold chunky pixel clusters, darkest green outlines and hair, dark midgreen uniform with bright trim, light green face and arms and clearly separate shadows. Preserve detailed readable adult face/beard, no gray noise, no grayscale, no blur. The mature man Jinye has charcoal swept hair/gray temples, moustache/trimmed beard, broad solid athletic shoulders, navy/gold short-sleeve volleyball uniform. Keep long torso/legs and small enough head exactly as Input1. Ordered poses row1 idle facingRIGHT, run1 longstrideRIGHT, run2 alternate highkneeRIGHT, airborne block BOTH hands overhead; row2 airborne spike ONE hittingarm up and otherextendedRIGHT, horizontal dive headRIGHT feetLEFT BOTH arms forward, jubilant winraisedfist, dejected kneeling lose. All 8 complete bodies with hands/hair/shoes entirely inside separate generously spaced cells. Keep generous transparent gutters; no touching/overlap, background, shadows, balls, letters, labels, extra limbs or extra poses. Wide 2:1 composition. Genuine transparent background.",
+    "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/jinye/sources/gameboy.png",
+    "generatedSource": "C:/Users/User/.codex/generated_images/01a16951-c658-7761-94eb-df79a3fcf7ab/exec-c45dcf36-9c8e-46ec-9f1f-5558f1ff2dc2.png",
+    "tool": "builtin image_gen",
+    "transparent_background": true,
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/jinye/anime90-master.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/references/gameboy/jinye/sheet.png"
+    ]
+  },
+  {
+    "style": "modern-paint",
+    "prompt": "Use case: style-transfer. Create one production transparent animation atlas. Input1 is the CORRECTED PRIMARY MASTER: copy its exact EIGHT poses, silhouettes, adult face, body geometry, APPROVED approximately 3 to 3.25 head proportions, costume and layout, 4 columns x 2 rows. Input2 is ONLY rendering-style reference: NEVER use its old squat short-limbed body ratio. Change rendering only to: Luminous cinematic contemporary anime illustration. Delicate clean ink, soft dimensional skin and cloth shading, warm glowing rimlight against cool blue bounce light, rich navy/gold cloth, nuanced silvery hair highlights and warm brown eyes. Clear readable game sprite forms. Not oil paint, not flat 1990s cel art. The mature man Jinye has charcoal swept hair/gray temples, moustache/trimmed beard, broad solid athletic shoulders, navy/gold short-sleeve volleyball uniform. Keep long torso/legs and small enough head exactly as Input1. Ordered poses row1 idle facingRIGHT, run1 longstrideRIGHT, run2 alternate highkneeRIGHT, airborne block BOTH hands overhead; row2 airborne spike ONE hittingarm up and otherextendedRIGHT, horizontal dive headRIGHT feetLEFT BOTH arms forward, jubilant winraisedfist, dejected kneeling lose. All 8 complete bodies with hands/hair/shoes entirely inside separate generously spaced cells. Keep generous transparent gutters; no touching/overlap, background, shadows, balls, letters, labels, extra limbs or extra poses. Wide 2:1 composition. Genuine transparent background.",
+    "source": "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/jinye/sources/modern-paint.png",
+    "generatedSource": "C:/Users/User/.codex/generated_images/01a16951-c658-7761-94eb-df79a3fcf7ab/exec-96ac4877-bccd-4caa-aaf0-f174544be905.png",
+    "tool": "builtin image_gen",
+    "transparent_background": true,
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/jinye/anime90-master.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/references/modern-paint/jinye/sheet.png"
+    ]
+  }
+]

@@ -1,0 +1,2021 @@
+{
+  "name": "xiaocui-twin-ponytails-v1",
+  "generator": "built-in image_gen",
+  "assetCount": 98,
+  "styles": [
+    "anime90",
+    "pc98",
+    "msdos",
+    "taiwan-print",
+    "gameboy",
+    "modern-paint"
+  ],
+  "assets": [
+    {
+      "path": "anime90/characters/xiaocui/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 409613,
+      "sha256": "00e81c8e01e4c609c97a1e6285dd7f1dd5969ccce68f7f059942e75b9ebecbd9",
+      "opaqueColors": 38653,
+      "transparent": 91281,
+      "partial": 170350,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        41,
+        495,
+        470
+      ],
+      "anchor": null
+    },
+    {
+      "path": "anime90/characters/xiaocui/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 410604,
+      "sha256": "a1b571c9cbf6f22f0cb1bb635945afc750de4e33dcf8b165f1f5235d9ba81196",
+      "opaqueColors": 38046,
+      "transparent": 91507,
+      "partial": 170033,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        41,
+        495,
+        470
+      ],
+      "anchor": null
+    },
+    {
+      "path": "anime90/characters/xiaocui/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 410407,
+      "sha256": "0b198838fcd031c4a4afad845d35c5fbdd6f8f097da431437210e2cf02baf50a",
+      "opaqueColors": 38716,
+      "transparent": 90621,
+      "partial": 171065,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        41,
+        495,
+        471
+      ],
+      "anchor": null
+    },
+    {
+      "path": "anime90/characters/xiaocui/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 412619,
+      "sha256": "d4cf6c0bf671288cf30b586ff4e3ca5cfb82070be38bdc6841462bed14afb8ab",
+      "opaqueColors": 38549,
+      "transparent": 90270,
+      "partial": 171365,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        17,
+        41,
+        495,
+        470
+      ],
+      "anchor": null
+    },
+    {
+      "path": "anime90/characters/xiaocui/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 412882,
+      "sha256": "0902d95524c29d5230518ffb79f0d849ed72f7e3f48e6faabd38915975d5e1ac",
+      "opaqueColors": 39244,
+      "transparent": 91159,
+      "partial": 170466,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        42,
+        495,
+        470
+      ],
+      "anchor": null
+    },
+    {
+      "path": "anime90/characters/xiaocui/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 180455,
+      "sha256": "550ec6fa76000e88d393ae04f99d185dc1b6708729af063aa0c2c273baab53a3",
+      "opaqueColors": 26132,
+      "transparent": 202624,
+      "partial": 59092,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        114,
+        147,
+        398,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/xiaocui/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 161542,
+      "sha256": "bbc1c1f05ff4dd7e63199a700afc35923ee8e9964ab084bfea18f115e51bbfdc",
+      "opaqueColors": 24509,
+      "transparent": 208575,
+      "partial": 53218,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        112,
+        184,
+        400,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/xiaocui/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 173750,
+      "sha256": "9f45c500a429ceec5bd641ad7f7e1f77b6830599883bc1aa493c243646b9bca8",
+      "opaqueColors": 26446,
+      "transparent": 203538,
+      "partial": 58161,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        124,
+        164,
+        388,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 163225,
+      "sha256": "b273c5aa012c1952fa71fe3302c23a6e7b0d50e41e62d179eed81966423c0e92",
+      "opaqueColors": 23901,
+      "transparent": 207521,
+      "partial": 54287,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        118,
+        138,
+        394,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 239894,
+      "sha256": "05c88b834ab8ab047b5bda2f465ea510596edc10be72d58473faceeb9b797488",
+      "opaqueColors": 33247,
+      "transparent": 178124,
+      "partial": 83522,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        51,
+        121,
+        461,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/xiaocui/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 174168,
+      "sha256": "c8609ee9d37ac909cc51418a7e4aa193a9d0dc578dcc1bfc904d2b92c7281e13",
+      "opaqueColors": 25782,
+      "transparent": 202587,
+      "partial": 59211,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        45,
+        287,
+        467,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/xiaocui/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 164411,
+      "sha256": "25d5e9cec2fe05809754134a814a8d9385a36cd1b41bdfedeba590c6504220fb",
+      "opaqueColors": 24762,
+      "transparent": 208928,
+      "partial": 52860,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        120,
+        150,
+        391,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/xiaocui/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 168518,
+      "sha256": "4985a2c13bd32f06356484e7f829283e6d2dfbf65ed3b15a433a3eed15f521b2",
+      "opaqueColors": 24038,
+      "transparent": 206097,
+      "partial": 55693,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        120,
+        152,
+        391,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/ui/title-scene.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 4197324,
+      "sha256": "392b25ce6d0d5cc3550d5460dd89552e9a76f95e37b0d0ad8258c2cde32d4c9f",
+      "opaqueColors": 572053,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1919,
+        1079
+      ],
+      "anchor": null
+    },
+    {
+      "path": "anime90/ui/mode-versus.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 2411525,
+      "sha256": "0334b88b2f1ef3e41b1050726ebd333d14beab55c0f2c6685e0a900a9d021cb9",
+      "opaqueColors": 350810,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    },
+    {
+      "path": "pc98/characters/xiaocui/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 24334,
+      "sha256": "66634d64adf380e780f8e24c0ceabb10e5606d42b48c39e2e5422ec6bccf6ff1",
+      "opaqueColors": 15,
+      "transparent": 100196,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        60,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "pc98/characters/xiaocui/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 24107,
+      "sha256": "21623736d85243b5bbe69d00fdfb208c5e9cd4cc645411a46b4b537e721fb980",
+      "opaqueColors": 15,
+      "transparent": 99256,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        52,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "pc98/characters/xiaocui/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 24421,
+      "sha256": "c92cdd2780022eacfce6ad3d67c34a2b59296c4ba4f325364e40e72960f6c0c8",
+      "opaqueColors": 15,
+      "transparent": 96264,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        46,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "pc98/characters/xiaocui/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 23768,
+      "sha256": "69b45d130918e6feadc7c1f3f15c7b60e267bc41faa3f1818e4eba8420c2f421",
+      "opaqueColors": 15,
+      "transparent": 102672,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        66,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "pc98/characters/xiaocui/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 24241,
+      "sha256": "64e79f9af1b73fb39b2e4f08d3400bdac55ce8db4bb83e84bdd1c30b10a88152",
+      "opaqueColors": 15,
+      "transparent": 100276,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        62,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "pc98/characters/xiaocui/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 11618,
+      "sha256": "cadf70dcb442b2eb2a0c0d3e7118bb0564a307d1eb110ac2fb1dfc0dd446b1b9",
+      "opaqueColors": 15,
+      "transparent": 208988,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        108,
+        160,
+        403,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/xiaocui/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 10423,
+      "sha256": "aaa71667c413bfa80d1bcbc4c7ba1aa46738ad29789bd8a8da97b28f09cf5270",
+      "opaqueColors": 15,
+      "transparent": 215488,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        112,
+        192,
+        399,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/xiaocui/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 11133,
+      "sha256": "93053bf2d292fb59546386fdd742c3781d95a13b0067522ff806d2de28bd5a65",
+      "opaqueColors": 15,
+      "transparent": 210104,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        112,
+        180,
+        399,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 10983,
+      "sha256": "1cc5205d70eeda73dbfaa35d38d6e66ac9412a76a6fabcbdfa91c9fcce82b5ab",
+      "opaqueColors": 15,
+      "transparent": 214280,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        116,
+        146,
+        395,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 15205,
+      "sha256": "0c6f5b95dac7673d80dd2f0f7946ac2553d0e161319acd596f0ea04612c54051",
+      "opaqueColors": 15,
+      "transparent": 181756,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        38,
+        122,
+        475,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/xiaocui/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 9810,
+      "sha256": "825234babc10b071735f2692baa913ba5cd19edd7d2de8ffe3c94e392d1cd3e9",
+      "opaqueColors": 15,
+      "transparent": 214936,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        52,
+        304,
+        461,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/xiaocui/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 10937,
+      "sha256": "35780f06b1c8a8be2fbbee57ee25d50ca38a6a5e753e1ca7b7d87e181d6d5a40",
+      "opaqueColors": 15,
+      "transparent": 213116,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        112,
+        166,
+        401,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/xiaocui/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 11240,
+      "sha256": "6c75bdabdad18bd70f38cd997c0c931d966669932461b7e1030064e4f217ed2e",
+      "opaqueColors": 15,
+      "transparent": 210540,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        112,
+        164,
+        401,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/ui/title-scene.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 147826,
+      "sha256": "4e450145da55d4be613901fd11d879f8c69e89d09bd0542d54d1d42bb7aea71f",
+      "opaqueColors": 16,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1919,
+        1079
+      ],
+      "anchor": null
+    },
+    {
+      "path": "pc98/ui/mode-cpu.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 78609,
+      "sha256": "55c6868f7f1825603f2ab239f7e7022ba62047a5a45f97ed561d92d6d22030fd",
+      "opaqueColors": 16,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    },
+    {
+      "path": "pc98/ui/mode-versus.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 78690,
+      "sha256": "02b9aee2225b19c4e18caeb03bb00e2cd6ca0037965519dc5ebcfa406bd3c008",
+      "opaqueColors": 16,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    },
+    {
+      "path": "pc98/ui/mode-watch.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 75931,
+      "sha256": "6957a732efb05e8326aec211526a921f5ea9174ba7df436cb0d7fbe70e971419",
+      "opaqueColors": 16,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    },
+    {
+      "path": "msdos/characters/xiaocui/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 40285,
+      "sha256": "47015e10ce0f03760e9226028e8611b8130a17977a3f6c03c6217b050d304def",
+      "opaqueColors": 62,
+      "transparent": 98232,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        54,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "msdos/characters/xiaocui/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 39322,
+      "sha256": "3071abfae45df03cd121e49d28af6701b41317763eeb962b4ef1400fcc350948",
+      "opaqueColors": 62,
+      "transparent": 97952,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        52,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "msdos/characters/xiaocui/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 42577,
+      "sha256": "48d073e152e4cd68a23a23114f4d55388ff58c70afc0be32c6b7eca164540016",
+      "opaqueColors": 63,
+      "transparent": 93496,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        48,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "msdos/characters/xiaocui/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 40136,
+      "sha256": "09785088dbeb4948456693f5a743afb4771233cd100845dfbd4d35c501bfc685",
+      "opaqueColors": 63,
+      "transparent": 100340,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        58,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "msdos/characters/xiaocui/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 38615,
+      "sha256": "1b51afb9975cbe1c88b99791c618905379005339ac0fde67722d50a0f6dc31ef",
+      "opaqueColors": 63,
+      "transparent": 100384,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        60,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "msdos/characters/xiaocui/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 17984,
+      "sha256": "6b8a146a057ea25c80d64ff50c910924869c3a20b7e743fbc4903dd76ea05c2f",
+      "opaqueColors": 63,
+      "transparent": 210112,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        106,
+        156,
+        405,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/xiaocui/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 15329,
+      "sha256": "f2a31cb9d7f2e601137fc72e9faf72226d2a34bee19cbedb29439836443fbee5",
+      "opaqueColors": 62,
+      "transparent": 219324,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        116,
+        208,
+        395,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/xiaocui/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 17076,
+      "sha256": "9684198f8b8e2405a172c1c84977b001ba2fbc21c5220565703da90c73c2bd57",
+      "opaqueColors": 60,
+      "transparent": 213616,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        120,
+        182,
+        391,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 17102,
+      "sha256": "4638d9b7e3f60965d2d13c708fe5227eb2f3dac8f3b92f4160cb02f58c7c6ea8",
+      "opaqueColors": 62,
+      "transparent": 213436,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        110,
+        144,
+        401,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 24132,
+      "sha256": "bec01cf0c7363c45825a7775489ba2ddb9b8b22776d7239322b6d6540946bd11",
+      "opaqueColors": 62,
+      "transparent": 180856,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        42,
+        122,
+        471,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/xiaocui/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 17585,
+      "sha256": "93b716111ee5cbf7cd18dbf99cfb2ed4f12ea012926835ff672ba0105a93eff5",
+      "opaqueColors": 63,
+      "transparent": 201480,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        20,
+        290,
+        493,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/xiaocui/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 16952,
+      "sha256": "8d51da92aba6ef165686c90ac10d67dca942ed71e96738e5adba428222ff35bb",
+      "opaqueColors": 63,
+      "transparent": 214708,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        114,
+        166,
+        397,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/xiaocui/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 17668,
+      "sha256": "62e98e71369239f88dd06406914bc8f4647a05064e6f92dc70f20248cd17f286",
+      "opaqueColors": 62,
+      "transparent": 211232,
+      "partial": 0,
+      "blockSize": 2,
+      "blockErrors": 0,
+      "bounds": [
+        106,
+        156,
+        407,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/ui/title-scene.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 198144,
+      "sha256": "2b4fcae579a6acbc174c5d812975ed3c8edc1679df791acbfca720c399e24b8c",
+      "opaqueColors": 64,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1919,
+        1079
+      ],
+      "anchor": null
+    },
+    {
+      "path": "msdos/ui/mode-cpu.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 99430,
+      "sha256": "a8cf72e92dadf3ba69fb11b13e854581a1e321fae6738ac6bf418010c1d914d4",
+      "opaqueColors": 64,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    },
+    {
+      "path": "msdos/ui/mode-versus.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 99650,
+      "sha256": "f6249bdb44e3de916c59560e6561b9062fe67a29d4d22b9ff34effedcd8e9607",
+      "opaqueColors": 64,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    },
+    {
+      "path": "msdos/ui/mode-watch.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 104233,
+      "sha256": "d62fa95db1621acf601b3790a51840eafd9cdbea76398d24581b4d2705fb57c2",
+      "opaqueColors": 64,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 476312,
+      "sha256": "a87daed0eb2d8393a2dd95ee3fb10322c064c0ec04a33f3f93c1e3619157493c",
+      "opaqueColors": 63416,
+      "transparent": 96993,
+      "partial": 164924,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        25,
+        42,
+        487,
+        470
+      ],
+      "anchor": null
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 478229,
+      "sha256": "80ca1cc97e2059a2d8a1d6a131347926779e8e2d0a9770a1f43628caee34c6c2",
+      "opaqueColors": 62721,
+      "transparent": 96497,
+      "partial": 165371,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        26,
+        42,
+        487,
+        470
+      ],
+      "anchor": null
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 474551,
+      "sha256": "9391c0a6b2a82bd5fed4ea9a8e8afd0b280258b9ef0a480e2ad9fc96d73ec944",
+      "opaqueColors": 62382,
+      "transparent": 98509,
+      "partial": 163403,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        26,
+        44,
+        487,
+        470
+      ],
+      "anchor": null
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 473252,
+      "sha256": "34f6286fc1d10adaa7d0fd582c034bd9bc55ab6d658710b231afef3f989f41dd",
+      "opaqueColors": 62171,
+      "transparent": 98806,
+      "partial": 163128,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        25,
+        45,
+        487,
+        469
+      ],
+      "anchor": null
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 466952,
+      "sha256": "ec175fadeb88e743a4f082baef6937d8f074ea4599449c6cf96a8522278a34e8",
+      "opaqueColors": 61570,
+      "transparent": 100228,
+      "partial": 161767,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        26,
+        47,
+        487,
+        467
+      ],
+      "anchor": null
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 182659,
+      "sha256": "899547f51f5b564052136570b899cb122c2b1a205a6addbc4097f7f8a81e22d3",
+      "opaqueColors": 31086,
+      "transparent": 205490,
+      "partial": 56474,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        118,
+        171,
+        393,
+        494
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 172699,
+      "sha256": "67a929f9b442e3a4b87439a34ec4e2c62ff0d4e995913efee845edc2185b0570",
+      "opaqueColors": 30489,
+      "transparent": 209075,
+      "partial": 52941,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        117,
+        201,
+        395,
+        494
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 182862,
+      "sha256": "75453e728ecdefb3d5cf6a8fc1c574c13351695b1461342bd5c0f3f95ca30df3",
+      "opaqueColors": 32097,
+      "transparent": 205710,
+      "partial": 56286,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        122,
+        183,
+        389,
+        494
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 183378,
+      "sha256": "81ac2ca0af35f4451b3cff9fb2ff153db1930f1868ec440481dc609392655d4d",
+      "opaqueColors": 31057,
+      "transparent": 205273,
+      "partial": 56738,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        111,
+        150,
+        400,
+        494
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 278652,
+      "sha256": "b56dce76f6d47dfb171cf7551c838d08a5bda3eb0dc66d930896eaf6ae0bc0e1",
+      "opaqueColors": 45133,
+      "transparent": 173718,
+      "partial": 88276,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        50,
+        125,
+        461,
+        493
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 159383,
+      "sha256": "4a8b4ce6ff9f08e1cc072a158317da259f7d2a85c7de39f121b949fd807c2e46",
+      "opaqueColors": 28656,
+      "transparent": 212552,
+      "partial": 49454,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        68,
+        309,
+        445,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 170301,
+      "sha256": "d2004ef85ead2a7d087f4998092ebf93f7adc4f107622157c6fab5b3fec3d82a",
+      "opaqueColors": 30630,
+      "transparent": 210640,
+      "partial": 51347,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        120,
+        168,
+        391,
+        494
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/xiaocui/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 176787,
+      "sha256": "feb41e1ba3e93161d2e7a113b64a9a2a83a595ff1bc27d02240d764c938558ef",
+      "opaqueColors": 30518,
+      "transparent": 208616,
+      "partial": 53441,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        123,
+        171,
+        388,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/ui/title-scene.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 5169382,
+      "sha256": "89787cc1bcbcdb321a426c904fb4d4e1bf676c46d886cf707d99cbfab23b7824",
+      "opaqueColors": 733459,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1919,
+        1079
+      ],
+      "anchor": null
+    },
+    {
+      "path": "taiwan-print/ui/mode-cpu.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 2849509,
+      "sha256": "0816fe954d22fa8cd048a270e0517b178be3efd356b08cc1a64d72895b326fb8",
+      "opaqueColors": 443020,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    },
+    {
+      "path": "taiwan-print/ui/mode-versus.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 2860812,
+      "sha256": "cbae8eaf09c9b01fa9eeeed7bbeda72287f036773a476c06cdb0b64856b54c60",
+      "opaqueColors": 482005,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    },
+    {
+      "path": "taiwan-print/ui/mode-watch.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 2843536,
+      "sha256": "451c57b683ad546e10c1cdd2252be8d2b7735bfce4803241529f4be244f2105b",
+      "opaqueColors": 464738,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    },
+    {
+      "path": "gameboy/characters/xiaocui/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 12301,
+      "sha256": "80a27e7b89f387ac8b7a0ad4c650c38caa354b556e3349904364b82aa3276fd0",
+      "opaqueColors": 4,
+      "transparent": 84768,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        36,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "gameboy/characters/xiaocui/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 12029,
+      "sha256": "86234a1b222f1ffa4aaa4311e08694c16b6e33446873c2a47d50f601c275dc98",
+      "opaqueColors": 4,
+      "transparent": 86240,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        40,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "gameboy/characters/xiaocui/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 12375,
+      "sha256": "07d04546bec23d68ceb1d4381591c16dbdbbd69b768c97fce7442050149ff629",
+      "opaqueColors": 4,
+      "transparent": 83872,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        36,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "gameboy/characters/xiaocui/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 12097,
+      "sha256": "fd85b4c95793b4098b89c9bbea25a1e308ff4bb5d575391ca683634d688f86e3",
+      "opaqueColors": 4,
+      "transparent": 85552,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        40,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "gameboy/characters/xiaocui/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 12263,
+      "sha256": "61d1a66aa66a12d2a0f1077c231a93856a7e00bcd50ec4e6bc6f93394298e46d",
+      "opaqueColors": 4,
+      "transparent": 85536,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        16,
+        40,
+        495,
+        495
+      ],
+      "anchor": null
+    },
+    {
+      "path": "gameboy/characters/xiaocui/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 5829,
+      "sha256": "08d64908c90a0f8626c7ed34cfe0089c28d754fd257e422ccf00011449bdd9f8",
+      "opaqueColors": 4,
+      "transparent": 204144,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        108,
+        148,
+        407,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/xiaocui/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 5277,
+      "sha256": "e3ce31a3eb5ff78ffc16dd573f175d5fb9d01e4d8d6254da31a59712e1143746",
+      "opaqueColors": 4,
+      "transparent": 210144,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        108,
+        184,
+        407,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/xiaocui/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 5634,
+      "sha256": "9365c6d9bccf05f85ee8135c894257890744dd300be3081e935c9a065e9e4c58",
+      "opaqueColors": 4,
+      "transparent": 204720,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        108,
+        164,
+        403,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 5661,
+      "sha256": "9b783f3886ee4afc49c32e036bc797fc982391dba1d6ec902d54c02e2950c64c",
+      "opaqueColors": 4,
+      "transparent": 206144,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        104,
+        136,
+        411,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 7123,
+      "sha256": "3bf647bd9353a859a92c61f1204548d821d4e0f89844fdcbd47d55da5ae1c3e4",
+      "opaqueColors": 4,
+      "transparent": 180048,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        44,
+        120,
+        471,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/xiaocui/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 5718,
+      "sha256": "1c0e873632403beed4b72311c7873dc2377c9928a61e56ece5c9dc9f270877c8",
+      "opaqueColors": 4,
+      "transparent": 201808,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        28,
+        284,
+        487,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/xiaocui/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 5697,
+      "sha256": "351db3b3c531997a6808c3f46ceaa9984ce25a5063101925f17d33ea3087b0c6",
+      "opaqueColors": 4,
+      "transparent": 203936,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        100,
+        148,
+        415,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/xiaocui/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 5448,
+      "sha256": "3f9bd665fb51397b3b4e8d726c933497b0593c6f7ae6cf97232690cb202dd67a",
+      "opaqueColors": 4,
+      "transparent": 205104,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        108,
+        152,
+        403,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/ui/title-scene.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 116298,
+      "sha256": "cfb7c71125416c802d710da1644aeb02ff19fe3c07ef2dd85bb8ecbe01bef997",
+      "opaqueColors": 4,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1919,
+        1079
+      ],
+      "anchor": null
+    },
+    {
+      "path": "gameboy/ui/mode-versus.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 70546,
+      "sha256": "eb64985e415317321ae915069957a01ba37c992e1472c0ec74cda970804352ac",
+      "opaqueColors": 4,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 4,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/portraits/normal.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 497401,
+      "sha256": "a47f02d2199a4a038be5fa715adca91fcdf4f913561f86beba61bccc597aa203",
+      "opaqueColors": 91358,
+      "transparent": 90993,
+      "partial": 171117,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        28,
+        52,
+        485,
+        461
+      ],
+      "anchor": null
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/portraits/happy.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 499636,
+      "sha256": "bccf414e3ad5eaed465af2438b8a81f206659ab8b28789c90d0c278fdf9ddafd",
+      "opaqueColors": 92984,
+      "transparent": 91313,
+      "partial": 170787,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        27,
+        51,
+        485,
+        462
+      ],
+      "anchor": null
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/portraits/surprised.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 509952,
+      "sha256": "c39545e1bb4b17a7a5eba8cd8b37813e9f1ec8eebec1a3e10167c24ba5b6eaf2",
+      "opaqueColors": 95424,
+      "transparent": 89824,
+      "partial": 172286,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        27,
+        49,
+        484,
+        464
+      ],
+      "anchor": null
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/portraits/sad.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 488202,
+      "sha256": "83d24912db87e29e4b223485bc96a1cd5a64bf7b4b677a2cb1d64ed8b99dd3ae",
+      "opaqueColors": 89176,
+      "transparent": 92689,
+      "partial": 169408,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        28,
+        53,
+        483,
+        459
+      ],
+      "anchor": null
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/portraits/win.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 480469,
+      "sha256": "26d9b7e07cb7c3c90c7b929ff513c74327817cec94ec45d9bf475545b2b8e567",
+      "opaqueColors": 87990,
+      "transparent": 96421,
+      "partial": 165709,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        30,
+        55,
+        482,
+        457
+      ],
+      "anchor": null
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 215981,
+      "sha256": "cd0a5345b47bfe37891842d827123c59cbfb3c56467a9406da81e78ca5cff603",
+      "opaqueColors": 39697,
+      "transparent": 193847,
+      "partial": 68197,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        109,
+        158,
+        404,
+        494
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 190623,
+      "sha256": "c46fec5fcb5ded1093e7beb5f77a9620ce1f526154ec138418100ee80a110c69",
+      "opaqueColors": 34966,
+      "transparent": 201185,
+      "partial": 60892,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        109,
+        191,
+        401,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 197601,
+      "sha256": "cde4004e77e4ce5d584474a33789ae3d1e228cbd060a7891b3d8f4ea616a1066",
+      "opaqueColors": 36411,
+      "transparent": 197923,
+      "partial": 64109,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        115,
+        175,
+        397,
+        493
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 186604,
+      "sha256": "58efce97b2992254b394b20e6eabbeda623dfe3f65ee41a7203d0eab0c64452c",
+      "opaqueColors": 33533,
+      "transparent": 201840,
+      "partial": 60234,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        115,
+        160,
+        396,
+        493
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 296801,
+      "sha256": "b602133cecf8d728d6611191a7d02e363744b14154f760b067fa037c22d4b96e",
+      "opaqueColors": 52409,
+      "transparent": 164562,
+      "partial": 97453,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        53,
+        126,
+        459,
+        494
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 199655,
+      "sha256": "d5f8da83235de582e5fbce4d5d9f36f5584200c1f845bdb5c83c16f286737137",
+      "opaqueColors": 37071,
+      "transparent": 197592,
+      "partial": 64447,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        45,
+        290,
+        466,
+        494
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 179807,
+      "sha256": "2e90cc90f5511ceea59d59db6fdb90bfc69f2a96dc0d05e4eed8b401a0c42e31",
+      "opaqueColors": 33290,
+      "transparent": 203599,
+      "partial": 58439,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        115,
+        178,
+        396,
+        495
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/xiaocui/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 215700,
+      "sha256": "30a448a7eb37255b57cb3ddb29f6b6a3dc53df9d14f96182f03566e7fe7dc010",
+      "opaqueColors": 39673,
+      "transparent": 195225,
+      "partial": 66849,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        108,
+        156,
+        403,
+        494
+      ],
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/ui/title-scene.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 4678004,
+      "sha256": "68fd4fb846f556a9bb9730c9d87b36dbcafd9e09f015e4ea73ab2250e13780f2",
+      "opaqueColors": 582096,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1919,
+        1079
+      ],
+      "anchor": null
+    },
+    {
+      "path": "modern-paint/ui/mode-cpu.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 2668993,
+      "sha256": "5d1fd2cab35b10b10dba266ce6b35c08fe927f94cafd7fa09978ccbbe2868ec2",
+      "opaqueColors": 432427,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    },
+    {
+      "path": "modern-paint/ui/mode-versus.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 2692610,
+      "sha256": "62ffbf0ab2cc2a354c5160786e8c81192dd74220f6119263272ce20f58fa19ac",
+      "opaqueColors": 446292,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    },
+    {
+      "path": "modern-paint/ui/mode-watch.png",
+      "width": 1200,
+      "height": 900,
+      "bytes": 2643679,
+      "sha256": "bedc2302114e30213443de502957606bce5119881562694a597861d47d56487c",
+      "opaqueColors": 435145,
+      "transparent": 0,
+      "partial": 0,
+      "blockSize": 1,
+      "blockErrors": 0,
+      "bounds": [
+        0,
+        0,
+        1199,
+        899
+      ],
+      "anchor": null
+    }
+  ]
+}

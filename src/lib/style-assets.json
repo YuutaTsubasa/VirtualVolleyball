@@ -2,7 +2,16 @@
   "styles": {
     "anime90": {
       "files": [
+        "characters/xiaocui/happy.webp",
+        "characters/xiaocui/normal.webp",
+        "characters/xiaocui/sad.webp",
+        "characters/xiaocui/surprised.webp",
+        "characters/xiaocui/win.webp",
         "game/net.webp",
+        "sprites/alie.webp",
+        "sprites/jinye.webp",
+        "sprites/leo.webp",
+        "sprites/xiaocui.webp",
         "ui/icons/watch.webp",
         "ui/logo.webp",
         "ui/mode-cpu.webp",

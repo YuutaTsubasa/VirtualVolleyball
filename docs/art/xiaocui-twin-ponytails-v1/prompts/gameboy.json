@@ -1,0 +1,48 @@
+[
+  {
+    "key": "portraits",
+    "refs": [
+      "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-95f30162-8263-41a4-864d-7ffd5dbb7323.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/references/gameboy-portraits-sheet.png"
+    ],
+    "prompt": "Use case: style-transfer. Asset: transparent Game Boy portrait atlas. Image 1 is the APPROVED corrected Xiaocui anatomy and hair master, image 2 is style reference ONLY (its one-ponytail anatomy is wrong). Redraw image 1 in clean chunky 4-color Game Boy pixel art matching image 2. Preserve five expressions and exact 3 columns x 2 rows layout: normal/happy/surprised, sad/win/EMPTY. Crucial invariant: EACH portrait has TWO SEPARATE LONG ponytails tied on OPPOSITE sides of head with TWO bows; both ponytails fall beyond shoulders and must be fully visible. Preserve face, jersey, framing, expressions. Broad clean pixel shapes, deliberate stair-step edges, sparse internal detail, no fuzzy dithering/noise, no gradients or antialiasing. Palette ONLY #0f380f #306230 #8bac0f #9bbc0f, genuine transparent alpha background. Each cell has safe transparent margin, neither hair nor bows clipped. No grid/text/background."
+  },
+  {
+    "key": "sprites",
+    "refs": [
+      "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-bf898cda-85cf-429a-a860-6ff8a6f6d47b.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/references/gameboy-sprites-sheet.png"
+    ],
+    "prompt": "Use case: style-transfer. Asset: transparent Game Boy action sprite atlas. Image 1 is the APPROVED corrected Xiaocui body/pose/hair master, image 2 style reference ONLY (its one-ponytail anatomy is wrong). Redraw image 1 in clean chunky FOUR color Game Boy pixel art. Preserve EIGHT full body poses in 4 columns x 2 rows: idle, run1, run2, jump; spike, horizontal dive, win, lose. Crucial invariant: EVERY figure has TWO SEPARATE LONG ponytails tied at OPPOSITE head sides with TWO bows; both long ponytails clearly extend down past shoulder level or stream outward with motion. Show visible second long ponytail to right of face/body, never just short fringe. Preserve individual bodies, hands, feet, directions, poses and volleyball uniform. Fit each complete sprite in separate equally sized cell WITH SAFE TRANSPARENT MARGINS; all fingers, shoes, ponytail ends inside own cell. Dive may be smaller to fit whole horizontal body. No grid/text. Bold pixel shapes, crisp stair-step outlines, sparse highlights, no fuzzy dither noise, no gradients. ONLY #0f380f #306230 #8bac0f #9bbc0f plus genuine transparent alpha."
+  },
+  {
+    "key": "title-scene",
+    "refs": [
+      "C:/Users/User/Repo/Volleyball/public/styles/gameboy/ui/title-scene.webp",
+      "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-95f30162-8263-41a4-864d-7ffd5dbb7323.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target Game Boy volleyball scene; image 2 is corrected Xiaocui hair anatomy reference ONLY. Correct ONLY Xiaocui's hairstyle, the diving girl at BOTTOM RIGHT. She needs TWO DISTINCT LONG PONYTAILS, one tied on EACH OPPOSITE side of her head with TWO bows. Both ponytails visibly extend below shoulders or stream long behind her in action. Keep her exact pose, expression, face, anatomy, uniform, location and size. Keep ALL other characters, background beach, palms, ball, net if present, horizon, empty center space, scene composition completely unchanged. Maintain original scene aspect ratio and fully opaque background. Preserve exactly the clean FOUR-color monochrome Game Boy pixel style: #0f380f #306230 #8bac0f #9bbc0f. Coarse crisp aligned pixel shapes, no gradients, no smoothing, no fuzzy dithering. Do not recolor into full color. Do not add any text, frame, inset, reference portrait, or extra character. Render full scene."
+  },
+  {
+    "key": "mode-versus",
+    "refs": [
+      "C:/Users/User/Repo/Volleyball/public/styles/gameboy/ui/mode-versus.webp",
+      "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-95f30162-8263-41a4-864d-7ffd5dbb7323.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target Game Boy volleyball scene; image 2 is corrected Xiaocui hair anatomy reference ONLY. Correct ONLY Xiaocui's hairstyle, the receiving girl on the LEFT. She needs TWO DISTINCT LONG PONYTAILS, one tied on EACH OPPOSITE side of her head with TWO bows. Both ponytails visibly extend below shoulders or stream long behind her in action. Keep her exact pose, expression, face, anatomy, uniform, location and size. Keep ALL other characters, background beach, palms, ball, net if present, horizon, empty center space, scene composition completely unchanged. Maintain original scene aspect ratio and fully opaque background. Preserve exactly the clean FOUR-color monochrome Game Boy pixel style: #0f380f #306230 #8bac0f #9bbc0f. Coarse crisp aligned pixel shapes, no gradients, no smoothing, no fuzzy dithering. Do not recolor into full color. Do not add any text, frame, inset, reference portrait, or extra character. Render full scene."
+  },
+  {
+    "key": "title-scene-repair",
+    "refs": [
+      "C:/Users/User/.codex/generated_images/01a16935-e9ac-7c82-ba1e-471de618061e/exec-39080847-5bda-496b-b1ab-406a1192aca1.png"
+    ],
+    "prompt": "Precise hairstyle correction ONLY. Keep this entire Game Boy beach volleyball title scene identical, especially the left character and all composition. Bottom-right diving Xiaocui must have TWO equally LONG ponytails. Her ponytail on viewer LEFT is correctly long, leave it. Her ponytail tied by bow on viewer RIGHT is currently wrongly short (ends at chin). LENGTHEN THAT RIGHT PONYTAIL dramatically: a distinct flowing thick curved tail starting at the existing right bow, curving outward to viewer right then sweeping down past her shoulder alongside her forearm toward her wrists, approximately as long as the existing left ponytail. Keep a clear outline separating this long right ponytail from head and arm. TWO bows, TWO long ponytails, unmistakable. Preserve face, pose, hands, all other pixels/composition, 16:9 landscape. Four-color monochrome Game Boy pixel art #0f380f #306230 #8bac0f #9bbc0f, crisp coarse pixels, no gradients."
+  },
+  {
+    "key": "portraits-spacing",
+    "refs": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/agents/gameboy/portraits-source.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Keep these five Game Boy Xiaocui portraits exactly as drawn: same two LONG distinct ponytails, two side bows, face, outfit, expressions, colors and pixel art. ONLY change spacing/scaling. Output a 1536x1024 atlas with exact 512x512 cells in 3 columns by 2 rows. The current portraits are too wide and touch their cell edges. Uniformly scale EACH complete portrait DOWN to fit within a 430x430 bounding box centered in its own cell, leaving at least 40 pixels genuine transparent gutter on every cell side. Arrange normal/happy/surprised on top row and sad/win/EMPTY on bottom. Preserve ALL ponytail tips and bows intact. No overlaps, no cropping, no edge fragments. Genuine transparent alpha background. Four colors only #0f380f #306230 #8bac0f #9bbc0f. Keep crisp chunky pixel artwork, no fuzzy antialias, no text/grid."
+  }
+]

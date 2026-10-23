@@ -1,0 +1,3630 @@
+{
+  "name": "male-proportions-v1",
+  "generator": "built-in image_gen",
+  "styles": [
+    "anime90",
+    "pc98",
+    "msdos",
+    "taiwan-print",
+    "gameboy",
+    "modern-paint"
+  ],
+  "characters": [
+    "jinye",
+    "leo",
+    "alie"
+  ],
+  "poses": [
+    "idle",
+    "run1",
+    "run2",
+    "jump",
+    "spike",
+    "dive",
+    "win",
+    "lose"
+  ],
+  "assetCount": 144,
+  "assets": [
+    {
+      "path": "anime90/characters/jinye/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "5ccf708ac20edb9e2bed9dfe8e70b88c178f94a86e1462e2c60b8ab60a2337ed",
+      "bytes": 104983,
+      "visibleBounds": {
+        "left": 148,
+        "top": 146,
+        "width": 216,
+        "height": 350,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 0,
+      "opaqueColors": 13088,
+      "transparentPixels": 225371,
+      "partialAlphaPixels": 35615,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/jinye/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "a876afe5fea9f0cda5c3c4f53c595a25c6eed1a567123c410e69a33a2c8b3c13",
+      "bytes": 130088,
+      "visibleBounds": {
+        "left": 94,
+        "top": 162,
+        "width": 324,
+        "height": 333,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 335,
+      "heightDifference": 2,
+      "opaqueColors": 20520,
+      "transparentPixels": 220154,
+      "partialAlphaPixels": 41633,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/jinye/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "09398d272eb186dda5d73dbdeab57d57351b15bca2ca59a3d20fd6e42adb3104",
+      "bytes": 134507,
+      "visibleBounds": {
+        "left": 126,
+        "top": 139,
+        "width": 261,
+        "height": 357,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 2,
+      "opaqueColors": 21307,
+      "transparentPixels": 219068,
+      "partialAlphaPixels": 42750,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/jinye/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "c34192a8a91dcb108c5c250705f955c2aee132697f10cc5606ea0a80893a7dc7",
+      "bytes": 117237,
+      "visibleBounds": {
+        "left": 141,
+        "top": 118,
+        "width": 232,
+        "height": 377,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 379,
+      "heightDifference": 2,
+      "opaqueColors": 18955,
+      "transparentPixels": 224265,
+      "partialAlphaPixels": 37597,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/jinye/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "071b072c4c578a835b2b9488d007cfad16759419f6de7c363bcc7a124cfb8b4d",
+      "bytes": 168273,
+      "visibleBounds": {
+        "left": 63,
+        "top": 143,
+        "width": 386,
+        "height": 352,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 354,
+      "heightDifference": 2,
+      "opaqueColors": 26288,
+      "transparentPixels": 206367,
+      "partialAlphaPixels": 55520,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/jinye/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "815af75f5ae8d82db7ea6c69ad1424797f1f11547fc593149feb10dc562bc93e",
+      "bytes": 140072,
+      "visibleBounds": {
+        "left": 30,
+        "top": 293,
+        "width": 454,
+        "height": 202,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 204,
+      "heightDifference": 2,
+      "opaqueColors": 22107,
+      "transparentPixels": 214489,
+      "partialAlphaPixels": 47409,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/jinye/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "8a676fcaf51a8daf2629928cb2d48f68f09a1c60182afd4b68c5a0db751127b3",
+      "bytes": 122942,
+      "visibleBounds": {
+        "left": 141,
+        "top": 141,
+        "width": 230,
+        "height": 354,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 356,
+      "heightDifference": 2,
+      "opaqueColors": 19971,
+      "transparentPixels": 222454,
+      "partialAlphaPixels": 39408,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/jinye/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "9c835058bb0e63f1a7230c29cf5f82a5aac384a1abf97673bdc56556410a98ad",
+      "bytes": 136455,
+      "visibleBounds": {
+        "left": 136,
+        "top": 198,
+        "width": 240,
+        "height": 297,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 300,
+      "heightDifference": 3,
+      "opaqueColors": 22358,
+      "transparentPixels": 217177,
+      "partialAlphaPixels": 44856,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/leo/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "4c3396cbcbebb16083621862f0a7c42aa702933825b645c96d2b22f3dc936275",
+      "bytes": 105111,
+      "visibleBounds": {
+        "left": 146,
+        "top": 146,
+        "width": 221,
+        "height": 350,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 0,
+      "opaqueColors": 16821,
+      "transparentPixels": 227620,
+      "partialAlphaPixels": 33345,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/leo/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "6dd3fe8e3709413e24ff818d6256cead22fefa9321111fb120c35d0e8c150974",
+      "bytes": 137168,
+      "visibleBounds": {
+        "left": 92,
+        "top": 161,
+        "width": 329,
+        "height": 335,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 335,
+      "heightDifference": 0,
+      "opaqueColors": 24379,
+      "transparentPixels": 218038,
+      "partialAlphaPixels": 43751,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/leo/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "5c09a86bc566f5919ab8803938f881f42f6944001689efb27d705eff6c4c55b8",
+      "bytes": 155804,
+      "visibleBounds": {
+        "left": 123,
+        "top": 137,
+        "width": 266,
+        "height": 359,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 0,
+      "opaqueColors": 27695,
+      "transparentPixels": 211344,
+      "partialAlphaPixels": 50488,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/leo/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "4ef20cc880719b9dfde49fceebb023352ff22f671603cc491f33e402594c02eb",
+      "bytes": 137256,
+      "visibleBounds": {
+        "left": 136,
+        "top": 117,
+        "width": 241,
+        "height": 379,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 0,
+      "opaqueColors": 23649,
+      "transparentPixels": 218150,
+      "partialAlphaPixels": 43715,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/leo/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "cd8beabdee4dfe47cd69ad5fe87ae55b75566c98b99570a4ae3a513246499540",
+      "bytes": 195827,
+      "visibleBounds": {
+        "left": 55,
+        "top": 143,
+        "width": 403,
+        "height": 353,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 1,
+      "opaqueColors": 33653,
+      "transparentPixels": 195538,
+      "partialAlphaPixels": 66387,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/leo/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "db4bc23dad68b4f721010cbfd61cd68a5613083a60cdfd9c66af89a95c93492f",
+      "bytes": 150317,
+      "visibleBounds": {
+        "left": 18,
+        "top": 299,
+        "width": 477,
+        "height": 197,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 7,
+      "opaqueColors": 27602,
+      "transparentPixels": 211919,
+      "partialAlphaPixels": 50003,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/leo/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "c01784d182caaf069299a58ed4729ad200fda3bd2517f2e05df5e0b30362508a",
+      "bytes": 132661,
+      "visibleBounds": {
+        "left": 144,
+        "top": 140,
+        "width": 225,
+        "height": 356,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 356,
+      "heightDifference": 0,
+      "opaqueColors": 24088,
+      "transparentPixels": 220064,
+      "partialAlphaPixels": 41787,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/leo/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "6bd027fe81909760b11ee93ec1e27bd2fe452551bc6366fad8f4bd2e02f8b36b",
+      "bytes": 153184,
+      "visibleBounds": {
+        "left": 127,
+        "top": 196,
+        "width": 258,
+        "height": 300,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 300,
+      "heightDifference": 0,
+      "opaqueColors": 28559,
+      "transparentPixels": 212608,
+      "partialAlphaPixels": 49316,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/alie/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "3f24ab83736558345e57f812016683bbe05f02a5af780999336686024e819618",
+      "bytes": 106163,
+      "visibleBounds": {
+        "left": 145,
+        "top": 146,
+        "width": 222,
+        "height": 350,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 0,
+      "opaqueColors": 14431,
+      "transparentPixels": 225366,
+      "partialAlphaPixels": 35544,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/alie/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "e6ae198515908e1a2c99ccad278a505fb0446913bbd0a80c533ffa83cf024f70",
+      "bytes": 139549,
+      "visibleBounds": {
+        "left": 93,
+        "top": 162,
+        "width": 327,
+        "height": 333,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 335,
+      "heightDifference": 2,
+      "opaqueColors": 22827,
+      "transparentPixels": 218366,
+      "partialAlphaPixels": 43283,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/alie/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "6daeb7bd4928278387986db277ddbbb451f59e115458e16eb2ced71e391a3ef5",
+      "bytes": 142327,
+      "visibleBounds": {
+        "left": 132,
+        "top": 138,
+        "width": 250,
+        "height": 357,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 359,
+      "heightDifference": 2,
+      "opaqueColors": 23523,
+      "transparentPixels": 217933,
+      "partialAlphaPixels": 43806,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/alie/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "dd785ec934a8f38f5d4eb7aba430a6aedf42fe2290c2ccd33856e9448fe82201",
+      "bytes": 141328,
+      "visibleBounds": {
+        "left": 120,
+        "top": 117,
+        "width": 273,
+        "height": 379,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 0,
+      "opaqueColors": 23272,
+      "transparentPixels": 217640,
+      "partialAlphaPixels": 44099,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/alie/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "9843d52a970d79f6c057426aaee2fe4235728d0ff24b803321ae82eb70e719ad",
+      "bytes": 162544,
+      "visibleBounds": {
+        "left": 81,
+        "top": 143,
+        "width": 350,
+        "height": 353,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 1,
+      "opaqueColors": 26761,
+      "transparentPixels": 210633,
+      "partialAlphaPixels": 51074,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/alie/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "7146809665c1f53a9791fe2f51c3d7e27cda901edf7d3b5b68aa60351dee19e8",
+      "bytes": 138937,
+      "visibleBounds": {
+        "left": 16,
+        "top": 311,
+        "width": 479,
+        "height": 185,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 19,
+      "opaqueColors": 23079,
+      "transparentPixels": 216363,
+      "partialAlphaPixels": 45385,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/alie/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "a23f278530b6e8dce74c88fa3d1ccdfd71982ef468ae8f4542973dc543107ac6",
+      "bytes": 143449,
+      "visibleBounds": {
+        "left": 141,
+        "top": 141,
+        "width": 230,
+        "height": 355,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 356,
+      "heightDifference": 1,
+      "opaqueColors": 23736,
+      "transparentPixels": 217198,
+      "partialAlphaPixels": 44482,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "anime90/characters/alie/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "b77bb12ab2ee99fbd46144e79132051259dc446e0b7dc93970d107f6ed5efaa9",
+      "bytes": 150341,
+      "visibleBounds": {
+        "left": 118,
+        "top": 197,
+        "width": 277,
+        "height": 298,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 300,
+      "heightDifference": 2,
+      "opaqueColors": 25696,
+      "transparentPixels": 214196,
+      "partialAlphaPixels": 47695,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/jinye/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "71bc3e425ce36199c42c2a65cd563c44fd7b558875758d9cef6e7d6bca2f5a55",
+      "bytes": 9338,
+      "visibleBounds": {
+        "left": 140,
+        "top": 146,
+        "width": 234,
+        "height": 350,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 0,
+      "opaqueColors": 15,
+      "transparentPixels": 225340,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/jinye/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "4e505dee51b0435a71c7bbc8a25465f8e7e66cccc4a71eb158c52a9fe09e58b0",
+      "bytes": 9976,
+      "visibleBounds": {
+        "left": 94,
+        "top": 160,
+        "width": 324,
+        "height": 336,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 335,
+      "heightDifference": 1,
+      "opaqueColors": 15,
+      "transparentPixels": 221592,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/jinye/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "2ef129622a489877fa245e1e38b98c15f2a6c5a64b3fc904a0ca674858725080",
+      "bytes": 10071,
+      "visibleBounds": {
+        "left": 130,
+        "top": 136,
+        "width": 252,
+        "height": 360,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 1,
+      "opaqueColors": 15,
+      "transparentPixels": 220628,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/jinye/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "ad59f8558df8b47c7ccc244f60c59405a16e8dc979aed2c17196d78baa7e681b",
+      "bytes": 9549,
+      "visibleBounds": {
+        "left": 144,
+        "top": 118,
+        "width": 226,
+        "height": 378,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 1,
+      "opaqueColors": 15,
+      "transparentPixels": 228636,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/jinye/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "55839c9b5adb51528fd9f493f12001d027fddd05ee3bd0fddbc335c4a51ebe61",
+      "bytes": 11818,
+      "visibleBounds": {
+        "left": 56,
+        "top": 142,
+        "width": 402,
+        "height": 354,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 0,
+      "opaqueColors": 15,
+      "transparentPixels": 208716,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/jinye/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "55923b65f297741479eedfc3147abfe4a0c296acc7ef51390e2bd2db31035b19",
+      "bytes": 9824,
+      "visibleBounds": {
+        "left": 16,
+        "top": 298,
+        "width": 480,
+        "height": 198,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 6,
+      "opaqueColors": 15,
+      "transparentPixels": 214412,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/jinye/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "e43fdda4b3151f507ed13e951236357800b41bf4acd030a45743eeed2a511e17",
+      "bytes": 9819,
+      "visibleBounds": {
+        "left": 126,
+        "top": 140,
+        "width": 262,
+        "height": 356,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 356,
+      "heightDifference": 0,
+      "opaqueColors": 15,
+      "transparentPixels": 221748,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/jinye/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "a49d444ddac49dc8afd08b15066ab8101e1664927c5d59165096787ea7bc8ca9",
+      "bytes": 10224,
+      "visibleBounds": {
+        "left": 132,
+        "top": 196,
+        "width": 250,
+        "height": 300,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 300,
+      "heightDifference": 0,
+      "opaqueColors": 15,
+      "transparentPixels": 216432,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/leo/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "491a62c33f3c02976586f6d2bed01b940205f3230d6c28365c6b6748b9158421",
+      "bytes": 9710,
+      "visibleBounds": {
+        "left": 140,
+        "top": 146,
+        "width": 234,
+        "height": 350,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 0,
+      "opaqueColors": 15,
+      "transparentPixels": 224932,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/leo/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "d7bf18724108cf8c3d71ab70760528c7563d8b3e8a29e08cafffd6d54526da82",
+      "bytes": 10312,
+      "visibleBounds": {
+        "left": 88,
+        "top": 160,
+        "width": 336,
+        "height": 336,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 335,
+      "heightDifference": 1,
+      "opaqueColors": 15,
+      "transparentPixels": 219784,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/leo/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "d3050fe0fb43a10bf82272f7f0105df9efb3ebb8fc2384aed5bdaadae4b134cb",
+      "bytes": 11002,
+      "visibleBounds": {
+        "left": 116,
+        "top": 136,
+        "width": 280,
+        "height": 360,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 1,
+      "opaqueColors": 15,
+      "transparentPixels": 215636,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/leo/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "dd51257f69f6360522b22eeb6677173d091f02d5eddbf6f41c91562f5d92cb4d",
+      "bytes": 9971,
+      "visibleBounds": {
+        "left": 138,
+        "top": 116,
+        "width": 238,
+        "height": 380,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 1,
+      "opaqueColors": 15,
+      "transparentPixels": 221728,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/leo/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "d76c3a78891cd9769d366a4ad1644a06cceb0425699cd9a0c2b655c776d005de",
+      "bytes": 11820,
+      "visibleBounds": {
+        "left": 62,
+        "top": 142,
+        "width": 388,
+        "height": 354,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 0,
+      "opaqueColors": 15,
+      "transparentPixels": 205760,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/leo/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "3ab764732a4374b1efb6d3bc6320565dee97a3462f726de6b8d75c11fac57b58",
+      "bytes": 9452,
+      "visibleBounds": {
+        "left": 16,
+        "top": 300,
+        "width": 480,
+        "height": 196,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 8,
+      "opaqueColors": 15,
+      "transparentPixels": 215652,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/leo/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "f0e053719ea3ea72c19e2d31f991abb783b9a4f95938d4ffc1f9a33edbe7fd68",
+      "bytes": 10212,
+      "visibleBounds": {
+        "left": 138,
+        "top": 140,
+        "width": 236,
+        "height": 356,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 356,
+      "heightDifference": 0,
+      "opaqueColors": 15,
+      "transparentPixels": 220768,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/leo/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "b93b0c03cee51756c1457cd40f6b82ff0b9040ce24e0951b428051981b5f5453",
+      "bytes": 10128,
+      "visibleBounds": {
+        "left": 122,
+        "top": 196,
+        "width": 268,
+        "height": 300,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 300,
+      "heightDifference": 0,
+      "opaqueColors": 15,
+      "transparentPixels": 216904,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/alie/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "bc614f7e89923f29f8812fea826ae3f63878bdbc85f69c6a9027422cf0c484a9",
+      "bytes": 8891,
+      "visibleBounds": {
+        "left": 140,
+        "top": 148,
+        "width": 234,
+        "height": 348,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 2,
+      "opaqueColors": 15,
+      "transparentPixels": 223448,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/alie/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "679da4e5c39892a359ca2a56a6deca73d2ba945c09a5f06f3e3eae3e324742c4",
+      "bytes": 9856,
+      "visibleBounds": {
+        "left": 90,
+        "top": 162,
+        "width": 332,
+        "height": 334,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 335,
+      "heightDifference": 1,
+      "opaqueColors": 15,
+      "transparentPixels": 214840,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/alie/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "e78cd73f3657c2f7f4f368b60045b93b9b979b11c6394afa22a589adc9ddb2f0",
+      "bytes": 9736,
+      "visibleBounds": {
+        "left": 124,
+        "top": 138,
+        "width": 266,
+        "height": 358,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 1,
+      "opaqueColors": 15,
+      "transparentPixels": 216312,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/alie/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "84033a7a74ab3b29101ccd4cb1e458b4b129536353999d849c190e4b0a7afbc2",
+      "bytes": 9819,
+      "visibleBounds": {
+        "left": 116,
+        "top": 116,
+        "width": 280,
+        "height": 380,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 1,
+      "opaqueColors": 15,
+      "transparentPixels": 217548,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/alie/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "04c1fc811184ac794ee9ece93ee779b660cf61482c83b07f353324585dc25f9b",
+      "bytes": 10728,
+      "visibleBounds": {
+        "left": 74,
+        "top": 144,
+        "width": 366,
+        "height": 352,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 2,
+      "opaqueColors": 15,
+      "transparentPixels": 209884,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/alie/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "f456550a9e7fa159004f087e3fe5fc7e55e03784a6aff97e39924e557d87f469",
+      "bytes": 8514,
+      "visibleBounds": {
+        "left": 16,
+        "top": 300,
+        "width": 480,
+        "height": 196,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 8,
+      "opaqueColors": 15,
+      "transparentPixels": 215236,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/alie/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "1bb7f9197285f065fe6a291159fbde3c22b369839d7b1636f41c5d2e77285caf",
+      "bytes": 9928,
+      "visibleBounds": {
+        "left": 134,
+        "top": 142,
+        "width": 246,
+        "height": 354,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 356,
+      "heightDifference": 2,
+      "opaqueColors": 15,
+      "transparentPixels": 214560,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "pc98/characters/alie/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "b5e5d80821de2e63f6d2ea6b15313d4d7ae9c8b54fdb2966d1e62feb9825cd0e",
+      "bytes": 9349,
+      "visibleBounds": {
+        "left": 120,
+        "top": 196,
+        "width": 272,
+        "height": 300,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 300,
+      "heightDifference": 0,
+      "opaqueColors": 15,
+      "transparentPixels": 215916,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/jinye/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "f41d0c05ebb6e56d8f47eec984bad4533ae4b5a05d3d1f748d41ccd041937d0c",
+      "bytes": 14630,
+      "visibleBounds": {
+        "left": 140,
+        "top": 146,
+        "width": 232,
+        "height": 350,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 0,
+      "opaqueColors": 63,
+      "transparentPixels": 224608,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/jinye/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "cbc64ac929156978119b698e964b1f0fee50c5b3a867b3697994334340645769",
+      "bytes": 15830,
+      "visibleBounds": {
+        "left": 88,
+        "top": 160,
+        "width": 338,
+        "height": 336,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 335,
+      "heightDifference": 1,
+      "opaqueColors": 63,
+      "transparentPixels": 219328,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/jinye/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "f1323b9a7f1fb8470779e70e0fcf3f4d777b9adecf7059cf7a2cc12f09a74b96",
+      "bytes": 16185,
+      "visibleBounds": {
+        "left": 116,
+        "top": 136,
+        "width": 280,
+        "height": 360,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 1,
+      "opaqueColors": 63,
+      "transparentPixels": 217992,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/jinye/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "73a48748a91ac064a231a0ff4a6017ff20ea9e7af29f6d409b5f05b234ae3732",
+      "bytes": 14855,
+      "visibleBounds": {
+        "left": 140,
+        "top": 116,
+        "width": 234,
+        "height": 380,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 1,
+      "opaqueColors": 63,
+      "transparentPixels": 225000,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/jinye/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "0669b40edd9a464187dd5f31378da56ed628c82720f3dc1e490bc33223221eff",
+      "bytes": 17830,
+      "visibleBounds": {
+        "left": 66,
+        "top": 142,
+        "width": 380,
+        "height": 354,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 0,
+      "opaqueColors": 63,
+      "transparentPixels": 209444,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/jinye/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "354bf1c21117ceaa877de83828c2e85782e89d66392c1998c17dd76e3bc7f8af",
+      "bytes": 15205,
+      "visibleBounds": {
+        "left": 18,
+        "top": 292,
+        "width": 476,
+        "height": 204,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 0,
+      "opaqueColors": 63,
+      "transparentPixels": 212392,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/jinye/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "3ff206c2f64bda437eabea6aef26573f1cce2a11e50909864001f6afe92c1099",
+      "bytes": 15111,
+      "visibleBounds": {
+        "left": 138,
+        "top": 140,
+        "width": 238,
+        "height": 356,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 356,
+      "heightDifference": 0,
+      "opaqueColors": 63,
+      "transparentPixels": 221724,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/jinye/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "74132bd8017233e78ccc912b1cf4eb54012633b922d2db9565164ad513d8bd8f",
+      "bytes": 15949,
+      "visibleBounds": {
+        "left": 130,
+        "top": 196,
+        "width": 254,
+        "height": 300,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 300,
+      "heightDifference": 0,
+      "opaqueColors": 63,
+      "transparentPixels": 215684,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/leo/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "e48f6378b58700d112d2da98c574281a660be55296cb4740f5af41cc7993da4a",
+      "bytes": 10943,
+      "visibleBounds": {
+        "left": 138,
+        "top": 146,
+        "width": 238,
+        "height": 350,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 0,
+      "opaqueColors": 31,
+      "transparentPixels": 226252,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/leo/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "aba2ad80fee58ac394ad40d7ccf0728e4757102d0cbf1e0472883e46876d53c9",
+      "bytes": 11659,
+      "visibleBounds": {
+        "left": 88,
+        "top": 160,
+        "width": 338,
+        "height": 336,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 335,
+      "heightDifference": 1,
+      "opaqueColors": 31,
+      "transparentPixels": 221704,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/leo/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "f5a71171850e7d8945728515fc8c6ef46c796128d3c076c3ad3ea711ca50798c",
+      "bytes": 12864,
+      "visibleBounds": {
+        "left": 110,
+        "top": 136,
+        "width": 294,
+        "height": 360,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 1,
+      "opaqueColors": 31,
+      "transparentPixels": 216204,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/leo/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "d9087f3471302ba88575bd15b290f6c55b330aaff308aa10cb0507e356e8c5e4",
+      "bytes": 11885,
+      "visibleBounds": {
+        "left": 124,
+        "top": 116,
+        "width": 264,
+        "height": 380,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 1,
+      "opaqueColors": 31,
+      "transparentPixels": 222240,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/leo/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "2ee8c09db7ac4b0bf417eb2802cfb8db08844ba1a4fcc523240dc1f797402835",
+      "bytes": 14982,
+      "visibleBounds": {
+        "left": 48,
+        "top": 142,
+        "width": 416,
+        "height": 354,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 0,
+      "opaqueColors": 31,
+      "transparentPixels": 200728,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/leo/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "9dbc7049d00af3b943a35a6e6ce482a4cf14aae8359c3f3b4ea46deeffa3c6f5",
+      "bytes": 10059,
+      "visibleBounds": {
+        "left": 16,
+        "top": 322,
+        "width": 480,
+        "height": 174,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 30,
+      "opaqueColors": 31,
+      "transparentPixels": 220716,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/leo/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "5be4d7a1c798218a7bca51b5877509d323046d3330b228b4f5f12f373df35b3d",
+      "bytes": 11781,
+      "visibleBounds": {
+        "left": 140,
+        "top": 140,
+        "width": 234,
+        "height": 356,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 356,
+      "heightDifference": 0,
+      "opaqueColors": 31,
+      "transparentPixels": 222868,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/leo/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "6a0e3176e626968c1f4a4679beeda97190544ca66f20d08fa4e0bd1aed533856",
+      "bytes": 12039,
+      "visibleBounds": {
+        "left": 120,
+        "top": 196,
+        "width": 274,
+        "height": 300,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 300,
+      "heightDifference": 0,
+      "opaqueColors": 31,
+      "transparentPixels": 217416,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/alie/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "47a89083d2837d8d0574a834f5b57355728a1c89af6e35c18ad496dca88befd7",
+      "bytes": 17812,
+      "visibleBounds": {
+        "left": 130,
+        "top": 146,
+        "width": 252,
+        "height": 350,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 0,
+      "opaqueColors": 63,
+      "transparentPixels": 220148,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/alie/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "7e2b5ee97d7e33ead2145e1b3a7e74084aed9c6f956feea4cc297a41c3766eea",
+      "bytes": 19141,
+      "visibleBounds": {
+        "left": 90,
+        "top": 160,
+        "width": 332,
+        "height": 336,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 335,
+      "heightDifference": 1,
+      "opaqueColors": 63,
+      "transparentPixels": 214044,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/alie/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "bcf4841e577decdc3de7fa18a443940d64174b852a22a2c8ca4f98fd3a779eba",
+      "bytes": 19945,
+      "visibleBounds": {
+        "left": 112,
+        "top": 138,
+        "width": 288,
+        "height": 358,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 1,
+      "opaqueColors": 63,
+      "transparentPixels": 210872,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/alie/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "1f45a147463c73d0604ad30d68e5ac26f3b8e051b7cc6d9c0c1fc545dacdfb13",
+      "bytes": 18525,
+      "visibleBounds": {
+        "left": 126,
+        "top": 116,
+        "width": 260,
+        "height": 380,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 1,
+      "opaqueColors": 63,
+      "transparentPixels": 217972,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/alie/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "b3bf6d2acabf9255d61eb065ce1c409442e405b9aff2a45cd0aba90e961d3501",
+      "bytes": 20510,
+      "visibleBounds": {
+        "left": 88,
+        "top": 142,
+        "width": 338,
+        "height": 354,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 0,
+      "opaqueColors": 63,
+      "transparentPixels": 209132,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/alie/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "a2f7a7ba9da8e77640a4d7352e63cb28a21f06ba388188b7eff84dcd6cebab0d",
+      "bytes": 15995,
+      "visibleBounds": {
+        "left": 18,
+        "top": 314,
+        "width": 478,
+        "height": 182,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 22,
+      "opaqueColors": 63,
+      "transparentPixels": 216912,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/alie/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "7c0de68093a9b6a9c5a9da10c64136a08869bdc08bcf8efc504d1d7d634f6108",
+      "bytes": 19430,
+      "visibleBounds": {
+        "left": 126,
+        "top": 142,
+        "width": 260,
+        "height": 354,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 356,
+      "heightDifference": 2,
+      "opaqueColors": 63,
+      "transparentPixels": 213096,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "msdos/characters/alie/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "ed968fd1127c9caca3fca473a46443d628e52cb2cc87d691ce22154e4c7fd4e6",
+      "bytes": 19168,
+      "visibleBounds": {
+        "left": 112,
+        "top": 196,
+        "width": 290,
+        "height": 300,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 300,
+      "heightDifference": 0,
+      "opaqueColors": 63,
+      "transparentPixels": 212280,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 2,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/jinye/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "cc91eb55fe7e18781b43e77944ff2da932f53a0d5f08020f0f544ad0e5c39951",
+      "bytes": 138914,
+      "visibleBounds": {
+        "left": 130,
+        "top": 147,
+        "width": 252,
+        "height": 348,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 350,
+      "heightDifference": 2,
+      "opaqueColors": 27974,
+      "transparentPixels": 221781,
+      "partialAlphaPixels": 40082,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/jinye/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "f865df03133d552ac8fedde8462a39937a036dbe28f5838e2f6ff426a8ec2dfc",
+      "bytes": 149721,
+      "visibleBounds": {
+        "left": 80,
+        "top": 163,
+        "width": 352,
+        "height": 332,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 335,
+      "heightDifference": 3,
+      "opaqueColors": 29284,
+      "transparentPixels": 218044,
+      "partialAlphaPixels": 43871,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/jinye/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "84f8690e849e11d1dd3d108da5bbf5f4f18985cb504a6908300e5cf9ac22df48",
+      "bytes": 150756,
+      "visibleBounds": {
+        "left": 119,
+        "top": 138,
+        "width": 275,
+        "height": 358,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 1,
+      "opaqueColors": 29426,
+      "transparentPixels": 217868,
+      "partialAlphaPixels": 44065,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/jinye/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "08dee9b7cddd507ca62a323da7fb1854a6021c2d6fb3a959f98f131a0e62581d",
+      "bytes": 141131,
+      "visibleBounds": {
+        "left": 135,
+        "top": 117,
+        "width": 242,
+        "height": 379,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 0,
+      "opaqueColors": 28276,
+      "transparentPixels": 220981,
+      "partialAlphaPixels": 40960,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/jinye/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "d62fea45d6b735f9a11129b18c0802a5dd0b5b52981ca29b55504a0815da8c88",
+      "bytes": 187905,
+      "visibleBounds": {
+        "left": 63,
+        "top": 143,
+        "width": 387,
+        "height": 352,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 354,
+      "heightDifference": 2,
+      "opaqueColors": 36719,
+      "transparentPixels": 206126,
+      "partialAlphaPixels": 55799,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/jinye/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "17029f1e4b17e0b43b41c0e60a5beacd0706dcf7c11594193b263415df14ca5f",
+      "bytes": 159747,
+      "visibleBounds": {
+        "left": 17,
+        "top": 299,
+        "width": 478,
+        "height": 196,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 204,
+      "heightDifference": 8,
+      "opaqueColors": 32037,
+      "transparentPixels": 213776,
+      "partialAlphaPixels": 48138,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/jinye/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "5e9f645397c469478285fbaadcad63918ec2091b4de957325360276d8110d54c",
+      "bytes": 148669,
+      "visibleBounds": {
+        "left": 123,
+        "top": 141,
+        "width": 267,
+        "height": 354,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 356,
+      "heightDifference": 2,
+      "opaqueColors": 29800,
+      "transparentPixels": 218667,
+      "partialAlphaPixels": 43224,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/jinye/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "f760f1790bd50ec07dea474c5f7d9288a5e94aa7b57ef03e374d6c0957c615a1",
+      "bytes": 156774,
+      "visibleBounds": {
+        "left": 129,
+        "top": 197,
+        "width": 253,
+        "height": 298,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 300,
+      "heightDifference": 2,
+      "opaqueColors": 31534,
+      "transparentPixels": 215246,
+      "partialAlphaPixels": 46757,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/leo/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "c2ec4449702399f07b9972e4c91be9e0ee3ac42ffc678d5d17de7b676a97d5d6",
+      "bytes": 147550,
+      "visibleBounds": {
+        "left": 121,
+        "top": 146,
+        "width": 271,
+        "height": 350,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 0,
+      "opaqueColors": 31257,
+      "transparentPixels": 220811,
+      "partialAlphaPixels": 41074,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/leo/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "e772ea3c1abb12c884c0cef851e1565fbdc103619a499b04fb91bebb78dc79a5",
+      "bytes": 157917,
+      "visibleBounds": {
+        "left": 66,
+        "top": 162,
+        "width": 381,
+        "height": 334,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 335,
+      "heightDifference": 1,
+      "opaqueColors": 32800,
+      "transparentPixels": 217759,
+      "partialAlphaPixels": 44043,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/leo/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "85faf14ce252225bf86a7746a93e49e404a54f84bb1c69c5691dee3a53f3e668",
+      "bytes": 171802,
+      "visibleBounds": {
+        "left": 116,
+        "top": 137,
+        "width": 281,
+        "height": 359,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 0,
+      "opaqueColors": 35323,
+      "transparentPixels": 213977,
+      "partialAlphaPixels": 47943,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/leo/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "ed58f483b9d0a55f1f7d74db3069002706f553166d0b62069c091d994840aa03",
+      "bytes": 154402,
+      "visibleBounds": {
+        "left": 133,
+        "top": 116,
+        "width": 246,
+        "height": 380,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 1,
+      "opaqueColors": 31819,
+      "transparentPixels": 218885,
+      "partialAlphaPixels": 43058,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/leo/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "e81b84f85232279e16822fc19a48d60f20c2e01e952d485e82cbc42a3007a76e",
+      "bytes": 231770,
+      "visibleBounds": {
+        "left": 44,
+        "top": 142,
+        "width": 424,
+        "height": 354,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 0,
+      "opaqueColors": 47009,
+      "transparentPixels": 196290,
+      "partialAlphaPixels": 65705,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/leo/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "0445182a0eb1e642efbee107c8b85c3697197e5ff7fe7e7b5b97357b3f2b6c52",
+      "bytes": 152338,
+      "visibleBounds": {
+        "left": 18,
+        "top": 323,
+        "width": 477,
+        "height": 173,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 31,
+      "opaqueColors": 32870,
+      "transparentPixels": 218248,
+      "partialAlphaPixels": 43622,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/leo/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "dc96cf81609c16d5a940a7b9010418829a5938a9e07460430a761f871927c4a5",
+      "bytes": 154692,
+      "visibleBounds": {
+        "left": 131,
+        "top": 139,
+        "width": 250,
+        "height": 357,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 356,
+      "heightDifference": 1,
+      "opaqueColors": 32002,
+      "transparentPixels": 219134,
+      "partialAlphaPixels": 42849,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/leo/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "88297ba6307162648cc4999c9dc64a40ccef1692c9e28c5086ed922036eee428",
+      "bytes": 170781,
+      "visibleBounds": {
+        "left": 121,
+        "top": 195,
+        "width": 270,
+        "height": 301,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 300,
+      "heightDifference": 1,
+      "opaqueColors": 36663,
+      "transparentPixels": 213876,
+      "partialAlphaPixels": 48132,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/alie/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "78e5095f9f8cd2f22d4607163e27996b13da901aaddbca01f4ef25a6a2c91128",
+      "bytes": 136788,
+      "visibleBounds": {
+        "left": 139,
+        "top": 147,
+        "width": 235,
+        "height": 348,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 350,
+      "heightDifference": 2,
+      "opaqueColors": 28237,
+      "transparentPixels": 222833,
+      "partialAlphaPixels": 39096,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/alie/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "9941faaeafa5dadf0f9b614db976390e1716e751a73a1a662c2e14ab8d032e84",
+      "bytes": 153894,
+      "visibleBounds": {
+        "left": 95,
+        "top": 161,
+        "width": 322,
+        "height": 335,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 335,
+      "heightDifference": 0,
+      "opaqueColors": 31429,
+      "transparentPixels": 217748,
+      "partialAlphaPixels": 44203,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/alie/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "97123f7e3d0daf566c23fb7252979393120ff0fc25015a57cb275cf432d6004c",
+      "bytes": 158868,
+      "visibleBounds": {
+        "left": 131,
+        "top": 138,
+        "width": 251,
+        "height": 358,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 1,
+      "opaqueColors": 32457,
+      "transparentPixels": 216429,
+      "partialAlphaPixels": 45495,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/alie/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "23e2b50bd36e6fe5cadcdb80bdf13f776426ed3930c8f08393c1dc4ce9e161cb",
+      "bytes": 158109,
+      "visibleBounds": {
+        "left": 124,
+        "top": 118,
+        "width": 264,
+        "height": 377,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 379,
+      "heightDifference": 2,
+      "opaqueColors": 32092,
+      "transparentPixels": 216292,
+      "partialAlphaPixels": 45657,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/alie/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "af8d216f69fb8fd85aa5c8780eedd68ae9e0f931127df6c8082c10a39684dea4",
+      "bytes": 198327,
+      "visibleBounds": {
+        "left": 72,
+        "top": 142,
+        "width": 368,
+        "height": 354,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 0,
+      "opaqueColors": 39811,
+      "transparentPixels": 204565,
+      "partialAlphaPixels": 57451,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/alie/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "6f1cd0af631ac9c1d8fd25d0d9711c1f2e48a2f48708743486e2a00ee0123431",
+      "bytes": 159089,
+      "visibleBounds": {
+        "left": 16,
+        "top": 315,
+        "width": 479,
+        "height": 181,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 23,
+      "opaqueColors": 33149,
+      "transparentPixels": 214722,
+      "partialAlphaPixels": 47183,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/alie/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "42cc006484f5a07fc7b14740ab3af2730994cef36b1473da94708ef017ce1e95",
+      "bytes": 169373,
+      "visibleBounds": {
+        "left": 128,
+        "top": 141,
+        "width": 256,
+        "height": 354,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 356,
+      "heightDifference": 2,
+      "opaqueColors": 34250,
+      "transparentPixels": 213581,
+      "partialAlphaPixels": 48347,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "taiwan-print/characters/alie/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "b27e87d9ec7adb5f31a29f56bf7682fcbbad233a5a3e2d5f3a9d6e5b3c905fc6",
+      "bytes": 170872,
+      "visibleBounds": {
+        "left": 114,
+        "top": 197,
+        "width": 285,
+        "height": 299,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 300,
+      "heightDifference": 1,
+      "opaqueColors": 35115,
+      "transparentPixels": 212144,
+      "partialAlphaPixels": 49879,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/jinye/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "ea98137a545713f49d1dead800f6e1029081ff87d68a72531869fa13dd35a8c1",
+      "bytes": 4372,
+      "visibleBounds": {
+        "left": 144,
+        "top": 144,
+        "width": 224,
+        "height": 352,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 2,
+      "opaqueColors": 4,
+      "transparentPixels": 223248,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/jinye/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "86049350aa5e78ac1e595db3593658b539568bc4945e246589993e787a0b314a",
+      "bytes": 4720,
+      "visibleBounds": {
+        "left": 88,
+        "top": 160,
+        "width": 340,
+        "height": 336,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 335,
+      "heightDifference": 1,
+      "opaqueColors": 4,
+      "transparentPixels": 217232,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/jinye/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "5b682f75b43592b0526a8cd472783138aa0908ddfcf2f8ae660573661d839ea4",
+      "bytes": 4834,
+      "visibleBounds": {
+        "left": 120,
+        "top": 136,
+        "width": 276,
+        "height": 360,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 1,
+      "opaqueColors": 4,
+      "transparentPixels": 216800,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/jinye/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "3d466dbf505a8b47bc4afb60d7e03f5ce62111ff52fa7301db5f93ab81bcd370",
+      "bytes": 4397,
+      "visibleBounds": {
+        "left": 140,
+        "top": 116,
+        "width": 236,
+        "height": 380,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 1,
+      "opaqueColors": 4,
+      "transparentPixels": 221280,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/jinye/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "c7266cfc750e75febafa57cec0ba6ce4739a3e1da03963dcc3f04337b7b8077d",
+      "bytes": 5330,
+      "visibleBounds": {
+        "left": 64,
+        "top": 140,
+        "width": 388,
+        "height": 356,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 2,
+      "opaqueColors": 4,
+      "transparentPixels": 205840,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/jinye/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "ba825617b7bf75f1dbf4d419d5a883c4f282dc9c7bca1ae2de1ab2bfaab9c6fa",
+      "bytes": 4687,
+      "visibleBounds": {
+        "left": 16,
+        "top": 300,
+        "width": 480,
+        "height": 196,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 8,
+      "opaqueColors": 4,
+      "transparentPixels": 211536,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/jinye/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "511cdb5a0216cb881aea94e8d8b7e01a8ed7a694eb715a996723843b7e64cd9f",
+      "bytes": 4853,
+      "visibleBounds": {
+        "left": 132,
+        "top": 140,
+        "width": 248,
+        "height": 356,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 356,
+      "heightDifference": 0,
+      "opaqueColors": 4,
+      "transparentPixels": 215856,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/jinye/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "ce7b36bb49c02620a6afafc5dc4a372d4866ae5f97899127c0234cecf31d1c9a",
+      "bytes": 4333,
+      "visibleBounds": {
+        "left": 128,
+        "top": 196,
+        "width": 256,
+        "height": 300,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 300,
+      "heightDifference": 0,
+      "opaqueColors": 4,
+      "transparentPixels": 217232,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/leo/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "04087e3623f87342418bae6c03fd4ceb6f4738a98762106b3c5846088c9c88df",
+      "bytes": 4493,
+      "visibleBounds": {
+        "left": 136,
+        "top": 144,
+        "width": 240,
+        "height": 352,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 2,
+      "opaqueColors": 4,
+      "transparentPixels": 224480,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/leo/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "a0d0e7c88ea3c4ae0bd8887c491398538abbc220f5220785067a6ba8a76ea82d",
+      "bytes": 4619,
+      "visibleBounds": {
+        "left": 88,
+        "top": 160,
+        "width": 340,
+        "height": 336,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 335,
+      "heightDifference": 1,
+      "opaqueColors": 4,
+      "transparentPixels": 221424,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/leo/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "0d9396560aa4ba02da759f4f83c6a3473d6f38df9641a85f15369a60ce3f1c99",
+      "bytes": 5040,
+      "visibleBounds": {
+        "left": 124,
+        "top": 136,
+        "width": 264,
+        "height": 360,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 1,
+      "opaqueColors": 4,
+      "transparentPixels": 217280,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/leo/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "317fa7e03de3f51e886a687afae77840817807d85bf383c9aef5598422708b22",
+      "bytes": 4677,
+      "visibleBounds": {
+        "left": 136,
+        "top": 116,
+        "width": 244,
+        "height": 380,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 1,
+      "opaqueColors": 4,
+      "transparentPixels": 220688,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/leo/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "a7f30b36ce14de4592ec9c7cb886e0c1afadb8aeb44a06e1ebeb11fa915e8415",
+      "bytes": 5503,
+      "visibleBounds": {
+        "left": 60,
+        "top": 140,
+        "width": 396,
+        "height": 356,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 2,
+      "opaqueColors": 4,
+      "transparentPixels": 204208,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/leo/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "d1fe9c2eb991f612bb1c6b06bc11ccb5f3a54f2141012fabb6bc844e679ce6af",
+      "bytes": 4550,
+      "visibleBounds": {
+        "left": 16,
+        "top": 312,
+        "width": 480,
+        "height": 184,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 20,
+      "opaqueColors": 4,
+      "transparentPixels": 217696,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/leo/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "7bccfa46b3c47ade32ef29b10129566e6c7ec51c7631c868c1177da554fd9d16",
+      "bytes": 4711,
+      "visibleBounds": {
+        "left": 124,
+        "top": 140,
+        "width": 268,
+        "height": 356,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 356,
+      "heightDifference": 0,
+      "opaqueColors": 4,
+      "transparentPixels": 218800,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/leo/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "c7c8c36b13f5273e29c4ee0447a1aa158697c56ea2b3b1d310f624701af4c9d2",
+      "bytes": 4671,
+      "visibleBounds": {
+        "left": 124,
+        "top": 196,
+        "width": 268,
+        "height": 300,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 300,
+      "heightDifference": 0,
+      "opaqueColors": 4,
+      "transparentPixels": 216224,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/alie/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "0f49ba446f2bede2509ccb572ee28143869dedb0150a72733536f8520baec9ff",
+      "bytes": 4639,
+      "visibleBounds": {
+        "left": 128,
+        "top": 144,
+        "width": 256,
+        "height": 352,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 2,
+      "opaqueColors": 4,
+      "transparentPixels": 219072,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/alie/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "6438178dd9c6a963aba23e01653c888a00ae0155565d0526119ce84b346e95f8",
+      "bytes": 4958,
+      "visibleBounds": {
+        "left": 92,
+        "top": 160,
+        "width": 328,
+        "height": 336,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 335,
+      "heightDifference": 1,
+      "opaqueColors": 4,
+      "transparentPixels": 212912,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/alie/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "1112f196e23bc2e57f13deb65d451f585a134a513d6f53b53905ce371eae5a95",
+      "bytes": 5028,
+      "visibleBounds": {
+        "left": 124,
+        "top": 136,
+        "width": 268,
+        "height": 360,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 1,
+      "opaqueColors": 4,
+      "transparentPixels": 211744,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/alie/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "086750e8211c9093c3d59a89dc030e2b1f99acce06a9170aa60698365f5c96ac",
+      "bytes": 4732,
+      "visibleBounds": {
+        "left": 128,
+        "top": 116,
+        "width": 260,
+        "height": 380,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 1,
+      "opaqueColors": 4,
+      "transparentPixels": 215392,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/alie/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "73dbb22f1010a965ff5554f7277acc792bcb7c5826cdf5750fba47fb34454b0d",
+      "bytes": 5287,
+      "visibleBounds": {
+        "left": 76,
+        "top": 140,
+        "width": 364,
+        "height": 356,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 2,
+      "opaqueColors": 4,
+      "transparentPixels": 201872,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/alie/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "f0822c0f20ede328c9ad36e7cb7b0c899fd77fe84c5e8ffebed16d207ae3c5ba",
+      "bytes": 4601,
+      "visibleBounds": {
+        "left": 16,
+        "top": 300,
+        "width": 480,
+        "height": 196,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 8,
+      "opaqueColors": 4,
+      "transparentPixels": 212496,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/alie/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "7fa26244223ef7c397f15d3c82b958793fd6f095c9fa8f0720cd59703cdeff8e",
+      "bytes": 4878,
+      "visibleBounds": {
+        "left": 132,
+        "top": 140,
+        "width": 252,
+        "height": 356,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 356,
+      "heightDifference": 0,
+      "opaqueColors": 4,
+      "transparentPixels": 212800,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "gameboy/characters/alie/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "1b6eaf51117cec116542d05a08d70274d5a459990d0cb4b11429d68f4e8c9029",
+      "bytes": 4638,
+      "visibleBounds": {
+        "left": 112,
+        "top": 196,
+        "width": 288,
+        "height": 300,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 300,
+      "heightDifference": 0,
+      "opaqueColors": 4,
+      "transparentPixels": 213376,
+      "partialAlphaPixels": 0,
+      "pixelBlock": 4,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/jinye/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "8d5353b890fa306945923d8aa03339efdab21212e65f491cc67c0ccf00c4dcf1",
+      "bytes": 122122,
+      "visibleBounds": {
+        "left": 143,
+        "top": 148,
+        "width": 228,
+        "height": 347,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 350,
+      "heightDifference": 3,
+      "opaqueColors": 22531,
+      "transparentPixels": 225425,
+      "partialAlphaPixels": 36528,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/jinye/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "754125f3d226deaea419dfea7b83c3917e718a0e85062d7aed6d94e1fb9a0ab6",
+      "bytes": 142476,
+      "visibleBounds": {
+        "left": 79,
+        "top": 163,
+        "width": 353,
+        "height": 332,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 335,
+      "heightDifference": 3,
+      "opaqueColors": 25300,
+      "transparentPixels": 218179,
+      "partialAlphaPixels": 43772,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/jinye/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "1beb91ee2cad883eff9c6cc3847d327f84c36724d31c1642888caee402fd8ca6",
+      "bytes": 147448,
+      "visibleBounds": {
+        "left": 119,
+        "top": 135,
+        "width": 274,
+        "height": 359,
+        "bottomExclusive": 494
+      },
+      "targetHeight": 359,
+      "heightDifference": 0,
+      "opaqueColors": 26893,
+      "transparentPixels": 216880,
+      "partialAlphaPixels": 45019,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/jinye/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "bafe80c1e92d0eba603b989e9f8f092baa0d20472683ed4413baefa8ab615897",
+      "bytes": 122787,
+      "visibleBounds": {
+        "left": 142,
+        "top": 117,
+        "width": 229,
+        "height": 377,
+        "bottomExclusive": 494
+      },
+      "targetHeight": 379,
+      "heightDifference": 2,
+      "opaqueColors": 22086,
+      "transparentPixels": 224685,
+      "partialAlphaPixels": 37253,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/jinye/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "8bc7e9f2fa05d9a2554676555a3ff57d518c65a99d8254b97a664b29de82df48",
+      "bytes": 164586,
+      "visibleBounds": {
+        "left": 74,
+        "top": 143,
+        "width": 364,
+        "height": 352,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 354,
+      "heightDifference": 2,
+      "opaqueColors": 29266,
+      "transparentPixels": 210593,
+      "partialAlphaPixels": 51351,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/jinye/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "b15381ef44c1fcff95d81a31c5076db4278e7fd68ef3cb06817befd3f32ba2fb",
+      "bytes": 151092,
+      "visibleBounds": {
+        "left": 17,
+        "top": 306,
+        "width": 478,
+        "height": 189,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 204,
+      "heightDifference": 15,
+      "opaqueColors": 27441,
+      "transparentPixels": 213639,
+      "partialAlphaPixels": 48330,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/jinye/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "05ba7150552c0c83d11e7603c606857cb5d5009f74fb6ce588892d79d15c8660",
+      "bytes": 134158,
+      "visibleBounds": {
+        "left": 135,
+        "top": 141,
+        "width": 243,
+        "height": 354,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 356,
+      "heightDifference": 2,
+      "opaqueColors": 23753,
+      "transparentPixels": 220518,
+      "partialAlphaPixels": 41405,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/jinye/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "adf2bc585d187a7c986eb589b62333ae78cb4647b3150d1c6bde77931741bb87",
+      "bytes": 142834,
+      "visibleBounds": {
+        "left": 139,
+        "top": 198,
+        "width": 234,
+        "height": 297,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 300,
+      "heightDifference": 3,
+      "opaqueColors": 25757,
+      "transparentPixels": 216820,
+      "partialAlphaPixels": 45181,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/leo/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "5ce3997a1d821569aa4a7b991b67cf85c83822386cc676d279c9777c501dc321",
+      "bytes": 141059,
+      "visibleBounds": {
+        "left": 134,
+        "top": 146,
+        "width": 245,
+        "height": 350,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 0,
+      "opaqueColors": 26399,
+      "transparentPixels": 217508,
+      "partialAlphaPixels": 44512,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/leo/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "65cbc3bd45fc46682d58df8d69f1df83bb94d3dd50aaaf9685dd1b3114b55ce1",
+      "bytes": 154622,
+      "visibleBounds": {
+        "left": 78,
+        "top": 161,
+        "width": 357,
+        "height": 335,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 335,
+      "heightDifference": 0,
+      "opaqueColors": 28128,
+      "transparentPixels": 211713,
+      "partialAlphaPixels": 50266,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/leo/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "ced2aac6407ab95b50093ea75ef96641f773467e20219f0a416c6b230167d81d",
+      "bytes": 169642,
+      "visibleBounds": {
+        "left": 116,
+        "top": 137,
+        "width": 281,
+        "height": 359,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 359,
+      "heightDifference": 0,
+      "opaqueColors": 31142,
+      "transparentPixels": 206917,
+      "partialAlphaPixels": 55058,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/leo/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "7ac48c23581fc555e884b5bb7c7ee376bc99151f8bcbd0be4ea8ff10847bfcc5",
+      "bytes": 150618,
+      "visibleBounds": {
+        "left": 133,
+        "top": 117,
+        "width": 246,
+        "height": 379,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 379,
+      "heightDifference": 0,
+      "opaqueColors": 28085,
+      "transparentPixels": 214577,
+      "partialAlphaPixels": 47388,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/leo/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "780f69ae9345e751c3f3713aa711b8c66a73c9490106d7cb6ff025a2839eb034",
+      "bytes": 230497,
+      "visibleBounds": {
+        "left": 42,
+        "top": 142,
+        "width": 428,
+        "height": 354,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 0,
+      "opaqueColors": 41466,
+      "transparentPixels": 184717,
+      "partialAlphaPixels": 77208,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/leo/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "d82496adc2c86b99645c828e62c5dcc540082a5c7b8a3acb7f7abb40cbd84761",
+      "bytes": 152243,
+      "visibleBounds": {
+        "left": 18,
+        "top": 311,
+        "width": 476,
+        "height": 185,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 19,
+      "opaqueColors": 29382,
+      "transparentPixels": 211448,
+      "partialAlphaPixels": 50550,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/leo/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "f4f4bc607c465d6975f52202d0a7cc6a62b008bf183a59e083ba602d3aa4f404",
+      "bytes": 164597,
+      "visibleBounds": {
+        "left": 135,
+        "top": 140,
+        "width": 243,
+        "height": 356,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 356,
+      "heightDifference": 0,
+      "opaqueColors": 31899,
+      "transparentPixels": 210423,
+      "partialAlphaPixels": 51576,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/leo/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "bd2282e051fcc9761db41e9ccba507b19b31cf697b7ba959a568a55766e7f319",
+      "bytes": 175269,
+      "visibleBounds": {
+        "left": 120,
+        "top": 195,
+        "width": 273,
+        "height": 301,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 300,
+      "heightDifference": 1,
+      "opaqueColors": 34302,
+      "transparentPixels": 206254,
+      "partialAlphaPixels": 55817,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/alie/sprites/idle.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "bcaa143ebac5cbfd42e4dd100e9da249bc4cfb0c4439de5abfb541274232e4c0",
+      "bytes": 131448,
+      "visibleBounds": {
+        "left": 138,
+        "top": 146,
+        "width": 237,
+        "height": 350,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 350,
+      "heightDifference": 0,
+      "opaqueColors": 24337,
+      "transparentPixels": 223114,
+      "partialAlphaPixels": 38756,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/alie/sprites/run1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "3462356612b047ac632a1ce5ca35daf39ab2a26da792f12ec87105f2ea0e9f6f",
+      "bytes": 156555,
+      "visibleBounds": {
+        "left": 77,
+        "top": 162,
+        "width": 358,
+        "height": 333,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 335,
+      "heightDifference": 2,
+      "opaqueColors": 27704,
+      "transparentPixels": 214896,
+      "partialAlphaPixels": 46976,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/alie/sprites/run2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "26841db47f64e7e5aa8582fb2c6ac362596ff244097cc92989cc4788c56e6a81",
+      "bytes": 155938,
+      "visibleBounds": {
+        "left": 126,
+        "top": 138,
+        "width": 262,
+        "height": 357,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 359,
+      "heightDifference": 2,
+      "opaqueColors": 28084,
+      "transparentPixels": 215688,
+      "partialAlphaPixels": 46202,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/alie/sprites/jump.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "8fadf047a65279591c150e70e17b8e1585d4731a20ab1883782eb031d17f6b7c",
+      "bytes": 151751,
+      "visibleBounds": {
+        "left": 117,
+        "top": 117,
+        "width": 278,
+        "height": 378,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 379,
+      "heightDifference": 1,
+      "opaqueColors": 27092,
+      "transparentPixels": 216361,
+      "partialAlphaPixels": 45555,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/alie/sprites/spike.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "ce4702578937105ae2751d3d8ab2239a811e38ded00deb4c341a6bb6c5c3b808",
+      "bytes": 189950,
+      "visibleBounds": {
+        "left": 65,
+        "top": 143,
+        "width": 382,
+        "height": 353,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 354,
+      "heightDifference": 1,
+      "opaqueColors": 34280,
+      "transparentPixels": 204571,
+      "partialAlphaPixels": 57329,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/alie/sprites/dive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "b594a4b65858de7f8b09aa8bd459962597883043809967fde8c7175f68c26a84",
+      "bytes": 143124,
+      "visibleBounds": {
+        "left": 16,
+        "top": 326,
+        "width": 479,
+        "height": 170,
+        "bottomExclusive": 496
+      },
+      "targetHeight": 204,
+      "heightDifference": 34,
+      "opaqueColors": 26891,
+      "transparentPixels": 217708,
+      "partialAlphaPixels": 44156,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/alie/sprites/win.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "c188ecd08a900ec59fa9b6aef317d8cfe007a8407934f68ed5f0f4efb9cfbc71",
+      "bytes": 156647,
+      "visibleBounds": {
+        "left": 134,
+        "top": 140,
+        "width": 245,
+        "height": 355,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 356,
+      "heightDifference": 1,
+      "opaqueColors": 27984,
+      "transparentPixels": 215045,
+      "partialAlphaPixels": 46879,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    },
+    {
+      "path": "modern-paint/characters/alie/sprites/lose.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "9f531caa640822b8a09ded9a15eac6aa5bb27e2b71c50612f4de56a0b0d5a9bf",
+      "bytes": 164872,
+      "visibleBounds": {
+        "left": 113,
+        "top": 196,
+        "width": 285,
+        "height": 299,
+        "bottomExclusive": 495
+      },
+      "targetHeight": 300,
+      "heightDifference": 1,
+      "opaqueColors": 30025,
+      "transparentPixels": 212161,
+      "partialAlphaPixels": 49791,
+      "pixelBlock": 1,
+      "blockErrors": 0,
+      "anchor": [
+        256,
+        496
+      ]
+    }
+  ]
+}

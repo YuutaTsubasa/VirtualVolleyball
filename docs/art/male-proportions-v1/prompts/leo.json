@@ -1,0 +1,68 @@
+[
+  {
+    "style": "anime90",
+    "tool": "builtin image_gen",
+    "prompt": "Use case: identity-preserve. Produce ONE transparent production sprite atlas, EXACTLY 8 separate full-body figures in FOUR columns and TWO rows, evenly spaced with ample gutters. PRIMARY reference image1 is APPROVED LEO identity and moderately stylized proportions: match his head size/torso/legs EXACTLY, about 3 to 3.25 heads, slender athletic prince, blond swept hair, blue eyes, small GOLD crown with THREE BLUE diamond gemstones, royal blue jersey and shorts with white panels/gold piping, white wristbands and socks, blue white gold shoes. Image2 is ONLY POSE and ORDER reference: its body is too squat, DO NOT COPY its two-head chibi proportions. Each pose must use image1 longer limbs and torso. Render 1990s anime clean bold ink, flat colors, hard cel shadows. Row1: ready idle facing right; run1 long running stride right; run2 alternate high-knee running stride right; airborne jump BOTH arms straight upward blocking with open palms. Row2: airborne spike ONE hitting arm raised bent behind head other arm forward, torso twist; horizontal dive headRIGHT feetLEFT BOTH arms extended together right; jubilant standing victory raised fist; dejected kneeling lose head lowered. All face right/three-quarter right. Keep head-to-body proportions consistent in all poses. Every finger, crown and shoe complete, each figure wholly isolated within its cell. NO ball, text, labels, background, ground shadows. Transparent alpha. Wide 2:1 atlas composition.",
+    "source": "anime90-source.png",
+    "original": "C:/Users/User/.codex/generated_images/01a16952-0aee-7071-a6d5-686e5738e5da/exec-eaaf0ac8-b0f0-498e-a1f9-324ce6a41615.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportion-review-v1/sources/leo.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/references/anime90/leo/sheet.png"
+    ]
+  },
+  {
+    "style": "pc98",
+    "tool": "builtin image_gen",
+    "prompt": "Use case: style-transfer. Create one transparent 4-column 2-row sprite atlas of EXACTLY the same EIGHT Leo volleyball action figures as IMAGE1. IMAGE1 is absolute geometry, identity, pose and body-proportion master: preserve its moderately stylized 3-3.25-head slender athletic blond prince, gold crown with three blue gemstones, blue eyes, blue white gold uniform, all limb lengths and poses. IMAGE2 is rendering-style reference ONLY; ignore its squat older body proportions. Apply authentic PC-98 16-color-era pixel art: restrained blue, gold, warm peach skin, navy outlines, warm brown skin shadows, precise limited palette pixel clusters, deliberate fine checkerboard dithering, no blur, no continuous shading. Keep warm skin distinct from clothing. Eight poses in same order, each full character wholly within its own roomy cell: ready, long stride run, alternate high knee run, both hands raised block jump; one-arm spike, horizontal dive head right both arms forward, fist-up victory, kneeling loss. All fingers crown shoes fully visible, no text, balls, shadows, scenery or extra objects. True transparent background. Preserve 2:1 wide atlas layout.",
+    "source": "pc98-source.png",
+    "original": "C:\\Users\\User\\.codex\\generated_images\\01a16952-0aee-7071-a6d5-686e5738e5da\\exec-584fcedc-87a9-4d9c-8bbd-806938c3a207.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/leo/anime90-master.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/references/pc98/leo/sheet.png"
+    ]
+  },
+  {
+    "style": "msdos",
+    "tool": "builtin image_gen",
+    "prompt": "Use case: style-transfer. Transform IMAGE1 into a saturated VGA MS-DOS sports-game pixel-art transparent sprite atlas. EXACT same eight full-body Leo figures in same 4 columns x 2 rows order, same poses, slender athletic proportions about3-3.25 heads, same long torso/legs and headsize. Image1 is absolute approved shape/identity master. Image2 is style only, ignore its older squat anatomy. Use strong chunky crisp pixel clusters, electric saturated royal blue uniform, bright gold blond hair and crown with three blue gemstones, warm peach skin and orange-brown shadows, white panels, navy black outlines, limited VGA palette <=63 colors, hard high-contrast pixel shading, few clean highlights, NO noise, smoothing, gradients or blur. Preserve complete fingers/shoes/crown and ample gutters. Row1 ready, runlong, runhighknee, jumpbotharmsup; row2 one-armspike, horizontaldiveheadrightbotharmsforward, winraisedfist, losekneeling. All face right. No balls, scenery, ground shadows, labels or text. Actual transparent background.",
+    "source": "msdos-source.png",
+    "original": "C:\\Users\\User\\.codex\\generated_images\\01a16952-0aee-7071-a6d5-686e5738e5da\\exec-b209452e-e3b5-416c-a060-6108b1e27e08.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/leo/anime90-master.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/references/msdos/leo/sheet.png"
+    ]
+  },
+  {
+    "style": "taiwan-print",
+    "tool": "builtin image_gen",
+    "prompt": "Use case: style-transfer. Create a rich vintage Taiwan lithographic sports poster illustration sprite atlas on TRUE TRANSPARENT background. IMAGE1 is exact approved anatomy/identity/pose master: same eight Leo figures, same 4columns2rows, moderately stylized 3-3.25heads slender athletic young prince, blond swept hair gold crown THREE blue diamond gems, blueeyes, blue white gold volleyball outfit. Preserve same shapes and longer limbs, NEVER revert to squat chibi. IMAGE2 is supporting ink/cartoon stylistic reference only, not proportions. Make rendering distinctly Taiwanese vintage color lithography: rich teal and navy printing ink, warm golden cream highlights, coral peach warm skin shadows, golden blond hair, saturated blue uniform, graphic hand-drawn ink and subtle visible halftone print shading inside forms. Full rich color, NOT fourcolor/Gameboy, not modern glossy lighting. Keep detailed recognizable face and complete hands/crown/shoes, no exterior texture or paper rectangle. Exactly eight poses same order: ready, long runstride, alternate runhighknee, airborne bothhandsupblock; one-armspike, horizontaldiveheadrightbotharmsforward, jubilantfistup, dejectedkneeling. All face right. Wide2:1 atlas with generous clear gutters. No text, balls, background scenery, groundshadow, borders or labels.",
+    "source": "taiwan-print-source.png",
+    "original": "C:\\Users\\User\\.codex\\generated_images\\01a16952-0aee-7071-a6d5-686e5738e5da\\exec-fbbef715-3eae-479f-9b75-e1c00ee739ac.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/leo/anime90-master.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/references/taiwan-print/leo/sheet.png"
+    ]
+  },
+  {
+    "style": "gameboy",
+    "tool": "builtin image_gen",
+    "prompt": "Use case: style-transfer. Re-render IMAGE1 as an authentic ORIGINAL GAME BOY FOUR GREEN TONE pixel-art sprite atlas with transparent background. EXACTLY EIGHT same Leo actions in same4columns2rows order. IMAGE1 absolute master for corrected 3-3.25-head proportions, longer torso and limbs, slender athletic prince identity, blond swept hair and gold crown three blue gem shapes now represented by green values, outfit and all poses. IMAGE2 only old Gameboy style reference, never adopt old squat anatomy. Use exactly dark #0f380f outlines, mediumdark #306230 uniformshadows, light #8bac0f midtones, lightest #9bbc0f faces hair uniform highlights. Strong readable value grouping: dark uniform contrasted with LIGHT FACE and bright hair, preserve eyes and crown. Crisp deliberate coarse pixelclusters, binary alpha, no antialiasing blur grayscale noise gradients. Keep all complete hands crown feet and generous transparent gutters. Sameposes: ready, longstride run, alternate highknee run, botharmsup blockingjump; onehittingarm spike, horizontal dive headright BOTHarmsforward, jubilantfistup, dejectedkneeling. All face right. No ball, labels, text, shadows, scenery or rectangular backplates. Wide2:1 composition.",
+    "source": "gameboy-source.png",
+    "original": "C:\\Users\\User\\.codex\\generated_images\\01a16952-0aee-7071-a6d5-686e5738e5da\\exec-255f0498-9efa-4e59-afaf-806e866e4d85.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/leo/anime90-master.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/references/gameboy/leo/sheet.png"
+    ]
+  },
+  {
+    "style": "modern-paint",
+    "tool": "builtin image_gen",
+    "prompt": "Use case: style-transfer. Paint a premium modern cinematic luminous anime sprite atlas, true transparent alpha. IMAGE1 is absolute approved Leo geometry/identity/proportion/pose master: EXACT SAME eight characters in same 4columns2rows layout, 3-3.25-head moderately stylized slender athletic young prince with blond swept hair, blue eyes, small gold crown THREE blue diamond gems, blue white gold shorts uniform and sneakers. Keep all limb lengths, headbodyratio, pose silhouettes. IMAGE2 supporting rendering reference ONLY, never its squat short proportions. Rendering distinctly modern: delicate fine colored ink, beautiful soft luminous warm key light and cool rim light, dimensional anime skin/hair shading, rich blue cloth forms and reflective goldcrown, sapphire gems; crisp graceful contours with carefully controlled gradients. Not flat90scel, not oilpaint or photorealism. Eight distinct sameposes: ready, longstride run, alternate highknee run, botharmsup blockingjump; onehittingarm spike, horizontaldive headright botharmsforward, happyfistup win, dejectedkneeling lose. FaceRIGHT throughout, every finger crown shoe complete within individual cell with ample transparent gutters. No balls, groundshadows, labels, borders, extraobjects or scenery. Wide2:1 atlas.",
+    "source": "modern-paint-source.png",
+    "original": "C:\\Users\\User\\.codex\\generated_images\\01a16952-0aee-7071-a6d5-686e5738e5da\\exec-71463fdd-9bdf-4ead-8ea5-6b4a4ec948d2.png",
+    "references": [
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/agents/leo/anime90-master.png",
+      "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/male-proportions-production-v1/references/modern-paint/leo/sheet.png"
+    ]
+  }
+]

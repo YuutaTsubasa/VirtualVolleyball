@@ -1,0 +1,242 @@
+[
+  {
+    "id": "taiwan-print-portraits",
+    "args": {
+      "prompt": "Use case: style-transfer. Edit image 1, the approved FIVE portrait master atlas, into the vintage Taiwanese color lithograph illustration finish of image 2. Image 2 is STYLE ONLY, its one-sided hair is WRONG and must never be copied. Retain image 1 exact five expressions, positions, identity, face, jersey and especially TWO distinct LONG emerald-green ponytails: one tied at each opposite side of head by its own pink bow, each full long tail clearly visible from root to tip beside opposite shoulders. Keep BOTH tails equally long as image 1. Rich nuanced teal, pink, warm cream, navy shadow print colors, controlled fine halftone, crisp vintage ink; do not reduce to just four colors. Transparent RGBA background, no backdrop/shadow rectangle. Exact 3x2 atlas: top normal/happy/surprised; bottom sad/win/empty. Each portrait entirely inside its separate cell, no touching edges or adjacent portrait. No labels. No anatomy or hairstyle redesign.",
+      "referenced_image_paths": [
+        "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-95f30162-8263-41a4-864d-7ffd5dbb7323.png",
+        "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/references/taiwan-print-portraits-sheet.png"
+      ],
+      "transparent_background": true
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\taiwan-print-portraits.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": []
+  },
+  {
+    "id": "taiwan-print-sprites",
+    "args": {
+      "prompt": "Use case: style-transfer. Input 1 is approved 8 full-body action sprite atlas, preserve its exact poses/anatomy/body proportions, jersey, shoes, placement and character. Render in rich vintage Taiwanese lithoprint color style as input2 STYLE ONLY; input2 hairstyle is wrong, NEVER copy its single-sided ponytail. Mandatory TWO LONG separately rooted emerald-green ponytails, each opposite side of head tied with its own pink bow, BOTH long tails clearly visible from root to long tip at every pose, as input1. Rich teal, coral pink, warm cream, navy shadows and subtle detailed halftone, not restricted four-color. Transparent RGBA only. 4 columns 2 rows; first idle/run1/run2/jump; second spike/dive/win/lose. Generous transparent gutters, no overlap, ALL extremities/two ponytail tips contained inside each cell, no clipping. Keep same non-chibi proportions. No text/shadows/backdrop.",
+      "referenced_image_paths": [
+        "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-bf898cda-85cf-429a-a860-6ff8a6f6d47b.png",
+        "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/references/taiwan-print-sprites-sheet.png"
+      ],
+      "transparent_background": true
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\taiwan-print-sprites.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": [
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\characters\\xiaocui\\sprites\\idle.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\characters\\xiaocui\\sprites\\run1.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\characters\\xiaocui\\sprites\\run2.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\characters\\xiaocui\\sprites\\jump.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\characters\\xiaocui\\sprites\\spike.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\characters\\xiaocui\\sprites\\dive.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\characters\\xiaocui\\sprites\\win.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\characters\\xiaocui\\sprites\\lose.png"
+    ]
+  },
+  {
+    "id": "modern-paint-portraits",
+    "args": {
+      "prompt": "Use case: style-transfer. Edit input1 approved FIVE portrait master atlas into luminous contemporary cinematic anime finish matching input2 STYLE ONLY. Input2 one-sided hair is WRONG, never copy hair design. Preserve input1 exact expressions, identity, anatomy, clothes and TWO distinct LONG emerald-green ponytails, one rooted each opposite side with its own pink bow, both full long tails visible from root down to tips alongside both shoulders. Retain master tail lengths! Fine delicate ink, luminous cel shading, fine golden rimlight, subtle coherent gradient lighting and refined hair highlights, like a modern animated feature; no oil painting, no plastic 3D, no 90s flat cel, no halftone. Transparent RGBA background with no backdrop. 3 columns x2 rows normal/happy/surprised then sad/win/empty. Full portraits within their independent cells, safe clear gutters, no clipping, labels or text.",
+      "referenced_image_paths": [
+        "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-95f30162-8263-41a4-864d-7ffd5dbb7323.png",
+        "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/references/modern-paint-portraits-sheet.png"
+      ],
+      "transparent_background": true
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\modern-paint-portraits.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": []
+  },
+  {
+    "id": "modern-paint-sprites",
+    "args": {
+      "prompt": "Use case: style-transfer. Edit input1 approved 8 full-body sprite master into contemporary cinematic luminous anime matching input2 STYLE ONLY. Preserve exact poses, anatomy, non-chibi proportions, jersey and shoes from input1. Input2's hairstyle is wrong. Mandatory TWO LONG distinct emerald-green ponytails, opposite side roots with own pink bow each. Both flowing tails visible all the way root to long tip in EVERY pose, retain input1 lengths and separation. Fine delicate ink, refined luminous cel shading and soft golden rimlight, modern animated feature, no oil paint/no halftone/no flat 90s cel. TRUE transparent RGBA background. 4columns2rows, idle/run1/run2/jump top, spike/dive/win/lose bottom. Each whole sprite should occupy at most 80% of cell width and height, leaving generous TRANSPARENT gutters on ALL edges: no touching cells, no clipping shoes/hair tips/fingers. No labels or background effects.",
+      "referenced_image_paths": [
+        "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-bf898cda-85cf-429a-a860-6ff8a6f6d47b.png",
+        "C:/Users/User/.codex/visualizations/2026/10/19/01a1558b-d503-7520-9129-a4c8098a4059/volleyball/xiaocui-hair-audit-v1/references/modern-paint-sprites-sheet.png"
+      ],
+      "transparent_background": true
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\modern-paint-sprites.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": [
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\characters\\xiaocui\\sprites\\idle.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\characters\\xiaocui\\sprites\\run1.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\characters\\xiaocui\\sprites\\run2.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\characters\\xiaocui\\sprites\\jump.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\characters\\xiaocui\\sprites\\spike.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\characters\\xiaocui\\sprites\\dive.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\characters\\xiaocui\\sprites\\win.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\characters\\xiaocui\\sprites\\lose.png"
+    ]
+  },
+  {
+    "id": "taiwan-print/title-scene",
+    "args": {
+      "prompt": "Use case: precise-object-edit. Edit ONLY the green-haired girl's hairstyle in input1. Preserve the EXACT original scene, framing, positions, pose, face/expression, clothing, all other characters including orange boy, volleyball, palms, sea, clouds, and vintage Taiwanese lithoprint finish. The girl must have TWO LONG unmistakably separate green ponytails, one rooted on EACH opposite side of her head with its OWN pink bow. Input2 is hairstyle anatomy reference ONLY: its TWO tails must each be visible from their separate bow roots to long tips. Keep her existing left-side long ponytail; replace the tiny right-side cheek curl with a SECOND LARGE LONG ponytail extending beside her right shoulder to upper-waist height. Both tails readable separately, comparable length and volume, no single ponytail illusion. Match original print ink/halftone/colors exactly. Do not redesign face or body or background. Original opaque 16:9 composition, no new text.",
+      "referenced_image_paths": [
+        "C:/Users/User/Repo/Volleyball/public/styles/taiwan-print/ui/title-scene.webp",
+        "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-95f30162-8263-41a4-864d-7ffd5dbb7323.png"
+      ],
+      "transparent_background": false
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\taiwan-print-title-scene.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": [
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\ui\\title-scene.png"
+    ]
+  },
+  {
+    "id": "taiwan-print/mode-cpu",
+    "args": {
+      "prompt": "Use case: precise-object-edit. Input1 edit target. Change ONLY green-haired girl's hairstyle to TWO LONG distinct ponytails as input2 reference. Each starts on opposite side of head with its own visible pink bow, and each flows visibly from root to long tip. Keep existing sweeping left ponytail; ADD equally long separate second ponytail extending from right-side bow behind her right shoulder down toward her waist, replacing short cheek curl. Full hairstyle unambiguously two long tails, avoid hiding second. Preserve face/expression, pose, ALL clothing, body proportions, robot, net, ball, beach, mountains, lighting, scene framing and rich vintage Taiwanese lithoprint style exactly. Input2 is HAIR ANATOMY ONLY not composition/style. Opaque 4:3 scene, no text.",
+      "referenced_image_paths": [
+        "C:/Users/User/Repo/Volleyball/public/styles/taiwan-print/ui/mode-cpu.webp",
+        "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-95f30162-8263-41a4-864d-7ffd5dbb7323.png"
+      ],
+      "transparent_background": false
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\taiwan-print-mode-cpu.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": [
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\ui\\mode-cpu.png"
+    ]
+  },
+  {
+    "id": "taiwan-print/mode-versus",
+    "args": {
+      "prompt": "Use case: precise-object-edit. Input1 edit target, change ONLY green-haired girl's hairstyle. Add correct second LONG ponytail as input2 hairstyle-reference, rooted at right-side pink bow and flowing visibly beside her right shoulder down toward waist. Keep existing left long ponytail. TWO separate LONG emerald green tails tied at opposite sides, own pinkbow each, each entire root-to-tip shape visible; NOT one long tail plus short curl. Preserve exact face, expression, body, pose, jersey/shorts/shoes, orange boy, volleyball, net, palms, sea/clouds/sand/mountains and framing. Preserve original vintage rich Taiwanese color print finish and halftone. Input2 provides HAIR ANATOMY ONLY, never replace composition. Opaque 4:3, no text.",
+      "referenced_image_paths": [
+        "C:/Users/User/Repo/Volleyball/public/styles/taiwan-print/ui/mode-versus.webp",
+        "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-95f30162-8263-41a4-864d-7ffd5dbb7323.png"
+      ],
+      "transparent_background": false
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\taiwan-print-mode-versus.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": [
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\ui\\mode-versus.png"
+    ]
+  },
+  {
+    "id": "taiwan-print/mode-watch",
+    "args": {
+      "prompt": "Use case: precise-object-edit. Edit ONLY green-haired girl's hairstyle in input1. Correct it into TWO LONG distinct green ponytails tied on opposite sides of head with their own pink bows, both visible root-to-long-tip as anatomy reference input2. Retain left sweeping tail. ADD long second tail from right bow flowing downward between her right shoulder and silver-haired friend, visibly down to waist; ensure separately outlined long tail, no tiny cheek curl substituting for tail. Keep face/expression, pose, handclap, body, clothes, silver-haired girl COMPLETELY unchanged (don't cover her face), robots, bench, beach, ball/net/palms and composition. Preserve exact vintage Taiwanese print style/colors/halftone. Input2 HAIR anatomy ONLY, not other content. Opaque 4:3, no text.",
+      "referenced_image_paths": [
+        "C:/Users/User/Repo/Volleyball/public/styles/taiwan-print/ui/mode-watch.webp",
+        "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-95f30162-8263-41a4-864d-7ffd5dbb7323.png"
+      ],
+      "transparent_background": false
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\taiwan-print-mode-watch.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": [
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\ui\\mode-watch.png"
+    ]
+  },
+  {
+    "id": "modern-paint/title-scene",
+    "args": {
+      "prompt": "Use case: precise-object-edit. Input1 is target. Change ONLY green-haired girl's hairstyle. She needs TWO LONG distinct emerald-green ponytails rooted on opposite sides of head, each its OWN pink bow, each clearly visible root-to-long-tip as input2 HAIR ANATOMY reference. Keep existing left long ponytail, add full SECOND equally long tail on right, flowing down beside her right shoulder to upper waist; not short cheek curl. Preserve exact face/expression, body, pose, clothing/shoes, other orange boy, volleyball, palms, sky/clouds/sea/mountains/sand and wide framing. Match original luminous modern cinematic anime cel shading/fine ink/rimlight exactly. Input2 hair only, not style/identity replacement. Opaque original16:9 scene, no text.",
+      "referenced_image_paths": [
+        "C:/Users/User/Repo/Volleyball/public/styles/modern-paint/ui/title-scene.webp",
+        "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-95f30162-8263-41a4-864d-7ffd5dbb7323.png"
+      ],
+      "transparent_background": false
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\modern-paint-title-scene.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": [
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\ui\\title-scene.png"
+    ]
+  },
+  {
+    "id": "modern-paint/mode-cpu",
+    "args": {
+      "prompt": "Use case: precise-object-edit. Input1 edit target. Change ONLY green-haired girl's hairstyle to TWO LONG distinct ponytails as input2 anatomy-reference. Each starts opposite side of head with its own visible pink bow, each flows visibly from root to long tip. Keep existing sweeping left ponytail; ADD equally long separate second ponytail extending from right-side bow behind her right shoulder down toward waist, replacing short cheek curl. Full hairstyle unambiguously two long tails, avoid hiding second. Preserve face/expression, pose, ALL clothing, body proportions, robot, net, ball, beach, mountains, lighting, scene framing and luminous contemporary cinematic anime cel shading/fine ink/rimlight exactly. Input2 is HAIR ANATOMY ONLY not composition/style. Opaque 4:3 scene, no text.",
+      "referenced_image_paths": [
+        "C:/Users/User/Repo/Volleyball/public/styles/modern-paint/ui/mode-cpu.webp",
+        "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-95f30162-8263-41a4-864d-7ffd5dbb7323.png"
+      ],
+      "transparent_background": false
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\modern-paint-mode-cpu.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": [
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\ui\\mode-cpu.png"
+    ]
+  },
+  {
+    "id": "modern-paint/mode-versus",
+    "args": {
+      "prompt": "Use case: precise-object-edit. Input1 edit target, change ONLY green-haired girl's hairstyle. Add correct second LONG ponytail as input2 hairstyle-reference, rooted at right-side pink bow and flowing visibly beside her right shoulder down toward waist. Keep existing left long ponytail. TWO separate LONG emerald green tails tied opposite sides, own pinkbow each, each entire root-to-tip shape visible; NOT one long tail plus short curl. Preserve exact face, expression, body, pose, jersey/shorts/shoes, orange boy, volleyball, net, palms, sea/clouds/sand/mountains and framing. Preserve original luminous contemporary cinematic anime finish/fine ink/rimlight. Input2 provides HAIR ANATOMY ONLY, never replace composition. Opaque 4:3, no text.",
+      "referenced_image_paths": [
+        "C:/Users/User/Repo/Volleyball/public/styles/modern-paint/ui/mode-versus.webp",
+        "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-95f30162-8263-41a4-864d-7ffd5dbb7323.png"
+      ],
+      "transparent_background": false
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\modern-paint-mode-versus.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": [
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\ui\\mode-versus.png"
+    ]
+  },
+  {
+    "id": "modern-paint/mode-watch",
+    "args": {
+      "prompt": "Use case: precise-object-edit. Edit ONLY green-haired girl's hairstyle in input1. Correct it into TWO LONG distinct green ponytails tied opposite sides of head with their own pink bows, both visible root-to-long-tip as anatomy-reference input2. Retain left sweeping tail. ADD long second tail from right bow flowing downward between her right shoulder and silver-haired friend, visibly down to waist; ensure separately outlined long tail, no tiny cheek curl substituting for tail. Keep face/expression, pose, handclap, body, clothes, silver-haired girl COMPLETELY unchanged (don't cover her face), robots, bench, beach, ball/net/palms and composition. Preserve exact luminous cinematic contemporary anime style/fine ink/rimlight. Input2 HAIR anatomy ONLY, not other content. Opaque 4:3, no text.",
+      "referenced_image_paths": [
+        "C:/Users/User/Repo/Volleyball/public/styles/modern-paint/ui/mode-watch.webp",
+        "C:/Users/User/.codex/generated_images/01a1558b-d503-7520-9129-a4c8098a4059/exec-95f30162-8263-41a4-864d-7ffd5dbb7323.png"
+      ],
+      "transparent_background": false
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\modern-paint-mode-watch.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": [
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\ui\\mode-watch.png"
+    ]
+  },
+  {
+    "id": "taiwan-print-portraits-spaced",
+    "args": {
+      "prompt": "Use case: precise-object-edit. FIX ONLY SPACING in this five portrait atlas. The current portraits are too large and touch/cross cell edges. Make each whole portrait 80% of current size and center each within its exact 512x512 cell in a 1536x1024 transparent RGBA atlas. Mandatory minimum FORTY PIXELS completely transparent padding on ALL FOUR sides of EACH cell; x=512 and x=1024 and y=512 gutters must be blank alpha0. Keep all five expressions: normal/happy/surprised top, sad/win/EMPTY bottom. Keep EXACT vintage Taiwanese color lithoprint art finish, faces, clothes, TWO separate LONG green ponytails on opposite sides each with pink bow; keep both tails complete and long, scale whole portrait together never shorten the tails. No new design. No backgrounds, labels or gridlines. Generous visible transparent gutters separating all five complete portraits.",
+      "referenced_image_paths": [
+        "C:/Users/User/.codex/generated_images/01a16935-61da-7ec1-9022-a39898f4547a/exec-e318f0fd-e77d-43d5-863f-dd28d00ef4d7.png"
+      ],
+      "transparent_background": true
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\taiwan-print-portraits-spaced.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": [
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\characters\\xiaocui\\portraits\\normal.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\characters\\xiaocui\\portraits\\happy.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\characters\\xiaocui\\portraits\\surprised.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\characters\\xiaocui\\portraits\\sad.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\taiwan-print\\characters\\xiaocui\\portraits\\win.png"
+    ]
+  },
+  {
+    "id": "modern-paint-portraits-spaced",
+    "args": {
+      "prompt": "Use case: precise-object-edit. FIX ONLY SPACING in this five portrait atlas. Current portraits too large and touch/cross cell edges. Make each whole portrait 80% current size and center each within its exact 512x512 cell in a 1536x1024 transparent RGBA atlas. Mandatory minimum FORTY PIXELS completely transparent padding on ALL FOUR sides EACH cell; x=512 and x=1024 and y=512 gutters completely blank alpha0. Keep all five expressions: normal/happy/surprised top, sad/win/EMPTY bottom. Keep EXACT luminous modern cinematic anime art finish, fineink/rimlight, faces, clothes, TWO separate LONG green ponytails opposite sides each own pinkbow; keep both tails complete and long, scale whole portrait together never shorten tails. No new design. No background/labels/gridlines. Generous transparent gutters separating all five complete portraits.",
+      "referenced_image_paths": [
+        "C:/Users/User/.codex/generated_images/01a16935-61da-7ec1-9022-a39898f4547a/exec-e399bddb-481a-4eed-901c-fd875aa25ae4.png"
+      ],
+      "transparent_background": true
+    },
+    "source": "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\agents\\print-film\\sources\\modern-paint-portraits-spaced.png",
+    "mode": "built-in image_gen",
+    "finalOutputs": [
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\characters\\xiaocui\\portraits\\normal.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\characters\\xiaocui\\portraits\\happy.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\characters\\xiaocui\\portraits\\surprised.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\characters\\xiaocui\\portraits\\sad.png",
+      "C:\\Users\\User\\.codex\\visualizations\\2026\\10\\19\\01a1558b-d503-7520-9129-a4c8098a4059\\volleyball\\xiaocui-hair-audit-v1\\delivery\\modern-paint\\characters\\xiaocui\\portraits\\win.png"
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "style": "pc98",
+    "name": "portraits",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-38dde7ff-7387-41bf-b5a7-af0b39a2e45a.png",
+    "prompt": "Use case: style-transfer. Asset: five transparent game portrait busts atlas, exactly 3 columns x 2 rows, bottom-right empty. Image 1 is NEW correct identity/shape/pose master: keep every facial expression and especially TWO LONG DISTINCT green ponytails from opposite sides of head, each rooted in a pink bow, BOTH extend visibly below shoulders to long tips. Image 2 is ONLY the NEC PC-98 art-style reference, its incorrect one-sided hair must NOT be copied. Render master as authentic 16-color 1990s PC-98 Japanese game pixel art: crisp square pixel clusters, navy outlines, muted jade greens, cream skin, pink ribbons, subtle ordered dithering, 15 opaque colors maximum plus transparent. Match master's exact five expressions normal/happy/surprised, sad/win, same outfits and crop. Keep both complete ponytails in every portrait; visibly separate right-side long ponytail is essential. Generous transparent gutters separating all cells and all silhouette edges. NO background/no labels/no text. True alpha transparent."
+  },
+  {
+    "style": "pc98",
+    "name": "portraits-v2",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-d91ce2b2-86f2-4cf3-8112-1d4c44c2e515.png",
+    "prompt": "Use case: style-transfer. Create a carefully spaced transparent game portrait atlas. Image1 correct hairstyle and expressions; image2 PC-98 palette/style ONLY. EXACT canvas1536x1024, exact3x2 cells each512x512. Five busts order normal,happy,surprised top; sad,win,EMPTY bottom. CRUCIAL SCALE: each portrait INCLUDING ALL HAIR must occupy at most410px width and410px height, centered inside cell. Leave minimum50px transparent EMPTY gutters on ALL FOUR SIDES of every cell. NO silhouettes cross boundaries x512,x1024,y512. Show TWO LONG DISTINCT green ponytails, each pinkbow on opposite head side, BOTH long tails extend belowshoulder, include all tips. Maintain identity expressions and outfit. Authentic NEC PC98 pixel art,15opaque colors plusalpha, dark navy outlines mutedjade greens creamskin pinkbows, ordered dithering. No photorealism, no gradients, no labels, no background, TRUE transparent alpha. Reduce subject scale to guarantee gutters; complete both ponytails rather than large faces."
+  },
+  {
+    "style": "pc98",
+    "name": "sprites",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-8de9a6e9-1afc-47df-85a9-1229ac3c739e.png",
+    "prompt": "Use case: style-transfer. Asset: eight transparent volleyball full-body sprites in exactly 4 columns x 2 rows. Image 1 correct master: preserve poses and anatomy and the TWO LONG DISTINCT green ponytails growing from opposite head sides, EACH pink bow and visible long complete bundle to tip. Image 2 only PC98 pixel art style reference; do NOT copy its incorrect single-sided hair. Render image1 in authentic 16-color NEC PC-98 game pixel art, crisp low-res clusters, navy outline, muted jade green, cream skin, pink bows, restrained ordered dithering, maximum 15 opaque colors plus alpha. Order top idle/run1/run2/jump; bottom spike/dive/win/lose. White teal volleyball shirt and shorts, white socks teal sneakers. Keep correct master poses fully intact including both hands and feet. Each of 8 sprites centered in its own equally sized cell, ample transparent margin 30 pixels all four sides, NOTHING overlaps neighboring cell, no clipping. Full two long ponytails in ALL poses, far ponytail visible on right side of face and torso. No floor shadows, no objects, labels, grid or background. Genuine alpha transparency."
+  },
+  {
+    "style": "pc98",
+    "name": "title-scene",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-9e7f68cf-75db-49bf-aafb-9d6146e34505.png",
+    "prompt": "Use case: precise-object-edit. Image 1 is edit target pc98 title-scene game art, image 2 is hairstyle identity reference ONLY. Change ONLY the green-haired girl's hair: she has TWO LONG DISTINCT green ponytails on opposite sides of head, each tied with a large pink bow; the far-side ponytail must clearly appear to the right of her face, sweep outside her right shoulder and have a visible long tip below shoulder level. Keep existing near-side long ponytail. Both roots and both full long bundles readable as twin ponytails, not short tuft or loose bob. Match ORIGINAL TARGET PC-98 muted jade pixel art and dithering exactly, strict square pixels limited 16-color style. Preserve target face, expression, body, clothing, pose, character size, all other characters, computer/ball/objects, entire beach, composition and aspect ratio unchanged. Do not add text, frame or new objects. Do not modernize style. Opaque full image."
+  },
+  {
+    "style": "pc98",
+    "name": "mode-cpu",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-0a7cec19-ef4a-4718-9a52-b43c94b7dc27.png",
+    "prompt": "Use case: precise-object-edit. Image 1 is edit target pc98 mode-cpu game art, image 2 is hairstyle identity reference ONLY. Change ONLY the green-haired girl's hair: she has TWO LONG DISTINCT green ponytails on opposite sides of head, each tied with a large pink bow; the far-side ponytail must clearly appear to the right of her face, sweep outside her right shoulder and have a visible long tip below shoulder level. Keep existing near-side long ponytail. Both roots and both full long bundles readable as twin ponytails, not short tuft or loose bob. Match ORIGINAL TARGET PC-98 muted jade pixel art and dithering exactly, strict square pixels limited 16-color style. Preserve target face, expression, body, clothing, pose, character size, all other characters, computer/ball/objects, entire beach, composition and aspect ratio unchanged. Do not add text, frame or new objects. Do not modernize style. Opaque full image."
+  },
+  {
+    "style": "pc98",
+    "name": "mode-versus",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-6d8fb078-6381-428d-9c3c-d4c744eb2de3.png",
+    "prompt": "Use case: precise-object-edit. Image1 is edit target PC-98 volleyball mode-versus scene; image2 hairstyle identity reference only. Change ONLY green-haired girl's hair. She must have TWO LONG DISTINCT green ponytails from opposite head sides, EACH pink bow, both complete long bundles: keep existing streaming left ponytail, add distinct far-side ponytail rooted at pinkbow on right of head and visibly flowing to right of her face, behind her raised arm, down past her shoulder; do not mistake bangs or a short tuft for second ponytail. Keep her face expression pose anatomy outfit and all other character, ball, net, scenery, exact composition unchanged. Original target NEC PC98 muted jade pixelart with limited16color palette and crisp pixels/dithering, no modern smoothing. Opaque full scene sameaspectratio. No text or extraobjects."
+  },
+  {
+    "style": "pc98",
+    "name": "mode-watch",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-1db91e8b-4c04-4e2e-ab37-728b7d05f21b.png",
+    "prompt": "Use case: precise-object-edit. Image1 is edit target PC-98 spectator scene; image2 hairstyle identity reference only. Change ONLY foreground seated green-haired girl's hair into TWO LONG DISTINCT green ponytails tied on opposite head sides with TWO pink bows. Preserve near-side long tail down her back; add clearly separate far-side ponytail from a pinkbow at rightside head, flowing to the right of her face and over/outside right shoulder toward her elbow/waist. Need BOTH long bundles visible from root to tip. Preserve her exact face expression pose and outfit, seated boy, all background players, volleyball court, scenery, composition unchanged. Same target PC98 muted limited16color pixelart and dithering; crisp pixels, no smooth illustration. Opaque fullscene sameaspectratio, no text, no newcharacters."
+  },
+  {
+    "style": "msdos",
+    "name": "portraits",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-0d5f2f6d-d5da-4bc7-9add-2ad4cc1165dd.png",
+    "prompt": "Use case: style-transfer. Asset: five transparent game portrait busts atlas, exactly 3 columns x 2 rows, bottom-right empty. Image 1 is NEW correct identity/shape/pose master: keep every facial expression and especially TWO LONG DISTINCT green ponytails from opposite sides of head, each rooted in a pink bow, BOTH extend visibly below shoulders to long tips. Image 2 is ONLY MS-DOS VGA art-style reference, its incorrect one-sided hair must NOT be copied. Render master as authentic 1990s DOS VGA Japanese-inspired game pixel art: crisp square pixel clusters, black/deep-teal outlines, vivid saturated emerald greens and turquoise highlights, peach skin, bright pink ribbons, hard cel shade, no blur, 63 opaque colors maximum plus transparent. Match master's exact five expressions normal/happy/surprised, sad/win, same outfits and crop. Keep both complete ponytails in every portrait; visibly separate right-side long ponytail is essential. Generous transparent gutters separating all cells and all silhouette edges. NO background/no labels/no text. True alpha transparent."
+  },
+  {
+    "style": "msdos",
+    "name": "portraits-v2",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-8a3afd76-d8af-46b4-b768-f36e12846b29.png",
+    "prompt": "Use case: style-transfer. Create a carefully spaced transparent game portrait atlas. Image1 correct hairstyle and expressions; image2 MS-DOS VGA palette/style ONLY. EXACT canvas1536x1024, exact3x2 cells each512x512. Five busts order normal,happy,surprised top; sad,win,EMPTY bottom. CRUCIAL SCALE: each portrait INCLUDING ALL HAIR must occupy at most410px width and410px height, centered inside cell. Leave minimum50px transparent EMPTY gutters on ALL FOUR SIDES of every cell. NO silhouettes cross boundaries x512,x1024,y512. Show TWO LONG DISTINCT green ponytails, each pinkbow on opposite head side, BOTH long tails extend belowshoulder, include all tips. Maintain identity expressions and outfit. Authentic DOS VGA pixel art,63opaque colors plusalpha, black/deepteal outlines vivid emerald green turquoisehighlights peachskin brightpinkbows, hardcelshades. No photorealism, no gradients, no labels, no background, TRUE transparent alpha. Reduce subject scale to guarantee gutters; complete both ponytails rather than large faces."
+  },
+  {
+    "style": "msdos",
+    "name": "sprites",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-546bdc5f-1c12-4ada-896d-81c54c0de28f.png",
+    "prompt": "Use case: style-transfer. Asset: eight transparent volleyball full-body sprites in exactly 4 columns x 2 rows. Image 1 correct master: preserve poses and anatomy and the TWO LONG DISTINCT green ponytails growing from opposite head sides, EACH pink bow and visible long complete bundle to tip. Image 2 only MS-DOS VGA pixel art style reference; do NOT copy its incorrect single-sided hair. Render image1 in authentic 1990s DOS VGA game pixel art, crisp low-res clusters, black/deep-teal outlines, vivid saturated emerald greens and turquoise highlights, peach skin, bright pink ribbons, hard cel shade, no blur, maximum 63 opaque colors plus alpha. Order top idle/run1/run2/jump; bottom spike/dive/win/lose. White teal volleyball shirt and shorts, white socks teal sneakers. Keep correct master poses fully intact including both hands and feet. Each of 8 sprites centered in its own equally sized cell, ample transparent margin 40 pixels all four sides, NOTHING overlaps neighboring cell, no clipping. Full two long ponytails in ALL poses, far ponytail visible on right side of face and torso. No floor shadows, no objects, labels, grid or background. Genuine alpha transparency."
+  },
+  {
+    "style": "msdos",
+    "name": "title-scene",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-12347042-37d6-4daf-8f60-12c48d94aec5.png",
+    "prompt": "Use case: precise-object-edit. Image 1 is edit target msdos title-scene game art, image 2 is hairstyle identity reference ONLY. Change ONLY the green-haired girl's hair: she has TWO LONG DISTINCT green ponytails on opposite sides of head, each tied with a large pink bow; the far-side ponytail must clearly appear to the right of her face, sweep outside her right shoulder and have a visible long tip below shoulder level. Keep existing near-side long ponytail. Both roots and both full long bundles readable as twin ponytails, not short tuft or loose bob. Match ORIGINAL TARGET MS-DOS VGA vivid emerald-green pixel art exactly, strict square pixels and hard cel-shading, limited 64-color style. Preserve target face, expression, body, clothing, pose, character size, all other characters, computer/ball/objects, entire beach, composition and aspect ratio unchanged. Do not add text, frame or new objects. Do not modernize style. Opaque full image."
+  },
+  {
+    "style": "msdos",
+    "name": "mode-cpu",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-82fe1d00-0822-433a-a359-54363f0befe8.png",
+    "prompt": "Use case: precise-object-edit. Image 1 is edit target msdos mode-cpu game art, image 2 is hairstyle identity reference ONLY. Change ONLY the green-haired girl's hair: she has TWO LONG DISTINCT green ponytails on opposite sides of head, each tied with a large pink bow; the far-side ponytail must clearly appear to the right of her face, sweep outside her right shoulder and have a visible long tip below shoulder level. Keep existing near-side long ponytail. Both roots and both full long bundles readable as twin ponytails, not short tuft or loose bob. Match ORIGINAL TARGET MS-DOS VGA vivid emerald-green pixel art exactly, strict square pixels and hard cel-shading, limited 64-color style. Preserve target face, expression, body, clothing, pose, character size, all other characters, computer/ball/objects, entire beach, composition and aspect ratio unchanged. Do not add text, frame or new objects. Do not modernize style. Opaque full image."
+  },
+  {
+    "style": "msdos",
+    "name": "mode-versus",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-2f3e757a-8b6e-46d6-bdda-56cd7dd933e7.png",
+    "prompt": "Use case: precise-object-edit. Image1 is edit target MS-DOS VGA volleyball mode-versus scene; image2 hairstyle identity reference only. Change ONLY green-haired girl's hair. She must have TWO LONG DISTINCT green ponytails from opposite head sides, EACH pink bow, both complete long bundles: keep existing streaming left ponytail, add distinct far-side ponytail rooted at pinkbow on right of head and visibly flowing to right of her face, behind her raised arm, down past her shoulder; do not mistake bangs or a short tuft for second ponytail. Keep her face expression pose anatomy outfit and all other character, ball, net, scenery, exact composition unchanged. Original target MS-DOS VGA vivid emerald pixelart with limited64color palette and crisp hard cel-shaded pixel clusters, no modern smoothing. Opaque full scene sameaspectratio. No text or extraobjects."
+  },
+  {
+    "style": "msdos",
+    "name": "mode-watch",
+    "src": "C:\\Users\\User\\.codex\\generated_images\\01a16934-d7c6-7642-b779-a01c541e10db\\exec-1fd281f2-f6eb-4d79-a56f-6162b2f4092d.png",
+    "prompt": "Use case: precise-object-edit. Image1 is edit target MS-DOS VGA spectator scene; image2 hairstyle identity reference only. Change ONLY foreground seated green-haired girl's hair into TWO LONG DISTINCT green ponytails tied on opposite head sides with TWO pink bows. Preserve near-side long tail down her back; add clearly separate far-side ponytail from a pinkbow at rightside head, flowing to the right of her face and over/outside right shoulder toward her elbow/waist. Need BOTH long bundles visible from root to tip. Preserve her exact face expression pose and outfit, seated boy, all background players, volleyball court, scenery, composition unchanged. Same target MS-DOS VGA vivid emerald limited64color pixelart hard cel-shading; crisp pixels, no smooth illustration. Opaque fullscene sameaspectratio, no text, no newcharacters."
+  }
+]
