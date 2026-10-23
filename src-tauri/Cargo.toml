@@ -1,6 +1,6 @@
 [package]
 name = "mahjong-volleyball"
-version = "0.1.1"
+version = "0.1.2"
 description = "虛擬排球王：虛擬台麻館的角色們來打沙灘排球"
 edition = "2021"
 rust-version = "1.89"
