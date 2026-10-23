@@ -579,6 +579,16 @@ function outlinedText(g, text, x, y, size, fill = pal.text, align = 'center') {
   g.fillText(text, x, y);
 }
 
+// 頭像都朝右畫；右邊的玩家左右翻過來，兩個人都面向中間
+function drawFacing(g, img, x, y, w, h, side) {
+  if (side === 0) return g.drawImage(img, x, y, w, h);
+  g.save();
+  g.translate(x + w, y);
+  g.scale(-1, 1);
+  g.drawImage(img, 0, 0, w, h);
+  g.restore();
+}
+
 function drawHud(g, match, names) {
   const panel = art('scorePanel');
   if (ready(panel)) return drawScoreboard(g, match, names, panel);
@@ -598,7 +608,7 @@ function drawHud(g, match, names) {
       g.save();
       rr(g, x, 12, 74, 74, 14);
       g.clip();
-      g.drawImage(img, x - 6, 10, 86, 86);
+      drawFacing(g, img, x - 6, 10, 86, 86, side);
       g.restore();
     }
     const label = names?.[side] ? `${names[side]}（${p.character.name}）` : p.character.name;
@@ -642,7 +652,7 @@ function drawScoreboard(g, match, names, panel) {
     g.fillStyle = pal.portrait;
     g.fill();
     g.clip();
-    if (ready(img)) g.drawImage(img, x - 8, y - 2, size + 16, size + 16);
+    if (ready(img)) drawFacing(g, img, x - 8, y - 2, size + 16, size + 16, side);
     g.restore();
     g.lineWidth = 3.5;
     g.strokeStyle = pal.ink;
