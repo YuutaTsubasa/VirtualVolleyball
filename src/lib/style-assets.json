@@ -4,6 +4,7 @@
       "files": [
         "game/net.webp",
         "ui/icons/watch.webp",
+        "ui/logo.webp",
         "ui/mode-cpu.webp",
         "ui/mode-versus.webp",
         "ui/mode-watch.webp",

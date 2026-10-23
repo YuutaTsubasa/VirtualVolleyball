@@ -41,6 +41,14 @@
     position: relative;
     padding-bottom: 1.4cqh;
   }
+  /* 左上角的 Logo：跟標題橫幅一樣高，不壓到金色分隔線 */
+  .frame-head :global(.logo) {
+    width: auto;
+    max-width: 100%;
+    height: 17cqh;
+    object-fit: contain;
+    object-position: left center;
+  }
   /* 金色分隔線 */
   .frame-head::after {
     content: '';

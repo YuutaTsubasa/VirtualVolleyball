@@ -15,7 +15,11 @@ export function loadImage(src) {
   pending.set(
     src,
     new Promise((resolve) => {
-      img.onload = () => (img.decode ? img.decode().then(resolve, resolve) : resolve());
+      // 下載完就算好；解碼交給瀏覽器在背景做（等每張 decode() 完成會慢很多，100 張要十幾秒）
+      img.onload = () => {
+        resolve();
+        img.decode?.().catch(() => {});
+      };
       img.onerror = resolve; // 載不到就算了，畫面有退路
     }),
   );

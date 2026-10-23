@@ -45,8 +45,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3cqh;
-    margin-top: 6cqh;
+    gap: 2cqh;
+    margin-top: 3cqh;
   }
   .hero {
     position: absolute;
