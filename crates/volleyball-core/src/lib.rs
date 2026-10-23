@@ -2,11 +2,13 @@
 //! - `game`：物理與規則（確定性，同樣輸入同樣結果）
 //! - `ai`：電腦玩家
 //! - `room`：連線房間（座位、電腦補位、聊天）
+//! - `protocol`：連線訊息的處理（區網伺服器與線上房間共用）
 //! - `characters`：角色能力值
 
 pub mod ai;
 pub mod characters;
 pub mod game;
+pub mod protocol;
 pub mod room;
 
 #[cfg(test)]
@@ -74,5 +76,32 @@ mod tests {
         assert_eq!(frame["players"][0]["character"], "xiaocui");
         room.reset_to_lobby();
         assert_eq!(room.view(Some(0))["phase"], "lobby");
+    }
+
+    #[test]
+    fn protocol_host_and_guest() {
+        use crate::protocol::{handle, drop_conn, room_message, Conn};
+        use serde_json::json;
+        let mut room = Room::default();
+        let (mut host, mut guest) = (Conn::default(), Conn::default());
+        let (r, changed) = handle(&mut room, "key", &mut host, &json!({"type": "hello", "name": "房主", "host_key": "key"}));
+        assert!(changed && host.is_host && host.seat == Some(0));
+        assert_eq!(r[0]["type"], "welcome");
+        let (r, _) = handle(&mut room, "key", &mut guest, &json!({"type": "hello", "name": "客人", "host_key": "wrong"}));
+        let token = r[0]["token"].as_str().unwrap().to_string();
+        assert!(!guest.is_host && guest.seat == Some(1));
+        // 不是房主不能開始
+        let (r, _) = handle(&mut room, "key", &mut guest, &json!({"type": "host", "cmd": "start"}));
+        assert_eq!(r[0]["type"], "error");
+        handle(&mut room, "key", &mut host, &json!({"type": "host", "cmd": "start"}));
+        assert!(room.playing());
+        // 斷線再用 token 連回來：拿回原本的座位
+        assert!(drop_conn(&mut room, &mut guest));
+        let mut back = Conn::default();
+        handle(&mut room, "key", &mut back, &json!({"type": "hello", "token": token}));
+        assert_eq!(back.seat, Some(1));
+        assert_eq!(room_message(&room, &back)["state"]["you"], 1);
+        handle(&mut room, "key", &mut back, &json!({"type": "input", "b": 1, "s": 0}));
+        assert!(room.tick());
     }
 }

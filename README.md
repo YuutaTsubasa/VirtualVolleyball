@@ -3,7 +3,8 @@
 《皮卡丘打排球》風格的 1 對 1 沙灘排球遊戲，球員是[虛擬台麻館](https://github.com/YuutaTsubasa/TaiwanMahjong)的角色們：小翠、月華、阿明、糖糖、小春、蘭姐、蒼牙、金爺、雷歐、阿烈，還有隱藏角色阿翼。Tauri v2 + Svelte 5，遊戲畫面用 Canvas 畫，比賽引擎用 Rust 寫。
 
 - 🎮 **單機**：對戰電腦（簡單／普通／困難）、同一台電腦雙人對戰、電腦對電腦觀戰
-- 🌐 **連線**：房主在 App 按「開設房間」，朋友用 App 的「加入房間」輸入位址，或直接用瀏覽器打開房主的網址
+- 🌐 **線上房間**：在網頁或 App 按「開設房間」→「線上」，拿到 5 碼房號與分享連結，朋友在任何地方輸入房號或打開連結就能加入（WebRTC 直連，跟 TaiwanMahjong 同一套做法）
+- 🏠 **區網房間**：房主在 App 按「開設房間」→「區網」，朋友用 App 的「加入房間」輸入位址，或直接用瀏覽器打開房主的網址
 - 👀 觀戰、大廳聊天、電腦補空位；比賽中斷線會由電腦代打，重新連上就還給你
 - 🎨 六種畫面風格（90 年代、PC-98、MS-DOS、台式印刷、Game Boy、動漫電影），介面、角色、球場一起換
 - 🎵 PC-98 FM 音源的原創配樂與音效（Web Audio 即時合成，不用音檔）
@@ -23,7 +24,7 @@ npm install
 npm run tauri dev
 ```
 
-只開網頁版（http://localhost:1421，不能開房，但可以單機或加入別人的房間）：
+只開網頁版（http://localhost:1421，可以單機、開線上房間（要有配對服務，見下面）、加入別人的房間）：
 
 ```bash
 npm run dev
@@ -72,23 +73,91 @@ npm test
 
 ## 連線怎麼運作
 
-比賽在房主的伺服器上跑（每秒 60 格），玩家只送輸入，伺服器把每一格的狀態廣播給所有人，所以每個人看到的都一樣、也沒辦法作弊。單機版跑的是同一份 Rust 程式（編成 WebAssembly），兩邊不會有行為差異。
+比賽在房主那邊跑（每秒 60 格），玩家只送輸入，房主把每一格的狀態廣播給所有人，所以每個人看到的都一樣、也沒辦法作弊。房間與訊息的處理（`crates/volleyball-core/src/protocol.rs`）是同一份 Rust 程式，區網伺服器直接用、線上房間編成 WebAssembly 用，單機版也是同一個引擎，行為不會有差異。
+
+兩種房間：
+
+| | 線上房間 | 區網房間 |
+| --- | --- | --- |
+| 誰當伺服器 | 房主的瀏覽器（網頁版、App 都可以） | 房主的 App 內建伺服器（axum，`/ws`） |
+| 怎麼連 | WebRTC 直連，配對時經過 Cloudflare 的小服務 | WebSocket 連房主的 IP:埠 |
+| 怎麼邀請 | 5 碼房號或分享連結（`…/#join/房號`） | 區網位址（同網路，或自己開埠／通道） |
+
+線上房間的細節：
+
+- 房主的比賽在 Web Worker 裡跑（`src/lib/local/host-worker.js`），分頁切到背景也不會變慢；關掉分頁房間就關了。
+- 每條 WebRTC 連線開兩個資料通道：**可靠**的（hello、大廳資訊、房主指令、聊天）與**不可靠、不排序**的（`maxRetransmits: 0`，每格的影格與輸入）。影格掉了不重送，下一格馬上補上，延遲不會越積越多；訊息帶編號，收到比較舊的就丟掉。
+- 斷線會自動重連，帶著 token 拿回原本的座位；比賽中斷線的這段時間由電腦代打。
+- 配對服務（`workers/signal/`）只轉送 WebRTC 的 offer／answer／ICE，比賽資料不經過它。它掛了也不影響已經在房間裡的人，只是新的人進不來；沒設定或連不上時介面會自動藏起線上房間。
+- 少數很嚴格的網路（對稱式 NAT）WebRTC 連不通，這時請改用區網房間或通道。
+
+區網房間：
 
 - 預設通訊埠 **7788**（TaiwanMahjong 用 7777，兩個可以同時開）。
 - 區網最順。要跨網路玩可以用 cloudflared 之類的通道，把 https 網址給朋友；延遲會直接反映在手感上。
 
+## 線上房間的配對服務（Cloudflare Workers）
+
+線上房間需要部署一個很小的配對服務，用 Cloudflare Workers 免費方案（Durable Object＋可休眠的 WebSocket，超過每日額度只會報錯、不會收費）。程式在 `workers/signal/`，跟 TaiwanMahjong 的一樣，名字是 `virtual-volleyball-signal`。
+
+**部署**（需要自己的 Cloudflare 帳號）：
+
+```bash
+cd workers/signal
+```
+
+```bash
+npm install
+```
+
+```bash
+npx wrangler login
+```
+
+```bash
+npm run deploy
+```
+
+部署完會印出網址，例如 `https://virtual-volleyball-signal.<你的子網域>.workers.dev`。打開 `/health` 看到 `ok` 就是好了。
+
+**讓遊戲用它**：`src/lib/site.js` 的 `SIGNAL_SERVER` 預設是空字串（＝不顯示線上房間）。打包前在專案根目錄建立 `.env.production.local`：
+
+```
+VITE_SIGNAL_SERVER=https://virtual-volleyball-signal.<你的子網域>.workers.dev
+```
+
+網頁版放在固定網址時，可以再加 `VITE_WEB_URL=https://…/`，桌面 App 的大廳就會顯示分享連結（沒設定時網頁版用目前的網址，App 只顯示房號）。
+
+**本機測試**（不用部署、不用登入）：
+
+```bash
+npm --prefix workers/signal run dev
+```
+
+會在 http://localhost:8787 跑配對服務。在專案根目錄建立 `.env.development.local`：
+
+```
+VITE_SIGNAL_SERVER=http://localhost:8787
+```
+
+再 `npm run dev`，開兩個瀏覽器分頁：一個「開設房間」→「線上」，另一個打開大廳顯示的連結（或在「加入房間」輸入房號）。同一個瀏覽器的兩個分頁會共用 localStorage（名字、角色），測試時改一下名字比較好分。
+
 ## 程式結構
 
 ```
-crates/volleyball-core/    比賽引擎（Rust）：物理、規則、電腦玩家、房間
-crates/volleyball-wasm/    把引擎包成 WebAssembly 給單機版用
-src-tauri/                 Tauri v2 App＋內建伺服器（axum，/ws）
-  src/server.rs              房間、WebSocket、靜態網頁
+crates/volleyball-core/    比賽引擎（Rust）：物理、規則、電腦玩家、房間、連線訊息（protocol.rs）
+crates/volleyball-wasm/    把引擎包成 WebAssembly：單機版（LocalMatch）與線上房間的房主（HostRoom）
+workers/signal/            線上房間的配對服務（Cloudflare Workers）
+src-tauri/                 Tauri v2 App＋區網伺服器（axum，/ws）
+  src/server.rs              WebSocket、比賽時鐘、靜態網頁
   src/bin/volleyball-server.rs  不開視窗的伺服器
 src/
   App.svelte                 畫面切換
   lib/engine.js              主迴圈：單機跑 WASM、連線收伺服器影格
-  lib/net.svelte.js          WebSocket 連線狀態
+  lib/net.svelte.js          連線狀態：區網（WebSocket）與線上房間（WebRTC）
+  lib/p2p.js                 線上房間的 WebRTC：配對、可靠／不可靠兩個資料通道
+  lib/site.js                配對服務網址、房號、分享連結
+  lib/local/host-worker.js   線上房間的房主：在 Web Worker 裡跑房間與比賽
   lib/components/            Menu、SelectScreen、RoomEntry、Lobby…
   lib/game/render.js         Canvas 繪圖：背景、角色、球、特效、計分板
   lib/game/characters.js     角色顯示資料：名字、台詞、頭像（實際能力值在 Rust 那邊）

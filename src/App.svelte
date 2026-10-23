@@ -17,11 +17,16 @@
   import Controls from './lib/components/Controls.svelte';
   import TouchControls from './lib/components/TouchControls.svelte';
   import { ui, openSettings } from './lib/ui.svelte.js';
+  import { roomCodeOf } from './lib/site.js';
   import { setBgm, playJingle } from './lib/audio/sound.svelte.js';
 
   // 單機：title | solo | help | select | play | pause | result | host | join（設定是隨時可開的視窗）
   // 連線中（net.room 有值）時畫面由房間狀態決定：大廳或比賽
-  let screen = $state('title');
+  // 分享連結（…#join/房號）打開：直接到加入房間、帶入房號
+  const linkCode = roomCodeOf(location.hash) ?? '';
+  if (linkCode) history.replaceState(null, '', location.pathname + location.search);
+  let joinCode = $state(linkCode);
+  let screen = $state(linkCode ? 'join' : 'title');
   let mode = $state('cpu'); // cpu | versus | watch
   let lastSetup = null;
   let result = $state(null);
@@ -44,9 +49,20 @@
     };
     document.addEventListener('visibilitychange', autoPause);
     portrait.addEventListener('change', autoPause);
+    // 已經開著遊戲時貼上分享連結（只改了 #join/房號）：還沒進房間就切到加入房間
+    const onHash = () => {
+      const code = roomCodeOf(location.hash);
+      if (!code) return;
+      history.replaceState(null, '', location.pathname + location.search);
+      if (net.room || net.status !== 'idle' || ['play', 'pause'].includes(screen)) return;
+      joinCode = code;
+      screen = 'join';
+    };
+    addEventListener('hashchange', onHash);
     return () => {
       engine.destroy();
       document.removeEventListener('visibilitychange', autoPause);
+      removeEventListener('hashchange', onHash);
       portrait.removeEventListener('change', autoPause);
     };
   });
@@ -233,7 +249,17 @@
   {:else if screen === 'solo'}
     <SoloScreen onpick={openSelect} onback={() => (screen = 'title')} />
   {:else if screen === 'host' || screen === 'join'}
-    <RoomEntry page={screen} onback={() => (screen = 'title')} />
+    <!-- 換了分享連結就重新帶入房號 -->
+    {#key joinCode}
+      <RoomEntry
+        page={screen}
+        code={screen === 'join' ? joinCode : ''}
+        onback={() => {
+          joinCode = '';
+          screen = 'title';
+        }}
+      />
+    {/key}
   {:else if screen === 'help'}
     <HelpScreen onback={() => (screen = 'title')} />
   {:else if screen === 'select'}

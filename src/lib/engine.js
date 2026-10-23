@@ -59,7 +59,7 @@ export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {}, onSc
   }
 
   // 收到伺服器的影格
-  onFrame((s) => {
+  const offFrame = onFrame((s) => {
     if (state !== 'online') return;
     // 房主按了「再來一場」：影格編號重新開始
     if (match && s.frame < match.frame) {
@@ -180,6 +180,7 @@ export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {}, onSc
     },
     destroy() {
       cancelAnimationFrame(raf);
+      offFrame();
     },
     // 給除錯用
     get match() {

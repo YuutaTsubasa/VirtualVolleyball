@@ -13,3 +13,9 @@ art-inbox/*
 !art-inbox/replies/
 !art-inbox/requests/
 !art-inbox/wait-for-claude.ps1
+
+# 配對服務（workers/signal）本機 wrangler dev 的暫存
+.wrangler/
+
+# 本機設定（例如 VITE_SIGNAL_SERVER），見 README
+.env*.local

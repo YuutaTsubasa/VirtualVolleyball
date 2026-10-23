@@ -2,7 +2,8 @@
   // 房間大廳：左右兩個座位（VS）、邀請朋友、比賽規則、大廳聊天、開始比賽
   import { asset } from '../art-style.svelte.js';
   import { tick } from 'svelte';
-  import { net, hostCmd, leave, send, serverUrls, setCharacter, toast, load } from '../net.svelte.js';
+  import { net, inTauri, hostCmd, leave, send, serverUrls, setCharacter, toast, load } from '../net.svelte.js';
+  import { WEB_URL, shareLink } from '../site.js';
   import { CHARACTERS, getCharacter } from '../game/characters.js';
   import { DIFFICULTIES } from '../game/constants.js';
   import { play } from '../game/audio.js';
@@ -16,6 +17,9 @@
   const urls = $derived(serverUrls());
   let urlIdx = $state(0);
   const address = $derived(urls[urlIdx] ?? urls[0] ?? '');
+  // 線上房間的分享連結（…#join/房號）。桌面 App 沒設定網頁版網址時只給房號。
+  const webBase = WEB_URL || (!inTauri && location.protocol.startsWith('http') ? location.origin + location.pathname : '');
+  const link = $derived(shareLink(net.code, webBase));
 
   let botDifficulty = $state('normal');
   let charDialog;
@@ -126,20 +130,43 @@
     <section class="panel">
       <div class="panel-head left">{isHost ? '邀請朋友' : '連線資訊'}</div>
       <div class="panel-body">
-        {#if urls.length > 1}
-          <div class="tabs">
-            {#each urls as u, i (u)}
-              <button type="button" class:sel={i === urlIdx} onclick={() => (urlIdx = i)}>{u.replace(/^https?:\/\//, '')}</button>
-            {/each}
+        {#if net.code}
+          <div class="copy-row">
+            <span class="code-label">房號</span>
+            <code class="room-code">{net.code}</code>
+            <button type="button" class="vbtn small gold" onclick={() => copy(net.code)}>複製</button>
           </div>
+          {#if link}
+            <div class="copy-row">
+              <code>{link}</code>
+              <button type="button" class="vbtn small gold" onclick={() => copy(link)}>複製</button>
+            </div>
+          {/if}
+          <p class="small">
+            {#if net.signalDown}
+              <b class="warn">配對服務暫時連不上：已經在房間的人不受影響，新的人要等一下才進得來。</b>
+            {:else if isHost}
+              朋友在「加入房間」輸入房號{link ? '，或直接打開連結' : ''}就能加入。比賽在你的瀏覽器裡跑，請不要關掉這個分頁。
+            {:else}
+              已用 WebRTC 直接連到房主。
+            {/if}
+          </p>
+        {:else}
+          {#if urls.length > 1}
+            <div class="tabs">
+              {#each urls as u, i (u)}
+                <button type="button" class:sel={i === urlIdx} onclick={() => (urlIdx = i)}>{u.replace(/^https?:\/\//, '')}</button>
+              {/each}
+            </div>
+          {/if}
+          <div class="copy-row">
+            <code>{address}</code>
+            <button type="button" class="vbtn small gold" onclick={() => copy(address)}>複製</button>
+          </div>
+          <p class="small">
+            {#if isHost}朋友可用 App 或瀏覽器加入。區網可直接連線；跨網路需要開放這個埠或用通道。{:else}已連線到房主。{/if}
+          </p>
         {/if}
-        <div class="copy-row">
-          <code>{address}</code>
-          <button type="button" class="vbtn small gold" onclick={() => copy(address)}>複製</button>
-        </div>
-        <p class="small">
-          {#if isHost}朋友可用 App 或瀏覽器加入。區網可直接連線；跨網路需要開放這個埠或用通道。{:else}已連線到房主。{/if}
-        </p>
       </div>
     </section>
 
@@ -375,6 +402,19 @@
     overflow-x: auto;
     white-space: nowrap;
     user-select: text;
+  }
+  .code-label {
+    font-weight: 900;
+    font-size: 2.2cqh;
+  }
+  .room-code {
+    font-size: 3.6cqh !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.3em;
+    text-align: center;
+  }
+  .warn {
+    color: var(--accent);
   }
   .tabs {
     display: flex;

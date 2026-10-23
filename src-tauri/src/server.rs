@@ -16,13 +16,12 @@ use axum::{
 };
 use futures_util::{SinkExt, StreamExt};
 use rand::{distributions::Alphanumeric, Rng};
-use serde_json::{json, Value};
+use serde_json::Value;
 use std::sync::{Arc, Mutex};
 use std::time::Duration;
 use tokio::sync::{broadcast, watch};
 use tower_http::cors::CorsLayer;
-use volleyball_core::ai::Difficulty;
-use volleyball_core::game::Event;
+use volleyball_core::protocol::{self, Conn};
 use volleyball_core::room::{Room, Settings};
 
 pub type AssetFn = Arc<dyn Fn(&str) -> Option<(Vec<u8>, String)> + Send + Sync>;
@@ -89,11 +88,10 @@ pub async fn start(port: u16, settings: Settings, assets: Option<AssetFn>) -> Re
                     let (frame, ended) = {
                         let mut room = st.room.lock().unwrap();
                         if !room.tick() { continue; }
-                        let ended = room.game.as_ref().is_some_and(|g| g.events.iter().any(|e| matches!(e, Event::Over { .. })));
-                        (room.frame(), ended)
+                        (room.frame(), protocol::just_ended(&room))
                     };
                     if let Some(f) = frame {
-                        let _ = st.frames.send(json!({"type": "frame", "state": f}).to_string().into());
+                        let _ = st.frames.send(protocol::frame_message(&f).to_string().into());
                     }
                     if ended { st.bump(); }
                 }
@@ -125,15 +123,9 @@ async fn ws_handler(ws: WebSocketUpgrade, State(st): State<Arc<AppState>>) -> Re
     ws.on_upgrade(move |sock| ws_session(sock, st))
 }
 
-struct WsCtx {
-    seat: Option<usize>,
-    is_host: bool,
-    hello: bool,
-}
-
 async fn ws_session(socket: WebSocket, st: Arc<AppState>) {
     let (mut out, mut inp) = socket.split();
-    let mut ctx = WsCtx { seat: None, is_host: false, hello: false };
+    let mut ctx = Conn::default();
     let mut notify = st.notify.subscribe();
     let mut frames = st.frames.subscribe();
     let mut shutdown = st.shutdown.clone();
@@ -145,7 +137,7 @@ async fn ws_session(socket: WebSocket, st: Arc<AppState>) {
             m = inp.next() => match m {
                 Some(Ok(Message::Text(t))) => {
                     let v: Value = serde_json::from_str(t.as_str()).unwrap_or(Value::Null);
-                    let (replies, changed) = handle_msg(&st, &mut ctx, &v);
+                    let (replies, changed) = protocol::handle(&mut st.room.lock().unwrap(), &st.host_key, &mut ctx, &v);
                     msgs = replies.into_iter().map(|r| r.to_string()).collect();
                     if changed { st.bump(); }
                     // 輸入每秒好幾十次，不用每次都回大廳資訊
@@ -170,9 +162,7 @@ async fn ws_session(socket: WebSocket, st: Arc<AppState>) {
             }
         }
         if send_room && ctx.hello {
-            let mut view = st.room.lock().unwrap().view(ctx.seat);
-            view["is_host"] = json!(ctx.is_host);
-            msgs.push(json!({"type": "room", "state": view}).to_string());
+            msgs.push(protocol::room_message(&st.room.lock().unwrap(), &ctx).to_string());
         }
         let mut failed = false;
         for m in msgs {
@@ -185,128 +175,8 @@ async fn ws_session(socket: WebSocket, st: Arc<AppState>) {
             break;
         }
     }
-    if let Some(s) = ctx.seat {
-        st.room.lock().unwrap().disconnect(s);
+    if protocol::drop_conn(&mut st.room.lock().unwrap(), &mut ctx) {
         st.bump();
-    }
-}
-
-fn err(msg: impl Into<String>) -> Value {
-    json!({"type": "error", "message": msg.into()})
-}
-
-fn welcome(ctx: &WsCtx, token: Option<&str>) -> Value {
-    json!({"type": "welcome", "seat": ctx.seat, "token": token, "is_host": ctx.is_host})
-}
-
-fn handle_msg(st: &AppState, ctx: &mut WsCtx, v: &Value) -> (Vec<Value>, bool) {
-    let ty = v.get("type").and_then(|x| x.as_str()).unwrap_or("");
-    let str_of = |k: &str| v.get(k).and_then(|x| x.as_str()).unwrap_or("");
-    let mut room = st.room.lock().unwrap();
-    match ty {
-        "hello" => {
-            ctx.hello = true;
-            if let Some(k) = v.get("host_key").and_then(|x| x.as_str()) {
-                ctx.is_host = !k.is_empty() && k == st.host_key;
-            }
-            if let Some(s) = ctx.seat.take() {
-                room.disconnect(s);
-            }
-            // 帶著 token 回來：拿回原本的座位
-            let token = str_of("token");
-            if let Some(s) = room.seat_of_token(token) {
-                ctx.seat = Some(s);
-                room.connect(s);
-                if ctx.is_host {
-                    room.host_seat = Some(s);
-                }
-                return (vec![welcome(ctx, Some(token))], true);
-            }
-            if v.get("spectate").and_then(|x| x.as_bool()).unwrap_or(false) {
-                return (vec![welcome(ctx, None)], false);
-            }
-            sit(&mut room, ctx, str_of("name"), v.get("character").and_then(|x| x.as_str()))
-        }
-        // 觀眾在大廳按「入席」
-        "sit" => {
-            if ctx.seat.is_some() {
-                return (vec![], false);
-            }
-            sit(&mut room, ctx, str_of("name"), v.get("character").and_then(|x| x.as_str()))
-        }
-        "input" => {
-            if let Some(s) = ctx.seat {
-                let bits = v.get("b").and_then(|x| x.as_u64()).unwrap_or(0) as u32;
-                let seq = v.get("s").and_then(|x| x.as_u64()).unwrap_or(0);
-                room.set_input(s, bits, seq);
-            }
-            (vec![], false)
-        }
-        "character" => {
-            let Some(s) = ctx.seat else { return (vec![err("你沒有座位")], false) };
-            match room.set_character(s, str_of("id")) {
-                Ok(()) => (vec![], true),
-                Err(e) => (vec![err(e)], false),
-            }
-        }
-        "chat" => {
-            room.push_chat(ctx.seat, str_of("text"));
-            (vec![], true)
-        }
-        "leave" => {
-            if let Some(s) = ctx.seat.take() {
-                let _ = room.remove_seat(s);
-            }
-            (vec![welcome(ctx, None)], true)
-        }
-        "host" => {
-            if !ctx.is_host {
-                return (vec![err("只有房主可以這樣做")], false);
-            }
-            let seat = v.get("seat").and_then(|x| x.as_u64()).map(|s| s as usize).filter(|s| *s < 2);
-            let result = match str_of("cmd") {
-                "add_bot" => {
-                    let d: Difficulty = v.get("difficulty").and_then(|d| serde_json::from_value(d.clone()).ok()).unwrap_or_default();
-                    room.add_bot(seat, d).map(|_| ())
-                }
-                "remove" => match seat {
-                    Some(s) if Some(s) != room.host_seat => room.remove_seat(s),
-                    _ => Err("不能移除這個座位".into()),
-                },
-                "settings" => match v.get("settings").and_then(|s| serde_json::from_value::<Settings>(s.clone()).ok()) {
-                    Some(s) => {
-                        room.update_settings(s);
-                        Ok(())
-                    }
-                    None => Err("設定格式不對".into()),
-                },
-                "start" => room.start(),
-                "reset" => {
-                    room.reset_to_lobby();
-                    Ok(())
-                }
-                _ => Err("不認得的指令".into()),
-            };
-            match result {
-                Ok(()) => (vec![], true),
-                Err(e) => (vec![err(e)], false),
-            }
-        }
-        _ => (vec![], false),
-    }
-}
-
-fn sit(room: &mut Room, ctx: &mut WsCtx, name: &str, character: Option<&str>) -> (Vec<Value>, bool) {
-    match room.join(name, character) {
-        Ok((s, token)) => {
-            ctx.seat = Some(s);
-            room.connect(s);
-            if ctx.is_host {
-                room.host_seat = Some(s);
-            }
-            (vec![welcome(ctx, Some(&token))], true)
-        }
-        Err(e) => (vec![err(format!("{}，先以觀眾身分進入", e)), welcome(ctx, None)], true),
     }
 }
 

@@ -1,15 +1,16 @@
 <script>
   // 開設房間／加入房間：左邊玩家資料，右邊選角色
   import { onMount } from 'svelte';
-  import { net, inTauri, connect, disconnect, startHost, stopHost, hostStatus, toast, load, store, DEFAULT_PORT } from '../net.svelte.js';
+  import { net, inTauri, connect, disconnect, startHost, stopHost, hostStatus, toast, load, store, DEFAULT_PORT, checkOnline, hostOnline, joinOnline } from '../net.svelte.js';
+  import { SIGNAL_SERVER, roomCodeOf } from '../site.js';
   import { CHARACTERS, isUnlocked, getCharacter } from '../game/characters.js';
   import { play } from '../game/audio.js';
   import ScreenFrame from './ScreenFrame.svelte';
   import BackButton from './BackButton.svelte';
   import CharacterGrid from './CharacterGrid.svelte';
 
-  // page = host | join
-  let { page, onback } = $props();
+  // page = host | join；code：從分享連結（#join/房號）打開時帶入的房號
+  let { page, code = '', onback } = $props();
   const isHost = $derived(page === 'host');
 
   // 從房主的伺服器打開的網頁：位址直接帶入
@@ -18,7 +19,12 @@
   const available = CHARACTERS.filter(isUnlocked);
   let name = $state(load('vb_name', ''));
   let port = $state(load('vb_port', String(DEFAULT_PORT)));
-  let address = $state(servedByServer ? location.host : load('vb_address', ''));
+  // svelte-ignore state_referenced_locally
+  let address = $state(code || (servedByServer ? location.host : load('vb_address', '')));
+  // 開房方式：線上（房號，WebRTC）或區網（桌面 App 內建伺服器／自架伺服器）
+  let hostMode = $state(load('vb_host_mode', 'online'));
+  // 線上房間只有配對服務在的時候才能開（沒設定配對服務就整個藏起來）
+  const online = $derived(isHost && !!net.online && hostMode === 'online');
   let hostKey = $state('');
   let character = $state(
     available.find((c) => c.id === load('vb_character'))?.id ?? available[Math.floor(Math.random() * available.length)].id,
@@ -30,7 +36,14 @@
 
   onMount(() => {
     hostStatus().catch(() => {});
+    checkOnline();
   });
+
+  function pickMode(m) {
+    play('select');
+    hostMode = m;
+    store('vb_host_mode', m);
+  }
 
   const playerName = () => name.trim() || '玩家';
 
@@ -43,6 +56,8 @@
     if (busy || connecting) return;
     play('select');
     remember();
+    if (online) return hostOnline({ name: playerName(), character });
+    if (!isHost && roomCodeOf(address)) return joinRoomCode(false);
     if (isHost && inTauri) {
       if (net.hostInfo) {
         connect(`localhost:${net.hostInfo.port}`, { name: playerName(), hostKey: net.hostInfo.host_key, character });
@@ -65,9 +80,17 @@
     connect(address, { name: playerName(), hostKey: isHost ? hostKey.trim() : undefined, character });
   }
 
+  // 加入線上房間（輸入房號或分享連結）
+  function joinRoomCode(spectate) {
+    if (net.online === false) return toast('線上房間暫時無法使用，請稍後再試');
+    store('vb_address', address);
+    joinOnline(roomCodeOf(address), { name: playerName(), spectate, character });
+  }
+
   function spectate() {
-    if (!address.trim()) return toast('請輸入房主的位址');
+    if (!address.trim()) return toast(net.online ? '請輸入房號或房主的位址' : '請輸入房主的位址');
     remember();
+    if (roomCodeOf(address)) return joinRoomCode(true);
     connect(address, { name: playerName(), spectate: true });
   }
 
@@ -89,12 +112,18 @@
 
   const hint = $derived(
     connecting
-      ? `連線到 ${net.address} 中…`
-      : isHost
-        ? inTauri
-          ? '開房後，可在大廳分享網址邀請朋友。'
-          : '在網頁開房：輸入伺服器位址與啟動時印出的房主金鑰。'
-        : '輸入房主分享的網址；沒有座位時會改成觀戰。',
+      ? net.code
+        ? `連線到房間 ${net.code} 中…`
+        : `連線到 ${net.address} 中…`
+      : online
+        ? '開房後會拿到 5 碼房號與分享連結，朋友在任何地方都能加入。'
+        : isHost
+          ? inTauri
+            ? '開房後，可在大廳分享網址邀請朋友。'
+            : '在網頁開房：輸入伺服器位址與啟動時印出的房主金鑰。'
+          : net.online
+            ? '輸入房號、分享連結或區網位址；沒有座位時會改成觀戰。'
+            : '輸入房主分享的網址；沒有座位時會改成觀戰。',
   );
 </script>
 
@@ -112,7 +141,19 @@
         <input bind:value={name} placeholder="玩家" maxlength="16" autocomplete="nickname" />
       </label>
 
-      {#if isHost && inTauri}
+      {#if isHost && SIGNAL_SERVER}
+        <div class="field">開房方式
+          <div class="modes" role="radiogroup">
+            <button type="button" role="radio" aria-checked={online} class="vbtn small" class:active={online} disabled={!net.online} onclick={() => pickMode('online')}>線上（房號）</button>
+            <button type="button" role="radio" aria-checked={!online} class="vbtn small" class:active={!online} onclick={() => pickMode('lan')}>{inTauri ? '區網（桌面 App）' : '區網（自架伺服器）'}</button>
+          </div>
+          {#if net.online === null}<small>檢查線上房間中…</small>{:else if !net.online}<small>線上房間暫時無法使用，請稍後再試。</small>{/if}
+        </div>
+      {/if}
+
+      {#if online}
+        <p class="note">比賽在你的瀏覽器裡跑，朋友用 WebRTC 直接連到你。<small>開著這個畫面房間才在，關掉分頁房間就關了。</small></p>
+      {:else if isHost && inTauri}
         {#if net.hostInfo}
           <p class="note">房間已在通訊埠 <b>{net.hostInfo.port}</b> 開著。</p>
           <button type="button" class="vbtn small" onclick={closeRoom} disabled={busy}>關閉房間</button>
@@ -123,8 +164,13 @@
           </label>
         {/if}
       {:else}
-        <label class="field">{isHost ? '伺服器位址' : '房間網址'}
-          <input bind:value={address} placeholder="192.168.1.5:{DEFAULT_PORT}" readonly={servedByServer} />
+        <label class="field">{isHost ? '伺服器位址' : net.online ? '房號或網址' : '房間網址'}
+          <input
+            bind:value={address}
+            placeholder={!isHost && net.online ? `K7QX2 或 192.168.1.5:${DEFAULT_PORT}` : `192.168.1.5:${DEFAULT_PORT}`}
+            readonly={servedByServer && !code}
+            spellcheck="false"
+          />
         </label>
         {#if isHost}
           <label class="field">房主金鑰
@@ -162,7 +208,7 @@
         <button type="button" class="vbtn small" onclick={spectate}>觀戰</button>
       {/if}
       <button type="button" class="vbtn primary" disabled={busy || connecting} onclick={submit}>
-        {isHost ? (net.hostInfo ? '回到房間' : '開設房間') : '加入房間'}
+        {isHost ? (!online && net.hostInfo ? '回到房間' : '開設房間') : '加入房間'}
       </button>
     </div>
   {/snippet}
@@ -179,6 +225,18 @@
     margin: 0;
     font-weight: 800;
     font-size: 2.3cqh;
+  }
+  .note small {
+    display: block;
+    margin-top: 0.4cqh;
+    font-weight: 700;
+    font-size: 1.9cqh;
+    color: var(--muted);
+  }
+  .modes {
+    display: flex;
+    gap: 1cqh;
+    flex-wrap: wrap;
   }
   .chosen {
     margin-top: auto;
