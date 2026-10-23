@@ -2,7 +2,7 @@
   // 開設房間／加入房間：左邊玩家資料，右邊選角色
   import { onMount } from 'svelte';
   import { net, inTauri, connect, disconnect, startHost, stopHost, hostStatus, toast, load, store, DEFAULT_PORT, checkOnline, hostOnline, joinOnline } from '../net.svelte.js';
-  import { SIGNAL_SERVER, roomCodeOf } from '../site.js';
+  import { SIGNAL_SERVER, WEB_URL, roomCodeOf } from '../site.js';
   import { CHARACTERS, isUnlocked, getCharacter } from '../game/characters.js';
   import { play } from '../game/audio.js';
   import ScreenFrame from './ScreenFrame.svelte';
@@ -13,8 +13,9 @@
   let { page, code = '', onback } = $props();
   const isHost = $derived(page === 'host');
 
-  // 從房主的伺服器打開的網頁：位址直接帶入
-  const servedByServer = !inTauri && location.protocol.startsWith('http') && !import.meta.env.DEV;
+  // 從房主的伺服器打開的網頁：位址直接帶入（GitHub Pages 上的網頁版不是房主的伺服器）
+  const servedByServer =
+    !inTauri && location.protocol.startsWith('http') && !import.meta.env.DEV && !(WEB_URL && location.href.startsWith(WEB_URL));
 
   const available = CHARACTERS.filter(isUnlocked);
   let name = $state(load('vb_name', ''));
@@ -218,6 +219,11 @@
   .profile {
     flex: 1;
   }
+  /* 區網開房的欄位比較多，放不下時面板裡面捲動，不要超出框 */
+  .profile .panel-body {
+    overflow-y: auto;
+    gap: 0.8cqh;
+  }
   .roster {
     flex: 1.75;
   }
@@ -236,7 +242,12 @@
   .modes {
     display: flex;
     gap: 1cqh;
-    flex-wrap: wrap;
+  }
+  .modes .vbtn {
+    flex: 1;
+    min-width: 0;
+    padding-inline: 1cqh;
+    white-space: nowrap;
   }
   .chosen {
     margin-top: auto;
@@ -247,8 +258,8 @@
     padding-top: 1.4cqh;
   }
   .frame-pic {
-    width: 17cqh;
-    height: 17cqh;
+    width: 13cqh;
+    height: 13cqh;
     flex: none;
     border: 0.45cqh solid var(--navy);
     outline: 0.3cqh solid var(--gold);
@@ -267,10 +278,14 @@
     gap: 0.5cqh;
   }
   .chosen b {
-    font-size: 5cqh;
+    font-size: 4.2cqh;
     line-height: 1.1;
   }
   .chosen small {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     font-size: 2.1cqh;
     font-weight: 800;
     color: var(--navy-soft);

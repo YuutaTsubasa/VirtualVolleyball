@@ -4,6 +4,7 @@
   // - Enter／空白鍵／手把 A：按下（文字欄位用手把按 A 會開手把鍵盤）
   // - Esc／手把 B：返回；比賽中 Esc、P、手把 Start：暫停
   // - 在選單輸入 ↑↑↓↓←→←→BA：解鎖隱藏角色
+  //   觸控：用手指滑 ↑↑↓↓←→←→，再點畫面左半邊（B）、右半邊（A）
   import { onMount } from 'svelte';
   import {
     createCheatTracker,
@@ -76,6 +77,31 @@
     if (unlockHidden()) toast('隱藏角色「阿翼」解鎖了！', 'ok');
     else toast('阿翼已經在等你了。', 'ok');
     return true;
+  }
+
+  // 觸控版秘技：滑動當方向鍵；滑完 8 下之後，點左半邊是 B、右半邊是 A
+  const SWIPE_PX = 40;
+  const SWIPE_MS = 700;
+  let touchStart = null;
+  function touchstart(event) {
+    if (inGame || event.touches.length !== 1) return (touchStart = null);
+    const t = event.touches[0];
+    touchStart = { x: t.clientX, y: t.clientY, at: performance.now() };
+  }
+  function touchend(event) {
+    const start = touchStart;
+    touchStart = null;
+    if (!start || inGame || event.changedTouches.length !== 1) return;
+    const t = event.changedTouches[0];
+    const dx = t.clientX - start.x;
+    const dy = t.clientY - start.y;
+    if (performance.now() - start.at > SWIPE_MS) return;
+    if (Math.max(Math.abs(dx), Math.abs(dy)) >= SWIPE_PX) {
+      const token = Math.abs(dx) > Math.abs(dy) ? (dx < 0 ? 'ArrowLeft' : 'ArrowRight') : dy < 0 ? 'ArrowUp' : 'ArrowDown';
+      feedSecret(token);
+    } else if (cheat.progress >= 8) {
+      feedSecret(t.clientX < innerWidth / 2 ? 'B' : 'A');
+    }
   }
 
   function keydown(event) {
@@ -187,6 +213,8 @@
     window.addEventListener('keydown', keydown, true);
     window.addEventListener('keyup', keyup, true);
     window.addEventListener('pointerdown', pointerdown, true);
+    window.addEventListener('touchstart', touchstart, { capture: true, passive: true });
+    window.addEventListener('touchend', touchend, { capture: true, passive: true });
     frame = requestAnimationFrame(poll);
     return () => {
       disposed = true;
@@ -194,6 +222,8 @@
       window.removeEventListener('keydown', keydown, true);
       window.removeEventListener('keyup', keyup, true);
       window.removeEventListener('pointerdown', pointerdown, true);
+      window.removeEventListener('touchstart', touchstart, true);
+      window.removeEventListener('touchend', touchend, true);
     };
   });
 </script>
