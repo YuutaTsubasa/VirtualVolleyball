@@ -6,7 +6,6 @@
   import Menu from './Menu.svelte';
   import SpritePose from './SpritePose.svelte';
   import ControlHint from './ControlHint.svelte';
-  import SettingsButton from './SettingsButton.svelte';
 
   let { items } = $props();
 
@@ -34,7 +33,6 @@
     <Menu {items} width="36cqw" />
   </div>
 
-  <div class="corner"><SettingsButton /></div>
   <div class="foot"><ControlHint /></div>
 </section>
 
@@ -61,11 +59,6 @@
   }
   .hero.right {
     right: 1cqw;
-  }
-  .corner {
-    position: absolute;
-    bottom: 2.4cqh;
-    right: 2.4cqw;
   }
   .foot {
     position: absolute;

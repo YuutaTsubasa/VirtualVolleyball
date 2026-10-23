@@ -244,6 +244,7 @@
         { label: '開設房間', action: () => (screen = 'host') },
         { label: '加入房間', action: () => (screen = 'join') },
         { label: '操作說明', action: () => (screen = 'help') },
+        { label: '設定', action: openSettings },
       ]}
     />
   {:else if screen === 'solo'}

@@ -30,7 +30,10 @@
   // 第一步選 1P（或左邊），第二步選對手（或右邊）；選完對手不會馬上開始，按「開始比賽」才開始
   const step = $derived(Math.min(picks.length, 1));
   const TAGS = { cpu: ['1P', 'CPU'], versus: ['1P', '2P'], watch: ['左', '右'] };
-  const tags = $derived(Object.fromEntries(picks.map((c, i) => [c.id, TAGS[mode][i]])));
+  // 兩邊選同一個人時，同一張卡片上兩個角標都要看得到
+  const tags = $derived(
+    picks.reduce((all, c, i) => ({ ...all, [c.id]: [...(all[c.id] ?? []), TAGS[mode][i]] }), {}),
+  );
 
   onMount(() => grid.focusIndex(cursor));
 

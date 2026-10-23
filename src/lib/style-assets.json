@@ -2,6 +2,7 @@
   "styles": {
     "anime90": {
       "files": [
+        "ui/icons/watch.webp",
         "ui/mode-cpu.webp",
         "ui/mode-versus.webp",
         "ui/mode-watch.webp",
@@ -93,11 +94,16 @@
         "ui/icons/sound-off.webp",
         "ui/icons/sound-on.webp",
         "ui/icons/touch.webp",
+        "ui/icons/watch.webp",
         "ui/logo.webp",
+        "ui/mode-cpu.webp",
+        "ui/mode-versus.webp",
+        "ui/mode-watch.webp",
         "ui/portrait-frame.webp",
         "ui/portrait-selected.webp",
         "ui/result-banner.webp",
-        "ui/score-panel.webp"
+        "ui/score-panel.webp",
+        "ui/title-scene.webp"
       ],
       "config": {
         "scoreboard": {
@@ -198,11 +204,16 @@
         "ui/icons/sound-off.webp",
         "ui/icons/sound-on.webp",
         "ui/icons/touch.webp",
+        "ui/icons/watch.webp",
         "ui/logo.webp",
+        "ui/mode-cpu.webp",
+        "ui/mode-versus.webp",
+        "ui/mode-watch.webp",
         "ui/portrait-frame.webp",
         "ui/portrait-selected.webp",
         "ui/result-banner.webp",
-        "ui/score-panel.webp"
+        "ui/score-panel.webp",
+        "ui/title-scene.webp"
       ],
       "config": {
         "scoreboard": {
@@ -303,11 +314,16 @@
         "ui/icons/sound-off.webp",
         "ui/icons/sound-on.webp",
         "ui/icons/touch.webp",
+        "ui/icons/watch.webp",
         "ui/logo.webp",
+        "ui/mode-cpu.webp",
+        "ui/mode-versus.webp",
+        "ui/mode-watch.webp",
         "ui/portrait-frame.webp",
         "ui/portrait-selected.webp",
         "ui/result-banner.webp",
-        "ui/score-panel.webp"
+        "ui/score-panel.webp",
+        "ui/title-scene.webp"
       ],
       "config": {
         "canvasScale": 0.5,
@@ -410,11 +426,16 @@
         "ui/icons/sound-off.webp",
         "ui/icons/sound-on.webp",
         "ui/icons/touch.webp",
+        "ui/icons/watch.webp",
         "ui/logo.webp",
+        "ui/mode-cpu.webp",
+        "ui/mode-versus.webp",
+        "ui/mode-watch.webp",
         "ui/portrait-frame.webp",
         "ui/portrait-selected.webp",
         "ui/result-banner.webp",
-        "ui/score-panel.webp"
+        "ui/score-panel.webp",
+        "ui/title-scene.webp"
       ],
       "config": {
         "canvasScale": 1,
@@ -517,11 +538,16 @@
         "ui/icons/sound-off.webp",
         "ui/icons/sound-on.webp",
         "ui/icons/touch.webp",
+        "ui/icons/watch.webp",
         "ui/logo.webp",
+        "ui/mode-cpu.webp",
+        "ui/mode-versus.webp",
+        "ui/mode-watch.webp",
         "ui/portrait-frame.webp",
         "ui/portrait-selected.webp",
         "ui/result-banner.webp",
-        "ui/score-panel.webp"
+        "ui/score-panel.webp",
+        "ui/title-scene.webp"
       ],
       "config": {
         "canvasScale": 1,

@@ -325,10 +325,14 @@ input::placeholder { color: #9aa3ba; }
   padding: 0 0 1.4cqh 1.4cqh;
 }
 .card.locked img { filter: brightness(0) opacity(0.55); }
-.card .tag {
+.card .tags {
   position: absolute;
   top: 0.5cqh;
   left: 0.5cqh;
+  display: flex;
+  gap: 0.4cqh;
+}
+.card .tag {
   background: var(--accent);
   color: var(--on-dark);
   border-radius: 0.6cqh;

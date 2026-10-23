@@ -5,7 +5,7 @@
   import { play } from '../game/audio.js';
   import { ui } from '../ui.svelte.js';
 
-  // cursor：目前看的角色（索引）；selected：已選定的角色 id（打勾）；tags：{ id: '1P' } 角標
+  // cursor：目前看的角色（索引）；selected：已選定的角色 id（打勾）；tags：{ id: ['1P'] } 角標
   let { cursor = $bindable(0), selected = null, tags = {}, showLocked = true, onpick = () => {} } = $props();
 
   const list = $derived(CHARACTERS.filter((c) => showLocked || isUnlocked(c)));
@@ -55,7 +55,7 @@
         <span class="lock"><img src="{asset('ui/icons/lock.webp')}" alt="" /></span>
       {/if}
       <span>{open ? c.name : '？？？'}</span>
-      {#if tags[c.id]}<i class="tag">{tags[c.id]}</i>{/if}
+      {#if tags[c.id]?.length}<span class="tags">{#each tags[c.id] as tag, i (i)}<i class="tag">{tag}</i>{/each}</span>{/if}
     </button>
   {/each}
 </div>
