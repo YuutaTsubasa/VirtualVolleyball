@@ -148,6 +148,8 @@ jobs:
 
       # src-tauri/gen 不進版控，每次依 tauri.conf.json 產生 Android 專案
       - run: npx tauri android init --ci
+      # init 產生的專案用的是 Tauri 預設圖示，換成我們的
+      - run: npx tauri icon src-tauri/icons/icon.png
 
       - run: npx tauri android build --apk
 
@@ -214,6 +216,8 @@ jobs:
       - run: npm ci
 
       - run: npx tauri ios init --ci
+      # init 產生的專案用的是 Tauri 預設圖示，換成我們的
+      - run: npx tauri icon src-tauri/icons/icon.png
 
       # 沒有 Apple 開發者帳號只能做模擬器版；實機版需要簽章（見 README）
       - run: npx tauri ios build --target aarch64-sim --debug
