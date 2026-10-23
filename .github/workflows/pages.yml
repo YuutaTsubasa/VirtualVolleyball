@@ -53,7 +53,8 @@ jobs:
         env:
           PAGES_BASE: /${{ github.event.repository.name }}/
           VITE_SIGNAL_SERVER: ${{ vars.SIGNAL_SERVER }}
-          VITE_WEB_URL: ${{ steps.pages.outputs.base_url }}/
+          # 分享連結用 https（Pages 回報的 base_url 是 http）
+          VITE_WEB_URL: https://yuuta-tsubasa.studio/${{ github.event.repository.name }}/
 
       - uses: actions/upload-pages-artifact@v3
         with:

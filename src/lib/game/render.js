@@ -250,6 +250,8 @@ export function resetEffects() {
   shake = 0;
   setMood(0, 'normal', 0);
   setMood(1, 'normal', 0);
+  lastFacing[0] = 1;
+  lastFacing[1] = -1;
 }
 
 // 依比賽事件產生特效與台詞
@@ -295,6 +297,14 @@ export function handleEvents(match) {
 
 // ---------- 角色 ----------
 
+// 角色面向：移動或飛撲時看速度方向，飛撲後起身時維持飛撲的方向，站著不動時面向球網
+const lastFacing = [1, -1];
+function facingOf(p) {
+  if (p.state !== 'recover' && Math.abs(p.vx) > 0.1) lastFacing[p.side] = Math.sign(p.vx);
+  else if (p.state === 'normal') lastFacing[p.side] = p.toward;
+  return lastFacing[p.side];
+}
+
 function rr(g, x, y, w, h, r) {
   g.beginPath();
   g.roundRect(x, y, w, h, r);
@@ -306,7 +316,7 @@ function drawChibi(g, p, expression, celebrate) {
   const t = p.anim;
   const running = p.onGround && Math.abs(p.vx) > 0.1 && p.state === 'normal';
   const airborne = !p.onGround;
-  const facing = p.vx !== 0 && p.state === 'normal' ? Math.sign(p.vx) : p.toward;
+  const facing = facingOf(p);
 
   g.save();
   g.translate(p.x, p.y);
@@ -445,7 +455,7 @@ function drawSprite(g, p, img, celebrate, sad) {
   const i = SPRITE_FRAMES.indexOf(frame);
   const drawH = cfg.spriteSize;
   const drawW = drawH * (fw / fh);
-  const facing = p.state === 'normal' && p.vx !== 0 ? Math.sign(p.vx) : p.toward;
+  const facing = facingOf(p);
   // 起身時壓扁一點、等待時微微呼吸
   const breathe = frame === 'idle' ? 1 + Math.sin(p.anim * 0.08) * 0.012 : 1;
   const squash = p.state === 'recover' ? 0.94 : 1;

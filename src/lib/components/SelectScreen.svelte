@@ -24,29 +24,41 @@
   let difficulty = $state('normal');
   let target = $state(10);
   let grid;
+  let startButton = $state();
 
   const current = $derived(CHARACTERS[cursor]);
-  const step = $derived(picks.length);
-  const tags = $derived(
-    Object.fromEntries(picks.map((c, i) => [c.id, mode === 'versus' ? `${i + 1}P` : i === 0 ? (mode === 'cpu' ? '1P' : '左') : '右'])),
-  );
+  // 第一步選 1P（或左邊），第二步選對手（或右邊）；選完對手不會馬上開始，按「開始比賽」才開始
+  const step = $derived(Math.min(picks.length, 1));
+  const TAGS = { cpu: ['1P', 'CPU'], versus: ['1P', '2P'], watch: ['左', '右'] };
+  const tags = $derived(Object.fromEntries(picks.map((c, i) => [c.id, TAGS[mode][i]])));
 
   onMount(() => grid.focusIndex(cursor));
 
   function pick(character = current) {
     if (!isUnlocked(character)) return play('deny');
     play('pick');
-    picks.push(character);
-    if (picks.length === 2) {
-      onstart({ characters: [...picks], target: Number(target), difficulty });
+    if (picks.length >= 1) {
+      // 第二步：只是選定對手（可以一直換），焦點移到「開始比賽」
+      picks[1] = character;
+      if (ui.input !== 'touch') startButton?.focus({ preventScroll: true });
       return;
     }
+    picks.push(character);
     // 游標移到下一個角色，方便直接按確定
     let next = CHARACTERS.indexOf(character);
     do next = (next + 1) % CHARACTERS.length;
     while (!isUnlocked(CHARACTERS[next]));
     cursor = next;
     if (ui.input !== 'touch') grid.focusIndex(next);
+  }
+
+  // 「決定」（第一步）／「開始比賽」（第二步；還沒選對手就用游標所在的角色）
+  function confirm() {
+    if (step === 0) return pick();
+    const opponent = picks[1] ?? current;
+    if (!isUnlocked(opponent)) return play('deny');
+    play('select');
+    onstart({ characters: [picks[0], opponent], target: Number(target), difficulty });
   }
 
   function randomPick() {
@@ -56,7 +68,7 @@
 
   function back() {
     play('select');
-    if (picks.length) picks.pop();
+    if (picks.length) picks.pop(); // 先取消對手，再取消自己的角色
     else onback();
   }
 
@@ -103,7 +115,13 @@
   {#snippet foot()}
     <BackButton onclick={back} />
     <ControlHint extra={ui.input === 'touch' ? '點一下看資料，再點一下決定' : ''} />
-    <button type="button" class="vbtn primary" disabled={!isUnlocked(current)} onclick={() => pick()}>
+    <button
+      type="button"
+      class="vbtn primary"
+      bind:this={startButton}
+      disabled={step === 0 ? !isUnlocked(current) : !isUnlocked(picks[1] ?? current)}
+      onclick={confirm}
+    >
       {step === 1 ? '開始比賽' : '決定'}
     </button>
   {/snippet}
