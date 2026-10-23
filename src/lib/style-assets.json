@@ -2,12 +2,21 @@
   "styles": {
     "anime90": {
       "files": [
+        "game/net.webp",
         "ui/icons/watch.webp",
         "ui/mode-cpu.webp",
         "ui/mode-versus.webp",
         "ui/mode-watch.webp",
         "ui/title-scene.webp"
-      ]
+      ],
+      "config": {
+        "net": {
+          "tape": 190,
+          "bottom": 1016,
+          "left": 64,
+          "right": 128
+        }
+      }
     },
     "modern-paint": {
       "files": [
@@ -112,10 +121,10 @@
           "y": 0.5
         },
         "net": {
-          "tape": 219,
-          "bottom": 1013,
-          "left": 10,
-          "right": 182
+          "tape": 190,
+          "bottom": 1016,
+          "left": 64,
+          "right": 128
         }
       }
     },
@@ -222,10 +231,10 @@
           "y": 0.51
         },
         "net": {
-          "tape": 203,
+          "tape": 190,
           "bottom": 1016,
-          "left": 39,
-          "right": 154
+          "left": 64,
+          "right": 128
         }
       }
     },
@@ -333,10 +342,10 @@
           "y": 0.51
         },
         "net": {
-          "tape": 212,
+          "tape": 192,
           "bottom": 1016,
-          "left": 28,
-          "right": 160
+          "left": 64,
+          "right": 128
         },
         "spriteSize": 256
       }
@@ -445,10 +454,10 @@
           "y": 0.49
         },
         "net": {
-          "tape": 208,
+          "tape": 190,
           "bottom": 1016,
-          "left": 38,
-          "right": 152
+          "left": 64,
+          "right": 128
         },
         "spriteSize": 256
       }
@@ -557,10 +566,10 @@
           "y": 0.51
         },
         "net": {
-          "tape": 218,
+          "tape": 190,
           "bottom": 1016,
-          "left": 38,
-          "right": 154
+          "left": 64,
+          "right": 128
         },
         "spriteSize": 256
       }

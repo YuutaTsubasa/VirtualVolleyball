@@ -66,7 +66,7 @@ const ANIME90 = {
   pixelated: false,
   canvasScale: 2,
   scoreboard: { left: 0.2775, right: 0.7325, y: 0.49 },
-  net: { tape: 190, bottom: 1016, left: 41, right: 152 },
+  net: { tape: 190, bottom: 1016, left: 64, right: 128 },
   spriteAnchorY: 496 / 512,
   // 角色在遊戲座標裡畫多大。像素風格要讓「邏輯像素」剛好整數對到畫布像素，
   // 不然最近鄰縮小會吃掉輪廓線（例如 Game Boy 128 邏輯格 × 內部 0.5 倍 → 256）
