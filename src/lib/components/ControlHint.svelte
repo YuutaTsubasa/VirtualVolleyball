@@ -1,16 +1,17 @@
 <script>
   // 右下角的操作提示：依目前用的是鍵盤、手把還是觸控換說法
   import { asset } from '../art-style.svelte.js';
+  import { t } from '../i18n.svelte.js';
   import { ui } from '../ui.svelte.js';
 
   let { extra = '' } = $props();
   const icon = $derived(ui.input === 'pad' ? 'gamepad' : ui.input === 'touch' ? 'touch' : 'keyboard');
   const text = $derived(
     ui.input === 'pad'
-      ? '十字鍵 選擇　A 確定　B 返回'
+      ? t('十字鍵 選擇　A 確定　B 返回')
       : ui.input === 'touch'
-        ? '點選操作'
-        : '↑↓←→ 選擇　Enter 確定　Esc 返回　M 靜音',
+        ? t('點選操作')
+        : t('↑↓←→ 選擇　Enter 確定　Esc 返回　M 靜音'),
   );
 </script>
 

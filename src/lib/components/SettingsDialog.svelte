@@ -2,6 +2,7 @@
   // 設定：畫面風格、音樂與音效音量、靜音。任何畫面都能打開（右上角齒輪、暫停選單），改了馬上生效、自動儲存。
   // 之後加多國語言時，在「偏好設定」放一列語言選項（做法同 TaiwanMahjong 的 Settings.svelte）。
   import { ART_STYLES, artStyle, setArtStyle, asset } from '../art-style.svelte.js';
+  import { t, i18n, setLang, LANGUAGES } from '../i18n.svelte.js';
   import { styleProgress } from '../style-assets.js';
   import { soundSettings, setVolume, toggleMute } from '../audio/sound.svelte.js';
   import { ui } from '../ui.svelte.js';
@@ -24,6 +25,11 @@
     setArtStyle(id);
   }
 
+  function chooseLang(id) {
+    play('select');
+    setLang(id);
+  }
+
   function done() {
     play('back');
     ui.settingsOpen = false;
@@ -32,31 +38,38 @@
 
 <dialog class="settings" bind:this={dialog} onclose={() => (ui.settingsOpen = false)}>
   <div class="panel">
-    <div class="panel-head">設定</div>
+    <div class="panel-head">{t('設定')}</div>
     <div class="panel-body">
-      <h3>畫面風格</h3>
+      <h3>{t('畫面風格')}</h3>
       <div class="styles">
         {#each ART_STYLES as s (s.id)}
           {@const progress = styleProgress(s.id)}
           <button type="button" class="style-card" class:selected={artStyle.id === s.id} onclick={() => choose(s.id)}>
             <span class="pic" class:pixel={s.pixelated}>
               <img src={asset('characters/xiaochun/happy.webp', s.id)} alt="" class:pending={progress === 0} />
-              {#if progress < 1}<span class="wip">製作中</span>{/if}
+              {#if progress < 1}<span class="wip">{t('製作中')}</span>{/if}
             </span>
-            <b>{s.name}</b>
+            <b>{t(s.name)}</b>
           </button>
         {/each}
       </div>
 
-      <h3>聲音</h3>
+      <h3>{t('語言')}{#if i18n.lang !== 'en'}<span class="en"> · Language</span>{/if}</h3>
+      <div class="langs" role="radiogroup">
+        {#each LANGUAGES as l (l.id)}
+          <button type="button" role="radio" aria-checked={i18n.lang === l.id} class="vbtn small" class:active={i18n.lang === l.id} onclick={() => chooseLang(l.id)}>{l.name}</button>
+        {/each}
+      </div>
+
+      <h3>{t('聲音')}</h3>
       <div class="audio">
         <label class="row">
-          <span>音樂</span>
+          <span>{t('音樂')}</span>
           <input type="range" min="0" max="1" step="0.05" value={soundSettings.bgm} oninput={(e) => setVolume('bgm', Number(e.currentTarget.value))} />
           <output>{Math.round(soundSettings.bgm * 100)}%</output>
         </label>
         <label class="row">
-          <span>音效</span>
+          <span>{t('音效')}</span>
           <input
             type="range"
             min="0"
@@ -69,17 +82,17 @@
           <output>{Math.round(soundSettings.sfx * 100)}%</output>
         </label>
         <div class="row mute">
-          <span>靜音</span>
+          <span>{t('靜音')}</span>
           <button type="button" class="vbtn small toggle" class:active={soundSettings.muted} aria-pressed={soundSettings.muted} onclick={toggleMute}>
-            {soundSettings.muted ? '已靜音' : '關閉'}
+            {soundSettings.muted ? t('已靜音') : t('關閉')}
           </button>
-          <small>鍵盤 M 也可以切換</small>
+          <small>{t('鍵盤 M 也可以切換')}</small>
         </div>
       </div>
 
-      <p class="note">設定會自動儲存在這台電腦上。</p>
+      <p class="note">{t('設定會自動儲存在這台電腦上。')}</p>
       <div class="actions">
-        <button type="button" class="vbtn primary" onclick={done}>完成</button>
+        <button type="button" class="vbtn primary" onclick={done}>{t('完成')}</button>
       </div>
     </div>
   </div>
@@ -106,6 +119,15 @@
     font-size: 2.8cqh;
     font-weight: 900;
     letter-spacing: 0.15em;
+  }
+  .langs {
+    display: flex;
+    gap: 1cqh;
+    margin-bottom: 1cqh;
+  }
+  h3 .en {
+    font-weight: 700;
+    opacity: 0.6;
   }
   .styles {
     display: grid;

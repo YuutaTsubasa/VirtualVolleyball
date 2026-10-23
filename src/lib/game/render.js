@@ -4,6 +4,7 @@ import { W, H, GROUND, NET, BALL_R, PLAYER_HALF_W } from './constants.js';
 import { pickLine } from './characters.js';
 import { asset, currentConfig } from '../art-style.svelte.js';
 import { loadImage } from '../preload.svelte.js';
+import { t, displayName } from '../i18n.svelte.js';
 
 // 內部解析度：一般風格 2 倍（1920×1080）比較銳利；像素風格用較低的倍數再放大（見 style-assets.js）
 let SCALE = 2;
@@ -445,17 +446,17 @@ function drawHud(g, match, names) {
       drawFacing(g, img, x - 6, 10, 86, 86, side);
       g.restore();
     }
-    const label = names?.[side] ? `${names[side]}（${p.character.name}）` : p.character.name;
+    const label = names?.[side] ? t('{player}（{character}）', { player: displayName(names[side]), character: p.character.name }) : p.character.name;
     outlinedText(g, label, side === 0 ? x + 84 : x - 10, 30, 20, pal.text, side === 0 ? 'left' : 'right');
     outlinedText(g, String(match.score[side]), side === 0 ? x + 84 : x - 10, 64, 44, side === match.lastScorer && match.phase === 'point' ? pal.flash : pal.text, side === 0 ? 'left' : 'right');
   }
-  outlinedText(g, `${match.target} 分勝`, W / 2, 26, 16, pal.text);
+  outlinedText(g, t('{n} 分勝', { n: match.target }), W / 2, 26, 16, pal.text);
 
   if (match.phase === 'ready') {
     const server = match.players[match.server];
-    outlinedText(g, `${server.character.name} 發球`, W / 2, 190, 40, pal.text);
+    outlinedText(g, t('{name} 發球', { name: server.character.name }), W / 2, 190, 40, pal.text);
   } else if (match.phase === 'point' && match.timer > 40) {
-    outlinedText(g, '得分！', W / 2, 190, 64, pal.flash);
+    outlinedText(g, t('得分！'), W / 2, 190, 64, pal.flash);
   }
 }
 
@@ -471,7 +472,7 @@ function drawScoreboard(g, match, names, panel) {
     const cx = px + pw * (side === 0 ? cfg.scoreboard.left : cfg.scoreboard.right);
     outlinedText(g, String(match.score[side]).padStart(2, '0'), cx, py + ph * cfg.scoreboard.y, 40, flash ? pal.flash : pal.text);
   }
-  outlinedText(g, `${match.target} 分勝`, W / 2, py + ph + 10, 14, pal.text);
+  outlinedText(g, t('{n} 分勝', { n: match.target }), W / 2, py + ph + 10, 14, pal.text);
 
   // 兩邊角落：頭像＋名字
   for (const side of [0, 1]) {
@@ -496,15 +497,15 @@ function drawScoreboard(g, match, names, panel) {
     g.strokeStyle = pal.flash;
     rr(g, x + 3, y + 3, size - 6, size - 6, 6);
     g.stroke();
-    const label = names?.[side] ? `${names[side]}（${p.character.name}）` : p.character.name;
+    const label = names?.[side] ? t('{player}（{character}）', { player: displayName(names[side]), character: p.character.name }) : p.character.name;
     outlinedText(g, label, side === 0 ? x + size + 10 : x - 10, y + size / 2, 19, pal.text, side === 0 ? 'left' : 'right');
   }
 
   if (match.phase === 'ready') {
     const server = match.players[match.server];
-    outlinedText(g, `${server.character.name} 發球`, W / 2, 190, 40, pal.text);
+    outlinedText(g, t('{name} 發球', { name: server.character.name }), W / 2, 190, 40, pal.text);
   } else if (match.phase === 'point' && match.timer > 40) {
-    outlinedText(g, '得分！', W / 2, 190, 64, pal.flash);
+    outlinedText(g, t('得分！'), W / 2, 190, 64, pal.flash);
   }
 }
 
@@ -570,7 +571,7 @@ function drawYouMarker(g, p) {
   g.closePath();
   g.fill();
   g.stroke();
-  outlinedText(g, '你', p.x, y - 13, 18, pal.text);
+  outlinedText(g, t('你'), p.x, y - 13, 18, pal.text);
 }
 
 // opts：{ you: 自己的座位（連線時）, names: 兩邊玩家名稱（連線時） }

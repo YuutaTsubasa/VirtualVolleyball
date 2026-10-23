@@ -2,6 +2,7 @@
   // 觸控按鈕：左邊搖桿（左右移動、往上推跳、往下推是重扣方向），右邊「跳」「擊」兩顆鈕。
   // 雙人同一台平板時，兩組各放在自己那一側。
   import { asset } from '../art-style.svelte.js';
+  import { t } from '../i18n.svelte.js';
   import { onDestroy } from 'svelte';
   import { setTouch, pressTouchHit, clearTouch } from '../game/input.js';
 
@@ -76,7 +77,7 @@
 </script>
 
 <div class="touch" class:split>
-  <button type="button" tabindex="-1" class="pause" aria-label="暫停" onclick={onpause}><img src="{asset('ui/icons/pause.webp')}" alt="" /></button>
+  <button type="button" tabindex="-1" class="pause" aria-label={t('暫停')} onclick={onpause}><img src="{asset('ui/icons/pause.webp')}" alt="" /></button>
   {#each slots as slot (slot)}
     {@const mirror = split && slot === 1}
     <div
@@ -101,7 +102,7 @@
         onpointerup={(e) => button(slot, 'jump', false, e)}
         onpointercancel={(e) => button(slot, 'jump', false, e)}
         oncontextmenu={(e) => e.preventDefault()}
-      >跳</button>
+      >{t('跳')}</button>
       <button
         type="button"
         tabindex="-1"
@@ -111,7 +112,7 @@
         onpointerup={(e) => button(slot, 'hit', false, e)}
         onpointercancel={(e) => button(slot, 'hit', false, e)}
         oncontextmenu={(e) => e.preventDefault()}
-      >擊</button>
+      >{t('擊')}</button>
     </div>
   {/each}
 </div>

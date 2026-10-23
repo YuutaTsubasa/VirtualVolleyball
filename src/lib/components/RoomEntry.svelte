@@ -5,6 +5,7 @@
   import { SIGNAL_SERVER, WEB_URL, roomCodeOf } from '../site.js';
   import { CHARACTERS, isUnlocked, getCharacter } from '../game/characters.js';
   import { play } from '../game/audio.js';
+  import { t, serverText } from '../i18n.svelte.js';
   import ScreenFrame from './ScreenFrame.svelte';
   import BackButton from './BackButton.svelte';
   import CharacterGrid from './CharacterGrid.svelte';
@@ -46,7 +47,7 @@
     store('vb_host_mode', m);
   }
 
-  const playerName = () => name.trim() || '玩家';
+  const playerName = () => name.trim() || t('玩家');
 
   function remember() {
     store('vb_name', name);
@@ -69,27 +70,27 @@
       try {
         await startHost(port, playerName(), character);
       } catch (error) {
-        toast(String(error));
+        toast(serverText(String(error)));
       } finally {
         busy = false;
       }
       return;
     }
-    if (!address.trim()) return toast(`請輸入房主的位址，例如 192.168.1.5:${DEFAULT_PORT}`);
-    if (isHost && !hostKey.trim()) return toast('請輸入伺服器顯示的房主金鑰');
+    if (!address.trim()) return toast(t('請輸入房主的位址，例如 {example}', { example: `192.168.1.5:${DEFAULT_PORT}` }));
+    if (isHost && !hostKey.trim()) return toast(t('請輸入伺服器顯示的房主金鑰'));
     if (!servedByServer) store('vb_address', address);
     connect(address, { name: playerName(), hostKey: isHost ? hostKey.trim() : undefined, character });
   }
 
   // 加入線上房間（輸入房號或分享連結）
   function joinRoomCode(spectate) {
-    if (net.online === false) return toast('線上房間暫時無法使用，請稍後再試');
+    if (net.online === false) return toast(t('線上房間暫時無法使用，請稍後再試'));
     store('vb_address', address);
     joinOnline(roomCodeOf(address), { name: playerName(), spectate, character });
   }
 
   function spectate() {
-    if (!address.trim()) return toast(net.online ? '請輸入房號或房主的位址' : '請輸入房主的位址');
+    if (!address.trim()) return toast(net.online ? t('請輸入房號或房主的位址') : t('請輸入房主的位址'));
     remember();
     if (roomCodeOf(address)) return joinRoomCode(true);
     connect(address, { name: playerName(), spectate: true });
@@ -100,7 +101,7 @@
     try {
       await stopHost();
     } catch (error) {
-      toast(String(error));
+      toast(serverText(String(error)));
     } finally {
       busy = false;
     }
@@ -114,21 +115,21 @@
   const hint = $derived(
     connecting
       ? net.code
-        ? `連線到房間 ${net.code} 中…`
-        : `連線到 ${net.address} 中…`
+        ? t('連線到房間 {code} 中…', { code: net.code })
+        : t('連線到 {address} 中…', { address: net.address })
       : online
-        ? '開房後會拿到 5 碼房號與分享連結，朋友在任何地方都能加入。'
+        ? t('開房後會拿到 5 碼房號與分享連結，朋友在任何地方都能加入。')
         : isHost
           ? inTauri
-            ? '開房後，可在大廳分享網址邀請朋友。'
-            : '在網頁開房：輸入伺服器位址與啟動時印出的房主金鑰。'
+            ? t('開房後，可在大廳分享網址邀請朋友。')
+            : t('在網頁開房：輸入伺服器位址與啟動時印出的房主金鑰。')
           : net.online
-            ? '輸入房號、分享連結或區網位址；沒有座位時會改成觀戰。'
-            : '輸入房主分享的網址；沒有座位時會改成觀戰。',
+            ? t('輸入房號、分享連結或區網位址；沒有座位時會改成觀戰。')
+            : t('輸入房主分享的網址；沒有座位時會改成觀戰。'),
   );
 </script>
 
-<ScreenFrame title={isHost ? '開設房間' : '加入房間'} subtitle="設定玩家資料與角色">
+<ScreenFrame title={isHost ? t('開設房間') : t('加入房間')} subtitle={t('設定玩家資料與角色')}>
   <form
     class="panel profile"
     onsubmit={(e) => {
@@ -136,46 +137,46 @@
       submit();
     }}
   >
-    <div class="panel-head">玩家資料</div>
+    <div class="panel-head">{t('玩家資料')}</div>
     <div class="panel-body">
-      <label class="field">玩家名稱
-        <input bind:value={name} placeholder="玩家" maxlength="16" autocomplete="nickname" />
+      <label class="field">{t('玩家名稱')}
+        <input bind:value={name} placeholder={t('玩家')} maxlength="16" autocomplete="nickname" />
       </label>
 
       {#if isHost && SIGNAL_SERVER}
-        <div class="field">開房方式
+        <div class="field">{t('開房方式')}
           <div class="modes" role="radiogroup">
-            <button type="button" role="radio" aria-checked={online} class="vbtn small" class:active={online} disabled={!net.online} onclick={() => pickMode('online')}>線上（房號）</button>
-            <button type="button" role="radio" aria-checked={!online} class="vbtn small" class:active={!online} onclick={() => pickMode('lan')}>{inTauri ? '區網（桌面 App）' : '區網（自架伺服器）'}</button>
+            <button type="button" role="radio" aria-checked={online} class="vbtn small" class:active={online} disabled={!net.online} onclick={() => pickMode('online')}>{t('線上（房號）')}</button>
+            <button type="button" role="radio" aria-checked={!online} class="vbtn small" class:active={!online} onclick={() => pickMode('lan')}>{inTauri ? t('區網（桌面 App）') : t('區網（自架伺服器）')}</button>
           </div>
-          {#if net.online === null}<small>檢查線上房間中…</small>{:else if !net.online}<small>線上房間暫時無法使用，請稍後再試。</small>{/if}
+          {#if net.online === null}<small>{t('檢查線上房間中…')}</small>{:else if !net.online}<small>{t('線上房間暫時無法使用，請稍後再試。')}</small>{/if}
         </div>
       {/if}
 
       {#if online}
-        <p class="note">比賽在你的瀏覽器裡跑，朋友用 WebRTC 直接連到你。<small>開著這個畫面房間才在，關掉分頁房間就關了。</small></p>
+        <p class="note">{t('比賽在你的瀏覽器裡跑，朋友用 WebRTC 直接連到你。')}<small>{t('開著這個畫面房間才在，關掉分頁房間就關了。')}</small></p>
       {:else if isHost && inTauri}
         {#if net.hostInfo}
-          <p class="note">房間已在通訊埠 <b>{net.hostInfo.port}</b> 開著。</p>
-          <button type="button" class="vbtn small" onclick={closeRoom} disabled={busy}>關閉房間</button>
+          <p class="note">{t('房間已在通訊埠 {port} 開著。', { port: net.hostInfo.port })}</p>
+          <button type="button" class="vbtn small" onclick={closeRoom} disabled={busy}>{t('關閉房間')}</button>
         {:else}
-          <label class="field">通訊埠
+          <label class="field">{t('通訊埠')}
             <input bind:value={port} type="number" min="1" max="65535" required />
-            <small>預設 {DEFAULT_PORT}</small>
+            <small>{t('預設 {port}', { port: DEFAULT_PORT })}</small>
           </label>
         {/if}
       {:else}
-        <label class="field">{isHost ? '伺服器位址' : net.online ? '房號或網址' : '房間網址'}
+        <label class="field">{isHost ? t('伺服器位址') : net.online ? t('房號或網址') : t('房間網址')}
           <input
             bind:value={address}
-            placeholder={!isHost && net.online ? `K7QX2 或 192.168.1.5:${DEFAULT_PORT}` : `192.168.1.5:${DEFAULT_PORT}`}
+            placeholder={!isHost && net.online ? t('{code} 或 {address}', { code: 'K7QX2', address: `192.168.1.5:${DEFAULT_PORT}` }) : `192.168.1.5:${DEFAULT_PORT}`}
             readonly={servedByServer && !code}
             spellcheck="false"
           />
         </label>
         {#if isHost}
-          <label class="field">房主金鑰
-            <input bind:value={hostKey} placeholder="伺服器啟動時印出的金鑰" />
+          <label class="field">{t('房主金鑰')}
+            <input bind:value={hostKey} placeholder={t('伺服器啟動時印出的金鑰')} />
           </label>
         {/if}
       {/if}
@@ -185,17 +186,17 @@
         <div>
           <b>{chosen.name}</b>
           <small>{chosen.intro}</small>
-          <span class="badge">已選擇</span>
+          <span class="badge">{t('已選擇')}</span>
         </div>
       </div>
     </div>
   </form>
 
   <div class="panel roster">
-    <div class="panel-head">選擇角色</div>
+    <div class="panel-head">{t('選擇角色')}</div>
     <div class="panel-body">
       <CharacterGrid bind:cursor selected={character} showLocked={false} onpick={(c) => (character = c.id)} />
-      <p class="tip">點選頭像，選擇你的角色</p>
+      <p class="tip">{t('點選頭像，選擇你的角色')}</p>
     </div>
   </div>
 
@@ -204,12 +205,12 @@
     <div class="hint-bar">{hint}</div>
     <div class="actions">
       {#if connecting}
-        <button type="button" class="vbtn small" onclick={disconnect}>取消</button>
+        <button type="button" class="vbtn small" onclick={disconnect}>{t('取消')}</button>
       {:else if !isHost}
-        <button type="button" class="vbtn small" onclick={spectate}>觀戰</button>
+        <button type="button" class="vbtn small" onclick={spectate}>{t('觀戰')}</button>
       {/if}
       <button type="button" class="vbtn primary" disabled={busy || connecting} onclick={submit}>
-        {isHost ? (!online && net.hostInfo ? '回到房間' : '開設房間') : '加入房間'}
+        {isHost ? (!online && net.hostInfo ? t('回到房間') : t('開設房間')) : t('加入房間')}
       </button>
     </div>
   {/snippet}
@@ -246,7 +247,8 @@
   .modes .vbtn {
     flex: 1;
     min-width: 0;
-    padding-inline: 1cqh;
+    padding-inline: 1.6cqh;
+    font-size: 2.4cqh;
     white-space: nowrap;
   }
   .chosen {

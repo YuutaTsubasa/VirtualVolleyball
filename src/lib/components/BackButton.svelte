@@ -1,8 +1,9 @@
 <script>
   // 左下角的「◀ 返回」
   import { play } from '../game/audio.js';
+  import { t } from '../i18n.svelte.js';
 
-  let { label = '返回', onclick } = $props();
+  let { label, onclick } = $props();
 </script>
 
 <button
@@ -12,4 +13,4 @@
     play('back');
     onclick();
   }}
-><span class="tri"></span>{label}</button>
+><span class="tri"></span>{label ?? t('返回')}</button>

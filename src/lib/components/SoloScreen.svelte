@@ -9,6 +9,7 @@
   import SpritePose from './SpritePose.svelte';
   import BackButton from './BackButton.svelte';
   import ControlHint from './ControlHint.svelte';
+  import { t } from '../i18n.svelte.js';
 
   let { onpick, onback } = $props();
 
@@ -61,7 +62,7 @@
   {/if}
 {/snippet}
 
-<ScreenFrame title="單機遊玩" subtitle="選擇遊玩模式">
+<ScreenFrame title={t('單機遊玩')} subtitle={t('選擇遊玩模式')}>
   <div class="modes" bind:this={list}>
     {#each MODES as m, i (m.id)}
       <button
@@ -76,7 +77,7 @@
         onclick={() => (ui.input === 'touch' && current !== i ? (current = i) : choose(i))}
       >
         <span class="icon">{@render icon(m.id)}</span>
-        <span class="text"><b>{m.title}</b><small>{m.sub}</small></span>
+        <span class="text"><b>{t(m.title)}</b><small>{t(m.sub)}</small></span>
         <span class="tag">{m.tag}</span>
       </button>
     {/each}
@@ -101,7 +102,7 @@
         {/if}
       {/key}
     </div>
-    <div class="caption">{mode.caption}</div>
+    <div class="caption">{t(mode.caption)}</div>
   </div>
 
   {#snippet foot()}

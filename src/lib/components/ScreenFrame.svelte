@@ -5,6 +5,12 @@
   import SettingsButton from './SettingsButton.svelte';
 
   let { title, subtitle = '', children, foot } = $props();
+  // 標題太長（英文、日文）時縮小字級，免得超出橫幅：中文字約 1.2 字寬（含字距），英數約 0.6
+  const titleSize = $derived.by(() => {
+    let w = 0;
+    for (const ch of title) w += /[　-鿿＀-￯]/.test(ch) ? 1.2 : 0.62;
+    return `min(7.4cqh, ${(44 / Math.max(w, 1)).toFixed(2)}cqw)`;
+  });
 </script>
 
 <section class="screen framed">
@@ -13,7 +19,7 @@
     <header class="frame-head">
       <Logo />
       <div class="banner">
-        <h2>{title}</h2>
+        <h2 style:font-size={titleSize}>{title}</h2>
         {#if subtitle}<p>{subtitle}</p>{/if}
       </div>
       <SettingsButton />

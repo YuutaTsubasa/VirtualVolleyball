@@ -4,6 +4,7 @@
   import { CHARACTERS, isUnlocked } from '../game/characters.js';
   import { play } from '../game/audio.js';
   import { ui } from '../ui.svelte.js';
+  import { t } from '../i18n.svelte.js';
 
   // cursor：目前看的角色（索引）；selected：已選定的角色 id（打勾）；tags：{ id: ['1P'] } 角標
   let { cursor = $bindable(0), selected = null, tags = {}, showLocked = true, onpick = () => {} } = $props();
@@ -54,7 +55,7 @@
       {:else}
         <span class="lock"><img src="{asset('ui/icons/lock.webp')}" alt="" /></span>
       {/if}
-      <span>{open ? c.name : '？？？'}</span>
+      <span>{open ? c.name : t('？？？')}</span>
       {#if tags[c.id]?.length}<span class="tags">{#each tags[c.id] as tag, i (i)}<i class="tag">{tag}</i>{/each}</span>{/if}
     </button>
   {/each}

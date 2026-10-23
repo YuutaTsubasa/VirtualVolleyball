@@ -9,6 +9,7 @@
 //   sprite 設成 false 的角色會改用「頭像 + 程式畫的身體」。
 
 import { asset } from '../art-style.svelte.js';
+import { t } from '../i18n.svelte.js';
 
 export const EXPRESSIONS = ['normal', 'happy', 'surprised', 'sad', 'win'];
 
@@ -143,9 +144,17 @@ const RAW = [
   },
 ];
 
+// name、intro 讀取時才翻成目前的語言（zhName 是原文）；台詞在 pickLine() 翻
 export const CHARACTERS = RAW.map((c) => ({
   sprite: true,
   ...c,
+  zhName: c.name,
+  get name() {
+    return t(c.name);
+  },
+  get intro() {
+    return t(c.intro);
+  },
   portraits: portraits(c.id),
   get spriteSrc() {
     return asset(`sprites/${c.id}.webp`);
@@ -156,7 +165,7 @@ export const getCharacter = (id) => CHARACTERS.find((c) => c.id === id) ?? CHARA
 
 export function pickLine(character, kind) {
   const list = character.lines[kind] ?? [];
-  return list[Math.floor(Math.random() * list.length)] ?? '';
+  return t(list[Math.floor(Math.random() * list.length)] ?? '');
 }
 
 // 隱藏角色：單人模式贏一場就解鎖

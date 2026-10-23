@@ -1,6 +1,7 @@
 <script>
   // 齒輪：打開設定視窗（選單畫面的角落都有）
   import { asset } from '../art-style.svelte.js';
+  import { t } from '../i18n.svelte.js';
   import { openSettings } from '../ui.svelte.js';
   import { play } from '../game/audio.js';
 </script>
@@ -8,8 +9,8 @@
 <button
   type="button"
   class="settings-btn"
-  aria-label="設定"
-  title="設定"
+  aria-label={t('設定')}
+  title={t('設定')}
   onclick={() => {
     play('select');
     openSettings();

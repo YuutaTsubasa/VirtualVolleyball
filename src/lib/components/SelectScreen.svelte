@@ -9,9 +9,11 @@
   import ControlHint from './ControlHint.svelte';
   import CharacterGrid from './CharacterGrid.svelte';
   import CharacterDetail from './CharacterDetail.svelte';
+  import { t } from '../i18n.svelte.js';
 
   // onstart({ characters, target, difficulty })、onback()
   let { mode, onstart, onback } = $props();
+  // 標題與副標（顯示時翻譯）
 
   const STEPS = {
     cpu: [['選擇角色', '1P vs CPU・選你的角色'], ['選擇對手', '1P vs CPU・選電腦的角色']],
@@ -32,7 +34,7 @@
   const TAGS = { cpu: ['1P', 'CPU'], versus: ['1P', '2P'], watch: ['左', '右'] };
   // 兩邊選同一個人時，同一張卡片上兩個角標都要看得到
   const tags = $derived(
-    picks.reduce((all, c, i) => ({ ...all, [c.id]: [...(all[c.id] ?? []), TAGS[mode][i]] }), {}),
+    picks.reduce((all, c, i) => ({ ...all, [c.id]: [...(all[c.id] ?? []), t(TAGS[mode][i])] }), {}),
   );
 
   onMount(() => grid.focusIndex(cursor));
@@ -81,9 +83,9 @@
   }
 </script>
 
-<ScreenFrame title={STEPS[mode][step][0]} subtitle={STEPS[mode][step][1]}>
+<ScreenFrame title={t(STEPS[mode][step][0])} subtitle={t(STEPS[mode][step][1])}>
   <div class="panel grow">
-    <div class="panel-head">角色一覽</div>
+    <div class="panel-head">{t('角色一覽')}</div>
     <div class="panel-body">
       <CharacterGrid bind:this={grid} bind:cursor {tags} onpick={(c) => pick(c)} />
     </div>
@@ -92,32 +94,32 @@
   <div class="side">
     <CharacterDetail character={current} />
     <div class="panel">
-      <div class="panel-head">比賽設定</div>
+      <div class="panel-head">{t('比賽設定')}</div>
       <div class="panel-body settings">
         {#if mode !== 'versus'}
-          <label class="field">電腦強度
+          <label class="field">{t('電腦強度')}
             <select class="vsel" bind:value={difficulty}>
-              <option value="easy">簡單</option>
-              <option value="normal">普通</option>
-              <option value="hard">困難</option>
+              <option value="easy">{t('簡單')}</option>
+              <option value="normal">{t('普通')}</option>
+              <option value="hard">{t('困難')}</option>
             </select>
           </label>
         {/if}
-        <label class="field">勝利分數
+        <label class="field">{t('勝利分數')}
           <select class="vsel" bind:value={target}>
-            <option value={5}>5 分</option>
-            <option value={10}>10 分</option>
-            <option value={15}>15 分</option>
+            <option value={5}>{t('{n} 分', { n: 5 })}</option>
+            <option value={10}>{t('{n} 分', { n: 10 })}</option>
+            <option value={15}>{t('{n} 分', { n: 15 })}</option>
           </select>
         </label>
-        <button type="button" class="vbtn small" onclick={randomPick}>隨機</button>
+        <button type="button" class="vbtn small" onclick={randomPick}>{t('隨機')}</button>
       </div>
     </div>
   </div>
 
   {#snippet foot()}
     <BackButton onclick={back} />
-    <ControlHint extra={ui.input === 'touch' ? '點一下看資料，再點一下決定' : ''} />
+    <ControlHint extra={ui.input === 'touch' ? t('點一下看資料，再點一下決定') : ''} />
     <button
       type="button"
       class="vbtn primary"
@@ -125,7 +127,7 @@
       disabled={step === 0 ? !isUnlocked(current) : !isUnlocked(picks[1] ?? current)}
       onclick={confirm}
     >
-      {step === 1 ? '開始比賽' : '決定'}
+      {step === 1 ? t('開始比賽') : t('決定')}
     </button>
   {/snippet}
 </ScreenFrame>

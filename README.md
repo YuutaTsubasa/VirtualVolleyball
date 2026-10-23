@@ -10,7 +10,8 @@
 - 👀 觀戰、大廳聊天、電腦補空位；比賽中斷線會由電腦代打，重新連上就還給你
 - 🎨 六種畫面風格（90 年代、PC-98、MS-DOS、台式印刷、Game Boy、動漫電影），介面、角色、球場一起換
 - 🎵 PC-98 FM 音源的原創配樂與音效（Web Audio 即時合成，不用音檔）
-- ⚙️ 設定（畫面風格、音樂與音效音量、靜音）在選單右上角的齒輪，比賽中從暫停選單打開
+- 🌐 中文、English、日本語（第一次打開會照瀏覽器的語言，之後在設定切換）
+- ⚙️ 設定（畫面風格、語言、音樂與音效音量、靜音）在標題選單或右上角的齒輪，比賽中從暫停選單打開
 
 ## 下載 App
 
@@ -172,6 +173,7 @@ src/
   lib/game/audio.js          音效入口（比賽事件、介面都呼叫 play()）
   lib/audio/                 PC-98 音源（synth.js、music.js 搬自 TaiwanMahjong）、曲子（songs.js）、音量與 BGM（sound.svelte.js）
   lib/components/SettingsDialog.svelte  設定視窗
+  lib/i18n.svelte.js         多國語言：t('原文')，翻譯在 lib/i18n/<語言>/*.js（tests/i18n.test.js 會檢查漏翻）
 public/                    圖：角色半身像與動作圖集、球場、特效、介面（90 年代圖素包，WebP）
 docs/art-guide.md          美術素材的來源、規格與還沒做的部分
 docs/art/anime90-v1/       90 年代圖素包的說明與提示詞

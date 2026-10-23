@@ -7,12 +7,12 @@
 import MANIFEST from './style-assets.json' with { type: 'json' };
 
 export const ART_STYLES = [
-  { id: 'anime90', name: '90 年代', description: '賽璐璐動畫 · 晴天海灘' },
-  { id: 'pc98', name: 'PC-98', pixelated: true, description: '復古電腦 · 細緻抖色像素' },
-  { id: 'msdos', name: 'MS-DOS', pixelated: true, description: 'VGA 藍灰介面 · 鮮明像素' },
-  { id: 'taiwan-print', name: '台式印刷', description: '復古海報 · 紙感套色與油墨網點' },
-  { id: 'gameboy', name: 'Game Boy', pixelated: true, description: '掌機四色 · 綠色點陣' },
-  { id: 'modern-paint', name: '動漫電影', description: '黃昏海邊 · 通透天空與逆光' },
+  { id: 'anime90', name: '90 年代' },
+  { id: 'pc98', name: 'PC-98', pixelated: true },
+  { id: 'msdos', name: 'MS-DOS', pixelated: true },
+  { id: 'taiwan-print', name: '台式印刷' },
+  { id: 'gameboy', name: 'Game Boy', pixelated: true },
+  { id: 'modern-paint', name: '動漫電影' },
 ];
 
 export const DEFAULT_STYLE = 'anime90';

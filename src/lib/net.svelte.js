@@ -6,6 +6,7 @@
 import { isTauri, invoke } from '@tauri-apps/api/core';
 import { SIGNAL_SERVER, ROOM_CODE_CHARS } from './site.js';
 import { P2PHost, P2PGuest, signalAvailable } from './p2p.js';
+import { t, serverText } from './i18n.svelte.js';
 
 export const inTauri = isTauri();
 export const DEFAULT_PORT = 7788;
@@ -114,7 +115,7 @@ function receive(m) {
     // 線上房間的房主關掉分頁房間就沒了，不用記 token（也免得同一個瀏覽器的另一個分頁拿去坐房主的位子）
     if (m.token && !hostWorker) store(tokenKey(net.address), m.token);
   } else if (m.type === 'error') {
-    toast(m.message);
+    toast(serverText(m.message));
   }
 }
 
@@ -143,7 +144,7 @@ function openWs() {
   try {
     socket = new WebSocket(`${secure ? 'wss' : 'ws'}://${net.address}/ws`);
   } catch (e) {
-    toast(`無法連線：${e}`);
+    toast(t('無法連線：{error}', { error: e }));
     net.status = 'idle';
     return;
   }
@@ -199,7 +200,7 @@ export function hostOnline({ name, character } = {}) {
     }
   };
   w.onerror = (e) => {
-    toast(`比賽引擎載入失敗：${e.message || e}`);
+    toast(t('比賽引擎載入失敗：{error}', { error: e.message || e }));
     disconnect();
   };
   hello = { type: 'hello', name, host_key: key, character };
@@ -271,7 +272,7 @@ function openGuest() {
     onFatal: (message, code) => {
       if (p2pGuest !== g) return;
       // 已經在房間裡卻找不到房主：房主關掉了頁面
-      toast(net.room && code === 'no_host' ? '房主離開了，房間已經關閉' : message);
+      toast(net.room && code === 'no_host' ? t('房主離開了，房間已經關閉') : message);
       disconnect();
     },
   });

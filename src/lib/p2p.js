@@ -6,6 +6,7 @@
 //   ctrl  可靠、照順序：hello、welcome、大廳資訊、房主指令、聊天
 //   fast  不可靠、不排序（maxRetransmits 0）：每格的影格與輸入。掉了就算了，下一格馬上補上，
 //         不會因為重送卡住後面的資料。訊息帶遞增的編號 n，收到比較舊的就丟掉。
+import { t } from './i18n.svelte.js';
 
 const ICE_SERVERS = [{ urls: ['stun:stun.cloudflare.com:3478', 'stun:stun.l.google.com:19302'] }];
 const CONNECT_TIMEOUT = 20000;
@@ -179,7 +180,7 @@ export class P2PGuest {
       const m = parse(e.data);
       if (!m) return;
       if (m.type === 'error') {
-        if (m.message === 'no_host') fail(`找不到房號 ${this.code}（房間可能已經關閉了）`, 'no_host');
+        if (m.message === 'no_host') fail(t('找不到房號 {code}（房間可能已經關閉了）', { code: this.code }), 'no_host');
         else fail(m.message);
       } else if (m.type === 'welcome') {
         const pc = new RTCPeerConnection({ iceServers: ICE_SERVERS });

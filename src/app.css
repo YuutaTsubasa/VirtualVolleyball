@@ -341,7 +341,7 @@ input::placeholder { color: #9aa3ba; }
 }
 
 /* 能力值條 */
-.stat { display: grid; grid-template-columns: 6cqh 1fr; align-items: center; font-size: 2.1cqh; font-weight: 900; }
+.stat { display: grid; grid-template-columns: minmax(6cqh, max-content) 1fr; column-gap: 1cqh; align-items: center; font-size: 2.1cqh; font-weight: 900; }
 .stat .bar { display: flex; gap: 0.5cqh; }
 .stat .bar i { flex: 1; height: 1.6cqh; background: #e1d6b6; border: 0.25cqh solid var(--navy); transform: skewX(-20deg); }
 .stat .bar i.on { background: linear-gradient(var(--gold), var(--gold-deep)); }
@@ -509,4 +509,10 @@ input:focus { border-color: var(--gold-deep); box-shadow: 0 0 0 0.4cqh var(--gol
 }
 :root:is([data-style='pc98'], [data-style='msdos'], [data-style='gameboy']) img {
   image-rendering: pixelated;
+}
+
+/* 英文、日文：中文排版用的寬字距拿掉（按鈕、標題原本用 letter-spacing＋text-indent 撐開） */
+:root:not(:lang(zh)) :is(*, *::before, *::after) {
+  letter-spacing: 0.02em !important;
+  text-indent: 0 !important;
 }

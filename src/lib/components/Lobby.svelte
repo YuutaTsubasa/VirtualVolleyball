@@ -7,11 +7,12 @@
   import { CHARACTERS, getCharacter } from '../game/characters.js';
   import { DIFFICULTIES } from '../game/constants.js';
   import { play } from '../game/audio.js';
+  import { t, displayName, serverText } from '../i18n.svelte.js';
   import ScreenFrame from './ScreenFrame.svelte';
   import BackButton from './BackButton.svelte';
   import CharacterGrid from './CharacterGrid.svelte';
 
-  const SIDES = ['左邊・1P', '右邊・2P'];
+  const SIDES = ['左邊・1P', '右邊・2P']; // 顯示時翻譯
   const room = $derived(net.room);
   const isHost = $derived(net.isHost);
   const urls = $derived(serverUrls());
@@ -36,14 +37,14 @@
 
   function roleOf(i) {
     const tags = [];
-    if (i === room.host_seat) tags.push('房主');
-    if (i === net.seat) tags.push('你');
-    return tags.join('・');
+    if (i === room.host_seat) tags.push(t('房主'));
+    if (i === net.seat) tags.push(t('你'));
+    return tags.join(' · ');
   }
 
   function statusOf(seat) {
-    if (seat.kind === 'bot') return `電腦・${DIFFICULTIES[seat.difficulty]}`;
-    return seat.connected ? '已連線' : '斷線中';
+    if (seat.kind === 'bot') return t('電腦・{level}', { level: t(DIFFICULTIES[seat.difficulty]) });
+    return seat.connected ? t('已連線') : t('斷線中');
   }
 
   function updateSettings(patch) {
@@ -52,7 +53,7 @@
 
   function sit() {
     play('select');
-    send({ type: 'sit', name: load('vb_name', '') || '玩家', character: load('vb_character') });
+    send({ type: 'sit', name: load('vb_name', '') || t('玩家'), character: load('vb_character') });
   }
 
   function openCharacters() {
@@ -63,9 +64,9 @@
   async function copy(text) {
     try {
       await navigator.clipboard.writeText(text);
-      toast('已複製', 'ok');
+      toast(t('已複製'), 'ok');
     } catch {
-      toast('複製失敗，請手動選取');
+      toast(t('複製失敗，請手動選取'));
     }
   }
 
@@ -77,11 +78,11 @@
   }
 </script>
 
-<ScreenFrame title="房間大廳" subtitle="邀請朋友，一起上場！">
+<ScreenFrame title={t('房間大廳')} subtitle={t('邀請朋友，一起上場！')}>
   <div class="seats">
     {#each room.seats as seat, i (i)}
       <div class="panel seat" class:gold-frame={i === net.seat} class:empty={!seat}>
-        <div class="panel-head">{SIDES[i]}</div>
+        <div class="panel-head">{t(SIDES[i])}</div>
         {#if seat}
           {@const c = getCharacter(seat.character)}
           <div class="pic" style="background-image: url({asset('game/court.webp')})">
@@ -94,31 +95,31 @@
             <img src={i === net.seat ? c.portraits.happy : c.portraits.normal} alt="" />
           </div>
           <div class="plate">
-            <b title={seat.name}>{seat.name}</b>
+            <b title={displayName(seat.name)}>{displayName(seat.name)}</b>
             <small>{c.name}</small>
           </div>
           <span class="status"><i class="dot" class:on={seat.kind === 'bot' || seat.connected}></i>{statusOf(seat)}</span>
           {#if i === net.seat}
-            <button type="button" class="vbtn small gold" onclick={openCharacters}>更換角色</button>
+            <button type="button" class="vbtn small gold" onclick={openCharacters}>{t('更換角色')}</button>
           {:else if isHost && room.host_seat !== i}
-            <button type="button" class="vbtn small" onclick={() => hostCmd('remove', { seat: i })}>移除</button>
+            <button type="button" class="vbtn small" onclick={() => hostCmd('remove', { seat: i })}>{t('移除')}</button>
           {/if}
         {:else}
           <div class="waiting">
             <img src="{asset('game/ball.webp')}" alt="" />
-            <b>等待入席</b>
-            <small>邀請朋友加入對戰</small>
+            <b>{t('等待入席')}</b>
+            <small>{t('邀請朋友加入對戰')}</small>
           </div>
           {#if net.seat == null}
-            <button type="button" class="vbtn small gold" onclick={sit}>入席</button>
+            <button type="button" class="vbtn small gold" onclick={sit}>{t('入席')}</button>
           {/if}
           {#if isHost}
-            <label class="bot">電腦難度
+            <label class="bot">{t('電腦難度')}
               <select class="vsel" bind:value={botDifficulty}>
-                {#each Object.entries(DIFFICULTIES) as [k, label] (k)}<option value={k}>{label}</option>{/each}
+                {#each Object.entries(DIFFICULTIES) as [k, label] (k)}<option value={k}>{t(label)}</option>{/each}
               </select>
             </label>
-            <button type="button" class="vbtn small gold" onclick={() => hostCmd('add_bot', { seat: i, difficulty: botDifficulty })}>加入電腦</button>
+            <button type="button" class="vbtn small gold" onclick={() => hostCmd('add_bot', { seat: i, difficulty: botDifficulty })}>{t('加入電腦')}</button>
           {/if}
         {/if}
       </div>
@@ -128,27 +129,28 @@
 
   <aside class="side">
     <section class="panel">
-      <div class="panel-head left">{isHost ? '邀請朋友' : '連線資訊'}</div>
+      <div class="panel-head left">{isHost ? t('邀請朋友') : t('連線資訊')}</div>
       <div class="panel-body">
         {#if net.code}
           <div class="copy-row">
-            <span class="code-label">房號</span>
+            <span class="code-label">{t('房號')}</span>
             <code class="room-code">{net.code}</code>
-            <button type="button" class="vbtn small gold" onclick={() => copy(net.code)}>複製</button>
+            <button type="button" class="vbtn small gold" onclick={() => copy(net.code)}>{t('複製')}</button>
           </div>
           {#if link}
             <div class="copy-row">
               <code>{link}</code>
-              <button type="button" class="vbtn small gold" onclick={() => copy(link)}>複製</button>
+              <button type="button" class="vbtn small gold" onclick={() => copy(link)}>{t('複製')}</button>
             </div>
           {/if}
           <p class="small">
             {#if net.signalDown}
-              <b class="warn">配對服務暫時連不上：已經在房間的人不受影響，新的人要等一下才進得來。</b>
+              <b class="warn">{t('配對服務暫時連不上：已經在房間的人不受影響，新的人要等一下才進得來。')}</b>
             {:else if isHost}
-              朋友在「加入房間」輸入房號{link ? '，或直接打開連結' : ''}就能加入。比賽在你的瀏覽器裡跑，請不要關掉這個分頁。
+              {link ? t('朋友在「加入房間」輸入房號，或直接打開連結就能加入。') : t('朋友在「加入房間」輸入房號就能加入。')}
+              {t('比賽在你的瀏覽器裡跑，請不要關掉這個分頁。')}
             {:else}
-              已用 WebRTC 直接連到房主。
+              {t('已用 WebRTC 直接連到房主。')}
             {/if}
           </p>
         {:else}
@@ -161,56 +163,56 @@
           {/if}
           <div class="copy-row">
             <code>{address}</code>
-            <button type="button" class="vbtn small gold" onclick={() => copy(address)}>複製</button>
+            <button type="button" class="vbtn small gold" onclick={() => copy(address)}>{t('複製')}</button>
           </div>
           <p class="small">
-            {#if isHost}朋友可用 App 或瀏覽器加入。區網可直接連線；跨網路需要開放這個埠或用通道。{:else}已連線到房主。{/if}
+            {#if isHost}{t('朋友可用 App 或瀏覽器加入。區網可直接連線；跨網路需要開放這個埠或用通道。')}{:else}{t('已連線到房主。')}{/if}
           </p>
         {/if}
       </div>
     </section>
 
     <section class="panel">
-      <div class="panel-head left">比賽規則</div>
+      <div class="panel-head left">{t('比賽規則')}</div>
       <div class="panel-body rules">
-        <label>勝利分數
+        <label>{t('勝利分數')}
           <select class="vsel" value={room.settings.target} disabled={!isHost} onchange={(e) => updateSettings({ target: Number(e.currentTarget.value) })}>
-            {#each [5, 10, 15, 21] as n (n)}<option value={n}>{n} 分</option>{/each}
+            {#each [5, 10, 15, 21] as n (n)}<option value={n}>{t('{n} 分', { n })}</option>{/each}
           </select>
         </label>
-        <label>補位電腦
+        <label>{t('補位電腦')}
           <select class="vsel" value={room.settings.difficulty} disabled={!isHost} onchange={(e) => updateSettings({ difficulty: e.currentTarget.value })}>
-            {#each Object.entries(DIFFICULTIES) as [k, label] (k)}<option value={k}>{label}</option>{/each}
+            {#each Object.entries(DIFFICULTIES) as [k, label] (k)}<option value={k}>{t(label)}</option>{/each}
           </select>
         </label>
       </div>
     </section>
 
     <section class="panel chat">
-      <div class="panel-head left">大廳聊天</div>
+      <div class="panel-head left">{t('大廳聊天')}</div>
       <div class="panel-body">
         <ol bind:this={chatBox}>
           {#each room.chat as line, i (i)}
             {#if line.sys}
-              <li class="sys">{line.text}</li>
+              <li class="sys">{serverText(line.text)}</li>
             {:else}
-              <li><b class:mine={line.seat === net.seat && line.seat != null}>{line.name}</b>：{line.text}</li>
+              <li><b class:mine={line.seat === net.seat && line.seat != null}>{displayName(line.name)}</b>：{line.text}</li>
             {/if}
           {/each}
         </ol>
         <form onsubmit={sendChat}>
-          <input bind:value={chatText} placeholder="說點什麼…" maxlength="300" />
-          <button type="submit" class="vbtn small gold" disabled={!chatText.trim()}>送出</button>
+          <input bind:value={chatText} placeholder={t('說點什麼…')} maxlength="300" />
+          <button type="submit" class="vbtn small gold" disabled={!chatText.trim()}>{t('送出')}</button>
         </form>
       </div>
     </section>
   </aside>
 
   {#snippet foot()}
-    <BackButton label="離開房間" onclick={leave} />
-    <div class="hint-bar">{isHost ? '空位會在開始時補上電腦。' : '等待房主開始比賽…'}</div>
+    <BackButton label={t('離開房間')} onclick={leave} />
+    <div class="hint-bar">{isHost ? t('空位會在開始時補上電腦。') : t('等待房主開始比賽…')}</div>
     {#if isHost}
-      <button type="button" class="vbtn primary" onclick={() => hostCmd('start')}>開始比賽</button>
+      <button type="button" class="vbtn primary" onclick={() => hostCmd('start')}>{t('開始比賽')}</button>
     {:else}
       <img class="spinner" src="{asset('game/ball.webp')}" alt="" />
     {/if}
@@ -219,7 +221,7 @@
 
 <dialog class="char-dialog" bind:this={charDialog}>
   <div class="panel">
-    <div class="panel-head">更換角色</div>
+    <div class="panel-head">{t('更換角色')}</div>
     <div class="panel-body">
       <CharacterGrid
         bind:cursor={dialogCursor}
@@ -230,7 +232,7 @@
           charDialog.close();
         }}
       />
-      <div class="dialog-actions"><button type="button" class="vbtn small" onclick={() => charDialog.close()}>取消</button></div>
+      <div class="dialog-actions"><button type="button" class="vbtn small" onclick={() => charDialog.close()}>{t('取消')}</button></div>
     </div>
   </div>
 </dialog>

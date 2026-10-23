@@ -2,6 +2,7 @@
   // 角色資料卡：半身像、名字、介紹、能力值
   import { asset } from '../art-style.svelte.js';
   import { isUnlocked } from '../game/characters.js';
+  import { t } from '../i18n.svelte.js';
 
   let { character, badge = '' } = $props();
   const open = $derived(isUnlocked(character));
@@ -22,11 +23,11 @@
   </div>
   <div class="info">
     <p class="name">{open ? character.name : '？？？'}</p>
-    <p class="intro">{open ? character.intro : '在「對戰電腦」贏一場比賽就會出現。'}</p>
+    <p class="intro">{open ? character.intro : t('在「對戰電腦」贏一場比賽就會出現。')}</p>
     {#if open}
       {#each STATS as [label, key] (key)}
         <div class="stat">
-          {label}
+          {t(label)}
           <div class="bar">{#each { length: 5 } as _, i (i)}<i class:on={i < character.stats[key]}></i>{/each}</div>
         </div>
       {/each}

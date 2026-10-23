@@ -2,6 +2,7 @@
   // 操作說明：鍵盤／手把／觸控對照表與小技巧
   import { asset } from '../art-style.svelte.js';
   import ScreenFrame from './ScreenFrame.svelte';
+  import { t } from '../i18n.svelte.js';
   import BackButton from './BackButton.svelte';
   import ControlHint from './ControlHint.svelte';
 
@@ -14,25 +15,25 @@
   ];
 </script>
 
-<ScreenFrame title="操作說明" subtitle="鍵盤・手把・觸控都能玩">
+<ScreenFrame title={t('操作說明')} subtitle={t('鍵盤・手把・觸控都能玩')}>
   <div class="panel keys-panel">
-    <div class="panel-head">操作方式</div>
+    <div class="panel-head">{t('操作方式')}</div>
     <div class="panel-body">
       <table>
         <thead>
           <tr>
             <th></th>
-            <th><img src="{asset('ui/icons/keyboard.webp')}" alt="" />鍵盤 1P</th>
-            <th><img src="{asset('ui/icons/keyboard.webp')}" alt="" />鍵盤 2P</th>
-            <th><img src="{asset('ui/icons/gamepad.webp')}" alt="" />手把</th>
-            <th><img src="{asset('ui/icons/touch.webp')}" alt="" />觸控</th>
+            <th><img src="{asset('ui/icons/keyboard.webp')}" alt="" />{t('鍵盤 1P')}</th>
+            <th><img src="{asset('ui/icons/keyboard.webp')}" alt="" />{t('鍵盤 2P')}</th>
+            <th><img src="{asset('ui/icons/gamepad.webp')}" alt="" />{t('手把')}</th>
+            <th><img src="{asset('ui/icons/touch.webp')}" alt="" />{t('觸控')}</th>
           </tr>
         </thead>
         <tbody>
           {#each ROWS as [label, ...cells] (label)}
             <tr>
-              <th>{label}</th>
-              {#each cells as c, i (i)}<td>{c}</td>{/each}
+              <th>{t(label)}</th>
+              {#each cells as c, i (i)}<td>{t(c)}</td>{/each}
             </tr>
           {/each}
         </tbody>
@@ -41,14 +42,14 @@
   </div>
 
   <div class="panel tips-panel">
-    <div class="panel-head">小技巧</div>
+    <div class="panel-head">{t('小技巧')}</div>
     <div class="panel-body">
       <ul>
-        <li><b>扣殺</b>：跳起來在空中按擊球。同時按 ↑ 高吊、↓ 重扣、往對面按更快。</li>
-        <li><b>飛撲救球</b>：在地上按住左右再按擊球。</li>
-        <li>對戰電腦和連線時，兩組鍵盤、任何手把都能操作；雙人同樂時第 1 支手把是 1P、第 2 支是 2P。</li>
-        <li>手把在文字欄位按 A 會跳出手把鍵盤。</li>
-        <li>對戰電腦贏一場，會有隱藏角色加入。</li>
+        <li><b>{t('扣殺')}</b>{t('：跳起來在空中按擊球。同時按 ↑ 高吊、↓ 重扣、往對面按更快。')}</li>
+        <li><b>{t('飛撲救球')}</b>{t('：在地上按住左右再按擊球。')}</li>
+        <li>{t('對戰電腦和連線時，兩組鍵盤、任何手把都能操作；雙人同樂時第 1 支手把是 1P、第 2 支是 2P。')}</li>
+        <li>{t('手把在文字欄位按 A 會跳出手把鍵盤。')}</li>
+        <li>{t('對戰電腦贏一場，會有隱藏角色加入。')}</li>
       </ul>
     </div>
   </div>
@@ -86,7 +87,8 @@
   tbody th {
     background: var(--navy);
     color: var(--on-dark);
-    padding: 1cqh 1.6cqh;
+    padding: 1cqh 2.4cqh 1cqh 1.6cqh;
+    white-space: nowrap;
     clip-path: polygon(0 0, 100% 0, calc(100% - 1cqh) 100%, 0 100%);
   }
   tbody td {

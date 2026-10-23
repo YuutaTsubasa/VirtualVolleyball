@@ -1,5 +1,6 @@
 <script>
   import { asset, artStyle } from './lib/art-style.svelte.js';
+  import { t } from './lib/i18n.svelte.js';
   import { loading, preloadStyle, preloadStyleWithin } from './lib/preload.svelte.js';
   import { onMount } from 'svelte';
   import { createEngine } from './lib/engine.js';
@@ -146,7 +147,7 @@
     const lost = mine != null && match.winner !== mine;
     result = {
       winner,
-      title: lost ? `${winner.name} 獲勝…` : `${winner.name} 獲勝！`,
+      title: t(lost ? '{name} 獲勝…' : '{name} 獲勝！', { name: winner.name }),
       line: pickLine(winner, 'win'),
       score: `${match.score[0]} − ${match.score[1]}`,
       unlocked: !online && lastSetup.mode === 'cpu' && !lost && unlockHidden(),
@@ -217,7 +218,7 @@
       <div class="result-text">
         <p class="result-line">「{r.line}」</p>
         <p class="result-score">{r.score}</p>
-        {#if r.unlocked}<p class="result-unlock">隱藏角色「阿翼」加入了！</p>{/if}
+        {#if r.unlocked}<p class="result-unlock">{t('隱藏角色「阿翼」加入了！')}</p>{/if}
       </div>
     </div>
   </div>
@@ -230,43 +231,43 @@
     <Lobby />
   {:else if view === 'online-playing'}
     {#if result}
-      <Dialog title="比賽結束" wide>
+      <Dialog title={t('比賽結束')} wide>
         {@render resultCard(result)}
         {#if net.isHost}
           <Menu
             horizontal
             items={[
-              { label: '再來一場', action: () => hostCmd('start'), primary: true },
-              { label: '回大廳', action: () => hostCmd('reset') },
+              { label: t('再來一場'), action: () => hostCmd('start'), primary: true },
+              { label: t('回大廳'), action: () => hostCmd('reset') },
             ]}
           />
         {:else}
-          <div class="hint-bar">等待房主決定下一步…</div>
+          <div class="hint-bar">{t('等待房主決定下一步…')}</div>
         {/if}
       </Dialog>
     {:else if onlineMenu}
-      <Dialog title="選單" subtitle="連線比賽不會暫停喔！">
+      <Dialog title={t('選單')} subtitle={t('連線比賽不會暫停喔！')}>
         <Menu
           items={[
-            { label: '回到比賽', action: () => (onlineMenu = false) },
-            { label: '設定', action: openSettings },
-            ...(net.isHost ? [{ label: '結束比賽、回大廳', action: () => hostCmd('reset') }] : []),
-            { label: '離開房間', action: leave },
+            { label: t('回到比賽'), action: () => (onlineMenu = false) },
+            { label: t('設定'), action: openSettings },
+            ...(net.isHost ? [{ label: t('結束比賽、回大廳'), action: () => hostCmd('reset') }] : []),
+            { label: t('離開房間'), action: leave },
           ]}
         />
       </Dialog>
     {/if}
     {#if net.status === 'reconnecting'}
-      <div class="net-banner">連線中斷，重新連線中…</div>
+      <div class="net-banner">{t('連線中斷，重新連線中…')}</div>
     {/if}
   {:else if screen === 'title'}
     <TitleScreen
       items={[
-        { label: '單機遊玩', action: () => (screen = 'solo') },
-        { label: '開設房間', action: () => (screen = 'host') },
-        { label: '加入房間', action: () => (screen = 'join') },
-        { label: '操作說明', action: () => (screen = 'help') },
-        { label: '設定', action: openSettings },
+        { label: t('單機遊玩'), action: () => (screen = 'solo') },
+        { label: t('開設房間'), action: () => (screen = 'host') },
+        { label: t('加入房間'), action: () => (screen = 'join') },
+        { label: t('操作說明'), action: () => (screen = 'help') },
+        { label: t('設定'), action: openSettings },
       ]}
     />
   {:else if screen === 'solo'}
@@ -288,25 +289,25 @@
   {:else if screen === 'select'}
     <SelectScreen bind:this={selectScreen} {mode} onstart={start} onback={() => (screen = 'solo')} />
   {:else if screen === 'pause'}
-    <Dialog title="暫停">
+    <Dialog title={t('暫停')}>
       <Menu
         items={[
-          { label: '繼續', action: resume },
-          { label: '重新開始', action: () => start(lastSetup) },
-          { label: '設定', action: openSettings },
-          { label: '回標題', action: toTitle },
+          { label: t('繼續'), action: resume },
+          { label: t('重新開始'), action: () => start(lastSetup) },
+          { label: t('設定'), action: openSettings },
+          { label: t('回標題'), action: toTitle },
         ]}
       />
     </Dialog>
   {:else if screen === 'result' && result}
-    <Dialog title="比賽結束" wide>
+    <Dialog title={t('比賽結束')} wide>
       {@render resultCard(result)}
       <Menu
         horizontal
         items={[
-          { label: '再來一場', action: () => start(lastSetup), primary: true },
-          { label: '換角色', action: () => openSelect(lastSetup.mode) },
-          { label: '回標題', action: toTitle },
+          { label: t('再來一場'), action: () => start(lastSetup), primary: true },
+          { label: t('換角色'), action: () => openSelect(lastSetup.mode) },
+          { label: t('回標題'), action: toTitle },
         ]}
       />
     </Dialog>
@@ -324,12 +325,12 @@
   <SettingsDialog />
   {#if booting || waiting}
     <div class="loading" role="status">
-      <img src={asset('ui/logo.webp')} alt="虛擬排球王" />
+      <img src={asset('ui/logo.webp')} alt={t('虛擬排球王')} />
       <div class="bar"><i style:width="{percent}%"></i></div>
-      <p>載入中… {percent}%</p>
+      <p>{t('載入中…')} {percent}%</p>
     </div>
   {/if}
-  <div class="rotate-hint">請把裝置轉成橫向 ↻</div>
+  <div class="rotate-hint">{t('請把裝置轉成橫向 ↻')}</div>
 </div>
 
 <style>

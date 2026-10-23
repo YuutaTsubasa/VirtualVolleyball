@@ -20,6 +20,7 @@
   import { unlockHidden } from '../game/characters.js';
   import { toast } from '../net.svelte.js';
   import ControlsKeyboard from './ControlsKeyboard.svelte';
+  import { t } from '../i18n.svelte.js';
 
   // inGame：正在比賽（方向鍵、手把是拿來打球的，不做選單操作）
   let { inGame = false, onback = () => {}, onpause = () => {} } = $props();
@@ -74,8 +75,8 @@
 
   function feedSecret(token) {
     if (inGame || !cheat.feed(token)) return false;
-    if (unlockHidden()) toast('隱藏角色「阿翼」解鎖了！', 'ok');
-    else toast('阿翼已經在等你了。', 'ok');
+    if (unlockHidden()) toast(t('隱藏角色「阿翼」解鎖了！'), 'ok');
+    else toast(t('阿翼已經在等你了。'), 'ok');
     return true;
   }
 
