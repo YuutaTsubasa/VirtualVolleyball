@@ -22,7 +22,7 @@
   }
 
   function tap(c) {
-    if (!isUnlocked(c)) return;
+    if (!isUnlocked(c)) return play('deny');
     if (ui.input === 'touch' && CHARACTERS[cursor] !== c) {
       look(c);
       return;

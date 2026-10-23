@@ -2,6 +2,7 @@
   // 選單畫面的共用版型：左上標誌、右上標題橫幅、金色分隔線、中間內容、底部（返回／提示／主要按鈕）
   import { asset } from '../art-style.svelte.js';
   import Logo from './Logo.svelte';
+  import SettingsButton from './SettingsButton.svelte';
 
   let { title, subtitle = '', children, foot } = $props();
 </script>
@@ -15,6 +16,7 @@
         <h2>{title}</h2>
         {#if subtitle}<p>{subtitle}</p>{/if}
       </div>
+      <SettingsButton />
     </header>
     <div class="frame-main">{@render children()}</div>
     {#if foot}<footer class="frame-foot">{@render foot()}</footer>{/if}
@@ -27,7 +29,7 @@
   }
   .frame-head {
     display: grid;
-    grid-template-columns: 34cqw 1fr;
+    grid-template-columns: 34cqw 1fr auto;
     align-items: center;
     gap: 3cqw;
     position: relative;

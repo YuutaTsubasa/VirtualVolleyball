@@ -34,8 +34,8 @@
   onMount(() => grid.focusIndex(cursor));
 
   function pick(character = current) {
-    if (!isUnlocked(character)) return;
-    play('select');
+    if (!isUnlocked(character)) return play('deny');
+    play('pick');
     picks.push(character);
     if (picks.length === 2) {
       onstart({ characters: [...picks], target: Number(target), difficulty });

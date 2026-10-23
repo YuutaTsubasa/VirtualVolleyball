@@ -10,15 +10,16 @@
   import TitleScreen from './lib/components/TitleScreen.svelte';
   import SoloScreen from './lib/components/SoloScreen.svelte';
   import HelpScreen from './lib/components/HelpScreen.svelte';
-  import StyleScreen from './lib/components/StyleScreen.svelte';
+  import SettingsDialog from './lib/components/SettingsDialog.svelte';
   import SelectScreen from './lib/components/SelectScreen.svelte';
   import RoomEntry from './lib/components/RoomEntry.svelte';
   import Lobby from './lib/components/Lobby.svelte';
   import Controls from './lib/components/Controls.svelte';
   import TouchControls from './lib/components/TouchControls.svelte';
-  import { ui } from './lib/ui.svelte.js';
+  import { ui, openSettings } from './lib/ui.svelte.js';
+  import { setBgm, playJingle } from './lib/audio/sound.svelte.js';
 
-  // 單機：title | solo | help | style | select | play | pause | result | host | join
+  // 單機：title | solo | help | select | play | pause | result | host | join（設定是隨時可開的視窗）
   // 連線中（net.room 有值）時畫面由房間狀態決定：大廳或比賽
   let screen = $state('title');
   let mode = $state('cpu'); // cpu | versus | watch
@@ -29,7 +30,12 @@
   let engine = $state();
 
   onMount(() => {
-    engine = createEngine(canvas, { onMatchEnd, onMatchStart: () => (result = null) });
+    engine = createEngine(canvas, {
+      onMatchEnd,
+      onMatchStart: () => (result = null),
+      // 有人差一分就贏：換成賽末點的曲子
+      onScore: (m) => (matchPoint = m.phase !== 'over' && Math.max(...m.score) >= m.target - 1),
+    });
     window.__vb = engine;
     // 單機比賽中切到背景、或手機轉成直的：自動暫停
     const portrait = matchMedia('(orientation: portrait) and (pointer: coarse)');
@@ -66,6 +72,17 @@
 
   const view = $derived(roomPhase ? `online-${roomPhase}` : screen);
 
+  // 背景音樂：依畫面切換（短曲播完會自動接回）
+  let matchPoint = $state(false);
+  const scene = $derived.by(() => {
+    if (view === 'online-lobby') return 'menu';
+    if (view === 'online-playing') return result ? 'menu' : matchPoint ? 'tension' : 'match';
+    if (screen === 'title') return 'title';
+    if (screen === 'play' || screen === 'pause') return matchPoint ? 'tension' : 'match';
+    return 'menu';
+  });
+  $effect(() => setBgm(scene));
+
   function openSelect(m) {
     mode = m;
     screen = 'select';
@@ -74,6 +91,7 @@
   function start(setup) {
     lastSetup = { ...setup, mode };
     result = null;
+    matchPoint = false;
     engine.startLocal(lastSetup);
     screen = 'play';
   }
@@ -95,6 +113,8 @@
       score: `${match.score[0]} − ${match.score[1]}`,
       unlocked: !online && lastSetup.mode === 'cpu' && !lost && unlockHidden(),
     };
+    // 觀戰（沒有「自己」）也播勝利曲
+    playJingle(lost ? 'lose' : 'win');
     if (!online) screen = 'result';
   }
 
@@ -122,7 +142,7 @@
     if (view === 'online-lobby') return; // 離開房間要按按鈕，避免誤觸
     if (screen === 'select') selectScreen?.goBack();
     else if (screen === 'pause') resume();
-    else if (['solo', 'help', 'style', 'host', 'join'].includes(screen)) screen = 'title';
+    else if (['solo', 'help', 'host', 'join'].includes(screen)) screen = 'title';
   }
 
   // Esc／P／手把 Start
@@ -191,6 +211,7 @@
         <Menu
           items={[
             { label: '回到比賽', action: () => (onlineMenu = false) },
+            { label: '設定', action: openSettings },
             ...(net.isHost ? [{ label: '結束比賽、回大廳', action: () => hostCmd('reset') }] : []),
             { label: '離開房間', action: leave },
           ]}
@@ -206,7 +227,6 @@
         { label: '單機遊玩', action: () => (screen = 'solo') },
         { label: '開設房間', action: () => (screen = 'host') },
         { label: '加入房間', action: () => (screen = 'join') },
-        { label: '畫面風格', action: () => (screen = 'style') },
         { label: '操作說明', action: () => (screen = 'help') },
       ]}
     />
@@ -216,8 +236,6 @@
     <RoomEntry page={screen} onback={() => (screen = 'title')} />
   {:else if screen === 'help'}
     <HelpScreen onback={() => (screen = 'title')} />
-  {:else if screen === 'style'}
-    <StyleScreen onback={() => (screen = 'title')} />
   {:else if screen === 'select'}
     <SelectScreen bind:this={selectScreen} {mode} onstart={start} onback={() => (screen = 'solo')} />
   {:else if screen === 'pause'}
@@ -226,6 +244,7 @@
         items={[
           { label: '繼續', action: resume },
           { label: '重新開始', action: () => start(lastSetup) },
+          { label: '設定', action: openSettings },
           { label: '回標題', action: toTitle },
         ]}
       />
@@ -253,6 +272,7 @@
       <div class="toast" class:ok={t.kind === 'ok'}>{t.message}</div>
     {/each}
   </div>
+  <SettingsDialog />
   <div class="rotate-hint">請把裝置轉成橫向 ↻</div>
 </div>
 

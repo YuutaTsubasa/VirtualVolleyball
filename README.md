@@ -5,6 +5,9 @@
 - 🎮 **單機**：對戰電腦（簡單／普通／困難）、同一台電腦雙人對戰、電腦對電腦觀戰
 - 🌐 **連線**：房主在 App 按「開設房間」，朋友用 App 的「加入房間」輸入位址，或直接用瀏覽器打開房主的網址
 - 👀 觀戰、大廳聊天、電腦補空位；比賽中斷線會由電腦代打，重新連上就還給你
+- 🎨 六種畫面風格（90 年代、PC-98、MS-DOS、台式印刷、Game Boy、動漫電影），介面、角色、球場一起換
+- 🎵 PC-98 FM 音源的原創配樂與音效（Web Audio 即時合成，不用音檔）
+- ⚙️ 設定（畫面風格、音樂與音效音量、靜音）在選單右上角的齒輪，比賽中從暫停選單打開
 
 ## 開發
 
@@ -93,7 +96,9 @@ src/
   lib/input-controls.js      選單的鍵盤／手把操作（跟 TaiwanMahjong 共用）
   lib/components/Controls.svelte       選單操作、手把鍵盤、暫停
   lib/components/TouchControls.svelte  比賽中的觸控按鈕
-  lib/game/audio.js          WebAudio 合成音效
+  lib/game/audio.js          音效入口（比賽事件、介面都呼叫 play()）
+  lib/audio/                 PC-98 音源（synth.js、music.js 搬自 TaiwanMahjong）、曲子（songs.js）、音量與 BGM（sound.svelte.js）
+  lib/components/SettingsDialog.svelte  設定視窗
 public/                    圖：角色半身像與動作圖集、球場、特效、介面（90 年代圖素包，WebP）
 docs/art-guide.md          美術素材的來源、規格與還沒做的部分
 docs/art/anime90-v1/       90 年代圖素包的說明與提示詞

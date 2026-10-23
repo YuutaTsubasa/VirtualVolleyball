@@ -3,7 +3,12 @@ const coarse = typeof matchMedia !== 'undefined' && matchMedia('(pointer: coarse
 
 export const ui = $state({
   input: coarse ? 'touch' : 'pointer', // pointer | touch | key | pad
+  settingsOpen: false, // 設定視窗（任何畫面都能開）
 });
+
+export function openSettings() {
+  ui.settingsOpen = true;
+}
 
 export function setInputKind(kind) {
   if (ui.input === kind) return;

@@ -2,11 +2,11 @@
   // 標題畫面：標誌、主選單，左右各一位角色（每次隨機）
   import { asset } from '../art-style.svelte.js';
   import { CHARACTERS } from '../game/characters.js';
-  import { toggleMute, isMuted } from '../game/audio.js';
   import Logo from './Logo.svelte';
   import Menu from './Menu.svelte';
   import SpritePose from './SpritePose.svelte';
   import ControlHint from './ControlHint.svelte';
+  import SettingsButton from './SettingsButton.svelte';
 
   let { items } = $props();
 
@@ -18,7 +18,6 @@
 
   // 有標題主視覺（ui/title-scene）就用插圖，沒有就用球場＋左右兩位角色的動作圖
   const scene = $derived(asset('ui/title-scene.webp'));
-  let muted = $state(isMuted());
 </script>
 
 <section class="screen title">
@@ -35,14 +34,7 @@
     <Menu {items} width="36cqw" />
   </div>
 
-  <button
-    type="button"
-    class="sound"
-    aria-label={muted ? '開啟音效' : '關閉音效'}
-    onclick={() => (muted = toggleMute())}
-  >
-    <img src="{asset(`ui/icons/${muted ? 'sound-off' : 'sound-on'}.webp`)}" alt="" />
-  </button>
+  <div class="corner"><SettingsButton /></div>
   <div class="foot"><ControlHint /></div>
 </section>
 
@@ -70,20 +62,10 @@
   .hero.right {
     right: 1cqw;
   }
-  .sound {
+  .corner {
     position: absolute;
     bottom: 2.4cqh;
     right: 2.4cqw;
-    width: 9cqh;
-    height: 9cqh;
-    padding: 0.8cqh;
-    border: 0.45cqh solid var(--navy);
-    border-radius: 50%;
-    background: var(--cream);
-  }
-  .sound img {
-    width: 100%;
-    height: 100%;
   }
   .foot {
     position: absolute;

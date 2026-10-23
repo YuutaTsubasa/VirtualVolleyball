@@ -9,7 +9,7 @@
   type="button"
   class="vbtn back plain"
   onclick={() => {
-    play('select');
+    play('back');
     onclick();
   }}
 ><span class="tri"></span>{label}</button>

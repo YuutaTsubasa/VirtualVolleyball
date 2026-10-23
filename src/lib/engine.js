@@ -26,7 +26,8 @@ function hydrate(state, prev) {
   return state;
 }
 
-export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {} }) {
+// onScore(match)：比分有變（或新比賽開始）時呼叫，給 BGM 判斷賽末點
+export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {}, onScore = () => {} }) {
   render.resize(canvas);
   render.preload(CHARACTERS);
 
@@ -45,8 +46,14 @@ export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {} }) {
     return game;
   }
 
+  let lastScore = '';
   function advance(m) {
     for (const e of m.events) play(e.type);
+    const score = m.score.join(':');
+    if (score !== lastScore) {
+      lastScore = score;
+      onScore(m);
+    }
     render.handleEvents(m);
     render.tick();
   }
@@ -143,6 +150,7 @@ export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {} }) {
       local?.game.free();
       local = { game: newLocal(characters, target, sides), humans };
       match = null;
+      lastScore = '';
       celebrate = 0;
       render.resetEffects();
       state = 'local';
@@ -151,6 +159,7 @@ export function createEngine(canvas, { onMatchEnd, onMatchStart = () => {} }) {
     startOnline() {
       if (state === 'online') return;
       match = null;
+      lastScore = '';
       celebrate = 0;
       render.resetEffects();
       state = 'online';
