@@ -20,6 +20,10 @@ on:
 permissions:
   contents: write
 
+# App 版大廳的分享連結指向網頁版
+env:
+  VITE_WEB_URL: https://yuuta-tsubasa.studio/VirtualVolleyball/
+
 concurrency:
   group: build-apps-${{ github.ref }}
   cancel-in-progress: true

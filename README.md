@@ -27,7 +27,7 @@
 - 推一個 `v*` 標籤（例如 `v0.1.0`）會打包全部平台並附到同名的 Release。
 - 也可以在 Actions →「Build apps」→「Run workflow」手動打包，檔案在該次執行的 Artifacts。
 - 網頁版在每次推到 `main` 時自動測試並部署到 GitHub Pages（[`.github/workflows/pages.yml`](.github/workflows/pages.yml)）。
-  線上房間的配對服務部署好之後，在 repo 的 Settings → Secrets and variables → Actions → Variables 加 `SIGNAL_SERVER`，網頁版就會出現線上房間。
+  線上房間的配對服務已部署在 `https://virtual-volleyball-signal.taiwan-mahjong-signal.workers.dev`（預設值寫在 `src/lib/site.js`）。
 
 ## 開發
 
@@ -119,33 +119,18 @@ npm test
 
 線上房間需要部署一個很小的配對服務，用 Cloudflare Workers 免費方案（Durable Object＋可休眠的 WebSocket，超過每日額度只會報錯、不會收費）。程式在 `workers/signal/`，跟 TaiwanMahjong 的一樣，名字是 `virtual-volleyball-signal`。
 
-**部署**（需要自己的 Cloudflare 帳號）：
+**已部署**：`https://virtual-volleyball-signal.taiwan-mahjong-signal.workers.dev`（打開 `/health` 會看到 `ok`）。
+這個網址就是 `src/lib/site.js` 的預設值，網頁版、桌面 App、本機開發都直接用它，不用另外設定。
+
+**改了配對服務要重新部署**（用自己的 Cloudflare 帳號，第一次要先 `npx wrangler login`）：
 
 ```bash
-cd workers/signal
+npm --prefix workers/signal run deploy
 ```
 
-```bash
-npm install
-```
-
-```bash
-npx wrangler login
-```
-
-```bash
-npm run deploy
-```
-
-部署完會印出網址，例如 `https://virtual-volleyball-signal.<你的子網域>.workers.dev`。打開 `/health` 看到 `ok` 就是好了。
-
-**讓遊戲用它**：`src/lib/site.js` 的 `SIGNAL_SERVER` 預設是空字串（＝不顯示線上房間）。打包前在專案根目錄建立 `.env.production.local`：
-
-```
-VITE_SIGNAL_SERVER=https://virtual-volleyball-signal.<你的子網域>.workers.dev
-```
-
-網頁版放在固定網址時，可以再加 `VITE_WEB_URL=https://…/`，桌面 App 的大廳就會顯示分享連結（沒設定時網頁版用目前的網址，App 只顯示房號）。
+要換成別的配對服務，建置時設環境變數 `VITE_SIGNAL_SERVER=https://…`；設成 `off` 則不提供線上房間。
+GitHub Actions 的網頁版部署也可以在 repo 的 Variables 設 `SIGNAL_SERVER` 覆蓋。
+App 版大廳的分享連結用 `VITE_WEB_URL`（打包 App 的 workflow 已設成網頁版的網址）。
 
 **本機測試**（不用部署、不用登入）：
 

@@ -1,10 +1,12 @@
 // 線上房間（WebRTC P2P）相關的設定，做法跟 TaiwanMahjong 的 site.js 一樣。Node 測試時沒有 import.meta.env。
 const env = import.meta.env || {};
 
-// 線上房間的配對服務（workers/signal，Cloudflare）。空字串 = 不提供線上房間，介面上相關的選項都會藏起來。
-// 部署後在 .env.production.local 寫 VITE_SIGNAL_SERVER=https://virtual-volleyball-signal.<你的子網域>.workers.dev；
-// 開發時可以在 .env.development.local 寫 VITE_SIGNAL_SERVER=http://localhost:8787 用本機的 wrangler dev。
-export const SIGNAL_SERVER = (env.VITE_SIGNAL_SERVER ?? '').replace(/\/$/, '');
+// 線上房間的配對服務（workers/signal，Cloudflare），預設是已部署的那一個。
+// 開發時可以在 .env.development.local 寫 VITE_SIGNAL_SERVER=http://localhost:8787 用本機的 wrangler dev；
+// 寫 VITE_SIGNAL_SERVER=off 表示不提供線上房間（介面上相關的選項會藏起來）。
+const DEFAULT_SIGNAL_SERVER = 'https://virtual-volleyball-signal.taiwan-mahjong-signal.workers.dev';
+const signalSetting = env.VITE_SIGNAL_SERVER || DEFAULT_SIGNAL_SERVER;
+export const SIGNAL_SERVER = signalSetting === 'off' ? '' : signalSetting.replace(/\/$/, '');
 
 // 網頁版的網址：分享房間連結用（https://…/#join/房號）。
 // 沒設定時，網頁版用目前的網址；桌面 App 沒有網址可以分享，只給房號。

@@ -1,9 +1,8 @@
 # 把網頁版（比賽引擎是 WebAssembly）部署到 GitHub Pages：
 # https://yuuta-tsubasa.studio/VirtualVolleyball/
 #
-# 線上房間的配對服務網址放在 repo 的 Variables（Settings → Secrets and variables → Actions → Variables）：
-#   SIGNAL_SERVER = https://virtual-volleyball-signal.<子網域>.workers.dev
-# 沒設定時網頁版不顯示線上房間（還是可以單機玩、加入區網／通道房間）。
+# 線上房間的配對服務預設用 src/lib/site.js 裡已部署的網址；要換成別的，在 repo 的 Variables
+# （Settings → Secrets and variables → Actions → Variables）設 SIGNAL_SERVER。
 name: Deploy web version to GitHub Pages
 
 on:
