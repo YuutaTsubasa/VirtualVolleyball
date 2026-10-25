@@ -93,6 +93,9 @@ pub struct Player {
     pub spike_timer: i32,
     #[serde(skip)]
     pub hit_cooldown: i32,
+    /// 起跳用的「上」還按著（沒放開過）：這時候扣殺不算高吊，要放開再按才算
+    #[serde(skip)]
+    pub jump_up_held: bool,
     /// 給畫面用的計時
     pub anim: u32,
     /// 上一次擊球後經過的影格（畫揮手動作用）
@@ -167,6 +170,7 @@ fn create_player(side: usize, character: &str) -> Player {
         timer: 0,
         spike_timer: 0,
         hit_cooldown: 0,
+        jump_up_held: false,
         anim: 0,
         last_hit: 99,
     }
@@ -278,6 +282,9 @@ impl Match {
         }
 
         let dir = (input.right as i32 - input.left as i32) as f64;
+        if !input.up {
+            p.jump_up_held = false;
+        }
 
         match p.state {
             PlayerState::Dive => {
@@ -307,10 +314,19 @@ impl Match {
                 } else if p.on_ground && input.up {
                     p.vy = -p.stats.jump;
                     p.on_ground = false;
+                    p.jump_up_held = true;
                     self.events.push(Event::Jump { side: i });
+                    // 跳和擊球同時按：起跳就準備扣殺
+                    if input.hit_pressed {
+                        p.spike_timer = SPIKE_WINDOW;
+                        p.last_hit = 0;
+                    }
                 } else if !p.on_ground && input.hit_pressed {
                     p.spike_timer = SPIKE_WINDOW;
                     p.last_hit = 0;
+                } else if !p.on_ground && input.hit {
+                    // 在空中按住擊球：一直準備扣殺到碰到球（觸控很難抓準按的時機）
+                    p.spike_timer = p.spike_timer.max(SPIKE_WINDOW);
                 }
             }
             PlayerState::Normal => p.vx = 0.0,
@@ -361,7 +377,9 @@ impl Match {
             let dir = (input.right as i32 - input.left as i32) as f64;
             let forward = if dir == p.toward { 1.0 } else if dir == -p.toward { -1.0 } else { 0.0 };
             b.vx = p.toward * (15.0 + forward * 5.0) * p.stats.power;
-            b.vy = (if input.up { -9.0 } else if input.down { 13.0 } else { 3.0 }) * p.stats.power;
+            // 起跳時按的「上」一直沒放開的話不算高吊（用搖桿往上推起跳、推著不放是常見的情況）
+            let lob = input.up && !p.jump_up_held;
+            b.vy = (if lob { -9.0 } else if input.down { 13.0 } else { 3.0 }) * p.stats.power;
             b.power = true;
             p.spike_timer = 0;
             self.events.push(Event::Spike { side: i, x: b.x, y: b.y });
@@ -468,5 +486,80 @@ pub fn step_ball(b: &mut Ball, dt: f64, mut events: Option<&mut Vec<Event>>) {
                 e.push(Event::Net);
             }
         }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn input(up: bool, hit: bool, hit_pressed: bool) -> Input {
+        Input { up, hit, hit_pressed, ..Input::default() }
+    }
+
+    /// 左邊的人照 frames 給的輸入起跳，最後一格把球放到他身邊，回傳碰球那一格的事件與球速
+    fn jump_and_touch(frames: &[Input]) -> (bool, Ball) {
+        let mut m = Match::new(["xiaocui", "aming"], 10);
+        m.phase = Phase::Rally;
+        let (last, before) = frames.split_last().unwrap();
+        for &inp in before {
+            // 球放遠一點，免得提早碰到
+            m.ball = Ball { x: 800.0, y: 100.0, ..Ball::default() };
+            m.step([inp, Input::default()]);
+        }
+        let p = &m.players[0];
+        assert!(!p.on_ground, "碰球時應該還在空中");
+        let (cx, cy, _) = hit_circle(p);
+        m.ball = Ball { x: cx + 20.0, y: cy - 40.0, ..Ball::default() };
+        m.step([*last, Input::default()]);
+        let spiked = m.events.iter().any(|e| matches!(e, Event::Spike { .. }));
+        (spiked, m.ball.clone())
+    }
+
+    #[test]
+    fn holding_jump_up_still_spikes_instead_of_lobbing() {
+        // 搖桿往上推起跳、一直推著，空中按擊球：要是扣殺（往下打），不是高吊
+        let mut f = vec![input(true, false, false); 8];
+        f.push(input(true, true, true));
+        f.push(input(true, true, false));
+        let (spiked, b) = jump_and_touch(&f);
+        assert!(spiked);
+        assert!(b.vy > 0.0, "不應該變成高吊，vy = {}", b.vy);
+    }
+
+    #[test]
+    fn releasing_and_pressing_up_again_lobs() {
+        let mut f = vec![input(true, false, false)];
+        f.extend(vec![input(false, false, false); 5]);
+        f.push(input(true, true, true));
+        f.push(input(true, true, false));
+        let (spiked, b) = jump_and_touch(&f);
+        assert!(spiked);
+        assert!(b.vy < 0.0, "放開再按上應該是高吊，vy = {}", b.vy);
+    }
+
+    #[test]
+    fn jump_and_hit_in_the_same_frame_spikes() {
+        let mut f = vec![input(true, true, true)];
+        f.extend(vec![input(false, false, false); 6]);
+        let (spiked, _) = jump_and_touch(&f);
+        assert!(spiked, "同時按跳和擊球應該準備扣殺");
+    }
+
+    #[test]
+    fn holding_hit_in_the_air_keeps_spike_ready() {
+        // 很早就按下擊球而且一直按著，超過 SPIKE_WINDOW 才碰到球
+        let mut f = vec![input(true, false, false), input(false, true, true)];
+        f.extend(vec![input(false, true, false); SPIKE_WINDOW as usize + 6]);
+        let (spiked, _) = jump_and_touch(&f);
+        assert!(spiked, "空中按住擊球應該一直準備扣殺");
+    }
+
+    #[test]
+    fn tapping_hit_too_early_is_a_normal_hit() {
+        let mut f = vec![input(true, false, false), input(false, true, true)];
+        f.extend(vec![input(false, false, false); SPIKE_WINDOW as usize + 6]);
+        let (spiked, _) = jump_and_touch(&f);
+        assert!(!spiked, "按一下就放開、太早按的話只是普通擊球");
     }
 }
