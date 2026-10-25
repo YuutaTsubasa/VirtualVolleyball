@@ -497,3 +497,24 @@
     border-width: 0.15cqh;
   }
 }
+
+/* ===== 鍵盤／手把選到的按鈕：非 90 年代的按鈕沒有切角，直接用閃爍的外框＋放大
+   （本來就是亮色的按鈕光變色看不出來） ===== */
+:root:is([data-style='pc98'], [data-style='msdos'], [data-style='gameboy'], [data-style='taiwan-print'], [data-style='modern-paint']) {
+  &[data-input='key'] .vbtn:focus-visible,
+  &[data-input='pad'] .vbtn:focus {
+    background: transparent;
+    outline: 0.55cqh solid var(--sk-focus, var(--accent));
+    outline-offset: 0.4cqh;
+    animation: vbtn-focus-outline 0.8s ease-in-out infinite alternate;
+  }
+  &[data-input='key'] .vbtn:focus-visible::before,
+  &[data-input='pad'] .vbtn:focus::before {
+    inset: 0;
+  }
+}
+@keyframes vbtn-focus-outline {
+  from { outline-color: var(--sk-focus, var(--accent)); }
+  to { outline-color: var(--on-dark); }
+}
+:root[data-style='gameboy'] { --sk-focus: #0f380f; }
