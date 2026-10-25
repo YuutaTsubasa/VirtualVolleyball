@@ -1,6 +1,7 @@
 // 比賽中的輸入：鍵盤、手把、觸控按鈕合在一起。每個影格呼叫 read(slot) 取得該玩家的輸入。
 // （選單的操作在 src/lib/components/Controls.svelte）
 
+import { padDpad } from '../input-controls.js';
 const KEYMAPS = [
   // 1P：WASD 移動跳躍，F / 空白鍵 擊球
   { left: ['KeyA'], right: ['KeyD'], up: ['KeyW'], down: ['KeyS'], hit: ['KeyF', 'Space'] },
@@ -41,7 +42,8 @@ function standardPads() {
   } catch {
     // 某些瀏覽器在非安全環境會擋
   }
-  return [...pads].filter((p) => p?.connected && (!p.mapping || p.mapping === 'standard'));
+  // 沒有標準配置的手把也收（十字鍵另外處理，見 padDpad）
+  return [...pads].filter((p) => p?.connected);
 }
 
 function readPad(pad) {
@@ -49,11 +51,12 @@ function readPad(pad) {
   const ay = pad.axes[1] ?? 0;
   const btn = (i) => !!pad.buttons[i]?.pressed;
   const hit = btn(1) || btn(2) || btn(5) || btn(7);
+  const dpad = padDpad(pad);
   const result = {
-    left: ax < -0.4 || btn(14),
-    right: ax > 0.4 || btn(15),
-    up: btn(0) || btn(12) || ay < -0.6,
-    down: ay > 0.5 || btn(13),
+    left: ax < -0.4 || dpad.left,
+    right: ax > 0.4 || dpad.right,
+    up: btn(0) || dpad.up || ay < -0.6,
+    down: ay > 0.5 || dpad.down,
     hit,
     hitPressed: hit && !padHitPrev.get(pad.index),
   };

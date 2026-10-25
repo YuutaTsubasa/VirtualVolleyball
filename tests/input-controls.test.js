@@ -121,3 +121,16 @@ test('every Svelte component compiles without accessibility or reactivity warnin
     assert.deepEqual(result.warnings.map((w) => `${file.pathname.split('/').pop()} ${w.code}: ${w.message}`), []);
   }
 });
+
+test('d-pad works for standard pads and for hat / axis 6-7 pads without a standard mapping', async () => {
+  const { padDpad } = await import('../src/lib/input-controls.js');
+  const btns = (on = []) => Array.from({ length: 17 }, (_, i) => ({ pressed: on.includes(i), value: on.includes(i) ? 1 : 0 }));
+  assert.deepEqual(padDpad({ mapping: 'standard', axes: [0, 0], buttons: btns([12]) }), { up: true, down: false, left: false, right: false });
+  const hat = (v) => padDpad({ mapping: '', axes: [0, 0, 0, 0, 0, 0, 0, 0, 0, v], buttons: btns() });
+  assert.deepEqual(hat(-1), { up: true, down: false, left: false, right: false });
+  assert.deepEqual(hat(-0.428), { up: false, down: false, left: false, right: true });
+  assert.deepEqual(hat(0.142), { up: false, down: true, left: false, right: false });
+  assert.deepEqual(hat(0.714), { up: false, down: false, left: true, right: false });
+  assert.deepEqual(hat(3.286), { up: false, down: false, left: false, right: false }, '沒按的時候 >1');
+  assert.deepEqual(padDpad({ mapping: '', axes: [0, 0, 0, 0, 0, 0, -1, 0], buttons: btns() }), { up: false, down: false, left: true, right: false });
+});
