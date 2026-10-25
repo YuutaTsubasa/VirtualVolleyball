@@ -206,6 +206,7 @@ export default {
   比賽規則: 'Rules',
   補位電腦: 'Fill-in CPU',
   大廳聊天: 'Chat',
+  關閉聊天室: 'Close chat',
   '說點什麼…': 'Say something…',
   送出: 'Send',
   離開房間: 'Leave Room',

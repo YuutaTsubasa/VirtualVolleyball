@@ -27,13 +27,38 @@
   let dialogCursor = $state(0);
   let chatText = $state('');
   let chatBox = $state();
+  // 聊天室是另外打開的側邊欄（<dialog>：B／Esc 關掉、手把只在裡面移動）
+  let chatDialog;
+  let chatInput = $state();
+  let chatOpen = $state(false);
+  // 看過的最後一句：伺服器只留最近幾十句，所以用內容比對，不能用長度
+  let seenLine = $state(null);
+  const lineKey = (l) => (l ? `${l.sys ? 's' : l.seat}|${l.name}|${l.text}` : null);
+  const unread = $derived.by(() => {
+    const chat = room?.chat ?? [];
+    if (chatOpen) return 0;
+    const at = seenLine ? chat.findLastIndex((l) => lineKey(l) === seenLine) : -1;
+    return chat.slice(at + 1).filter((l) => !l.sys && l.seat !== net.seat).length;
+  });
+  const lastLine = $derived(room?.chat.at(-1));
 
   const myCharacter = $derived(net.seat != null ? room?.seats[net.seat]?.character : null);
 
   $effect(() => {
     room?.chat.length;
+    if (chatOpen) seenLine = lineKey(room?.chat.at(-1));
     tick().then(() => chatBox && (chatBox.scrollTop = chatBox.scrollHeight));
   });
+
+  function openChat() {
+    play('select');
+    chatOpen = true;
+    chatDialog.showModal();
+    tick().then(() => {
+      if (chatBox) chatBox.scrollTop = chatBox.scrollHeight;
+      chatInput?.focus({ preventScroll: true });
+    });
+  }
 
   function roleOf(i) {
     const tags = [];
@@ -188,24 +213,13 @@
       </div>
     </section>
 
-    <section class="panel chat">
-      <div class="panel-head left">{t('大廳聊天')}</div>
-      <div class="panel-body">
-        <ol bind:this={chatBox}>
-          {#each room.chat as line, i (i)}
-            {#if line.sys}
-              <li class="sys">{serverText(line.text)}</li>
-            {:else}
-              <li><b class:mine={line.seat === net.seat && line.seat != null}>{displayName(line.name)}</b>：{line.text}</li>
-            {/if}
-          {/each}
-        </ol>
-        <form onsubmit={sendChat}>
-          <input bind:value={chatText} placeholder={t('說點什麼…')} maxlength="300" />
-          <button type="submit" class="vbtn small gold" disabled={!chatText.trim()}>{t('送出')}</button>
-        </form>
-      </div>
-    </section>
+    <button type="button" class="chat-open vbtn small gold" onclick={openChat}>
+      <span class="label">{t('大廳聊天')}</span>
+      {#if unread}<span class="unread">{unread}</span>{/if}
+      {#if lastLine}
+        <small class="preview">{#if lastLine.sys}{serverText(lastLine.text)}{:else}<b>{displayName(lastLine.name)}</b>：{lastLine.text}{/if}</small>
+      {/if}
+    </button>
   </aside>
 
   {#snippet foot()}
@@ -218,6 +232,35 @@
     {/if}
   {/snippet}
 </ScreenFrame>
+
+<dialog
+  class="chat-drawer"
+  bind:this={chatDialog}
+  onclose={() => (chatOpen = false)}
+  onclick={(e) => e.target === chatDialog && chatDialog.close()}
+>
+  <section class="panel chat">
+    <div class="panel-head left">
+      {t('大廳聊天')}
+      <button type="button" class="close" aria-label={t('關閉聊天室')} onclick={() => chatDialog.close()}>✕</button>
+    </div>
+    <div class="panel-body">
+      <ol bind:this={chatBox}>
+        {#each room.chat as line, i (i)}
+          {#if line.sys}
+            <li class="sys">{serverText(line.text)}</li>
+          {:else}
+            <li><b class:mine={line.seat === net.seat && line.seat != null}>{displayName(line.name)}</b>：{line.text}</li>
+          {/if}
+        {/each}
+      </ol>
+      <form onsubmit={sendChat}>
+        <input bind:this={chatInput} bind:value={chatText} placeholder={t('說點什麼…')} maxlength="300" />
+        <button type="submit" class="vbtn small gold" disabled={!chatText.trim()}>{t('送出')}</button>
+      </form>
+    </div>
+  </section>
+</dialog>
 
 <dialog class="char-dialog" bind:this={charDialog}>
   <div class="panel">
@@ -451,8 +494,90 @@
     font-weight: 900;
     font-size: 2.2cqh;
   }
+  /* 側欄底下的聊天按鈕：顯示最新一句與未讀數 */
+  .chat-open {
+    position: relative;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.3cqh;
+    padding: 0.8cqh 2.4cqh;
+    min-width: 0;
+    text-align: left;
+  }
+  .chat-open .label {
+    font-size: 2.4cqh;
+  }
+  .chat-open .preview {
+    display: block;
+    font-size: 1.8cqh;
+    font-weight: 700;
+    opacity: 0.8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: 0;
+  }
+  .unread {
+    position: absolute;
+    top: 0.6cqh;
+    right: 2cqh;
+    min-width: 3cqh;
+    padding: 0 0.8cqh;
+    border-radius: 2cqh;
+    background: var(--accent);
+    color: #fff;
+    font-size: 1.9cqh;
+    line-height: 3cqh;
+    text-align: center;
+    letter-spacing: 0;
+  }
+
+  /* 聊天側邊欄：從舞台右邊滑出來，佔舞台右側約四成 */
+  .chat-drawer {
+    /* 對齊 16:9 舞台的右邊（dialog 在舞台裡，cq 單位是舞台的大小），寬螢幕不會跑到黑邊上 */
+    position: fixed;
+    inset: auto;
+    top: calc((100vh - 100cqh) / 2);
+    right: calc((100vw - 100cqw) / 2);
+    margin: 0;
+    width: 40cqw;
+    height: 100cqh;
+    max-width: none;
+    max-height: none;
+    border: none;
+    padding: 0;
+    background: none;
+    animation: drawer-in 0.18s ease-out;
+  }
+  .chat-drawer::backdrop {
+    background: rgba(8, 18, 48, 0.45);
+  }
+  @keyframes drawer-in {
+    from {
+      translate: 100% 0;
+    }
+  }
   .chat {
-    flex: 1;
+    height: 100%;
+    border-radius: 0;
+  }
+  .chat .panel-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .chat .close {
+    border: 0;
+    background: none;
+    color: inherit;
+    font-size: 3cqh;
+    font-weight: 900;
+    line-height: 1;
+    padding: 0 0.6cqh;
+    margin-right: 6cqh; /* 標題條右邊有斜線裝飾，放在它左邊 */
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
   }
   .chat ol {
     flex: 1;
@@ -461,8 +586,9 @@
     margin: 0;
     padding: 0.6cqh 1cqh;
     overflow-y: auto;
-    font-size: 2cqh;
+    font-size: 2.2cqh;
     line-height: 1.5;
+    overflow-wrap: anywhere;
     background: var(--paper-white);
     border: 0.3cqh solid var(--navy);
     border-radius: 0.6cqh;
@@ -480,7 +606,7 @@
   .chat input {
     flex: 1;
     min-width: 0;
-    font-size: 2.1cqh;
+    font-size: 2.2cqh;
   }
   .spinner {
     width: 7cqh;
