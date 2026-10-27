@@ -3,6 +3,6 @@
   "configurations": [
     { "name": "volleyball", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 1421 },
     { "name": "volleyball-alt", "runtimeExecutable": "npx", "runtimeArgs": ["vite", "--port", "1431", "--strictPort"], "port": 1431 },
-    { "name": "signal", "runtimeExecutable": "npm", "runtimeArgs": ["--prefix", "workers/signal", "run", "dev"], "port": 8787 }
+    { "name": "signal", "runtimeExecutable": "npm", "runtimeArgs": ["--prefix", "../VirtualCore/workers/signal", "run", "dev"], "port": 8787 }
   ]
 }

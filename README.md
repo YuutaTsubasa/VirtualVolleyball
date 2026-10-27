@@ -108,7 +108,7 @@ npm test
 - 房主的比賽在 Web Worker 裡跑（`src/lib/local/host-worker.js`），分頁切到背景也不會變慢；關掉分頁房間就關了。
 - 每條 WebRTC 連線開兩個資料通道：**可靠**的（hello、大廳資訊、房主指令、聊天）與**不可靠、不排序**的（`maxRetransmits: 0`，每格的影格與輸入）。影格掉了不重送，下一格馬上補上，延遲不會越積越多；訊息帶編號，收到比較舊的就丟掉。
 - 斷線會自動重連，帶著 token 拿回原本的座位；比賽中斷線的這段時間由電腦代打。
-- 配對服務（`workers/signal/`）只轉送 WebRTC 的 offer／answer／ICE，比賽資料不經過它。它掛了也不影響已經在房間裡的人，只是新的人進不來；沒設定或連不上時介面會自動藏起線上房間。
+- 配對服務（[VirtualCore](https://github.com/YuutaTsubasa/VirtualCore) 的 `workers/signal/`）只轉送 WebRTC 的 offer／answer／ICE，比賽資料不經過它。它掛了也不影響已經在房間裡的人，只是新的人進不來；沒設定或連不上時介面會自動藏起線上房間。
 - 少數很嚴格的網路（對稱式 NAT）WebRTC 連不通，這時請改用區網房間或通道。
 
 區網房間：
@@ -118,25 +118,25 @@ npm test
 
 ## 線上房間的配對服務（Cloudflare Workers）
 
-線上房間需要部署一個很小的配對服務，用 Cloudflare Workers 免費方案（Durable Object＋可休眠的 WebSocket，超過每日額度只會報錯、不會收費）。程式在 `workers/signal/`，跟 TaiwanMahjong 的一樣，名字是 `virtual-volleyball-signal`。
+線上房間需要部署一個很小的配對服務，用 Cloudflare Workers 免費方案（Durable Object＋可休眠的 WebSocket，超過每日額度只會報錯、不會收費）。程式在 [VirtualCore](https://github.com/YuutaTsubasa/VirtualCore) 的 `workers/signal/`（Virtual 系列五款共用），排球部署的名字是 `virtual-volleyball-signal`。
 
 **已部署**：`https://virtual-volleyball-signal.taiwan-mahjong-signal.workers.dev`（打開 `/health` 會看到 `ok`）。
 這個網址就是 `src/lib/site.js` 的預設值，網頁版、桌面 App、本機開發都直接用它，不用另外設定。
 
-**改了配對服務要重新部署**（用自己的 Cloudflare 帳號，第一次要先 `npx wrangler login`）：
+**改了配對服務要重新部署**（在 VirtualCore 的資料夾，用自己的 Cloudflare 帳號，第一次要先 `npx wrangler login`）：
 
 ```bash
-npm --prefix workers/signal run deploy
+npm --prefix workers/signal run deploy:volleyball
 ```
 
 要換成別的配對服務，建置時設環境變數 `VITE_SIGNAL_SERVER=https://…`；設成 `off` 則不提供線上房間。
 GitHub Actions 的網頁版部署也可以在 repo 的 Variables 設 `SIGNAL_SERVER` 覆蓋。
 App 版大廳的分享連結用 `VITE_WEB_URL`（打包 App 的 workflow 已設成網頁版的網址）。
 
-**本機測試**（不用部署、不用登入）：
+**本機測試**（不用部署、不用登入；VirtualCore clone 在旁邊的 `../VirtualCore`）：
 
 ```bash
-npm --prefix workers/signal run dev
+npm --prefix ../VirtualCore/workers/signal run dev
 ```
 
 會在 http://localhost:8787 跑配對服務。在專案根目錄建立 `.env.development.local`：
@@ -152,7 +152,6 @@ VITE_SIGNAL_SERVER=http://localhost:8787
 ```
 crates/volleyball-core/    比賽引擎（Rust）：物理、規則、電腦玩家、房間、連線訊息（protocol.rs）
 crates/volleyball-wasm/    把引擎包成 WebAssembly：單機版（LocalMatch）與線上房間的房主（HostRoom）
-workers/signal/            線上房間的配對服務（Cloudflare Workers）
 src-tauri/                 Tauri v2 App＋區網伺服器（axum，/ws）
   src/server.rs              WebSocket、比賽時鐘、靜態網頁
   src/bin/volleyball-server.rs  不開視窗的伺服器
@@ -160,8 +159,7 @@ src/
   App.svelte                 畫面切換
   lib/engine.js              主迴圈：單機跑 WASM、連線收伺服器影格
   lib/net.svelte.js          連線狀態：區網（WebSocket）與線上房間（WebRTC）
-  lib/p2p.js                 線上房間的 WebRTC：配對、可靠／不可靠兩個資料通道
-  lib/site.js                配對服務網址、房號、分享連結
+  lib/site.js                排球的配對服務網址、網頁版網址（房號與分享連結的規則在 VirtualCore）
   lib/local/host-worker.js   線上房間的房主：在 Web Worker 裡跑房間與比賽
   lib/components/            Menu、SelectScreen、RoomEntry、Lobby…
   lib/game/render.js         Canvas 繪圖：背景、角色、球、特效、計分板
@@ -171,13 +169,24 @@ src/
   lib/components/Controls.svelte       選單操作、手把鍵盤、暫停
   lib/components/TouchControls.svelte  比賽中的觸控按鈕
   lib/game/audio.js          音效入口（比賽事件、介面都呼叫 play()）
-  lib/audio/                 PC-98 音源（synth.js、music.js 搬自 TaiwanMahjong）、曲子（songs.js）、音量與 BGM（sound.svelte.js）
+  lib/audio/                 曲子（songs.js）、音量與 BGM（sound.svelte.js）；PC-98 音源與播放器在 VirtualCore
   lib/components/SettingsDialog.svelte  設定視窗
   lib/i18n.svelte.js         多國語言：t('原文')，翻譯在 lib/i18n/<語言>/*.js（tests/i18n.test.js 會檢查漏翻）
 public/                    圖：角色半身像與動作圖集、球場、特效、介面（90 年代圖素包，WebP）
 docs/art-guide.md          美術素材的來源、規格與還沒做的部分
 docs/art/anime90-v1/       90 年代圖素包的說明與提示詞
 ```
+
+### 跟 VirtualCore 共用的部分
+
+[VirtualCore](https://github.com/YuutaTsubasa/VirtualCore) 是 Virtual 系列五款共用的程式，`package.json` 用 git tag 引用（`virtual-core`）：
+
+- `virtual-core/audio/synth.js`、`audio/music.js`：PC-98 FM 音源與曲子播放器
+- `virtual-core/net/p2p.js`、`net/site.js`：線上房間的 WebRTC 傳輸、房號與分享連結
+- `workers/signal/`：配對服務
+- `.github/workflows/build-apps.yml`、`pages.yml`：這個 repo 的兩個 workflow 只是呼叫它們
+
+本機要同時改 VirtualCore 時：`npm install ../VirtualCore` 暫時換成本機版本（不要 commit 這個改動）。
 
 ## 美術
 
