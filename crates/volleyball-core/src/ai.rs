@@ -4,16 +4,9 @@
 use crate::game::{hit_circle, step_ball, Ball, Match, Phase, Input, BALL_R, GROUND, NET_X, START_X};
 use rand::rngs::SmallRng;
 use rand::{Rng, SeedableRng};
-use serde::{Deserialize, Serialize};
 
-#[derive(Clone, Copy, Debug, Default, PartialEq, Eq, Serialize, Deserialize)]
-#[serde(rename_all = "lowercase")]
-pub enum Difficulty {
-    Easy,
-    #[default]
-    Normal,
-    Hard,
-}
+/// 電腦的強度：Virtual 系列共用（virtual-room），各款自己決定每種強度的參數（見 cfg）
+pub use virtual_room::Difficulty;
 
 struct Cfg {
     error: f64,
@@ -23,21 +16,11 @@ struct Cfg {
     jump_timing: f64,
 }
 
-impl Difficulty {
-    fn cfg(self) -> Cfg {
-        match self {
-            Difficulty::Easy => Cfg { error: 110.0, reaction: 18, spike: 0.25, dive: 0.15, jump_timing: 0.5 },
-            Difficulty::Normal => Cfg { error: 60.0, reaction: 9, spike: 0.6, dive: 0.45, jump_timing: 0.8 },
-            Difficulty::Hard => Cfg { error: 24.0, reaction: 3, spike: 0.95, dive: 0.85, jump_timing: 1.0 },
-        }
-    }
-
-    pub fn label(self) -> &'static str {
-        match self {
-            Difficulty::Easy => "簡單",
-            Difficulty::Normal => "普通",
-            Difficulty::Hard => "困難",
-        }
+fn cfg(difficulty: Difficulty) -> Cfg {
+    match difficulty {
+        Difficulty::Easy => Cfg { error: 110.0, reaction: 18, spike: 0.25, dive: 0.15, jump_timing: 0.5 },
+        Difficulty::Normal => Cfg { error: 60.0, reaction: 9, spike: 0.6, dive: 0.45, jump_timing: 0.8 },
+        Difficulty::Hard => Cfg { error: 24.0, reaction: 3, spike: 0.95, dive: 0.85, jump_timing: 1.0 },
     }
 }
 
@@ -77,7 +60,7 @@ impl Ai {
         Ai {
             side,
             difficulty,
-            cfg: difficulty.cfg(),
+            cfg: cfg(difficulty),
             rng: SmallRng::seed_from_u64(seed),
             wobble: 0.0,
             think_timer: 0,

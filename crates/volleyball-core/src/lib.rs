@@ -16,6 +16,7 @@ mod tests {
     use crate::ai::{Ai, Difficulty};
     use crate::game::{Event, Match, Phase};
     use crate::room::{Room, Settings};
+    use virtual_room::RoomGame;
 
     fn play(a: Difficulty, b: Difficulty, target: u32, seed: u64) -> (Match, u32) {
         let mut m = Match::new(["xiaochun", "aming"], target);

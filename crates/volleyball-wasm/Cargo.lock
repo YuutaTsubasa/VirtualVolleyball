@@ -233,8 +233,9 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563"
 
 [[package]]
-name = "volleyball-core"
-version = "0.1.7"
+name = "virtual-room"
+version = "0.5.0"
+source = "git+https://github.com/YuutaTsubasa/VirtualCore?tag=v0.5.0#d63f5a44887303be6afcdade54766c969573632b"
 dependencies = [
  "getrandom",
  "rand",
@@ -243,10 +244,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "volleyball-core"
+version = "0.1.7"
+dependencies = [
+ "getrandom",
+ "rand",
+ "serde",
+ "serde_json",
+ "virtual-room",
+]
+
+[[package]]
 name = "volleyball-wasm"
 version = "0.1.7"
 dependencies = [
  "serde_json",
+ "virtual-room",
  "volleyball-core",
  "wasm-bindgen",
 ]
