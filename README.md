@@ -93,13 +93,13 @@ npm test
 
 ## 連線怎麼運作
 
-比賽在房主那邊跑（每秒 60 格），玩家只送輸入，房主把每一格的狀態廣播給所有人，所以每個人看到的都一樣、也沒辦法作弊。房間與訊息的處理（`crates/volleyball-core/src/protocol.rs`）是同一份 Rust 程式，區網伺服器直接用、線上房間編成 WebAssembly 用，單機版也是同一個引擎，行為不會有差異。
+比賽在房主那邊跑（每秒 60 格），玩家只送輸入，房主把每一格的狀態廣播給所有人，所以每個人看到的都一樣、也沒辦法作弊。房間與訊息的處理（座位、聊天、連線訊息在 VirtualCore 的 `virtual-room`，排球自己的部分在 `crates/volleyball-core/src/room.rs`）是同一份 Rust 程式，區網伺服器直接用、線上房間編成 WebAssembly 用，單機版也是同一個引擎，行為不會有差異。
 
 兩種房間：
 
 | | 線上房間 | 區網房間 |
 | --- | --- | --- |
-| 誰當伺服器 | 房主的瀏覽器（網頁版、App 都可以） | 房主的 App 內建伺服器（axum，`/ws`） |
+| 誰當伺服器 | 房主的瀏覽器（網頁版、App 都可以） | 房主的 App 內建伺服器（VirtualCore 的 virtual-lan，`/ws`） |
 | 怎麼連 | WebRTC 直連，配對時經過 Cloudflare 的小服務 | WebSocket 連房主的 IP:埠 |
 | 怎麼邀請 | 5 碼房號或分享連結（`…/#join/房號`） | 區網位址（同網路，或自己開埠／通道） |
 
@@ -150,10 +150,10 @@ VITE_SIGNAL_SERVER=http://localhost:8787
 ## 程式結構
 
 ```
-crates/volleyball-core/    比賽引擎（Rust）：物理、規則、電腦玩家、房間、連線訊息（protocol.rs）
+crates/volleyball-core/    比賽引擎（Rust）：物理、規則、電腦玩家、房間（實作 virtual-room 的 RoomGame）
 crates/volleyball-wasm/    把引擎包成 WebAssembly：單機版（LocalMatch）與線上房間的房主（HostRoom）
-src-tauri/                 Tauri v2 App＋區網伺服器（axum，/ws）
-  src/server.rs              WebSocket、比賽時鐘、靜態網頁
+src-tauri/                 Tauri v2 App＋區網伺服器（VirtualCore 的 virtual-lan，/ws）
+  src/server.rs              啟動 virtual-lan（WebSocket、比賽時鐘、靜態網頁都在那裡）
   src/bin/volleyball-server.rs  不開視窗的伺服器
 src/
   App.svelte                 畫面切換
@@ -184,9 +184,10 @@ docs/art/anime90-v1/       90 年代圖素包的說明與提示詞
 - `virtual-core/audio/synth.js`、`audio/music.js`：PC-98 FM 音源與曲子播放器
 - `virtual-core/net/p2p.js`、`net/site.js`：線上房間的 WebRTC 傳輸、房號與分享連結
 - `workers/signal/`：配對服務
+- Rust `crates/virtual-room`（座位、房主、聊天、連線訊息、線上房主）與 `crates/virtual-lan`（區網伺服器）：`Cargo.toml` 用 git tag 引用
 - `.github/workflows/build-apps.yml`、`pages.yml`：這個 repo 的兩個 workflow 只是呼叫它們
 
-本機要同時改 VirtualCore 時：`npm install ../VirtualCore` 暫時換成本機版本（不要 commit 這個改動）。
+本機要同時改 VirtualCore 時：`npm install ../VirtualCore` 暫時換成本機版本；Rust 在 `.cargo/config.toml` 寫 `[patch."https://github.com/YuutaTsubasa/VirtualCore"]` 指到 `../VirtualCore/crates/…`（兩者都不要 commit）。
 
 ## 美術
 
