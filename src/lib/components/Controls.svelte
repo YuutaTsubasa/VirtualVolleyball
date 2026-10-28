@@ -15,7 +15,7 @@
     steppedValue,
     setControlValue,
     nextSelectIndex,
-  } from '../input-controls.js';
+  } from 'virtual-core/input/controls.js';
   import { setInputKind } from '../ui.svelte.js';
   import { unlockHidden } from '../game/characters.js';
   import { toast } from '../net.svelte.js';
