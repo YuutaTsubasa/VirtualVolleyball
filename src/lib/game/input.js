@@ -1,7 +1,7 @@
 // 比賽中的輸入：鍵盤、手把、觸控按鈕合在一起。每個影格呼叫 read(slot) 取得該玩家的輸入。
 // （選單的操作在 src/lib/components/Controls.svelte）
 
-import { padDpad } from '../input-controls.js';
+import { padDpad } from 'virtual-core/input/controls.js';
 const KEYMAPS = [
   // 1P：WASD 移動跳躍，F / 空白鍵 擊球
   { left: ['KeyA'], right: ['KeyD'], up: ['KeyW'], down: ['KeyS'], hit: ['KeyF', 'Space'] },
