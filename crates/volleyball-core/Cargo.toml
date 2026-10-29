@@ -1,6 +1,6 @@
 [package]
 name = "volleyball-core"
-version = "0.1.7"
+version = "0.1.8"
 description = "虛擬台麻館沙灘排球的比賽引擎：物理、規則、電腦玩家與房間狀態"
 edition = "2021"
 rust-version = "1.89"
