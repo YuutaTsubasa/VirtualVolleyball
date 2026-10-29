@@ -50,7 +50,7 @@ function readPad(pad) {
   const ax = pad.axes[0] ?? 0;
   const ay = pad.axes[1] ?? 0;
   const btn = (i) => !!pad.buttons[i]?.pressed;
-  // X 和 Y 都算擊球：有些掌機（例如 AYN 的 Android 機）內建手把照 Linux 的慣例送鍵，
+  // X 和 Y 都算擊球：有些 Android 掌機（例如 AYANEO、AYN）內建手把照 Linux 的慣例送鍵，
   // 瀏覽器讀到的 X、Y 會對調，只收 X 的話按 X 會沒反應（只剩碰到球自動彈出去，扣殺不了）
   const hit = [1, 2, 3, 4, 5, 6, 7].some(btn);
   const dpad = padDpad(pad);
