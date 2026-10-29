@@ -348,13 +348,8 @@ function drawBall(g, b) {
   g.fill();
 
   if (b.y < -BALL_R) {
-    // 球飛出畫面上方：畫個箭頭提示
-    g.fillStyle = '#ff5d5d';
-    g.beginPath();
-    g.moveTo(b.x, 6);
-    g.lineTo(b.x - 10, 22);
-    g.lineTo(b.x + 10, 22);
-    g.fill();
+    // 球飛出畫面上方：畫個箭頭提示（顏色跟「你」標記一樣跟著畫風；像素風格畫成一格一格的）
+    drawBallArrow(g, b.x, Math.min(1, (-BALL_R - b.y) / 400));
     return;
   }
 
@@ -556,6 +551,39 @@ function drawClouds(g) {
       g.fill();
     }
   }
+}
+
+// 球在畫面上方外面時的箭頭：far 0～1（越遠越小，提示球有多高）
+function drawBallArrow(g, x, far) {
+  const s = 1.25 - far * 0.45;
+  x = Math.max(16, Math.min(W - 16, x));
+  g.fillStyle = pal.accent;
+  g.strokeStyle = pal.ink;
+  g.lineWidth = 3;
+  if (cfg.pixelated) {
+    // 像素風格：用 4 單位的方塊疊成三角形，不要斜邊與反鋸齒
+    const px = 4;
+    const cx = Math.round(x / px) * px;
+    const rows = Math.round(4 * s);
+    for (let r = 0; r < rows; r++) {
+      const half = r * px;
+      g.fillStyle = pal.ink;
+      g.fillRect(cx - half - px * 1.5, 6 + r * px - px / 2, half * 2 + px * 3, px * 2);
+    }
+    for (let r = 0; r < rows; r++) {
+      const half = r * px;
+      g.fillStyle = pal.accent;
+      g.fillRect(cx - half - px / 2, 6 + r * px, half * 2 + px, px);
+    }
+    return;
+  }
+  g.beginPath();
+  g.moveTo(x, 6);
+  g.lineTo(x - 11 * s, 6 + 16 * s);
+  g.lineTo(x + 11 * s, 6 + 16 * s);
+  g.closePath();
+  g.fill();
+  g.stroke();
 }
 
 // 連線時在自己的角色頭上標「你」
