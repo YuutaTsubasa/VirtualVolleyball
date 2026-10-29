@@ -1843,7 +1843,7 @@ checksum = "f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6"
 
 [[package]]
 name = "mahjong-volleyball"
-version = "0.1.7"
+version = "0.1.8"
 dependencies = [
  "serde",
  "serde_json",
@@ -4011,7 +4011,7 @@ dependencies = [
 
 [[package]]
 name = "volleyball-core"
-version = "0.1.7"
+version = "0.1.8"
 dependencies = [
  "getrandom 0.2.17",
  "rand 0.8.8",
