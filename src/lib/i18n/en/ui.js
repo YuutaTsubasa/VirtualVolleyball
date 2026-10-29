@@ -99,7 +99,7 @@ export default {
   '「跳」或搖桿往上': '"Jump" or push the stick up',
   'F／空白鍵': 'F / Space',
   'Enter／右 Shift': 'Enter / Right Shift',
-  'B／X／RB／RT': 'B / X / RB / RT',
+  'A 以外的按鈕、LB／RB／LT／RT': 'Any button but A, LB / RB / LT / RT',
   '「擊」': '"Hit"',
   'Esc／P': 'Esc / P',
   上方暫停鈕: 'Pause button at the top',

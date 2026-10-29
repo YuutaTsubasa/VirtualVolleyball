@@ -99,7 +99,7 @@ export default {
   '「跳」或搖桿往上': '「ジャンプ」かスティックを上に',
   'F／空白鍵': 'F／スペース',
   'Enter／右 Shift': 'Enter／右 Shift',
-  'B／X／RB／RT': 'B／X／RB／RT',
+  'A 以外的按鈕、LB／RB／LT／RT': 'A 以外のボタン、LB／RB／LT／RT',
   '「擊」': '「アタック」',
   'Esc／P': 'Esc／P',
   上方暫停鈕: '上のポーズボタン',

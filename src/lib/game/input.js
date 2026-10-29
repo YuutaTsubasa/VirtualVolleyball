@@ -31,7 +31,7 @@ window.addEventListener('blur', () => {
   touch.forEach((t) => Object.assign(t, blank()));
 });
 
-// ---------- 手把（標準配置：A 跳、B / X / RB 擊球、十字鍵或左搖桿移動） ----------
+// ---------- 手把（A 跳；A 以外的三顆按鈕和肩鍵、扳機都是擊球；十字鍵或左搖桿移動） ----------
 
 const padHitPrev = new Map();
 
@@ -50,7 +50,9 @@ function readPad(pad) {
   const ax = pad.axes[0] ?? 0;
   const ay = pad.axes[1] ?? 0;
   const btn = (i) => !!pad.buttons[i]?.pressed;
-  const hit = btn(1) || btn(2) || btn(5) || btn(7);
+  // X 和 Y 都算擊球：有些掌機（例如 AYN 的 Android 機）內建手把照 Linux 的慣例送鍵，
+  // 瀏覽器讀到的 X、Y 會對調，只收 X 的話按 X 會沒反應（只剩碰到球自動彈出去，扣殺不了）
+  const hit = [1, 2, 3, 4, 5, 6, 7].some(btn);
   const dpad = padDpad(pad);
   const result = {
     left: ax < -0.4 || dpad.left,
