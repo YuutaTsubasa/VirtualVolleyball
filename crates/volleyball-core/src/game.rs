@@ -22,6 +22,8 @@ const PLAYER_G: f64 = 0.85;
 pub const PLAYER_HALF_W: f64 = 34.0;
 const HIT_COOLDOWN: i32 = 10;
 const SPIKE_WINDOW: i32 = 14;
+/// 空中普通擊球之後，這幾格內補按擊球也算扣殺（用手把 A 跳的話，拇指要從 A 移到擊球鍵，常常慢一步）
+const LATE_SPIKE_FRAMES: i32 = 9;
 const DIVE_FRAMES: i32 = 20;
 const RECOVER_FRAMES: i32 = 16;
 
@@ -96,6 +98,9 @@ pub struct Player {
     /// 起跳用的「上」還按著（沒放開過）：這時候扣殺不算高吊，要放開再按才算
     #[serde(skip)]
     pub jump_up_held: bool,
+    /// 剛在空中普通擊球：還剩幾格可以補按擊球改成扣殺（0＝不行）
+    #[serde(skip)]
+    pub late_spike: i32,
     /// 給畫面用的計時
     pub anim: u32,
     /// 上一次擊球後經過的影格（畫揮手動作用）
@@ -171,6 +176,7 @@ fn create_player(side: usize, character: &str) -> Player {
         spike_timer: 0,
         hit_cooldown: 0,
         jump_up_held: false,
+        late_spike: 0,
         anim: 0,
         last_hit: 99,
     }
@@ -205,6 +211,7 @@ impl Match {
             p.state = PlayerState::Normal;
             p.timer = 0;
             p.spike_timer = 0;
+            p.late_spike = 0;
             p.hit_cooldown = 0;
             p.last_hit = 99;
         }
@@ -238,6 +245,9 @@ impl Match {
         }
 
         if self.phase == Phase::Rally {
+            for i in 0..2 {
+                self.late_spike(i, inputs[i]);
+            }
             // 分兩小步走，快球也不會穿過球網或人
             for _ in 0..2 {
                 step_ball(&mut self.ball, 0.5, Some(&mut self.events));
@@ -279,6 +289,9 @@ impl Match {
         }
         if p.spike_timer > 0 {
             p.spike_timer -= 1;
+        }
+        if p.late_spike > 0 {
+            p.late_spike -= 1;
         }
 
         let dir = (input.right as i32 - input.left as i32) as f64;
@@ -342,6 +355,7 @@ impl Match {
             p.y = GROUND;
             p.vy = 0.0;
             p.on_ground = true;
+            p.late_spike = 0;
             if p.state == PlayerState::Dive {
                 p.vx *= 0.8;
             }
@@ -373,17 +387,11 @@ impl Match {
         p.last_hit = 0;
 
         if !p.on_ground && p.spike_timer > 0 && p.state == PlayerState::Normal {
-            // 扣殺：方向鍵決定球路（上＝高吊、下＝重扣、往前＝更快）
-            let dir = (input.right as i32 - input.left as i32) as f64;
-            let forward = if dir == p.toward { 1.0 } else if dir == -p.toward { -1.0 } else { 0.0 };
-            b.vx = p.toward * (15.0 + forward * 5.0) * p.stats.power;
-            // 起跳時按的「上」一直沒放開的話不算高吊（用搖桿往上推起跳、推著不放是常見的情況）
-            let lob = input.up && !p.jump_up_held;
-            b.vy = (if lob { -9.0 } else if input.down { 13.0 } else { 3.0 }) * p.stats.power;
-            b.power = true;
-            p.spike_timer = 0;
+            spike(p, b, input);
+            p.late_spike = 0;
             self.events.push(Event::Spike { side: i, x: b.x, y: b.y });
         } else {
+            p.late_spike = if !p.on_ground && p.state == PlayerState::Normal { LATE_SPIKE_FRAMES } else { 0 };
             b.vx = (dx * 0.15).clamp(-9.0, 9.0) + p.vx * 0.15;
             // 正上方接球時稍微往對面送，避免永遠垂直彈
             if b.vx.abs() < 0.6 {
@@ -405,6 +413,26 @@ impl Match {
         let (nx, ny) = if dist == 0.0 { (0.0, -1.0) } else { (dx / dist, dy / dist) };
         b.x = cx + nx * (r + BALL_R + 1.0);
         b.y = cy + ny * (r + BALL_R + 1.0);
+        // 球被別人碰過，前一個人就不能補按扣殺了
+        self.players[1 - i].late_spike = 0;
+    }
+
+    /// 空中普通擊球後，補按擊球改成扣殺：球從現在的位置直接扣出去
+    fn late_spike(&mut self, i: usize, input: Input) {
+        let p = &mut self.players[i];
+        if p.late_spike == 0 || !input.hit_pressed || p.on_ground || p.state != PlayerState::Normal {
+            return;
+        }
+        p.late_spike = 0;
+        let b = &mut self.ball;
+        // 球已經過網就不算
+        if (b.x < NET_X) != (p.side == 0) {
+            return;
+        }
+        spike(p, b, input);
+        p.last_hit = 0;
+        p.hit_cooldown = HIT_COOLDOWN;
+        self.events.push(Event::Spike { side: i, x: b.x, y: b.y });
     }
 
     fn land_ball(&mut self) {
@@ -437,6 +465,24 @@ impl Match {
 }
 
 /// 球的運動（電腦預測落點也用這個），dt = 1 是一整個影格
+/// 扣殺：方向鍵決定球路（上＝高吊、下＝重扣、往前＝更快）
+fn spike(p: &mut Player, b: &mut Ball, input: Input) {
+    let dir = (input.right as i32 - input.left as i32) as f64;
+    let forward = if dir == p.toward { 1.0 } else if dir == -p.toward { -1.0 } else { 0.0 };
+    b.vx = p.toward * (15.0 + forward * 5.0) * p.stats.power;
+    // 起跳時按的「上」一直沒放開的話不算高吊（用搖桿往上推起跳、推著不放是常見的情況）
+    let lob = input.up && !p.jump_up_held;
+    b.vy = (if lob { -9.0 } else if input.down { 13.0 } else { 3.0 }) * p.stats.power;
+    let speed = b.vx.hypot(b.vy);
+    if speed > BALL_MAX_SPEED {
+        b.vx *= BALL_MAX_SPEED / speed;
+        b.vy *= BALL_MAX_SPEED / speed;
+    }
+    b.spin = b.vx * 0.02;
+    b.power = true;
+    p.spike_timer = 0;
+}
+
 pub fn step_ball(b: &mut Ball, dt: f64, mut events: Option<&mut Vec<Event>>) {
     b.vy += BALL_G * dt;
     b.x += b.vx * dt;
@@ -553,6 +599,46 @@ mod tests {
         f.extend(vec![input(false, true, false); SPIKE_WINDOW as usize + 6]);
         let (spiked, _) = jump_and_touch(&f);
         assert!(spiked, "空中按住擊球應該一直準備扣殺");
+    }
+
+    /// 左邊的人起跳後在空中普通擊球，再過 after 格按擊球；回傳有沒有扣殺與最後的球
+    fn hit_then_press(after: usize) -> (bool, Ball) {
+        let mut f = vec![input(true, false, false)];
+        f.extend(vec![input(false, false, false); 5]);
+        let (spiked, _) = jump_and_touch(&f);
+        assert!(!spiked, "還沒按擊球，碰到球應該是普通擊球");
+        // jump_and_touch 不回傳比賽，重做一次同樣的流程
+        let mut m = Match::new(["xiaocui", "aming"], 10);
+        m.phase = Phase::Rally;
+        for inp in &f {
+            m.ball = Ball { x: 800.0, y: 100.0, ..Ball::default() };
+            m.step([*inp, Input::default()]);
+        }
+        let (cx, cy, _) = hit_circle(&m.players[0]);
+        m.ball = Ball { x: cx + 20.0, y: cy - 40.0, ..Ball::default() };
+        m.step([Input::default(); 2]);
+        assert!(m.events.iter().any(|e| matches!(e, Event::Hit { .. })));
+        for _ in 1..after {
+            m.step([Input::default(); 2]);
+        }
+        m.step([input(false, true, true), Input::default()]);
+        let spiked = m.events.iter().any(|e| matches!(e, Event::Spike { .. }));
+        (spiked, m.ball.clone())
+    }
+
+    #[test]
+    fn pressing_hit_right_after_a_normal_hit_spikes() {
+        // 用 A 跳的話，拇指移到擊球鍵時球常常已經碰到了
+        let (spiked, b) = hit_then_press(4);
+        assert!(spiked, "空中普通擊球後馬上補按，應該改成扣殺");
+        assert!(b.power && b.vx > 0.0 && b.vy > 0.0, "應該往對面往下打：{b:?}");
+    }
+
+    #[test]
+    fn pressing_hit_too_late_after_a_normal_hit_does_nothing() {
+        let (spiked, b) = hit_then_press(LATE_SPIKE_FRAMES as usize + 2);
+        assert!(!spiked);
+        assert!(!b.power);
     }
 
     #[test]

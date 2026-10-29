@@ -105,8 +105,8 @@ export default {
   上方暫停鈕: 'Pause button at the top',
   小技巧: 'Tips',
   扣殺: 'Spike',
-  '：跳起來在空中按住擊球，碰到球就扣殺。同時按 ↓ 重扣、往對面按更快；放開 ↑ 再按一次是高吊。':
-    ': in the air, press and hold Hit — you spike as soon as you touch the ball. Hold ↓ for a hard smash or toward the net for more speed; release ↑ and press it again for a lob.',
+  '：跳起來在空中按住擊球，碰到球就扣殺（碰到後馬上補按也可以）。同時按 ↓ 重扣、往對面按更快；放開 ↑ 再按一次是高吊。':
+    ': in the air, press and hold Hit — you spike as soon as you touch the ball (pressing it right after the touch works too). Hold ↓ for a hard smash or toward the net for more speed; release ↑ and press it again for a lob.',
   飛撲救球: 'Diving save',
   '：在地上按住左右再按擊球。': ': on the ground, hold left or right and press Hit.',
   '對戰電腦和連線時，兩組鍵盤、任何手把都能操作；雙人同樂時第 1 支手把是 1P、第 2 支是 2P。':
